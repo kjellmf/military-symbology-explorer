@@ -1,4 +1,4 @@
-military-symbology-explorer
-===========================
+Joint military symbology explorer
+=================================
 
 A MILSTD 2525D symbology explorer
