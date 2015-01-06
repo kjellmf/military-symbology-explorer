@@ -1,12 +1,12 @@
 {
-  "name": "milsymb",
+  "name": "military-symbology-explorer",
   "version": "1.0.0",
   "authors": [
     "Kjell Magne Fauske <kjellmf@gmail.com>"
   ],
   "description": "Joint military symbology explorer",
   "main": "index.html",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "private": true,
   "ignore": [
     "**/.*",

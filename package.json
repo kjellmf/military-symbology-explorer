@@ -1,13 +1,13 @@
 {
-  "name": "milsymb",
+  "name": "military-symbology-explorer",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Kjell Magne Fauske",
+  "license": "Apache-2.0",
   "devDependencies": {
     "browser-sync": "^1.5.7",
     "del": "^1.1.1",
