@@ -1,0 +1,14 @@
+<table class="table  table-striped table-hover">
+    <thead>
+    <tr>
+        <th class="col-md-1"></th>
+        <th class="col-md-1" ng-repeat="dim in dimensions">{{:: dim.label }}</th>
+    </tr>
+    </thead>
+    <tr ng-repeat="si in standardIdentities">
+        <th>{{ si.label }}</th>
+        <td ng-repeat="dim in dimensions">
+            <div class="milsymbol"><img class="symbol-sm" ng-src="{{:: getFrameFn(si, dim)}}"></div>
+        </td>
+    </tr>
+</table>
