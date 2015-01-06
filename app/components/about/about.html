@@ -1,0 +1,60 @@
+<div class="container-fluid" ng-controller="SymbolSetBrowserCtrl">
+    <div class="row">
+        <div class="col-sm-2 col-md-2 sidebar">
+
+        </div>
+        <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 main">
+            <h1 class="page-header">About</h1>
+
+            <p><a href="https://github.com/Esri/joint-military-symbology-xml">Joint Military Symbology Markup Language
+                (JMSML)</a>
+                is a data encapsulation of <a
+                        href="http://www.assistdocs.com/search/document_details.cfm?ident_number=114934">MIL-STD-2525D</a>
+                and <a href="http://en.wikipedia.org/wiki/NATO_Military_Symbols_for_Land_Based_Systems">APP-6(C)</a>.
+                The JMSML project is an initiative by <a href="http://www.esri.com/">Esri</a>.
+            </p>
+
+            <p>I created the JMSML browser because I wanted to learn JMSML and the latest incarnation of the MIL-STD-2525
+                standard. An additional goal was to learn new web development frameworks and tools. </p>
+
+            <h2>Credits</h2>
+
+            <p>All of the symbol definitions and symbol SVG files are from the <a href="joint-military-symbology-xml">JMSML project</a>.
+            I have just converted the data to a Javascript-friendly format and assembled the different SVG files into symbols.</p>
+
+            <p>Some tools and frameworks I have used for this project:</p>
+
+            <ul>
+                <li><a href="https://www.python.org/">Python (2.7)</a> for extracting information from the <a href="https://github.com/Esri/joint-military-symbology-xml/tree/master/instance">JMSML instance files</a> and
+                converting it to javascript</li>
+                <li><a href="https://angularjs.org/">AngularJs</a> for the web application</li>
+                <li><a href="http://getbootstrap.com/">Bootstrap</a> for styling (I'm sorry for using the default styles )</li>
+                <li><a href="http://gulpjs.com/">Gulp</a> for building the project</li>
+            </ul>
+
+            <h2>Related projects</h2>
+
+            <p>JMSML is not the only open source symbology project. If you need a symbol renderer check out one of these projects:</p>
+            <ul>
+                <li><a href="https://github.com/missioncommand/mil-sym-js">mil-sym-js</a> MIL-STD-2525 symbol rendering
+                    JavaScript library for modern web applications (font based, 2525B, 2525C)
+                </li>
+                <li><a href="https://github.com/missioncommand/mil-sym-java">mil-sym-js</a> MIL-STD-2525 B and C
+                    rendering library and web service
+                </li>
+                <li><a href="https://github.com/spatialillusions/MilSymbol">MilSymbol</a> Military Unit Symbols in
+                    JavaScript (SVG based, APP6B, 2525C)
+                </li>
+                <li><a href="https://github.com/StackFrame/Ortelium">Ortelium</a> A tool for generating military map
+                    symbols (Java, 2525B)
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+

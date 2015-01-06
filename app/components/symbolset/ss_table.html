@@ -1,0 +1,101 @@
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+    <tr>
+        <th class="col-md-1">Entity</th>
+        <th class="col-md-2">Entity type</th>
+        <th class="col-md-2">Entity subtype</th>
+        <th class="col-md-4" colspan="4">Symbols</th>
+        <th class="col-md-1">Digits</th>
+        <th class="col-md-2">Remarks</th>
+    </tr>
+
+    </thead>
+    <tbody>
+    <tr ng-repeat-start="entity in currentSymbolSet.entities">
+        <td>{{entity.label}}</td>
+
+        <td></td>
+        <td></td>
+
+        <td><symbsetsymb entity="entity" si="SI_UNKNOWN"></symbsetsymb></td>
+        <td><symbsetsymb entity="entity" si="SI_FRIEND"></symbsetsymb></td>
+        <td><symbsetsymb entity="entity" si="SI_NEUTRAL"></symbsetsymb></td>
+        <td><symbsetsymb entity="entity" si="SI_HOSTILE_FAKER"></symbsetsymb></td>
+
+        <!--<div class="symbol-sm">-->
+        <!--<div class="milsymb" ng-include="frame()"></div>-->
+        <!--</div>-->
+        <td><b>{{entity.digits}}</b>0000</td>
+        <td>{{entity.remarks}}</td>
+    </tr>
+    <tr ng-repeat-start="entityType in entity.entityTypes">
+        <td title="{{entity.label}}"></td>
+        <td>{{entityType.label}}</td>
+        <td></td>
+        <td><symbsetsymb entity="entityType" si="SI_UNKNOWN"></symbsetsymb></td>
+        <td><symbsetsymb entity="entityType" si="SI_FRIEND"></symbsetsymb></td>
+        <td><symbsetsymb entity="entityType" si="SI_NEUTRAL"></symbsetsymb></td>
+        <td><symbsetsymb entity="entityType" si="SI_HOSTILE_FAKER"></symbsetsymb></td>
+        <td>{{entity.digits}}<b>{{entityType.digits}}</b>00</td>
+        <td>{{entityType.remarks}}</td>
+    </tr>
+    <tr ng-repeat-end ng-repeat="entitySubType in entityType.entitySubTypes">
+        <td title="{{entity.label}}"></td>
+        <td title="{{entityType.label}}"></td>
+        <td>{{entitySubType.label}}</td>
+        <td><symbsetsymb entity="entitySubType" si="SI_UNKNOWN"></symbsetsymb></td>
+        <td><symbsetsymb entity="entitySubType" si="SI_FRIEND"></symbsetsymb></td>
+        <td><symbsetsymb entity="entitySubType" si="SI_NEUTRAL"></symbsetsymb></td>
+        <td><symbsetsymb entity="entitySubType" si="SI_HOSTILE_FAKER"></symbsetsymb></td>
+        <td>{{entity.digits}}{{entityType.digits}}<b>{{entitySubType.digits}}</b></td>
+        <td>{{entitySubType.remarks}}</td>
+    </tr>
+    <tr ng-repeat-end></tr>
+
+    </tbody>
+
+    <!--d as getLabel(d) for d in currentSymbolSet.entities-->
+</table>
+
+<h2 id="modifierone">Modifier one</h2>
+
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+    <tr>
+        <th class="col-md-6">Name</th>
+        <th class="col-md-6">Img</th>
+    </tr>
+
+    </thead>
+    <tbody>
+    <tr ng-repeat="modone in currentSymbolSet.sectorOneModifiers">
+        <td>{{modone.label}}</td>
+        <td>
+            <div class="milsymbol symbol-smm"><img ng-src="{{currentBoundingOctagon}}"><img class="symbol-sm"
+                                                                                            ng-src="{{modonepath+modone.graphic}}">
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+
+<h2 id="modifiertwo">Modifier two</h2>
+
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+    <tr>
+        <th class="col-md-6">Name</th>
+        <th class="col-md-6">Img</th>
+    </tr>
+
+    </thead>
+    <tbody>
+    <tr ng-repeat="modtwo in currentSymbolSet.sectorTwoModifiers">
+        <td>{{modtwo.label}}</td>
+        <td>
+            <div class="milsymbol symbol-smm"><img ng-src="{{currentBoundingOctagon}}"><img class="symbol-sm" ng-src="{{modtwopath+modtwo.graphic}}"></div>
+        </td>
+    </tr>
+    </tbody>
+</table>

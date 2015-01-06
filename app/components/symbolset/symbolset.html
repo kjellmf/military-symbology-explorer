@@ -1,0 +1,51 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2 col-md-2 sidebar">
+            <form role="form">
+                <div class="form-group">
+                    <label>Symbol set</label>
+                    <select class="form-control" ng-model="currentSymbolSet"
+                            ng-options="d as getLabel(d) for d in symbolData.symbolSets"
+                            ng-change="changeSymbolSet(currentSymbolSet)">
+                        <option value="">-- choose symbol set --</option>
+                    </select>
+                </div>
+            </form>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">Tables</div>
+                <div class="panel-body">
+                    <ul class="nav nav-sidebar">
+                        <li><a ui-sref=".symboltable">Symbols</a></li>
+                        <li><a ui-sref=".modifierone">Modifier ones</a></li>
+                        <li><a ui-sref=".modifiertwo">Modifier twos</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-sm-10 col-sm-offset-2 col-md-10 col-md-offset-2 main">
+            <h1 id="symboltable" class="page-header" title="{{currentSymbolSet.id}}">{{currentSymbolSet.label}}</h1>
+
+            <div ng-switch on="currentSymbolSet.id">
+                <div ng-switch-when="SS_MINE_WARFARE">
+                    <ng-include src="'app/components/symbolset/ss_mine.html'"></ng-include>
+                </div>
+                <div ng-switch-when="SS_CONTROL_MEASURE">
+                    <ng-include src="'app/components/symbolset/ss_control_measure.html'"></ng-include>
+                </div>
+                <div ng-switch-default>
+                    <ng-include src="'app/components/symbolset/ss_table.html'">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
