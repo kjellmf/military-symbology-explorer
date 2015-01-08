@@ -247,4 +247,11 @@ body {
   margin-top: 0;
 }
 
+.hero-spacer {
+    margin-top: 10px;
+}
+
+.hero-feature {
+    margin-bottom: 30px;
+}
 
