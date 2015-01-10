@@ -48,7 +48,11 @@ angular.module('symbolApp')
         function getFrameFn() {
             var sic = symbolIdCode;
             return pathService.getFrameFilePath(sic.context.id, sic.standardIdentity.id, sic.symbolSet, sic.status);
+        }
 
+        function getStatusFn() {
+            var sic = symbolIdCode;
+            return pathService.getStatusFilePath(sic.standardIdentity.id, sic.symbolSet, sic.status);
         }
 
         function getAmplifierFn() {
@@ -87,6 +91,7 @@ angular.module('symbolApp')
             symbId: symbolIdCode,
             getEntityFn: getEntityFn,
             getFrameFn: getFrameFn,
+            getStatusFn: getStatusFn,
             getAmplifilerFn: getAmplifierFn,
             getModiferOneFn: getModifierOneFn,
             getModiferTwoFn: getModifierTwoFn,
@@ -139,6 +144,7 @@ angular.module('symbolApp')
         $scope.amplifierFn = symbolIdCodeService.getAmplifilerFn;
         $scope.modifierOneFn = symbolIdCodeService.getModiferOneFn;
         $scope.modifierTwoFn = symbolIdCodeService.getModiferTwoFn;
+        $scope.statusFn = symbolIdCodeService.getStatusFn;
         $scope.echelon = "svg/MIL_STD_2525D_Symbols/Echelon/415.svg";
         $scope.symbolData = symbolData;
         $scope.myHQTFDummy = symbolIdCodeService.symbId.hqtfDummy;

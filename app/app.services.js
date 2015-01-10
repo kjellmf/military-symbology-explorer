@@ -38,6 +38,20 @@ angular.module('symbolApp')
             return fn ? config.SVG_PATH + fn : null;
         }
 
+        function getStatusFn(standardIdentityId, symbolSetObj, status) {
+             var dimensionId = symbolSetObj.dimensionId,
+                fn = "";
+            if (dimensionId && status && standardIdentityId && status.graphics) {
+                var sig = status.graphics[symbolData.standardIdentityGroupMapping[standardIdentityId]];
+                if (sig) {
+                    var dim = sig[dimensionId];
+                    fn = dim ? dim.graphic : null;
+                }
+            }
+            return fn ? config.SVG_PATH + fn : null;
+
+        }
+
         function getAmplifierFn() {
             var fn = "";
             var sic = symbolIdCode;
@@ -65,7 +79,8 @@ angular.module('symbolApp')
 
         return {
             getEntityFilePath: getEntityFn,
-            getFrameFilePath: getFrameFn
+            getFrameFilePath: getFrameFn,
+            getStatusFilePath: getStatusFn
         }
     }]);
 

@@ -248,21 +248,74 @@ def extract_dimensions(tree,):
 
     return dimensions
 
+def extract_standard_identity_groups(tree):
+    sigs = {}
+    si_to_sig = {}
+    for sig_element in tree.iter(ns_tag("StandardIdentityGroup")):
+        sig_id = sig_element.get('ID')
+        label = sig_element.get('Label')
+        sig_ids = sig_element.get('StandardIdentityIDs').split(" ")
+        for si_id in sig_ids:
+            si_to_sig[si_id] = sig_id
+        sigs[sig_id] = sig_ids
 
-def extract_jmsml_data(frame_folders):
+    return sigs, si_to_sig
+
+
+def extract_standard_identities(tree):
+    standard_identities = extract_single_code_data(tree, "StandardIdentity")
+    return standard_identities
+
+
+def extract_status_graphics(status_element, oca_folder):
+    graphics = defaultdict(lambda: defaultdict(OrderedDict))
+    for graphic_element in status_element.iter(ns_tag('Graphic')):
+        sig = graphic_element.get('StandardIdentityGroup')
+        dimension = graphic_element.get('Dimension')
+        graphic = graphic_element.get('Graphic')
+        sigd = graphics[sig]
+        sigd[dimension]['graphic'] = oca_folder + "/" + graphic
+    return graphics
+
+
+def extract_status(tree, oca_folder):
+    statuses = []
+    for status_element in tree.iter(ns_tag("Status")):
+        label = status_element.get('Label')
+        digits = status_element.find(ns_tag("StatusCode")).text
+        if 'Extension' in label:
+                continue
+        status_data = OrderedDict()
+        status_data['digits'] = digits
+        status_data['label'] = label
+        if "LabelAlias" in status_element.attrib:
+            status_data['labelAlias'] = status_element.get('LabelAlias')
+
+        graphics = extract_status_graphics(status_element, oca_folder)
+        if graphics:
+            status_data['graphics'] = graphics
+
+        statuses.append(status_data)
+
+    return statuses
+
+
+def extract_jmsml_data(frame_folders, oca_folder):
     if not os.path.exists(BASE_FILE):
         print "Could not find %s" % BASE_FILE
         sys.exit(1)
     tree = ET.parse(BASE_FILE)
     symbol_data = OrderedDict()
     symbol_data['contexts'] = extract_single_code_data(tree, "Context")
-    symbol_data['standardIdentities'] = extract_single_code_data(tree, "StandardIdentity")
+    sig, si2sig =  extract_standard_identity_groups(tree)
+    symbol_data['standardIdentities'] = extract_standard_identities(tree)
     symbol_data['symbolSets'] = extract_symbol_sets(tree)
-    symbol_data['statuses'] = extract_single_code_data(tree, "Status")
+    symbol_data['statuses'] = extract_status(tree, oca_folder)
     symbol_data['hqtfDummies'] = extract_single_code_data(tree, "HQTFDummy")
     symbol_data['amplifier'] = extract_amplifier_groups(tree)
     symbol_data['affiliations'] = extract_affiliations(tree, frame_folders)
     symbol_data['dimensions'] = extract_dimensions(tree)
+    symbol_data['standardIdentityGroupMapping'] = si2sig
 
     return symbol_data
 
@@ -296,19 +349,21 @@ def extract_jmsml_config_data():
         elif "Frames" in entity_element.attrib:
             frames[entity_element.get('Frames')]["folderName"] = get_full_folder_path(entity_element)
             continue
+        elif "OCA" in entity_element.attrib:
+            oca_folder = get_full_folder_path(entity_element)
 
         for key in symbol_set_id:
             symbol_set_folders[key][sub_key] = get_full_folder_path(entity_element)
             print symbol_set_folders[key][sub_key]
 
-    return symbol_set_folders, frames
+    return symbol_set_folders, frames, oca_folder
 
 
 if __name__ == '__main__':
     log.info('Looking for JMSML files in %s', abspath(JMSML_PROJECT_PATH))
 
-    symbolset_folders, frame_folders = extract_jmsml_config_data()
-    jmsml_data = extract_jmsml_data(frame_folders)
+    symbolset_folders, frame_folders, oca_folder = extract_jmsml_config_data()
+    jmsml_data = extract_jmsml_data(frame_folders, oca_folder)
 
     for symbol_set in jmsml_data["symbolSets"]:
         symbol_set["graphicFolder"] = symbolset_folders[symbol_set['id']]
