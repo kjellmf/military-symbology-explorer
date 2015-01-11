@@ -49,7 +49,19 @@ angular.module('symbolApp')
                 }
             }
             return fn ? config.SVG_PATH + fn : null;
+        }
 
+        function getHqtfdFn(standardIdentityId, symbolSetObj, hqtfdObj) {
+             var dimensionId = symbolSetObj.dimensionId,
+                fn = "";
+            if (dimensionId && hqtfdObj && standardIdentityId && hqtfdObj.graphics) {
+                var sig = hqtfdObj.graphics[symbolData.standardIdentityGroupMapping[standardIdentityId]];
+                if (sig) {
+                    var dim = sig[dimensionId];
+                    fn = dim ? dim.graphic : null;
+                }
+            }
+            return fn ? config.SVG_PATH + fn : null;
         }
 
         function getAmplifierFn() {
@@ -80,7 +92,8 @@ angular.module('symbolApp')
         return {
             getEntityFilePath: getEntityFn,
             getFrameFilePath: getFrameFn,
-            getStatusFilePath: getStatusFn
+            getStatusFilePath: getStatusFn,
+            getHqtfdFilePath : getHqtfdFn
         }
     }]);
 

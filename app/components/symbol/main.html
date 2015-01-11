@@ -69,9 +69,9 @@
                             <label class="col-sm-4 control-label">HQTFDummy</label>
 
                             <div class="col-sm-8">
-                                <select class="form-control" ng-model="myHQTFDummy"
+                                <select class="form-control" ng-model="hqtfDummy"
                                         ng-options="d as getLabel(d) for d in symbolData.hqtfDummies"
-                                        ng-change="changeHQTFDummy(myHQTFDummy)">
+                                        ng-change="changeHQTFDummy(hqtfDummy)">
                                     <option value="">-- choose status --</option>
                                 </select>
                             </div>
@@ -165,6 +165,7 @@
                 <div class="milsymb reveal-animation" ng-include="modifierTwoFn()"></div>
                 <div class="milsymb reveal-animation" ng-include="amplifierFn()"></div>
                 <div class="milsymb reveal-animation" ng-include="statusFn()"></div>
+                <div class="milsymb reveal-animation" ng-include="hqtfdFn()"></div>
 
             </div>
 
