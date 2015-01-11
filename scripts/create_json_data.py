@@ -267,42 +267,41 @@ def extract_standard_identities(tree):
     return standard_identities
 
 
-def extract_sub_graphics(status_element, folder_name):
-    graphics = defaultdict(lambda: defaultdict(OrderedDict))
-    for graphic_element in status_element.iter(ns_tag('Graphic')):
-        sig = graphic_element.get('StandardIdentityGroup')
-        dimension = graphic_element.get('Dimension')
-        graphic = graphic_element.get('Graphic')
-        sigd = graphics[sig]
-        sigd[dimension]['graphic'] = folder_name + "/" + graphic
-    return graphics
+def extract_status_or_hqtfd(tree, element_name, folder_name):
+    def extract_sub_graphics(element):
+        graphics = defaultdict(lambda: defaultdict(OrderedDict))
+        for graphic_element in element.iter(ns_tag('Graphic')):
+            sig = graphic_element.get('StandardIdentityGroup')
+            dimension = graphic_element.get('Dimension')
+            graphic = graphic_element.get('Graphic')
+            sigd = graphics[sig]
+            sigd[dimension]['graphic'] = folder_name + "/" + graphic
+        return graphics
 
-
-def extract_status(tree, oca_folder):
-    statuses = []
-    for status_element in tree.iter(ns_tag("Status")):
-        label = status_element.get('Label')
-        name = status_element.get('Name')
-        digits = status_element.find(ns_tag("StatusCode")).text
+    element_info = []
+    for element in tree.iter(ns_tag(element_name)):
+        label = element.get('Label')
+        name = element.get('Name')
+        digits = element.find(ns_tag("%sCode" % element_name)).text
         if 'Extension' in label:
                 continue
         status_data = OrderedDict()
         status_data['digits'] = digits
         status_data['name'] = name
         status_data['label'] = label
-        if "LabelAlias" in status_element.attrib:
-            status_data['labelAlias'] = status_element.get('LabelAlias')
+        if "LabelAlias" in element.attrib:
+            status_data['labelAlias'] = element.get('LabelAlias')
 
-        graphics = extract_sub_graphics(status_element, oca_folder)
-        if graphics:
-            status_data['graphics'] = graphics
+        graphics_data = extract_sub_graphics(element)
+        if graphics_data:
+            status_data['graphics'] = graphics_data
 
-        statuses.append(status_data)
+        element_info.append(status_data)
 
-    return statuses
+    return element_info
 
 
-def extract_jmsml_data(frame_folders, oca_folder):
+def extract_jmsml_data(frame_folders, oca_folder, hqtffd_folder):
     if not os.path.exists(BASE_FILE):
         print "Could not find %s" % BASE_FILE
         sys.exit(1)
@@ -312,8 +311,8 @@ def extract_jmsml_data(frame_folders, oca_folder):
     sig, si2sig =  extract_standard_identity_groups(tree)
     symbol_data['standardIdentities'] = extract_standard_identities(tree)
     symbol_data['symbolSets'] = extract_symbol_sets(tree)
-    symbol_data['statuses'] = extract_status(tree, oca_folder)
-    symbol_data['hqtfDummies'] = extract_single_code_data(tree, "HQTFDummy")
+    symbol_data['statuses'] = extract_status_or_hqtfd(tree, "Status", oca_folder)
+    symbol_data['hqtfDummies'] = extract_status_or_hqtfd(tree, "HQTFDummy", hqtffd_folder)
     symbol_data['amplifier'] = extract_amplifier_groups(tree)
     symbol_data['affiliations'] = extract_affiliations(tree, frame_folders)
     symbol_data['dimensions'] = extract_dimensions(tree)
@@ -353,19 +352,21 @@ def extract_jmsml_config_data():
             continue
         elif "OCA" in entity_element.attrib:
             oca_folder = get_full_folder_path(entity_element)
+        elif "HQTFFD" in entity_element.attrib:
+            hqtffd_folder = get_full_folder_path(entity_element)
 
         for key in symbol_set_id:
             symbol_set_folders[key][sub_key] = get_full_folder_path(entity_element)
             print symbol_set_folders[key][sub_key]
 
-    return symbol_set_folders, frames, oca_folder
+    return symbol_set_folders, frames, oca_folder, hqtffd_folder
 
 
 if __name__ == '__main__':
     log.info('Looking for JMSML files in %s', abspath(JMSML_PROJECT_PATH))
 
-    symbolset_folders, frame_folders, oca_folder = extract_jmsml_config_data()
-    jmsml_data = extract_jmsml_data(frame_folders, oca_folder)
+    symbolset_folders, frame_folders, oca_folder, hqtffd_folder = extract_jmsml_config_data()
+    jmsml_data = extract_jmsml_data(frame_folders, oca_folder, hqtffd_folder)
 
     for symbol_set in jmsml_data["symbolSets"]:
         symbol_set["graphicFolder"] = symbolset_folders[symbol_set['id']]

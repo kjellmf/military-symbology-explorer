@@ -18536,35 +18536,702 @@ var symbolData={
   "hqtfDummies": [
     {
       "digits": "0", 
+      "name": "NA", 
       "label": "Not Applicable"
     }, 
     {
       "digits": "1", 
-      "label": "Feint/Dummy"
+      "name": "FEINT_DUMMY", 
+      "label": "Feint/Dummy", 
+      "graphics": {
+        "SIG_NEUTRAL": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/4301.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/4051.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/4201.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/4151.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/4011.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/4101.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/4351.svg"
+          }
+        }, 
+        "SIG_HOSTILE": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/6301.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/6051.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/6201.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/6151.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/6011.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/6101.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/6351.svg"
+          }
+        }, 
+        "SIG_FRIEND": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/3301.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/3051.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/3201.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/3151.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/3011.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/3101.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/3351.svg"
+          }
+        }, 
+        "SIG_UNKNOWN": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/1301.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/1051.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/1201.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/1151.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/1011.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/1101.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/1351.svg"
+          }
+        }
+      }
     }, 
     {
       "digits": "2", 
-      "label": "Headquarters"
+      "name": "HQ", 
+      "label": "Headquarters", 
+      "graphics": {
+        "SIG_NEUTRAL": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/4302.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/4052.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/4202.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/4152.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/4012.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/4102.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/4352.svg"
+          }
+        }, 
+        "SIG_HOSTILE": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/6302.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/6052.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/6202.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/6152.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/6012.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/6102.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/6352.svg"
+          }
+        }, 
+        "SIG_FRIEND": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/3302.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/3052.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/3202.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/3152.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/3012.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/3102.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/3352.svg"
+          }
+        }, 
+        "SIG_UNKNOWN": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/1302.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/1052.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/1202.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/1152.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/1012.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/1102.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/1352.svg"
+          }
+        }
+      }
     }, 
     {
       "digits": "3", 
-      "label": "Feint/Dummy Headquarters"
+      "name": "FEINT_DUMMY_HQ", 
+      "label": "Feint/Dummy Headquarters", 
+      "graphics": {
+        "SIG_NEUTRAL": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/4303.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/4053.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/4203.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/4153.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/4013.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/4103.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/4353.svg"
+          }
+        }, 
+        "SIG_HOSTILE": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/6303.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/6053.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/6203.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/6153.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/6013.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/6103.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/6353.svg"
+          }
+        }, 
+        "SIG_FRIEND": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/3303.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/3053.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/3203.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/3153.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/3013.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/3103.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/3353.svg"
+          }
+        }, 
+        "SIG_UNKNOWN": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/1303.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/1053.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/1203.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/1153.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/1013.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/1103.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/1353.svg"
+          }
+        }
+      }
     }, 
     {
       "digits": "4", 
-      "label": "Task Force"
+      "name": "TF", 
+      "label": "Task Force", 
+      "graphics": {
+        "SIG_NEUTRAL": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/4304.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/4054.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/4204.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/4154.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/4014.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/4104.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/4354.svg"
+          }
+        }, 
+        "SIG_HOSTILE": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/6304.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/6054.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/6204.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/6154.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/6014.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/6104.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/6354.svg"
+          }
+        }, 
+        "SIG_FRIEND": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/3304.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/3054.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/3204.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/3154.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/3014.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/3104.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/3354.svg"
+          }
+        }, 
+        "SIG_UNKNOWN": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/1304.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/1054.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/1204.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/1154.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/1014.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/1104.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/1354.svg"
+          }
+        }
+      }
     }, 
     {
       "digits": "5", 
-      "label": "Feint/Dummy Task Force"
+      "name": "FEINT_DUMMY_TF", 
+      "label": "Feint/Dummy Task Force", 
+      "graphics": {
+        "SIG_NEUTRAL": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/4305.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/4055.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/4205.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/4155.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/4015.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/4105.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/4355.svg"
+          }
+        }, 
+        "SIG_HOSTILE": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/6305.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/6055.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/6205.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/6155.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/6015.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/6105.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/6355.svg"
+          }
+        }, 
+        "SIG_FRIEND": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/3305.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/3055.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/3205.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/3155.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/3015.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/3105.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/3355.svg"
+          }
+        }, 
+        "SIG_UNKNOWN": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/1305.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/1055.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/1205.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/1155.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/1015.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/1105.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/1355.svg"
+          }
+        }
+      }
     }, 
     {
       "digits": "6", 
-      "label": "Task Force Headquarters"
+      "name": "TF_HQ", 
+      "label": "Task Force Headquarters", 
+      "graphics": {
+        "SIG_NEUTRAL": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/4306.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/4056.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/4206.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/4156.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/4016.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/4106.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/4356.svg"
+          }
+        }, 
+        "SIG_HOSTILE": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/6306.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/6056.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/6206.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/6156.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/6016.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/6106.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/6356.svg"
+          }
+        }, 
+        "SIG_FRIEND": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/3306.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/3056.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/3206.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/3156.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/3016.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/3106.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/3356.svg"
+          }
+        }, 
+        "SIG_UNKNOWN": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/1306.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/1056.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/1206.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/1156.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/1016.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/1106.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/1356.svg"
+          }
+        }
+      }
     }, 
     {
       "digits": "7", 
-      "label": "Feint/Dummy Task Force Headquarters"
+      "name": "FEINT_DUMMY_TF_HQ", 
+      "label": "Feint/Dummy Task Force Headquarters", 
+      "labelAlias": "Feint/Dummy Task Force HQ", 
+      "graphics": {
+        "SIG_NEUTRAL": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/4307.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/4057.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/4207.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/4157.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/4017.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/4107.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/4357.svg"
+          }
+        }, 
+        "SIG_HOSTILE": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/6307.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/6057.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/6207.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/6157.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/6017.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/6107.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/6357.svg"
+          }
+        }, 
+        "SIG_FRIEND": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/3307.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/3057.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/3207.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/3157.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/3017.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/3107.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/3357.svg"
+          }
+        }, 
+        "SIG_UNKNOWN": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/1307.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/1057.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/1207.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/1157.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/1017.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/1107.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "HQTFFD/1357.svg"
+          }
+        }
+      }
     }
   ], 
   "amplifier": [
