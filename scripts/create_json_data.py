@@ -267,14 +267,14 @@ def extract_standard_identities(tree):
     return standard_identities
 
 
-def extract_status_graphics(status_element, oca_folder):
+def extract_sub_graphics(status_element, folder_name):
     graphics = defaultdict(lambda: defaultdict(OrderedDict))
     for graphic_element in status_element.iter(ns_tag('Graphic')):
         sig = graphic_element.get('StandardIdentityGroup')
         dimension = graphic_element.get('Dimension')
         graphic = graphic_element.get('Graphic')
         sigd = graphics[sig]
-        sigd[dimension]['graphic'] = oca_folder + "/" + graphic
+        sigd[dimension]['graphic'] = folder_name + "/" + graphic
     return graphics
 
 
@@ -282,16 +282,18 @@ def extract_status(tree, oca_folder):
     statuses = []
     for status_element in tree.iter(ns_tag("Status")):
         label = status_element.get('Label')
+        name = status_element.get('Name')
         digits = status_element.find(ns_tag("StatusCode")).text
         if 'Extension' in label:
                 continue
         status_data = OrderedDict()
         status_data['digits'] = digits
+        status_data['name'] = name
         status_data['label'] = label
         if "LabelAlias" in status_element.attrib:
             status_data['labelAlias'] = status_element.get('LabelAlias')
 
-        graphics = extract_status_graphics(status_element, oca_folder)
+        graphics = extract_sub_graphics(status_element, oca_folder)
         if graphics:
             status_data['graphics'] = graphics
 

@@ -18027,15 +18027,18 @@ var symbolData={
   "statuses": [
     {
       "digits": "0", 
+      "name": "PRESENT", 
       "label": "Present"
     }, 
     {
       "digits": "1", 
+      "name": "PLANNED", 
       "label": "Planned/Anticipated/Suspect", 
       "labelAlias": "Planned"
     }, 
     {
       "digits": "2", 
+      "name": "FULLY_CAPABLE", 
       "label": "Present/Fully Capable", 
       "labelAlias": "Fully Capable", 
       "graphics": {
@@ -18159,6 +18162,7 @@ var symbolData={
     }, 
     {
       "digits": "3", 
+      "name": "DAMAGED", 
       "label": "Present/Damaged", 
       "labelAlias": "Damaged", 
       "graphics": {
@@ -18282,6 +18286,7 @@ var symbolData={
     }, 
     {
       "digits": "4", 
+      "name": "DESTROYED", 
       "label": "Present/Destroyed", 
       "labelAlias": "Destroyed", 
       "graphics": {
@@ -18405,6 +18410,7 @@ var symbolData={
     }, 
     {
       "digits": "5", 
+      "name": "FULL", 
       "label": "Present/Full to Capacity", 
       "labelAlias": "Full", 
       "graphics": {
