@@ -10,6 +10,8 @@ angular.module('symbolApp')
             this.standardIdentity = sic.substr(3, 1);
             this.symbolSet = sic.substr(4, 2);
             this.status = sic.substr(6, 1);
+            this.amplifier = sic.substr(8,1);
+            this.amplifierDescriptor = sic.substr(9,1);
             this.entity = sic.substr(10, 2);
             this.entityType = sic.substr(12, 2);
             this.entitySubType = sic.substr(14, 2);
@@ -18,8 +20,14 @@ angular.module('symbolApp')
             this.standardIdentityObj = findSymbolObject(symbolData.standardIdentities, this.standardIdentity);
             this.symbolSetObj = findSymbolObject(symbolData.symbolSets, this.symbolSet);
             this.statusObj = findSymbolObject(symbolData.statuses, this.status);
-            this.entityObj = findSymbolObject(this.symbolSetObj.entities, this.entity);
+            this.amplifierObj = findSymbolObject(symbolData.amplifier, this.amplifier);
+            if (this.amplifierObj) {
+                this.amplifierDescriptorObj = findSymbolObject(this.amplifierObj.descriptors, this.amplifierDescriptor);
+            } else {
+                this.amplifierDescriptorObj = null;
+            }
 
+            this.entityObj = findSymbolObject(this.symbolSetObj.entities, this.entity);
 
             if (this.entityType !== '00') {
                 this.entityTypeObj = findSymbolObject(this.entityObj.entityTypes, this.entityType);
@@ -46,6 +54,7 @@ angular.module('symbolApp')
 
             this.frameFn = pathService.getFrameFilePath(contextId, siId, this.symbolSetObj) || config.BLANK_PATH;
             this.statusFn = pathService.getStatusFilePath(siId, this.symbolSetObj, this.statusObj) || config.BLANK_PATH;
+            this.amplifierFn = pathService.getAmplifierFilePath(siId, this.amplifierDescriptorObj) || config.BLANK_PATH;
         };
         SicObject.prototype.getSic = function () {
             return this.sic;
@@ -65,6 +74,7 @@ angular.module('symbolApp')
             scope.entityFn = sicObj.entityFn;
             scope.frameFn = sicObj.frameFn;
             scope.statusFn = sicObj.statusFn;
+            scope.amplifierFn = sicObj.amplifierFn;
         }
 
         return {
@@ -77,7 +87,7 @@ angular.module('symbolApp')
                 if (attrs.noFrame) {
                     return '<div class="milsymbol"><img class="symbol-sm" ng-src="{{entityFn}}"/></div>'
                 }
-                return '<div class="milsymbol"><img class="symbol-sm" ng-src="{{frameFn}}"/><img class="symbol-sm" ng-src="{{entityFn}}"/><img class="symbol-sm" ng-src="{{statusFn}}"/></div>';
+                return '<div class="milsymbol"><img class="symbol-sm" ng-src="{{frameFn}}"/><img class="symbol-sm" ng-src="{{entityFn}}"/><img class="symbol-sm" ng-src="{{statusFn}}"/><img class="symbol-sm" ng-src="{{amplifierFn}}"/></div>';
             },
             link: link
 
