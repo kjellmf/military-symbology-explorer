@@ -18027,18 +18027,18 @@ var symbolData={
   "statuses": [
     {
       "digits": "0", 
-      "name": "PRESENT", 
+      "id": "PRESENT", 
       "label": "Present"
     }, 
     {
       "digits": "1", 
-      "name": "PLANNED", 
+      "id": "PLANNED", 
       "label": "Planned/Anticipated/Suspect", 
       "labelAlias": "Planned"
     }, 
     {
       "digits": "2", 
-      "name": "FULLY_CAPABLE", 
+      "id": "FULLY_CAPABLE", 
       "label": "Present/Fully Capable", 
       "labelAlias": "Fully Capable", 
       "graphics": {
@@ -18162,7 +18162,7 @@ var symbolData={
     }, 
     {
       "digits": "3", 
-      "name": "DAMAGED", 
+      "id": "DAMAGED", 
       "label": "Present/Damaged", 
       "labelAlias": "Damaged", 
       "graphics": {
@@ -18286,7 +18286,7 @@ var symbolData={
     }, 
     {
       "digits": "4", 
-      "name": "DESTROYED", 
+      "id": "DESTROYED", 
       "label": "Present/Destroyed", 
       "labelAlias": "Destroyed", 
       "graphics": {
@@ -18410,7 +18410,7 @@ var symbolData={
     }, 
     {
       "digits": "5", 
-      "name": "FULL", 
+      "id": "FULL", 
       "label": "Present/Full to Capacity", 
       "labelAlias": "Full", 
       "graphics": {
@@ -18536,12 +18536,12 @@ var symbolData={
   "hqtfDummies": [
     {
       "digits": "0", 
-      "name": "NA", 
+      "id": "NA", 
       "label": "Not Applicable"
     }, 
     {
       "digits": "1", 
-      "name": "FEINT_DUMMY", 
+      "id": "FEINT_DUMMY", 
       "label": "Feint/Dummy", 
       "graphics": {
         "SIG_NEUTRAL": {
@@ -18640,7 +18640,7 @@ var symbolData={
     }, 
     {
       "digits": "2", 
-      "name": "HQ", 
+      "id": "HQ", 
       "label": "Headquarters", 
       "graphics": {
         "SIG_NEUTRAL": {
@@ -18739,7 +18739,7 @@ var symbolData={
     }, 
     {
       "digits": "3", 
-      "name": "FEINT_DUMMY_HQ", 
+      "id": "FEINT_DUMMY_HQ", 
       "label": "Feint/Dummy Headquarters", 
       "graphics": {
         "SIG_NEUTRAL": {
@@ -18838,7 +18838,7 @@ var symbolData={
     }, 
     {
       "digits": "4", 
-      "name": "TF", 
+      "id": "TF", 
       "label": "Task Force", 
       "graphics": {
         "SIG_NEUTRAL": {
@@ -18937,7 +18937,7 @@ var symbolData={
     }, 
     {
       "digits": "5", 
-      "name": "FEINT_DUMMY_TF", 
+      "id": "FEINT_DUMMY_TF", 
       "label": "Feint/Dummy Task Force", 
       "graphics": {
         "SIG_NEUTRAL": {
@@ -19036,7 +19036,7 @@ var symbolData={
     }, 
     {
       "digits": "6", 
-      "name": "TF_HQ", 
+      "id": "TF_HQ", 
       "label": "Task Force Headquarters", 
       "graphics": {
         "SIG_NEUTRAL": {
@@ -19135,7 +19135,7 @@ var symbolData={
     }, 
     {
       "digits": "7", 
-      "name": "FEINT_DUMMY_TF_HQ", 
+      "id": "FEINT_DUMMY_TF_HQ", 
       "label": "Feint/Dummy Task Force Headquarters", 
       "labelAlias": "Feint/Dummy Task Force HQ", 
       "graphics": {

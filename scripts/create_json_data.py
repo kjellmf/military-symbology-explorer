@@ -287,7 +287,7 @@ def extract_status_or_hqtfd(tree, element_name, folder_name):
                 continue
         status_data = OrderedDict()
         status_data['digits'] = digits
-        status_data['name'] = name
+        status_data['id'] = name
         status_data['label'] = label
         if "LabelAlias" in element.attrib:
             status_data['labelAlias'] = element.get('LabelAlias')
