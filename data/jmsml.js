@@ -19255,42 +19255,154 @@ var symbolData={
         {
           "digits": "1", 
           "label": "Team/Crew", 
-          "id": "TEAM_CREW"
+          "id": "TEAM_CREW", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Echelon/411.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Echelon/611.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Echelon/311.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Echelon/111.svg"
+            }
+          }
         }, 
         {
           "digits": "2", 
           "label": "Squad", 
-          "id": "SQUAD"
+          "id": "SQUAD", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Echelon/412.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Echelon/612.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Echelon/312.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Echelon/112.svg"
+            }
+          }
         }, 
         {
           "digits": "3", 
           "label": "Section", 
-          "id": "SEC"
+          "id": "SEC", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Echelon/413.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Echelon/613.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Echelon/313.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Echelon/113.svg"
+            }
+          }
         }, 
         {
           "digits": "4", 
           "label": "Platoon/Detachment", 
-          "id": "PLT_DETACHMENT"
+          "id": "PLT_DETACHMENT", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Echelon/414.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Echelon/614.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Echelon/314.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Echelon/114.svg"
+            }
+          }
         }, 
         {
           "digits": "5", 
           "label": "Company/Battery/Troop", 
-          "id": "CPY_BTY_TRP"
+          "id": "CPY_BTY_TRP", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Echelon/415.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Echelon/615.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Echelon/315.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Echelon/115.svg"
+            }
+          }
         }, 
         {
           "digits": "6", 
           "label": "Battalion/Squadron", 
-          "id": "BN_SQUADRON"
+          "id": "BN_SQUADRON", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Echelon/416.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Echelon/616.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Echelon/316.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Echelon/116.svg"
+            }
+          }
         }, 
         {
           "digits": "7", 
           "label": "Regiment/Group", 
-          "id": "REGT_GRP"
+          "id": "REGT_GRP", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Echelon/417.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Echelon/617.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Echelon/317.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Echelon/117.svg"
+            }
+          }
         }, 
         {
           "digits": "8", 
           "label": "Brigade", 
-          "id": "BDE"
+          "id": "BDE", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Echelon/418.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Echelon/618.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Echelon/318.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Echelon/118.svg"
+            }
+          }
         }
       ]
     }, 
@@ -19302,32 +19414,116 @@ var symbolData={
         {
           "digits": "1", 
           "label": "Division", 
-          "id": "DIV"
+          "id": "DIV", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Echelon/421.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Echelon/621.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Echelon/321.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Echelon/121.svg"
+            }
+          }
         }, 
         {
           "digits": "2", 
           "label": "Corps/MEF", 
-          "id": "CORPS_MEF"
+          "id": "CORPS_MEF", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Echelon/422.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Echelon/622.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Echelon/322.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Echelon/122.svg"
+            }
+          }
         }, 
         {
           "digits": "3", 
           "label": "Army", 
-          "id": "ARMY"
+          "id": "ARMY", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Echelon/423.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Echelon/623.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Echelon/323.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Echelon/123.svg"
+            }
+          }
         }, 
         {
           "digits": "4", 
           "label": "Army Group/Front", 
-          "id": "ARMY_GROUP_FRONT"
+          "id": "ARMY_GROUP_FRONT", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Echelon/424.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Echelon/624.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Echelon/324.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Echelon/124.svg"
+            }
+          }
         }, 
         {
           "digits": "5", 
           "label": "Region/Theater", 
-          "id": "REGION_THEATER"
+          "id": "REGION_THEATER", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Echelon/425.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Echelon/625.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Echelon/325.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Echelon/125.svg"
+            }
+          }
         }, 
         {
           "digits": "6", 
           "label": "Command", 
-          "id": "COMMAND"
+          "id": "COMMAND", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Echelon/426.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Echelon/626.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Echelon/326.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Echelon/126.svg"
+            }
+          }
         }
       ]
     }, 
@@ -19339,37 +19535,135 @@ var symbolData={
         {
           "digits": "1", 
           "label": "Wheeled limited cross country", 
-          "id": "WHEEL_LIMIT_COUNTRY"
+          "id": "WHEEL_LIMIT_COUNTRY", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Amplifier/431.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Amplifier/631.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Amplifier/331.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Amplifier/131.svg"
+            }
+          }
         }, 
         {
           "digits": "2", 
           "label": "Wheeled cross country", 
-          "id": "WHEEL_COUNTRY"
+          "id": "WHEEL_COUNTRY", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Amplifier/432.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Amplifier/632.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Amplifier/332.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Amplifier/132.svg"
+            }
+          }
         }, 
         {
           "digits": "3", 
           "label": "Tracked", 
-          "id": "TRACKED"
+          "id": "TRACKED", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Amplifier/433.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Amplifier/633.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Amplifier/333.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Amplifier/133.svg"
+            }
+          }
         }, 
         {
           "digits": "4", 
           "label": "Wheeled and tracked combination", 
-          "id": "WHEEL_TRACK"
+          "id": "WHEEL_TRACK", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Amplifier/434.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Amplifier/634.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Amplifier/334.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Amplifier/134.svg"
+            }
+          }
         }, 
         {
           "digits": "5", 
           "label": "Towed", 
-          "id": "TOWED"
+          "id": "TOWED", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Amplifier/435.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Amplifier/635.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Amplifier/335.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Amplifier/135.svg"
+            }
+          }
         }, 
         {
           "digits": "6", 
           "label": "Rail", 
-          "id": "RAIL"
+          "id": "RAIL", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Amplifier/436.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Amplifier/636.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Amplifier/336.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Amplifier/136.svg"
+            }
+          }
         }, 
         {
           "digits": "7", 
           "label": "Pack animals", 
-          "id": "PACK_ANIMALS"
+          "id": "PACK_ANIMALS", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Amplifier/437.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Amplifier/637.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Amplifier/337.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Amplifier/137.svg"
+            }
+          }
         }
       ]
     }, 
@@ -19381,12 +19675,40 @@ var symbolData={
         {
           "digits": "1", 
           "label": "Over snow (prime mover)", 
-          "id": "OVER_SNOW"
+          "id": "OVER_SNOW", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Amplifier/441.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Amplifier/641.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Amplifier/341.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Amplifier/141.svg"
+            }
+          }
         }, 
         {
           "digits": "2", 
           "label": "Sled", 
-          "id": "SLED"
+          "id": "SLED", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Amplifier/442.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Amplifier/642.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Amplifier/342.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Amplifier/142.svg"
+            }
+          }
         }
       ]
     }, 
@@ -19398,12 +19720,40 @@ var symbolData={
         {
           "digits": "1", 
           "label": "Barge", 
-          "id": "BARGE"
+          "id": "BARGE", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Amplifier/451.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Amplifier/651.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Amplifier/351.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Amplifier/151.svg"
+            }
+          }
         }, 
         {
           "digits": "2", 
           "label": "Amphibious", 
-          "id": "AMPHIB"
+          "id": "AMPHIB", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Amplifier/452.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Amplifier/652.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Amplifier/352.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Amplifier/152.svg"
+            }
+          }
         }
       ]
     }, 
@@ -19415,12 +19765,40 @@ var symbolData={
         {
           "digits": "1", 
           "label": "Short towed array", 
-          "id": "SHORT_TOWED_ARRAY"
+          "id": "SHORT_TOWED_ARRAY", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Amplifier/461.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Amplifier/661.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Amplifier/361.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Amplifier/161.svg"
+            }
+          }
         }, 
         {
           "digits": "2", 
           "label": "Long towed array", 
-          "id": "LONG_TOWED_ARRAY"
+          "id": "LONG_TOWED_ARRAY", 
+          "graphics": {
+            "SIG_NEUTRAL": {
+              "graphic": "Amplifier/462.svg"
+            }, 
+            "SIG_HOSTILE": {
+              "graphic": "Amplifier/662.svg"
+            }, 
+            "SIG_FRIEND": {
+              "graphic": "Amplifier/362.svg"
+            }, 
+            "SIG_UNKNOWN": {
+              "graphic": "Amplifier/162.svg"
+            }
+          }
         }
       ]
     }

@@ -131,7 +131,38 @@ def extract_single_code_data(tree, element_name, id_name='ID'):
     return ll
 
 
-def extract_amplifier_groups(tree):
+def extract_amplifier(tree, folder_name):
+    print "FOlder ", folder_name
+    def extract_graphics(element):
+        graphics = defaultdict(OrderedDict)
+        for graphic_element in element.iter(ns_tag('Graphic')):
+            sig = graphic_element.get('StandardIdentityGroup')
+            graphic = graphic_element.get('Graphic')
+            graphics[sig]['graphic'] = folder_name + "/" + graphic
+        return graphics
+
+    element_info = []
+    for element in tree.iter(ns_tag("Amplifier")):
+        label = element.get('Label')
+        name = element.get('Name')
+        digits = element.find(ns_tag("AmplifierCode")).text
+        if 'Extension' in label:
+                continue
+        status_data = OrderedDict()
+        status_data['digits'] = digits
+        status_data['label'] = label
+        status_data['id'] = name
+
+        graphics_data = extract_graphics(element)
+        if graphics_data:
+            status_data['graphics'] = graphics_data
+
+        element_info.append(status_data)
+
+    return element_info
+
+
+def extract_amplifier_groups(tree, echelon_folder, amplifier_folder):
     context = tree.findall('.//%s%s' % (NAMESPACE, "AmplifierGroup"))
     context_code = tree.findall('.//%s%sCode' % (NAMESPACE, "AmplifierGroup"))
     ll = []
@@ -139,7 +170,11 @@ def extract_amplifier_groups(tree):
         label = element.get('Label')
         if 'Extension' in label:
             continue
-        amplifiers = extract_single_code_data(element, "Amplifier", id_name="Name")
+        if "Echelon" in label:
+            folder_name = echelon_folder
+        else:
+            folder_name = amplifier_folder
+        amplifiers = extract_amplifier(element, folder_name)
         dd = create_element_dict(context_code[idx].text, element.get('Name'), label)
         dd["descriptors"] = amplifiers
         ll.append(dd)
@@ -301,7 +336,7 @@ def extract_status_or_hqtfd(tree, element_name, folder_name):
     return element_info
 
 
-def extract_jmsml_data(frame_folders, oca_folder, hqtffd_folder):
+def extract_jmsml_data(frame_folders, oca_folder, hqtffd_folder, echelon_folder, amplifier_folder):
     if not os.path.exists(BASE_FILE):
         print "Could not find %s" % BASE_FILE
         sys.exit(1)
@@ -313,7 +348,7 @@ def extract_jmsml_data(frame_folders, oca_folder, hqtffd_folder):
     symbol_data['symbolSets'] = extract_symbol_sets(tree)
     symbol_data['statuses'] = extract_status_or_hqtfd(tree, "Status", oca_folder)
     symbol_data['hqtfDummies'] = extract_status_or_hqtfd(tree, "HQTFDummy", hqtffd_folder)
-    symbol_data['amplifier'] = extract_amplifier_groups(tree)
+    symbol_data['amplifier'] = extract_amplifier_groups(tree, echelon_folder, amplifier_folder)
     symbol_data['affiliations'] = extract_affiliations(tree, frame_folders)
     symbol_data['dimensions'] = extract_dimensions(tree)
     symbol_data['standardIdentityGroupMapping'] = si2sig
@@ -354,19 +389,23 @@ def extract_jmsml_config_data():
             oca_folder = get_full_folder_path(entity_element)
         elif "HQTFFD" in entity_element.attrib:
             hqtffd_folder = get_full_folder_path(entity_element)
+        elif "Echelons" in entity_element.attrib:
+            echelon_folder = get_full_folder_path(entity_element)
+        elif "Mobilities" in entity_element.attrib:
+            amplifier_folder = get_full_folder_path(entity_element)
 
         for key in symbol_set_id:
             symbol_set_folders[key][sub_key] = get_full_folder_path(entity_element)
             print symbol_set_folders[key][sub_key]
 
-    return symbol_set_folders, frames, oca_folder, hqtffd_folder
+    return symbol_set_folders, frames, oca_folder, hqtffd_folder, echelon_folder, amplifier_folder,
 
 
 if __name__ == '__main__':
     log.info('Looking for JMSML files in %s', abspath(JMSML_PROJECT_PATH))
 
-    symbolset_folders, frame_folders, oca_folder, hqtffd_folder = extract_jmsml_config_data()
-    jmsml_data = extract_jmsml_data(frame_folders, oca_folder, hqtffd_folder)
+    symbolset_folders, frame_folders, oca_folder, hqtffd_folder, echelon_folder, amplifier_folder = extract_jmsml_config_data()
+    jmsml_data = extract_jmsml_data(frame_folders, oca_folder, hqtffd_folder, echelon_folder, amplifier_folder)
 
     for symbol_set in jmsml_data["symbolSets"]:
         symbol_set["graphicFolder"] = symbolset_folders[symbol_set['id']]
