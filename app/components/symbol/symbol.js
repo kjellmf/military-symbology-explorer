@@ -61,12 +61,8 @@ angular.module('symbolApp')
         }
 
         function getAmplifierFn() {
-            var fn = "";
             var sic = symbolIdCode;
-            if (sic.standardIdentity && sic.amplifier && sic.amplifierDescriptor) {
-                fn = sic.standardIdentity.digits + sic.amplifier.digits + sic.amplifierDescriptor.digits;
-            }
-            return fn ? SVG_PATH + "Echelon/" + fn + ".svg" : null;
+            return pathService.getAmplifierFilePath(sic.standardIdentity.id, sic.amplifierDescriptor);
 
         }
 
@@ -152,7 +148,6 @@ angular.module('symbolApp')
         $scope.modifierTwoFn = symbolIdCodeService.getModiferTwoFn;
         $scope.statusFn = symbolIdCodeService.getStatusFn;
         $scope.hqtfdFn = symbolIdCodeService.getHqtfdFn;
-        $scope.echelon = "svg/MIL_STD_2525D_Symbols/Echelon/415.svg";
         $scope.symbolData = symbolData;
         $scope.hqtfDummy = symbolIdCodeService.symbId.hqtfDummy;
         $scope.context = symbolIdCodeService.symbId.context;

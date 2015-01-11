@@ -64,11 +64,13 @@ angular.module('symbolApp')
             return fn ? config.SVG_PATH + fn : null;
         }
 
-        function getAmplifierFn() {
+        function getAmplifierFn(standardIdentityId, amplifierDescriptorObj) {
             var fn = "";
-            var sic = symbolIdCode;
-            fn = sic.standardIdentity.digits + sic.amplifier.digits + sic.amplifierDescriptor.digits;
-            return fn ? SVG_PATH + "Amplifier/" + fn + ".svg" : null;
+            if (standardIdentityId && amplifierDescriptorObj && amplifierDescriptorObj.graphics) {
+                var sig = amplifierDescriptorObj.graphics[symbolData.standardIdentityGroupMapping[standardIdentityId]];
+                fn = sig ? sig.graphic : null;
+            }
+            return fn ? config.SVG_PATH + fn : null;
         }
 
         function getModifierOneFn() {
@@ -93,7 +95,8 @@ angular.module('symbolApp')
             getEntityFilePath: getEntityFn,
             getFrameFilePath: getFrameFn,
             getStatusFilePath: getStatusFn,
-            getHqtfdFilePath : getHqtfdFn
+            getHqtfdFilePath : getHqtfdFn,
+            getAmplifierFilePath : getAmplifierFn
         }
     }]);
 

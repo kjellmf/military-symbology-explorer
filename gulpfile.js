@@ -43,7 +43,7 @@ gulp.task('copyAssets', function () {
 });
 
 gulp.task('copySvg', function () {
-    gulp.src(['svg/**/*.svg'])
+    gulp.src(['../joint-military-symbology-xml/svg/**/*.svg'])
         .pipe(gulp.dest('dist/svg/'));
 });
 
