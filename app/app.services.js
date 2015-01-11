@@ -38,11 +38,11 @@ angular.module('symbolApp')
             return fn ? config.SVG_PATH + fn : null;
         }
 
-        function getStatusFn(standardIdentityId, symbolSetObj, status) {
+        function getStatusFn(standardIdentityId, symbolSetObj, statusObj) {
              var dimensionId = symbolSetObj.dimensionId,
                 fn = "";
-            if (dimensionId && status && standardIdentityId && status.graphics) {
-                var sig = status.graphics[symbolData.standardIdentityGroupMapping[standardIdentityId]];
+            if (dimensionId && statusObj && standardIdentityId && statusObj.graphics) {
+                var sig = statusObj.graphics[symbolData.standardIdentityGroupMapping[standardIdentityId]];
                 if (sig) {
                     var dim = sig[dimensionId];
                     fn = dim ? dim.graphic : null;

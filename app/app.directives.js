@@ -17,6 +17,7 @@ angular.module('symbolApp')
             this.contextObj = findSymbolObject(symbolData.contexts, this.context);
             this.standardIdentityObj = findSymbolObject(symbolData.standardIdentities, this.standardIdentity);
             this.symbolSetObj = findSymbolObject(symbolData.symbolSets, this.symbolSet);
+            this.statusObj = findSymbolObject(symbolData.statuses, this.status);
             this.entityObj = findSymbolObject(this.symbolSetObj.entities, this.entity);
 
 
@@ -44,6 +45,7 @@ angular.module('symbolApp')
                 siId = this.standardIdentityObj.id;
 
             this.frameFn = pathService.getFrameFilePath(contextId, siId, this.symbolSetObj) || config.BLANK_PATH;
+            this.statusFn = pathService.getStatusFilePath(siId, this.symbolSetObj, this.statusObj) || config.BLANK_PATH;
         };
         SicObject.prototype.getSic = function () {
             return this.sic;
@@ -62,6 +64,7 @@ angular.module('symbolApp')
             var sicObj = processSIC(scope.sic, scope.alternative);
             scope.entityFn = sicObj.entityFn;
             scope.frameFn = sicObj.frameFn;
+            scope.statusFn = sicObj.statusFn;
         }
 
         return {
@@ -74,7 +77,7 @@ angular.module('symbolApp')
                 if (attrs.noFrame) {
                     return '<div class="milsymbol"><img class="symbol-sm" ng-src="{{entityFn}}"/></div>'
                 }
-                return '<div class="milsymbol"><img class="symbol-sm" ng-src="{{frameFn}}"/><img class="symbol-sm" ng-src="{{entityFn}}"/></div>';
+                return '<div class="milsymbol"><img class="symbol-sm" ng-src="{{frameFn}}"/><img class="symbol-sm" ng-src="{{entityFn}}"/><img class="symbol-sm" ng-src="{{statusFn}}"/></div>';
             },
             link: link
 
