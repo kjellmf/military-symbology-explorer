@@ -24,7 +24,7 @@
             <td><b>{{entity.digits}}</b>0000</td>
         </tr>
         <tr ng-repeat-start="entityType in entity.entityTypes">
-            <td></td>
+            <td title="{{entity.label}}"></td>
             <td>
                 {{entityType.label}}
 
@@ -36,12 +36,10 @@
             <td>{{entity.digits}}<b>{{entityType.digits}}</b>00</td>
         </tr>
         <tr ng-repeat-end ng-repeat="entitySubType in entityType.entitySubTypes">
-            <td></td>
-
-            <td></td>
+            <td title="{{entity.label}}"></td>
+            <td title="{{entityType.label}}"></td>
             <td>
                 {{entitySubType.label}}
-
             </td>
             <td>
                 <milsymbol sic="1001{{currentSymbolSet.digits}}0000{{entity.digits}}{{entityType.digits}}{{entitySubType.digits}}0000" no-frame="true"></milsymbol>
