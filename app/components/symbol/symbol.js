@@ -69,7 +69,7 @@ angular.module('symbolApp')
         function getModifierOneFn() {
             var fn = "";
             var sic = symbolIdCode;
-            if (sic.symbolSet && sic.sectorOneModifier) {
+            if (sic.symbolSet && sic.sectorOneModifier && sic.sectorOneModifier.digits !== "00") {
                 fn = sic.symbolSet.digits + sic.sectorOneModifier.digits;
             }
             return fn ? SVG_PATH + symbolIdCode.symbolSet.graphicFolder["modifierOnes"] + "/" + fn + "1.svg" : null;
@@ -178,11 +178,12 @@ angular.module('symbolApp')
 
             $scope.entity = symbolSet.entities[0];
             $scope.changeEntity(symbolSet.entities[0]);
+            $scope.sectorOneModifier = null;
+            $scope.sectorTwoModifier = null;
             symbolIdCodeService.setSectorOneModifier(null);
             symbolIdCodeService.setSectorTwoModifier(null);
             $scope.amplifier = symbolData.amplifier[0];
             $scope.changeAmplifier(symbolData.amplifier[0]);
-
 
         };
 
