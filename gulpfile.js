@@ -8,7 +8,7 @@ var useref = require('gulp-useref'),
     del = require('del');
 
 
-gulp.task('copyCombineJsCss', function () {
+gulp.task('copy-combine-js-css', function () {
     var assets = useref.assets();
 
     return gulp.src('index.html')
@@ -18,7 +18,7 @@ gulp.task('copyCombineJsCss', function () {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('copyCombineMinifyJsCss', function () {
+gulp.task('copy-combine-minify-jscss', function () {
     var assets = useref.assets();
 
     return gulp.src('index.html')
@@ -30,30 +30,39 @@ gulp.task('copyCombineMinifyJsCss', function () {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('copyHtml', function () {
+gulp.task('copy-html', function () {
     gulp.src(['app/**/*.html'])
         .pipe(gulp.dest('dist/app/'));
     gulp.src(['assets/img/**/*'])
         .pipe(gulp.dest('dist/assets/img/'));
 });
 
-gulp.task('copyAssets', function () {
+gulp.task('copy-assets', function () {
     gulp.src(['assets/img/**/*'])
         .pipe(gulp.dest('dist/assets/img/'));
 });
 
-gulp.task('copySvg', function () {
-    gulp.src(['../joint-military-symbology-xml/svg/**/*.svg'])
+gulp.task('copy-svg-to-dist', function () {
+    gulp.src(['../joint-military-symbology-xml/svg/**/*.*'])
         .pipe(gulp.dest('dist/svg/'));
+});
+
+gulp.task('copy-svg-to-main', function () {
+    gulp.src(['../joint-military-symbology-xml/svg/**/*.*'])
+        .pipe(gulp.dest('svg'));
 });
 
 gulp.task('clean', function (cb) {
     del(['dist/**/*', '!dist/svg/**'], cb);
 });
 
-gulp.task('copy', ['copyHtml', 'copyAssets']);
-gulp.task('build', ['copy', 'copyCombineJsCss']);
-gulp.task('buildMinify', ['copy', 'copyCombineMinifyJsCss']);
+gulp.task('clean-everything', function (cb) {
+     del(['dist/**/*'], cb);
+});
+
+gulp.task('copy', ['copy-html', 'copy-assets']);
+gulp.task('build', ['copy', 'copy-combine-js-css']);
+gulp.task('build-minify', ['copy', 'copy-combine-minify-jscss']);
 
 // Static server
 gulp.task('browser-sync', function () {
