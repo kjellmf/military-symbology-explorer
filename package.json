@@ -1,13 +1,18 @@
 {
   "name": "military-symbology-explorer",
   "version": "1.0.0",
-  "description": "",
+  "author": "Kjell Magne Fauske <kjellmf@gmail.com>",
+  "description": "An experimental MIL-STD-2525D/APP-6 symbology explorer based on the Joint Military Symbology Markup Language (JMSML)",
+  "homepage": "http://kjellmf.github.io/military-symbology-explorer/",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kjellmf/military-symbology-explorer.git"
+  },
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Kjell Magne Fauske",
-  "license": "Apache-2.0",
   "devDependencies": {
     "browser-sync": "^1.5.7",
     "del": "^1.1.1",
