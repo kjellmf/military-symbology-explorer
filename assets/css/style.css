@@ -95,7 +95,7 @@ object, .milsymb {
 }
 
 .symbol {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     width: 153px;
     height: 198px;
 

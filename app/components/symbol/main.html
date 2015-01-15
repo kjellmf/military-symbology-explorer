@@ -158,6 +158,8 @@
             </div>
         </div>
         <div class="col-sm-5">
+            <table class="table table-bordered">
+                <tr><td class="symbol">
             <div class="symbol">
                 <div class="milsymb reveal-animation" ng-include="frame()"></div>
                 <div class="milsymb reveal-animation" ng-include="main()"></div>
@@ -166,9 +168,9 @@
                 <div class="milsymb reveal-animation" ng-include="amplifierFn()"></div>
                 <div class="milsymb reveal-animation" ng-include="statusFn()"></div>
                 <div class="milsymb reveal-animation" ng-include="hqtfdFn()"></div>
-
             </div>
-
+                </td><td>{{currentEntity.remarks}}</td></tr>
+                </table>
             <div ng-controller="SymbolIdCodeCtrl">
                 <table class="table table-bordered symbolid-table">
                     <tr>

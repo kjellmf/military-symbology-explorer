@@ -219,6 +219,7 @@ angular.module('symbolApp')
 
         $scope.changeEntitySubType = function (entitySubType) {
             symbolIdCodeService.setEntitySubType(entitySubType);
+            $scope.currentEntity = $scope.entitySubType || $scope.entityType || $scope.entity;
         };
 
 
