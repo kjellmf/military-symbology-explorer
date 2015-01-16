@@ -23,6 +23,18 @@
                 </div>
             </div>
 
+            <div class="panel panel-default">
+                <div class="panel-heading">Symbol</div>
+                <div class="panel-body" ng-controller="SidebarCtrl">
+                    <div class="milsymbol" style="transform: scale(1.5)">
+                        <img class="symbol-sm" ng-src="{{frameFn()}}"/>
+                        <img class="symbol-sm" ng-src="{{entityFn()}}"/>
+                        <img class="symbol-sm" ng-src="{{modOneFn()}}"/>
+                        <img class="symbol-sm" ng-src="{{modTwoFn()}}"/>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
         <div class="col-sm-10 col-sm-offset-2 col-md-10 col-md-offset-2 main">
