@@ -9,7 +9,7 @@ angular.module('symbolApp')
                     fn = entity[standardIdentityMap2[standardIdentityId]];
                 } else {
                     if (alternative) {
-                        fn = entity.alternativeGraphic || gg.graphic;
+                        fn = entity.alternativeGraphic || entity.graphic;
                     } else {
                         fn = entity.graphic;
                     }

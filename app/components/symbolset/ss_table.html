@@ -71,9 +71,10 @@
     <tr ng-repeat="modone in currentSymbolSet.sectorOneModifiers">
         <td>{{modone.label}}</td>
         <td>
-            <div class="milsymbol symbol-smm"><img ng-src="{{currentBoundingOctagon}}"><img class="symbol-sm"
-                                                                                            ng-src="{{modonepath+modone.graphic}}">
-            </div>
+            <!--<div class="milsymbol symbol-smm"><img ng-src="{{currentBoundingOctagon}}"><img class="symbol-sm"-->
+                                                                                            <!--ng-src="{{modonepath+modone.graphic}}">-->
+            <!--</div>-->
+            <symbsetmod1></symbsetmod1>
         </td>
     </tr>
     </tbody>
@@ -94,7 +95,8 @@
     <tr ng-repeat="modtwo in currentSymbolSet.sectorTwoModifiers">
         <td>{{modtwo.label}}</td>
         <td>
-            <div class="milsymbol symbol-smm"><img ng-src="{{currentBoundingOctagon}}"><img class="symbol-sm" ng-src="{{modtwopath+modtwo.graphic}}"></div>
+            <!--<div class="milsymbol symbol-smm"><img ng-src="{{currentBoundingOctagon}}"><img class="symbol-sm" ng-src="{{modtwopath+modtwo.graphic}}"></div>-->
+            <symbsetmod2></symbsetmod2>
         </td>
     </tr>
     </tbody>
