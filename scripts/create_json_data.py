@@ -132,7 +132,6 @@ def extract_single_code_data(tree, element_name, id_name='ID'):
 
 
 def extract_amplifier(tree, folder_name):
-    print "FOlder ", folder_name
     def extract_graphics(element):
         graphics = defaultdict(OrderedDict)
         for graphic_element in element.iter(ns_tag('Graphic')):
@@ -326,6 +325,8 @@ def extract_status_or_hqtfd(tree, element_name, folder_name):
         status_data['label'] = label
         if "LabelAlias" in element.attrib:
             status_data['labelAlias'] = element.get('LabelAlias')
+        if "Graphic" in element.attrib:
+            status_data['graphic'] = element.get('Graphic')
 
         graphics_data = extract_sub_graphics(element)
         if graphics_data:
