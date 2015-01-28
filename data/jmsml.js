@@ -18165,7 +18165,7 @@ var symbolData={
       "id": "DAMAGED", 
       "label": "Present/Damaged", 
       "labelAlias": "Damaged", 
-      "graphic": "3.svg", 
+      "graphic": "OCA/3.svg", 
       "graphics": {
         "SIG_NEUTRAL": {
           "SEA_SURFACE": {
@@ -18290,7 +18290,7 @@ var symbolData={
       "id": "DESTROYED", 
       "label": "Present/Destroyed", 
       "labelAlias": "Destroyed", 
-      "graphic": "4.svg", 
+      "graphic": "OCA/4.svg", 
       "graphics": {
         "SIG_NEUTRAL": {
           "SEA_SURFACE": {

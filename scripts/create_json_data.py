@@ -326,7 +326,7 @@ def extract_status_or_hqtfd(tree, element_name, folder_name):
         if "LabelAlias" in element.attrib:
             status_data['labelAlias'] = element.get('LabelAlias')
         if "Graphic" in element.attrib:
-            status_data['graphic'] = element.get('Graphic')
+            status_data['graphic'] = folder_name + "/" + element.get('Graphic')
 
         graphics_data = extract_sub_graphics(element)
         if graphics_data:
