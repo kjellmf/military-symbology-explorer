@@ -3,6 +3,7 @@ angular.module('symbolApp')
         var symbolIdCode = {};
         var undef = {"label": "Undefined", digits: "00"};
         var SVG_PATH = config.SVG_PATH;
+        var alternateAmplifiers = false;
         symbolIdCode.versionCode1 = "1";
         symbolIdCode.versionCode2 = "0";
         symbolIdCode.context = symbolData.contexts[0];
@@ -52,7 +53,7 @@ angular.module('symbolApp')
 
         function getStatusFn() {
             var sic = symbolIdCode;
-            return pathService.getStatusFilePath(sic.standardIdentity.id, sic.symbolSet, sic.status);
+            return pathService.getStatusFilePath(sic.standardIdentity.id, sic.symbolSet, sic.status, alternateAmplifiers);
         }
 
         function getHqtfdFn() {
@@ -88,6 +89,14 @@ angular.module('symbolApp')
             return fn ? SVG_PATH + symbolIdCode.symbolSet.graphicFolder["modifierTwos"] + "/" + fn + "2.svg" : null;
         }
 
+        function getAlternateAmplifiers() {
+            return alternateAmplifiers;
+        }
+
+        function setAlternateAmplifiers(alternateAmplifiersValue) {
+            alternateAmplifiers = alternateAmplifiersValue;
+        }
+
         return {
             symbId: symbolIdCode,
             getEntityFn: getEntityFn,
@@ -97,6 +106,8 @@ angular.module('symbolApp')
             getAmplifilerFn: getAmplifierFn,
             getModiferOneFn: getModifierOneFn,
             getModiferTwoFn: getModifierTwoFn,
+            getAlternateAmplifiers: getAlternateAmplifiers,
+            setAlternateAmplifiers: setAlternateAmplifiers,
             setStandardIdentity: function (standardIdentity) {
                 symbolIdCode.standardIdentity = standardIdentity;
             },
@@ -162,6 +173,7 @@ angular.module('symbolApp')
         $scope.entityType = symbolIdCodeService.symbId.entityType;
         $scope.entitySubType = symbolIdCodeService.symbId.entitySubType;
         $scope.sectorOneModifier = symbolIdCodeService.symbId.sectorOneModifier;
+        $scope.alternateAmplifiers = symbolIdCodeService.getAlternateAmplifiers();
 
         $scope.changeContext = function (context) {
             symbolIdCodeService.setContext(context);
@@ -189,6 +201,10 @@ angular.module('symbolApp')
 
         $scope.changeStatus = function (status) {
             symbolIdCodeService.setStatus(status);
+        };
+
+        $scope.changeAlternateAmplifiers = function (alternateAmplifiers) {
+            symbolIdCodeService.setAlternateAmplifiers(alternateAmplifiers);
         };
 
         $scope.changeHQTFDummy = function (hqTfDummy) {

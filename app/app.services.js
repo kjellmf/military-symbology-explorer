@@ -38,21 +38,25 @@ angular.module('symbolApp')
             return fn ? config.SVG_PATH + fn : null;
         }
 
-        function getStatusFn(standardIdentityId, symbolSetObj, statusObj) {
-             var dimensionId = symbolSetObj.dimensionId,
+        function getStatusFn(standardIdentityId, symbolSetObj, statusObj, alternateAmplifiers) {
+            var dimensionId = symbolSetObj.dimensionId,
                 fn = "";
-            if (dimensionId && statusObj && standardIdentityId && statusObj.graphics) {
-                var sig = statusObj.graphics[symbolData.standardIdentityGroupMapping[standardIdentityId]];
-                if (sig) {
-                    var dim = sig[dimensionId];
-                    fn = dim ? dim.graphic : null;
+            if (alternateAmplifiers) {
+                if (dimensionId && statusObj && standardIdentityId && statusObj.graphics) {
+                    var sig = statusObj.graphics[symbolData.standardIdentityGroupMapping[standardIdentityId]];
+                    if (sig) {
+                        var dim = sig[dimensionId];
+                        fn = dim ? dim.graphic : null;
+                    }
                 }
+            } else {
+                fn = statusObj.graphic;
             }
             return fn ? config.SVG_PATH + fn : null;
         }
 
         function getHqtfdFn(standardIdentityId, symbolSetObj, hqtfdObj) {
-             var dimensionId = symbolSetObj.dimensionId,
+            var dimensionId = symbolSetObj.dimensionId,
                 fn = "";
             if (dimensionId && hqtfdObj && standardIdentityId && hqtfdObj.graphics) {
                 var sig = hqtfdObj.graphics[symbolData.standardIdentityGroupMapping[standardIdentityId]];
@@ -95,8 +99,8 @@ angular.module('symbolApp')
             getEntityFilePath: getEntityFn,
             getFrameFilePath: getFrameFn,
             getStatusFilePath: getStatusFn,
-            getHqtfdFilePath : getHqtfdFn,
-            getAmplifierFilePath : getAmplifierFn
+            getHqtfdFilePath: getHqtfdFn,
+            getAmplifierFilePath: getAmplifierFn
         }
     }]);
 
