@@ -114,6 +114,10 @@ def extract_element_data(element, tag_name="EntityCode"):
         element_dict['alternativeGraphic'] = element.get('AlternativeGraphic')
     if 'Remarks' in element.attrib:
         element_dict['remarks'] = element.get('Remarks')
+    if "LimitUseTo" in element.attrib:
+        limit_use_to = [element_id for element_id in element.get('LimitUseTo').split(' ') if element_id]
+        limit_use_to.sort()
+        element_dict['limitUseTo'] = limit_use_to
 
     return element_dict
 

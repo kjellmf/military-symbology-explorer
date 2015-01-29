@@ -623,13 +623,19 @@ var symbolData={
           "digits": "38", 
           "label": "ASW Helo - LAMPS", 
           "id": "ASW_HELO_LAMPS_MOD", 
-          "graphic": "01381.svg"
+          "graphic": "01381.svg", 
+          "limitUseTo": [
+            "ROTARY_WING"
+          ]
         }, 
         {
           "digits": "39", 
           "label": "ASW Helo - SH-60R", 
           "id": "ASW_HELO_SH_60R_MOD", 
-          "graphic": "01391.svg"
+          "graphic": "01391.svg", 
+          "limitUseTo": [
+            "ROTARY_WING"
+          ]
         }
       ], 
       "sectorTwoModifiers": [
@@ -655,19 +661,28 @@ var symbolData={
           "digits": "04", 
           "label": "Boom-Only", 
           "id": "BOOM_MOD", 
-          "graphic": "01042.svg"
+          "graphic": "01042.svg", 
+          "limitUseTo": [
+            "TANKER"
+          ]
         }, 
         {
           "digits": "05", 
           "label": "Drogue-Only", 
           "id": "DROGUE_MOD", 
-          "graphic": "01052.svg"
+          "graphic": "01052.svg", 
+          "limitUseTo": [
+            "TANKER"
+          ]
         }, 
         {
           "digits": "06", 
           "label": "Boom and Drogue", 
           "id": "BOOM_DROGUE_MOD", 
-          "graphic": "01062.svg"
+          "graphic": "01062.svg", 
+          "limitUseTo": [
+            "TANKER"
+          ]
         }, 
         {
           "digits": "07", 
@@ -813,31 +828,46 @@ var symbolData={
           "digits": "07", 
           "label": "Patriot", 
           "id": "PATRIOT_MOD", 
-          "graphic": "02072.svg"
+          "graphic": "02072.svg", 
+          "limitUseTo": [
+            "INTERCEPTOR_MOD"
+          ]
         }, 
         {
           "digits": "08", 
           "label": "Standard Missile-2 (SM-2)", 
           "id": "SM2_MOD", 
-          "graphic": "02082.svg"
+          "graphic": "02082.svg", 
+          "limitUseTo": [
+            "INTERCEPTOR_MOD"
+          ]
         }, 
         {
           "digits": "09", 
           "label": "Standard Missile-6 (SM-6)", 
           "id": "SM6_MOD", 
-          "graphic": "02092.svg"
+          "graphic": "02092.svg", 
+          "limitUseTo": [
+            "INTERCEPTOR_MOD"
+          ]
         }, 
         {
           "digits": "10", 
           "label": "Evolved Sea Sparrow Missile (ESSM)", 
           "id": "ESSM_MOD", 
-          "graphic": "02102.svg"
+          "graphic": "02102.svg", 
+          "limitUseTo": [
+            "INTERCEPTOR_MOD"
+          ]
         }, 
         {
           "digits": "11", 
           "label": "Rolling Airframe Missile (RAM)", 
           "id": "RAM_MOD", 
-          "graphic": "02112.svg"
+          "graphic": "02112.svg", 
+          "limitUseTo": [
+            "INTERCEPTOR_MOD"
+          ]
         }, 
         {
           "digits": "12", 
@@ -1174,25 +1204,117 @@ var symbolData={
           "digits": "01", 
           "label": "Optical", 
           "id": "OPTICAL_MOD", 
-          "graphic": "05012.svg"
+          "graphic": "05012.svg", 
+          "limitUseTo": [
+            "ANTISATELLITEWEAPON", 
+            "ASTRONOMICAL_SATELLITE", 
+            "BIOSATELLITE", 
+            "CIV_ASTRONOMICAL_SATELLITE", 
+            "CIV_BIOSATELLITE", 
+            "CIV_COMMUNICATIONS_SATELLITE", 
+            "CIV_EARTH_OBSERVATION_SATELLITE", 
+            "CIV_MINIATURIZED_SATELLITE", 
+            "CIV_NAVIGATIONAL_SATELLITE", 
+            "CIV_SATELLITE", 
+            "CIV_TETHERED_SATELLITE", 
+            "CIV_WEATHER_SATELLITE", 
+            "COMMUNICATIONS_SATELLITE", 
+            "EARTH_OBSERVATION_SATELLITE", 
+            "GENERAL_SATELLITE", 
+            "MINIATURIZED_SATELLITE", 
+            "NAVIGATIONAL_SATELLITE", 
+            "RECONNAISSANCE_SATELLITE", 
+            "SATELLITE", 
+            "TETHERED_SATELLITE", 
+            "WEATHER_SATELLITE"
+          ]
         }, 
         {
           "digits": "02", 
           "label": "Infrared", 
           "id": "INFRARED_MOD", 
-          "graphic": "05022.svg"
+          "graphic": "05022.svg", 
+          "limitUseTo": [
+            "ANTISATELLITEWEAPON", 
+            "ASTRONOMICAL_SATELLITE", 
+            "BIOSATELLITE", 
+            "CIV_ASTRONOMICAL_SATELLITE", 
+            "CIV_BIOSATELLITE", 
+            "CIV_COMMUNICATIONS_SATELLITE", 
+            "CIV_EARTH_OBSERVATION_SATELLITE", 
+            "CIV_MINIATURIZED_SATELLITE", 
+            "CIV_NAVIGATIONAL_SATELLITE", 
+            "CIV_SATELLITE", 
+            "CIV_TETHERED_SATELLITE", 
+            "CIV_WEATHER_SATELLITE", 
+            "COMMUNICATIONS_SATELLITE", 
+            "EARTH_OBSERVATION_SATELLITE", 
+            "GENERAL_SATELLITE", 
+            "MINIATURIZED_SATELLITE", 
+            "NAVIGATIONAL_SATELLITE", 
+            "RECONNAISSANCE_SATELLITE", 
+            "SATELLITE", 
+            "TETHERED_SATELLITE", 
+            "WEATHER_SATELLITE"
+          ]
         }, 
         {
           "digits": "03", 
           "label": "Radar", 
           "id": "RADAR_MOD", 
-          "graphic": "05032.svg"
+          "graphic": "05032.svg", 
+          "limitUseTo": [
+            "ANTISATELLITEWEAPON", 
+            "ASTRONOMICAL_SATELLITE", 
+            "BIOSATELLITE", 
+            "CIV_ASTRONOMICAL_SATELLITE", 
+            "CIV_BIOSATELLITE", 
+            "CIV_COMMUNICATIONS_SATELLITE", 
+            "CIV_EARTH_OBSERVATION_SATELLITE", 
+            "CIV_MINIATURIZED_SATELLITE", 
+            "CIV_NAVIGATIONAL_SATELLITE", 
+            "CIV_SATELLITE", 
+            "CIV_TETHERED_SATELLITE", 
+            "CIV_WEATHER_SATELLITE", 
+            "COMMUNICATIONS_SATELLITE", 
+            "EARTH_OBSERVATION_SATELLITE", 
+            "GENERAL_SATELLITE", 
+            "MINIATURIZED_SATELLITE", 
+            "NAVIGATIONAL_SATELLITE", 
+            "RECONNAISSANCE_SATELLITE", 
+            "SATELLITE", 
+            "TETHERED_SATELLITE", 
+            "WEATHER_SATELLITE"
+          ]
         }, 
         {
           "digits": "04", 
           "label": "Signals Intelligence (SIGINT)", 
           "id": "SIGINT_MOD", 
-          "graphic": "05042.svg"
+          "graphic": "05042.svg", 
+          "limitUseTo": [
+            "ANTISATELLITEWEAPON", 
+            "ASTRONOMICAL_SATELLITE", 
+            "BIOSATELLITE", 
+            "CIV_ASTRONOMICAL_SATELLITE", 
+            "CIV_BIOSATELLITE", 
+            "CIV_COMMUNICATIONS_SATELLITE", 
+            "CIV_EARTH_OBSERVATION_SATELLITE", 
+            "CIV_MINIATURIZED_SATELLITE", 
+            "CIV_NAVIGATIONAL_SATELLITE", 
+            "CIV_SATELLITE", 
+            "CIV_TETHERED_SATELLITE", 
+            "CIV_WEATHER_SATELLITE", 
+            "COMMUNICATIONS_SATELLITE", 
+            "EARTH_OBSERVATION_SATELLITE", 
+            "GENERAL_SATELLITE", 
+            "MINIATURIZED_SATELLITE", 
+            "NAVIGATIONAL_SATELLITE", 
+            "RECONNAISSANCE_SATELLITE", 
+            "SATELLITE", 
+            "TETHERED_SATELLITE", 
+            "WEATHER_SATELLITE"
+          ]
         }
       ], 
       "graphicFolder": {
@@ -1276,37 +1398,55 @@ var symbolData={
           "digits": "06", 
           "label": "Arrow", 
           "id": "ARROW_MOD", 
-          "graphic": "06062.svg"
+          "graphic": "06062.svg", 
+          "limitUseTo": [
+            "INTERCEPTOR_MOD"
+          ]
         }, 
         {
           "digits": "07", 
           "label": "Ground-Based Interceptor (GBI)", 
           "id": "GBI_MOD", 
-          "graphic": "06072.svg"
+          "graphic": "06072.svg", 
+          "limitUseTo": [
+            "INTERCEPTOR_MOD"
+          ]
         }, 
         {
           "digits": "08", 
           "label": "Patriot", 
           "id": "PATRIOT_MOD", 
-          "graphic": "06082.svg"
+          "graphic": "06082.svg", 
+          "limitUseTo": [
+            "INTERCEPTOR_MOD"
+          ]
         }, 
         {
           "digits": "09", 
           "label": "Standard Missile - Terminal Phase (SM-T)", 
           "id": "SMT_MOD", 
-          "graphic": "06092.svg"
+          "graphic": "06092.svg", 
+          "limitUseTo": [
+            "INTERCEPTOR_MOD"
+          ]
         }, 
         {
           "digits": "10", 
           "label": "Standard Missile - 3 (SM-3)", 
           "id": "SM3_MOD", 
-          "graphic": "06102.svg"
+          "graphic": "06102.svg", 
+          "limitUseTo": [
+            "INTERCEPTOR_MOD"
+          ]
         }, 
         {
           "digits": "11", 
           "label": "Terminal High-Altitude Area Defense (THAAD)", 
           "id": "THAAD_MOD", 
-          "graphic": "06112.svg"
+          "graphic": "06112.svg", 
+          "limitUseTo": [
+            "INTERCEPTOR_MOD"
+          ]
         }, 
         {
           "digits": "12", 
@@ -11418,19 +11558,28 @@ var symbolData={
           "digits": "13", 
           "label": "Autonomous Control", 
           "id": "AUTONOMOUS_MOD", 
-          "graphic": "30132.svg"
+          "graphic": "30132.svg", 
+          "limitUseTo": [
+            "CIV_USV"
+          ]
         }, 
         {
           "digits": "14", 
           "label": "Remotely Piloted", 
           "id": "RPV_MOD", 
-          "graphic": "30142.svg"
+          "graphic": "30142.svg", 
+          "limitUseTo": [
+            "CIV_USV"
+          ]
         }, 
         {
           "digits": "15", 
           "label": "Expendable", 
           "id": "EXPENDABLE_MOD", 
-          "graphic": "30152.svg"
+          "graphic": "30152.svg", 
+          "limitUseTo": [
+            "CIV_USV"
+          ]
         }
       ], 
       "graphicFolder": {
@@ -11602,13 +11751,19 @@ var symbolData={
           "digits": "02", 
           "label": "Auxiliary", 
           "id": "AUXILIARY_MOD", 
-          "graphic": "35021.svg"
+          "graphic": "35021.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "03", 
           "label": "Command and Control", 
           "id": "COMMAND_AND_CONTROL_MOD", 
-          "graphic": "35031.svg"
+          "graphic": "35031.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "04", 
@@ -11638,73 +11793,109 @@ var symbolData={
           "digits": "08", 
           "label": "Attack", 
           "id": "ATTACK_MOD", 
-          "graphic": "35081.svg"
+          "graphic": "35081.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "09", 
           "label": "Ballistic Missile", 
           "id": "BALLISTIC_MISSILE_MOD", 
-          "graphic": "35091.svg"
+          "graphic": "35091.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "10", 
           "label": "Guided Missile", 
           "id": "GUIDED_MISSILE_MOD", 
-          "graphic": "35101.svg"
+          "graphic": "35101.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "11", 
           "label": "Other Guided Missile", 
           "id": "OTHER_GUIDED_MISSILE_MOD", 
-          "graphic": "35111.svg"
+          "graphic": "35111.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "12", 
           "label": "Special Operations Forces (SOF)", 
           "id": "SPECIAL_OPERATIONS_FORCES_SOF_MOD", 
-          "graphic": "35121.svg"
+          "graphic": "35121.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "13", 
           "label": "Possible Submarine Low 1", 
           "id": "POSSIBLE_SUBMARINE_LOW_1_MOD", 
-          "graphic": "35131.svg"
+          "graphic": "35131.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "14", 
           "label": "Possible Submarine Low 2", 
           "id": "POSSIBLE_SUBMARINE_LOW_2_MOD", 
-          "graphic": "35141.svg"
+          "graphic": "35141.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "15", 
           "label": "Possible Submarine High 3", 
           "id": "POSSIBLE_SUBMARINE_HIGH_3_MOD", 
-          "graphic": "35151.svg"
+          "graphic": "35151.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "16", 
           "label": "Possible Submarine High 4", 
           "id": "POSSIBLE_SUBMARINE_HIGH_4_MOD", 
-          "graphic": "35161.svg"
+          "graphic": "35161.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "17", 
           "label": "Probable Submarine", 
           "id": "PROBABLE_SUBMARINE_MOD", 
-          "graphic": "35171.svg"
+          "graphic": "35171.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "18", 
           "label": "Certain Submarine", 
           "id": "CERTAIN_SUBMARINE_MOD", 
-          "graphic": "35181.svg"
+          "graphic": "35181.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "19", 
           "label": "Anti-torpedo Torpedo", 
           "id": "ANTI_TORPEDO_TORPEDO_MOD", 
-          "graphic": "35191.svg"
+          "graphic": "35191.svg", 
+          "limitUseTo": [
+            "TORPEDO"
+          ]
         }, 
         {
           "digits": "20", 
@@ -11718,97 +11909,145 @@ var symbolData={
           "digits": "01", 
           "label": "Air Independent Propulsion", 
           "id": "AIR_INDEPENDENT_PROPULSION_MOD", 
-          "graphic": "35012.svg"
+          "graphic": "35012.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "02", 
           "label": "Diesel Electric General", 
           "id": "DIESEL_ELECTRIC_GENERAL_MOD", 
-          "graphic": "35022.svg"
+          "graphic": "35022.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "03", 
           "label": "Diesel - Type 1", 
           "id": "DIESEL___TYPE_1_MOD", 
-          "graphic": "35032.svg"
+          "graphic": "35032.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "04", 
           "label": "Diesel - Type 2", 
           "id": "DIESEL___TYPE_2_MOD", 
-          "graphic": "35042.svg"
+          "graphic": "35042.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "05", 
           "label": "Diesel - Type 3", 
           "id": "DIESEL___TYPE_3_MOD", 
-          "graphic": "35052.svg"
+          "graphic": "35052.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "06", 
           "label": "Nuclear Powered General", 
           "id": "NUCLEAR_POWERED_GENERAL_MOD", 
-          "graphic": "35062.svg"
+          "graphic": "35062.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "07", 
           "label": "Nuclear - Type 1", 
           "id": "NUCLEAR___TYPE_1_MOD", 
-          "graphic": "35072.svg"
+          "graphic": "35072.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "08", 
           "label": "Nuclear - Type 2", 
           "id": "NUCLEAR___TYPE_2_MOD", 
-          "graphic": "35082.svg"
+          "graphic": "35082.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "09", 
           "label": "Nuclear - Type 3", 
           "id": "NUCLEAR___TYPE_3_MOD", 
-          "graphic": "35092.svg"
+          "graphic": "35092.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "10", 
           "label": "Nuclear - Type 4", 
           "id": "NUCLEAR___TYPE_4_MOD", 
-          "graphic": "35102.svg"
+          "graphic": "35102.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "11", 
           "label": "Nuclear - Type 5", 
           "id": "NUCLEAR___TYPE_5_MOD", 
-          "graphic": "35112.svg"
+          "graphic": "35112.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "12", 
           "label": "Nuclear - Type 6", 
           "id": "NUCLEAR___TYPE_6_MOD", 
-          "graphic": "35122.svg"
+          "graphic": "35122.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "13", 
           "label": "Nuclear - Type 7", 
           "id": "NUCLEAR___TYPE_7_MOD", 
-          "graphic": "35132.svg"
+          "graphic": "35132.svg", 
+          "limitUseTo": [
+            "SUBMARINE"
+          ]
         }, 
         {
           "digits": "14", 
           "label": "Autonomous Control", 
           "id": "AUTONOMOUS_CONTROL_MOD", 
-          "graphic": "35142.svg"
+          "graphic": "35142.svg", 
+          "limitUseTo": [
+            "AUV_UUV"
+          ]
         }, 
         {
           "digits": "15", 
           "label": "Remotely Piloted", 
           "id": "REMOTELY_PILOTED_MOD", 
-          "graphic": "35152.svg"
+          "graphic": "35152.svg", 
+          "limitUseTo": [
+            "AUV_UUV"
+          ]
         }, 
         {
           "digits": "16", 
           "label": "Expendable", 
           "id": "EXPENDABLE_MOD", 
-          "graphic": "35162.svg"
+          "graphic": "35162.svg", 
+          "limitUseTo": [
+            "AUV_UUV"
+          ]
         }
       ], 
       "graphicFolder": {
