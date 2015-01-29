@@ -174,6 +174,7 @@ angular.module('symbolApp')
         $scope.entitySubType = symbolIdCodeService.symbId.entitySubType;
         $scope.sectorOneModifier = symbolIdCodeService.symbId.sectorOneModifier;
         $scope.alternateAmplifiers = symbolIdCodeService.getAlternateAmplifiers();
+        $scope.limitUseTo = true;
 
         $scope.changeContext = function (context) {
             symbolIdCodeService.setContext(context);
@@ -253,7 +254,31 @@ angular.module('symbolApp')
             return sid[name] || {"label": "Undefined", "digits": "00"};
 
         };
-    }]);
+    }])
+
+    .filter('limitUseToModFilter', function () {
+        return function (input, scope, isEnabled) {
+            // if isEnable then filter out wines
+            if (isEnabled) {
+                return input.filter(function (item) {
+                    if (item.limitUseTo) {
+                        if ((scope.entitySubType && item.limitUseTo.indexOf(scope.entitySubType.id) >= 0)
+                            || (scope.entityType && item.limitUseTo.indexOf(scope.entityType.id) >= 0)
+                            || (scope.entity && item.limitUseTo.indexOf(scope.entity.id) >= 0)) {
+                            return true;
+                        } else {
+                            return false;
+                        }
+                    } else {
+                        return true
+                    }
+                });
+            }
+            else {
+                return input
+            }
+        };
+    });
 
 
 
