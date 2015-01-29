@@ -59,6 +59,7 @@
 
 <h2 id="modifierone">Modifier one</h2>
 
+
 <table class="table table-bordered table-striped table-hover">
     <thead>
     <tr>
@@ -68,12 +69,9 @@
 
     </thead>
     <tbody>
-    <tr ng-repeat="modone in currentSymbolSet.sectorOneModifiers">
-        <td>{{modone.label}}</td>
+    <tr ng-repeat="modone in currentSymbolSet.sectorOneModifiers | limitUseToFilter:isEnabled">
+        <td title="{{modone.limitUseTo}}">{{modone.label}}</td>
         <td>
-            <!--<div class="milsymbol symbol-smm"><img ng-src="{{currentBoundingOctagon}}"><img class="symbol-sm"-->
-                                                                                            <!--ng-src="{{modonepath+modone.graphic}}">-->
-            <!--</div>-->
             <symbsetmod1></symbsetmod1>
         </td>
     </tr>
@@ -92,8 +90,8 @@
 
     </thead>
     <tbody>
-    <tr ng-repeat="modtwo in currentSymbolSet.sectorTwoModifiers">
-        <td>{{modtwo.label}}</td>
+    <tr ng-repeat="modtwo in currentSymbolSet.sectorTwoModifiers | limitUseToFilter:isEnabled">
+        <td title="{{modtwo.limitUseTo}}">{{modtwo.label}}</td>
         <td>
             <!--<div class="milsymbol symbol-smm"><img ng-src="{{currentBoundingOctagon}}"><img class="symbol-sm" ng-src="{{modtwopath+modtwo.graphic}}"></div>-->
             <symbsetmod2></symbsetmod2>
