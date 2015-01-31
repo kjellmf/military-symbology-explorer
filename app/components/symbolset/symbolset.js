@@ -180,5 +180,18 @@ angular.module('symbolApp')
             },
             link: link
         };
-    }]);
+    }])
+
+    .filter('limitUseToFilter', function () {
+        return function (input, isEnabled) {
+            // if isEnable then filter out wines
+            if (isEnabled) {
+                return input.filter(function (item) { return item.limitUseTo});
+            }
+            else {
+                return input
+            }
+        };
+    });
+
 
