@@ -18,19 +18,27 @@ angular.module('symbolApp')
             return fn ? config.SVG_PATH + symbolSetObj.graphicFolder["entities"] + "/" + fn : null;
         }
 
-        function getFrameFn(contextId, standardIdentityId, symbolSetObj, status) {
+        function getFrameFn(contextId, standardIdentityId, symbolSetObj, status, useCivilianFrame) {
             var dimensionId = symbolSetObj.dimensionId,
                 fn = "";
             if (dimensionId && contextId && standardIdentityId) {
                 var a1 = symbolData.affiliations[contextId];
                 if (a1) {
                     var a2 = a1[dimensionId];
-                    if (a2) {
+                    if (a2 && a2[standardIdentityId]) {
                         var a3 = a2[standardIdentityId];
                         if (status && status.digits == "1") {
-                            fn = a3 ? a3.plannedGraphic : null;
+                            if (useCivilianFrame && a3.plannedCivilianGraphic) {
+                                fn = a3.plannedCivilianGraphic;
+                            } else {
+                                fn = a3.plannedGraphic;
+                            }
                         } else {
-                            fn = a3 ? a3.graphic : null;
+                            if (useCivilianFrame && a3.civilianGraphic) {
+                                fn = a3.civilianGraphic;
+                            } else {
+                                fn = a3.graphic;
+                            }
                         }
                     }
                 }

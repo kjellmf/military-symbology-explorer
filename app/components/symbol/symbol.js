@@ -18,6 +18,7 @@ angular.module('symbolApp')
         symbolIdCode.entitySubType = symbolIdCode.entityType.entitySubTypes[0];
         symbolIdCode.sectorOneModifier = null;
         symbolIdCode.sectorTwoModifier = null;
+        symbolIdCode.useCivilianFrame = false;
 
 
         function computeSymbolIdentificationCode() {
@@ -48,7 +49,7 @@ angular.module('symbolApp')
 
         function getFrameFn() {
             var sic = symbolIdCode;
-            return pathService.getFrameFilePath(sic.context.id, sic.standardIdentity.id, sic.symbolSet, sic.status);
+            return pathService.getFrameFilePath(sic.context.id, sic.standardIdentity.id, sic.symbolSet, sic.status, sic.useCivilianFrame);
         }
 
         function getStatusFn() {
@@ -258,7 +259,6 @@ angular.module('symbolApp')
 
     .filter('limitUseToModFilter', function () {
         return function (input, scope, isEnabled) {
-            // if isEnable then filter out wines
             if (isEnabled) {
                 return input.filter(function (item) {
                     if (item.limitUseTo) {
@@ -275,7 +275,7 @@ angular.module('symbolApp')
                 });
             }
             else {
-                return input
+                return input;
             }
         };
     });
