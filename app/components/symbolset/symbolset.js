@@ -10,46 +10,18 @@ angular.module('symbolApp')
             .state('symbolSet.symboltable', {url: "#symboltable"})
             .state('symbolSet.modifierone', {url: "#modifierone"})
             .state('symbolSet.modifiertwo', {url: "#modifiertwo"})
-
     })
 
     .factory('currentSymbol', ['$log', 'config', function ($log, config) {
-        var entity = config.BLANK_PATH,
-            entityFn = config.BLANK_PATH,
-            frameFn = config.BLANK_PATH,
-            mod1Fn = config.BLANK_PATH,
-            mod2Fn = config.BLANK_PATH;
+        var symb = {
+            entity: null,
+            entityFn: config.BLANK_PATH,
+            frameFn: config.BLANK_PATH,
+            mod1Fn: config.BLANK_PATH,
+            mod2Fn: config.BLANK_PATH
+        };
         return {
-            setEntity: function (newEntity) {
-                entity = newEntity;
-            },
-            getEntity: function () {
-                return entity
-            },
-            setEntityFn: function (myEntityFn) {
-                entityFn = myEntityFn;
-            },
-            getEntityFn: function () {
-                return entityFn;
-            },
-            setFrameFn: function (myFrameFn) {
-                frameFn = myFrameFn;
-            },
-            getFrameFn: function () {
-                return frameFn;
-            },
-            setMod1Fn: function (myMod1Fn) {
-                mod1Fn = myMod1Fn;
-            },
-            getMod1Fn: function () {
-                return mod1Fn;
-            },
-            setMod2Fn: function (myMod2Fn) {
-                mod2Fn = myMod2Fn;
-            },
-            getMod2Fn: function () {
-                return mod2Fn;
-            }
+            symb: symb
         };
     }])
 
@@ -64,11 +36,7 @@ angular.module('symbolApp')
         } else {
             $scope.currentSymbolSet = symbolIdCodeService.symbId.symbolSet;
         }
-
-        //$scope.frame = symbolIdCodeService.getFrameFn;
-        //$scope.main = symbolIdCodeService.getEntityFn;
         $scope.symbolData = symbolData;
-
 
         var SVG_PATH = config.SVG_PATH;
         $scope.SVG_PATH = SVG_PATH;
@@ -85,7 +53,6 @@ angular.module('symbolApp')
         };
 
         $scope.changeSymbolSet($scope.currentSymbolSet);
-
         $scope.getLabel = function (element) {
             return element.digits + " " + element.label;
         };
@@ -93,38 +60,28 @@ angular.module('symbolApp')
 
     .controller('SidebarCtrl', ['$scope', 'currentSymbol', function ($scope, currentSymbol) {
         $scope.currentSymbolSet = $scope.$parent.currentSymbolSet;
-        $scope.entity = currentSymbol.getEntity;
-        $scope.entityFn = currentSymbol.getEntityFn;
-        $scope.frameFn = currentSymbol.getFrameFn;
-        $scope.modOneFn = currentSymbol.getMod1Fn;
-        $scope.modTwoFn = currentSymbol.getMod2Fn;
+        $scope.symb = currentSymbol.symb;
     }])
 
     .directive('symbsetsymb', ['$log', 'config', 'pathService', 'currentSymbol', function ($log, config, pathService, currentSymbol) {
 
         function link(scope, element, attrs) {
-            //var sicObj = processSIC(scope.sic, scope.alternative);
             scope.entityFn = "";
             var currentSymbolSet = scope.$parent.currentSymbolSet;
             var dimensionId = currentSymbolSet.dimensionId,
                 contextId = 'REALITY',
                 siId = scope.si || "SI_UNKNOWN";
-            // Get main icon
 
             var gg = scope.entity;
-
             scope.entityFn = pathService.getEntityFilePath(scope.entity, currentSymbolSet, siId) || config.BLANK_PATH;
             scope.frameFn = pathService.getFrameFilePath(contextId, siId, currentSymbolSet) || config.BLANK_PATH;
             element.bind('click', function () {
                 scope.$apply(function () {
-                    currentSymbol.setEntity(scope.entity);
-                    currentSymbol.setEntityFn(scope.entityFn);
-                    currentSymbol.setFrameFn(scope.frameFn);
+                    currentSymbol.symb.entity = scope.entity;
+                    currentSymbol.symb.entityFn = scope.entityFn;
+                    currentSymbol.symb.frameFn = scope.frameFn;
                 });
-
-                $log.debug('Click ' + scope.si + " " + scope.entity.label);
             })
-
         }
 
         return {
@@ -142,14 +99,11 @@ angular.module('symbolApp')
 
     .directive('symbsetmod1', ['$log', 'config', 'pathService', 'currentSymbol', function ($log, config, pathService, currentSymbol) {
         function link(scope, element, attrs) {
-
             element.bind('click', function () {
                 scope.$apply(function () {
-                    currentSymbol.setMod1Fn(scope.modonepath + scope.modone.graphic);
+                    currentSymbol.symb.mod1Fn = scope.modonepath + scope.modone.graphic;
                 });
-
-                $log.debug('Click ' + scope.modone.label);
-            })
+            });
         }
 
         return {
@@ -163,14 +117,11 @@ angular.module('symbolApp')
 
     .directive('symbsetmod2', ['$log', 'config', 'pathService', 'currentSymbol', function ($log, config, pathService, currentSymbol) {
         function link(scope, element, attrs) {
-
             element.bind('click', function () {
                 scope.$apply(function () {
-                    currentSymbol.setMod2Fn(scope.modtwopath + scope.modtwo.graphic);
+                    currentSymbol.symb.mod2Fn = scope.modtwopath + scope.modtwo.graphic;
                 });
-
-                $log.debug('Click ' + scope.modtwo.label);
-            })
+            });
         }
 
         return {
@@ -184,11 +135,11 @@ angular.module('symbolApp')
 
     .filter('limitUseToFilter', function () {
         return function (input, isEnabled) {
-            // if isEnable then filter out wines
             if (isEnabled) {
-                return input.filter(function (item) { return item.limitUseTo});
-            }
-            else {
+                return input.filter(function (item) {
+                    return item.limitUseTo
+                });
+            } else {
                 return input
             }
         };
