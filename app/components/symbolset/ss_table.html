@@ -21,10 +21,6 @@
         <td><symbsetsymb entity="entity" si="SI_FRIEND"></symbsetsymb></td>
         <td><symbsetsymb entity="entity" si="SI_NEUTRAL"></symbsetsymb></td>
         <td><symbsetsymb entity="entity" si="SI_HOSTILE_FAKER"></symbsetsymb></td>
-
-        <!--<div class="symbol-sm">-->
-        <!--<div class="milsymb" ng-include="frame()"></div>-->
-        <!--</div>-->
         <td><b>{{entity.digits}}</b>0000</td>
         <td>{{entity.remarks}}</td>
     </tr>
@@ -53,8 +49,6 @@
     <tr ng-repeat-end></tr>
 
     </tbody>
-
-    <!--d as getLabel(d) for d in currentSymbolSet.entities-->
 </table>
 
 <h2 id="modifierone">Modifier one</h2>
@@ -63,17 +57,21 @@
 <table class="table table-bordered table-striped table-hover">
     <thead>
     <tr>
-        <th class="col-md-6">Name</th>
-        <th class="col-md-6">Img</th>
+        <th class="col-md-5">Name</th>
+        <th class="col-md-3">Category</th>
+        <th class="col-md-2">Symbol</th>
+        <th class="col-md-2">Digits</th>
     </tr>
 
     </thead>
     <tbody>
     <tr ng-repeat="modone in currentSymbolSet.sectorOneModifiers | limitUseToFilter:isEnabled">
         <td title="{{modone.limitUseTo}}">{{modone.label}}</td>
+        <td>{{modone.category}}</td>
         <td>
             <symbsetmod1></symbsetmod1>
         </td>
+        <td>{{modone.digits}}</td>
     </tr>
     </tbody>
 </table>
@@ -84,18 +82,21 @@
 <table class="table table-bordered table-striped table-hover">
     <thead>
     <tr>
-        <th class="col-md-6">Name</th>
-        <th class="col-md-6">Img</th>
+        <th class="col-md-5">Name</th>
+        <th class="col-md-3">Category</th>
+        <th class="col-md-2">Symbol</th>
+        <th class="col-md-2">Digits</th>
     </tr>
 
     </thead>
     <tbody>
     <tr ng-repeat="modtwo in currentSymbolSet.sectorTwoModifiers | limitUseToFilter:isEnabled">
         <td title="{{modtwo.limitUseTo}}">{{modtwo.label}}</td>
+        <td>{{modtwo.category}}</td>
         <td>
-            <!--<div class="milsymbol symbol-smm"><img ng-src="{{currentBoundingOctagon}}"><img class="symbol-sm" ng-src="{{modtwopath+modtwo.graphic}}"></div>-->
             <symbsetmod2></symbsetmod2>
         </td>
+        <td>{{modtwo.digits}}</td>
     </tr>
     </tbody>
 </table>
