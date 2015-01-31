@@ -109,7 +109,6 @@ def extract_element_data(element, tag_name="EntityCode"):
         element_dict['diamondGraphic'] = element.get('DiamondGraphic')
         element_dict['rectangleGraphic'] = element.get('RectangleGraphic')
         element_dict['squareGraphic'] = element.get('SquareGraphic')
-        element_dict['icon'] = element.get('Icon')
     if 'AlternativeGraphic' in element.attrib:
         element_dict['alternativeGraphic'] = element.get('AlternativeGraphic')
     if 'Remarks' in element.attrib:
@@ -120,6 +119,8 @@ def extract_element_data(element, tag_name="EntityCode"):
         element_dict['limitUseTo'] = limit_use_to
     if "Category" in element.attrib:
         element_dict["category"] = element.get('Category')
+    if "Icon" in element.attrib:
+        element_dict['icon'] = element.get('Icon')
 
     return element_dict
 

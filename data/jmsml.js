@@ -391,6 +391,7 @@ var symbolData={
           "label": "Manual Track", 
           "id": "MANUAL_TRACK", 
           "graphic": "01140000.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": []
         }
       ], 
@@ -1232,6 +1233,7 @@ var symbolData={
           "label": "Manual Track", 
           "id": "MANUAL_TRACK", 
           "graphic": "05130000.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": []
         }
       ], 
@@ -1579,6 +1581,7 @@ var symbolData={
               "label": "Broadcast Transmitter Antennae", 
               "id": "BROADCAST_TRANSMITTER_ANTENNAE", 
               "graphic": "10110100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -1619,7 +1622,8 @@ var symbolData={
                   "digits": "01", 
                   "label": "Broadcast Transmitter Antennae", 
                   "id": "BROADCAST_TRANSMITTER_ANTENNAE_MISO", 
-                  "graphic": "10110601.svg"
+                  "graphic": "10110601.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -1727,6 +1731,7 @@ var symbolData={
           "label": "Movement and Maneuver", 
           "id": "MOVEMENT_AND_MANEUVER", 
           "remarks": "No icon is associated with this entity. It is for hiearchical purposes only.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -2023,7 +2028,8 @@ var symbolData={
                   "digits": "01", 
                   "label": "Fixed Wing MISO", 
                   "id": "FIXED_WING_MISO", 
-                  "graphic": "10121801.svg"
+                  "graphic": "10121801.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
@@ -2039,13 +2045,15 @@ var symbolData={
                   "digits": "03", 
                   "label": "Special Boat", 
                   "id": "SPECIAL_BOAT", 
-                  "graphic": "10121803.svg"
+                  "graphic": "10121803.svg", 
+                  "icon": "MAIN_1"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Special SSNR", 
                   "id": "SPECIAL_SSNR", 
-                  "graphic": "10121804.svg"
+                  "graphic": "10121804.svg", 
+                  "icon": "MAIN_1"
                 }, 
                 {
                   "digits": "05", 
@@ -2069,6 +2077,7 @@ var symbolData={
           "label": "Fires", 
           "id": "FIRES", 
           "remarks": "No icon is associated with this entity. It is for hiearchical purposes only.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -2175,19 +2184,22 @@ var symbolData={
                   "digits": "01", 
                   "label": "Armored/Mechanized/Tracked", 
                   "id": "ARMORED_MECHANIZED_TRACKED", 
-                  "graphic": "10130801.svg"
+                  "graphic": "10130801.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Self-Propelled Wheeled", 
                   "id": "SELF_PROPELLED_WHEELED", 
-                  "graphic": "10130802.svg"
+                  "graphic": "10130802.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Towed", 
                   "id": "TOWED", 
-                  "graphic": "10130803.svg"
+                  "graphic": "10130803.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -2205,6 +2217,7 @@ var symbolData={
           "label": "Protection", 
           "id": "PROTECTION", 
           "remarks": "No icon is associated with this entity. It is for hierarchical purposes only.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -2341,6 +2354,7 @@ var symbolData={
               "label": "Field Camp Construction", 
               "id": "FIELD_CAMP_CONSTRUCTION", 
               "graphic": "10140900.svg", 
+              "icon": "MAIN_1", 
               "entitySubTypes": []
             }, 
             {
@@ -2376,6 +2390,7 @@ var symbolData={
               "label": "Mine Clearing", 
               "id": "MINE_CLEARING", 
               "graphic": "10141400.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -2383,6 +2398,7 @@ var symbolData={
               "label": "Mine Launching", 
               "id": "MINE_LAUNCHING", 
               "graphic": "10141500.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -2390,6 +2406,7 @@ var symbolData={
               "label": "Mine Laying", 
               "id": "MINE_LAYING", 
               "graphic": "10141600.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -2428,6 +2445,7 @@ var symbolData={
               "label": "Security Police (Air)", 
               "id": "SECURITY_POLICE_AIR", 
               "graphic": "10141900.svg", 
+              "icon": "MAIN_2", 
               "entitySubTypes": []
             }, 
             {
@@ -2451,12 +2469,14 @@ var symbolData={
           "label": "Intelligence", 
           "id": "INTELLIGENCE", 
           "remarks": "No icon is associated with this entity. It is for hierarchical purposes only.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Analysis", 
               "id": "ANALYSIS", 
               "graphic": "10150100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -2471,6 +2491,7 @@ var symbolData={
               "label": "Direction Finding", 
               "id": "DIRECTION_FINDING", 
               "graphic": "10150300.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -2490,7 +2511,8 @@ var symbolData={
                   "digits": "01", 
                   "label": "Analysis", 
                   "id": "EW_ANALYSIS", 
-                  "graphic": "10150501.svg"
+                  "graphic": "10150501.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
@@ -2518,7 +2540,8 @@ var symbolData={
                   "digits": "05", 
                   "label": "Search", 
                   "id": "EW_SEARCH", 
-                  "graphic": "10150505.svg"
+                  "graphic": "10150505.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -2527,6 +2550,7 @@ var symbolData={
               "label": "Intercept (Search and Recording)", 
               "id": "INTERCEPT_SEARCH_RECORDING", 
               "graphic": "10150600.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -2566,6 +2590,7 @@ var symbolData={
               "label": "Search", 
               "id": "SEARCH", 
               "graphic": "10151100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -2606,6 +2631,7 @@ var symbolData={
               "label": "Airport of Debarkation/Airport of Embarkation", 
               "id": "AIRPORT_DEBARKATION_AIRPORT_EMBARKATION", 
               "graphic": "10160300.svg", 
+              "icon": "MAIN_1", 
               "entitySubTypes": []
             }, 
             {
@@ -2831,6 +2857,7 @@ var symbolData={
               "label": "Railhead", 
               "id": "RAILHEAD", 
               "graphic": "10163000.svg", 
+              "icon": "MAIN_1", 
               "entitySubTypes": []
             }, 
             {
@@ -2852,6 +2879,7 @@ var symbolData={
               "label": "Sea Port of Debarkation/Sea Port of Embarkation", 
               "id": "SEA_PORT_DEBARKATION_SEA_PORT_EMBARKATION", 
               "graphic": "10163300.svg", 
+              "icon": "MAIN_1", 
               "entitySubTypes": []
             }, 
             {
@@ -3017,6 +3045,7 @@ var symbolData={
           "label": "Naval", 
           "id": "NAVAL", 
           "remarks": "No icon is associated with this entity. It is for hierarchical purposes only.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -3032,6 +3061,7 @@ var symbolData={
           "label": "Named Headquarters", 
           "id": "NAMED_HEADQUARTERS", 
           "remarks": "No icon is associated with this entity. It is for hierarchical purposes only.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -3068,6 +3098,7 @@ var symbolData={
           "label": "Emergency Operation", 
           "id": "EMERGENCY_OPERATION", 
           "graphic": "10190000.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": []
         }, 
         {
@@ -3075,6 +3106,7 @@ var symbolData={
           "label": "Law Enforcement", 
           "id": "LAW_ENFORCEMENT", 
           "graphic": "10200000.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -3088,6 +3120,7 @@ var symbolData={
               "label": "Border Patrol", 
               "id": "BORDER_PATROL", 
               "graphic": "10200200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -3095,6 +3128,7 @@ var symbolData={
               "label": "Customs Service", 
               "id": "CUSTOMS_SERVICE", 
               "graphic": "10200300.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -3109,6 +3143,7 @@ var symbolData={
               "label": "Department of Justice (DOJ)", 
               "id": "DEPARTMENT_JUSTICE_DOJ", 
               "graphic": "10200500.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -3130,6 +3165,7 @@ var symbolData={
               "label": "Prison", 
               "id": "PRISON", 
               "graphic": "10200800.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -3151,6 +3187,7 @@ var symbolData={
               "label": "Coast Guard", 
               "id": "COAST_GUARD", 
               "graphic": "10201100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -3158,6 +3195,7 @@ var symbolData={
               "label": "US Marshals Service", 
               "id": "US_MARSHALS_SERVICE", 
               "graphic": "10201200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -4206,6 +4244,7 @@ var symbolData={
               "label": "Emergency Medical Operation", 
               "id": "EMERGENCY_MEDICAL_OPERATION", 
               "graphic": "11111000.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }
           ]
@@ -4409,30 +4448,35 @@ var symbolData={
           "id": "WEAPON_SYSTEM", 
           "graphic": "15110000.svg", 
           "remarks": "This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes.", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Rifle", 
               "id": "RIFLE", 
               "graphic": "15110100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Single Shot Rifle", 
                   "id": "SINGLE_SHOT_RIFLE", 
-                  "graphic": "15110101.svg"
+                  "graphic": "15110101.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Semiautomatic Rifle", 
                   "id": "SEMIAUTOMATIC_RIFLE", 
-                  "graphic": "15110102.svg"
+                  "graphic": "15110102.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Automatic Rifle", 
                   "id": "AUTOMATIC_RIFLE", 
-                  "graphic": "15110103.svg"
+                  "graphic": "15110103.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -4441,24 +4485,28 @@ var symbolData={
               "label": "Machine Gun", 
               "id": "MACHINE_GUN", 
               "graphic": "15110200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Light", 
                   "id": "MG_LIGHT", 
-                  "graphic": "15110201.svg"
+                  "graphic": "15110201.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Medium", 
                   "id": "MG_MEDIUM", 
-                  "graphic": "15110202.svg"
+                  "graphic": "15110202.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Heavy", 
                   "id": "MG_HEAVY", 
-                  "graphic": "15110203.svg"
+                  "graphic": "15110203.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -4467,24 +4515,28 @@ var symbolData={
               "label": "Grenade Launcher", 
               "id": "GRENADE_LAUNCHER", 
               "graphic": "15110300.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Light", 
                   "id": "GRENADE_LAUNCHER_LIGHT", 
-                  "graphic": "15110301.svg"
+                  "graphic": "15110301.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Medium", 
                   "id": "GRENADE_LAUNCHER_MEDIUM", 
-                  "graphic": "15110302.svg"
+                  "graphic": "15110302.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Heavy", 
                   "id": "GRENADE_LAUNCHER_HEAVY", 
-                  "graphic": "15110303.svg"
+                  "graphic": "15110303.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -4493,6 +4545,7 @@ var symbolData={
               "label": "Flame Thrower", 
               "id": "FLAME_THROWER", 
               "graphic": "15110400.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -4500,24 +4553,28 @@ var symbolData={
               "label": "Air Defense Gun", 
               "id": "AIR_DEFENSE_GUN", 
               "graphic": "15110500.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Light", 
                   "id": "AIR_DEFENSE_GUN_LIGHT", 
-                  "graphic": "15110501.svg"
+                  "graphic": "15110501.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Medium", 
                   "id": "AIR_DEFENSE_GUN_MEDIUM", 
-                  "graphic": "15110502.svg"
+                  "graphic": "15110502.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Heavy", 
                   "id": "AIR_DEFENSE_GUN_HEAVY", 
-                  "graphic": "15110503.svg"
+                  "graphic": "15110503.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -4526,24 +4583,28 @@ var symbolData={
               "label": "Antitank Gun", 
               "id": "ANTITANK_GUN", 
               "graphic": "15110600.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Light", 
                   "id": "ANTITANK_GUN_LIGHT", 
-                  "graphic": "15110601.svg"
+                  "graphic": "15110601.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Medium", 
                   "id": "ANTITANK_GUN_MEDIUM", 
-                  "graphic": "15110602.svg"
+                  "graphic": "15110602.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Heavy", 
                   "id": "ANTITANK_GUN_HEAVY", 
-                  "graphic": "15110603.svg"
+                  "graphic": "15110603.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -4552,24 +4613,28 @@ var symbolData={
               "label": "Direct Fire Gun", 
               "id": "DIRECT_FIRE_GUN", 
               "graphic": "15110700.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Light", 
                   "id": "DIRECT_FIRE_GUN_LIGHT", 
-                  "graphic": "15110701.svg"
+                  "graphic": "15110701.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Medium", 
                   "id": "DIRECT_FIRE_GUN_MEDIUM", 
-                  "graphic": "15110702.svg"
+                  "graphic": "15110702.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Heavy", 
                   "id": "DIRECT_FIRE_GUN_HEAVY", 
-                  "graphic": "15110703.svg"
+                  "graphic": "15110703.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -4578,24 +4643,28 @@ var symbolData={
               "label": "Recoilless Gun", 
               "id": "RECOILLESS_GUN", 
               "graphic": "15110800.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Light", 
                   "id": "RECOILLESS_GUN_LIGHT", 
-                  "graphic": "15110801.svg"
+                  "graphic": "15110801.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Medium", 
                   "id": "RECOILLESS_GUN_MEDIUM", 
-                  "graphic": "15110802.svg"
+                  "graphic": "15110802.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Heavy", 
                   "id": "RECOILLESS_GUN_HEAVY", 
-                  "graphic": "15110803.svg"
+                  "graphic": "15110803.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -4604,24 +4673,28 @@ var symbolData={
               "label": "Howitzer", 
               "id": "HOWITZER", 
               "graphic": "15110900.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Light", 
                   "id": "HOWITZER_LIGHT", 
-                  "graphic": "15110901.svg"
+                  "graphic": "15110901.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Medium", 
                   "id": "HOWITZER_MEDIUM", 
-                  "graphic": "15110902.svg"
+                  "graphic": "15110902.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Heavy", 
                   "id": "HOWITZER_HEAVY", 
-                  "graphic": "15110903.svg"
+                  "graphic": "15110903.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -4630,24 +4703,28 @@ var symbolData={
               "label": "Missile Launcher", 
               "id": "MISSILE_LAUNCHER", 
               "graphic": "15111000.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Light", 
                   "id": "MISSILE_LAUNCHER_LIGHT", 
-                  "graphic": "15111001.svg"
+                  "graphic": "15111001.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Medium", 
                   "id": "MISSILE_LAUNCHER_MEDIUM", 
-                  "graphic": "15111002.svg"
+                  "graphic": "15111002.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Heavy", 
                   "id": "MISSILE_LAUNCHER_HEAVY", 
-                  "graphic": "15111003.svg"
+                  "graphic": "15111003.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -4656,60 +4733,70 @@ var symbolData={
               "label": "Air Defense Missile Launcher", 
               "id": "AIR_DEFENSE_MISSILE_LAUNCHER", 
               "graphic": "15111100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Light", 
                   "id": "AIR_DEFENSE_MISSILE_LIGHT", 
-                  "graphic": "15111101.svg"
+                  "graphic": "15111101.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Light, Light Transporter-Launcher and Radar (TLAR)", 
                   "id": "AIR_DEFENSE_MISSILE_LIGHT_TLAR", 
-                  "graphic": "15111102.svg"
+                  "graphic": "15111102.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Light, Light Tactical Landing Approach Radar (TELAR)", 
                   "id": "AIR_DEFENSE_MISSILE_LIGHT_TELAR", 
-                  "graphic": "15111103.svg"
+                  "graphic": "15111103.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Medium", 
                   "id": "AIR_DEFENSE_MISSILE_MEDIUM", 
-                  "graphic": "15111104.svg"
+                  "graphic": "15111104.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Medium, TLAR", 
                   "id": "AIR_DEFENSE_MISSILE_MEDIUM_TLAR", 
-                  "graphic": "15111105.svg"
+                  "graphic": "15111105.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "06", 
                   "label": "Medium, TELAR Air Defense Missile Launcher", 
                   "id": "AIR_DEFENSE_MISSILE_MEDIUM_TELAR", 
-                  "graphic": "15111106.svg"
+                  "graphic": "15111106.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "07", 
                   "label": "Heavy", 
                   "id": "AIR_DEFENSE_MISSILE_HEAVY", 
-                  "graphic": "15111107.svg"
+                  "graphic": "15111107.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "08", 
                   "label": "Heavy, TLAR", 
                   "id": "AIR_DEFENSE_MISSILE_HEAVY_TLAR", 
-                  "graphic": "15111108.svg"
+                  "graphic": "15111108.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "09", 
                   "label": "Heavy, TELAR", 
                   "id": "AIR_DEFENSE_MISSILE_HEAVY_TELAR", 
-                  "graphic": "15111109.svg"
+                  "graphic": "15111109.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -4718,24 +4805,28 @@ var symbolData={
               "label": "Antitank Missile Launcher", 
               "id": "ANTITANK_MISSILE_LAUNCHER", 
               "graphic": "15111200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Light", 
                   "id": "ANTITANK_MISSILE_LAUNCHER_LIGHT", 
-                  "graphic": "15111201.svg"
+                  "graphic": "15111201.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Medium", 
                   "id": "ANTITANK_MISSILE_LAUNCHER_MEDIUM", 
-                  "graphic": "15111202.svg"
+                  "graphic": "15111202.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Heavy", 
                   "id": "ANTITANK_MISSILE_LAUNCHER_HEAVY", 
-                  "graphic": "15111203.svg"
+                  "graphic": "15111203.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -4744,24 +4835,28 @@ var symbolData={
               "label": "Surface-to-Surface Missile Launcher", 
               "id": "SURFACE_TO_SURFACE_MISSILE_LAUNCHER", 
               "graphic": "15111300.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Light", 
                   "id": "SURFACE_TO_SURFACE_MISSILE_LIGHT", 
-                  "graphic": "15111301.svg"
+                  "graphic": "15111301.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Medium", 
                   "id": "SURFACE_TO_SURFACE_MISSILE_MEDIUM", 
-                  "graphic": "15111302.svg"
+                  "graphic": "15111302.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Heavy", 
                   "id": "SURFACE_TO_SURFACE_MISSILE_HEAVY", 
-                  "graphic": "15111303.svg"
+                  "graphic": "15111303.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -4770,24 +4865,28 @@ var symbolData={
               "label": "Mortar", 
               "id": "MORTAR", 
               "graphic": "15111400.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Light", 
                   "id": "MORTAR_LIGHT", 
-                  "graphic": "15111401.svg"
+                  "graphic": "15111401.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Medium", 
                   "id": "MORTAR_MEDIUM", 
-                  "graphic": "15111402.svg"
+                  "graphic": "15111402.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Heavy", 
                   "id": "MORTAR_HEAVY", 
-                  "graphic": "15111403.svg"
+                  "graphic": "15111403.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -4796,24 +4895,28 @@ var symbolData={
               "label": "Single Rocket Launcher", 
               "id": "SINGLE_ROCKET_LAUNCHER", 
               "graphic": "15111500.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Light", 
                   "id": "SINGLE_ROCKET_LIGHT", 
-                  "graphic": "15111501.svg"
+                  "graphic": "15111501.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Medium", 
                   "id": "SINGLE_ROCKET_MEDIUM", 
-                  "graphic": "15111502.svg"
+                  "graphic": "15111502.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Heavy", 
                   "id": "SINGLE_ROCKET_HEAVY", 
-                  "graphic": "15111503.svg"
+                  "graphic": "15111503.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -4822,24 +4925,28 @@ var symbolData={
               "label": "Multiple Rocket Launcher", 
               "id": "MULTIPLE_ROCKET_LAUNCHER", 
               "graphic": "15111600.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Light", 
                   "id": "MULTIPLE_ROCKET_LIGHT", 
-                  "graphic": "15111601.svg"
+                  "graphic": "15111601.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Medium", 
                   "id": "MULTIPLE_ROCKET_MEDIUM", 
-                  "graphic": "15111602.svg"
+                  "graphic": "15111602.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Heavy", 
                   "id": "MULTIPLE_ROCKET_HEAVY", 
-                  "graphic": "15111603.svg"
+                  "graphic": "15111603.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -4848,24 +4955,28 @@ var symbolData={
               "label": "Antitank Rocket Launcher", 
               "id": "ANTITANK_ROCKET_LAUNCHER", 
               "graphic": "15111700.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Light", 
                   "id": "ANTITANK_ROCKET_LIGHT", 
-                  "graphic": "15111701.svg"
+                  "graphic": "15111701.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Medium", 
                   "id": "ANTITANK_ROCKET_MEDIUM", 
-                  "graphic": "15111702.svg"
+                  "graphic": "15111702.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Heavy", 
                   "id": "ANTITANK_ROCKET_HEAVY", 
-                  "graphic": "15111703.svg"
+                  "graphic": "15111703.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -4874,6 +4985,7 @@ var symbolData={
               "label": "Nonlethal Weapon", 
               "id": "NONLETHAL_WEAPON", 
               "graphic": "15111800.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -4881,6 +4993,7 @@ var symbolData={
               "label": "Taser", 
               "id": "TASER", 
               "graphic": "15111900.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -4888,6 +5001,7 @@ var symbolData={
               "label": "Water Cannon", 
               "id": "WATER_CANNON", 
               "graphic": "15112000.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }
           ]
@@ -4898,36 +5012,42 @@ var symbolData={
           "id": "VEHICLE", 
           "graphic": "15120000.svg", 
           "remarks": "This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Armored Vehicle", 
               "id": "VEHICLE_ARMORED", 
               "graphic": "15120100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Armored Fighting Vehicle", 
                   "id": "ARMORED_FIGHTING_VEHICLE", 
-                  "graphic": "15120101.svg"
+                  "graphic": "15120101.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Armored Fighting Vehicle Command and Control", 
                   "id": "ARMORED_FIGHTING_VEHICLE_C2", 
-                  "graphic": "15120102.svg"
+                  "graphic": "15120102.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Armored Personnel Carrier", 
                   "id": "ARMORED_PERSONNEL_CARRIER", 
-                  "graphic": "15120103.svg"
+                  "graphic": "15120103.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Armored Personnel Carrier Ambulance", 
                   "id": "ARMORED_PERSONNEL_CARRIER_AMBULANCE", 
-                  "graphic": "15120104.svg"
+                  "graphic": "15120104.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "05", 
@@ -4951,19 +5071,22 @@ var symbolData={
                   "digits": "08", 
                   "label": "Armored Personnel Carrier-Recovery", 
                   "id": "ARMORED_PERSONNEL_CARRIER_RECOVERY", 
-                  "graphic": "15120108.svg"
+                  "graphic": "15120108.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "09", 
                   "label": "Combat Service Support Vehicle", 
                   "id": "COMBAT_SERVICE_SUPPORT_VEHICLE", 
-                  "graphic": "15120109.svg"
+                  "graphic": "15120109.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "10", 
                   "label": "Light Wheeled Armored Vehicle", 
                   "id": "LIGHT_WHEELED_ARMORED_VEHICLE", 
-                  "graphic": "15120110.svg"
+                  "graphic": "15120110.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -4972,24 +5095,28 @@ var symbolData={
               "label": "Tank", 
               "id": "TANK", 
               "graphic": "15120200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Light", 
                   "id": "TANK_LIGHT", 
-                  "graphic": "15120201.svg"
+                  "graphic": "15120201.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Medium", 
                   "id": "TANK_MEDIUM", 
-                  "graphic": "15120202.svg"
+                  "graphic": "15120202.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Heavy", 
                   "id": "TANK_HEAVY", 
-                  "graphic": "15120203.svg"
+                  "graphic": "15120203.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -4998,24 +5125,28 @@ var symbolData={
               "label": "Tank Recovery Vehicle", 
               "id": "TANK_RECOVERY_VEHICLE", 
               "graphic": "15120300.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Light", 
                   "id": "TANK_RECOVERY_LIGHT", 
-                  "graphic": "15120301.svg"
+                  "graphic": "15120301.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Medium", 
                   "id": "TANK_RECOVERY_MEDIUM", 
-                  "graphic": "15120302.svg"
+                  "graphic": "15120302.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Heavy", 
                   "id": "TANK_RECOVERY_HEAVY", 
-                  "graphic": "15120303.svg"
+                  "graphic": "15120303.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }
@@ -5026,12 +5157,14 @@ var symbolData={
           "label": "Engineer Vehicles and Equipment", 
           "id": "ENGINEER_VEHICLES_EQUIPMENT", 
           "graphic": "15130000.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Bridge", 
               "id": "BRIDGE", 
               "graphic": "15130100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5039,6 +5172,7 @@ var symbolData={
               "label": "Bridge Mounted on Utility Vehicle", 
               "id": "BRIDGE_MOUNTED_UTILITY_VEHICLE", 
               "graphic": "15130200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5046,6 +5180,7 @@ var symbolData={
               "label": "Fixed Bridge", 
               "id": "FIXED_BRIDGE", 
               "graphic": "15130300.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5053,6 +5188,7 @@ var symbolData={
               "label": "Floating Bridge", 
               "id": "FLOATING_BRIDGE", 
               "graphic": "15130400.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5060,6 +5196,7 @@ var symbolData={
               "label": "Folding Girder Bridge", 
               "id": "FOLDING_GIRDER_BRIDGE", 
               "graphic": "15130500.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5067,6 +5204,7 @@ var symbolData={
               "label": "Hollow Deck Bridge", 
               "id": "HOLLOW_DECK_BRIDGE", 
               "graphic": "15130600.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5074,12 +5212,14 @@ var symbolData={
               "label": "Drill", 
               "id": "DRILL", 
               "graphic": "15130700.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Drill Mounted on Utility Vehicle", 
                   "id": "DRILL_MOUNTED_ON_UTILITY_VEHICLE", 
-                  "graphic": "15130701.svg"
+                  "graphic": "15130701.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -5088,12 +5228,14 @@ var symbolData={
               "label": "Earthmover", 
               "id": "EARTHMOVER", 
               "graphic": "15130800.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Multifunctional Earthmover/Digger", 
                   "id": "EARTHMOVER_DIGGER", 
-                  "graphic": "15130801.svg"
+                  "graphic": "15130801.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -5102,18 +5244,21 @@ var symbolData={
               "label": "Mine Clearing Equipment", 
               "id": "MINE_CLEARING_EQUIPMENT", 
               "graphic": "15130900.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Trailer Mounted", 
                   "id": "MINE_CLEARING_EQUIPMENT_TRAILER", 
-                  "graphic": "15130901.svg"
+                  "graphic": "15130901.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Mine Clearing Equipment on Tank Chassis", 
                   "id": "MINE_CLEARING_EQUIPMENT_TANK_CHASSIS", 
-                  "graphic": "15130902.svg"
+                  "graphic": "15130902.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -5122,24 +5267,28 @@ var symbolData={
               "label": "Mine Laying Equipment", 
               "id": "MINE_LAYING_EQUIPMENT", 
               "graphic": "15131000.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Mine Laying Equipment on Utility Vehicle", 
                   "id": "MINE_LAYING_EQUIPMENT_UTILITY_VEHICLE", 
-                  "graphic": "15131001.svg"
+                  "graphic": "15131001.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Armored Carrier with Volcano", 
                   "id": "ARMORED_CARRIER_VOLCANO", 
-                  "graphic": "15131002.svg"
+                  "graphic": "15131002.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Truck Mounted with Volcano", 
                   "id": "TRUCK_VOLCANO", 
-                  "graphic": "15131003.svg"
+                  "graphic": "15131003.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -5148,12 +5297,14 @@ var symbolData={
               "label": "Dozer", 
               "id": "DOZER", 
               "graphic": "15131100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Dozer-Armored", 
                   "id": "DOZER_ARMORED", 
-                  "graphic": "15131101.svg"
+                  "graphic": "15131101.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -5162,6 +5313,7 @@ var symbolData={
               "label": "Armored Assault", 
               "id": "ARMORED_ASSAULT", 
               "graphic": "15131200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5169,6 +5321,7 @@ var symbolData={
               "label": "Armored Engineer Recon Vehicle (AERV)", 
               "id": "ARMORED_ENGINEER_RECON_VEHICLE_AERV", 
               "graphic": "15131300.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5176,6 +5329,7 @@ var symbolData={
               "label": "Backhoe", 
               "id": "BACKHOE", 
               "graphic": "15131400.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5183,6 +5337,7 @@ var symbolData={
               "label": "Construction Vehicle", 
               "id": "CONSTRUCTION_VEHICLE", 
               "graphic": "15131500.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5190,6 +5345,7 @@ var symbolData={
               "label": "Ferry Transporter", 
               "id": "FERRY_TRANSPORTER", 
               "graphic": "15131600.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }
           ]
@@ -5199,12 +5355,14 @@ var symbolData={
           "label": "Utility Vehicles", 
           "id": "UTILITY_VEHICLES", 
           "remarks": "No icon is associated with this entity. It is for hierachal purposes only.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Utility Vehicle", 
               "id": "UTILITY_VEHICLE", 
               "graphic": "15140100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5212,6 +5370,7 @@ var symbolData={
               "label": "Medical", 
               "id": "UTILITY_VEHICLE_MEDICAL", 
               "graphic": "15140200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5219,6 +5378,7 @@ var symbolData={
               "label": "Medical Evacuation", 
               "id": "UTILITY_VEHICLE_MEDEVAC", 
               "graphic": "15140300.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5226,6 +5386,7 @@ var symbolData={
               "label": "Mobile Emergency Physician", 
               "id": "UTILITY_VEHICLE_MOBILE_EMERGENCY_PHYSICIAN", 
               "graphic": "15140400.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5233,6 +5394,7 @@ var symbolData={
               "label": "Bus", 
               "id": "BUS", 
               "graphic": "15140500.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5240,24 +5402,28 @@ var symbolData={
               "label": "Semi-Trailer and Truck", 
               "id": "SEMI_TRAILER_AND_TRUCK", 
               "graphic": "15140600.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Light", 
                   "id": "SEMI_LIGHT", 
-                  "graphic": "15140601.svg"
+                  "graphic": "15140601.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Medium", 
                   "id": "SEMI_MEDIUM", 
-                  "graphic": "15140602.svg"
+                  "graphic": "15140602.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Heavy", 
                   "id": "SEMI_HEAVY", 
-                  "graphic": "15140603.svg"
+                  "graphic": "15140603.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -5266,6 +5432,7 @@ var symbolData={
               "label": "Limited Cross Country Truck", 
               "id": "LIMITED_CROSS_COUNTRY_TRUCK", 
               "graphic": "15140700.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5273,6 +5440,7 @@ var symbolData={
               "label": "Cross Country Truck", 
               "id": "CROSS_COUNTRY_TRUCK", 
               "graphic": "15140800.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5280,6 +5448,7 @@ var symbolData={
               "label": "Petroleum-Oil and Lubricant", 
               "id": "POL_VEHICLE", 
               "graphic": "15140900.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5287,6 +5456,7 @@ var symbolData={
               "label": "Water", 
               "id": "WATER_VEHICLE", 
               "graphic": "15141000.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5294,6 +5464,7 @@ var symbolData={
               "label": "Amphibious Utility Wheeled Vehicle", 
               "id": "AMPHIBIOUS_UTILITY_WHEELED_VEHICLE", 
               "graphic": "15141100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5301,18 +5472,21 @@ var symbolData={
               "label": "Tow Truck", 
               "id": "TOW_TRUCK", 
               "graphic": "15141200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Light", 
                   "id": "TOW_TRUCK_LIGHT", 
-                  "graphic": "15141201.svg"
+                  "graphic": "15141201.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Heavy", 
                   "id": "TOW_TRUCK_HEAVY", 
-                  "graphic": "15141202.svg"
+                  "graphic": "15141202.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }
@@ -5323,12 +5497,14 @@ var symbolData={
           "label": "Train", 
           "id": "TRAIN", 
           "remarks": "No icon is associated with this entity. It is for hierachal purposes only.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Locomotive", 
               "id": "LOCOMOTIVE", 
               "graphic": "15150100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5336,6 +5512,7 @@ var symbolData={
               "label": "Railcar", 
               "id": "RAILCAR", 
               "graphic": "15150200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }
           ]
@@ -5345,30 +5522,35 @@ var symbolData={
           "label": "Civilian Vehicle", 
           "id": "CIVILIAN_VEHICLE", 
           "remarks": "No icon is associated with this entity. It is for hierachal purposes only.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Automobile", 
               "id": "AUTOMOBILE", 
               "graphic": "15160100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Compact", 
                   "id": "COMPACT_AUTO", 
-                  "graphic": "15160101.svg"
+                  "graphic": "15160101.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Midsize", 
                   "id": "MIDSIZE_AUTO", 
-                  "graphic": "15160102.svg"
+                  "graphic": "15160102.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Sedan", 
                   "id": "SEDAN_AUTO", 
-                  "graphic": "15160103.svg"
+                  "graphic": "15160103.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -5377,24 +5559,28 @@ var symbolData={
               "label": "Open-Bed Truck", 
               "id": "OPEN_BED_TRUCK", 
               "graphic": "15160200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Pickup", 
                   "id": "PICKUP_TRUCK", 
-                  "graphic": "15160201.svg"
+                  "graphic": "15160201.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Small", 
                   "id": "SMALL_PICKUP_TRUCK", 
-                  "graphic": "15160202.svg"
+                  "graphic": "15160202.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Large", 
                   "id": "LARGE_PICKUP_TRUCK", 
-                  "graphic": "15160203.svg"
+                  "graphic": "15160203.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -5403,24 +5589,28 @@ var symbolData={
               "label": "Multiple Passenger Vehicle", 
               "id": "MULTIPLE_PASSENGER_VEHICLE", 
               "graphic": "15160300.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Van", 
                   "id": "VAN", 
-                  "graphic": "15160301.svg"
+                  "graphic": "15160301.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Small Bus", 
                   "id": "SMALL_BUS", 
-                  "graphic": "15160302.svg"
+                  "graphic": "15160302.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Large Bus", 
                   "id": "LARGE_BUS", 
-                  "graphic": "15160303.svg"
+                  "graphic": "15160303.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -5429,24 +5619,28 @@ var symbolData={
               "label": "Utility Vehicle", 
               "id": "AUTO_UTILITY_VEHICLE", 
               "graphic": "15160400.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Sport Utility Vehicle (SUV)", 
                   "id": "SPORT_UTILITY_VEHICLE_SUV", 
-                  "graphic": "15160401.svg"
+                  "graphic": "15160401.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Small Box Truck", 
                   "id": "SMALL_BOX_TRUCK", 
-                  "graphic": "15160402.svg"
+                  "graphic": "15160402.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Large Box Truck", 
                   "id": "LARGE_BOX_TRUCK", 
-                  "graphic": "15160403.svg"
+                  "graphic": "15160403.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -5455,24 +5649,28 @@ var symbolData={
               "label": "Jeep Type Vehicle", 
               "id": "JEEP_TYPE_VEHICLE", 
               "graphic": "15160500.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Small/Light", 
                   "id": "JEEP_LIGHT", 
-                  "graphic": "15160501.svg"
+                  "graphic": "15160501.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Medium", 
                   "id": "JEEP_MEDIUM", 
-                  "graphic": "15160502.svg"
+                  "graphic": "15160502.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Large/Heavy", 
                   "id": "JEEP_HEAVY", 
-                  "graphic": "15160503.svg"
+                  "graphic": "15160503.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -5481,24 +5679,28 @@ var symbolData={
               "label": "Tractor Trailer Truck with Box", 
               "id": "TRACTOR_TRAILER_BOX", 
               "graphic": "15160600.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Small/Light", 
                   "id": "TRACTOR_TRAILER_BOX_LIGHT", 
-                  "graphic": "15160601.svg"
+                  "graphic": "15160601.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Medium", 
                   "id": "TRACTOR_TRAILER_BOX_MEDIUM", 
-                  "graphic": "15160602.svg"
+                  "graphic": "15160602.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Large/Heavy", 
                   "id": "TRACTOR_TRAILER_BOX_HEAVY", 
-                  "graphic": "15160603.svg"
+                  "graphic": "15160603.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -5507,24 +5709,28 @@ var symbolData={
               "label": "Tractor Trailer Truck with Flatbed Trailer", 
               "id": "TRACTOR_TRAILER_FLATBED", 
               "graphic": "15160700.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Small/Light", 
                   "id": "TRACTOR_TRAILER_BED_LIGHT", 
-                  "graphic": "15160701.svg"
+                  "graphic": "15160701.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Medium", 
                   "id": "TRACTOR_TRAILER_BED_MEDIUM", 
-                  "graphic": "15160702.svg"
+                  "graphic": "15160702.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Large/Heavy", 
                   "id": "TRACTOR_TRAILER_BED_HEAVY", 
-                  "graphic": "15160703.svg"
+                  "graphic": "15160703.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -5549,6 +5755,7 @@ var symbolData={
           "label": "Law Enforcement", 
           "id": "LAW_ENFORCEMENT", 
           "graphic": "15170000.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -5562,6 +5769,7 @@ var symbolData={
               "label": "Border Patrol", 
               "id": "BORDER_PATROL", 
               "graphic": "15170200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5569,6 +5777,7 @@ var symbolData={
               "label": "Customs Service", 
               "id": "CUSTOMS_SERVICE", 
               "graphic": "15170300.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5583,6 +5792,7 @@ var symbolData={
               "label": "Department of Justice (DOJ)", 
               "id": "DEPARTMENT_OF_JUSTICE_DOJ", 
               "graphic": "15170500.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5618,6 +5828,7 @@ var symbolData={
               "label": "Coast Guard", 
               "id": "COAST_GUARD", 
               "graphic": "15171000.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5625,6 +5836,7 @@ var symbolData={
               "label": "US Marshals Service", 
               "id": "US_MARSHALS_SERVICE", 
               "graphic": "15171100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }
           ]
@@ -5634,6 +5846,7 @@ var symbolData={
           "label": "Pack Animals", 
           "id": "PACK_ANIMALS", 
           "graphic": "15180000.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": []
         }, 
         {
@@ -5641,12 +5854,14 @@ var symbolData={
           "label": "Missile Support", 
           "id": "MISSILE_SUPPORT", 
           "graphic": "15190000.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Transloader", 
               "id": "MISSILE_TRANSLOADER", 
               "graphic": "15190100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5654,6 +5869,7 @@ var symbolData={
               "label": "Transporter", 
               "id": "MISSILE_TRANSPORTER", 
               "graphic": "15190200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5661,6 +5877,7 @@ var symbolData={
               "label": "Crane/Loading Device", 
               "id": "MISSILE_CRANE_LOADING_DEVICE", 
               "graphic": "15190300.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5668,6 +5885,7 @@ var symbolData={
               "label": "Propellant Transporter", 
               "id": "MISSILE_PROPELLANT_TRANSPORTER", 
               "graphic": "15190400.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5675,6 +5893,7 @@ var symbolData={
               "label": "Warhead Transporter", 
               "id": "MISSILE_WARHEAD_TRANSPORTER", 
               "graphic": "15190500.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }
           ]
@@ -5684,12 +5903,14 @@ var symbolData={
           "label": "Other Equipment", 
           "id": "OTHER_EQUIPMENT", 
           "remarks": "No icon is associated with this entity. It is for hierachal purposes only.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Antennae", 
               "id": "ANTENNAE", 
               "graphic": "15200100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5697,6 +5918,7 @@ var symbolData={
               "label": "Bomb", 
               "id": "BOMB", 
               "graphic": "15200200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5704,6 +5926,7 @@ var symbolData={
               "label": "Booby Trap", 
               "id": "BOOBY_TRAP", 
               "graphic": "15200300.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5711,6 +5934,7 @@ var symbolData={
               "label": "CBRN Equipment", 
               "id": "CBRN_EQUIPMENT", 
               "graphic": "15200400.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5718,6 +5942,7 @@ var symbolData={
               "label": "Computer System", 
               "id": "COMPUTER_SYSTEM", 
               "graphic": "15200500.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5732,6 +5957,7 @@ var symbolData={
               "label": "Generator Set", 
               "id": "GENERATOR_SET", 
               "graphic": "15200700.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5753,6 +5979,7 @@ var symbolData={
               "label": "Laser", 
               "id": "LASER", 
               "graphic": "15201000.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5774,6 +6001,7 @@ var symbolData={
               "label": "Tent", 
               "id": "TENT", 
               "graphic": "15201300.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5788,12 +6016,14 @@ var symbolData={
               "label": "Emergency Medical Operation", 
               "id": "EMERGENCY_MEDICAL_OPERATION", 
               "graphic": "15201500.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Medical Evacuation Helicopter", 
                   "id": "MEDICAL_EVACUATION_HELICOPTER", 
-                  "graphic": "15201501.svg"
+                  "graphic": "15201501.svg", 
+                  "icon": "MAIN_1"
                 }
               ]
             }
@@ -5804,12 +6034,14 @@ var symbolData={
           "label": "Land Mines", 
           "id": "LAND_MINES", 
           "remarks": "No icon is associated with this entity. It is for hierachal purposes only.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Land Mine", 
               "id": "LAND_MINE", 
               "graphic": "15210100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5817,6 +6049,7 @@ var symbolData={
               "label": "Antipersonnel Land Mine (APL)", 
               "id": "ANTIPERSONNEL_LAND_MINE_APL", 
               "graphic": "15210200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5824,6 +6057,7 @@ var symbolData={
               "label": "Antitank Mine", 
               "id": "ANTITANK_MINE", 
               "graphic": "15210300.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5831,6 +6065,7 @@ var symbolData={
               "label": "Improvised Explosives Device (IED)", 
               "id": "IMPROVISED_EXPLOSIVES_DEVICE_IED", 
               "graphic": "15210400.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5838,6 +6073,7 @@ var symbolData={
               "label": "Less than lethal", 
               "id": "LESS_THAN_LETHAL", 
               "graphic": "15210500.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }
           ]
@@ -5847,6 +6083,7 @@ var symbolData={
           "label": "Sensors", 
           "id": "SENSORS", 
           "remarks": "No icon is associated with this entity. It is for hierachal purposes only.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -5860,6 +6097,7 @@ var symbolData={
               "label": "Sensor Emplaced", 
               "id": "SENSOR_EMPLACED", 
               "graphic": "15220200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5867,6 +6105,7 @@ var symbolData={
               "label": "Radar", 
               "id": "RADAR", 
               "graphic": "15220300.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }
           ]
@@ -5876,12 +6115,14 @@ var symbolData={
           "label": "Emergency Operation", 
           "id": "EMERGENCY_OPERATION", 
           "graphic": "15230000.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Ambulance", 
               "id": "AMBULANCE", 
               "graphic": "15230100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -5898,6 +6139,7 @@ var symbolData={
           "label": "Manual Track", 
           "id": "MANUAL_TRACK", 
           "graphic": "15240000.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": []
         }
       ], 
@@ -5999,6 +6241,7 @@ var symbolData={
               "label": "Ammunition and Explosives/Assembly", 
               "id": "AMMUNITION_EXPLOSIVES_ASSEMBLY", 
               "graphic": "20110200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -6017,6 +6260,7 @@ var symbolData={
               "label": "Armament Production", 
               "id": "ARMAMENT_PRODUCTION", 
               "graphic": "20110400.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -6038,6 +6282,7 @@ var symbolData={
               "label": "Engineering Equipment Production", 
               "id": "ENGINEERING_EQUIPMENT_PRODUCTION", 
               "graphic": "20110700.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -6052,6 +6297,7 @@ var symbolData={
               "label": "Equipment Manufacture", 
               "id": "EQUIPMENT_MANUFACTURE", 
               "graphic": "20110800.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -6098,6 +6344,7 @@ var symbolData={
               "label": "Missile and Space System Production", 
               "id": "MISSILE_SPACE_SYSTEM_PRODUCTION", 
               "graphic": "20111400.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -6133,18 +6380,21 @@ var symbolData={
               "label": "Tented Camp", 
               "id": "TENTED_CAMP", 
               "graphic": "20111900.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Displaced Persons / Refugee / Evacuees Camp", 
                   "id": "DISPLACED_PERSONS_CAMP", 
-                  "graphic": "20111901.svg"
+                  "graphic": "20111901.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Training Camp", 
                   "id": "TRAINING_CAMP", 
-                  "graphic": "20111902.svg"
+                  "graphic": "20111902.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -6153,6 +6403,7 @@ var symbolData={
               "label": "Warehouse/Storage Facility", 
               "id": "WAREHOUSE_STORAGE_FACILITY", 
               "graphic": "20112000.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -6160,6 +6411,7 @@ var symbolData={
               "label": "Law Enforcement", 
               "id": "LAW_ENFORCEMENT", 
               "graphic": "20112100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -6171,13 +6423,15 @@ var symbolData={
                   "digits": "02", 
                   "label": "Border Patrol", 
                   "id": "BORDER_PATROL", 
-                  "graphic": "20112102.svg"
+                  "graphic": "20112102.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Customs Service", 
                   "id": "CUSTOMS_SERVICE", 
-                  "graphic": "20112103.svg"
+                  "graphic": "20112103.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
@@ -6189,7 +6443,8 @@ var symbolData={
                   "digits": "05", 
                   "label": "Department of Justice (DOJ)", 
                   "id": "DEPARTMENT_JUSTICE_DOJ", 
-                  "graphic": "20112105.svg"
+                  "graphic": "20112105.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "06", 
@@ -6207,7 +6462,8 @@ var symbolData={
                   "digits": "08", 
                   "label": "Prison", 
                   "id": "PRISON", 
-                  "graphic": "20112108.svg"
+                  "graphic": "20112108.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "09", 
@@ -6225,13 +6481,15 @@ var symbolData={
                   "digits": "11", 
                   "label": "Coast Guard", 
                   "id": "COAST_GUARD", 
-                  "graphic": "20112111.svg"
+                  "graphic": "20112111.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "12", 
                   "label": "US Marshals Service", 
                   "id": "US_MARSHALS_SERVICE", 
-                  "graphic": "20112112.svg"
+                  "graphic": "20112112.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -6240,18 +6498,21 @@ var symbolData={
               "label": "Emergency Operation", 
               "id": "EMERGENCY_OPERATION", 
               "graphic": "20112200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Fire Station", 
                   "id": "FIRE_STATION", 
-                  "graphic": "20112201.svg"
+                  "graphic": "20112201.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Emergency Medical Operation", 
                   "id": "EMERGENCY_MEDICAL_OPERATION", 
-                  "graphic": "20112202.svg"
+                  "graphic": "20112202.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }
@@ -6262,24 +6523,28 @@ var symbolData={
           "label": "Infrastructure", 
           "id": "INFRASTRUCTURE", 
           "remarks": "No icon is associated with this entity. It is for hierarchal purposes only.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Agriculture and Food Infrastructure", 
               "id": "AGRICULTURE_FOOD_INFRASTRUCTURE", 
               "graphic": "20120100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Agriculture Laboratory", 
                   "id": "AGRICULTURE_LABORATORY", 
-                  "graphic": "20120101.svg"
+                  "graphic": "20120101.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Animal Feedlot", 
                   "id": "ANIMAL_FEEDLOT", 
-                  "graphic": "20120102.svg"
+                  "graphic": "20120102.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
@@ -6295,7 +6560,8 @@ var symbolData={
                   "digits": "04", 
                   "label": "Farm/Ranch", 
                   "id": "FARM_RANCH", 
-                  "graphic": "20120104.svg"
+                  "graphic": "20120104.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "05", 
@@ -6331,7 +6597,8 @@ var symbolData={
                   "digits": "08", 
                   "label": "Grain Storage", 
                   "id": "GRAIN_STORAGE", 
-                  "graphic": "20120108.svg"
+                  "graphic": "20120108.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -6340,24 +6607,28 @@ var symbolData={
               "label": "Banking, Finance, and Insurance Infrastructure", 
               "id": "BANKING_INFRASTRUCTURE", 
               "graphic": "20120200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "ATM", 
                   "id": "ATM", 
-                  "graphic": "20120201.svg"
+                  "graphic": "20120201.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Bank", 
                   "id": "BANK", 
-                  "graphic": "20120202.svg"
+                  "graphic": "20120202.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Bullion Storage", 
                   "id": "BULLION_STORAGE", 
-                  "graphic": "20120203.svg"
+                  "graphic": "20120203.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
@@ -6369,19 +6640,22 @@ var symbolData={
                   "digits": "05", 
                   "label": "Federal Reserve Bank", 
                   "id": "FEDERAL_RESERVE_BANK", 
-                  "graphic": "20120205.svg"
+                  "graphic": "20120205.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "06", 
                   "label": "Financial Exchange", 
                   "id": "FINANCIAL_EXCHANGE", 
-                  "graphic": "20120206.svg"
+                  "graphic": "20120206.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "07", 
                   "label": "Financial Services-Other", 
                   "id": "FINANCIAL_SERVICES_OTHER", 
-                  "graphic": "20120207.svg"
+                  "graphic": "20120207.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -6390,66 +6664,77 @@ var symbolData={
               "label": "Commercial Infrastructure", 
               "id": "COMMERCIAL_INFRASTRUCTURE", 
               "graphic": "20120300.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Chemical Plant", 
                   "id": "CHEMICAL_PLANT", 
-                  "graphic": "20120301.svg"
+                  "graphic": "20120301.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Firearms Manufacturer", 
                   "id": "FIREARMS_MANUFACTURER", 
-                  "graphic": "20120302.svg"
+                  "graphic": "20120302.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Firearms Retailer", 
                   "id": "FIREARMS_RETAILER", 
-                  "graphic": "20120303.svg"
+                  "graphic": "20120303.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Hazardous Material Production", 
                   "id": "HAZARDOUS_MATERIAL_PRODUCTION", 
-                  "graphic": "20120304.svg"
+                  "graphic": "20120304.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Hazardous Material Storage", 
                   "id": "HAZARDOUS_MATERIAL_STORAGE", 
-                  "graphic": "20120305.svg"
+                  "graphic": "20120305.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "06", 
                   "label": "Industrial Site", 
                   "id": "INDUSTRIAL_SITE", 
-                  "graphic": "20120306.svg"
+                  "graphic": "20120306.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "07", 
                   "label": "Landfill", 
                   "id": "LANDFILL", 
-                  "graphic": "20120307.svg"
+                  "graphic": "20120307.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "08", 
                   "label": "Pharmaceutical Manufacturer", 
                   "id": "PHARMACEUTICAL_MANUFACTURER", 
-                  "graphic": "20120308.svg"
+                  "graphic": "20120308.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "09", 
                   "label": "Contaminated Hazardous Waste Site", 
                   "id": "CONTAMINATED_HAZARDOUS_WASTE_SITE", 
-                  "graphic": "20120309.svg"
+                  "graphic": "20120309.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "10", 
                   "label": "Toxic Release Inventory", 
                   "id": "TOXIC_RELEASE_INVENTORY", 
-                  "graphic": "20120310.svg"
+                  "graphic": "20120310.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -6458,18 +6743,21 @@ var symbolData={
               "label": "Educational Facilities Infrastructure", 
               "id": "EDUCATIONAL_FACILITIES_INFRASTRUCTURE", 
               "graphic": "20120400.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "College/University", 
                   "id": "COLLEGE_UNIVERSITY", 
-                  "graphic": "20120401.svg"
+                  "graphic": "20120401.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "School", 
                   "id": "SCHOOL", 
-                  "graphic": "20120402.svg"
+                  "graphic": "20120402.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -6478,6 +6766,7 @@ var symbolData={
               "label": "Energy Facility Infrastructure", 
               "id": "ENERGY_FACILITY_INFRASTRUCTURE", 
               "graphic": "20120500.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -6489,19 +6778,22 @@ var symbolData={
                   "digits": "02", 
                   "label": "Generation Station", 
                   "id": "GENERATION_STATION", 
-                  "graphic": "20120502.svg"
+                  "graphic": "20120502.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Natural Gas Facility", 
                   "id": "NATURAL_GAS_FACILITY", 
-                  "graphic": "20120503.svg"
+                  "graphic": "20120503.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Petroleum Facility", 
                   "id": "PETROLEUM_FACILITY", 
-                  "graphic": "20120504.svg"
+                  "graphic": "20120504.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "05", 
@@ -6513,7 +6805,8 @@ var symbolData={
                   "digits": "06", 
                   "label": "Propane Facility", 
                   "id": "PROPANE_FACILITY", 
-                  "graphic": "20120506.svg"
+                  "graphic": "20120506.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -6522,6 +6815,7 @@ var symbolData={
               "label": "Government Site Infrastructure", 
               "id": "GOVERNMENT_SITE_INFRASTRUCTURE", 
               "graphic": "20120600.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -6529,6 +6823,7 @@ var symbolData={
               "label": "Medical Infrastructure", 
               "id": "MEDICAL_INFRASTRUCTURE", 
               "remarks": "No icon is assoicated with this entity. It is for hierarchal purposes only.", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -6557,18 +6852,21 @@ var symbolData={
               "label": "Military Infrastructure", 
               "id": "MILITARY_INFRASTRUCTURE", 
               "graphic": "20120800.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Military Armory", 
                   "id": "MILITARY_ARMORY", 
-                  "graphic": "20120801.svg"
+                  "graphic": "20120801.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Military Base", 
                   "id": "MILITARY_BASE", 
-                  "graphic": "20120802.svg"
+                  "graphic": "20120802.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -6577,18 +6875,21 @@ var symbolData={
               "label": "Postal Services Infrastructure", 
               "id": "POSTAL_SERVICES_INFRASTRUCTURE", 
               "graphic": "20120900.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Postal Distribution Center", 
                   "id": "POSTAL_DISTRIBUTION_CENTER", 
-                  "graphic": "20120901.svg"
+                  "graphic": "20120901.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Post Office", 
                   "id": "POST_OFFICE", 
-                  "graphic": "20120902.svg"
+                  "graphic": "20120902.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -6597,30 +6898,35 @@ var symbolData={
               "label": "Public Venues Infrastructure", 
               "id": "PUBLIC_VENUES_INFRASTRUCTURE", 
               "graphic": "20121000.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Enclosed Facility", 
                   "id": "ENCLOSED_FACILITY", 
-                  "graphic": "20121001.svg"
+                  "graphic": "20121001.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Open Facility", 
                   "id": "OPEN_FACILITY", 
-                  "graphic": "20121002.svg"
+                  "graphic": "20121002.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Recreational Area", 
                   "id": "RECREATIONAL_AREA", 
-                  "graphic": "20121003.svg"
+                  "graphic": "20121003.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Religious Institution", 
                   "id": "RELIGIOUS_INSTITUTION", 
-                  "graphic": "20121004.svg"
+                  "graphic": "20121004.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -6629,24 +6935,28 @@ var symbolData={
               "label": "Special Needs Infrastructure", 
               "id": "SPECIAL_NEEDS_INFRASTRUCTURE", 
               "graphic": "20121100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Adult Day Care", 
                   "id": "ADULT_DAY_CARE", 
-                  "graphic": "20121101.svg"
+                  "graphic": "20121101.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Child Day Care", 
                   "id": "CHILD_DAY_CARE", 
-                  "graphic": "20121102.svg"
+                  "graphic": "20121102.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Elder Care", 
                   "id": "ELDER_CARE", 
-                  "graphic": "20121103.svg"
+                  "graphic": "20121103.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -6655,12 +6965,14 @@ var symbolData={
               "label": "Telecommunications Infrastructure", 
               "id": "TELECOMMUNICATIONS_INFRASTRUCTURE", 
               "graphic": "20121200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Broadcast Transmitter Antennae", 
                   "id": "BROADCAST_TRANSMITTER_ANTENNAE", 
-                  "graphic": "20121201.svg"
+                  "graphic": "20121201.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
@@ -6672,7 +6984,8 @@ var symbolData={
                   "digits": "03", 
                   "label": "Telecommunications Tower", 
                   "id": "TELECOMMUNICATIONS_TOWER", 
-                  "graphic": "20121203.svg"
+                  "graphic": "20121203.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -6681,84 +6994,98 @@ var symbolData={
               "label": "Transportation Infrastructure", 
               "id": "TRANSPORTATION_INFRASTRUCTURE", 
               "graphic": "20121300.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Airport/Air Base", 
                   "id": "AIRPORT_AIR_BASE", 
-                  "graphic": "20121301.svg"
+                  "graphic": "20121301.svg", 
+                  "icon": "MAIN_1"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Air Traffic Control Facility", 
                   "id": "ATC_FACILITY", 
-                  "graphic": "20121302.svg"
+                  "graphic": "20121302.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Bus Station", 
                   "id": "BUS_STATION", 
-                  "graphic": "20121303.svg"
+                  "graphic": "20121303.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Ferry Terminal", 
                   "id": "FERRY_TERMINAL", 
-                  "graphic": "20121304.svg"
+                  "graphic": "20121304.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Helicopter Landing Site", 
                   "id": "HELICOPTER_LANDING_SITE", 
-                  "graphic": "20121305.svg"
+                  "graphic": "20121305.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "06", 
                   "label": "Maintenance Facility", 
                   "id": "MAINTENANCE_FACILITY", 
-                  "graphic": "20121306.svg"
+                  "graphic": "20121306.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "07", 
                   "label": "Railhead/Railroad Station", 
                   "id": "RAILHEAD_RAILROAD_STATION", 
-                  "graphic": "20121307.svg"
+                  "graphic": "20121307.svg", 
+                  "icon": "MAIN_1"
                 }, 
                 {
                   "digits": "08", 
                   "label": "Rest Stop", 
                   "id": "REST_STOP", 
-                  "graphic": "20121308.svg"
+                  "graphic": "20121308.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "09", 
                   "label": "Sea Port/Naval Base", 
                   "id": "SEA_PORT_NAVAL_BASE", 
-                  "graphic": "20121309.svg"
+                  "graphic": "20121309.svg", 
+                  "icon": "MAIN_1"
                 }, 
                 {
                   "digits": "10", 
                   "label": "Ship Yard", 
                   "id": "SHIP_YARD", 
-                  "graphic": "20121310.svg"
+                  "graphic": "20121310.svg", 
+                  "icon": "MAIN_1"
                 }, 
                 {
                   "digits": "11", 
                   "label": "Toll Facility", 
                   "id": "TOLL_FACILITY", 
-                  "graphic": "20121311.svg"
+                  "graphic": "20121311.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "12", 
                   "label": "Traffic Inspection Facility", 
                   "id": "TRAFFIC_INSPECTION_FACILITY", 
-                  "graphic": "20121312.svg"
+                  "graphic": "20121312.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "13", 
                   "label": "Tunnel", 
                   "id": "TUNNEL", 
-                  "graphic": "20121313.svg"
+                  "graphic": "20121313.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -6767,60 +7094,70 @@ var symbolData={
               "label": "Water Supply Infrastructure", 
               "id": "WATER_SUPPLY_INFRASTRUCTURE", 
               "graphic": "20121400.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Control Valve", 
                   "id": "CONTROL_VALVE", 
-                  "graphic": "20121401.svg"
+                  "graphic": "20121401.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Dam", 
                   "id": "DAM", 
-                  "graphic": "20121402.svg"
+                  "graphic": "20121402.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Discharge Outfall", 
                   "id": "DISCHARGE_OUTFALL", 
-                  "graphic": "20121403.svg"
+                  "graphic": "20121403.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Ground Water Well", 
                   "id": "GROUND_WATER_WELL", 
-                  "graphic": "20121404.svg"
+                  "graphic": "20121404.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Pumping Station", 
                   "id": "PUMPING_STATION", 
-                  "graphic": "20121405.svg"
+                  "graphic": "20121405.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "06", 
                   "label": "Reservoir", 
                   "id": "RESERVOIR", 
-                  "graphic": "20121406.svg"
+                  "graphic": "20121406.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "07", 
                   "label": "Storage Tower", 
                   "id": "STORAGE_TOWER", 
-                  "graphic": "20121407.svg"
+                  "graphic": "20121407.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "08", 
                   "label": "Surface Water Intake", 
                   "id": "SURFACE_WATER_INTAKE", 
-                  "graphic": "20121408.svg"
+                  "graphic": "20121408.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "09", 
                   "label": "Wastewater Treatment Facility", 
                   "id": "WASTEWATER_TREATMENT_FACILITY", 
-                  "graphic": "20121409.svg"
+                  "graphic": "20121409.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "10", 
@@ -7007,6 +7344,7 @@ var symbolData={
           "digits": "11", 
           "label": "Command and Control Lines", 
           "id": "COMMAND_CONTROL_LINES", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -7028,6 +7366,7 @@ var symbolData={
           "digits": "12", 
           "label": "Command and Control Areas", 
           "id": "COMMAND_CONTROL_AREAS", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -7063,6 +7402,7 @@ var symbolData={
           "digits": "13", 
           "label": "Command and Control Points", 
           "id": "COMMAND_CONTROL_POINTS", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -7131,6 +7471,7 @@ var symbolData={
               "digits": "10", 
               "label": "Fly-To-Point", 
               "id": "FLY_TO_POINT", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -7228,11 +7569,13 @@ var symbolData={
           "digits": "14", 
           "label": "Maneuver Lines", 
           "id": "MANEUVER_LINES", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Forward Line of Troops", 
               "id": "FORWARD_LINE_OF_TROOPS", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -7265,6 +7608,7 @@ var symbolData={
               "label": "Line of Contact", 
               "id": "LINE_OF_CONTACT", 
               "remarks": "Line of Contact is a doctrinal term and concept for opposing and parallel Forward Lines of Own Troops.  It is not a symbol in its own right.", 
+              "icon": "NA", 
               "entitySubTypes": []
             }, 
             {
@@ -7299,6 +7643,7 @@ var symbolData={
               "digits": "06", 
               "label": "Direction of Attack", 
               "id": "DIRECTION_OF_ATTACK", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -7427,11 +7772,13 @@ var symbolData={
           "digits": "15", 
           "label": "Maneuver Areas", 
           "id": "MANEUVER_AREAS", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Area", 
               "id": "AREA", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -7475,12 +7822,14 @@ var symbolData={
                 {
                   "digits": "01", 
                   "label": "Occupied Assembly Area w/ Offset Unit", 
-                  "id": "OCCUPIED_AA_OFFSET_UNIT"
+                  "id": "OCCUPIED_AA_OFFSET_UNIT", 
+                  "icon": "NA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Occupied Assembly Area w/ Offset Units", 
-                  "id": "OCCUPIED_AA_OFFSET_UNITS"
+                  "id": "OCCUPIED_AA_OFFSET_UNITS", 
+                  "icon": "NA"
                 }
               ]
             }, 
@@ -7495,6 +7844,7 @@ var symbolData={
               "digits": "05", 
               "label": "Action Area", 
               "id": "ACTION_AREA", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -7607,6 +7957,7 @@ var symbolData={
               "digits": "14", 
               "label": "Axis of Advance", 
               "id": "AXIS_ADVANCE", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -7683,6 +8034,7 @@ var symbolData={
               "digits": "18", 
               "label": "Encirclement", 
               "id": "ENCIRCLEMENT", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -7732,6 +8084,7 @@ var symbolData={
           "digits": "16", 
           "label": "Maneuver Points", 
           "id": "MANEUVER_POINTS", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -7798,6 +8151,7 @@ var symbolData={
           "digits": "17", 
           "label": "Airspace Control (Corridors) Areas", 
           "id": "AIRSPACE_CONTROL_CORRIDORS_AREAS", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -8128,6 +8482,7 @@ var symbolData={
           "digits": "19", 
           "label": "Airspace Control Lines", 
           "id": "AIRSPACE_CONTROL_LINES", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -8149,11 +8504,13 @@ var symbolData={
           "digits": "20", 
           "label": "Maritime Control Areas", 
           "id": "MARITIME_CONTROL_AREAS", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Launch Area", 
               "id": "LAUNCH_AREA", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -8167,6 +8524,7 @@ var symbolData={
               "digits": "02", 
               "label": "Defended Area", 
               "id": "DEFENDED_AREA", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -8236,6 +8594,7 @@ var symbolData={
           "digits": "21", 
           "label": "Maritime Control Points", 
           "id": "MARITIME_CONTROL_POINTS", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -8437,6 +8796,7 @@ var symbolData={
               "digits": "29", 
               "label": "Harbor Entrance Point", 
               "id": "HARBOR_ENTRANCE_POINT", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9002,6 +9362,7 @@ var symbolData={
           "digits": "22", 
           "label": "Maritime Control Lines", 
           "id": "MARITIME_CONTROL_LINES", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -9065,6 +9426,7 @@ var symbolData={
           "digits": "23", 
           "label": "Deception", 
           "id": "DECEPTION", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -9086,11 +9448,13 @@ var symbolData={
           "digits": "24", 
           "label": "Fires Areas", 
           "id": "FIRES_AREAS", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Airspace Coordination Area", 
               "id": "AIRSPACE_COORDINATION_AREA", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9116,6 +9480,7 @@ var symbolData={
               "digits": "02", 
               "label": "Free Fire Area", 
               "id": "FREE_FIRE_AREA", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9141,6 +9506,7 @@ var symbolData={
               "digits": "03", 
               "label": "No Fire Area", 
               "id": "NO_FIRE_AREA", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9166,6 +9532,7 @@ var symbolData={
               "digits": "04", 
               "label": "Restricted Fire Area", 
               "id": "RESTRICTED_FIRE_AREA", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9191,6 +9558,7 @@ var symbolData={
               "digits": "05", 
               "label": "Position Area For Artillery (PAA)", 
               "id": "POSITION_AREA_FOR_ARTILLERY_PAA", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9210,6 +9578,7 @@ var symbolData={
               "digits": "06", 
               "label": "Point Targets", 
               "id": "POINT_TARGETS", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9235,6 +9604,7 @@ var symbolData={
               "digits": "07", 
               "label": "Linear Targets", 
               "id": "LINEAR_TARGETS", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9260,6 +9630,7 @@ var symbolData={
               "digits": "08", 
               "label": "Area Targets", 
               "id": "AREA_TARGETS", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9322,6 +9693,7 @@ var symbolData={
               "digits": "10", 
               "label": "Fire Support Area", 
               "id": "FIRE_SUPPORT_AREA", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9347,6 +9719,7 @@ var symbolData={
               "digits": "11", 
               "label": "Artillery Target Intelligence Zone", 
               "id": "ARTILLERY_TARGET_INTELLIGENCE_ZONE", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9372,6 +9745,7 @@ var symbolData={
               "digits": "12", 
               "label": "Call for Fire Area", 
               "id": "CALL_FOR_FIRE_AREA", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9397,6 +9771,7 @@ var symbolData={
               "digits": "13", 
               "label": "Censor Zone", 
               "id": "CENSOR_ZONE", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9422,6 +9797,7 @@ var symbolData={
               "digits": "14", 
               "label": "Critical Friendly Zone", 
               "id": "CRITICAL_FRIENDLY_ZONE", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9447,6 +9823,7 @@ var symbolData={
               "digits": "15", 
               "label": "Dead Space Area", 
               "id": "DEAD_SPACE_AREA", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9472,6 +9849,7 @@ var symbolData={
               "digits": "16", 
               "label": "Sensor Zone", 
               "id": "SENSOR_ZONE", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9497,6 +9875,7 @@ var symbolData={
               "digits": "17", 
               "label": "Target Build-up Area", 
               "id": "TARGET_BUILD_UP_AREA", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9522,6 +9901,7 @@ var symbolData={
               "digits": "18", 
               "label": "Target Value Area", 
               "id": "TARGET_VALUE_AREA", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9547,6 +9927,7 @@ var symbolData={
               "digits": "19", 
               "label": "Zone of Responsibility", 
               "id": "ZONE_OF_RESPONSIBILITY", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9593,6 +9974,7 @@ var symbolData={
               "digits": "23", 
               "label": "Kill Box", 
               "id": "KILL_BOX", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9638,6 +10020,7 @@ var symbolData={
           "digits": "25", 
           "label": "Fires Points", 
           "id": "FIRES_POINTS", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -9680,6 +10063,7 @@ var symbolData={
           "digits": "26", 
           "label": "Fire Lines", 
           "id": "FIRE_LINES", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -9729,6 +10113,7 @@ var symbolData={
           "digits": "27", 
           "label": "Protection Areas", 
           "id": "PROTECTION_AREAS", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -9762,6 +10147,7 @@ var symbolData={
               "digits": "05", 
               "label": "Obstacle Effects", 
               "id": "OBSTACLE_EFFECTS", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9793,6 +10179,7 @@ var symbolData={
               "digits": "06", 
               "label": "Obstacle Bypass", 
               "id": "OBSTACLE_BYPASS", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9818,6 +10205,7 @@ var symbolData={
               "digits": "07", 
               "label": "Minefield", 
               "id": "MINEFIELD", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9902,6 +10290,7 @@ var symbolData={
               "digits": "12", 
               "label": "Roadblocks, Craters and Blown Bridges", 
               "id": "ROADBLOCKS_CRATERS_BLOWN_BRIDGES", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -10026,6 +10415,7 @@ var symbolData={
           "digits": "28", 
           "label": "Protection Points", 
           "id": "PROTECTION_POINTS", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -10240,6 +10630,7 @@ var symbolData={
               "digits": "19", 
               "label": "Tetrahedrons, Dragons Teeth, and Other Similar Obstacles", 
               "id": "OTHER_SIMILAR_OBSTACLES", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -10265,6 +10656,7 @@ var symbolData={
               "digits": "20", 
               "label": "Vertical Obstructions", 
               "id": "VERTICAL_OBSTRUCTIONS", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -10292,6 +10684,7 @@ var symbolData={
           "digits": "29", 
           "label": "Protection Lines", 
           "id": "PROTECTION_LINES", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -10304,6 +10697,7 @@ var symbolData={
               "digits": "02", 
               "label": "Antitank Obstacles", 
               "id": "ANTITANK_OBSTACLES", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -10335,6 +10729,7 @@ var symbolData={
               "digits": "03", 
               "label": "Wire Obstacles", 
               "id": "WIRE_OBSTACLES", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -10447,6 +10842,7 @@ var symbolData={
           "digits": "30", 
           "label": "Intelligence Lines", 
           "id": "INTELLIGENCE_LINES", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -10461,6 +10857,7 @@ var symbolData={
           "digits": "31", 
           "label": "Sustainment Areas", 
           "id": "SUSTAINMENT_AREAS", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -10517,6 +10914,7 @@ var symbolData={
           "digits": "32", 
           "label": "Sustainment Points", 
           "id": "SUSTAINMENT_POINTS", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -10747,6 +11145,7 @@ var symbolData={
           "digits": "33", 
           "label": "Sustainment Lines", 
           "id": "SUSTAINMENT_LINES", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -10820,6 +11219,7 @@ var symbolData={
           "digits": "34", 
           "label": "Mission Tasks", 
           "id": "MISSION_TASKS", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -10972,6 +11372,7 @@ var symbolData={
               "digits": "22", 
               "label": "Security", 
               "id": "SECURITY", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -11433,102 +11834,119 @@ var symbolData={
               "label": "Merchant Ship", 
               "id": "CIV_MERCHANT", 
               "graphic": "30140100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Cargo, General", 
                   "id": "CIV_CARGO", 
-                  "graphic": "30140101.svg"
+                  "graphic": "30140101.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Container Ship", 
                   "id": "CIV_CONTAINER", 
-                  "graphic": "30140102.svg"
+                  "graphic": "30140102.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Dredge", 
                   "id": "CIV_DREDGE", 
-                  "graphic": "30140103.svg"
+                  "graphic": "30140103.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Roll On/Roll Off", 
                   "id": "CIV_RORO", 
-                  "graphic": "30140104.svg"
+                  "graphic": "30140104.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Ferry", 
                   "id": "CIV_FERRY", 
-                  "graphic": "30140105.svg"
+                  "graphic": "30140105.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "06", 
                   "label": "Heavy Lift", 
                   "id": "CIV_HEAVY_LIFT", 
-                  "graphic": "30140106.svg"
+                  "graphic": "30140106.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "07", 
                   "label": "Hovercraft", 
                   "id": "CIV_HOVERCRAFT", 
-                  "graphic": "30140107.svg"
+                  "graphic": "30140107.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "08", 
                   "label": "Lash Carrier (with Barges)", 
                   "id": "CIV_LASH_CARRIER", 
-                  "graphic": "30140108.svg"
+                  "graphic": "30140108.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "09", 
                   "label": "Oiler/Tanker", 
                   "id": "CIV_OILER_TANKER", 
-                  "graphic": "30140109.svg"
+                  "graphic": "30140109.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "10", 
                   "label": "Passenger", 
                   "id": "CIV_PASSENGER", 
-                  "graphic": "30140110.svg"
+                  "graphic": "30140110.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "11", 
                   "label": "Tug, Ocean Going", 
                   "id": "CIV_TUG", 
-                  "graphic": "30140111.svg"
+                  "graphic": "30140111.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "12", 
                   "label": "Tow", 
                   "id": "CIV_TOW", 
-                  "graphic": "30140112.svg"
+                  "graphic": "30140112.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "13", 
                   "label": "Transport Ship, Hazardous Material", 
                   "id": "CIV_HAZMAT", 
-                  "graphic": "30140113.svg"
+                  "graphic": "30140113.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "14", 
                   "label": "Junk/Dhow", 
                   "id": "CIV_JUNK", 
-                  "graphic": "30140114.svg"
+                  "graphic": "30140114.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "15", 
                   "label": "Barge, Not Self-Propelled", 
                   "id": "CIV_BARGE", 
-                  "graphic": "30140115.svg"
+                  "graphic": "30140115.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "16", 
                   "label": "Hospital Ship", 
                   "id": "CIV_HOSPITAL", 
-                  "graphic": "30140116.svg"
+                  "graphic": "30140116.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -11537,24 +11955,28 @@ var symbolData={
               "label": "Fishing Vessel", 
               "id": "CIV_FISHING", 
               "graphic": "30140200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Drifter", 
                   "id": "CIV_DRIFTER", 
-                  "graphic": "30140201.svg"
+                  "graphic": "30140201.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Trawler", 
                   "id": "CIV_TRAWLER", 
-                  "graphic": "30140202.svg"
+                  "graphic": "30140202.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Dredger", 
                   "id": "CIV_DREDGER", 
-                  "graphic": "30140203.svg"
+                  "graphic": "30140203.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -11563,6 +11985,7 @@ var symbolData={
               "label": "Law Enforcement Vessel", 
               "id": "CIV_LAW", 
               "graphic": "30140300.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -11570,6 +11993,7 @@ var symbolData={
               "label": "Leisure Craft, Sailing", 
               "id": "CIV_LEISURE_SAIL", 
               "graphic": "30140400.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -11577,18 +12001,21 @@ var symbolData={
               "label": "Leisure Craft, Motorized", 
               "id": "CIV_LEISURE_MOTOR", 
               "graphic": "30140500.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Rigid-Hull Inflatable Boat (RHIB)", 
                   "id": "CIV_RHIB", 
-                  "graphic": "30140501.svg"
+                  "graphic": "30140501.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Speedboat", 
                   "id": "CIV_SPEED", 
-                  "graphic": "30140502.svg"
+                  "graphic": "30140502.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -11597,6 +12024,7 @@ var symbolData={
               "label": "Jet Ski", 
               "id": "CIV_JET_SKI", 
               "graphic": "30140600.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -11604,6 +12032,7 @@ var symbolData={
               "label": "Unmanned Surface Water Vehicle (USV)", 
               "id": "CIV_USV", 
               "graphic": "30140700.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }
           ]
@@ -11613,6 +12042,7 @@ var symbolData={
           "label": "Own Ship", 
           "id": "OWN_SHIP", 
           "graphic": "30150000.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": []
         }, 
         {
@@ -11620,6 +12050,7 @@ var symbolData={
           "label": "Fused Track", 
           "id": "FUSED_TRACK", 
           "graphic": "30160000.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": []
         }, 
         {
@@ -11627,6 +12058,7 @@ var symbolData={
           "label": "Manual Track", 
           "id": "MANUAL_TRACK", 
           "graphic": "30170000.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": []
         }
       ], 
@@ -11966,6 +12398,7 @@ var symbolData={
               "label": "Nonsubmarine", 
               "id": "NONSUBMARINE", 
               "graphic": "35110300.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -12002,6 +12435,7 @@ var symbolData={
               "label": "Autonomous Underwater Vehicle (AUV)/ Underwater Vehicle (UUV)", 
               "id": "AUV_UUV_CIV", 
               "graphic": "35120200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -12432,6 +12866,7 @@ var symbolData={
           "id": "SEA_MINE_GENERAL", 
           "graphic": "36110000.svg", 
           "alternativeGraphic": "36110000_a.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -12439,6 +12874,7 @@ var symbolData={
               "id": "SEA_MINE_BOTTOM", 
               "graphic": "36110100.svg", 
               "alternativeGraphic": "36110100_a.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -12447,6 +12883,7 @@ var symbolData={
               "id": "SEA_MINE_MOORED", 
               "graphic": "36110200.svg", 
               "alternativeGraphic": "36110200_a.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -12455,6 +12892,7 @@ var symbolData={
               "id": "SEA_MINE_FLOATING", 
               "graphic": "36110300.svg", 
               "alternativeGraphic": "36110300_a.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -12463,6 +12901,7 @@ var symbolData={
               "id": "SEA_MINE_RISING", 
               "graphic": "36110400.svg", 
               "alternativeGraphic": "36110400_a.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -12471,6 +12910,7 @@ var symbolData={
               "id": "SEA_MINE_OTHER_POSITION", 
               "graphic": "36110500.svg", 
               "alternativeGraphic": "36110500_a.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -12479,6 +12919,7 @@ var symbolData={
               "id": "KINGFISHER", 
               "alternativeGraphic": "36110600_a.svg", 
               "remarks": "There is no MEDAL icon associated with this symbol.", 
+              "icon": "NA", 
               "entitySubTypes": []
             }, 
             {
@@ -12487,6 +12928,7 @@ var symbolData={
               "id": "SMALL_OBJECT_MINE_LIKE", 
               "alternativeGraphic": "36110700_a.svg", 
               "remarks": "There is no MEDAL icon associated with this symbol.", 
+              "icon": "NA", 
               "entitySubTypes": []
             }, 
             {
@@ -12496,6 +12938,7 @@ var symbolData={
               "graphic": "36110800.svg", 
               "alternativeGraphic": "36110800_a.svg", 
               "remarks": "Used with exercise frame only", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -12503,7 +12946,8 @@ var symbolData={
                   "id": "EXERCISE_MINE_BOTTOM", 
                   "graphic": "36110801.svg", 
                   "alternativeGraphic": "36110801_a.svg", 
-                  "remarks": "Used with exercise frame only"
+                  "remarks": "Used with exercise frame only", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
@@ -12511,7 +12955,8 @@ var symbolData={
                   "id": "EXERCISE_MINE_MOORED", 
                   "graphic": "36110802.svg", 
                   "alternativeGraphic": "36110802_a.svg", 
-                  "remarks": "Used with exercise frame only"
+                  "remarks": "Used with exercise frame only", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
@@ -12519,7 +12964,8 @@ var symbolData={
                   "id": "EXERCISE_MINE_FLOATING", 
                   "graphic": "36110803.svg", 
                   "alternativeGraphic": "36110803_a.svg", 
-                  "remarks": "Used with exercise frame only"
+                  "remarks": "Used with exercise frame only", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
@@ -12527,7 +12973,8 @@ var symbolData={
                   "id": "EXERCISE_MINE_RISING", 
                   "graphic": "36110804.svg", 
                   "alternativeGraphic": "36110804_a.svg", 
-                  "remarks": "Used with exercise frame only"
+                  "remarks": "Used with exercise frame only", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -12537,41 +12984,47 @@ var symbolData={
               "id": "NEUTRALIZED_MINE_GENERAL", 
               "graphic": "36110900.svg", 
               "alternativeGraphic": "36110900_a.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Neutralized Mine-Bottom", 
                   "id": "NEUTRALIZED_MINE_BOTTOM", 
                   "graphic": "36110901.svg", 
-                  "alternativeGraphic": "36110901_a.svg"
+                  "alternativeGraphic": "36110901_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Neutralized Mine-Moored", 
                   "id": "NEUTRALIZED_MINE_MOORED", 
                   "graphic": "36110902.svg", 
-                  "alternativeGraphic": "36110902_a.svg"
+                  "alternativeGraphic": "36110902_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Neutralized Mine-Floating", 
                   "id": "NEUTRALIZED_MINE_FLOATING", 
                   "graphic": "36110903.svg", 
-                  "alternativeGraphic": "36110903_a.svg"
+                  "alternativeGraphic": "36110903_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Neutralized Mine-Rising", 
                   "id": "NEUTRALIZED_MINE_RISING", 
                   "graphic": "36110904.svg", 
-                  "alternativeGraphic": "36110904_a.svg"
+                  "alternativeGraphic": "36110904_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Neutralized Mine-Other Position", 
                   "id": "NEUTRALIZED_MINE_OTHER_POSITION", 
                   "graphic": "36110905.svg", 
-                  "alternativeGraphic": "36110905_a.svg"
+                  "alternativeGraphic": "36110905_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }
@@ -12583,6 +13036,7 @@ var symbolData={
           "id": "UNEXPLODED_ORDNANCE", 
           "graphic": "36120000.svg", 
           "alternativeGraphic": "36120000_a.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": []
         }, 
         {
@@ -12591,6 +13045,7 @@ var symbolData={
           "id": "SEA_MINE_DECOY", 
           "graphic": "36130000.svg", 
           "alternativeGraphic": "36130000_a.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -12598,6 +13053,7 @@ var symbolData={
               "id": "SEA_MINE_DECOY_BOTTOM", 
               "graphic": "36130100.svg", 
               "alternativeGraphic": "36130100_a.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -12606,6 +13062,7 @@ var symbolData={
               "id": "SEA_MINE_DECOY_MOORED", 
               "graphic": "36130200.svg", 
               "alternativeGraphic": "36130200_a.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }
           ]
@@ -12614,6 +13071,7 @@ var symbolData={
           "digits": "14", 
           "label": "Mine-Like Contact (MILCO)", 
           "id": "MINE_LIKE_CONTACT_MILCO", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -12621,41 +13079,47 @@ var symbolData={
               "id": "MILCO_GENERAL", 
               "graphic": "36140100.svg", 
               "alternativeGraphic": "36140100_a.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "MILCO - General-Confidence-Level 1", 
                   "id": "MILCO_GENERAL_CONFIDENCE_LEVEL_1", 
                   "graphic": "36140101.svg", 
-                  "alternativeGraphic": "36140101_a.svg"
+                  "alternativeGraphic": "36140101_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "MILCO - General-Confidence-Level 2", 
                   "id": "MILCO_GENERAL_CONFIDENCE_LEVEL_2", 
                   "graphic": "36140102.svg", 
-                  "alternativeGraphic": "36140102_a.svg"
+                  "alternativeGraphic": "36140102_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "MILCO - General-Confidence-Level 3", 
                   "id": "MILCO_GENERAL_CONFIDENCE_LEVEL_3", 
                   "graphic": "36140103.svg", 
-                  "alternativeGraphic": "36140103_a.svg"
+                  "alternativeGraphic": "36140103_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
                   "label": "MILCO - General-Confidence-Level 4", 
                   "id": "MILCO_GENERAL_CONFIDENCE_LEVEL_4", 
                   "graphic": "36140104.svg", 
-                  "alternativeGraphic": "36140104_a.svg"
+                  "alternativeGraphic": "36140104_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "05", 
                   "label": "MILCO - General-Confidence-Level 5", 
                   "id": "MILCO_GENERAL_CONFIDENCE_LEVEL_5", 
                   "graphic": "36140105.svg", 
-                  "alternativeGraphic": "36140105_a.svg"
+                  "alternativeGraphic": "36140105_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -12665,41 +13129,47 @@ var symbolData={
               "id": "MILCO_BOTTOM", 
               "graphic": "36140200.svg", 
               "alternativeGraphic": "36140200_a.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "MILCO - Bottom-Confidence-Level 1", 
                   "id": "MILCO_BOTTOM_CONFIDENCE_LEVEL_1", 
                   "graphic": "36140201.svg", 
-                  "alternativeGraphic": "36140201_a.svg"
+                  "alternativeGraphic": "36140201_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "MILCO - Bottom-Confidence-Level 2", 
                   "id": "MILCO_BOTTOM_CONFIDENCE_LEVEL_2", 
                   "graphic": "36140202.svg", 
-                  "alternativeGraphic": "36140202_a.svg"
+                  "alternativeGraphic": "36140202_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "MILCO - Bottom-Confidence-Level 3", 
                   "id": "MILCO_BOTTOM_CONFIDENCE_LEVEL_3", 
                   "graphic": "36140203.svg", 
-                  "alternativeGraphic": "36140203_a.svg"
+                  "alternativeGraphic": "36140203_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
                   "label": "MILCO - Bottom-Confidence-Level 4", 
                   "id": "MILCO_BOTTOM_CONFIDENCE_LEVEL_4", 
                   "graphic": "36140204.svg", 
-                  "alternativeGraphic": "36140204_a.svg"
+                  "alternativeGraphic": "36140204_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "05", 
                   "label": "MILCO - Bottom-Confidence-Level 5", 
                   "id": "MILCO_BOTTOM_CONFIDENCE_LEVEL_5", 
                   "graphic": "36140205.svg", 
-                  "alternativeGraphic": "36140205_a.svg"
+                  "alternativeGraphic": "36140205_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -12709,41 +13179,47 @@ var symbolData={
               "id": "MILCO_MOORED", 
               "graphic": "36140300.svg", 
               "alternativeGraphic": "36140300_a.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "MILCO - Moored-Confidence-Level 1", 
                   "id": "MILCO_MOORED_CONFIDENCE_LEVEL_1", 
                   "graphic": "36140301.svg", 
-                  "alternativeGraphic": "36140301_a.svg"
+                  "alternativeGraphic": "36140301_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "MILCO - Moored-Confidence-Level 2", 
                   "id": "MILCO_MOORED_CONFIDENCE_LEVEL_2", 
                   "graphic": "36140302.svg", 
-                  "alternativeGraphic": "36140302_a.svg"
+                  "alternativeGraphic": "36140302_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "MILCO - Moored-Confidence-Level 3", 
                   "id": "MILCO_MOORED_CONFIDENCE_LEVEL_3", 
                   "graphic": "36140303.svg", 
-                  "alternativeGraphic": "36140303_a.svg"
+                  "alternativeGraphic": "36140303_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
                   "label": "MILCO - Moored-Confidence-Level 4", 
                   "id": "MILCO_MOORED_CONFIDENCE_LEVEL_4", 
                   "graphic": "36140304.svg", 
-                  "alternativeGraphic": "36140304_a.svg"
+                  "alternativeGraphic": "36140304_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "05", 
                   "label": "MILCO - Moored-Confidence-Level 5", 
                   "id": "MILCO_MOORED_CONFIDENCE_LEVEL_5", 
                   "graphic": "36140305.svg", 
-                  "alternativeGraphic": "36140305_a.svg"
+                  "alternativeGraphic": "36140305_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -12753,41 +13229,47 @@ var symbolData={
               "id": "MILCO_FLOATING", 
               "graphic": "36140400.svg", 
               "alternativeGraphic": "36140400_a.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "MILCO - Floating-Confidence-Level 1", 
                   "id": "MILCO_FLOATING_CONFIDENCE_LEVEL_1", 
                   "graphic": "36140401.svg", 
-                  "alternativeGraphic": "36140401_a.svg"
+                  "alternativeGraphic": "36140401_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "MILCO - Floating-Confidence-Level 2", 
                   "id": "MILCO_FLOATING_CONFIDENCE_LEVEL_2", 
                   "graphic": "36140402.svg", 
-                  "alternativeGraphic": "36140402_a.svg"
+                  "alternativeGraphic": "36140402_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "MILCO - Floating-Confidence-Level 3", 
                   "id": "MILCO_FLOATING_CONFIDENCE_LEVEL_3", 
                   "graphic": "36140403.svg", 
-                  "alternativeGraphic": "36140403_a.svg"
+                  "alternativeGraphic": "36140403_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
                   "label": "MILCO - Floating-Confidence-Level 4", 
                   "id": "MILCO_FLOATING_CONFIDENCE_LEVEL_4", 
                   "graphic": "36140404.svg", 
-                  "alternativeGraphic": "36140404_a.svg"
+                  "alternativeGraphic": "36140404_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "05", 
                   "label": "MILCO - Floating-Confidence-Level 5", 
                   "id": "MILCO_FLOATING_CONFIDENCE_LEVEL_5", 
                   "graphic": "36140405.svg", 
-                  "alternativeGraphic": "36140405_a.svg"
+                  "alternativeGraphic": "36140405_a.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }
@@ -12799,6 +13281,7 @@ var symbolData={
           "id": "MINE_LIKE_ECHO_MILEC_GENERAL", 
           "graphic": "36150000.svg", 
           "alternativeGraphic": "36150000_a.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -12806,6 +13289,7 @@ var symbolData={
               "id": "MINE_LIKE_ECHO_BOTTOM", 
               "graphic": "36150100.svg", 
               "alternativeGraphic": "36150100_a.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -12814,6 +13298,7 @@ var symbolData={
               "id": "MINE_LIKE_ECHO_MOORED", 
               "graphic": "36150200.svg", 
               "alternativeGraphic": "36150200_a.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -12822,6 +13307,7 @@ var symbolData={
               "id": "MINE_LIKE_ECHO_FLOATING", 
               "graphic": "36150300.svg", 
               "alternativeGraphic": "36150300_a.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }
           ]
@@ -12832,6 +13318,7 @@ var symbolData={
           "id": "NEGATIVE_REACQUISITION_GENERAL", 
           "graphic": "36160000.svg", 
           "alternativeGraphic": "36160000_a.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -12839,6 +13326,7 @@ var symbolData={
               "id": "NEGATIVE_REACQUISITION_BOTTOM", 
               "graphic": "36160100.svg", 
               "alternativeGraphic": "36160100_a.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -12847,6 +13335,7 @@ var symbolData={
               "id": "NEGATIVE_REACQUISITION_MOORED", 
               "graphic": "36160200.svg", 
               "alternativeGraphic": "36160200_a.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -12855,6 +13344,7 @@ var symbolData={
               "id": "NEGATIVE_REACQUISITION_FLOATING", 
               "graphic": "36160300.svg", 
               "alternativeGraphic": "36160300_a.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }
           ]
@@ -12865,6 +13355,7 @@ var symbolData={
           "id": "OBSTRUCTOR", 
           "graphic": "36170000.svg", 
           "alternativeGraphic": "36170000_a.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -12872,6 +13363,7 @@ var symbolData={
               "id": "NEUTRALIZED_OBSTRUCTOR", 
               "graphic": "36170100.svg", 
               "alternativeGraphic": "36170100_a.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }
           ]
@@ -12882,6 +13374,7 @@ var symbolData={
           "id": "GENERAL_MINE_ANCHOR", 
           "graphic": "36180000.svg", 
           "alternativeGraphic": "36180000_a.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": []
         }, 
         {
@@ -12890,6 +13383,7 @@ var symbolData={
           "id": "NON_MINE_MINE_LIKE_NMLO_GENERAL", 
           "graphic": "36190000.svg", 
           "alternativeGraphic": "36190000_a.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -12897,6 +13391,7 @@ var symbolData={
               "id": "NON_MINE_MINE_LIKE_BOTTOM", 
               "graphic": "36190100.svg", 
               "alternativeGraphic": "36190100_a.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -12905,6 +13400,7 @@ var symbolData={
               "id": "NON_MINE_MINE_LIKE_MOORED", 
               "graphic": "36190200.svg", 
               "alternativeGraphic": "36190200_a.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -12913,6 +13409,7 @@ var symbolData={
               "id": "NON_MINE_MINE_LIKE_FLOATING", 
               "graphic": "36190300.svg", 
               "alternativeGraphic": "36190300_a.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }
           ]
@@ -12923,6 +13420,7 @@ var symbolData={
           "id": "ENVIRONMENTAL_REPORT_LOCATION", 
           "graphic": "36200000.svg", 
           "alternativeGraphic": "36200000_a.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": []
         }, 
         {
@@ -12931,6 +13429,7 @@ var symbolData={
           "id": "DIVE_REPORT_LOCATION", 
           "graphic": "36210000.svg", 
           "alternativeGraphic": "36210000_a.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": []
         }
       ], 
@@ -12954,24 +13453,28 @@ var symbolData={
           "label": "Incident", 
           "id": "INCIDENT", 
           "remarks": "No icon is associated with this entity. It is for hierarchal purposes only.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Criminal Activity Incident", 
               "id": "CRIMINAL_ACTIVITY_INCIDENT", 
               "graphic": "40110100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Arrest", 
                   "id": "ARREST", 
-                  "graphic": "40110101.svg"
+                  "graphic": "40110101.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Arson", 
                   "id": "ARSON", 
-                  "graphic": "40110102.svg"
+                  "graphic": "40110102.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
@@ -12984,7 +13487,8 @@ var symbolData={
                   "digits": "04", 
                   "label": "Drive-by Shooting", 
                   "id": "DRIVE_BY_SHOOTING", 
-                  "graphic": "40110104.svg"
+                  "graphic": "40110104.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "05", 
@@ -12997,13 +13501,15 @@ var symbolData={
                   "digits": "06", 
                   "label": "Extortion", 
                   "id": "EXTORTION", 
-                  "graphic": "40110106.svg"
+                  "graphic": "40110106.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "07", 
                   "label": "Graffiti", 
                   "id": "GRAFFITI", 
-                  "graphic": "40110107.svg"
+                  "graphic": "40110107.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "08", 
@@ -13015,7 +13521,8 @@ var symbolData={
                   "digits": "09", 
                   "label": "Poisoning", 
                   "id": "POISONING", 
-                  "graphic": "40110109.svg"
+                  "graphic": "40110109.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "10", 
@@ -13027,31 +13534,36 @@ var symbolData={
                   "digits": "11", 
                   "label": "Booby Trap", 
                   "id": "BOOBY_TRAP", 
-                  "graphic": "40110111.svg"
+                  "graphic": "40110111.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "12", 
                   "label": "Home Eviction", 
                   "id": "HOME_EVICTION", 
-                  "graphic": "40110112.svg"
+                  "graphic": "40110112.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "13", 
                   "label": "Black Marketing", 
                   "id": "BLACK_MARKETING", 
-                  "graphic": "40110113.svg"
+                  "graphic": "40110113.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "14", 
                   "label": "Vandalism / Loot / Ransack / Plunder", 
                   "id": "VANDALISM_LOOT_RANSACK_PLUNDER", 
-                  "graphic": "40110114.svg"
+                  "graphic": "40110114.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "15", 
                   "label": "Jail Break", 
                   "id": "JAIL_BREAK", 
-                  "graphic": "40110115.svg"
+                  "graphic": "40110115.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "16", 
@@ -13081,13 +13593,15 @@ var symbolData={
                   "digits": "20", 
                   "label": "Rock Throwing", 
                   "id": "ROCK_THROWING", 
-                  "graphic": "40110120.svg"
+                  "graphic": "40110120.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "21", 
                   "label": "Dead Body", 
                   "id": "DEAD_BODY", 
-                  "graphic": "40110121.svg"
+                  "graphic": "40110121.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "22", 
@@ -13099,7 +13613,8 @@ var symbolData={
                   "digits": "23", 
                   "label": "Suspicious Activity", 
                   "id": "SUSPICIOUS_ACTIVITY", 
-                  "graphic": "40110123.svg"
+                  "graphic": "40110123.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -13113,7 +13628,8 @@ var symbolData={
                   "digits": "01", 
                   "label": "Bomb Threat", 
                   "id": "BOMB_THREAT", 
-                  "graphic": "40110201.svg"
+                  "graphic": "40110201.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -13127,13 +13643,15 @@ var symbolData={
                   "digits": "01", 
                   "label": "IED Explosion", 
                   "id": "IED_EXPLOSION", 
-                  "graphic": "40110301.svg"
+                  "graphic": "40110301.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Premature IED Explosion", 
                   "id": "PREMATURE_IED_EXPLOSION", 
-                  "graphic": "40110302.svg"
+                  "graphic": "40110302.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
@@ -13149,7 +13667,8 @@ var symbolData={
                   "digits": "04", 
                   "label": "IED Suicide Bomber", 
                   "id": "IED_SUICIDE_BOMBER", 
-                  "graphic": "40110304.svg"
+                  "graphic": "40110304.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -13158,12 +13677,14 @@ var symbolData={
               "label": "Shooting", 
               "id": "SHOOTING", 
               "graphic": "40110400.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Sniping", 
                   "id": "SNIPING", 
-                  "graphic": "40110401.svg"
+                  "graphic": "40110401.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -13177,13 +13698,15 @@ var symbolData={
                   "digits": "01", 
                   "label": "Trafficking", 
                   "id": "TRAFFICKING", 
-                  "graphic": "40110501.svg"
+                  "graphic": "40110501.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Illegal Drug Lab", 
                   "id": "ILLEGAL_DRUG_LAB", 
-                  "graphic": "40110502.svg"
+                  "graphic": "40110502.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -13192,42 +13715,49 @@ var symbolData={
               "label": "Explosion", 
               "id": "EXPLOSION", 
               "graphic": "40110600.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Grenade Explosion", 
                   "id": "GRENADE_EXPLOSION", 
-                  "graphic": "40110601.svg"
+                  "graphic": "40110601.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Incendiary Explosion", 
                   "id": "INCENDIARY_EXPLOSION", 
-                  "graphic": "40110602.svg"
+                  "graphic": "40110602.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Mine Explosion", 
                   "id": "MINE_EXPLOSION", 
-                  "graphic": "40110603.svg"
+                  "graphic": "40110603.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Mortar Fire Explosion", 
                   "id": "MORTAR_FIRE_EXPLOSION", 
-                  "graphic": "40110604.svg"
+                  "graphic": "40110604.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Rocket Explosion", 
                   "id": "ROCKET_EXPLOSION", 
-                  "graphic": "40110605.svg"
+                  "graphic": "40110605.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "06", 
                   "label": "Bomb Explosion", 
                   "id": "BOMB_EXPLOSION", 
-                  "graphic": "40110606.svg"
+                  "graphic": "40110606.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }
@@ -13238,6 +13768,7 @@ var symbolData={
           "label": "Civil Disturbance", 
           "id": "CIVIL_DISTURBANCE", 
           "graphic": "40120000.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -13253,12 +13784,14 @@ var symbolData={
           "label": "Operation", 
           "id": "OPERATION", 
           "remarks": "No icon is associated with this entity. It is for hierarchal purposes only.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Patrolling", 
               "id": "PATROLLING", 
               "graphic": "40130100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -13266,6 +13799,7 @@ var symbolData={
               "label": "Military Information Support Operation (MISO)", 
               "id": "MILITARY_INFORMATION_SUPPORT_OPERATION_MISO", 
               "graphic": "40130200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -13284,6 +13818,7 @@ var symbolData={
               "label": "Foraging/Searching", 
               "id": "FORAGING_SEARCHING", 
               "graphic": "40130300.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -13291,18 +13826,21 @@ var symbolData={
               "label": "Recruitment", 
               "id": "RECRUITMENT", 
               "remarks": "No icon is associated with this entity. It is for hierarchal purposes only.", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Willing", 
                   "id": "WILLING", 
-                  "graphic": "40130401.svg"
+                  "graphic": "40130401.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Coerced/Impressed", 
                   "id": "COERCED_IMPRESSED", 
-                  "graphic": "40130402.svg"
+                  "graphic": "40130402.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -13332,6 +13870,7 @@ var symbolData={
               "label": "Exfiltration", 
               "id": "EXFILTRATION", 
               "graphic": "40130800.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -13339,6 +13878,7 @@ var symbolData={
               "label": "Infiltration", 
               "id": "INFILTRATION", 
               "graphic": "40130900.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -13346,6 +13886,7 @@ var symbolData={
               "label": "Meeting", 
               "id": "MEETING", 
               "graphic": "40131000.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -13360,6 +13901,7 @@ var symbolData={
               "label": "Raid on House", 
               "id": "RAID_ON_HOUSE", 
               "graphic": "40131100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -13367,12 +13909,14 @@ var symbolData={
               "label": "Emergency Operation", 
               "id": "EMERGENCY_OPERATION", 
               "graphic": "40131200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Emergency Collection Evacuation Point", 
                   "id": "EMERGENCY_COLLECTION_EVACUATION_POINT", 
-                  "graphic": "40131201.svg"
+                  "graphic": "40131201.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
@@ -13388,31 +13932,36 @@ var symbolData={
                   "digits": "03", 
                   "label": "Emergency Incident Command Center", 
                   "id": "EMERGENCY_INCIDENT_COMMAND_CENTER", 
-                  "graphic": "40131203.svg"
+                  "graphic": "40131203.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Emergency Operations Center", 
                   "id": "EMERGENCY_OPERATIONS_CENTER", 
-                  "graphic": "40131204.svg"
+                  "graphic": "40131204.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Emergency Public Information Center", 
                   "id": "EMERGENCY_PUBLIC_INFORMATION_CENTER", 
-                  "graphic": "40131205.svg"
+                  "graphic": "40131205.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "06", 
                   "label": "Emergency Shelter", 
                   "id": "EMERGENCY_SHELTER", 
-                  "graphic": "40131206.svg"
+                  "graphic": "40131206.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "07", 
                   "label": "Emergency Staging Area", 
                   "id": "EMERGENCY_STAGING_AREA", 
-                  "graphic": "40131207.svg"
+                  "graphic": "40131207.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "08", 
@@ -13431,42 +13980,49 @@ var symbolData={
               "label": "Emergency Medical Operation", 
               "id": "EMERGENCY_MEDICAL_OPERATION", 
               "graphic": "40131300.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "EMT Station Location", 
                   "id": "EMT_STATION_LOCATION", 
-                  "graphic": "40131301.svg"
+                  "graphic": "40131301.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Health Department Facility", 
                   "id": "HEALTH_DEPARTMENT_FACILITY", 
-                  "graphic": "40131302.svg"
+                  "graphic": "40131302.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Medical Facilities Outpatient", 
                   "id": "MEDICAL_FACILITIES_OUTPATIENT", 
-                  "graphic": "40131303.svg"
+                  "graphic": "40131303.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Morgue", 
                   "id": "MORGUE", 
-                  "graphic": "40131304.svg"
+                  "graphic": "40131304.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Pharmacy", 
                   "id": "PHARMACY", 
-                  "graphic": "40131305.svg"
+                  "graphic": "40131305.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "06", 
                   "label": "Triage", 
                   "id": "TRIAGE", 
-                  "graphic": "40131306.svg"
+                  "graphic": "40131306.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -13480,19 +14036,22 @@ var symbolData={
                   "digits": "01", 
                   "label": "Fire Hydrant", 
                   "id": "FIRE_HYDRANT", 
-                  "graphic": "40131401.svg"
+                  "graphic": "40131401.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Fire Station", 
                   "id": "FIRE_STATION", 
-                  "graphic": "40131402.svg"
+                  "graphic": "40131402.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Other Water Supply Location", 
                   "id": "OTHER_WATER_SUPPLY_LOCATION", 
-                  "graphic": "40131403.svg"
+                  "graphic": "40131403.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -13501,6 +14060,7 @@ var symbolData={
               "label": "Law Enforcement Operation", 
               "id": "LAW_ENFORCEMENT_OPERATION", 
               "graphic": "40131500.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -13512,13 +14072,15 @@ var symbolData={
                   "digits": "02", 
                   "label": "Border Patrol", 
                   "id": "BORDER_PATROL", 
-                  "graphic": "40131502.svg"
+                  "graphic": "40131502.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Customs Service", 
                   "id": "CUSTOMS_SERVICE", 
-                  "graphic": "40131503.svg"
+                  "graphic": "40131503.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
@@ -13530,7 +14092,8 @@ var symbolData={
                   "digits": "05", 
                   "label": "Department of Justice (DOJ)", 
                   "id": "JUSTICE_DEPT_DOJ", 
-                  "graphic": "40131505.svg"
+                  "graphic": "40131505.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "06", 
@@ -13548,7 +14111,8 @@ var symbolData={
                   "digits": "08", 
                   "label": "Prison", 
                   "id": "PRISON", 
-                  "graphic": "40131508.svg"
+                  "graphic": "40131508.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "09", 
@@ -13566,13 +14130,15 @@ var symbolData={
                   "digits": "11", 
                   "label": "Coast Guard", 
                   "id": "COAST_GUARD", 
-                  "graphic": "40131511.svg"
+                  "graphic": "40131511.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "12", 
                   "label": "US Marshals Service", 
                   "id": "US_MARSHALS", 
-                  "graphic": "40131512.svg"
+                  "graphic": "40131512.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "13", 
@@ -13589,12 +14155,14 @@ var symbolData={
           "label": "Fire Event", 
           "id": "FIRE_EVENT", 
           "graphic": "40140000.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Fire Origin", 
               "id": "FIRE_ORIGIN", 
               "graphic": "40140100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -13602,6 +14170,7 @@ var symbolData={
               "label": "Smoke", 
               "id": "SMOKE", 
               "graphic": "40140200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -13609,6 +14178,7 @@ var symbolData={
               "label": "Hot Spot", 
               "id": "HOT_SPOT", 
               "graphic": "40140300.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -13616,6 +14186,7 @@ var symbolData={
               "label": "Non-Residential Fire", 
               "id": "NON_RESIDENTIAL_FIRE", 
               "graphic": "40140400.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -13623,6 +14194,7 @@ var symbolData={
               "label": "Residential Fire", 
               "id": "RESIDENTIAL_FIRE", 
               "graphic": "40140500.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -13630,6 +14202,7 @@ var symbolData={
               "label": "School Fire", 
               "id": "SCHOOL_FIRE", 
               "graphic": "40140600.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -13637,6 +14210,7 @@ var symbolData={
               "label": "Special Needs Fire", 
               "id": "SPECIAL_NEEDS_FIRE", 
               "graphic": "40140700.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -13644,6 +14218,7 @@ var symbolData={
               "label": "Wild Fire", 
               "id": "WILD_FIRE", 
               "graphic": "40140800.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }
           ]
@@ -13653,102 +14228,119 @@ var symbolData={
           "label": "Hazard Materials", 
           "id": "HAZARD_MATERIALS", 
           "remarks": "No icon is associated with this entity. It is for hierarchal purposes only.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Hazard Materials Incident", 
               "id": "HAZARD_MATERIALS_INCIDENT", 
               "graphic": "40150100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Chemical Agent", 
                   "id": "CHEMICAL_AGENT", 
-                  "graphic": "40150101.svg"
+                  "graphic": "40150101.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Corrosive Material", 
                   "id": "CORROSIVE_MATERIAL", 
-                  "graphic": "40150102.svg"
+                  "graphic": "40150102.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Hazardous when Wet", 
                   "id": "HAZARDOUS_WHEN_WET", 
-                  "graphic": "40150103.svg"
+                  "graphic": "40150103.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Explosive Material", 
                   "id": "EXPLOSIVE_MATERIAL", 
-                  "graphic": "40150104.svg"
+                  "graphic": "40150104.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Flammable Gas", 
                   "id": "FLAMMABLE_GAS", 
-                  "graphic": "40150105.svg"
+                  "graphic": "40150105.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "06", 
                   "label": "Flammable Liquid", 
                   "id": "FLAMMABLE_LIQUID", 
-                  "graphic": "40150106.svg"
+                  "graphic": "40150106.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "07", 
                   "label": "Flammable Solid", 
                   "id": "FLAMMABLE_SOLID", 
-                  "graphic": "40150107.svg"
+                  "graphic": "40150107.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "08", 
                   "label": "Non-Flammable Gas", 
                   "id": "NON_FLAMMABLE_GAS", 
-                  "graphic": "40150108.svg"
+                  "graphic": "40150108.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "09", 
                   "label": "Organic Peroxide", 
                   "id": "ORGANIC_PEROXIDE", 
-                  "graphic": "40150109.svg"
+                  "graphic": "40150109.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "10", 
                   "label": "Oxidizer", 
                   "id": "OXIDIZER", 
-                  "graphic": "40150110.svg"
+                  "graphic": "40150110.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "11", 
                   "label": "Radioactive Material", 
                   "id": "RADIOACTIVE_MATERIAL", 
-                  "graphic": "40150111.svg"
+                  "graphic": "40150111.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "12", 
                   "label": "Spontaneously Combustible Material", 
                   "id": "SPONTANEOUSLY_COMBUSTIBLE_MATERIAL", 
-                  "graphic": "40150112.svg"
+                  "graphic": "40150112.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "13", 
                   "label": "Toxic Gas", 
                   "id": "TOXIC_GAS", 
-                  "graphic": "40150113.svg"
+                  "graphic": "40150113.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "14", 
                   "label": "Toxic Infectious Material", 
                   "id": "TOXIC_INFECTIOUS_MATERIAL", 
-                  "graphic": "40150114.svg"
+                  "graphic": "40150114.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "15", 
                   "label": "Unexploded Ordnance", 
                   "id": "UNEXPLODED_ORDNANCE", 
-                  "graphic": "40150115.svg"
+                  "graphic": "40150115.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }
@@ -13760,6 +14352,7 @@ var symbolData={
           "id": "TRANSPORTATION_INCIDENT", 
           "graphic": "40160000.svg", 
           "remarks": "This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes.", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -13794,6 +14387,7 @@ var symbolData={
               "label": "Wheeled Vehicle Explosion", 
               "id": "WHEELED_VEHICLE_EXPLOSION", 
               "graphic": "40160500.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }
           ]
@@ -13816,49 +14410,57 @@ var symbolData={
                   "digits": "01", 
                   "label": "Aftershock", 
                   "id": "AFTERSHOCK", 
-                  "graphic": "40170101.svg"
+                  "graphic": "40170101.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Avalanche", 
                   "id": "AVALANCHE", 
-                  "graphic": "40170102.svg"
+                  "graphic": "40170102.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Earthquake Epicenter", 
                   "id": "EARTHQUAKE_EPICENTER", 
-                  "graphic": "40170103.svg"
+                  "graphic": "40170103.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Landslide", 
                   "id": "LANDSLIDE", 
-                  "graphic": "40170104.svg"
+                  "graphic": "40170104.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Subsidence", 
                   "id": "SUBSIDENCE", 
-                  "graphic": "40170105.svg"
+                  "graphic": "40170105.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "06", 
                   "label": "Volcanic Eruption", 
                   "id": "VOLCANIC_ERUPTION", 
-                  "graphic": "40170106.svg"
+                  "graphic": "40170106.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "07", 
                   "label": "Volcanic Threat", 
                   "id": "VOLCANIC_THREAT", 
-                  "graphic": "40170107.svg"
+                  "graphic": "40170107.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "08", 
                   "label": "Cave Entrance", 
                   "id": "CAVE_ENTRANCE", 
-                  "graphic": "40170108.svg"
+                  "graphic": "40170108.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -13873,19 +14475,22 @@ var symbolData={
                   "digits": "01", 
                   "label": "Drought", 
                   "id": "DROUGHT", 
-                  "graphic": "40170201.svg"
+                  "graphic": "40170201.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Flood", 
                   "id": "FLOOD", 
-                  "graphic": "40170202.svg"
+                  "graphic": "40170202.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Tsunami", 
                   "id": "TSUNAMI", 
-                  "graphic": "40170203.svg"
+                  "graphic": "40170203.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }, 
@@ -13900,31 +14505,36 @@ var symbolData={
                   "digits": "01", 
                   "label": "Bird", 
                   "id": "BIRD", 
-                  "graphic": "40170301.svg"
+                  "graphic": "40170301.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Insect", 
                   "id": "INSECT", 
-                  "graphic": "40170302.svg"
+                  "graphic": "40170302.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Microbial", 
                   "id": "MICROBIAL", 
-                  "graphic": "40170303.svg"
+                  "graphic": "40170303.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Reptile", 
                   "id": "REPTILE", 
-                  "graphic": "40170304.svg"
+                  "graphic": "40170304.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Rodent", 
                   "id": "RODENT", 
-                  "graphic": "40170305.svg"
+                  "graphic": "40170305.svg", 
+                  "icon": "FULL_OCTAGON"
                 }
               ]
             }
@@ -13935,12 +14545,14 @@ var symbolData={
           "label": "Individual", 
           "id": "INDIVIDUAL", 
           "remarks": "No icon is associated with this entity. It is for hierarchal purposes only.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Religious Leader", 
               "id": "RELIGIOUS_LEADER", 
               "graphic": "40180100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -13948,6 +14560,7 @@ var symbolData={
               "label": "Speaker", 
               "id": "SPEAKER", 
               "graphic": "40180200.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }
           ]
@@ -14098,6 +14711,7 @@ var symbolData={
           "digits": "11", 
           "label": "Pressure Systems", 
           "id": "PRESSURE_SYSTEMS", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -14144,6 +14758,7 @@ var symbolData={
               "label": "Frontal Systems", 
               "id": "FRONTAL_SYSTEMS", 
               "remarks": "For special lines that are not symmetrical, such as Fronts, the sequence of anchor points determines the proper alighment of the line.", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -14241,6 +14856,7 @@ var symbolData={
               "digits": "04", 
               "label": "Lines", 
               "id": "LINES", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -14303,6 +14919,7 @@ var symbolData={
               "label": "Pressure Tendency", 
               "id": "PRESSURE_TENDENCY", 
               "remarks": "Each symbols within the pressure tendency group is static, but only one can be applied to a particular station plot, dependent upon the pressure tendency at that location. As such, the group of symbols is dynamic.", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -14367,6 +14984,7 @@ var symbolData={
           "label": "Turbulence", 
           "id": "TURBULENCE", 
           "remarks": "USAF turbulence forecasts are based on Category II type aircraft.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -14409,11 +15027,13 @@ var symbolData={
           "digits": "13", 
           "label": "Icing", 
           "id": "ICING", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Clear Icing", 
               "id": "CLEAR_ICING", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -14439,6 +15059,7 @@ var symbolData={
               "digits": "02", 
               "label": "Rime Icing", 
               "id": "RIME_ICING", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -14464,6 +15085,7 @@ var symbolData={
               "digits": "03", 
               "label": "Mixed Icing", 
               "id": "MIXED_ICING", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -14491,6 +15113,7 @@ var symbolData={
           "digits": "14", 
           "label": "Winds", 
           "id": "WINDS", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -14526,11 +15149,13 @@ var symbolData={
           "digits": "15", 
           "label": "Cloud Cover", 
           "id": "CLOUD_COVER", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Cloud Coverage Symbols", 
               "id": "CLOUD_COVERAGE_SYMBOLS", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -14576,11 +15201,13 @@ var symbolData={
           "digits": "16", 
           "label": "Weather Symbols", 
           "id": "WEATHER_SYMBOLS", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Rain", 
               "id": "RAIN", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -14624,6 +15251,7 @@ var symbolData={
               "digits": "02", 
               "label": "Freezing Rain", 
               "id": "FREEZING_RAIN", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -14643,6 +15271,7 @@ var symbolData={
               "digits": "03", 
               "label": "Rain Showers", 
               "id": "RAIN_SHOWERS", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -14668,6 +15297,7 @@ var symbolData={
               "digits": "04", 
               "label": "Drizzle", 
               "id": "DRIZZLE", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -14711,6 +15341,7 @@ var symbolData={
               "digits": "05", 
               "label": "Freezing Drizzle", 
               "id": "FREEZING_DRIZZLE", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -14730,6 +15361,7 @@ var symbolData={
               "digits": "06", 
               "label": "Rain and Snow Mixed", 
               "id": "RAIN_SNOW_MIXED", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -14761,6 +15393,7 @@ var symbolData={
               "digits": "07", 
               "label": "Snow", 
               "id": "SNOW", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -14823,6 +15456,7 @@ var symbolData={
               "digits": "09", 
               "label": "Snow Showers", 
               "id": "SNOW_SHOWERS", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -14842,6 +15476,7 @@ var symbolData={
               "digits": "10", 
               "label": "Hail", 
               "id": "HAIL", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -14868,6 +15503,7 @@ var symbolData={
               "digits": "12", 
               "label": "Ice Pellets (Sleet)", 
               "id": "ICE_PELLETS_SLEET", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -14900,6 +15536,7 @@ var symbolData={
               "digits": "14", 
               "label": "Storms", 
               "id": "STORMS", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -14955,6 +15592,7 @@ var symbolData={
               "digits": "15", 
               "label": "Fog", 
               "id": "FOG", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15025,6 +15663,7 @@ var symbolData={
               "digits": "19", 
               "label": "Dust or Sand", 
               "id": "DUST_SAND", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15056,6 +15695,7 @@ var symbolData={
               "digits": "20", 
               "label": "Tropical Storm Systems", 
               "id": "TROPICAL_STORM_SYSTEMS", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15124,6 +15764,7 @@ var symbolData={
           "digits": "17", 
           "label": "Bounded Areas of Weather", 
           "id": "BOUNDED_AREAS_WEATHER", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -15208,6 +15849,7 @@ var symbolData={
           "digits": "18", 
           "label": "Isopleths", 
           "id": "ISOPLETHS", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -15264,11 +15906,13 @@ var symbolData={
           "digits": "19", 
           "label": "State of the Ground", 
           "id": "STATE_GROUND", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Without Snow or Measurable Ice Cover", 
               "id": "WITHOUT_SNOW_MEASURABLE_ICE_COVER", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15336,6 +15980,7 @@ var symbolData={
               "digits": "02", 
               "label": "With Snow or Measurable Ice Cover", 
               "id": "WITH_SNOW_MEASURABLE_ICE_COVER", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15419,11 +16064,13 @@ var symbolData={
           "digits": "11", 
           "label": "Ice Systems", 
           "id": "ICE_SYSTEMS", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Icebergs", 
               "id": "ICEBERGS", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15491,6 +16138,7 @@ var symbolData={
               "digits": "02", 
               "label": "Ice Concentration", 
               "id": "ICE_CONCENTRATION", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15516,6 +16164,7 @@ var symbolData={
               "digits": "03", 
               "label": "Dynamic Processes", 
               "id": "DYNAMIC_PROCESSES", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15573,6 +16222,7 @@ var symbolData={
               "digits": "05", 
               "label": "Limits", 
               "id": "ICE_LIMITS", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15616,6 +16266,7 @@ var symbolData={
               "digits": "06", 
               "label": "Openings in the Ice", 
               "id": "OPENINGS_IN_THE_ICE", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15661,6 +16312,7 @@ var symbolData={
               "digits": "08", 
               "label": "Topographical Features", 
               "id": "TOPOGRAPHICAL_FEATURES", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15688,11 +16340,13 @@ var symbolData={
           "digits": "12", 
           "label": "Hydrography", 
           "id": "HYDROGRAPHY", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Depth", 
               "id": "DEPTH", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15724,6 +16378,7 @@ var symbolData={
               "digits": "02", 
               "label": "Coastal Hydrography", 
               "id": "COASTAL_HYDROGRAPHY", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15767,11 +16422,13 @@ var symbolData={
               "digits": "03", 
               "label": "Ports and Harbors", 
               "id": "PORTS_HARBORS", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Ports", 
-                  "id": "PORTS"
+                  "id": "PORTS", 
+                  "icon": "NA"
                 }, 
                 {
                   "digits": "02", 
@@ -15842,7 +16499,8 @@ var symbolData={
                 {
                   "digits": "13", 
                   "label": "Facilities", 
-                  "id": "FACILITIES"
+                  "id": "FACILITIES", 
+                  "icon": "NA"
                 }, 
                 {
                   "digits": "14", 
@@ -15913,7 +16571,8 @@ var symbolData={
                 {
                   "digits": "25", 
                   "label": "Shoreline Protection", 
-                  "id": "SHORELINE_PROTECTION"
+                  "id": "SHORELINE_PROTECTION", 
+                  "icon": "NA"
                 }, 
                 {
                   "digits": "26", 
@@ -15939,6 +16598,7 @@ var symbolData={
               "digits": "04", 
               "label": "Aids to Navigation", 
               "id": "AIDS_NAVIGATION", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -16000,6 +16660,7 @@ var symbolData={
               "digits": "05", 
               "label": "Dangers/Hazards", 
               "id": "DANGERS_HAZARDS", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -16091,6 +16752,7 @@ var symbolData={
               "digits": "06", 
               "label": "Bottom Features", 
               "id": "BOTTOM_FEATURES", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -16182,6 +16844,7 @@ var symbolData={
               "digits": "07", 
               "label": "Tide and Current", 
               "id": "TIDE_AND_CURRENT", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -16221,12 +16884,14 @@ var symbolData={
           "digits": "13", 
           "label": "Oceanography", 
           "id": "OCEANOGRAPHY", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Bioluminescence", 
               "id": "BIOLUMINESCENCE", 
               "remarks": "Measured by Visual Detection Ratio (VDR)", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -16288,6 +16953,7 @@ var symbolData={
               "digits": "02", 
               "label": "Beach Slope", 
               "id": "BEACH_SLOPE", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -16321,11 +16987,13 @@ var symbolData={
           "digits": "14", 
           "label": "Geophysics/Acoustics", 
           "id": "GEOPHYSICS_ACOUSTICS", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Mine Warfare (MIW) Bottom Descriptors", 
               "id": "MINE_WARFARE_MIW_BOTTOM_DESCRIPTORS", 
+              "icon": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -16575,6 +17243,7 @@ var symbolData={
           "digits": "15", 
           "label": "Limits", 
           "id": "MARITIME_LIMITS", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -16624,6 +17293,7 @@ var symbolData={
           "digits": "16", 
           "label": "Man-Made Structures", 
           "id": "MAN_MADE_STRUCTURES", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -16709,6 +17379,7 @@ var symbolData={
           "label": "Space", 
           "id": "SPACE", 
           "remarks": "No icon is associated with this entity. It is for hierarchal purposes only.", 
+          "icon": "NA", 
           "entityTypes": []
         }
       ], 
@@ -16730,6 +17401,7 @@ var symbolData={
           "label": "Signal Intercept", 
           "id": "SIGNAL_INTERCEPT", 
           "remarks": "There is no icon associated with this entity.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -16993,6 +17665,7 @@ var symbolData={
           "label": "Signal Intercept", 
           "id": "SIGNAL_INTERCEPT", 
           "remarks": "There is no icon associated with this entity.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -17416,6 +18089,7 @@ var symbolData={
           "label": "Signal Intercept", 
           "id": "SIGNAL_INTERCEPT", 
           "remarks": "There is no icon associated with this entity.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -17826,6 +18500,7 @@ var symbolData={
           "label": "Signal Intercept", 
           "id": "SIGNAL_INTERCEPT", 
           "remarks": "There is no icon associated with this entity.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -18208,6 +18883,7 @@ var symbolData={
           "label": "Signal Intercept", 
           "id": "SIGNAL_INTERCEPT", 
           "remarks": "There is no icon associated with this entity.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -18513,6 +19189,7 @@ var symbolData={
           "label": "Botnet", 
           "id": "BOTNET", 
           "remarks": "There is no symbol associated with this entity.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -18549,6 +19226,7 @@ var symbolData={
           "label": "Infection", 
           "id": "INFECTION", 
           "remarks": "There is no symbol associated with this entity.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -18621,6 +19299,7 @@ var symbolData={
           "label": "Health and Status", 
           "id": "HEALTH_AND_STATUS", 
           "remarks": "There is no symbol associated with this entity.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -18657,6 +19336,7 @@ var symbolData={
           "label": "Device Type", 
           "id": "DEVICE_TYPE", 
           "remarks": "There is no symbol associated with this entity.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -18749,6 +19429,7 @@ var symbolData={
           "label": "Device Domain", 
           "id": "DEVICE_DOMAIN", 
           "remarks": "There is no symbol associated with this entity.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -18792,6 +19473,7 @@ var symbolData={
           "label": "Effect", 
           "id": "EFFECT", 
           "remarks": "There is no symbol associated with this entity.", 
+          "icon": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
