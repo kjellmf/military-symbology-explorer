@@ -118,6 +118,8 @@ def extract_element_data(element, tag_name="EntityCode"):
         limit_use_to = [element_id for element_id in element.get('LimitUseTo').split(' ') if element_id]
         limit_use_to.sort()
         element_dict['limitUseTo'] = limit_use_to
+    if "Category" in element.attrib:
+        element_dict["category"] = element.get('Category')
 
     return element_dict
 

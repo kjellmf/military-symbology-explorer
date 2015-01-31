@@ -399,225 +399,262 @@ var symbolData={
           "digits": "01", 
           "label": "Attack/Strike", 
           "id": "ATTACK_STRIKE_MOD", 
-          "graphic": "01011.svg"
+          "graphic": "01011.svg", 
+          "category": "Military Aircraft Type"
         }, 
         {
           "digits": "02", 
           "label": "Bomber", 
           "id": "BOMBER_MOD", 
-          "graphic": "01021.svg"
+          "graphic": "01021.svg", 
+          "category": "Military Aircraft Type"
         }, 
         {
           "digits": "03", 
           "label": "Cargo", 
           "id": "CARGO_MOD", 
-          "graphic": "01031.svg"
+          "graphic": "01031.svg", 
+          "category": "Aircraft Type"
         }, 
         {
           "digits": "04", 
           "label": "Fighter", 
           "id": "FIGHTER_MOD", 
-          "graphic": "01041.svg"
+          "graphic": "01041.svg", 
+          "category": "Military Aircraft Type"
         }, 
         {
           "digits": "05", 
           "label": "Interceptor", 
           "id": "INTERCEPTOR_MOD", 
           "graphic": "01051.svg", 
-          "remarks": "APP-6"
+          "remarks": "APP-6", 
+          "category": "Military Aircraft Type"
         }, 
         {
           "digits": "06", 
           "label": "Tanker", 
           "id": "TANKER_MOD", 
-          "graphic": "01061.svg"
+          "graphic": "01061.svg", 
+          "category": "Aircraft Type"
         }, 
         {
           "digits": "07", 
           "label": "Utility", 
           "id": "UTILITY_MOD", 
-          "graphic": "01071.svg"
+          "graphic": "01071.svg", 
+          "category": "Aircraft Type"
         }, 
         {
           "digits": "08", 
           "label": "VSTOL/VTOL", 
           "id": "VSTOL_MOD", 
-          "graphic": "01081.svg"
+          "graphic": "01081.svg", 
+          "category": "Aircraft Type"
         }, 
         {
           "digits": "09", 
           "label": "Passenger", 
           "id": "PASSENGER_MOD", 
-          "graphic": "01091.svg"
+          "graphic": "01091.svg", 
+          "category": "Aircraft Type"
         }, 
         {
           "digits": "10", 
           "label": "Ultra Light", 
           "id": "ULTRA_LIGHT_MOD", 
-          "graphic": "01101.svg"
+          "graphic": "01101.svg", 
+          "category": "Aircraft Type"
         }, 
         {
           "digits": "11", 
           "label": "Airborne Command Post (ACP)", 
           "id": "ACP_MOD", 
-          "graphic": "01111.svg"
+          "graphic": "01111.svg", 
+          "category": "Military Aircraft Type"
         }, 
         {
           "digits": "12", 
           "label": "Airborne Early Warning (AEW)", 
           "id": "AEW_MOD", 
-          "graphic": "01121.svg"
+          "graphic": "01121.svg", 
+          "category": "Military Aircraft Type"
         }, 
         {
           "digits": "13", 
           "label": "Government", 
           "id": "GOV_MOD", 
-          "graphic": "01131.svg"
+          "graphic": "01131.svg", 
+          "category": "Aircraft Type"
         }, 
         {
           "digits": "14", 
           "label": "Medical Evacuation (MEDEVAC)", 
           "id": "MEDEVAC_MOD", 
-          "graphic": "01141.svg"
+          "graphic": "01141.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "15", 
           "label": "Escort", 
           "id": "ESCORT_MOD", 
-          "graphic": "01151.svg"
+          "graphic": "01151.svg", 
+          "category": "Military Mission Area"
         }, 
         {
           "digits": "16", 
           "label": "Electronic Combat (EC)/Jammer", 
           "id": "EC_MOD", 
-          "graphic": "01161.svg"
+          "graphic": "01161.svg", 
+          "category": "Military Mission Area"
         }, 
         {
           "digits": "17", 
           "label": "Patrol", 
           "id": "PATROL_MOD", 
-          "graphic": "01171.svg"
+          "graphic": "01171.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "18", 
           "label": "Reconnaissance", 
           "id": "RECON_MOD", 
-          "graphic": "01181.svg"
+          "graphic": "01181.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "19", 
           "label": "Trainer", 
           "id": "TRAINER_MOD", 
-          "graphic": "01191.svg"
+          "graphic": "01191.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "20", 
           "label": "Photographic (Reconnaissance)", 
           "id": "PHOTO_MOD", 
-          "graphic": "01201.svg"
+          "graphic": "01201.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "21", 
           "label": "Personnel Recovery", 
           "id": "PERSONNEL_RECOVERY_MOD", 
-          "graphic": "01211.svg"
+          "graphic": "01211.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "22", 
           "label": "Antisubmarine Warfare", 
           "id": "ASW_MOD", 
-          "graphic": "01221.svg"
+          "graphic": "01221.svg", 
+          "category": "Military Mission Area"
         }, 
         {
           "digits": "23", 
           "label": "Communications", 
           "id": "COMMS_MOD", 
-          "graphic": "01231.svg"
+          "graphic": "01231.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "24", 
           "label": "Electronic Support (ES)", 
           "id": "ES_MOD", 
-          "graphic": "01241.svg"
+          "graphic": "01241.svg", 
+          "category": "Military Mission Area"
         }, 
         {
           "digits": "25", 
           "label": "Mine Countermeasures (MCM)", 
           "id": "MCM_MOD", 
-          "graphic": "01251.svg"
+          "graphic": "01251.svg", 
+          "category": "Military Mission Area"
         }, 
         {
           "digits": "26", 
           "label": "Search and Rescue", 
           "id": "SAR_MOD", 
-          "graphic": "01261.svg"
+          "graphic": "01261.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "27", 
           "label": "Special Operations Forces", 
           "id": "SOF_MOD", 
-          "graphic": "01271.svg"
+          "graphic": "01271.svg", 
+          "category": "Military Mission Area"
         }, 
         {
           "digits": "28", 
           "label": "Surface Warfare", 
           "id": "SURFACE_WARFARE_MOD", 
-          "graphic": "01281.svg"
+          "graphic": "01281.svg", 
+          "category": "Military Mission Area"
         }, 
         {
           "digits": "29", 
           "label": "Very Important Person (VIP) Transport", 
           "id": "VIP_MOD", 
-          "graphic": "01291.svg"
+          "graphic": "01291.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "30", 
           "label": "Combat Search and Rescue (CSAR)", 
           "id": "CSAR_MOD", 
-          "graphic": "01301.svg"
+          "graphic": "01301.svg", 
+          "category": "Military Mission Area"
         }, 
         {
           "digits": "31", 
           "label": "Suppression of Enemy Air Defenses", 
           "id": "SUPP_EAD_MOD", 
           "graphic": "01311.svg", 
-          "remarks": "APP-6"
+          "remarks": "APP-6", 
+          "category": "Military Mission Area"
         }, 
         {
           "digits": "32", 
           "label": "Antisurface Warfare", 
           "id": "ASUW_MOD", 
-          "graphic": "01321.svg"
+          "graphic": "01321.svg", 
+          "category": "Military Mission Area"
         }, 
         {
           "digits": "33", 
           "label": "Fighter/Bomber", 
           "id": "FB_MOD", 
-          "graphic": "01331.svg"
+          "graphic": "01331.svg", 
+          "category": "Military Aircraft Type"
         }, 
         {
           "digits": "34", 
           "label": "Intensive Care", 
           "id": "IC_MOD", 
-          "graphic": "01341.svg"
+          "graphic": "01341.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "35", 
           "label": "Electronic Attack (EA)", 
           "id": "EA_MOD", 
-          "graphic": "01351.svg"
+          "graphic": "01351.svg", 
+          "category": "Military Mission Area"
         }, 
         {
           "digits": "36", 
           "label": "Multimission", 
           "id": "MULTIMISSION_MOD", 
-          "graphic": "01361.svg"
+          "graphic": "01361.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "37", 
           "label": "Hijacking", 
           "id": "HIJACKING_MOD", 
-          "graphic": "01371.svg"
+          "graphic": "01371.svg", 
+          "category": "Crime"
         }, 
         {
           "digits": "38", 
@@ -626,7 +663,8 @@ var symbolData={
           "graphic": "01381.svg", 
           "limitUseTo": [
             "ROTARY_WING"
-          ]
+          ], 
+          "category": "Mission Area"
         }, 
         {
           "digits": "39", 
@@ -635,7 +673,8 @@ var symbolData={
           "graphic": "01391.svg", 
           "limitUseTo": [
             "ROTARY_WING"
-          ]
+          ], 
+          "category": "Mission Area"
         }
       ], 
       "sectorTwoModifiers": [
@@ -643,19 +682,22 @@ var symbolData={
           "digits": "01", 
           "label": "Heavy", 
           "id": "HVY_MOD", 
-          "graphic": "01012.svg"
+          "graphic": "01012.svg", 
+          "category": "Cargo/Transport Capacity"
         }, 
         {
           "digits": "02", 
           "label": "Medium", 
           "id": "MED_MOD", 
-          "graphic": "01022.svg"
+          "graphic": "01022.svg", 
+          "category": "Cargo/Transport Capacity"
         }, 
         {
           "digits": "03", 
           "label": "Light", 
           "id": "LT_MOD", 
-          "graphic": "01032.svg"
+          "graphic": "01032.svg", 
+          "category": "Cargo/Transport Capacity"
         }, 
         {
           "digits": "04", 
@@ -664,7 +706,8 @@ var symbolData={
           "graphic": "01042.svg", 
           "limitUseTo": [
             "TANKER"
-          ]
+          ], 
+          "category": "Re-fueling Capability"
         }, 
         {
           "digits": "05", 
@@ -673,7 +716,8 @@ var symbolData={
           "graphic": "01052.svg", 
           "limitUseTo": [
             "TANKER"
-          ]
+          ], 
+          "category": "Re-fueling Capability"
         }, 
         {
           "digits": "06", 
@@ -682,37 +726,43 @@ var symbolData={
           "graphic": "01062.svg", 
           "limitUseTo": [
             "TANKER"
-          ]
+          ], 
+          "category": "Re-fueling Capability"
         }, 
         {
           "digits": "07", 
           "label": "Close Range", 
           "id": "CLOSE_MOD", 
-          "graphic": "01072.svg"
+          "graphic": "01072.svg", 
+          "category": "Range"
         }, 
         {
           "digits": "08", 
           "label": "Short Range", 
           "id": "SHORT_MOD", 
-          "graphic": "01082.svg"
+          "graphic": "01082.svg", 
+          "category": "Range"
         }, 
         {
           "digits": "09", 
           "label": "Medium Range", 
           "id": "MEDIUM_MOD", 
-          "graphic": "01092.svg"
+          "graphic": "01092.svg", 
+          "category": "Range"
         }, 
         {
           "digits": "10", 
           "label": "Long Range", 
           "id": "LONG_MOD", 
-          "graphic": "01102.svg"
+          "graphic": "01102.svg", 
+          "category": "Range"
         }, 
         {
           "digits": "11", 
           "label": "Downlinked", 
           "id": "DOWNLINK_MOD", 
-          "graphic": "01112.svg"
+          "graphic": "01112.svg", 
+          "category": "Track Link Availability"
         }
       ], 
       "graphicFolder": {
@@ -741,49 +791,57 @@ var symbolData={
           "digits": "01", 
           "label": "Air", 
           "id": "AIR_MOD", 
-          "graphic": "02011.svg"
+          "graphic": "02011.svg", 
+          "category": "Launch Origin"
         }, 
         {
           "digits": "02", 
           "label": "Surface", 
           "id": "SURFACE_MOD", 
-          "graphic": "02021.svg"
+          "graphic": "02021.svg", 
+          "category": "Launch Origin"
         }, 
         {
           "digits": "03", 
           "label": "Subsurface", 
           "id": "SUB_MOD", 
-          "graphic": "02031.svg"
+          "graphic": "02031.svg", 
+          "category": "Launch Origin"
         }, 
         {
           "digits": "04", 
           "label": "Space", 
           "id": "SPACE_MOD", 
-          "graphic": "02041.svg"
+          "graphic": "02041.svg", 
+          "category": "Launch Origin"
         }, 
         {
           "digits": "05", 
           "label": "Anti-Ballistic", 
           "id": "AB_MOD", 
-          "graphic": "02051.svg"
+          "graphic": "02051.svg", 
+          "category": "Missile Class"
         }, 
         {
           "digits": "06", 
           "label": "Ballistic", 
           "id": "BALLISTIC_MOD", 
-          "graphic": "02061.svg"
+          "graphic": "02061.svg", 
+          "category": "Missile Class"
         }, 
         {
           "digits": "07", 
           "label": "Cruise", 
           "id": "CRUISE_MOD", 
-          "graphic": "02071.svg"
+          "graphic": "02071.svg", 
+          "category": "Missile Class"
         }, 
         {
           "digits": "08", 
           "label": "Interceptor", 
           "id": "INTERCEPTOR_MOD", 
-          "graphic": "02081.svg"
+          "graphic": "02081.svg", 
+          "category": "Missile Class"
         }
       ], 
       "sectorTwoModifiers": [
@@ -791,38 +849,44 @@ var symbolData={
           "digits": "01", 
           "label": "Air", 
           "id": "AIR_DEST_MOD", 
-          "graphic": "02012.svg"
+          "graphic": "02012.svg", 
+          "category": "Missile Destination"
         }, 
         {
           "digits": "02", 
           "label": "Surface", 
           "id": "SURFACE_DEST_MOD", 
-          "graphic": "02022.svg"
+          "graphic": "02022.svg", 
+          "category": "Missile Destination"
         }, 
         {
           "digits": "03", 
           "label": "Subsurface", 
           "id": "SUB_DEST_MOD", 
-          "graphic": "02032.svg"
+          "graphic": "02032.svg", 
+          "category": "Missile Destination"
         }, 
         {
           "digits": "04", 
           "label": "Space", 
           "id": "SPACE_DEST_MOD", 
-          "graphic": "02042.svg"
+          "graphic": "02042.svg", 
+          "category": "Missile Destination"
         }, 
         {
           "digits": "05", 
           "label": "Launched", 
           "id": "LAUNCHED_MOD", 
-          "graphic": "02052.svg"
+          "graphic": "02052.svg", 
+          "category": "Missile Status"
         }, 
         {
           "digits": "06", 
           "label": "Missile", 
           "id": "MISSILE_MOD", 
           "graphic": "02062.svg", 
-          "remarks": "APP-6"
+          "remarks": "APP-6", 
+          "category": "Missile Status"
         }, 
         {
           "digits": "07", 
@@ -831,7 +895,8 @@ var symbolData={
           "graphic": "02072.svg", 
           "limitUseTo": [
             "INTERCEPTOR_MOD"
-          ]
+          ], 
+          "category": "Missile Type-BMD"
         }, 
         {
           "digits": "08", 
@@ -840,7 +905,8 @@ var symbolData={
           "graphic": "02082.svg", 
           "limitUseTo": [
             "INTERCEPTOR_MOD"
-          ]
+          ], 
+          "category": "Missile Type-AAW"
         }, 
         {
           "digits": "09", 
@@ -849,7 +915,8 @@ var symbolData={
           "graphic": "02092.svg", 
           "limitUseTo": [
             "INTERCEPTOR_MOD"
-          ]
+          ], 
+          "category": "Missile Type-AAW"
         }, 
         {
           "digits": "10", 
@@ -858,7 +925,8 @@ var symbolData={
           "graphic": "02102.svg", 
           "limitUseTo": [
             "INTERCEPTOR_MOD"
-          ]
+          ], 
+          "category": "Missile Type-AAW"
         }, 
         {
           "digits": "11", 
@@ -867,42 +935,48 @@ var symbolData={
           "graphic": "02112.svg", 
           "limitUseTo": [
             "INTERCEPTOR_MOD"
-          ]
+          ], 
+          "category": "Missile Type-AAW"
         }, 
         {
           "digits": "12", 
           "label": "Short Range", 
           "id": "SHORT_MOD", 
           "graphic": "02122.svg", 
-          "remarks": "1000km or less."
+          "remarks": "1000km or less.", 
+          "category": "Missile Range"
         }, 
         {
           "digits": "13", 
           "label": "Medium Range", 
           "id": "MED_MOD", 
           "graphic": "02132.svg", 
-          "remarks": "1000km to 3500km. Typically used in reference to surface-to-air missiles."
+          "remarks": "1000km to 3500km. Typically used in reference to surface-to-air missiles.", 
+          "category": "Missile Range"
         }, 
         {
           "digits": "14", 
           "label": "Intermediate Range", 
           "id": "INTER_MOD", 
           "graphic": "02142.svg", 
-          "remarks": "1000km to 3500km. Typically used in reference to ballistic missiles."
+          "remarks": "1000km to 3500km. Typically used in reference to ballistic missiles.", 
+          "category": "Missile Range"
         }, 
         {
           "digits": "15", 
           "label": "Long Range", 
           "id": "LONG_MOD", 
           "graphic": "02152.svg", 
-          "remarks": "3500km to 5500km."
+          "remarks": "3500km to 5500km.", 
+          "category": "Missile Range"
         }, 
         {
           "digits": "16", 
           "label": "Intercontinental", 
           "id": "INTERCONT_MOD", 
           "graphic": "02162.svg", 
-          "remarks": "5500km or greater."
+          "remarks": "5500km or greater.", 
+          "category": "Missile Range"
         }
       ], 
       "graphicFolder": {
@@ -1166,37 +1240,43 @@ var symbolData={
           "digits": "01", 
           "label": "Low Earth Orbit (LEO)", 
           "id": "LEO_MOD", 
-          "graphic": "05011.svg"
+          "graphic": "05011.svg", 
+          "category": "Orbit"
         }, 
         {
           "digits": "02", 
           "label": "Medium Earth Orbit (MEO)", 
           "id": "MEO_MOD", 
-          "graphic": "05021.svg"
+          "graphic": "05021.svg", 
+          "category": "Orbit"
         }, 
         {
           "digits": "03", 
           "label": "High Earth Orbit (HEO)", 
           "id": "HEO_MOD", 
-          "graphic": "05031.svg"
+          "graphic": "05031.svg", 
+          "category": "Orbit"
         }, 
         {
           "digits": "04", 
           "label": "Geosynchronous Orbit (GSO)", 
           "id": "GSO_MOD", 
-          "graphic": "05041.svg"
+          "graphic": "05041.svg", 
+          "category": "Orbit"
         }, 
         {
           "digits": "05", 
           "label": "Geostationary Orbit (GO)", 
           "id": "GO_MOD", 
-          "graphic": "05051.svg"
+          "graphic": "05051.svg", 
+          "category": "Orbit"
         }, 
         {
           "digits": "06", 
           "label": "Molniya Orbit (MO)", 
           "id": "MO_MOD", 
-          "graphic": "05061.svg"
+          "graphic": "05061.svg", 
+          "category": "Orbit"
         }
       ], 
       "sectorTwoModifiers": [
@@ -1227,7 +1307,8 @@ var symbolData={
             "SATELLITE", 
             "TETHERED_SATELLITE", 
             "WEATHER_SATELLITE"
-          ]
+          ], 
+          "category": "Sensor"
         }, 
         {
           "digits": "02", 
@@ -1256,7 +1337,8 @@ var symbolData={
             "SATELLITE", 
             "TETHERED_SATELLITE", 
             "WEATHER_SATELLITE"
-          ]
+          ], 
+          "category": "Sensor"
         }, 
         {
           "digits": "03", 
@@ -1285,7 +1367,8 @@ var symbolData={
             "SATELLITE", 
             "TETHERED_SATELLITE", 
             "WEATHER_SATELLITE"
-          ]
+          ], 
+          "category": "Sensor"
         }, 
         {
           "digits": "04", 
@@ -1314,7 +1397,8 @@ var symbolData={
             "SATELLITE", 
             "TETHERED_SATELLITE", 
             "WEATHER_SATELLITE"
-          ]
+          ], 
+          "category": "Sensor"
         }
       ], 
       "graphicFolder": {
@@ -1343,19 +1427,22 @@ var symbolData={
           "digits": "01", 
           "label": "Ballistic", 
           "id": "BALLISTIC_MOD", 
-          "graphic": "06011.svg"
+          "graphic": "06011.svg", 
+          "category": "Missile Class"
         }, 
         {
           "digits": "02", 
           "label": "Space", 
           "id": "SPACE_1_MOD", 
-          "graphic": "06021.svg"
+          "graphic": "06021.svg", 
+          "category": "Launch Origin"
         }, 
         {
           "digits": "03", 
           "label": "Interceptor", 
           "id": "INTERCEPTOR_MOD", 
-          "graphic": "06031.svg"
+          "graphic": "06031.svg", 
+          "category": "Missile Class"
         }
       ], 
       "sectorTwoModifiers": [
@@ -1364,35 +1451,40 @@ var symbolData={
           "label": "Short Range", 
           "id": "SHORT_MOD", 
           "graphic": "06012.svg", 
-          "remarks": "1000km or less"
+          "remarks": "1000km or less", 
+          "category": "Missile Range"
         }, 
         {
           "digits": "02", 
           "label": "Medium Range", 
           "id": "MEDIUM_MOD", 
           "graphic": "06022.svg", 
-          "remarks": "1000km to 3500km"
+          "remarks": "1000km to 3500km", 
+          "category": "Missile Range"
         }, 
         {
           "digits": "03", 
           "label": "Intermediate Range", 
           "id": "INTERMEDIATE_MOD", 
           "graphic": "06032.svg", 
-          "remarks": "1000km to 3500km"
+          "remarks": "1000km to 3500km", 
+          "category": "Missile Range"
         }, 
         {
           "digits": "04", 
           "label": "Long Range", 
           "id": "LONG_MOD", 
           "graphic": "06042.svg", 
-          "remarks": "3500km to 5500km"
+          "remarks": "3500km to 5500km", 
+          "category": "Missile Range"
         }, 
         {
           "digits": "05", 
           "label": "Intercontinental", 
           "id": "INTERCONTINENTAL_MOD", 
           "graphic": "06052.svg", 
-          "remarks": "5500km or greater"
+          "remarks": "5500km or greater", 
+          "category": "Missile Range"
         }, 
         {
           "digits": "06", 
@@ -1401,7 +1493,8 @@ var symbolData={
           "graphic": "06062.svg", 
           "limitUseTo": [
             "INTERCEPTOR_MOD"
-          ]
+          ], 
+          "category": "Missile Type - BMD"
         }, 
         {
           "digits": "07", 
@@ -1410,7 +1503,8 @@ var symbolData={
           "graphic": "06072.svg", 
           "limitUseTo": [
             "INTERCEPTOR_MOD"
-          ]
+          ], 
+          "category": "Missile Type - BMD"
         }, 
         {
           "digits": "08", 
@@ -1419,7 +1513,8 @@ var symbolData={
           "graphic": "06082.svg", 
           "limitUseTo": [
             "INTERCEPTOR_MOD"
-          ]
+          ], 
+          "category": "Missile Type - BMD"
         }, 
         {
           "digits": "09", 
@@ -1428,7 +1523,8 @@ var symbolData={
           "graphic": "06092.svg", 
           "limitUseTo": [
             "INTERCEPTOR_MOD"
-          ]
+          ], 
+          "category": "Missile Type - BMD"
         }, 
         {
           "digits": "10", 
@@ -1437,7 +1533,8 @@ var symbolData={
           "graphic": "06102.svg", 
           "limitUseTo": [
             "INTERCEPTOR_MOD"
-          ]
+          ], 
+          "category": "Missile Type - BMD"
         }, 
         {
           "digits": "11", 
@@ -1446,13 +1543,15 @@ var symbolData={
           "graphic": "06112.svg", 
           "limitUseTo": [
             "INTERCEPTOR_MOD"
-          ]
+          ], 
+          "category": "Missile Type - BMD"
         }, 
         {
           "digits": "12", 
           "label": "Space", 
           "id": "SPACE_2_MOD", 
-          "graphic": "06122.svg"
+          "graphic": "06122.svg", 
+          "category": "Launch Origin"
         }
       ], 
       "graphicFolder": {
@@ -3076,469 +3175,547 @@ var symbolData={
           "digits": "01", 
           "label": "Air Mobile/Air Assault (US Only)", 
           "id": "AIR_MOBILE_AIR_ASSAULT_MOD", 
-          "graphic": "10011.svg"
+          "graphic": "10011.svg", 
+          "category": "Mobility"
         }, 
         {
           "digits": "02", 
           "label": "Area", 
           "id": "AREA_MOD", 
-          "graphic": "10021.svg"
+          "graphic": "10021.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "03", 
           "label": "Attack", 
           "id": "ATTACK_MOD", 
-          "graphic": "10031.svg"
+          "graphic": "10031.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "04", 
           "label": "Biological", 
           "id": "BIOLOGICAL_MOD", 
-          "graphic": "10041.svg"
+          "graphic": "10041.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "05", 
           "label": "Border", 
           "id": "BORDER_MOD", 
-          "graphic": "10051.svg"
+          "graphic": "10051.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "06", 
           "label": "Bridging", 
           "id": "BRIDGING_MOD", 
-          "graphic": "10061.svg"
+          "graphic": "10061.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "07", 
           "label": "Chemical", 
           "id": "CHEMICAL_MOD", 
-          "graphic": "10071.svg"
+          "graphic": "10071.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "08", 
           "label": "Close Protection", 
           "id": "CLOSE_PROTECTION_MOD", 
-          "graphic": "10081.svg"
+          "graphic": "10081.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "09", 
           "label": "Combat", 
           "id": "COMBAT_MOD", 
-          "graphic": "10091.svg"
+          "graphic": "10091.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "10", 
           "label": "Command and Control", 
           "id": "COMMAND_CONTROL_MOD", 
-          "graphic": "10101.svg"
+          "graphic": "10101.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "11", 
           "label": "Communications Contingency Package", 
           "id": "COMMUNICATIONS_CONTINGENCY_PACKAGE_MOD", 
-          "graphic": "10111.svg"
+          "graphic": "10111.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "12", 
           "label": "Construction", 
           "id": "CONSTRUCTION_MOD", 
-          "graphic": "10121.svg"
+          "graphic": "10121.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "13", 
           "label": "Cross Cultural Communication", 
           "id": "CROSS_CULTURAL_COMMUNICATION_MOD", 
-          "graphic": "10131.svg"
+          "graphic": "10131.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "14", 
           "label": "Crowd and Riot Control", 
           "id": "CROWD_RIOT_CONTROL_MOD", 
-          "graphic": "10141.svg"
+          "graphic": "10141.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "15", 
           "label": "Decontamination", 
           "id": "DECONTAMINATION_MOD", 
-          "graphic": "10151.svg"
+          "graphic": "10151.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "16", 
           "label": "Detention", 
           "id": "DETENTION_MOD", 
-          "graphic": "10161.svg"
+          "graphic": "10161.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "17", 
           "label": "Direct Communications", 
           "id": "DIRECT_COMMUNICATIONS_MOD", 
-          "graphic": "10171.svg"
+          "graphic": "10171.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "18", 
           "label": "Diving", 
           "id": "DIVING_MOD", 
-          "graphic": "10181.svg"
+          "graphic": "10181.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "19", 
           "label": "Division", 
           "id": "DIVISION_MOD", 
-          "graphic": "10191.svg"
+          "graphic": "10191.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "20", 
           "label": "Dog", 
           "id": "DOG_MOD", 
-          "graphic": "10201.svg"
+          "graphic": "10201.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "21", 
           "label": "Drilling", 
           "id": "DRILLING_MOD", 
-          "graphic": "10211.svg"
+          "graphic": "10211.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "22", 
           "label": "Electro-Optical", 
           "id": "ELECTRO_OPTICAL_MOD", 
-          "graphic": "10221.svg"
+          "graphic": "10221.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "23", 
           "label": "Enhanced", 
           "id": "ENHANCED_MOD", 
-          "graphic": "10231.svg"
+          "graphic": "10231.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "24", 
           "label": "Explosive Ordnance Disposal (EOD)", 
           "id": "EXPLOSIVE_ORDNANCE_DISPOSAL_EOD_MOD", 
-          "graphic": "10241.svg"
+          "graphic": "10241.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "25", 
           "label": "Fire Direction Center", 
           "id": "FIRE_DIRECTION_CENTER_MOD", 
-          "graphic": "10251.svg"
+          "graphic": "10251.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "26", 
           "label": "Force", 
           "id": "FORCE_MOD", 
-          "graphic": "10261.svg"
+          "graphic": "10261.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "27", 
           "label": "Forward", 
           "id": "FORWARD_MOD", 
-          "graphic": "10271.svg"
+          "graphic": "10271.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "28", 
           "label": "Ground Station Module", 
           "id": "GROUND_STATION_MODULE_MOD", 
-          "graphic": "10281.svg"
+          "graphic": "10281.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "29", 
           "label": "Landing Support", 
           "id": "LANDING_SUPPORT_MOD", 
-          "graphic": "10291.svg"
+          "graphic": "10291.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "30", 
           "label": "Large Extension Node", 
           "id": "LARGE_EXTENSION_NODE_MOD", 
-          "graphic": "10301.svg"
+          "graphic": "10301.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "31", 
           "label": "Maintenance", 
           "id": "MAINTENANCE_MOD", 
-          "graphic": "10311.svg"
+          "graphic": "10311.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "32", 
           "label": "Meteorological", 
           "id": "METEOROLOGICAL_MOD", 
-          "graphic": "10321.svg"
+          "graphic": "10321.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "33", 
           "label": "Mine Countermeasure", 
           "id": "MINE_COUNTERMEASURE_MOD", 
-          "graphic": "10331.svg"
+          "graphic": "10331.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "34", 
           "label": "Missile", 
           "id": "MISSILE_MOD", 
-          "graphic": "10341.svg"
+          "graphic": "10341.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "35", 
           "label": "Mobile Advisor and Support", 
           "id": "MOBILE_ADVISOR_SUPPORT_MOD", 
-          "graphic": "10351.svg"
+          "graphic": "10351.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "36", 
           "label": "Mobile Subscriber Equipment", 
           "id": "MOBILE_SUBSCRIBER_EQUIPMENT_MOD", 
-          "graphic": "10361.svg"
+          "graphic": "10361.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "37", 
           "label": "Mobility Support", 
           "id": "MOBILITY_SUPPORT_MOD", 
-          "graphic": "10371.svg"
+          "graphic": "10371.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "38", 
           "label": "Movement Control Center", 
           "id": "MOVEMENT_CONTROL_CENTER_MOD", 
-          "graphic": "10381.svg"
+          "graphic": "10381.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "39", 
           "label": "Multinational", 
           "id": "MULTINATIONAL_MOD", 
-          "graphic": "10391.svg"
+          "graphic": "10391.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "40", 
           "label": "Multinational Specialized Unit", 
           "id": "MULTINATIONAL_SPECIALIZED_UNIT_MOD", 
-          "graphic": "10401.svg"
+          "graphic": "10401.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "41", 
           "label": "Multiple Rocket Launcher", 
           "id": "MULTIPLE_ROCKET_LAUNCHER_MOD", 
-          "graphic": "10411.svg"
+          "graphic": "10411.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "42", 
           "label": "NATO Medical Role 1", 
           "id": "NATO_MEDICAL_ROLE_1_MOD", 
-          "graphic": "10421.svg"
+          "graphic": "10421.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "43", 
           "label": "NATO Medical Role 2", 
           "id": "NATO_MEDICAL_ROLE_2_MOD", 
-          "graphic": "10431.svg"
+          "graphic": "10431.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "44", 
           "label": "NATO Medical Role 3", 
           "id": "NATO_MEDICAL_ROLE_3_MOD", 
-          "graphic": "10441.svg"
+          "graphic": "10441.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "45", 
           "label": "NATO Medical Role 4", 
           "id": "NATO_MEDICAL_ROLE_4_MOD", 
-          "graphic": "10451.svg"
+          "graphic": "10451.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "46", 
           "label": "Naval", 
           "id": "NAVAL_MOD", 
-          "graphic": "10461.svg"
+          "graphic": "10461.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "47", 
           "label": "Node Center", 
           "id": "NODE_CENTER_MOD", 
-          "graphic": "10471.svg"
+          "graphic": "10471.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "48", 
           "label": "Nuclear", 
           "id": "NUCLEAR_MOD", 
-          "graphic": "10481.svg"
+          "graphic": "10481.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "49", 
           "label": "Operations", 
           "id": "OPERATIONS_MOD", 
-          "graphic": "10491.svg"
+          "graphic": "10491.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "50", 
           "label": "Radar", 
           "id": "RADAR_MOD", 
-          "graphic": "10501.svg"
+          "graphic": "10501.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "51", 
           "label": "Radio Frequency Identification (RFID) Interrogator / Sensor", 
           "id": "RFID_INTERROGATOR_SENSOR_MOD", 
-          "graphic": "10511.svg"
+          "graphic": "10511.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "52", 
           "label": "Radiological", 
           "id": "RADIOLOGICAL_MOD", 
-          "graphic": "10521.svg"
+          "graphic": "10521.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "53", 
           "label": "Search and Rescue", 
           "id": "SEARCH_RESCUE_MOD", 
-          "graphic": "10531.svg"
+          "graphic": "10531.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "54", 
           "label": "Security", 
           "id": "SECURITY_MOD", 
-          "graphic": "10541.svg"
+          "graphic": "10541.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "55", 
           "label": "Sensor", 
           "id": "SENSOR_MOD", 
-          "graphic": "10551.svg"
+          "graphic": "10551.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "56", 
           "label": "Sensor Control Module (SCM)", 
           "id": "SENSOR_CONTROL_MODULE_SCM_MOD", 
-          "graphic": "10561.svg"
+          "graphic": "10561.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "57", 
           "label": "Signals Intelligence", 
           "id": "SIGNALS_INTELLIGENCE_MOD", 
-          "graphic": "10571.svg"
+          "graphic": "10571.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "58", 
           "label": "Single Shelter Switch", 
           "id": "SINGLE_SHELTER_SWITCH_MOD", 
-          "graphic": "10581.svg"
+          "graphic": "10581.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "59", 
           "label": "Single Rocket Launcher", 
           "id": "SINGLE_ROCKET_LAUNCHER_MOD", 
-          "graphic": "10591.svg"
+          "graphic": "10591.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "60", 
           "label": "Smoke", 
           "id": "SMOKE_MOD", 
-          "graphic": "10601.svg"
+          "graphic": "10601.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "61", 
           "label": "Sniper", 
           "id": "SNIPER_MOD", 
-          "graphic": "10611.svg"
+          "graphic": "10611.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "62", 
           "label": "Sound Ranging", 
           "id": "SOUND_RANGING_MOD", 
-          "graphic": "10621.svg"
+          "graphic": "10621.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "63", 
           "label": "Special Operations Forces (SOF)", 
           "id": "SPEC_OPS_SOF_MOD", 
-          "graphic": "10631.svg"
+          "graphic": "10631.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "64", 
           "label": "Special Weapons and Tactics", 
           "id": "SPECIAL_WEAPONS_TACTICS_MOD", 
-          "graphic": "10641.svg"
+          "graphic": "10641.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "65", 
           "label": "Survey", 
           "id": "SURVEY_MOD", 
-          "graphic": "10651.svg"
+          "graphic": "10651.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "66", 
           "label": "Tactical Exploitation", 
           "id": "TACTICAL_EXPLOITATION_MOD", 
-          "graphic": "10661.svg"
+          "graphic": "10661.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "67", 
           "label": "Target Acquisition", 
           "id": "TARGET_ACQUISITION_MOD", 
-          "graphic": "10671.svg"
+          "graphic": "10671.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "68", 
           "label": "Topographic", 
           "id": "TOPOGRAPHIC_MOD", 
-          "graphic": "10681.svg"
+          "graphic": "10681.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "69", 
           "label": "Utility", 
           "id": "UTILITY_MOD", 
-          "graphic": "10691.svg"
+          "graphic": "10691.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "70", 
           "label": "Video Imagery (Combat Camera)", 
           "id": "VIDEO_IMAGERY_MOD", 
-          "graphic": "10701.svg"
+          "graphic": "10701.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "71", 
           "label": "Accident", 
           "id": "ACCIDENT_MOD", 
-          "graphic": "10711.svg"
+          "graphic": "10711.svg", 
+          "category": "Composite Loss"
         }, 
         {
           "digits": "72", 
           "label": "Other", 
           "id": "OTHER_MOD", 
-          "graphic": "10721.svg"
+          "graphic": "10721.svg", 
+          "category": "Composite Loss"
         }, 
         {
           "digits": "73", 
           "label": "Civilian", 
           "id": "CIVILIAN_MOD", 
-          "graphic": "10731.svg"
+          "graphic": "10731.svg", 
+          "category": "Operation"
         }, 
         {
           "digits": "74", 
           "label": "Antisubmarine Warfare", 
           "id": "ANTISUBMARINE_WARFARE_MOD", 
-          "graphic": "10741.svg"
+          "graphic": "10741.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "75", 
           "label": "Medevac", 
           "id": "MEDEVAC_MOD", 
-          "graphic": "10751.svg"
+          "graphic": "10751.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "76", 
           "label": "Ranger", 
           "id": "RANGER_MOD", 
-          "graphic": "10761.svg"
+          "graphic": "10761.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "77", 
           "label": "Support", 
           "id": "SUPPORT_MOD", 
-          "graphic": "10771.svg"
+          "graphic": "10771.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "78", 
           "label": "Aviation", 
           "id": "AVIATION_MOD", 
-          "graphic": "10781.svg"
+          "graphic": "10781.svg", 
+          "category": "Capability"
         }
       ], 
       "sectorTwoModifiers": [
@@ -3546,343 +3723,400 @@ var symbolData={
           "digits": "01", 
           "label": "Airborne", 
           "id": "AIRBORNE_MOD", 
-          "graphic": "10012.svg"
+          "graphic": "10012.svg", 
+          "category": "Mobility"
         }, 
         {
           "digits": "02", 
           "label": "Arctic", 
           "id": "ARCTIC_MOD", 
-          "graphic": "10022.svg"
+          "graphic": "10022.svg", 
+          "category": "Mobility"
         }, 
         {
           "digits": "03", 
           "label": "Battle Damage Repair", 
           "id": "BATTLE_DAMAGE_REPAIR_MOD", 
-          "graphic": "10032.svg"
+          "graphic": "10032.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "04", 
           "label": "Bicycle Equipped", 
           "id": "BICYCLE_EQUIPPED_MOD", 
-          "graphic": "10042.svg"
+          "graphic": "10042.svg", 
+          "category": "Mobility"
         }, 
         {
           "digits": "05", 
           "label": "Casualty Staging", 
           "id": "CASUALTY_STAGING_MOD", 
-          "graphic": "10052.svg"
+          "graphic": "10052.svg", 
+          "category": "Close Range and Support"
         }, 
         {
           "digits": "06", 
           "label": "Clearing", 
           "id": "CLEARING_MOD", 
-          "graphic": "10062.svg"
+          "graphic": "10062.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "07", 
           "label": "Close Range", 
           "id": "CLOSE_RANGE_MOD", 
-          "graphic": "10072.svg"
+          "graphic": "10072.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "08", 
           "label": "Control", 
           "id": "CONTROL_MOD", 
-          "graphic": "10082.svg"
+          "graphic": "10082.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "09", 
           "label": "Decontamination", 
           "id": "DECONTAMINATION_2_MOD", 
-          "graphic": "10092.svg"
+          "graphic": "10092.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "10", 
           "label": "Demolition", 
           "id": "DEMOLITION_MOD", 
-          "graphic": "10102.svg"
+          "graphic": "10102.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "11", 
           "label": "Dental", 
           "id": "DENTAL_MOD", 
-          "graphic": "10112.svg"
+          "graphic": "10112.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "12", 
           "label": "Digital", 
           "id": "DIGITAL_MOD", 
-          "graphic": "10122.svg"
+          "graphic": "10122.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "13", 
           "label": "Enhanced Position Location Reporting System (EPLRS)", 
           "id": "ENHANCED_POSITION_LOCATION_REPORTING_SYSTEM_EPLRS_MOD", 
-          "graphic": "10132.svg"
+          "graphic": "10132.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "14", 
           "label": "Equipment", 
           "id": "EQUIPMENT_MOD", 
-          "graphic": "10142.svg"
+          "graphic": "10142.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "15", 
           "label": "Heavy", 
           "id": "HEAVY_MOD", 
-          "graphic": "10152.svg"
+          "graphic": "10152.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "16", 
           "label": "High Altitude", 
           "id": "HIGH_ALTITUDE_MOD", 
-          "graphic": "10162.svg"
+          "graphic": "10162.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "17", 
           "label": "Intermodal", 
           "id": "INTERMODAL_MOD", 
-          "graphic": "10172.svg"
+          "graphic": "10172.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "18", 
           "label": "Intensive Care", 
           "id": "INTENSIVE_CARE_MOD", 
-          "graphic": "10182.svg"
+          "graphic": "10182.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "19", 
           "label": "Light", 
           "id": "LIGHT_MOD", 
-          "graphic": "10192.svg"
+          "graphic": "10192.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "20", 
           "label": "Laboratory", 
           "id": "LABORATORY_MOD", 
-          "graphic": "10202.svg"
+          "graphic": "10202.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "21", 
           "label": "Launcher", 
           "id": "LAUNCHER_MOD", 
-          "graphic": "10212.svg"
+          "graphic": "10212.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "22", 
           "label": "Long Range", 
           "id": "LONG_RANGE_MOD", 
-          "graphic": "10222.svg"
+          "graphic": "10222.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "23", 
           "label": "Low Altitude", 
           "id": "LOW_ALTITUDE_MOD", 
-          "graphic": "10232.svg"
+          "graphic": "10232.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "24", 
           "label": "Medium", 
           "id": "MEDIUM_MOD", 
-          "graphic": "10242.svg"
+          "graphic": "10242.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "25", 
           "label": "Medium Altitude", 
           "id": "MEDIUM_ALTITUDE_MOD", 
-          "graphic": "10252.svg"
+          "graphic": "10252.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "26", 
           "label": "Medium Range", 
           "id": "MEDIUM_RANGE_MOD", 
-          "graphic": "10262.svg"
+          "graphic": "10262.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "27", 
           "label": "Mountain", 
           "id": "MOUNTAIN_MOD", 
-          "graphic": "10272.svg"
+          "graphic": "10272.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "28", 
           "label": "High to Medium Altitude", 
           "id": "HIGH_MEDIUM_ALTITUDE_MOD", 
-          "graphic": "10282.svg"
+          "graphic": "10282.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "29", 
           "label": "Multi-Channel", 
           "id": "MULTI_CHANNEL_MOD", 
-          "graphic": "10292.svg"
+          "graphic": "10292.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "30", 
           "label": "Optical (Flash)", 
           "id": "OPTICAL_FLASH_MOD", 
-          "graphic": "10302.svg"
+          "graphic": "10302.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "31", 
           "label": "Pack Animal", 
           "id": "PACK_ANIMAL_MOD", 
-          "graphic": "10312.svg"
+          "graphic": "10312.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "32", 
           "label": "Patient Evacuation Coordination", 
           "id": "PATIENT_EVACUATION_COORDINATION_MOD", 
-          "graphic": "10322.svg"
+          "graphic": "10322.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "33", 
           "label": "Preventive Maintenance", 
           "id": "PREVENTIVE_MAINTENANCE_MOD", 
-          "graphic": "10332.svg"
+          "graphic": "10332.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "34", 
           "label": "Psychological", 
           "id": "PSYCHOLOGICAL_MOD", 
-          "graphic": "10342.svg"
+          "graphic": "10342.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "35", 
           "label": "Radio Relay Line of Sight", 
           "id": "RADIO_RELAY_LOS_MOD", 
-          "graphic": "10352.svg"
+          "graphic": "10352.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "36", 
           "label": "Railroad", 
           "id": "RAILROAD_MOD", 
-          "graphic": "10362.svg"
+          "graphic": "10362.svg", 
+          "category": "Mobility"
         }, 
         {
           "digits": "37", 
           "label": "Recovery (Unmanned Systems)", 
           "id": "RECOVERY_UNMANNED_SYSTEMS_MOD", 
-          "graphic": "10372.svg"
+          "graphic": "10372.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "38", 
           "label": "Recovery (Maintenance)", 
           "id": "RECOVERY_MAINTENANCE_MOD", 
-          "graphic": "10382.svg"
+          "graphic": "10382.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "39", 
           "label": "Rescue Coordination Center", 
           "id": "RESCUE_COORDINATION_CENTER_MOD", 
-          "graphic": "10392.svg"
+          "graphic": "10392.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "40", 
           "label": "Riverine", 
           "id": "RIVERINE_MOD", 
-          "graphic": "10402.svg"
+          "graphic": "10402.svg", 
+          "category": "Mobility"
         }, 
         {
           "digits": "41", 
           "label": "Single Channel", 
           "id": "SINGLE_CHANNEL_MOD", 
-          "graphic": "10412.svg"
+          "graphic": "10412.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "42", 
           "label": "Ski", 
           "id": "SKI_MOD", 
-          "graphic": "10422.svg"
+          "graphic": "10422.svg", 
+          "category": "Mobility"
         }, 
         {
           "digits": "43", 
           "label": "Short Range", 
           "id": "SHORT_RANGE_MOD", 
-          "graphic": "10432.svg"
+          "graphic": "10432.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "44", 
           "label": "Strategic", 
           "id": "STRATEGIC_MOD", 
-          "graphic": "10442.svg"
+          "graphic": "10442.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "45", 
           "label": "Support", 
           "id": "SUPPORT_2_MOD", 
-          "graphic": "10452.svg"
+          "graphic": "10452.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "46", 
           "label": "Tactical", 
           "id": "TACTICAL_MOD", 
-          "graphic": "10462.svg"
+          "graphic": "10462.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "47", 
           "label": "Towed", 
           "id": "TOWED_MOD", 
-          "graphic": "10472.svg"
+          "graphic": "10472.svg", 
+          "category": "Mobility"
         }, 
         {
           "digits": "48", 
           "label": "Troop", 
           "id": "TROOP_MOD", 
-          "graphic": "10482.svg"
+          "graphic": "10482.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "49", 
           "label": "Vertical or Short Take-Off and Landing (VTOL/VSTOL)", 
           "id": "VERTICAL_TAKE_OFF_LANDING_VTOL_MOD", 
-          "graphic": "10492.svg"
+          "graphic": "10492.svg", 
+          "category": "Mobility"
         }, 
         {
           "digits": "50", 
           "label": "Veterinary", 
           "id": "VETERINARY_MOD", 
-          "graphic": "10502.svg"
+          "graphic": "10502.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "51", 
           "label": "Wheeled", 
           "id": "WHEELED_MOD", 
-          "graphic": "10512.svg"
+          "graphic": "10512.svg", 
+          "category": "Mobility"
         }, 
         {
           "digits": "52", 
           "label": "High to Low Altitude", 
           "id": "HIGH_LOW_ALTITUDE_MOD", 
-          "graphic": "10522.svg"
+          "graphic": "10522.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "53", 
           "label": "Medium to Low Altitude", 
           "id": "MEDIUM_LOW_ALTITUDE_MOD", 
-          "graphic": "10532.svg"
+          "graphic": "10532.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "54", 
           "label": "Attack", 
           "id": "ATTACK_2_MOD", 
-          "graphic": "10542.svg"
+          "graphic": "10542.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "55", 
           "label": "Refuel", 
           "id": "REFUEL_MOD", 
-          "graphic": "10552.svg"
+          "graphic": "10552.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "56", 
           "label": "Utility", 
           "id": "UTILITY_2_MOD", 
-          "graphic": "10562.svg"
+          "graphic": "10562.svg", 
+          "category": "Capability"
         }, 
         {
           "digits": "57", 
           "label": "Combat Search and Rescue", 
           "id": "COMBAT_SEARCH_RESCUE_MOD", 
-          "graphic": "10572.svg"
+          "graphic": "10572.svg", 
+          "category": "Capability"
         }
       ], 
       "graphicFolder": {
@@ -3982,145 +4216,169 @@ var symbolData={
           "digits": "01", 
           "label": "Assassination", 
           "id": "ASSASSINATION_MOD", 
-          "graphic": "11011.svg"
+          "graphic": "11011.svg", 
+          "category": "Crime"
         }, 
         {
           "digits": "02", 
           "label": "Execution (Wrongful Killing)", 
           "id": "EXECUTION_MOD", 
-          "graphic": "11021.svg"
+          "graphic": "11021.svg", 
+          "category": "Crime"
         }, 
         {
           "digits": "03", 
           "label": "Murder Victims", 
           "id": "MURDER_VICTIMS_MOD", 
-          "graphic": "11031.svg"
+          "graphic": "11031.svg", 
+          "category": "Crime"
         }, 
         {
           "digits": "04", 
           "label": "Hijacking", 
           "id": "HIJACKING_MOD", 
-          "graphic": "11041.svg"
+          "graphic": "11041.svg", 
+          "category": "Crime"
         }, 
         {
           "digits": "05", 
           "label": "Kidnapping", 
           "id": "KIDNAPPING_MOD", 
-          "graphic": "11051.svg"
+          "graphic": "11051.svg", 
+          "category": "Crime"
         }, 
         {
           "digits": "06", 
           "label": "Piracy", 
           "id": "PIRACY_MOD", 
-          "graphic": "11061.svg"
+          "graphic": "11061.svg", 
+          "category": "Crime"
         }, 
         {
           "digits": "07", 
           "label": "Rape", 
           "id": "RAPE_MOD", 
-          "graphic": "11071.svg"
+          "graphic": "11071.svg", 
+          "category": "Crime"
         }, 
         {
           "digits": "08", 
           "label": "Civilian", 
           "id": "CIVILIAN_MOD", 
-          "graphic": "11081.svg"
+          "graphic": "11081.svg", 
+          "category": "Organization"
         }, 
         {
           "digits": "09", 
           "label": "Displaced Person(s), Refugee(s) and Evacuee(s)", 
           "id": "DISPLACED_MOD", 
-          "graphic": "11091.svg"
+          "graphic": "11091.svg", 
+          "category": "Organization"
         }, 
         {
           "digits": "10", 
           "label": "Foreign Fighter(s)", 
           "id": "FOREIGN_FIGHTER_MOD", 
-          "graphic": "11101.svg"
+          "graphic": "11101.svg", 
+          "category": "Organization"
         }, 
         {
           "digits": "11", 
           "label": "Gang Member or Gang", 
           "id": "GANG_MOD", 
-          "graphic": "11111.svg"
+          "graphic": "11111.svg", 
+          "category": "Organization"
         }, 
         {
           "digits": "12", 
           "label": "Government Organization", 
           "id": "GOVERNMENT_ORGANIZATION_MOD", 
-          "graphic": "11121.svg"
+          "graphic": "11121.svg", 
+          "category": "Organization"
         }, 
         {
           "digits": "13", 
           "label": "Leader or Leadership", 
           "id": "LEADER_1_MOD", 
-          "graphic": "11131.svg"
+          "graphic": "11131.svg", 
+          "category": "Organization"
         }, 
         {
           "digits": "14", 
           "label": "Nongovernmental Organization Member or Nongovernmental Organization", 
           "id": "NONGOVERNMENTAL_ORGANIZATION_MOD", 
-          "graphic": "11141.svg"
+          "graphic": "11141.svg", 
+          "category": "Organization"
         }, 
         {
           "digits": "15", 
           "label": "Coerced/Impressed Recruit", 
           "id": "COERCED_RECRUIT_MOD", 
-          "graphic": "11151.svg"
+          "graphic": "11151.svg", 
+          "category": "Organization"
         }, 
         {
           "digits": "16", 
           "label": "Willing Recruit", 
           "id": "WILLING_RECRUIT_MOD", 
-          "graphic": "11161.svg"
+          "graphic": "11161.svg", 
+          "category": "Organization"
         }, 
         {
           "digits": "17", 
           "label": "Religious or Religious Organization", 
           "id": "RELIGIOUS_MOD", 
-          "graphic": "11171.svg"
+          "graphic": "11171.svg", 
+          "category": "Organization"
         }, 
         {
           "digits": "18", 
           "label": "Targeted Individual or Organization", 
           "id": "TARGETED_MOD", 
-          "graphic": "11181.svg"
+          "graphic": "11181.svg", 
+          "category": "Organization"
         }, 
         {
           "digits": "19", 
           "label": "Terrorist or Terrorist Organization", 
           "id": "TERRORIST_MOD", 
-          "graphic": "11191.svg"
+          "graphic": "11191.svg", 
+          "category": "Organization"
         }, 
         {
           "digits": "20", 
           "label": "Speaker", 
           "id": "SPEAKER_MOD", 
-          "graphic": "11201.svg"
+          "graphic": "11201.svg", 
+          "category": "Organization"
         }, 
         {
           "digits": "21", 
           "label": "Accident", 
           "id": "ACCIDENT_MOD", 
-          "graphic": "11211.svg"
+          "graphic": "11211.svg", 
+          "category": "Composite Loss"
         }, 
         {
           "digits": "22", 
           "label": "Combat", 
           "id": "COMBAT_MOD", 
-          "graphic": "11221.svg"
+          "graphic": "11221.svg", 
+          "category": "Composite Loss"
         }, 
         {
           "digits": "23", 
           "label": "Other", 
           "id": "OTHER_MOD", 
-          "graphic": "11231.svg"
+          "graphic": "11231.svg", 
+          "category": "Composite Loss"
         }, 
         {
           "digits": "24", 
           "label": "Loot", 
           "id": "LOOT_MOD", 
-          "graphic": "11241.svg"
+          "graphic": "11241.svg", 
+          "category": "Crime"
         }
       ], 
       "sectorTwoModifiers": [
@@ -4128,7 +4386,8 @@ var symbolData={
           "digits": "01", 
           "label": "Leader or Leadership", 
           "id": "LEADER_2_MOD", 
-          "graphic": "11012.svg"
+          "graphic": "11012.svg", 
+          "category": "Organization"
         }
       ], 
       "graphicFolder": {
@@ -5647,55 +5906,64 @@ var symbolData={
           "digits": "01", 
           "label": "Biological", 
           "id": "BIOLOGICAL_MOD", 
-          "graphic": "15011.svg"
+          "graphic": "15011.svg", 
+          "category": "Sensor Type"
         }, 
         {
           "digits": "02", 
           "label": "Chemical", 
           "id": "CHEMICAL_MOD", 
-          "graphic": "15021.svg"
+          "graphic": "15021.svg", 
+          "category": "Sensor Type"
         }, 
         {
           "digits": "03", 
           "label": "Early Warning Radar", 
           "id": "EARLY_WARNING_RADAR_MOD", 
-          "graphic": "15031.svg"
+          "graphic": "15031.svg", 
+          "category": "Sensor Type"
         }, 
         {
           "digits": "04", 
           "label": "Intrusion", 
           "id": "INTRUSION_MOD", 
-          "graphic": "15041.svg"
+          "graphic": "15041.svg", 
+          "category": "Sensor Type"
         }, 
         {
           "digits": "05", 
           "label": "Nuclear", 
           "id": "NUCLEAR_MOD", 
-          "graphic": "15051.svg"
+          "graphic": "15051.svg", 
+          "category": "Sensor Type"
         }, 
         {
           "digits": "06", 
           "label": "Radiological", 
           "id": "RADIOLOGICAL_MOD", 
-          "graphic": "15061.svg"
+          "graphic": "15061.svg", 
+          "category": "Sensor Type"
         }, 
         {
           "digits": "07", 
           "label": "Upgraded Early Warning Radar", 
           "id": "UPGRADED_EARLY_WARNING_RADAR_MOD", 
-          "graphic": "15071.svg"
+          "graphic": "15071.svg", 
+          "category": "Sensor Type"
         }, 
         {
           "digits": "08", 
           "label": "Hijacking", 
           "id": "HIJACKING_MOD", 
-          "graphic": "15081.svg"
+          "graphic": "15081.svg", 
+          "category": "Crime"
         }, 
         {
           "digits": "09", 
           "label": "Civilian", 
           "id": "CIVILIAN_MOD", 
-          "graphic": "15091.svg"
+          "graphic": "15091.svg", 
+          "category": "Organization"
         }
       ], 
       "sectorTwoModifiers": [], 
@@ -6576,79 +6844,92 @@ var symbolData={
           "digits": "01", 
           "label": "Biological", 
           "id": "BIOLOGICAL_1_MOD", 
-          "graphic": "20011.svg"
+          "graphic": "20011.svg", 
+          "category": "CBRN Type"
         }, 
         {
           "digits": "02", 
           "label": "Chemical", 
           "id": "CHEMICAL_1_MOD", 
-          "graphic": "20021.svg"
+          "graphic": "20021.svg", 
+          "category": "CBRN Type"
         }, 
         {
           "digits": "03", 
           "label": "Nuclear", 
           "id": "NUCLEAR_1_MOD", 
-          "graphic": "20031.svg"
+          "graphic": "20031.svg", 
+          "category": "CBRN Type"
         }, 
         {
           "digits": "04", 
           "label": "Radiological", 
           "id": "RADIOLOGICAL_1_MOD", 
-          "graphic": "20041.svg"
+          "graphic": "20041.svg", 
+          "category": "CBRN Type"
         }, 
         {
           "digits": "05", 
           "label": "Decontamination", 
           "id": "DECONTAMINATION_MOD", 
-          "graphic": "20051.svg"
+          "graphic": "20051.svg", 
+          "category": "CBRN Type"
         }, 
         {
           "digits": "06", 
           "label": "Coal", 
           "id": "COAL_MOD", 
-          "graphic": "20061.svg"
+          "graphic": "20061.svg", 
+          "category": "Electric Power Type"
         }, 
         {
           "digits": "07", 
           "label": "Geothermal", 
           "id": "GEOTHERMAL_MOD", 
-          "graphic": "20071.svg"
+          "graphic": "20071.svg", 
+          "category": "Electric Power Type"
         }, 
         {
           "digits": "08", 
           "label": "Hydroelectric", 
           "id": "HYDROELECTRIC_MOD", 
-          "graphic": "20081.svg"
+          "graphic": "20081.svg", 
+          "category": "Electric Power Type"
         }, 
         {
           "digits": "09", 
           "label": "Natural Gas", 
           "id": "NATURAL_GAS_MOD", 
-          "graphic": "20091.svg"
+          "graphic": "20091.svg", 
+          "category": "Electric Power Type"
         }, 
         {
           "digits": "10", 
           "label": "Petroleum", 
           "id": "PETROLEUM_MOD", 
-          "graphic": "20101.svg"
+          "graphic": "20101.svg", 
+          "category": "Electric Power Type"
         }, 
         {
           "digits": "11", 
           "label": "Civilian", 
           "id": "CIVILIAN_MOD", 
-          "graphic": "20111.svg"
+          "graphic": "20111.svg", 
+          "category": "Operation"
         }, 
         {
           "digits": "12", 
           "label": "Civilian Telephone", 
           "id": "CIVILIAN_TELEPHONE_MOD", 
-          "graphic": "20121.svg"
+          "graphic": "20121.svg", 
+          "category": "Civilian Telecommunications Type"
         }, 
         {
           "digits": "13", 
           "label": "Civilian Television", 
           "id": "CIVILIAN_TELEVISION_MOD", 
-          "graphic": "20131.svg"
+          "graphic": "20131.svg", 
+          "category": "Civilian Telecommunications Type"
         }
       ], 
       "sectorTwoModifiers": [
@@ -6656,49 +6937,57 @@ var symbolData={
           "digits": "01", 
           "label": "Biological", 
           "id": "BIOLOGICAL_2_MOD", 
-          "graphic": "20012.svg"
+          "graphic": "20012.svg", 
+          "category": "No Category Listed"
         }, 
         {
           "digits": "02", 
           "label": "Chemical", 
           "id": "CHEMICAL_2_MOD", 
-          "graphic": "20022.svg"
+          "graphic": "20022.svg", 
+          "category": "No Category Listed"
         }, 
         {
           "digits": "03", 
           "label": "Nuclear", 
           "id": "NUCLEAR_2_MOD", 
-          "graphic": "20032.svg"
+          "graphic": "20032.svg", 
+          "category": "No Category Listed"
         }, 
         {
           "digits": "04", 
           "label": "Radiological", 
           "id": "RADIOLOGICAL_2_MOD", 
-          "graphic": "20042.svg"
+          "graphic": "20042.svg", 
+          "category": "No Category Listed"
         }, 
         {
           "digits": "05", 
           "label": "Atomic Energy Reactor", 
           "id": "ATOMIC_ENERGY_REACTOR_MOD", 
-          "graphic": "20052.svg"
+          "graphic": "20052.svg", 
+          "category": "No Category Listed"
         }, 
         {
           "digits": "06", 
           "label": "Nuclear Material Production", 
           "id": "NUCLEAR_MATERIAL_PRODUCTION_MOD", 
-          "graphic": "20062.svg"
+          "graphic": "20062.svg", 
+          "category": "No Category Listed"
         }, 
         {
           "digits": "07", 
           "label": "Nuclear Material Storage", 
           "id": "NUCLEAR_MATERIAL_STORAGE_MOD", 
-          "graphic": "20072.svg"
+          "graphic": "20072.svg", 
+          "category": "No Category Listed"
         }, 
         {
           "digits": "08", 
           "label": "Weapons Grade", 
           "id": "WEAPONS_GRADE_MOD", 
-          "graphic": "20082.svg"
+          "graphic": "20082.svg", 
+          "category": "No Category Listed"
         }
       ], 
       "graphicFolder": {
@@ -11346,139 +11635,162 @@ var symbolData={
           "digits": "01", 
           "label": "Own Ship", 
           "id": "OWN_MOD", 
-          "graphic": "30011.svg"
+          "graphic": "30011.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "02", 
           "label": "Antiair Warfare", 
           "id": "AA_MOD", 
-          "graphic": "30021.svg"
+          "graphic": "30021.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "03", 
           "label": "Antisubmarine Warfare", 
           "id": "ASW_MOD", 
-          "graphic": "30031.svg"
+          "graphic": "30031.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "04", 
           "label": "Escort", 
           "id": "ESCORT_MOD", 
-          "graphic": "30041.svg"
+          "graphic": "30041.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "05", 
           "label": "Electronic Warfare", 
           "id": "EW_MOD", 
-          "graphic": "30051.svg"
+          "graphic": "30051.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "06", 
           "label": "Intelligence, Surveillance, Reconnaissance", 
           "id": "ISR_MOD", 
-          "graphic": "30061.svg"
+          "graphic": "30061.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "07", 
           "label": "Mine Countermeasures", 
           "id": "MCM_MOD", 
-          "graphic": "30071.svg"
+          "graphic": "30071.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "08", 
           "label": "Missile Defense", 
           "id": "MD_MOD", 
-          "graphic": "30081.svg"
+          "graphic": "30081.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "09", 
           "label": "Medical", 
           "id": "MED_MOD", 
-          "graphic": "30091.svg"
+          "graphic": "30091.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "10", 
           "label": "Mine Warfare", 
           "id": "MIW_MOD", 
-          "graphic": "30101.svg"
+          "graphic": "30101.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "11", 
           "label": "Remote Multi-Mission Vehicle (USV-only)", 
           "id": "RMV_MOD", 
-          "graphic": "30111.svg"
+          "graphic": "30111.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "12", 
           "label": "Special Operations Forces (SOF)", 
           "id": "SOF_MOD", 
-          "graphic": "30121.svg"
+          "graphic": "30121.svg", 
+          "category": "Asset Capability"
         }, 
         {
           "digits": "13", 
           "label": "Surface Warfare", 
           "id": "SUW_MOD", 
-          "graphic": "30131.svg"
+          "graphic": "30131.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "14", 
           "label": "Ballistic Missile", 
           "id": "BALLISTIC_MOD", 
-          "graphic": "30141.svg"
+          "graphic": "30141.svg", 
+          "category": "Weapons Capability"
         }, 
         {
           "digits": "15", 
           "label": "Guided Missile", 
           "id": "GUIDED_MOD", 
-          "graphic": "30151.svg"
+          "graphic": "30151.svg", 
+          "category": "Weapons Capability"
         }, 
         {
           "digits": "16", 
           "label": "Other Guided Missile", 
           "id": "OTHER_GUIDED_MOD", 
-          "graphic": "30161.svg"
+          "graphic": "30161.svg", 
+          "category": "Weapons Capability"
         }, 
         {
           "digits": "17", 
           "label": "Torpedo", 
           "id": "TORPEDO_MOD", 
-          "graphic": "30171.svg"
+          "graphic": "30171.svg", 
+          "category": "Weapons Capability"
         }, 
         {
           "digits": "18", 
           "label": "Drone-Equipped", 
           "id": "DRONE_EQUIP_MOD", 
-          "graphic": "30181.svg"
+          "graphic": "30181.svg", 
+          "category": "Asset Capability"
         }, 
         {
           "digits": "19", 
           "label": "Helicopter-Equipped/VSTOL", 
           "id": "HELO_EQUIP_MOD", 
-          "graphic": "30191.svg"
+          "graphic": "30191.svg", 
+          "category": "Asset Capability"
         }, 
         {
           "digits": "20", 
           "label": "Ballistic Missile Defense, Shooter", 
           "id": "BALLISTIC_DEFENSE_MOD", 
-          "graphic": "30201.svg"
+          "graphic": "30201.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "21", 
           "label": "Ballistic Missile Defense, Long-Range Surveillance and Track (LRST)", 
           "id": "LRST_MOD", 
-          "graphic": "30211.svg"
+          "graphic": "30211.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "22", 
           "label": "Sea-Base X-Band", 
           "id": "SEA_BASED_X_MOD", 
-          "graphic": "30221.svg"
+          "graphic": "30221.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "23", 
           "label": "Hijacking/Hijacked", 
           "id": "HIJACK_MOD", 
-          "graphic": "30231.svg"
+          "graphic": "30231.svg", 
+          "category": "Crime"
         }
       ], 
       "sectorTwoModifiers": [
@@ -11486,73 +11798,85 @@ var symbolData={
           "digits": "01", 
           "label": "Nuclear Powered", 
           "id": "NUCLEAR_MOD", 
-          "graphic": "30012.svg"
+          "graphic": "30012.svg", 
+          "category": "Ship Propulsion"
         }, 
         {
           "digits": "02", 
           "label": "Heavy", 
           "id": "HEAVY_MOD", 
-          "graphic": "30022.svg"
+          "graphic": "30022.svg", 
+          "category": "Ship Capacity"
         }, 
         {
           "digits": "03", 
           "label": "Light", 
           "id": "LIGHT_MOD", 
-          "graphic": "30032.svg"
+          "graphic": "30032.svg", 
+          "category": "Ship Capacity"
         }, 
         {
           "digits": "04", 
           "label": "Medium", 
           "id": "MEDIUM_MOD", 
-          "graphic": "30042.svg"
+          "graphic": "30042.svg", 
+          "category": "Ship Capacity"
         }, 
         {
           "digits": "05", 
           "label": "Dock", 
           "id": "DOCK_MOD", 
-          "graphic": "30052.svg"
+          "graphic": "30052.svg", 
+          "category": "Cargo Capacity"
         }, 
         {
           "digits": "06", 
           "label": "Logistics", 
           "id": "LOGISTICS_MOD", 
-          "graphic": "30062.svg"
+          "graphic": "30062.svg", 
+          "category": "Cargo Capacity"
         }, 
         {
           "digits": "07", 
           "label": "Tank", 
           "id": "TANK_MOD", 
-          "graphic": "30072.svg"
+          "graphic": "30072.svg", 
+          "category": "Cargo Capacity"
         }, 
         {
           "digits": "08", 
           "label": "Vehicle", 
           "id": "VEHICLE_MOD", 
-          "graphic": "30082.svg"
+          "graphic": "30082.svg", 
+          "category": "Cargo Capacity"
         }, 
         {
           "digits": "09", 
           "label": "Fast", 
           "id": "FAST_MOD", 
-          "graphic": "30092.svg"
+          "graphic": "30092.svg", 
+          "category": "Ship Mobility"
         }, 
         {
           "digits": "10", 
           "label": "Air-Cushioned (US)", 
           "id": "COMBINE_GEV_MOD", 
-          "graphic": "30102.svg"
+          "graphic": "30102.svg", 
+          "category": "Ship Mobility"
         }, 
         {
           "digits": "11", 
           "label": "Air-Cushioned (NATO)", 
           "id": "PANEURO_GEV_MOD", 
-          "graphic": "30112.svg"
+          "graphic": "30112.svg", 
+          "category": "Ship Mobility"
         }, 
         {
           "digits": "12", 
           "label": "Hydrofoil", 
           "id": "HYDROFOIL_MOD", 
-          "graphic": "30122.svg"
+          "graphic": "30122.svg", 
+          "category": "Ship Mobility"
         }, 
         {
           "digits": "13", 
@@ -11561,7 +11885,8 @@ var symbolData={
           "graphic": "30132.svg", 
           "limitUseTo": [
             "CIV_USV"
-          ]
+          ], 
+          "category": "USV Control"
         }, 
         {
           "digits": "14", 
@@ -11570,7 +11895,8 @@ var symbolData={
           "graphic": "30142.svg", 
           "limitUseTo": [
             "CIV_USV"
-          ]
+          ], 
+          "category": "USV Control"
         }, 
         {
           "digits": "15", 
@@ -11579,7 +11905,8 @@ var symbolData={
           "graphic": "30152.svg", 
           "limitUseTo": [
             "CIV_USV"
-          ]
+          ], 
+          "category": "USV Control"
         }
       ], 
       "graphicFolder": {
@@ -11745,7 +12072,8 @@ var symbolData={
           "digits": "01", 
           "label": "Antisubmarine Warfare", 
           "id": "ANTISUBMARINE_WARFARE_MOD", 
-          "graphic": "35011.svg"
+          "graphic": "35011.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "02", 
@@ -11754,7 +12082,8 @@ var symbolData={
           "graphic": "35021.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Mission Area"
         }, 
         {
           "digits": "03", 
@@ -11763,31 +12092,36 @@ var symbolData={
           "graphic": "35031.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Mission Area"
         }, 
         {
           "digits": "04", 
           "label": "Intelligence Surveillance Reconnaissance", 
           "id": "INTELLIGENCE_SURVEILLANCE_RECONNAISSANCE_MOD", 
-          "graphic": "35041.svg"
+          "graphic": "35041.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "05", 
           "label": "Mine Countermeasures", 
           "id": "MINE_COUNTERMEASURES_MOD", 
-          "graphic": "35051.svg"
+          "graphic": "35051.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "06", 
           "label": "Mine Warfare", 
           "id": "MINE_WARFARE_MOD", 
-          "graphic": "35061.svg"
+          "graphic": "35061.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "07", 
           "label": "Surface Warfare", 
           "id": "SURFACE_WARFARE_MOD", 
-          "graphic": "35071.svg"
+          "graphic": "35071.svg", 
+          "category": "Mission Area"
         }, 
         {
           "digits": "08", 
@@ -11796,7 +12130,8 @@ var symbolData={
           "graphic": "35081.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Weapons Capability"
         }, 
         {
           "digits": "09", 
@@ -11805,7 +12140,8 @@ var symbolData={
           "graphic": "35091.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Weapons Capability"
         }, 
         {
           "digits": "10", 
@@ -11814,7 +12150,8 @@ var symbolData={
           "graphic": "35101.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Weapons Capability"
         }, 
         {
           "digits": "11", 
@@ -11823,7 +12160,8 @@ var symbolData={
           "graphic": "35111.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Weapons Capability"
         }, 
         {
           "digits": "12", 
@@ -11832,7 +12170,8 @@ var symbolData={
           "graphic": "35121.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Asset Capability"
         }, 
         {
           "digits": "13", 
@@ -11841,7 +12180,8 @@ var symbolData={
           "graphic": "35131.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Submarine Confidence"
         }, 
         {
           "digits": "14", 
@@ -11850,7 +12190,8 @@ var symbolData={
           "graphic": "35141.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Submarine Confidence"
         }, 
         {
           "digits": "15", 
@@ -11859,7 +12200,8 @@ var symbolData={
           "graphic": "35151.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Submarine Confidence"
         }, 
         {
           "digits": "16", 
@@ -11868,7 +12210,8 @@ var symbolData={
           "graphic": "35161.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Submarine Confidence"
         }, 
         {
           "digits": "17", 
@@ -11877,7 +12220,8 @@ var symbolData={
           "graphic": "35171.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Submarine Confidence"
         }, 
         {
           "digits": "18", 
@@ -11886,7 +12230,8 @@ var symbolData={
           "graphic": "35181.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Submarine Confidence"
         }, 
         {
           "digits": "19", 
@@ -11895,13 +12240,15 @@ var symbolData={
           "graphic": "35191.svg", 
           "limitUseTo": [
             "TORPEDO"
-          ]
+          ], 
+          "category": "Weapons Capability"
         }, 
         {
           "digits": "20", 
           "label": "Hijacking/Highjacked", 
           "id": "HIJACKING_HIGHJACKED_MOD", 
-          "graphic": "35201.svg"
+          "graphic": "35201.svg", 
+          "category": "Crime"
         }
       ], 
       "sectorTwoModifiers": [
@@ -11912,7 +12259,8 @@ var symbolData={
           "graphic": "35012.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Ship Propulsion"
         }, 
         {
           "digits": "02", 
@@ -11921,7 +12269,8 @@ var symbolData={
           "graphic": "35022.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Ship Propulsion"
         }, 
         {
           "digits": "03", 
@@ -11930,7 +12279,8 @@ var symbolData={
           "graphic": "35032.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Ship Propulsion"
         }, 
         {
           "digits": "04", 
@@ -11939,7 +12289,8 @@ var symbolData={
           "graphic": "35042.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Ship Propulsion"
         }, 
         {
           "digits": "05", 
@@ -11948,7 +12299,8 @@ var symbolData={
           "graphic": "35052.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Ship Propulsion"
         }, 
         {
           "digits": "06", 
@@ -11957,7 +12309,8 @@ var symbolData={
           "graphic": "35062.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Ship Propulsion"
         }, 
         {
           "digits": "07", 
@@ -11966,7 +12319,8 @@ var symbolData={
           "graphic": "35072.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Ship Propulsion"
         }, 
         {
           "digits": "08", 
@@ -11975,7 +12329,8 @@ var symbolData={
           "graphic": "35082.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Ship Propulsion"
         }, 
         {
           "digits": "09", 
@@ -11984,7 +12339,8 @@ var symbolData={
           "graphic": "35092.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Ship Propulsion"
         }, 
         {
           "digits": "10", 
@@ -11993,7 +12349,8 @@ var symbolData={
           "graphic": "35102.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Ship Propulsion"
         }, 
         {
           "digits": "11", 
@@ -12002,7 +12359,8 @@ var symbolData={
           "graphic": "35112.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Ship Propulsion"
         }, 
         {
           "digits": "12", 
@@ -12011,7 +12369,8 @@ var symbolData={
           "graphic": "35122.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Ship Propulsion"
         }, 
         {
           "digits": "13", 
@@ -12020,7 +12379,8 @@ var symbolData={
           "graphic": "35132.svg", 
           "limitUseTo": [
             "SUBMARINE"
-          ]
+          ], 
+          "category": "Ship Propulsion"
         }, 
         {
           "digits": "14", 
@@ -12029,7 +12389,8 @@ var symbolData={
           "graphic": "35142.svg", 
           "limitUseTo": [
             "AUV_UUV"
-          ]
+          ], 
+          "category": "UUV Control"
         }, 
         {
           "digits": "15", 
@@ -12038,7 +12399,8 @@ var symbolData={
           "graphic": "35152.svg", 
           "limitUseTo": [
             "AUV_UUV"
-          ]
+          ], 
+          "category": "UUV Control"
         }, 
         {
           "digits": "16", 
@@ -12047,7 +12409,8 @@ var symbolData={
           "graphic": "35162.svg", 
           "limitUseTo": [
             "AUV_UUV"
-          ]
+          ], 
+          "category": "UUV Control"
         }
       ], 
       "graphicFolder": {
@@ -13595,109 +13958,127 @@ var symbolData={
           "digits": "01", 
           "label": "Assassination", 
           "id": "ASSASSINATION_MOD", 
-          "graphic": "40011.svg"
+          "graphic": "40011.svg", 
+          "category": "Crime"
         }, 
         {
           "digits": "02", 
           "label": "Execution (Wrongful Killing)", 
           "id": "EXECUTION_WRONGFUL_KILLING_MOD", 
-          "graphic": "40021.svg"
+          "graphic": "40021.svg", 
+          "category": "Crime"
         }, 
         {
           "digits": "03", 
           "label": "Hijacking/Hijacked", 
           "id": "HIJACKING_MOD", 
-          "graphic": "40031.svg"
+          "graphic": "40031.svg", 
+          "category": "Crime"
         }, 
         {
           "digits": "04", 
           "label": "House-to-House", 
           "id": "HOUSE_TO_HOUSE_MOD", 
-          "graphic": "40041.svg"
+          "graphic": "40041.svg", 
+          "category": "Psychological Operations"
         }, 
         {
           "digits": "05", 
           "label": "Kidnapping", 
           "id": "KIDNAPPING_MOD", 
-          "graphic": "40051.svg"
+          "graphic": "40051.svg", 
+          "category": "Crime"
         }, 
         {
           "digits": "06", 
           "label": "Murder", 
           "id": "MURDER_MOD", 
-          "graphic": "40061.svg"
+          "graphic": "40061.svg", 
+          "category": "Crime"
         }, 
         {
           "digits": "07", 
           "label": "Piracy", 
           "id": "PIRACY_MOD", 
-          "graphic": "40071.svg"
+          "graphic": "40071.svg", 
+          "category": "Crime"
         }, 
         {
           "digits": "08", 
           "label": "Rape", 
           "id": "RAPE_MOD", 
-          "graphic": "40081.svg"
+          "graphic": "40081.svg", 
+          "category": "Crime"
         }, 
         {
           "digits": "09", 
           "label": "Written Psychological Operations", 
           "id": "WRITTEN_PSYCHOLOGICAL_OPERATIONS_MOD", 
-          "graphic": "40091.svg"
+          "graphic": "40091.svg", 
+          "category": "Psychological Operations"
         }, 
         {
           "digits": "10", 
           "label": "Pirate", 
           "id": "PIRATE_MOD", 
-          "graphic": "40101.svg"
+          "graphic": "40101.svg", 
+          "category": "Crime"
         }, 
         {
           "digits": "11", 
           "label": "False", 
           "id": "FALSE_MOD", 
-          "graphic": "40111.svg"
+          "graphic": "40111.svg", 
+          "category": "IED Category"
         }, 
         {
           "digits": "12", 
           "label": "Find", 
           "id": "FIND_MOD", 
-          "graphic": "40121.svg"
+          "graphic": "40121.svg", 
+          "category": "IED Category"
         }, 
         {
           "digits": "13", 
           "label": "Found and Cleared", 
           "id": "FOUND_AND_CLEARED_MOD", 
-          "graphic": "40131.svg"
+          "graphic": "40131.svg", 
+          "category": "IED Category"
         }, 
         {
           "digits": "14", 
           "label": "Hoax (Decoy)", 
           "id": "HOAX_DECOY_MOD", 
-          "graphic": "40141.svg"
+          "graphic": "40141.svg", 
+          "category": "IED Category"
         }, 
         {
           "digits": "15", 
           "label": "Attempted", 
           "id": "ATTEMPTED_MOD", 
-          "graphic": "40151.svg"
+          "graphic": "40151.svg", 
+          "category": "Incident Qualifier"
         }, 
         {
           "digits": "16", 
           "label": "Accident", 
           "id": "ACCIDENT_MOD", 
-          "graphic": "40161.svg"
+          "graphic": "40161.svg", 
+          "category": "Incident Qualifier"
         }, 
         {
           "digits": "17", 
           "label": "Incident", 
           "id": "INCIDENT_MOD", 
-          "graphic": "40171.svg"
+          "graphic": "40171.svg", 
+          "category": "Incident Qualifier"
         }, 
         {
           "digits": "18", 
           "label": "Theft", 
           "id": "THEFT_MOD", 
-          "graphic": "40181.svg"
+          "graphic": "40181.svg", 
+          "category": "Crime"
         }
       ], 
       "sectorTwoModifiers": [], 
@@ -16379,188 +16760,219 @@ var symbolData={
           "digits": "14", 
           "label": "Data Transmission", 
           "id": "DATA_TRANSMISSION_MOD", 
-          "graphic": "50141.svg"
+          "graphic": "50141.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "15", 
           "label": "Earth Surveillance", 
           "id": "EARTH_SURVEILLANCE_MOD", 
-          "graphic": "50151.svg"
+          "graphic": "50151.svg", 
+          "category": "Space Radar"
         }, 
         {
           "digits": "21", 
           "label": "Identification Friend or Foe (Interrogator)", 
           "id": "IFF_INTERROGATOR_MOD", 
-          "graphic": "50211.svg"
+          "graphic": "50211.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "24", 
           "label": "Identification Friend or Foe (Transponder)", 
           "id": "IFF_TRANSPONDER_MOD", 
-          "graphic": "50241.svg"
+          "graphic": "50241.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "25", 
           "label": "Barrage Jammer", 
           "id": "BARRAGE_JAMMER_MOD", 
-          "graphic": "50251.svg"
+          "graphic": "50251.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "26", 
           "label": "Click Jammer", 
           "id": "CLICK_JAMMER_MOD", 
-          "graphic": "50261.svg"
+          "graphic": "50261.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "27", 
           "label": "Deceptive Jammer", 
           "id": "DECEPTIVE_JAMMER_MOD", 
-          "graphic": "50271.svg"
+          "graphic": "50271.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "28", 
           "label": "Frequency Swept Jammer", 
           "id": "FREQUENCY_SWEPT_JAMMER_MOD", 
-          "graphic": "50281.svg"
+          "graphic": "50281.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "29", 
           "label": "Jammer (General)", 
           "id": "JAMMER_GENERAL_MOD", 
-          "graphic": "50291.svg"
+          "graphic": "50291.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "30", 
           "label": "Noise Jammer", 
           "id": "NOISE_JAMMER_MOD", 
-          "graphic": "50301.svg"
+          "graphic": "50301.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "31", 
           "label": "Pulsed Jammer", 
           "id": "PULSED_JAMMER_MOD", 
-          "graphic": "50311.svg"
+          "graphic": "50311.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "32", 
           "label": "Repeater Jammer", 
           "id": "REPEATER_JAMMER_MOD", 
-          "graphic": "50321.svg"
+          "graphic": "50321.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "33", 
           "label": "Spot Noise Jammer", 
           "id": "SPOT_NOISE_JAMMER_MOD", 
-          "graphic": "50331.svg"
+          "graphic": "50331.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "34", 
           "label": "Transponder Jammer", 
           "id": "TRANSPONDER_JAMMER_MOD", 
-          "graphic": "50341.svg"
+          "graphic": "50341.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "36", 
           "label": "Missile Control", 
           "id": "MISSILE_CONTROL_MOD", 
-          "graphic": "50361.svg"
+          "graphic": "50361.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "39", 
           "label": "Multi-Function", 
           "id": "MULTI_FUNCTION_MOD", 
           "graphic": "50391.svg", 
-          "remarks": "Two or more of EW, TA, TT, MG, TI"
+          "remarks": "Two or more of EW, TA, TT, MG, TI", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "42", 
           "label": "Missile Tracking", 
           "id": "MISSILE_TRACKING_MOD", 
-          "graphic": "50421.svg"
+          "graphic": "50421.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "43", 
           "label": "Navigational/General", 
           "id": "NAVIGATIONAL_GENERAL_MOD", 
-          "graphic": "50431.svg"
+          "graphic": "50431.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "44", 
           "label": "Navigational/Distance Measuring Equipment", 
           "id": "NAVIGATIONAL_DISTANCE_MEASURING_EQUIPMENT_MOD", 
-          "graphic": "50441.svg"
+          "graphic": "50441.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "45", 
           "label": "Navigation/Terrain Following", 
           "id": "NAVIGATION_TERRAIN_FOLLOWING_MOD", 
-          "graphic": "50451.svg"
+          "graphic": "50451.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "49", 
           "label": "Point-to-Point Line of Sight (LOS)", 
           "id": "POINT_POINT_LOS_MOD", 
-          "graphic": "50491.svg"
+          "graphic": "50491.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Communications"
         }, 
         {
           "digits": "50", 
           "label": "Instrumentation", 
           "id": "INSTRUMENTATION_MOD", 
-          "graphic": "50501.svg"
+          "graphic": "50501.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "51", 
           "label": "Range Only", 
           "id": "RANGE_ONLY_MOD", 
-          "graphic": "50511.svg"
+          "graphic": "50511.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "53", 
           "label": "Satellite Downlink", 
           "id": "SATELLITE_DOWNLINK_MOD", 
-          "graphic": "50531.svg"
+          "graphic": "50531.svg", 
+          "category": "Space Communications"
         }, 
         {
           "digits": "54", 
           "label": "Space", 
           "id": "SPACE_MOD", 
-          "graphic": "50541.svg"
+          "graphic": "50541.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "55", 
           "label": "Surface Search", 
           "id": "SURFACE_SEARCH_MOD", 
-          "graphic": "50551.svg"
+          "graphic": "50551.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "58", 
           "label": "Target Acquisition", 
           "id": "TARGET_ACQUISITION_MOD", 
-          "graphic": "50581.svg"
+          "graphic": "50581.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "61", 
           "label": "Target Tracking", 
           "id": "TARGET_TRACKING_MOD", 
-          "graphic": "50611.svg"
+          "graphic": "50611.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "62", 
           "label": "Unknown", 
           "id": "UNKNOWN_MOD", 
-          "graphic": "50621.svg"
+          "graphic": "50621.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "63", 
           "label": "Video Remoting", 
           "id": "VIDEO_REMOTING_MOD", 
-          "graphic": "50631.svg"
+          "graphic": "50631.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "64", 
           "label": "Experimental", 
           "id": "EXPERIMENTAL_MOD", 
-          "graphic": "50641.svg"
+          "graphic": "50641.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }
       ], 
       "sectorTwoModifiers": [], 
@@ -16611,325 +17023,379 @@ var symbolData={
           "digits": "02", 
           "label": "Airborne Search and Bombing", 
           "id": "AIRBORNE_SEARCH_AND_BOMBING_MOD", 
-          "graphic": "51021.svg"
+          "graphic": "51021.svg", 
+          "category": "Air Radar"
         }, 
         {
           "digits": "03", 
           "label": "Airborne Intercept", 
           "id": "AIRBORNE_INTERCEPT_MOD", 
-          "graphic": "51031.svg"
+          "graphic": "51031.svg", 
+          "category": "Air Radar"
         }, 
         {
           "digits": "04", 
           "label": "Altimeter", 
           "id": "ALTIMETER_MOD", 
-          "graphic": "51041.svg"
+          "graphic": "51041.svg", 
+          "category": "Air Radar"
         }, 
         {
           "digits": "05", 
           "label": "Airborne Reconnaissance and Mapping", 
           "id": "AIRBORNE_RECONNAISSANCE_AND_MAPPING_MOD", 
-          "graphic": "51051.svg"
+          "graphic": "51051.svg", 
+          "category": "Air Radar"
         }, 
         {
           "digits": "06", 
           "label": "Air Traffic Control", 
           "id": "AIR_TRAFFIC_CONTROL_MOD", 
-          "graphic": "51061.svg"
+          "graphic": "51061.svg", 
+          "category": "Air/Land/Sea Surface Radar"
         }, 
         {
           "digits": "07", 
           "label": "Beacon Transponder (not IFF)", 
           "id": "BEACON_TRANSPONDER_MOD", 
-          "graphic": "51071.svg"
+          "graphic": "51071.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "08", 
           "label": "Battlefield Surveillance", 
           "id": "BATTLEFIELD_SURVEILLANCE_MOD", 
-          "graphic": "51081.svg"
+          "graphic": "51081.svg", 
+          "category": "Air/Land Radar"
         }, 
         {
           "digits": "10", 
           "label": "Controlled Intercept", 
           "id": "CONTROLLED_INTERCEPT_MOD", 
-          "graphic": "51101.svg"
+          "graphic": "51101.svg", 
+          "category": "Air/Land/Sea Surface Radar"
         }, 
         {
           "digits": "11", 
           "label": "Cellular/Mobile", 
           "id": "CELLULAR_MOBILE_MOD", 
-          "graphic": "51111.svg"
+          "graphic": "51111.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Communications"
         }, 
         {
           "digits": "12", 
           "label": "Coastal Surveillance", 
           "id": "COASTAL_SURVEILLANCE_MOD", 
-          "graphic": "51121.svg"
+          "graphic": "51121.svg", 
+          "category": "Land Radar"
         }, 
         {
           "digits": "13", 
           "label": "Decoy/Mimic", 
           "id": "DECOY_MIMIC_MOD", 
-          "graphic": "51131.svg"
+          "graphic": "51131.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "14", 
           "label": "Data Transmission", 
           "id": "DATA_TRANSMISSION_MOD", 
-          "graphic": "51141.svg"
+          "graphic": "51141.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "16", 
           "label": "Early Warning", 
           "id": "EARLY_WARNING_MOD", 
-          "graphic": "51161.svg"
+          "graphic": "51161.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "17", 
           "label": "Fire Control", 
           "id": "FIRE_CONTROL_MOD", 
-          "graphic": "51171.svg"
+          "graphic": "51171.svg", 
+          "category": "Air/Land/Sea Surface Radar"
         }, 
         {
           "digits": "18", 
           "label": "Ground Mapping", 
           "id": "GROUND_MAPPING_MOD", 
-          "graphic": "51181.svg"
+          "graphic": "51181.svg", 
+          "category": "Air Radar"
         }, 
         {
           "digits": "21", 
           "label": "Identification Friend or Foe (Interrogator)", 
           "id": "IFF_INTERROGATOR_MOD", 
-          "graphic": "51211.svg"
+          "graphic": "51211.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "23", 
           "label": "Ionospheric Sounding", 
           "id": "IONOSPHERIC_SOUNDING_MOD", 
-          "graphic": "51231.svg"
+          "graphic": "51231.svg", 
+          "category": "Air/Land Radar"
         }, 
         {
           "digits": "24", 
           "label": "Identification Friend or Foe (Transponder)", 
           "id": "IFF_TRANSPONDER_MOD", 
-          "graphic": "51241.svg"
+          "graphic": "51241.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "25", 
           "label": "Barrage Jammer", 
           "id": "BARRAGE_JAMMER_MOD", 
-          "graphic": "51251.svg"
+          "graphic": "51251.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "26", 
           "label": "Click Jammer", 
           "id": "CLICK_JAMMER_MOD", 
-          "graphic": "51261.svg"
+          "graphic": "51261.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "27", 
           "label": "Deceptive Jammer", 
           "id": "DECEPTIVE_JAMMER_MOD", 
-          "graphic": "51271.svg"
+          "graphic": "51271.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "28", 
           "label": "Frequency Swept Jammer", 
           "id": "FREQUENCY_SWEPT_JAMMER_MOD", 
-          "graphic": "51281.svg"
+          "graphic": "51281.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "29", 
           "label": "Jammer (General)", 
           "id": "JAMMER_GENERAL_MOD", 
-          "graphic": "51291.svg"
+          "graphic": "51291.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "30", 
           "label": "Noise Jammer", 
           "id": "NOISE_JAMMER_MOD", 
-          "graphic": "51301.svg"
+          "graphic": "51301.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "31", 
           "label": "Pulsed Jammer", 
           "id": "PULSED_JAMMER_MOD", 
-          "graphic": "51311.svg"
+          "graphic": "51311.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "32", 
           "label": "Repeater Jammer", 
           "id": "REPEATER_JAMMER_MOD", 
-          "graphic": "51321.svg"
+          "graphic": "51321.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "33", 
           "label": "Spot Noise Jammer", 
           "id": "SPOT_NOISE_JAMMER_MOD", 
-          "graphic": "51331.svg"
+          "graphic": "51331.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "34", 
           "label": "Transponder Jammer", 
           "id": "TRANSPONDER_JAMMER_MOD", 
-          "graphic": "51341.svg"
+          "graphic": "51341.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "35", 
           "label": "Missile Acquisition", 
           "id": "MISSILE_ACQUISITION_MOD", 
-          "graphic": "51351.svg"
+          "graphic": "51351.svg", 
+          "category": "Air/Land/Sea Surface Radar"
         }, 
         {
           "digits": "36", 
           "label": "Missile Control", 
           "id": "MISSILE_CONTROL_MOD", 
-          "graphic": "51361.svg"
+          "graphic": "51361.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "37", 
           "label": "Missile Downlink", 
           "id": "MISSILE_DOWNLINK_MOD", 
-          "graphic": "51371.svg"
+          "graphic": "51371.svg", 
+          "category": "Air Radar"
         }, 
         {
           "digits": "38", 
           "label": "Meteorological", 
           "id": "METEOROLOGICAL_MOD", 
-          "graphic": "51381.svg"
+          "graphic": "51381.svg", 
+          "category": "Air/Land/Sea Surface Radar"
         }, 
         {
           "digits": "39", 
           "label": "Multi-Function", 
           "id": "MULTI_FUNCTION_MOD", 
-          "graphic": "51391.svg"
+          "graphic": "51391.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "40", 
           "label": "Missile Guidance", 
           "id": "MISSILE_GUIDANCE_MOD", 
-          "graphic": "51401.svg"
+          "graphic": "51401.svg", 
+          "category": "Air/Land/Sea Surface Radar"
         }, 
         {
           "digits": "41", 
           "label": "Missile Homing", 
           "id": "MISSILE_HOMING_MOD", 
-          "graphic": "51411.svg"
+          "graphic": "51411.svg", 
+          "category": "Air Radar"
         }, 
         {
           "digits": "42", 
           "label": "Missile Tracking", 
           "id": "MISSILE_TRACKING_MOD", 
-          "graphic": "51421.svg"
+          "graphic": "51421.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "43", 
           "label": "Navigational/General", 
           "id": "NAVIGATIONAL_GENERAL_MOD", 
-          "graphic": "51431.svg"
+          "graphic": "51431.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "44", 
           "label": "Navigational/Distance Measuring Equipment", 
           "id": "NAVIGATIONAL_DISTANCE_MEASURING_EQUIPMENT_MOD", 
-          "graphic": "51441.svg"
+          "graphic": "51441.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "45", 
           "label": "Navigation/Terrain Following", 
           "id": "NAVIGATION_TERRAIN_FOLLOWING_MOD", 
-          "graphic": "51451.svg"
+          "graphic": "51451.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "46", 
           "label": "Navigational/Weather Avoidance", 
           "id": "NAVIGATIONAL_WEATHER_AVOIDANCE_MOD", 
-          "graphic": "51461.svg"
+          "graphic": "51461.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "47", 
           "label": "Omni-Line of Sight (LOS)", 
           "id": "OMNI_LOS_MOD", 
-          "graphic": "51471.svg"
+          "graphic": "51471.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Communications"
         }, 
         {
           "digits": "48", 
           "label": "Proximity Use", 
           "id": "PROXIMITY_FUSE_MOD", 
-          "graphic": "51481.svg"
+          "graphic": "51481.svg", 
+          "category": "Air Radar"
         }, 
         {
           "digits": "49", 
           "label": "Point-to-Point Line of Sight (LOS)", 
           "id": "POINT_POINT_LOS_MOD", 
-          "graphic": "51491.svg"
+          "graphic": "51491.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Communications"
         }, 
         {
           "digits": "50", 
           "label": "Instrumentation", 
           "id": "INSTRUMENTATION_MOD", 
-          "graphic": "51501.svg"
+          "graphic": "51501.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "51", 
           "label": "Range Only", 
           "id": "RANGE_ONLY_MOD", 
-          "graphic": "51511.svg"
+          "graphic": "51511.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "54", 
           "label": "Space", 
           "id": "SPACE_MOD", 
-          "graphic": "51541.svg"
+          "graphic": "51541.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "55", 
           "label": "Surface Search", 
           "id": "SURFACE_SEARCH_MOD", 
-          "graphic": "51551.svg"
+          "graphic": "51551.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "57", 
           "label": "Satellite Uplink", 
           "id": "SATELLITE_UPLINK_MOD", 
-          "graphic": "51571.svg"
+          "graphic": "51571.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "58", 
           "label": "Target Acquisition", 
           "id": "TARGET_ACQUISITION_MOD", 
-          "graphic": "51581.svg"
+          "graphic": "51581.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "59", 
           "label": "Target Illumination", 
           "id": "TARGET_ILLUMINATION_MOD", 
-          "graphic": "51591.svg"
+          "graphic": "51591.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "61", 
           "label": "Target Tracking", 
           "id": "TARGET_TRACKING_MOD", 
-          "graphic": "51611.svg"
+          "graphic": "51611.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "62", 
           "label": "Unknown", 
           "id": "UNKNOWN_MOD", 
-          "graphic": "51621.svg"
+          "graphic": "51621.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "63", 
           "label": "Video Remoting", 
           "id": "VIDEO_REMOTING_MOD", 
-          "graphic": "51631.svg"
+          "graphic": "51631.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "64", 
           "label": "Experimental", 
           "id": "EXPERIMENTAL_MOD", 
-          "graphic": "51641.svg"
+          "graphic": "51641.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }
       ], 
       "sectorTwoModifiers": [], 
@@ -16980,314 +17446,366 @@ var symbolData={
           "digits": "01", 
           "label": "Anti-Aircraft Fire Control", 
           "id": "ANTI_AIRCRAFT_FIRE_CONTROL_MOD", 
-          "graphic": "52011.svg"
+          "graphic": "52011.svg", 
+          "category": "Land/Sea Surface Radar"
         }, 
         {
           "digits": "06", 
           "label": "Air Traffic Control", 
           "id": "AIR_TRAFFIC_CONTROL_MOD", 
-          "graphic": "52061.svg"
+          "graphic": "52061.svg", 
+          "category": "Air/Land/Sea Surface Radar"
         }, 
         {
           "digits": "07", 
           "label": "Beacon Transponder (not IFF)", 
           "id": "BEACON_TRANSPONDER_MOD", 
-          "graphic": "52071.svg"
+          "graphic": "52071.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "08", 
           "label": "Battlefield Surveillance", 
           "id": "BATTLEFIELD_SURVEILLANCE_MOD", 
-          "graphic": "52081.svg"
+          "graphic": "52081.svg", 
+          "category": "Air/Land Radar"
         }, 
         {
           "digits": "09", 
           "label": "Controlled Approach", 
           "id": "CONTROLLED_APPROACH_MOD", 
-          "graphic": "52091.svg"
+          "graphic": "52091.svg", 
+          "category": "Land/Sea Surface Radar"
         }, 
         {
           "digits": "10", 
           "label": "Controlled Intercept", 
           "id": "CONTROLLED_INTERCEPT_MOD", 
-          "graphic": "52101.svg"
+          "graphic": "52101.svg", 
+          "category": "Air/Land/Sea Surface Radar"
         }, 
         {
           "digits": "11", 
           "label": "Cellular/Mobile", 
           "id": "CELLULAR_MOBILE_MOD", 
-          "graphic": "52111.svg"
+          "graphic": "52111.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Communications"
         }, 
         {
           "digits": "13", 
           "label": "Decoy/Mimic", 
           "id": "DECOY_MIMIC_MOD", 
-          "graphic": "52131.svg"
+          "graphic": "52131.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "14", 
           "label": "Data Transmission", 
           "id": "DATA_TRANSMISSION_MOD", 
-          "graphic": "52141.svg"
+          "graphic": "52141.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "16", 
           "label": "Early Warning", 
           "id": "EARLY_WARNING_MOD", 
-          "graphic": "52161.svg"
+          "graphic": "52161.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "17", 
           "label": "Fire Control", 
           "id": "FIRE_CONTROL_MOD", 
-          "graphic": "52171.svg"
+          "graphic": "52171.svg", 
+          "category": "Air/Land/Sea Surface Radar"
         }, 
         {
           "digits": "19", 
           "label": "Height Finding", 
           "id": "HEIGHT_FINDING_MOD", 
-          "graphic": "52191.svg"
+          "graphic": "52191.svg", 
+          "category": "Land/Sea Surface Radar"
         }, 
         {
           "digits": "20", 
           "label": "Harbor Surveillance", 
           "id": "HARBOR_SURVEILLANCE_MOD", 
-          "graphic": "52201.svg"
+          "graphic": "52201.svg", 
+          "category": "Land Radar"
         }, 
         {
           "digits": "21", 
           "label": "Identification Friend or Foe (Interrogator)", 
           "id": "IFF_INTERROGATOR_MOD", 
-          "graphic": "52211.svg"
+          "graphic": "52211.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "22", 
           "label": "Instrument Landing System", 
           "id": "INSTRUMENT_LANDING_SYSTEM_MOD", 
-          "graphic": "52221.svg"
+          "graphic": "52221.svg", 
+          "category": "Land/Sea Surface Radar"
         }, 
         {
           "digits": "23", 
           "label": "Ionospheric Sounding", 
           "id": "IONOSPHERIC_SOUNDING_MOD", 
-          "graphic": "52231.svg"
+          "graphic": "52231.svg", 
+          "category": "Air/Land Radar"
         }, 
         {
           "digits": "24", 
           "label": "Identification Friend or Foe (Transponder)", 
           "id": "IFF_TRANSPONDER_MOD", 
-          "graphic": "52241.svg"
+          "graphic": "52241.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "25", 
           "label": "Barrage Jammer", 
           "id": "BARRAGE_JAMMER_MOD", 
-          "graphic": "52251.svg"
+          "graphic": "52251.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "26", 
           "label": "Click Jammer", 
           "id": "CLICK_JAMMER_MOD", 
-          "graphic": "52261.svg"
+          "graphic": "52261.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "27", 
           "label": "Deceptive Jammer", 
           "id": "DECEPTIVE_JAMMER_MOD", 
-          "graphic": "52271.svg"
+          "graphic": "52271.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "28", 
           "label": "Frequency Swept Jammer", 
           "id": "FREQUENCY_SWEPT_JAMMER_MOD", 
-          "graphic": "52281.svg"
+          "graphic": "52281.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "29", 
           "label": "Jammer (General)", 
           "id": "JAMMER_GENERAL_MOD", 
-          "graphic": "52291.svg"
+          "graphic": "52291.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "30", 
           "label": "Noise Jammer", 
           "id": "NOISE_JAMMER_MOD", 
-          "graphic": "52301.svg"
+          "graphic": "52301.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "31", 
           "label": "Pulsed Jammer", 
           "id": "PULSED_JAMMER_MOD", 
-          "graphic": "52311.svg"
+          "graphic": "52311.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "32", 
           "label": "Repeater Jammer", 
           "id": "REPEATER_JAMMER_MOD", 
-          "graphic": "52321.svg"
+          "graphic": "52321.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "33", 
           "label": "Spot Noise Jammer", 
           "id": "SPOT_NOISE_JAMMER_MOD", 
-          "graphic": "52331.svg"
+          "graphic": "52331.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "34", 
           "label": "Transponder Jammer", 
           "id": "TRANSPONDER_JAMMER_MOD", 
-          "graphic": "52341.svg"
+          "graphic": "52341.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "35", 
           "label": "Missile Acquisition", 
           "id": "MISSILE_ACQUISITION_MOD", 
-          "graphic": "52351.svg"
+          "graphic": "52351.svg", 
+          "category": "Air/Land/Sea Surface Radar"
         }, 
         {
           "digits": "36", 
           "label": "Missile Control", 
           "id": "MISSILE_CONTROL_MOD", 
-          "graphic": "52361.svg"
+          "graphic": "52361.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "38", 
           "label": "Meteorological", 
           "id": "METEOROLOGICAL_MOD", 
-          "graphic": "52381.svg"
+          "graphic": "52381.svg", 
+          "category": "Air/Land/Sea Surface Radar"
         }, 
         {
           "digits": "39", 
           "label": "Multi-Function", 
           "id": "MULTI_FUNCTION_MOD", 
           "graphic": "52391.svg", 
-          "remarks": "Two or more of EW, TA, TT, MG, TI"
+          "remarks": "Two or more of EW, TA, TT, MG, TI", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "40", 
           "label": "Missile Guidance", 
           "id": "MISSILE_GUIDANCE_MOD", 
-          "graphic": "52401.svg"
+          "graphic": "52401.svg", 
+          "category": "Air/Land/Sea Surface Radar"
         }, 
         {
           "digits": "42", 
           "label": "Missile Tracking", 
           "id": "MISSILE_TRACKING_MOD", 
-          "graphic": "52421.svg"
+          "graphic": "52421.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "43", 
           "label": "Navigational/General", 
           "id": "NAVIGATIONAL_GENERAL_MOD", 
-          "graphic": "52431.svg"
+          "graphic": "52431.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "44", 
           "label": "Navigational/Distance Measuring Equipment", 
           "id": "NAVIGATIONAL_DISTANCE_MEASURING_EQUIPMENT_MOD", 
-          "graphic": "52441.svg"
+          "graphic": "52441.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "45", 
           "label": "Navigation/Terrain Following", 
           "id": "NAVIGATION_TERRAIN_FOLLOWING_MOD", 
-          "graphic": "52451.svg"
+          "graphic": "52451.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "46", 
           "label": "Navigational/Weather Avoidance", 
           "id": "NAVIGATIONAL_WEATHER_AVOIDANCE_MOD", 
-          "graphic": "52461.svg"
+          "graphic": "52461.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "47", 
           "label": "Omni-Line of Sight (LOS)", 
           "id": "OMNI_LOS_MOD", 
-          "graphic": "52471.svg"
+          "graphic": "52471.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Communications"
         }, 
         {
           "digits": "49", 
           "label": "Point-to-Point Line of Sight (LOS)", 
           "id": "POINT_POINT_LOS_MOD", 
-          "graphic": "52491.svg"
+          "graphic": "52491.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Communications"
         }, 
         {
           "digits": "50", 
           "label": "Instrumentation", 
           "id": "INSTRUMENTATION_MOD", 
-          "graphic": "52501.svg"
+          "graphic": "52501.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "51", 
           "label": "Range Only", 
           "id": "RANGE_ONLY_MOD", 
-          "graphic": "52511.svg"
+          "graphic": "52511.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "54", 
           "label": "Space", 
           "id": "SPACE_MOD", 
-          "graphic": "52541.svg"
+          "graphic": "52541.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "55", 
           "label": "Surface Search", 
           "id": "SURFACE_SEARCH_MOD", 
-          "graphic": "52551.svg"
+          "graphic": "52551.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "56", 
           "label": "Shell Tracking", 
           "id": "SHELL_TRACKING_MOD", 
-          "graphic": "52561.svg"
+          "graphic": "52561.svg", 
+          "category": "Land Radar"
         }, 
         {
           "digits": "57", 
           "label": "Satellite Uplink", 
           "id": "SATELLITE_UPLINK_MOD", 
-          "graphic": "52571.svg"
+          "graphic": "52571.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Communications"
         }, 
         {
           "digits": "58", 
           "label": "Target Acquisition", 
           "id": "TARGET_ACQUISITION_MOD", 
-          "graphic": "52581.svg"
+          "graphic": "52581.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "59", 
           "label": "Target Illumination", 
           "id": "TARGET_ILLUMINATION_MOD", 
-          "graphic": "52591.svg"
+          "graphic": "52591.svg", 
+          "category": "Air/Land/Sea Surface Radar"
         }, 
         {
           "digits": "60", 
           "label": "Tropospheric Scatter", 
           "id": "TROPOSPHERIC_SCATTER_MOD", 
-          "graphic": "52601.svg"
+          "graphic": "52601.svg", 
+          "category": "Land Communications"
         }, 
         {
           "digits": "61", 
           "label": "Target Tracking", 
           "id": "TARGET_TRACKING_MOD", 
-          "graphic": "52611.svg"
+          "graphic": "52611.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "62", 
           "label": "Unknown", 
           "id": "UNKNOWN_MOD", 
-          "graphic": "52621.svg"
+          "graphic": "52621.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "63", 
           "label": "Video Remoting", 
           "id": "VIDEO_REMOTING_MOD", 
-          "graphic": "52631.svg"
+          "graphic": "52631.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "64", 
           "label": "Experimental", 
           "id": "EXPERIMENTAL_MOD", 
-          "graphic": "52641.svg"
+          "graphic": "52641.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }
       ], 
       "sectorTwoModifiers": [], 
@@ -17338,290 +17856,338 @@ var symbolData={
           "digits": "01", 
           "label": "Anti-Aircraft Fire Control", 
           "id": "ANTI_AIRCRAFT_FIRE_CONTROL_MOD", 
-          "graphic": "53011.svg"
+          "graphic": "53011.svg", 
+          "category": "Land/Sea Surface Radar"
         }, 
         {
           "digits": "06", 
           "label": "Air Traffic Control", 
           "id": "AIR_TRAFFIC_CONTROL_MOD", 
-          "graphic": "53061.svg"
+          "graphic": "53061.svg", 
+          "category": "Air/Land/Sea Surface Radar"
         }, 
         {
           "digits": "07", 
           "label": "Beacon Transponder (not IFF)", 
           "id": "BEACON_TRANSPONDER_MOD", 
-          "graphic": "53071.svg"
+          "graphic": "53071.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "09", 
           "label": "Controlled Approach", 
           "id": "CONTROLLED_APPROACH_MOD", 
-          "graphic": "53091.svg"
+          "graphic": "53091.svg", 
+          "category": "Land/Sea Surface Radar"
         }, 
         {
           "digits": "10", 
           "label": "Controlled Intercept", 
           "id": "CONTROLLED_INTERCEPT_MOD", 
-          "graphic": "53101.svg"
+          "graphic": "53101.svg", 
+          "category": "Air/Land/Sea Surface Radar"
         }, 
         {
           "digits": "11", 
           "label": "Cellular/Mobile", 
           "id": "CELLULAR_MOBILE_MOD", 
-          "graphic": "53111.svg"
+          "graphic": "53111.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Communications"
         }, 
         {
           "digits": "13", 
           "label": "Decoy/Mimic", 
           "id": "DECOY_MIMIC_MOD", 
-          "graphic": "53131.svg"
+          "graphic": "53131.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "14", 
           "label": "Data Transmission", 
           "id": "DATA_TRANSMISSION_MOD", 
-          "graphic": "53141.svg"
+          "graphic": "53141.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "16", 
           "label": "Early Warning", 
           "id": "EARLY_WARNING_MOD", 
-          "graphic": "53161.svg"
+          "graphic": "53161.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "17", 
           "label": "Fire Control", 
           "id": "FIRE_CONTROL_MOD", 
-          "graphic": "53171.svg"
+          "graphic": "53171.svg", 
+          "category": "Air/Land/Sea Surface Radar"
         }, 
         {
           "digits": "19", 
           "label": "Height Finding", 
           "id": "HEIGHT_FINDING_MOD", 
-          "graphic": "53191.svg"
+          "graphic": "53191.svg", 
+          "category": "Land/Sea Surface Radar"
         }, 
         {
           "digits": "21", 
           "label": "Identification Friend or Foe (Interrogator)", 
           "id": "IFF_INTERROGATOR_MOD", 
-          "graphic": "53211.svg"
+          "graphic": "53211.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "22", 
           "label": "Instrument Landing System", 
           "id": "INSTRUMENT_LANDING_SYSTEM_MOD", 
-          "graphic": "53221.svg"
+          "graphic": "53221.svg", 
+          "category": "Land/Sea Surface Radar"
         }, 
         {
           "digits": "24", 
           "label": "Identification Friend or Foe (Transponder)", 
           "id": "IFF_TRANSPONDER_MOD", 
-          "graphic": "53241.svg"
+          "graphic": "53241.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "25", 
           "label": "Barrage Jammer", 
           "id": "BARRAGE_JAMMER_MOD", 
-          "graphic": "53251.svg"
+          "graphic": "53251.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "26", 
           "label": "Click Jammer", 
           "id": "CLICK_JAMMER_MOD", 
-          "graphic": "53261.svg"
+          "graphic": "53261.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "27", 
           "label": "Deceptive Jammer", 
           "id": "DECEPTIVE_JAMMER_MOD", 
-          "graphic": "53271.svg"
+          "graphic": "53271.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "28", 
           "label": "Frequency Swept Jammer", 
           "id": "FREQUENCY_SWEPT_JAMMER_MOD", 
-          "graphic": "53281.svg"
+          "graphic": "53281.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "29", 
           "label": "Jammer (General)", 
           "id": "JAMMER_GENERAL_MOD", 
-          "graphic": "53291.svg"
+          "graphic": "53291.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "30", 
           "label": "Noise Jammer", 
           "id": "NOISE_JAMMER_MOD", 
-          "graphic": "53301.svg"
+          "graphic": "53301.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "31", 
           "label": "Pulsed Jammer", 
           "id": "PULSED_JAMMER_MOD", 
-          "graphic": "53311.svg"
+          "graphic": "53311.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "32", 
           "label": "Repeater Jammer", 
           "id": "REPEATER_JAMMER_MOD", 
-          "graphic": "53321.svg"
+          "graphic": "53321.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "33", 
           "label": "Spot Noise Jammer", 
           "id": "SPOT_NOISE_JAMMER_MOD", 
-          "graphic": "53331.svg"
+          "graphic": "53331.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "34", 
           "label": "Transponder Jammer", 
           "id": "TRANSPONDER_JAMMER_MOD", 
-          "graphic": "53341.svg"
+          "graphic": "53341.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "35", 
           "label": "Missile Acquisition", 
           "id": "MISSILE_ACQUISITION_MOD", 
-          "graphic": "53351.svg"
+          "graphic": "53351.svg", 
+          "category": "Air/Land/Sea Surface Radar"
         }, 
         {
           "digits": "36", 
           "label": "Missile Control", 
           "id": "MISSILE_CONTROL_MOD", 
-          "graphic": "53361.svg"
+          "graphic": "53361.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "38", 
           "label": "Meteorological", 
           "id": "METEOROLOGICAL_MOD", 
-          "graphic": "53381.svg"
+          "graphic": "53381.svg", 
+          "category": "Air/Land/Sea Surface Radar"
         }, 
         {
           "digits": "39", 
           "label": "Multi-Function", 
           "id": "MULTI_FUNCTION_MOD", 
           "graphic": "53391.svg", 
-          "remarks": "Two or more of EW, TA, TT, MG, TI"
+          "remarks": "Two or more of EW, TA, TT, MG, TI", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "40", 
           "label": "Missile Guidance", 
           "id": "MISSILE_GUIDANCE_MOD", 
-          "graphic": "53401.svg"
+          "graphic": "53401.svg", 
+          "category": "Air/Land/Sea Surface Radar"
         }, 
         {
           "digits": "42", 
           "label": "Missile Tracking", 
           "id": "MISSILE_TRACKING_MOD", 
-          "graphic": "53421.svg"
+          "graphic": "53421.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "43", 
           "label": "Navigational/General", 
           "id": "NAVIGATIONAL_GENERAL_MOD", 
-          "graphic": "53431.svg"
+          "graphic": "53431.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "44", 
           "label": "Navigational/Distance Measuring Equipment", 
           "id": "NAVIGATIONAL_DISTANCE_MEASURING_EQUIPMENT_MOD", 
-          "graphic": "53441.svg"
+          "graphic": "53441.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "45", 
           "label": "Navigation/Terrain Following", 
           "id": "NAVIGATION_TERRAIN_FOLLOWING_MOD", 
-          "graphic": "53451.svg"
+          "graphic": "53451.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "46", 
           "label": "Navigational/Weather Avoidance", 
           "id": "NAVIGATIONAL_WEATHER_AVOIDANCE_MOD", 
-          "graphic": "53461.svg"
+          "graphic": "53461.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "47", 
           "label": "Omni-Line of Sight (LOS)", 
           "id": "OMNI_LOS_MOD", 
-          "graphic": "53471.svg"
+          "graphic": "53471.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Communications"
         }, 
         {
           "digits": "49", 
           "label": "Point-to-Point Line of Sight (LOS)", 
           "id": "POINT_POINT_LOS_MOD", 
-          "graphic": "53491.svg"
+          "graphic": "53491.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Communications"
         }, 
         {
           "digits": "50", 
           "label": "Instrumentation", 
           "id": "INSTRUMENTATION_MOD", 
-          "graphic": "53501.svg"
+          "graphic": "53501.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "51", 
           "label": "Range Only", 
           "id": "RANGE_ONLY_MOD", 
-          "graphic": "53511.svg"
+          "graphic": "53511.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "52", 
           "label": "Sonobuoy", 
           "id": "SONOBUOY_MOD", 
-          "graphic": "53521.svg"
+          "graphic": "53521.svg", 
+          "category": "Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "54", 
           "label": "Space", 
           "id": "SPACE_MOD", 
-          "graphic": "53541.svg"
+          "graphic": "53541.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "55", 
           "label": "Surface Search", 
           "id": "SURFACE_SEARCH_MOD", 
-          "graphic": "53551.svg"
+          "graphic": "53551.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "57", 
           "label": "Satellite Uplink", 
           "id": "SATELLITE_UPLINK_MOD", 
-          "graphic": "53571.svg"
+          "graphic": "53571.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Communications"
         }, 
         {
           "digits": "58", 
           "label": "Target Acquisition", 
           "id": "TARGET_ACQUISITION_MOD", 
-          "graphic": "53581.svg"
+          "graphic": "53581.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "59", 
           "label": "Target Illumination", 
           "id": "TARGET_ILLUMINATION_MOD", 
-          "graphic": "53591.svg"
+          "graphic": "53591.svg", 
+          "category": "Air/Land/Sea Surface Radar"
         }, 
         {
           "digits": "61", 
           "label": "Target Tracking", 
           "id": "TARGET_TRACKING_MOD", 
-          "graphic": "53611.svg"
+          "graphic": "53611.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "62", 
           "label": "Unknown", 
           "id": "UNKNOWN_MOD", 
-          "graphic": "53621.svg"
+          "graphic": "53621.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "63", 
           "label": "Video Remoting", 
           "id": "VIDEO_REMOTING_MOD", 
-          "graphic": "53631.svg"
+          "graphic": "53631.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "64", 
           "label": "Experimental", 
           "id": "EXPERIMENTAL_MOD", 
-          "graphic": "53641.svg"
+          "graphic": "53641.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }
       ], 
       "sectorTwoModifiers": [], 
@@ -17672,224 +18238,261 @@ var symbolData={
           "digits": "07", 
           "label": "Beacon Transponder (not IFF)", 
           "id": "BEACON_TRANSPONDER_MOD", 
-          "graphic": "54071.svg"
+          "graphic": "54071.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "11", 
           "label": "Cellular/Mobile", 
           "id": "CELLULAR_MOBILE_MOD", 
-          "graphic": "54111.svg"
+          "graphic": "54111.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Communications"
         }, 
         {
           "digits": "13", 
           "label": "Decoy/Mimic", 
           "id": "DECOY_MIMIC_MOD", 
-          "graphic": "54131.svg"
+          "graphic": "54131.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "14", 
           "label": "Data Transmission", 
           "id": "DATA_TRANSMISSION_MOD", 
-          "graphic": "54141.svg"
+          "graphic": "54141.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "16", 
           "label": "Early Warning", 
           "id": "EARLY_WARNING_MOD", 
-          "graphic": "54161.svg"
+          "graphic": "54161.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "21", 
           "label": "Identification Friend or Foe (Interrogator)", 
           "id": "IFF_INTERROGATOR_MOD", 
-          "graphic": "54211.svg"
+          "graphic": "54211.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "24", 
           "label": "Identification Friend or Foe (Transponder)", 
           "id": "IFF_TRANSPONDER_MOD", 
-          "graphic": "54241.svg"
+          "graphic": "54241.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "25", 
           "label": "Barrage Jammer", 
           "id": "BARRAGE_JAMMER_MOD", 
-          "graphic": "54251.svg"
+          "graphic": "54251.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "26", 
           "label": "Click Jammer", 
           "id": "CLICK_JAMMER_MOD", 
-          "graphic": "54261.svg"
+          "graphic": "54261.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "27", 
           "label": "Deceptive Jammer", 
           "id": "DECEPTIVE_JAMMER_MOD", 
-          "graphic": "54271.svg"
+          "graphic": "54271.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "28", 
           "label": "Frequency Swept Jammer", 
           "id": "FREQUENCY_SWEPT_JAMMER_MOD", 
-          "graphic": "54281.svg"
+          "graphic": "54281.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "29", 
           "label": "Jammer (General)", 
           "id": "JAMMER_GENERAL_MOD", 
-          "graphic": "54291.svg"
+          "graphic": "54291.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "30", 
           "label": "Noise Jammer", 
           "id": "NOISE_JAMMER_MOD", 
-          "graphic": "54301.svg"
+          "graphic": "54301.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "31", 
           "label": "Pulsed Jammer", 
           "id": "PULSED_JAMMER_MOD", 
-          "graphic": "54311.svg"
+          "graphic": "54311.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "32", 
           "label": "Repeater Jammer", 
           "id": "REPEATER_JAMMER_MOD", 
-          "graphic": "54321.svg"
+          "graphic": "54321.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "33", 
           "label": "Spot Noise Jammer", 
           "id": "SPOT_NOISE_JAMMER_MOD", 
-          "graphic": "54331.svg"
+          "graphic": "54331.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "34", 
           "label": "Transponder Jammer", 
           "id": "TRANSPONDER_JAMMER_MOD", 
-          "graphic": "54341.svg"
+          "graphic": "54341.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "36", 
           "label": "Missile Control", 
           "id": "MISSILE_CONTROL_MOD", 
-          "graphic": "54361.svg"
+          "graphic": "54361.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "39", 
           "label": "Multi-Function", 
           "id": "MULTI_FUNCTION_MOD", 
           "graphic": "54391.svg", 
-          "remarks": "Two or more of EW, TA, TT, MG, TI"
+          "remarks": "Two or more of EW, TA, TT, MG, TI", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "42", 
           "label": "Missile Tracking", 
           "id": "MISSILE_TRACKING_MOD", 
-          "graphic": "54421.svg"
+          "graphic": "54421.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "43", 
           "label": "Navigational/General", 
           "id": "NAVIGATIONAL_GENERAL_MOD", 
-          "graphic": "54431.svg"
+          "graphic": "54431.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "44", 
           "label": "Navigational/Distance Measuring Equipment", 
           "id": "NAVIGATIONAL_DISTANCE_MEASURING_EQUIPMENT_MOD", 
-          "graphic": "54441.svg"
+          "graphic": "54441.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "45", 
           "label": "Navigation/Terrain Following", 
           "id": "NAVIGATION_TERRAIN_FOLLOWING_MOD", 
-          "graphic": "54451.svg"
+          "graphic": "54451.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "46", 
           "label": "Navigational/Weather Avoidance", 
           "id": "NAVIGATIONAL_WEATHER_AVOIDANCE_MOD", 
-          "graphic": "54461.svg"
+          "graphic": "54461.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "47", 
           "label": "Omni-Line of Sight (LOS)", 
           "id": "OMNI_LOS_MOD", 
-          "graphic": "54471.svg"
+          "graphic": "54471.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Communications"
         }, 
         {
           "digits": "49", 
           "label": "Point-to-Point Line of Sight (LOS)", 
           "id": "POINT_POINT_LOS_MOD", 
-          "graphic": "54491.svg"
+          "graphic": "54491.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Communications"
         }, 
         {
           "digits": "50", 
           "label": "Instrumentation", 
           "id": "INSTRUMENTATION_MOD", 
-          "graphic": "54501.svg"
+          "graphic": "54501.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "51", 
           "label": "Range Only", 
           "id": "RANGE_ONLY_MOD", 
-          "graphic": "54511.svg"
+          "graphic": "54511.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "52", 
           "label": "Sonobuoy", 
           "id": "SONOBUOY_MOD", 
-          "graphic": "54521.svg"
+          "graphic": "54521.svg", 
+          "category": "Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "54", 
           "label": "Space", 
           "id": "SPACE_MOD", 
-          "graphic": "54541.svg"
+          "graphic": "54541.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "55", 
           "label": "Surface Search", 
           "id": "SURFACE_SEARCH_MOD", 
-          "graphic": "54551.svg"
+          "graphic": "54551.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "57", 
           "label": "Satellite Uplink", 
           "id": "SATELLITE_UPLINK_MOD", 
-          "graphic": "54571.svg"
+          "graphic": "54571.svg", 
+          "category": "Air/Land/Sea Surface/Subsurface Communications"
         }, 
         {
           "digits": "58", 
           "label": "Target Acquisition", 
           "id": "TARGET_ACQUISITION_MOD", 
-          "graphic": "54581.svg"
+          "graphic": "54581.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Jammer"
         }, 
         {
           "digits": "61", 
           "label": "Target Tracking", 
           "id": "TARGET_TRACKING_MOD", 
-          "graphic": "54611.svg"
+          "graphic": "54611.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "62", 
           "label": "Unknown", 
           "id": "UNKNOWN_MOD", 
-          "graphic": "54621.svg"
+          "graphic": "54621.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "63", 
           "label": "Video Remoting", 
           "id": "VIDEO_REMOTING_MOD", 
-          "graphic": "54631.svg"
+          "graphic": "54631.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }, 
         {
           "digits": "64", 
           "label": "Experimental", 
           "id": "EXPERIMENTAL_MOD", 
-          "graphic": "54641.svg"
+          "graphic": "54641.svg", 
+          "category": "Space/Air/Land/Sea Surface/Subsurface Radar"
         }
       ], 
       "sectorTwoModifiers": [], 
