@@ -176,6 +176,8 @@ angular.module('symbolApp')
         $scope.sectorOneModifier = symbolIdCodeService.symbId.sectorOneModifier;
         $scope.alternateAmplifiers = symbolIdCodeService.getAlternateAmplifiers();
         $scope.limitUseTo = true;
+        $scope.currentEntity = $scope.entitySubType || $scope.entityType || $scope.entity;
+        $scope.showDebugInfo = false;
 
         $scope.changeContext = function (context) {
             symbolIdCodeService.setContext(context);
