@@ -18,6 +18,9 @@
                 <div class="checkbox" title="Limit some modifiers to specific symbols">
                     <label><input type="checkbox" ng-model="limitUseTo">Limit modifiers</label>
                 </div>
+                <div class="checkbox" title="Show internal meta data">
+                    <label><input type="checkbox" ng-model="showDebugInfo">Show debug info</label>
+                </div>
             </div>
         </div>
 
@@ -191,7 +194,10 @@
                             <div class="milsymb reveal-animation" ng-include="hqtfdFn()"></div>
                         </div>
                     </td>
-                    <td>{{currentEntity.remarks}}</td>
+                    <td>{{currentEntity.remarks}}
+                        <div ng-show="showDebugInfo"><small><strong>ID</strong> <code>{{currentEntity.id}}</code><br>
+                        <strong>Icon</strong> <code>{{currentEntity.icon}}</code></small></div>
+                    </td>
                 </tr>
             </table>
             <div ng-controller="SymbolIdCodeCtrl">
