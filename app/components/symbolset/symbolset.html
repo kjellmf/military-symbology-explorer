@@ -15,15 +15,13 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Tables</div>
                 <div class="panel-body">
-                    <ul class="nav nav-sidebar">
+                    <ul class="nav nav-pills nav-stacked">
                         <li><a ui-sref=".symboltable">Symbols</a></li>
                         <li><a ui-sref=".modifierone">Modifier ones</a></li>
                         <li><a ui-sref=".modifiertwo">Modifier twos</a></li>
                     </ul>
                 </div>
             </div>
-
-            <!--<input type="checkbox" ng-model="isEnabled">Is Filter Enable-->
 
             <div class="panel panel-default">
                 <div class="panel-heading">Symbol</div>
@@ -34,6 +32,21 @@
                         <img class="symbol-sm" ng-src="{{symb.mod1Fn}}"/>
                         <img class="symbol-sm" ng-src="{{symb.mod2Fn}}"/>
                     </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">Settings</div>
+                <div class="panel-body">
+                    <div class="checkbox" title="Show internal meta data">
+                        <label><input type="checkbox" ng-model="settings.showDebugInfo">Show debug info</label>
+                    </div>
+                    <div class="checkbox" title="Use civilian frames (visible when you change symbol set)">
+                        <label><input type="checkbox" ng-model="settings.useCivilianFrames">Use civilian frames</label>
+                    </div>
+                    <!--<div class="checkbox" title="Show only modifiers with the LimitUseTo attribute set">-->
+                        <!--<label><input type="checkbox" ng-model="settings.showLimitUseToOnly">Show limited modifiers only</label>-->
+                    <!--</div>-->
                 </div>
             </div>
 

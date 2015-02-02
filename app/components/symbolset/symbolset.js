@@ -25,7 +25,18 @@ angular.module('symbolApp')
         };
     }])
 
-    .controller('SymbolSetBrowserCtrl', ['$scope', '$stateParams', '$log', 'symbolIdCodeService', 'config', function ($scope, $stateParams, $log, symbolIdCodeService, config) {
+    .factory('symbolsetBrowserSettings', ['$log', 'config', function ($log, config) {
+        var settings = {
+            useCivilianFrames: false,
+            showDebugInfo: false,
+            showLimitUseToOnly: false
+        };
+        return {
+            settings: settings
+        };
+    }])
+
+    .controller('SymbolSetBrowserCtrl', ['$scope', '$stateParams', '$log', 'symbolIdCodeService', 'config', 'symbolsetBrowserSettings', function ($scope, $stateParams, $log, symbolIdCodeService, config, symbolsetBrowserSettings) {
         if ($stateParams.symbolSetId) {
             var tmp = findWithAttr(symbolData.symbolSets, 'id', $stateParams.symbolSetId);
             if (tmp) {
@@ -37,6 +48,7 @@ angular.module('symbolApp')
             $scope.currentSymbolSet = symbolIdCodeService.symbId.symbolSet;
         }
         $scope.symbolData = symbolData;
+        $scope.settings = symbolsetBrowserSettings.settings;
 
         var SVG_PATH = config.SVG_PATH;
         $scope.SVG_PATH = SVG_PATH;
@@ -58,12 +70,13 @@ angular.module('symbolApp')
         };
     }])
 
-    .controller('SidebarCtrl', ['$scope', 'currentSymbol', function ($scope, currentSymbol) {
+    .controller('SidebarCtrl', ['$scope', 'currentSymbol', 'symbolsetBrowserSettings', function ($scope, currentSymbol, symbolsetBrowserSettings) {
         $scope.currentSymbolSet = $scope.$parent.currentSymbolSet;
         $scope.symb = currentSymbol.symb;
+        $scope.settings = symbolsetBrowserSettings.settings;
     }])
 
-    .directive('symbsetsymb', ['$log', 'config', 'pathService', 'currentSymbol', function ($log, config, pathService, currentSymbol) {
+    .directive('symbsetsymb', ['$log', 'config', 'pathService', 'currentSymbol', 'symbolsetBrowserSettings', function ($log, config, pathService, currentSymbol, symbolsetBrowserSettings) {
 
         function link(scope, element, attrs) {
             scope.entityFn = "";
@@ -74,7 +87,7 @@ angular.module('symbolApp')
 
             var gg = scope.entity;
             scope.entityFn = pathService.getEntityFilePath(scope.entity, currentSymbolSet, siId) || config.BLANK_PATH;
-            scope.frameFn = pathService.getFrameFilePath(contextId, siId, currentSymbolSet) || config.BLANK_PATH;
+            scope.frameFn = pathService.getFrameFilePath(contextId, siId, currentSymbolSet, null, symbolsetBrowserSettings.settings.useCivilianFrames) || config.BLANK_PATH;
             element.bind('click', function () {
                 scope.$apply(function () {
                     currentSymbol.symb.entity = scope.entity;
