@@ -6,4 +6,6 @@ node_modules/
 .idea/
 dist/
 svg/
+*.zip
+*.7z
 
