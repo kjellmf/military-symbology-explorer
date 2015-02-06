@@ -152,102 +152,128 @@ angular.module('symbolApp')
         };
     }])
 
-    .controller('SymbolCtrl', ['$scope', '$log', 'symbolIdCodeService', function ($scope, $log, symbolIdCodeService) {
-        $scope.frame = symbolIdCodeService.getFrameFn;
-        $scope.main = symbolIdCodeService.getEntityFn;
-        $scope.amplifierFn = symbolIdCodeService.getAmplifilerFn;
-        $scope.modifierOneFn = symbolIdCodeService.getModiferOneFn;
-        $scope.modifierTwoFn = symbolIdCodeService.getModiferTwoFn;
-        $scope.statusFn = symbolIdCodeService.getStatusFn;
-        $scope.hqtfdFn = symbolIdCodeService.getHqtfdFn;
-        $scope.symbolData = symbolData;
-        $scope.hqtfDummy = symbolIdCodeService.symbId.hqtfDummy;
-        $scope.context = symbolIdCodeService.symbId.context;
-        $scope.standardIdentity = symbolIdCodeService.symbId.standardIdentity;
-        $scope.currentSymbolSet = symbolIdCodeService.symbId.symbolSet;
-        $scope.status = symbolIdCodeService.symbId.status;
-        $scope.amplifier = symbolIdCodeService.symbId.amplifier;
-        $scope.amplifierDescriptor = symbolIdCodeService.symbId.amplifierDescriptor;
-        $scope.symbId = symbolIdCodeService.symbId;
-        $scope.ss = symbolIdCodeService;
-        $scope.entity = symbolIdCodeService.symbId.entity;
-        $scope.entityType = symbolIdCodeService.symbId.entityType;
-        $scope.entitySubType = symbolIdCodeService.symbId.entitySubType;
-        $scope.sectorOneModifier = symbolIdCodeService.symbId.sectorOneModifier;
-        $scope.alternateAmplifiers = symbolIdCodeService.getAlternateAmplifiers();
-        $scope.limitUseTo = true;
-        $scope.currentEntity = $scope.entitySubType || $scope.entityType || $scope.entity;
-        $scope.showDebugInfo = false;
-
-        $scope.changeContext = function (context) {
-            symbolIdCodeService.setContext(context);
-        };
-
-        $scope.changeStandardIdentity = function (standardIdentity) {
-            symbolIdCodeService.setStandardIdentity(standardIdentity);
-
-        };
-
-        $scope.changeSymbolSet = function (symbolSet) {
-            symbolIdCodeService.setSymbolSet(symbolSet);
-            $scope.entity = null;
-
-            $scope.entity = symbolSet.entities[0];
-            $scope.changeEntity(symbolSet.entities[0]);
-            $scope.sectorOneModifier = null;
-            $scope.sectorTwoModifier = null;
-            symbolIdCodeService.setSectorOneModifier(null);
-            symbolIdCodeService.setSectorTwoModifier(null);
-            $scope.amplifier = symbolData.amplifier[0];
-            $scope.changeAmplifier(symbolData.amplifier[0]);
-
-        };
-
-        $scope.changeStatus = function (status) {
-            symbolIdCodeService.setStatus(status);
-        };
-
-        $scope.changeAlternateAmplifiers = function (alternateAmplifiers) {
-            symbolIdCodeService.setAlternateAmplifiers(alternateAmplifiers);
-        };
-
-        $scope.changeHQTFDummy = function (hqTfDummy) {
-            symbolIdCodeService.setHQTFDummy(hqTfDummy);
-        };
-
-        $scope.changeAmplifier = function (amplifier) {
-            symbolIdCodeService.setAmplifier(amplifier);
-            $scope.amplifierDescriptor = amplifier.descriptors[0];
-            $scope.changeAmplifierDescriptor(amplifier.descriptors[0]);
-        };
-
-        $scope.changeAmplifierDescriptor = function (amplifierDescriptor) {
-            symbolIdCodeService.setAmplifierDescriptor(amplifierDescriptor);
-        };
-
-        $scope.changeEntity = function (entity) {
-            symbolIdCodeService.setEntity(entity);
-            $scope.entityType = null;
-            $scope.changeEntityType(null);
-        };
-
-        $scope.changeEntityType = function (entityType) {
-            symbolIdCodeService.setEntityType(entityType);
-            $scope.entitySubType = null;
-            $scope.changeEntitySubType(null);
-        };
-
-        $scope.changeEntitySubType = function (entitySubType) {
-            symbolIdCodeService.setEntitySubType(entitySubType);
+    .controller('SymbolCtrl', ['$scope', '$log', 'symbolIdCodeService', 'disableModOneFilter',
+        'disableModTwoFilter', 'limitUseToModFilterFilter',
+        function ($scope, $log, symbolIdCodeService, disableModOneFilter, disableModTwoFilter, limitUseToModFilterFilter) {
+            $scope.frame = symbolIdCodeService.getFrameFn;
+            $scope.main = symbolIdCodeService.getEntityFn;
+            $scope.amplifierFn = symbolIdCodeService.getAmplifilerFn;
+            $scope.modifierOneFn = symbolIdCodeService.getModiferOneFn;
+            $scope.modifierTwoFn = symbolIdCodeService.getModiferTwoFn;
+            $scope.statusFn = symbolIdCodeService.getStatusFn;
+            $scope.hqtfdFn = symbolIdCodeService.getHqtfdFn;
+            $scope.symbolData = symbolData;
+            $scope.hqtfDummy = symbolIdCodeService.symbId.hqtfDummy;
+            $scope.context = symbolIdCodeService.symbId.context;
+            $scope.standardIdentity = symbolIdCodeService.symbId.standardIdentity;
+            $scope.currentSymbolSet = symbolIdCodeService.symbId.symbolSet;
+            $scope.status = symbolIdCodeService.symbId.status;
+            $scope.amplifier = symbolIdCodeService.symbId.amplifier;
+            $scope.amplifierDescriptor = symbolIdCodeService.symbId.amplifierDescriptor;
+            $scope.symbId = symbolIdCodeService.symbId;
+            $scope.ss = symbolIdCodeService;
+            $scope.entity = symbolIdCodeService.symbId.entity;
+            $scope.entityType = symbolIdCodeService.symbId.entityType;
+            $scope.entitySubType = symbolIdCodeService.symbId.entitySubType;
+            $scope.sectorOneModifier = symbolIdCodeService.symbId.sectorOneModifier;
+            $scope.alternateAmplifiers = symbolIdCodeService.getAlternateAmplifiers();
+            $scope.limitUseTo = true;
             $scope.currentEntity = $scope.entitySubType || $scope.entityType || $scope.entity;
-        };
+            $scope.showDebugInfo = false;
+
+            $scope.changeContext = function (context) {
+                symbolIdCodeService.setContext(context);
+            };
+
+            $scope.changeStandardIdentity = function (standardIdentity) {
+                symbolIdCodeService.setStandardIdentity(standardIdentity);
+
+            };
+
+            $scope.changeSymbolSet = function (symbolSet) {
+                symbolIdCodeService.setSymbolSet(symbolSet);
+                $scope.entity = null;
+
+                $scope.entity = symbolSet.entities[0];
+                $scope.changeEntity(symbolSet.entities[0]);
+                $scope.sectorOneModifier = null;
+                $scope.sectorTwoModifier = null;
+                symbolIdCodeService.setSectorOneModifier(null);
+                symbolIdCodeService.setSectorTwoModifier(null);
+                $scope.amplifier = symbolData.amplifier[0];
+                $scope.changeAmplifier(symbolData.amplifier[0]);
+
+            };
+
+            $scope.changeStatus = function (status) {
+                symbolIdCodeService.setStatus(status);
+            };
+
+            $scope.changeAlternateAmplifiers = function (alternateAmplifiers) {
+                symbolIdCodeService.setAlternateAmplifiers(alternateAmplifiers);
+            };
+
+            $scope.changeHQTFDummy = function (hqTfDummy) {
+                symbolIdCodeService.setHQTFDummy(hqTfDummy);
+            };
+
+            $scope.changeAmplifier = function (amplifier) {
+                symbolIdCodeService.setAmplifier(amplifier);
+                $scope.amplifierDescriptor = amplifier.descriptors[0];
+                $scope.changeAmplifierDescriptor(amplifier.descriptors[0]);
+            };
+
+            $scope.changeAmplifierDescriptor = function (amplifierDescriptor) {
+                symbolIdCodeService.setAmplifierDescriptor(amplifierDescriptor);
+            };
+
+            $scope.changeEntity = function (entity) {
+                symbolIdCodeService.setEntity(entity);
+                $scope.entityType = null;
+                $scope.changeEntityType(null);
+            };
+
+            $scope.changeEntityType = function (entityType) {
+                symbolIdCodeService.setEntityType(entityType);
+                $scope.entitySubType = null;
+                $scope.changeEntitySubType(null);
+            };
+
+            function checkLimitUseTo(item) {
+                if ($scope.limitUseTo && item.limitUseTo) {
+                    if (($scope.entitySubType && item.limitUseTo.indexOf($scope.entitySubType.id) >= 0)
+                        || ($scope.entityType && item.limitUseTo.indexOf($scope.entityType.id) >= 0)
+                        || ($scope.entity && item.limitUseTo.indexOf($scope.entity.id) >= 0)) {
+                        return true;
+                    }
+                }
+                return false
+            }
+
+            function resetModifiers(currentEntity) {
+                if (disableModOneFilter(currentEntity) || checkLimitUseTo($scope.sectorOneModifier)) {
+                    symbolIdCodeService.setSectorOneModifier(null);
+                    $scope.sectorOneModifier = symbolIdCodeService.symbId.sectorOneModifier;
+                }
+                if (disableModTwoFilter(currentEntity) || checkLimitUseTo($scope.sectorOneModifier)) {
+                    symbolIdCodeService.setSectorTwoModifier(null);
+                    $scope.sectorTwoModifier = symbolIdCodeService.symbId.sectorTwoModifier;
+                }
+
+            }
+
+            $scope.changeEntitySubType = function (entitySubType) {
+                symbolIdCodeService.setEntitySubType(entitySubType);
+                $scope.currentEntity = $scope.entitySubType || $scope.entityType || $scope.entity;
+                resetModifiers($scope.currentEntity);
+            };
 
 
-        $scope.getLabel = function (element) {
-            return element.digits + " " + element.label;
-        };
+            $scope.getLabel = function (element) {
+                return element.digits + " " + element.label;
+            };
 
-    }])
+        }])
 
     .controller('SymbolIdCodeCtrl', ['$scope', 'symbolIdCodeService', function ($scope, symbolCodeIdService) {
         var sid = symbolCodeIdService.symbId;
@@ -280,7 +306,34 @@ angular.module('symbolApp')
                 return input;
             }
         };
-    });
+    })
+
+    .filter('disableModOne', function () {
+        return function (entity) {
+            switch (entity.icon) {
+                case "FULL_OCTAGON":
+                case "MAIN_1":
+                    return true;
+                default:
+                    return false;
+            }
+            return false;
+        };
+    })
+
+    .filter('disableModTwo', function () {
+        return function (entity) {
+            switch (entity.icon) {
+                case "FULL_OCTAGON":
+                case "MAIN_2":
+                    return true;
+                default:
+                    return false;
+            }
+            return false;
+        };
+    })
+;
 
 
 

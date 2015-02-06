@@ -160,7 +160,8 @@
                             <div class="col-sm-8">
                                 <select class="form-control" ng-model="sectorOneModifier"
                                         ng-options="getLabel(d) group by d.category for d in currentSymbolSet.sectorOneModifiers | limitUseToModFilter:this:limitUseTo"
-                                        ng-change="ss.setSectorOneModifier(sectorOneModifier)">
+                                        ng-change="ss.setSectorOneModifier(sectorOneModifier)"
+                                        ng-disabled="currentEntity | disableModOne">
                                     <option value="">00</option>
                                 </select>
                             </div>
@@ -171,7 +172,8 @@
                             <div class="col-sm-8">
                                 <select class="form-control" ng-model="sectorTwoModifier"
                                         ng-options="getLabel(d) group by d.category for d in currentSymbolSet.sectorTwoModifiers | limitUseToModFilter:this:limitUseTo"
-                                        ng-change="ss.setSectorTwoModifier(sectorTwoModifier)">
+                                        ng-change="ss.setSectorTwoModifier(sectorTwoModifier)"
+                                        ng-disabled="currentEntity | disableModTwo">
                                     <option value="">00</option>
                                 </select>
                             </div>
