@@ -2239,6 +2239,7 @@ var symbolData={
                   "diamondGraphic": "10140102_3.svg", 
                   "rectangleGraphic": "10140102_1.svg", 
                   "squareGraphic": "10140102_2.svg", 
+                  "remarks": "DISA changed this to full frame as a result of a telecon discussion with the Army, but not reflected that way in the final PDF.", 
                   "icon": "FULL_FRAME"
                 }, 
                 {
@@ -2328,6 +2329,7 @@ var symbolData={
                   "diamondGraphic": "10140702_3.svg", 
                   "rectangleGraphic": "10140702_1.svg", 
                   "squareGraphic": "10140702_2.svg", 
+                  "remarks": "DISA changed this to full frame as a result of a telecon discussion with the Army, but not reflected that way in the final PDF.", 
                   "icon": "FULL_FRAME"
                 }, 
                 {
@@ -2429,6 +2431,7 @@ var symbolData={
                   "diamondGraphic": "10141702_3.svg", 
                   "rectangleGraphic": "10141702_1.svg", 
                   "squareGraphic": "10141702_2.svg", 
+                  "remarks": "DISA changed this to full frame as a result of a telecon discussion with the Army, but not reflected that way in the final PDF.", 
                   "icon": "FULL_FRAME"
                 }
               ]
@@ -2518,13 +2521,15 @@ var symbolData={
                   "digits": "02", 
                   "label": "Direction Finding", 
                   "id": "EW_DIRECTION_FINDING", 
-                  "graphic": "10150502.svg"
+                  "graphic": "10150502.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Intercept", 
                   "id": "EW_INTERCEPT", 
-                  "graphic": "10150503.svg"
+                  "graphic": "10150503.svg", 
+                  "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "04", 
@@ -5012,7 +5017,7 @@ var symbolData={
           "id": "VEHICLE", 
           "graphic": "15120000.svg", 
           "remarks": "This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes.", 
-          "icon": "NA", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -5987,6 +5992,7 @@ var symbolData={
               "label": "Military Information Support Operations (MISO)", 
               "id": "MILITARY_INFORMATION_SUPPORT_OPERATIONS_MISO", 
               "graphic": "15201100.svg", 
+              "icon": "FULL_OCTAGON", 
               "entitySubTypes": []
             }, 
             {
@@ -12483,6 +12489,7 @@ var symbolData={
           "id": "ECHO_TRACKER_CLASSIFIER_ETC_POSSIBLE_CONTACT_POSCON", 
           "graphic": "35140000.svg", 
           "remarks": "All ETC/POSCON tracks shall have a pending standard identity frame.", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": []
         }, 
         {
@@ -12491,6 +12498,7 @@ var symbolData={
           "id": "FUSED_TRACK", 
           "graphic": "35150000.svg", 
           "remarks": "All fused tracks shall have a pending standard identity frame.", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": []
         }, 
         {
@@ -12498,6 +12506,7 @@ var symbolData={
           "label": "Manual Track", 
           "id": "MANUAL_TRACK", 
           "graphic": "35160000.svg", 
+          "icon": "FULL_OCTAGON", 
           "entityTypes": []
         }
       ], 
