@@ -183,7 +183,7 @@
             </div>
         </div>
         <div class="col-sm-5">
-            <table class="table table-bordered">
+            <table class="table table-bordered table-condensed">
                 <tr>
                     <td class="symbol">
                         <div class="symbol">
@@ -199,8 +199,11 @@
                     <td>{{currentEntity.remarks}}
                         <div ng-show="showDebugInfo"><small><strong>ID</strong> <code>{{currentEntity.id}}</code><br>
                         <strong>Icon</strong> <code>{{currentEntity.icon}}</code></small></div>
+                        <br>
+
                     </td>
                 </tr>
+                <tr><td colspan="2"><a class="btn btn-default btn-xs" ng-click="saveAsPng()" title="Does not work in Internet Explorer">Save as PNG</a></td></tr>
             </table>
             <div ng-controller="SymbolIdCodeCtrl">
                 <table class="table table-bordered symbolid-table">

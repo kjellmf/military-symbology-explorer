@@ -273,6 +273,76 @@ angular.module('symbolApp')
                 return element.digits + " " + element.label;
             };
 
+            $scope.saveAsPng = function () {
+                function loadImages(sources, callback) {
+                    var images = {};
+                    var loadedImages = 0;
+                    var numImages = 0;
+                    // get num of sources
+                    for (var src in sources) {
+                        if (sources[src]) {
+                            numImages++;
+                        }
+                    }
+                    for (var src in sources) {
+                        if (sources[src]) {
+                            images[src] = new Image();
+                            images[src].onload = function () {
+                                if (++loadedImages >= numImages) {
+                                    callback(images);
+                                }
+                            };
+                            images[src].src = sources[src];
+                        }
+                    }
+                }
+
+                function drawImage(source) {
+                    if (source) {
+                        var myCanvasContext = $scope.myCanvas.getContext('2d');
+                        myCanvasContext.drawImage(source, 0, 0, $scope.myCanvas.width, $scope.myCanvas.height);
+                    }
+
+                }
+
+                $log.debug('Pressed save button');
+
+                if (!$scope.myCanvas) {
+                    var myCanvas = document.createElement('canvas');
+                    myCanvas.width = 612;
+                    myCanvas.height = 792;
+                    $scope.myCanvas = myCanvas;
+                } else {
+                    var context = $scope.myCanvas.getContext('2d');
+                    context.clearRect ( 0 , 0 , $scope.myCanvas.width, $scope.myCanvas.height );
+                }
+
+                var sources = {
+                    frame: $scope.frame(),
+                    main: $scope.main(),
+                    modifierOneFn: $scope.modifierOneFn(),
+                    modifierTwoFn: $scope.modifierTwoFn(),
+                    amplifierFn: $scope.amplifierFn(),
+                    statusFn: $scope.statusFn(),
+                    hqtfdFn: $scope.hqtfdFn()
+
+                };
+
+                loadImages(sources, function (images) {
+                    drawImage(images.frame);
+                    drawImage(images.main);
+                    drawImage(images.modifierOneFn);
+                    drawImage(images.modifierTwoFn);
+                    drawImage(images.amplifierFn);
+                    drawImage(images.statusFn);
+                    drawImage(images.hqtfdFn);
+                    $scope.myCanvas.toBlob(function (blob) {
+                        saveAs(blob, $scope.currentEntity.id + ".png");
+                    });
+
+                });
+            }
+
         }])
 
     .controller('SymbolIdCodeCtrl', ['$scope', 'symbolIdCodeService', function ($scope, symbolCodeIdService) {
