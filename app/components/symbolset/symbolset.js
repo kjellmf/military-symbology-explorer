@@ -146,6 +146,34 @@ angular.module('symbolApp')
         };
     }])
 
+    .directive('controlmeasure', ['$log', 'config', 'pathService', 'currentSymbol', function ($log, config, pathService, currentSymbol) {
+
+        function link(scope, element, attrs) {
+            scope.entityFn = "";
+            var currentSymbolSet = scope.$parent.currentSymbolSet;
+            var gg = scope.entity;
+            scope.entityFn = pathService.getEntityFilePath(scope.entity, currentSymbolSet) || config.BLANK_PATH;
+            element.bind('click', function () {
+                scope.$apply(function () {
+                    currentSymbol.symb.entity = scope.entity;
+                    currentSymbol.symb.entityFn = scope.entityFn;
+                });
+            })
+        }
+
+        return {
+            restrict: 'E',
+            scope: {
+                entity: '='
+            },
+            template: function (element, attrs) {
+                return '<div class="control-measure"><img class="control-measure-sm" ng-src="{{entityFn}}"/></div>';
+            },
+            link: link
+        };
+    }])
+
+
     .filter('limitUseToFilter', function () {
         return function (input, isEnabled) {
             if (isEnabled) {

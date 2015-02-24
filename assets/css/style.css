@@ -110,6 +110,16 @@ object, .milsymb {
      /*position: absolute;*/
 }
 
+/*.control-measure {*/
+    /*width: 73px;*/
+    /*height: 60px;*/
+/*}*/
+
+.control-measure img{
+    width: 150px;
+    height: 150px;
+}
+
 .milsymb {
     width: 113px;
     height: 60px;
@@ -143,6 +153,12 @@ object, .milsymb {
 td:hover .milsymbol img{
     transform: scale(1.5);
 }
+
+td:hover .control-measure img{
+    transform: scale(2);
+    background-color: floralwhite;
+}
+
 
 .symbol-smm img {
     width: 113px;
