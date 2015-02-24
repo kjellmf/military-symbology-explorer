@@ -1,54 +1,46 @@
- <table class="table table-bordered table-striped table-hover">
-        <thead>
-        <tr>
-            <th class="col-md-2">Entity</th>
-            <th class="col-md-2">Entity type</th>
-            <th class="col-md-2">Entity subtype</th>
-            <th class="col-md-4">Symbols</th>
-            <th class="col-md-1">Digits</th>
-        </tr>
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+    <tr>
+        <th class="col-md-2">Entity</th>
+        <th class="col-md-2">Entity type</th>
+        <th class="col-md-2">Entity subtype</th>
+        <th class="col-md-4">Symbols</th>
+        <th class="col-md-1">Digits</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat-start="entity in currentSymbolSet.entities">
+        <td>{{entity.label}}</td>
 
-        </thead>
-        <tbody>
-        <tr ng-repeat-start="entity in currentSymbolSet.entities">
-            <td>{{entity.label}}</td>
+        <td></td>
+        <td></td>
+        <td>
+            <controlmeasure entity="entity"></controlmeasure>
+        </td>
+        <td><b>{{entity.digits}}</b>0000</td>
+    </tr>
+    <tr ng-repeat-start="entityType in entity.entityTypes">
+        <td title="{{entity.label}}"></td>
+        <td>
+            {{entityType.label}}
 
-            <td></td>
-            <td></td>
-            <td>
-                <milsymbol sic="1000{{currentSymbolSet.digits}}0000{{entity.digits}}00000000" no-frame="true"></milsymbol>
-                <!--<div class="symbol-sm">-->
-                    <!--<div class="milsymb" ng-include="frame()"></div>-->
-                <!--</div>-->
-            </td>
-            <td><b>{{entity.digits}}</b>0000</td>
-        </tr>
-        <tr ng-repeat-start="entityType in entity.entityTypes">
-            <td title="{{entity.label}}"></td>
-            <td>
-                {{entityType.label}}
-
-            </td>
-            <td></td>
-            <td>
-                <milsymbol sic="1003{{currentSymbolSet.digits}}0000{{entity.digits}}{{entityType.digits}}000000" no-frame="true"></milsymbol>
-            </td>
-            <td>{{entity.digits}}<b>{{entityType.digits}}</b>00</td>
-        </tr>
-        <tr ng-repeat-end ng-repeat="entitySubType in entityType.entitySubTypes">
-            <td title="{{entity.label}}"></td>
-            <td title="{{entityType.label}}"></td>
-            <td>
-                {{entitySubType.label}}
-            </td>
-            <td>
-                <milsymbol sic="1001{{currentSymbolSet.digits}}0000{{entity.digits}}{{entityType.digits}}{{entitySubType.digits}}0000" no-frame="true"></milsymbol>
-            </td>
-            <td>{{entity.digits}}{{entityType.digits}}<b>{{entitySubType.digits}}</b> </td>
-        </tr>
-        <tr ng-repeat-end></tr>
-
-        </tbody>
-
-        <!--d as getLabel(d) for d in currentSymbolSet.entities-->
-    </table>
+        </td>
+        <td></td>
+        <td>
+            <controlmeasure entity="entityType"></controlmeasure>
+        <td>{{entity.digits}}<b>{{entityType.digits}}</b>00</td>
+    </tr>
+    <tr ng-repeat-end ng-repeat="entitySubType in entityType.entitySubTypes">
+        <td title="{{entity.label}}"></td>
+        <td title="{{entityType.label}}"></td>
+        <td>
+            {{entitySubType.label}}
+        </td>
+        <td>
+            <controlmeasure entity="entitySubType"></controlmeasure>
+        </td>
+        <td>{{entity.digits}}{{entityType.digits}}<b>{{entitySubType.digits}}</b></td>
+    </tr>
+    <tr ng-repeat-end></tr>
+    </tbody>
+</table>
