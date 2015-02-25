@@ -305,8 +305,6 @@ angular.module('symbolApp')
 
                 }
 
-                $log.debug('Pressed save button');
-
                 if (!$scope.myCanvas) {
                     var myCanvas = document.createElement('canvas');
                     myCanvas.width = 612;
@@ -337,7 +335,8 @@ angular.module('symbolApp')
                     drawImage(images.statusFn);
                     drawImage(images.hqtfdFn);
                     $scope.myCanvas.toBlob(function (blob) {
-                        saveAs(blob, $scope.currentEntity.id + ".png");
+                        var fileName = symbolIdCodeService.getSymbolIdentificationCode() + '.png';
+                        saveAs(blob, fileName);
                     });
 
                 });
