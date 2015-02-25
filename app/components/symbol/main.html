@@ -203,7 +203,10 @@
 
                     </td>
                 </tr>
-                <tr><td colspan="2"><a class="btn btn-default btn-xs" ng-click="saveAsPng()" title="Does not work in Internet Explorer">Save as PNG</a></td></tr>
+                <tr><td colspan="2">
+                    <a class="btn btn-default btn-xs" ng-click="saveAsPng()" title="Does not work in Internet Explorer">Save as PNG</a>
+                    <a class="btn btn-default btn-xs" clip-copy="copySic()" title="Copy symbol identification code to clipboard">Copy SIC</a>
+                </td></tr>
             </table>
             <div ng-controller="SymbolIdCodeCtrl">
                 <table class="table table-bordered symbolid-table">

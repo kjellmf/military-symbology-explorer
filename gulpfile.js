@@ -40,6 +40,9 @@ gulp.task('copy-html', function () {
 gulp.task('copy-assets', function () {
     gulp.src(['assets/img/**/*'])
         .pipe(gulp.dest('dist/assets/img/'));
+    gulp.src(['bower_components/zeroclipboard/dist/ZeroClipboard.swf'])
+        .pipe(gulp.dest('dist/bower_components/zeroclipboard/dist/'));
+
 });
 
 gulp.task('copy-svg-to-dist', function () {

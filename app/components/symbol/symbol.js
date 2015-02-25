@@ -340,6 +340,10 @@ angular.module('symbolApp')
                     });
 
                 });
+            };
+
+            $scope.copySic = function() {
+                return symbolIdCodeService.getSymbolIdentificationCode();
             }
 
         }])
