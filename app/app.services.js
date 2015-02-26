@@ -1,5 +1,5 @@
 angular.module('symbolApp')
-    .factory('pathService', ['config', function (config) {
+    .factory('pathService', ['$log', 'config', function ($log, config) {
 
         function getEntityFn(entity, symbolSetObj, standardIdentityId, alternative) {
             var fn = "";
@@ -31,7 +31,12 @@ angular.module('symbolApp')
                             if (useCivilianFrame && a3.plannedCivilianGraphic) {
                                 fn = a3.plannedCivilianGraphic;
                             } else {
-                                fn = a3.plannedGraphic;
+                                if (a3.plannedGraphic) {
+                                    fn = a3.plannedGraphic;
+                                } else {
+                                    $log.warn('Missing plannedGraphics. Using graphic instead.');
+                                    fn = a3.graphic;
+                                }
                             }
                         } else {
                             if (useCivilianFrame && a3.civilianGraphic) {
