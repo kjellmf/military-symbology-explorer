@@ -240,7 +240,7 @@ angular.module('symbolApp')
             };
 
             function checkLimitUseTo(item) {
-                if ($scope.limitUseTo && item.limitUseTo) {
+                if ($scope.limitUseTo && item && item.limitUseTo) {
                     if (($scope.entitySubType && item.limitUseTo.indexOf($scope.entitySubType.id) >= 0)
                         || ($scope.entityType && item.limitUseTo.indexOf($scope.entityType.id) >= 0)
                         || ($scope.entity && item.limitUseTo.indexOf($scope.entity.id) >= 0)) {
