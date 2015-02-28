@@ -31,6 +31,9 @@ var standardIdentityMap2 = {
 function findSymbolObject(arr, ele) {
     var beginning = 0, end = arr.length,
         target;
+    if (!end) {
+        return null
+    }
     while (true) {
         target = ((beginning + end) >> 1);
         if ((target === end || target === beginning) && arr[target].digits !== ele) {

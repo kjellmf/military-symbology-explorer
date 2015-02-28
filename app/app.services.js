@@ -93,22 +93,16 @@ angular.module('symbolApp')
             return fn ? config.SVG_PATH + fn : null;
         }
 
-        function getModifierOneFn() {
-            var fn = "";
-            var sic = symbolIdCode;
-            fn = sic.symbolSet.digits + sic.sectorOneModifier.digits;
-            return fn ? SVG_PATH + symbolIdCode.symbolSet.graphicFolder["modifierOnes"] + "/" + fn + "1.svg" : null;
+        function getModifierOneFn(modifierOneObj, symbolSetObj) {
+
+            var fn = modifierOneObj ?  modifierOneObj.graphic : "";
+            return fn ? config.SVG_PATH + symbolSetObj.graphicFolder["modifierOnes"] + "/" + fn  : null;
         }
 
 
-        function getModifierTwoFn() {
-            var fn = "";
-            var sic = symbolIdCode;
-            fn = sic.symbolSet.digits + sic.sectorTwoModifier.digits;
-            if (sic.sectorTwoModifier.digits == "00") {
-                return ""
-            }
-            return fn ? SVG_PATH + symbolIdCode.symbolSet.graphicFolder["modifierTwos"] + "/" + fn + "2.svg" : null;
+        function getModifierTwoFn(modifierTwoObj, symbolSetObj) {
+            var fn = modifierTwoObj ?  modifierTwoObj.graphic : "";
+            return fn ? config.SVG_PATH + symbolSetObj.graphicFolder["modifierTwos"] + "/" + fn  : null;
         }
 
         return {
@@ -116,7 +110,9 @@ angular.module('symbolApp')
             getFrameFilePath: getFrameFn,
             getStatusFilePath: getStatusFn,
             getHqtfdFilePath: getHqtfdFn,
-            getAmplifierFilePath: getAmplifierFn
+            getAmplifierFilePath: getAmplifierFn,
+            getModifierOneFilePath: getModifierOneFn,
+            getModifierTwoFilePath: getModifierTwoFn
         }
     }]);
 

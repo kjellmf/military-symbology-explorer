@@ -15,6 +15,8 @@ angular.module('symbolApp')
             this.entity = sic.substr(10, 2);
             this.entityType = sic.substr(12, 2);
             this.entitySubType = sic.substr(14, 2);
+            this.modifierOne = sic.substr(16, 2);
+            this.modifierTwo = sic.substr(18, 2);
 
             this.contextObj = findSymbolObject(symbolData.contexts, this.context);
             this.standardIdentityObj = findSymbolObject(symbolData.standardIdentities, this.standardIdentity);
@@ -40,6 +42,11 @@ angular.module('symbolApp')
                 this.entityTypeObj = null;
             }
 
+
+            this.modifierOneObj = findSymbolObject(this.symbolSetObj.sectorOneModifiers, this.modifierOne);
+            this.modifierTwoObj = findSymbolObject(this.symbolSetObj.sectorTwoModifiers, this.modifierTwo);
+
+
             // Get main icon
             var gg = this.entitySubTypeObj || this.entityTypeObj || this.entityObj;
 
@@ -55,6 +62,8 @@ angular.module('symbolApp')
             this.frameFn = pathService.getFrameFilePath(contextId, siId, this.symbolSetObj) || config.BLANK_PATH;
             this.statusFn = pathService.getStatusFilePath(siId, this.symbolSetObj, this.statusObj) || config.BLANK_PATH;
             this.amplifierFn = pathService.getAmplifierFilePath(siId, this.amplifierDescriptorObj, this.symbolSetObj) || config.BLANK_PATH;
+            this.modifierOneFn = pathService.getModifierOneFilePath(this.modifierOneObj, this.symbolSetObj) || config.BLANK_PATH;
+            this.modifierTwoFn = pathService.getModifierTwoFilePath(this.modifierTwoObj, this.symbolSetObj) || config.BLANK_PATH;
         };
         SicObject.prototype.getSic = function () {
             return this.sic;
@@ -75,6 +84,8 @@ angular.module('symbolApp')
             scope.frameFn = sicObj.frameFn;
             scope.statusFn = sicObj.statusFn;
             scope.amplifierFn = sicObj.amplifierFn;
+            scope.modifierOneFn = sicObj.modifierOneFn;
+            scope.modifierTwoFn = sicObj.modifierTwoFn;
         }
 
         return {
@@ -87,7 +98,7 @@ angular.module('symbolApp')
                 if (attrs.noFrame) {
                     return '<div class="milsymbol"><img class="symbol-sm" ng-src="{{entityFn}}"/></div>'
                 }
-                return '<div class="milsymbol"><img class="symbol-sm" ng-src="{{frameFn}}"/><img class="symbol-sm" ng-src="{{entityFn}}"/><img class="symbol-sm" ng-src="{{statusFn}}"/><img class="symbol-sm" ng-src="{{amplifierFn}}"/></div>';
+                return '<div class="milsymbol"><img class="symbol-sm" ng-src="{{frameFn}}"/><img class="symbol-sm" ng-src="{{entityFn}}"/><img class="symbol-sm" ng-src="{{statusFn}}"/><img class="symbol-sm" ng-src="{{amplifierFn}}"/><img class="symbol-sm" ng-src="{{modifierOneFn}}"/><img class="symbol-sm" ng-src="{{modifierTwoFn}}"/> </div>';
             },
             link: link
 
