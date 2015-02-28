@@ -10,7 +10,15 @@
     </thead>
     <tbody>
     <tr ng-repeat-start="entity in currentSymbolSet.entities">
-        <td>{{entity.label}}</td>
+        <td>{{entity.label}}
+            <div ng-show="settings.showDebugInfo">
+                <small>
+                    <strong>ID</strong> <code>{{entity.id}}</code><br>
+                    <strong>Icon</strong> <code>{{entity.icon}}</code><br>
+                    <strong>GeometryType</strong> <code>{{entity.geometryType}}</code>
+                </small>
+            </div>
+        </td>
 
         <td></td>
         <td></td>
@@ -20,7 +28,15 @@
         <td><b>{{entity.digits}}</b>0000</td>
     </tr>
     <tr ng-repeat-start="entityType in entity.entityTypes">
-        <td title="{{entity.label}}"></td>
+        <td title="{{entity.label}}">
+            <div ng-show="settings.showDebugInfo">
+                <small>
+                    <strong>ID</strong> <code>{{entityType.id}}</code><br>
+                    <strong>Icon</strong> <code>{{entityType.icon}}</code><br>
+                    <strong>GeometryType</strong> <code>{{entityType.geometryType}}</code>
+                </small>
+            </div>
+        </td>
         <td>
             {{entityType.label}}
 
@@ -31,7 +47,15 @@
         <td>{{entity.digits}}<b>{{entityType.digits}}</b>00</td>
     </tr>
     <tr ng-repeat-end ng-repeat="entitySubType in entityType.entitySubTypes">
-        <td title="{{entity.label}}"></td>
+        <td title="{{entity.label}}">
+            <div ng-show="settings.showDebugInfo">
+                <small>
+                    <strong>ID</strong> <code>{{entitySubType.id}}</code><br>
+                    <strong>Icon</strong> <code>{{entitySubType.icon}}</code><br>
+                    <strong>GeometryType</strong> <code>{{entitySubType.geometryType}}</code>
+                </small>
+            </div>
+        </td>
         <td title="{{entityType.label}}"></td>
         <td>
             {{entitySubType.label}}
