@@ -1732,6 +1732,7 @@ var symbolData={
           "id": "MOVEMENT_AND_MANEUVER", 
           "remarks": "No icon is associated with this entity. It is for hiearchical purposes only.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -2078,6 +2079,7 @@ var symbolData={
           "id": "FIRES", 
           "remarks": "No icon is associated with this entity. It is for hiearchical purposes only.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -2218,6 +2220,7 @@ var symbolData={
           "id": "PROTECTION", 
           "remarks": "No icon is associated with this entity. It is for hierarchical purposes only.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -2473,6 +2476,7 @@ var symbolData={
           "id": "INTELLIGENCE", 
           "remarks": "No icon is associated with this entity. It is for hierarchical purposes only.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -3051,6 +3055,7 @@ var symbolData={
           "id": "NAVAL", 
           "remarks": "No icon is associated with this entity. It is for hierarchical purposes only.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -3067,6 +3072,7 @@ var symbolData={
           "id": "NAMED_HEADQUARTERS", 
           "remarks": "No icon is associated with this entity. It is for hierarchical purposes only.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -5361,6 +5367,7 @@ var symbolData={
           "id": "UTILITY_VEHICLES", 
           "remarks": "No icon is associated with this entity. It is for hierachal purposes only.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -5503,6 +5510,7 @@ var symbolData={
           "id": "TRAIN", 
           "remarks": "No icon is associated with this entity. It is for hierachal purposes only.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -5528,6 +5536,7 @@ var symbolData={
           "id": "CIVILIAN_VEHICLE", 
           "remarks": "No icon is associated with this entity. It is for hierachal purposes only.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -5909,6 +5918,7 @@ var symbolData={
           "id": "OTHER_EQUIPMENT", 
           "remarks": "No icon is associated with this entity. It is for hierachal purposes only.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -6041,6 +6051,7 @@ var symbolData={
           "id": "LAND_MINES", 
           "remarks": "No icon is associated with this entity. It is for hierachal purposes only.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -6090,6 +6101,7 @@ var symbolData={
           "id": "SENSORS", 
           "remarks": "No icon is associated with this entity. It is for hierachal purposes only.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -6530,6 +6542,7 @@ var symbolData={
           "id": "INFRASTRUCTURE", 
           "remarks": "No icon is associated with this entity. It is for hierarchal purposes only.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -6830,6 +6843,7 @@ var symbolData={
               "id": "MEDICAL_INFRASTRUCTURE", 
               "remarks": "No icon is assoicated with this entity. It is for hierarchal purposes only.", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -7351,12 +7365,14 @@ var symbolData={
           "label": "Command and Control Lines", 
           "id": "COMMAND_CONTROL_LINES", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Boundary", 
               "id": "BOUNDARY", 
               "graphic": "25110100.a.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -7364,6 +7380,7 @@ var symbolData={
               "label": "Light Line", 
               "id": "LIGHT_LINE", 
               "graphic": "25110200.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }
           ]
@@ -7373,12 +7390,14 @@ var symbolData={
           "label": "Command and Control Areas", 
           "id": "COMMAND_CONTROL_AREAS", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Area of Operations", 
               "id": "AREA_OPERATIONS", 
               "graphic": "25120100.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -7386,6 +7405,7 @@ var symbolData={
               "label": "Named Area of Interest", 
               "id": "NAMED_AREA_INTEREST", 
               "graphic": "25120200.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -7393,6 +7413,7 @@ var symbolData={
               "label": "Targeted Area of Interest", 
               "id": "TARGETED_AREA_INTEREST", 
               "graphic": "25120300.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -7400,6 +7421,7 @@ var symbolData={
               "label": "Airfield Zone", 
               "id": "AIRFIELD_ZONE", 
               "graphic": "25120400.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }
           ]
@@ -7409,6 +7431,7 @@ var symbolData={
           "label": "Command and Control Points", 
           "id": "COMMAND_CONTROL_POINTS", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -7478,6 +7501,7 @@ var symbolData={
               "label": "Fly-To-Point", 
               "id": "FLY_TO_POINT", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -7576,36 +7600,42 @@ var symbolData={
           "label": "Maneuver Lines", 
           "id": "MANEUVER_LINES", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Forward Line of Troops", 
               "id": "FORWARD_LINE_OF_TROOPS", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Friendly Present", 
                   "id": "FLOT_FRIENDLY_PRESENT", 
-                  "graphic": "25140101.svg"
+                  "graphic": "25140101.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Friendly Planned or on Order", 
                   "id": "FLOT_FRIENDLY_PLANNED_ON_ORDER", 
-                  "graphic": "25140102.svg"
+                  "graphic": "25140102.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Enemy Known", 
                   "id": "FLOT_ENEMY_KNOWN", 
-                  "graphic": "25140103.a.svg"
+                  "graphic": "25140103.a.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Enemy Suspected or Templated", 
                   "id": "FLOT_ENEMY_SUSPECTED_TEMPLATED", 
-                  "graphic": "25140104.a.svg"
+                  "graphic": "25140104.a.svg", 
+                  "geometryType": "LINE"
                 }
               ]
             }, 
@@ -7615,6 +7645,7 @@ var symbolData={
               "id": "LINE_OF_CONTACT", 
               "remarks": "Line of Contact is a doctrinal term and concept for opposing and parallel Forward Lines of Own Troops.  It is not a symbol in its own right.", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": []
             }, 
             {
@@ -7622,6 +7653,7 @@ var symbolData={
               "label": "Phase Line", 
               "id": "PHASE_LINE", 
               "graphic": "25140300.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -7629,12 +7661,14 @@ var symbolData={
               "label": "Forward Edge of the Battle Area", 
               "id": "FORWARD_EDGE_BATTLE_AREA", 
               "graphic": "25140400.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Proposed or On Order", 
                   "id": "FEBA_PROPOSED_ON_ORDER", 
-                  "graphic": "25140401.svg"
+                  "graphic": "25140401.svg", 
+                  "geometryType": "LINE"
                 }
               ]
             }, 
@@ -7643,6 +7677,7 @@ var symbolData={
               "label": "Principle Direction of Fire", 
               "id": "PRINCIPLE_DIRECTION_OF_FIRE", 
               "graphic": "25140500.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -7650,48 +7685,56 @@ var symbolData={
               "label": "Direction of Attack", 
               "id": "DIRECTION_OF_ATTACK", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Friendly Aviation", 
                   "id": "FRIENDLY_AVIATION", 
-                  "graphic": "25140601.svg"
+                  "graphic": "25140601.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Friendly Direction of Main Attack", 
                   "id": "FRIENDLY_MAIN_ATTACK_DECISIVE", 
-                  "graphic": "25140602.svg"
+                  "graphic": "25140602.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Friendly Direction of Supporting Attack", 
                   "id": "FRIENDLY_SUPPORTING_ATTACK", 
-                  "graphic": "25140603.svg"
+                  "graphic": "25140603.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Friendly Planned or On Order", 
                   "id": "FRIENDLY_PLANNED_ON_ORDER", 
-                  "graphic": "25140604.svg"
+                  "graphic": "25140604.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Feint", 
                   "id": "FEINT", 
-                  "graphic": "25140605.svg"
+                  "graphic": "25140605.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "06", 
                   "label": "Enemy Confirmed", 
                   "id": "ENEMY_CONFIRMED", 
-                  "graphic": "25140606.svg"
+                  "graphic": "25140606.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "07", 
                   "label": "Enemy Templated or Suspected", 
                   "id": "ENEMY_TEMPLATED_OR_SUSPECTED", 
-                  "graphic": "25140607.svg"
+                  "graphic": "25140607.svg", 
+                  "geometryType": "LINE"
                 }
               ]
             }, 
@@ -7700,6 +7743,7 @@ var symbolData={
               "label": "Final Coordination Line", 
               "id": "FINAL_COORDINATION_LINE", 
               "graphic": "25140700.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -7707,6 +7751,7 @@ var symbolData={
               "label": "Infiltration Lane", 
               "id": "INFILTRATION_LANE", 
               "graphic": "25140800.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -7714,6 +7759,7 @@ var symbolData={
               "label": "Limit of Advance", 
               "id": "LIMIT_OF_ADVANCE", 
               "graphic": "25140900.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -7721,6 +7767,7 @@ var symbolData={
               "label": "Line of Departure", 
               "id": "LINE_OF_DEPARTURE", 
               "graphic": "25141000.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -7728,6 +7775,7 @@ var symbolData={
               "label": "Line of Departure/Line of Contact", 
               "id": "LINE_OF_DEPARTURE_LINE_OF_CONTACT", 
               "graphic": "25141100.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -7735,6 +7783,7 @@ var symbolData={
               "label": "Probable Line of Deployment", 
               "id": "PROBABLE_LINE_OF_DEPLOYMENT", 
               "graphic": "25141200.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -7742,6 +7791,7 @@ var symbolData={
               "label": "Airhead Line", 
               "id": "AIRHEAD_LINE", 
               "graphic": "25141300.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -7749,6 +7799,7 @@ var symbolData={
               "label": "Bridgehead Line", 
               "id": "BRIDGEHEAD_LINE", 
               "graphic": "25141400.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -7756,6 +7807,7 @@ var symbolData={
               "label": "Holding Line", 
               "id": "HOLDING_LINE", 
               "graphic": "25141500.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -7763,6 +7815,7 @@ var symbolData={
               "label": "Release Line", 
               "id": "RELEASE_LINE", 
               "graphic": "25141600.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -7770,6 +7823,7 @@ var symbolData={
               "label": "Ambush", 
               "id": "AMBUSH", 
               "graphic": "25141700.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }
           ]
@@ -7779,36 +7833,42 @@ var symbolData={
           "label": "Maneuver Areas", 
           "id": "MANEUVER_AREAS", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Area", 
               "id": "AREA", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Friendly", 
                   "id": "AREA_FRIENDLY", 
-                  "graphic": "25150101.svg"
+                  "graphic": "25150101.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Friendly Planned or On Order", 
                   "id": "AREA_FRIENDLY_PLANNED_OR_ON_ORDER", 
-                  "graphic": "25150102.svg"
+                  "graphic": "25150102.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Enemy Known or Confirmed", 
                   "id": "AREA_ENEMY_KNOWN_OR_CONFIRMED", 
-                  "graphic": "25150103.svg"
+                  "graphic": "25150103.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Enemy Suspected", 
                   "id": "AREA_ENEMY_SUSPECTED", 
-                  "graphic": "25150104.svg"
+                  "graphic": "25150104.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -7817,6 +7877,7 @@ var symbolData={
               "label": "Assembly Area", 
               "id": "ASSEMBLY_AREA", 
               "graphic": "25150200.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -7824,18 +7885,21 @@ var symbolData={
               "label": "Occupied Assembly Area", 
               "id": "OCCUPIED_ASSEMBLY_AREA", 
               "graphic": "25150300.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Occupied Assembly Area w/ Offset Unit", 
                   "id": "OCCUPIED_AA_OFFSET_UNIT", 
-                  "icon": "NA"
+                  "icon": "NA", 
+                  "geometryType": "NA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Occupied Assembly Area w/ Offset Units", 
                   "id": "OCCUPIED_AA_OFFSET_UNITS", 
-                  "icon": "NA"
+                  "icon": "NA", 
+                  "geometryType": "NA"
                 }
               ]
             }, 
@@ -7844,6 +7908,7 @@ var symbolData={
               "label": "Proposed or On Order Assembly Area", 
               "id": "AA_PROPOSED_ON_ORDER", 
               "graphic": "25150400.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -7851,24 +7916,28 @@ var symbolData={
               "label": "Action Area", 
               "id": "ACTION_AREA", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Joint Tactical Action Area (JTAA)", 
                   "id": "JTAA", 
-                  "graphic": "25150501.svg"
+                  "graphic": "25150501.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Submarine Action Area (SAA)", 
                   "id": "SAA", 
-                  "graphic": "25150502.svg"
+                  "graphic": "25150502.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Submarine-Generated Action Area (SGAA)", 
                   "id": "SGAA", 
-                  "graphic": "25150503.svg"
+                  "graphic": "25150503.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -7877,6 +7946,7 @@ var symbolData={
               "label": "Drop Zone", 
               "id": "DROP_ZONE", 
               "graphic": "25150600.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -7884,6 +7954,7 @@ var symbolData={
               "label": "Extraction Zone", 
               "id": "EXTRACTION_ZONE", 
               "graphic": "25150700.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -7891,6 +7962,7 @@ var symbolData={
               "label": "Landing Zone", 
               "id": "LANDING_ZONE", 
               "graphic": "25150800.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -7898,6 +7970,7 @@ var symbolData={
               "label": "Pick-Up Zone", 
               "id": "PICK_UP_ZONE", 
               "graphic": "25150900.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -7905,6 +7978,7 @@ var symbolData={
               "label": "Fortified Area", 
               "id": "FORTIFIED_AREA", 
               "graphic": "25151000.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -7912,6 +7986,7 @@ var symbolData={
               "label": "Limited Access Area", 
               "id": "LIMITED_ACCESS_AREA", 
               "graphic": "25151100.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -7919,36 +7994,42 @@ var symbolData={
               "label": "Battle Position", 
               "id": "BATTLE_POSITION", 
               "graphic": "25151200.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Battle Position - Planned", 
                   "id": "BP_PLANNED", 
-                  "graphic": "25151201.svg"
+                  "graphic": "25151201.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Battle Position - Prepared (P) but not Occupied", 
                   "id": "PREPARED_BUT_NOT_OCCUPIED", 
-                  "graphic": "25151202.svg"
+                  "graphic": "25151202.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Strong Point", 
                   "id": "STRONG_POINT", 
-                  "graphic": "25151203.svg"
+                  "graphic": "25151203.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Contain", 
                   "id": "CONTAIN", 
-                  "graphic": "25151204.svg"
+                  "graphic": "25151204.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Retain", 
                   "id": "RETAIN", 
-                  "graphic": "25151205.svg"
+                  "graphic": "25151205.svg", 
+                  "geometryType": "LINE"
                 }
               ]
             }, 
@@ -7957,6 +8038,7 @@ var symbolData={
               "label": "Engagement Area (EA)", 
               "id": "ENGAGEMENT_AREA_EA", 
               "graphic": "25151300.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -7964,54 +8046,63 @@ var symbolData={
               "label": "Axis of Advance", 
               "id": "AXIS_ADVANCE", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Friendly Airborne/Aviation", 
                   "id": "AXIS_ADVANCE_FRIENDLY_AIRBORNE_AVIATION", 
-                  "graphic": "25151401.svg"
+                  "graphic": "25151401.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Attack Helicopter", 
                   "id": "AXIS_ADVANCE_ATTACK_HELICOPTER", 
-                  "graphic": "25151402.svg"
+                  "graphic": "25151402.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Main Attack", 
                   "id": "AXIS_ADVANCE_MAIN_ATTACK", 
-                  "graphic": "25151403.svg"
+                  "graphic": "25151403.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Supporting Attack", 
                   "id": "AXIS_ADVANCE_SUPPORTING_ATTACK", 
-                  "graphic": "25151404.svg"
+                  "graphic": "25151404.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Supporting Attack Planned or On Order", 
                   "id": "AXIS_ADVANCE_SUPPORTING_ATTACK_PLANNED_ON_ORDER", 
-                  "graphic": "25151405.svg"
+                  "graphic": "25151405.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "06", 
                   "label": "Feint", 
                   "id": "AXIS_ADVANCE_FEINT", 
-                  "graphic": "25151406.svg"
+                  "graphic": "25151406.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "07", 
                   "label": "Enemy Confirmed", 
                   "id": "AXIS_ADVANCE_ENEMY_CONFIRMED", 
-                  "graphic": "25151407.svg"
+                  "graphic": "25151407.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "08", 
                   "label": "Enemy Templated or Suspected", 
                   "id": "AXIS_ADVANCE_ENEMY_TEMPLATED_SUSPECTED", 
-                  "graphic": "25151408.svg"
+                  "graphic": "25151408.svg", 
+                  "geometryType": "LINE"
                 }
               ]
             }, 
@@ -8020,6 +8111,7 @@ var symbolData={
               "label": "Assault Position", 
               "id": "ASSAULT_POSITION", 
               "graphic": "25151500.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -8027,6 +8119,7 @@ var symbolData={
               "label": "Attack Position", 
               "id": "ATTACK_POSITION", 
               "graphic": "25151600.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -8034,6 +8127,7 @@ var symbolData={
               "label": "Objective", 
               "id": "OBJECTIVE", 
               "graphic": "25151700.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -8041,18 +8135,21 @@ var symbolData={
               "label": "Encirclement", 
               "id": "ENCIRCLEMENT", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Friendly", 
                   "id": "FRIENDLY", 
-                  "graphic": "25151801.svg"
+                  "graphic": "25151801.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Enemy", 
                   "id": "ENEMY", 
-                  "graphic": "25151802.svg"
+                  "graphic": "25151802.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -8061,6 +8158,7 @@ var symbolData={
               "label": "Penetration Box", 
               "id": "PENETRATION_BOX", 
               "graphic": "25151900.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -8068,6 +8166,7 @@ var symbolData={
               "label": "Attack by Fire Position", 
               "id": "ATTACK_BY_FIRE_POSITION", 
               "graphic": "25152000.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -8075,6 +8174,7 @@ var symbolData={
               "label": "Support by Fire", 
               "id": "SUPPORT_BY_FIRE", 
               "graphic": "25152100.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -8082,6 +8182,7 @@ var symbolData={
               "label": "Search Area/Reconnaissance Area", 
               "id": "SEARCH_AREA_RECONNAISSANCE_AREA", 
               "graphic": "25152200.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }
           ]
@@ -8091,6 +8192,7 @@ var symbolData={
           "label": "Maneuver Points", 
           "id": "MANEUVER_POINTS", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -8158,12 +8260,14 @@ var symbolData={
           "label": "Airspace Control (Corridors) Areas", 
           "id": "AIRSPACE_CONTROL_CORRIDORS_AREAS", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Air Corridor", 
               "id": "AIR_CORRIDOR", 
               "graphic": "25170100.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -8171,6 +8275,7 @@ var symbolData={
               "label": "Low Level Transit Route", 
               "id": "LOW_LEVEL_TRANSIT_ROUTE", 
               "graphic": "25170200.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -8178,6 +8283,7 @@ var symbolData={
               "label": "Minimum-Risk Route", 
               "id": "MINIMUM_RISK_ROUTE", 
               "graphic": "25170300.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -8185,6 +8291,7 @@ var symbolData={
               "label": "Safe Lane", 
               "id": "SAFE_LANE", 
               "graphic": "25170400.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -8192,6 +8299,7 @@ var symbolData={
               "label": "Standard Use Army Aircraft Flight Route", 
               "id": "STANDARD_USE_ARMY_AIRCRAFT_FLIGHT_ROUTE", 
               "graphic": "25170500.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -8199,6 +8307,7 @@ var symbolData={
               "label": "Transit Corridor", 
               "id": "TRANSIT_CORRIDOR", 
               "graphic": "25170600.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -8206,6 +8315,7 @@ var symbolData={
               "label": "Unmanned Aircraft (UA) Route", 
               "id": "UA_ROUTE", 
               "graphic": "25170700.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -8213,6 +8323,7 @@ var symbolData={
               "label": "Base Defense Zone", 
               "id": "BASE_DEFENSE_ZONE", 
               "graphic": "25170800.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -8220,6 +8331,7 @@ var symbolData={
               "label": "High-Density Airspace Control Zone", 
               "id": "HIGH_DENSITY_AIRSPACE_CONTROL_ZONE", 
               "graphic": "25170900.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -8227,6 +8339,7 @@ var symbolData={
               "label": "Restricted Operations Zone", 
               "id": "RESTRICTED_OPERATIONS_ZONE", 
               "graphic": "25171000.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -8234,6 +8347,7 @@ var symbolData={
               "label": "Air-to-Air Restricted Operating Zone", 
               "id": "AIR_TO_AIR_RESTRICTED_OPERATING_ZONE", 
               "graphic": "25171100.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -8241,6 +8355,7 @@ var symbolData={
               "label": "Unmanned Aircraft Restricted Operating Zone", 
               "id": "UNMANNED_AIRCRAFT_RESTRICTED_OPERATING_ZONE", 
               "graphic": "25171200.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -8248,6 +8363,7 @@ var symbolData={
               "label": "Weapon Engagement Zone", 
               "id": "WEAPON_ENGAGEMENT_ZONE", 
               "graphic": "25171300.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -8255,6 +8371,7 @@ var symbolData={
               "label": "Fighter Engagement Zone", 
               "id": "FIGHTER_ENGAGEMENT_ZONE", 
               "graphic": "25171400.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -8262,6 +8379,7 @@ var symbolData={
               "label": "Joint Engagement Zone", 
               "id": "JOINT_ENGAGEMENT_ZONE", 
               "graphic": "25171500.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -8269,6 +8387,7 @@ var symbolData={
               "label": "Missile Engagement Zone", 
               "id": "MISSILE_ENGAGEMENT_ZONE", 
               "graphic": "25171600.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -8276,6 +8395,7 @@ var symbolData={
               "label": "Low Altitude Missile Engagement Zone", 
               "id": "LOW_ALTITUDE_MISSILE_ENGAGEMENT_ZONE", 
               "graphic": "25171700.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -8283,6 +8403,7 @@ var symbolData={
               "label": "High Altitude Missile Engagement Zone", 
               "id": "HIGH_ALTITUDE_MISSILE_ENGAGEMENT_ZONE", 
               "graphic": "25171800.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -8290,6 +8411,7 @@ var symbolData={
               "label": "Short Range Air Defense Engagement Zone", 
               "id": "SHORT_RANGE_AIR_DEFENSE_ENGAGEMENT_ZONE", 
               "graphic": "25171900.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -8297,6 +8419,7 @@ var symbolData={
               "label": "Weapons Free Zone", 
               "id": "WEAPONS_FREE_ZONE", 
               "graphic": "25172000.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }
           ]
@@ -8489,12 +8612,14 @@ var symbolData={
           "label": "Airspace Control Lines", 
           "id": "AIRSPACE_CONTROL_LINES", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Identification Friend or Foe Off Line", 
               "id": "IFF_OFF_LINE", 
               "graphic": "25190100.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -8502,6 +8627,7 @@ var symbolData={
               "label": "Identification Friend or Foe On Line", 
               "id": "IFF_ON_LINE", 
               "graphic": "25190200.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }
           ]
@@ -8511,18 +8637,21 @@ var symbolData={
           "label": "Maritime Control Areas", 
           "id": "MARITIME_CONTROL_AREAS", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Launch Area", 
               "id": "LAUNCH_AREA", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Ellipse/Circle", 
                   "id": "LAUNCH_ELLIPSE_CIRCLE", 
-                  "graphic": "25200101.svg"
+                  "graphic": "25200101.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -8531,18 +8660,21 @@ var symbolData={
               "label": "Defended Area", 
               "id": "DEFENDED_AREA", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Ellipse/Circle", 
                   "id": "DEFEND_ELLIPSE_CIRCLE", 
-                  "graphic": "25200201.svg"
+                  "graphic": "25200201.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Rectangle", 
                   "id": "DEFEND_RECTANGLE", 
-                  "graphic": "25200202.svg"
+                  "graphic": "25200202.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -8551,6 +8683,7 @@ var symbolData={
               "label": "No Attack (NOTACK) Zone", 
               "id": "NOTACK_ZONE", 
               "graphic": "25200300.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -8558,18 +8691,21 @@ var symbolData={
               "label": "Ship Area of Interest", 
               "id": "SHIP_AREA_OF_INTEREST", 
               "graphic": "25200400.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Ellipse/Circle", 
                   "id": "SHIP_AOI_ELLIPSE_CIRCLE", 
-                  "graphic": "25200401.svg"
+                  "graphic": "25200401.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Rectangle", 
                   "id": "SHIP_AOI_RECTANGLE", 
-                  "graphic": "25200402.svg"
+                  "graphic": "25200402.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -8578,6 +8714,7 @@ var symbolData={
               "label": "Active Maneuver Area", 
               "id": "ACTIVE_MANEUVER_AREA", 
               "graphic": "25200500.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -8585,6 +8722,7 @@ var symbolData={
               "label": "Cued Acquisition Doctrine", 
               "id": "CUED_ACQUISITION_DOCTRINE", 
               "graphic": "25200600.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -8592,6 +8730,7 @@ var symbolData={
               "label": "Radar Search Doctrine", 
               "id": "RADAR_SEARCH_DOCTRINE", 
               "graphic": "25200700.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }
           ]
@@ -8601,6 +8740,7 @@ var symbolData={
           "label": "Maritime Control Points", 
           "id": "MARITIME_CONTROL_POINTS", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -8803,6 +8943,7 @@ var symbolData={
               "label": "Harbor Entrance Point", 
               "id": "HARBOR_ENTRANCE_POINT", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9304,6 +9445,7 @@ var symbolData={
               "label": "Navigational", 
               "id": "NAVIGATIONAL", 
               "graphic": "25218400.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -9369,60 +9511,70 @@ var symbolData={
           "label": "Maritime Control Lines", 
           "id": "MARITIME_CONTROL_LINES", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Bearing Line", 
               "id": "BEARING_LINE", 
               "graphic": "25220100.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Electronic", 
                   "id": "ELECTRONIC", 
-                  "graphic": "25220101.svg"
+                  "graphic": "25220101.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Electronic Warfare (EW)", 
                   "id": "ELECTRONIC_WARFARE_EW", 
-                  "graphic": "25220102.svg"
+                  "graphic": "25220102.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Acoustic", 
                   "id": "ACOUSTIC", 
-                  "graphic": "25220103.svg"
+                  "graphic": "25220103.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Acoustic (Ambiguous)", 
                   "id": "ACOUSTIC_AMBIGUOUS", 
-                  "graphic": "25220104.svg"
+                  "graphic": "25220104.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Torpedo", 
                   "id": "TORPEDO", 
-                  "graphic": "25220105.svg"
+                  "graphic": "25220105.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "06", 
                   "label": "Electro-Optical Intercept", 
                   "id": "ELECTRO_OPTICAL_INTERCEPT", 
-                  "graphic": "25220106.svg"
+                  "graphic": "25220106.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "07", 
                   "label": "Jammer", 
                   "id": "JAMMER", 
-                  "graphic": "25220107.svg"
+                  "graphic": "25220107.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "08", 
                   "label": "Radio Direction Finder (RDF)", 
                   "id": "RADIO_DIRECTION_FINDER_RDF", 
-                  "graphic": "25220108.svg"
+                  "graphic": "25220108.svg", 
+                  "geometryType": "LINE"
                 }
               ]
             }
@@ -9433,12 +9585,14 @@ var symbolData={
           "label": "Deception", 
           "id": "DECEPTION", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Decoy/Dummy", 
               "id": "DECOY_DUMMY", 
               "graphic": "25230100.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -9446,6 +9600,7 @@ var symbolData={
               "label": "Decoy/Dummy/Feint", 
               "id": "DECOY_DUMMY_FEINT", 
               "graphic": "25230200.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }
           ]
@@ -9455,30 +9610,35 @@ var symbolData={
           "label": "Fires Areas", 
           "id": "FIRES_AREAS", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Airspace Coordination Area", 
               "id": "AIRSPACE_COORDINATION_AREA", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Irregular", 
                   "id": "ACA_IRREGULAR", 
-                  "graphic": "25240101.svg"
+                  "graphic": "25240101.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Rectangular", 
                   "id": "ACA_RECTANGULAR", 
-                  "graphic": "25240102.svg"
+                  "graphic": "25240102.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Circular", 
                   "id": "ACA_CIRCULAR", 
-                  "graphic": "25240103.svg"
+                  "graphic": "25240103.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -9487,24 +9647,28 @@ var symbolData={
               "label": "Free Fire Area", 
               "id": "FREE_FIRE_AREA", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Irregular", 
                   "id": "FFA_IRREGULAR", 
-                  "graphic": "25240201.svg"
+                  "graphic": "25240201.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Rectangular", 
                   "id": "FFA_RECTANGULAR", 
-                  "graphic": "25240202.svg"
+                  "graphic": "25240202.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Circular", 
                   "id": "FFA_CIRCULAR", 
-                  "graphic": "25240203.svg"
+                  "graphic": "25240203.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -9513,24 +9677,28 @@ var symbolData={
               "label": "No Fire Area", 
               "id": "NO_FIRE_AREA", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Irregular", 
                   "id": "NFA_IRREGULAR", 
-                  "graphic": "25240301.svg"
+                  "graphic": "25240301.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Rectangular", 
                   "id": "NFA_RECTANGULAR", 
-                  "graphic": "25240302.svg"
+                  "graphic": "25240302.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Circular", 
                   "id": "NFA_CIRCULAR", 
-                  "graphic": "25240303.svg"
+                  "graphic": "25240303.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -9539,24 +9707,28 @@ var symbolData={
               "label": "Restricted Fire Area", 
               "id": "RESTRICTED_FIRE_AREA", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Irregular", 
                   "id": "RFA_IRREGULAR", 
-                  "graphic": "25240401.svg"
+                  "graphic": "25240401.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Rectangular", 
                   "id": "RFA_RECTANGULAR", 
-                  "graphic": "25240402.svg"
+                  "graphic": "25240402.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Circular", 
                   "id": "RFA_CIRCULAR", 
-                  "graphic": "25240403.svg"
+                  "graphic": "25240403.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -9565,18 +9737,21 @@ var symbolData={
               "label": "Position Area For Artillery (PAA)", 
               "id": "POSITION_AREA_FOR_ARTILLERY_PAA", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Rectangular", 
                   "id": "PAA_RECTANGULAR", 
-                  "graphic": "25240501.svg"
+                  "graphic": "25240501.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Circular", 
                   "id": "PAA_CIRCULAR", 
-                  "graphic": "25240502.svg"
+                  "graphic": "25240502.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -9585,6 +9760,7 @@ var symbolData={
               "label": "Point Targets", 
               "id": "POINT_TARGETS", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -9611,24 +9787,28 @@ var symbolData={
               "label": "Linear Targets", 
               "id": "LINEAR_TARGETS", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Linear Target", 
                   "id": "LINEAR_TARGET", 
-                  "graphic": "25240701.svg"
+                  "graphic": "25240701.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Linear Smoke Target", 
                   "id": "LINEAR_SMOKE_TARGET", 
-                  "graphic": "25240702.svg"
+                  "graphic": "25240702.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Final Protective Fire (FPF)", 
                   "id": "FINAL_PROTECTIVE_FIRE_FPF", 
-                  "graphic": "25240703.svg"
+                  "graphic": "25240703.svg", 
+                  "geometryType": "LINE"
                 }
               ]
             }, 
@@ -9637,54 +9817,63 @@ var symbolData={
               "label": "Area Targets", 
               "id": "AREA_TARGETS", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Area Target", 
                   "id": "AREA_TARGET", 
-                  "graphic": "25240801.svg"
+                  "graphic": "25240801.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Rectangular Target", 
                   "id": "RECTANGULAR_TARGET", 
-                  "graphic": "25240802.svg"
+                  "graphic": "25240802.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Circular Target", 
                   "id": "CIRCULAR_TARGET", 
-                  "graphic": "25240803.svg"
+                  "graphic": "25240803.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Rectangular Target - Single Target", 
                   "id": "RECTANGULAR_TARGET_SINGLE_TARGET", 
-                  "graphic": "25240804.svg"
+                  "graphic": "25240804.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Series of Targets", 
                   "id": "SERIES_GROUP_TARGETS", 
-                  "graphic": "25240805.a.svg"
+                  "graphic": "25240805.a.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "06", 
                   "label": "Smoke Target", 
                   "id": "SMOKE_TARGET", 
-                  "graphic": "25240806.svg"
+                  "graphic": "25240806.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "07", 
                   "label": "Smoke Planned or On Order", 
                   "id": "SMOKE_PLANNED_ON_ORDER", 
-                  "graphic": "25240807.svg"
+                  "graphic": "25240807.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "08", 
                   "label": "Bomb Area", 
                   "id": "BOMB_AREA", 
-                  "graphic": "25240808.svg"
+                  "graphic": "25240808.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -9700,24 +9889,28 @@ var symbolData={
               "label": "Fire Support Area", 
               "id": "FIRE_SUPPORT_AREA", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Irregular", 
                   "id": "FSA_IRREGULAR", 
-                  "graphic": "25241001.svg"
+                  "graphic": "25241001.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Rectangular", 
                   "id": "FSA_RECTANGULAR", 
-                  "graphic": "25241002.svg"
+                  "graphic": "25241002.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Circular", 
                   "id": "FSA_CIRCULAR", 
-                  "graphic": "25241003.svg"
+                  "graphic": "25241003.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -9726,24 +9919,28 @@ var symbolData={
               "label": "Artillery Target Intelligence Zone", 
               "id": "ARTILLERY_TARGET_INTELLIGENCE_ZONE", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Irregular", 
                   "id": "ATI_IRREGULAR", 
-                  "graphic": "25241101.svg"
+                  "graphic": "25241101.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Rectangular", 
                   "id": "ATI_RECTANGULAR", 
-                  "graphic": "25241102.svg"
+                  "graphic": "25241102.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Circular", 
                   "id": "ATI_CIRCULAR", 
-                  "graphic": "25241103.svg"
+                  "graphic": "25241103.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -9752,24 +9949,28 @@ var symbolData={
               "label": "Call for Fire Area", 
               "id": "CALL_FOR_FIRE_AREA", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Irregular", 
                   "id": "CFFZ_IRREGULAR", 
-                  "graphic": "25241201.svg"
+                  "graphic": "25241201.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Rectangular", 
                   "id": "CFFZ_RECTANGULAR", 
-                  "graphic": "25241202.svg"
+                  "graphic": "25241202.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Circular", 
                   "id": "CFFZ_CIRCULAR", 
-                  "graphic": "25241203.svg"
+                  "graphic": "25241203.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -9778,24 +9979,28 @@ var symbolData={
               "label": "Censor Zone", 
               "id": "CENSOR_ZONE", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Irregular", 
                   "id": "CENSOR_IRREGULAR", 
-                  "graphic": "25241301.svg"
+                  "graphic": "25241301.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Rectangular", 
                   "id": "CENSOR_RECTANGULAR", 
-                  "graphic": "25241302.svg"
+                  "graphic": "25241302.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Circular", 
                   "id": "CENSOR_CIRCULAR", 
-                  "graphic": "25241303.svg"
+                  "graphic": "25241303.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -9804,24 +10009,28 @@ var symbolData={
               "label": "Critical Friendly Zone", 
               "id": "CRITICAL_FRIENDLY_ZONE", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Irregular", 
                   "id": "CFZ_IRREGULAR", 
-                  "graphic": "25241401.svg"
+                  "graphic": "25241401.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Rectangular", 
                   "id": "CFZ_RECTANGULAR", 
-                  "graphic": "25241402.svg"
+                  "graphic": "25241402.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Circular", 
                   "id": "CFZ_CIRCULAR", 
-                  "graphic": "25241403.svg"
+                  "graphic": "25241403.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -9830,24 +10039,28 @@ var symbolData={
               "label": "Dead Space Area", 
               "id": "DEAD_SPACE_AREA", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Irregular", 
                   "id": "DA_IRREGULAR", 
-                  "graphic": "25241501.svg"
+                  "graphic": "25241501.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Rectangular", 
                   "id": "DA_RECTANGULAR", 
-                  "graphic": "25241502.svg"
+                  "graphic": "25241502.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Circular", 
                   "id": "DA_CIRCULAR", 
-                  "graphic": "25241503.svg"
+                  "graphic": "25241503.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -9856,24 +10069,28 @@ var symbolData={
               "label": "Sensor Zone", 
               "id": "SENSOR_ZONE", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Irregular", 
                   "id": "SENSOR_ZONE_IRREGULAR", 
-                  "graphic": "25241601.svg"
+                  "graphic": "25241601.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Rectangular", 
                   "id": "SENSOR_ZONE_RECTANGULAR", 
-                  "graphic": "25241602.svg"
+                  "graphic": "25241602.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Circular", 
                   "id": "SENSOR_ZONE_CIRCULAR", 
-                  "graphic": "25241603.svg"
+                  "graphic": "25241603.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -9882,24 +10099,28 @@ var symbolData={
               "label": "Target Build-up Area", 
               "id": "TARGET_BUILD_UP_AREA", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Irregular", 
                   "id": "TBA_IRREGULAR", 
-                  "graphic": "25241701.svg"
+                  "graphic": "25241701.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Rectangular", 
                   "id": "TBA_RECTANGULAR", 
-                  "graphic": "25241702.svg"
+                  "graphic": "25241702.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Circular", 
                   "id": "TBA_CIRCULAR", 
-                  "graphic": "25241703.svg"
+                  "graphic": "25241703.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -9908,24 +10129,28 @@ var symbolData={
               "label": "Target Value Area", 
               "id": "TARGET_VALUE_AREA", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Irregular", 
                   "id": "TVAR_IRREGULAR", 
-                  "graphic": "25241801.svg"
+                  "graphic": "25241801.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Rectangular", 
                   "id": "TVAR_RECTANGULAR", 
-                  "graphic": "25241802.svg"
+                  "graphic": "25241802.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Circular", 
                   "id": "TVAR_CIRCULAR", 
-                  "graphic": "25241803.svg"
+                  "graphic": "25241803.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -9934,24 +10159,28 @@ var symbolData={
               "label": "Zone of Responsibility", 
               "id": "ZONE_OF_RESPONSIBILITY", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Irregular", 
                   "id": "ZOR_IRREGULAR", 
-                  "graphic": "25241901.svg"
+                  "graphic": "25241901.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Rectangular", 
                   "id": "ZOR_RECTANGULAR", 
-                  "graphic": "25241902.svg"
+                  "graphic": "25241902.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Circular", 
                   "id": "ZOR_CIRCULAR", 
-                  "graphic": "25241903.svg"
+                  "graphic": "25241903.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -9960,6 +10189,7 @@ var symbolData={
               "label": "Terminally Guided Munition Footprint (TGMF)", 
               "id": "TERMINALLY_GUIDED_MUNITION_FOOTPRINT_TGMF", 
               "graphic": "25242000.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -9967,6 +10197,7 @@ var symbolData={
               "label": "Weapon/Sensor Range fan-Circular", 
               "id": "WEAPON_SENSOR_RANGE_FAN_CIRCULAR", 
               "graphic": "25242100.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -9974,6 +10205,7 @@ var symbolData={
               "label": "Weapon/Sensor Range fan-Sector", 
               "id": "WEAPON_SENSOR_RANGE_FAN_SECTOR", 
               "graphic": "25242200.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -9981,42 +10213,49 @@ var symbolData={
               "label": "Kill Box", 
               "id": "KILL_BOX", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Irregular-Blue", 
                   "id": "BKB_IRREGULAR_BLUE", 
-                  "graphic": "25242301.svg"
+                  "graphic": "25242301.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Rectangular-Blue", 
                   "id": "BKB_RECTANGULAR_BLUE", 
-                  "graphic": "25242302.svg"
+                  "graphic": "25242302.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Circular-Blue", 
                   "id": "BKB_CIRCULAR_BLUE", 
-                  "graphic": "25242303.svg"
+                  "graphic": "25242303.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Irregular-Purple", 
                   "id": "PKB_IRREGULAR_PURPLE", 
-                  "graphic": "25242304.svg"
+                  "graphic": "25242304.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Rectangular-Purple", 
                   "id": "PKB_RECTANGULAR_PURPLE", 
-                  "graphic": "25242305.svg"
+                  "graphic": "25242305.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "06", 
                   "label": "Circular-Purple", 
                   "id": "PKB_CIRCULAR_PURPLE", 
-                  "graphic": "25242306.svg"
+                  "graphic": "25242306.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }
@@ -10027,6 +10266,7 @@ var symbolData={
           "label": "Fires Points", 
           "id": "FIRES_POINTS", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -10070,12 +10310,14 @@ var symbolData={
           "label": "Fire Lines", 
           "id": "FIRE_LINES", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Fire Support Coordination Line (FSCL)", 
               "id": "FIRE_SUPPORT_COORDINATION_LINE_FSCL", 
               "graphic": "25260100.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -10083,6 +10325,7 @@ var symbolData={
               "label": "Coordinated Fire Line (CFL)", 
               "id": "COORDINATED_FIRE_LINE_CFL", 
               "graphic": "25260200.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -10090,6 +10333,7 @@ var symbolData={
               "label": "No Fire Line", 
               "id": "NO_FIRE_LINE", 
               "graphic": "25260300.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -10097,6 +10341,7 @@ var symbolData={
               "label": "Battlefield Coordination Line", 
               "id": "BATTLEFIELD_COORDINATION_LINE", 
               "graphic": "25260400.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -10104,6 +10349,7 @@ var symbolData={
               "label": "Restrictive Fire Line", 
               "id": "RESTRICTIVE_FIRE_LINE", 
               "graphic": "25260500.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -10111,6 +10357,7 @@ var symbolData={
               "label": "Munition Flight Path", 
               "id": "MUNITION_FLIGHT_PATH", 
               "graphic": "25260600.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }
           ]
@@ -10120,12 +10367,14 @@ var symbolData={
           "label": "Protection Areas", 
           "id": "PROTECTION_AREAS", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Obstacle Belt", 
               "id": "OBSTACLE_BELT", 
               "graphic": "25270100.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -10133,6 +10382,7 @@ var symbolData={
               "label": "Obstacle Zone", 
               "id": "OBSTACLE_ZONE", 
               "graphic": "25270200.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -10140,6 +10390,7 @@ var symbolData={
               "label": "Obstacle Free Zone", 
               "id": "OBSTACLE_FREE_ZONE", 
               "graphic": "25270300.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -10147,6 +10398,7 @@ var symbolData={
               "label": "Obstacle Restricted Zone", 
               "id": "OBSTACLE_RESTRICTED_ZONE", 
               "graphic": "25270400.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -10154,30 +10406,35 @@ var symbolData={
               "label": "Obstacle Effects", 
               "id": "OBSTACLE_EFFECTS", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Block", 
                   "id": "BLOCK", 
-                  "graphic": "25270501.svg"
+                  "graphic": "25270501.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Disrupt", 
                   "id": "DISRUPT", 
-                  "graphic": "25270502.svg"
+                  "graphic": "25270502.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Fix", 
                   "id": "FIX", 
-                  "graphic": "25270503.svg"
+                  "graphic": "25270503.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Turn", 
                   "id": "TURN", 
-                  "graphic": "25270504.svg"
+                  "graphic": "25270504.svg", 
+                  "geometryType": "LINE"
                 }
               ]
             }, 
@@ -10186,24 +10443,28 @@ var symbolData={
               "label": "Obstacle Bypass", 
               "id": "OBSTACLE_BYPASS", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Easy", 
                   "id": "OBSTACLE_BYPASS_EASY", 
-                  "graphic": "25270601.svg"
+                  "graphic": "25270601.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Difficult", 
                   "id": "OBSTACLE_BYPASS_DIFFICULT", 
-                  "graphic": "25270602.svg"
+                  "graphic": "25270602.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Impossible", 
                   "id": "OBSTACLE_BYPASS_IMPOSSIBLE", 
-                  "graphic": "25270603.svg"
+                  "graphic": "25270603.svg", 
+                  "geometryType": "LINE"
                 }
               ]
             }, 
@@ -10212,48 +10473,56 @@ var symbolData={
               "label": "Minefield", 
               "id": "MINEFIELD", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Completed", 
                   "id": "MINEFIELD_COMPLETED", 
-                  "graphic": "25270701.svg"
+                  "graphic": "25270701.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Planned", 
                   "id": "MINEFIELD_PLANNED", 
-                  "graphic": "25270702.svg"
+                  "graphic": "25270702.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Known Enemy", 
                   "id": "MINEFIELD_KNOWN_ENEMY", 
-                  "graphic": "25270703.svg"
+                  "graphic": "25270703.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Suspected or Templated Enemy", 
                   "id": "MINEFIELD_SUSPECTED_OR_TEMPLATED_ENEMY", 
-                  "graphic": "25270704.svg"
+                  "graphic": "25270704.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Dummy", 
                   "id": "MINEFIELD_DUMMY", 
-                  "graphic": "25270705.svg"
+                  "graphic": "25270705.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "06", 
                   "label": "Dummy Minefield, Dymanic", 
                   "id": "MINEFIELD_DUMMY_DYMANIC", 
-                  "graphic": "25270706.svg"
+                  "graphic": "25270706.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "07", 
                   "label": "Dynamic Depiction", 
                   "id": "MINEFIELD_DYNAMIC_DEPICTION", 
-                  "graphic": "25270707.svg"
+                  "graphic": "25270707.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -10262,6 +10531,7 @@ var symbolData={
               "label": "Mined Area", 
               "id": "MINED_AREA", 
               "graphic": "25270800.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -10269,12 +10539,14 @@ var symbolData={
               "label": "Decoy Mined Area", 
               "id": "DECOY_MINED_AREA", 
               "graphic": "25270900.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Fenced", 
                   "id": "FENCED", 
-                  "graphic": "25270901.svg"
+                  "graphic": "25270901.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -10283,6 +10555,7 @@ var symbolData={
               "label": "Unexploded Explosive Ordnance (UXO) Area", 
               "id": "UXO_AREA", 
               "graphic": "25271000.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -10290,6 +10563,7 @@ var symbolData={
               "label": "Bridge or Gap", 
               "id": "BRIDGE_OR_GAP", 
               "graphic": "25271100.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -10297,30 +10571,35 @@ var symbolData={
               "label": "Roadblocks, Craters and Blown Bridges", 
               "id": "ROADBLOCKS_CRATERS_BLOWN_BRIDGES", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Planned", 
                   "id": "PLANNED", 
-                  "graphic": "25271201.svg"
+                  "graphic": "25271201.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Explosives-State of Readiness 1 (Safe)", 
                   "id": "EXPLOSIVES_STATE_OF_READINESS_1", 
-                  "graphic": "25271202.svg"
+                  "graphic": "25271202.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Explosives-State of Readiness 2 (armed but passable)", 
                   "id": "EXPLOSIVES_STATE_OF_READINESS_2", 
-                  "graphic": "25271203.svg"
+                  "graphic": "25271203.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Roadblock Complete (Executed)", 
                   "id": "ROADBLOCK_COMPLETE_EXECUTED", 
-                  "graphic": "25271204.svg"
+                  "graphic": "25271204.svg", 
+                  "geometryType": "LINE"
                 }
               ]
             }, 
@@ -10329,6 +10608,7 @@ var symbolData={
               "label": "Assault Crossing", 
               "id": "ASSAULT_CROSSING", 
               "graphic": "25271300.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -10336,6 +10616,7 @@ var symbolData={
               "label": "Bridge", 
               "id": "BRIDGE", 
               "graphic": "25271400.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -10343,6 +10624,7 @@ var symbolData={
               "label": "Ford Easy", 
               "id": "FORD_EASY", 
               "graphic": "25271500.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -10350,6 +10632,7 @@ var symbolData={
               "label": "Ford Difficult", 
               "id": "FORD_DIFFICULT", 
               "graphic": "25271600.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -10357,12 +10640,14 @@ var symbolData={
               "label": "Biological Contaminated Area", 
               "id": "BIOLOGICAL_CONTAMINATED_AREA", 
               "graphic": "25271700.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Toxic Industrial Material", 
                   "id": "BIO_TOXIC_INDUSTRIAL_MATERIAL", 
-                  "graphic": "25271701.svg"
+                  "graphic": "25271701.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -10371,12 +10656,14 @@ var symbolData={
               "label": "Chemical Contaminated Area", 
               "id": "CHEMICAL_CONTAMINATED_AREA", 
               "graphic": "25271800.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Toxic Industrial Material", 
                   "id": "CHEM_TOXIC_INDUSTRIAL_MATERIAL", 
-                  "graphic": "25271801.svg"
+                  "graphic": "25271801.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -10385,6 +10672,7 @@ var symbolData={
               "label": "Nuclear Contaminated Area", 
               "id": "NUCLEAR_CONTAMINATED_AREA", 
               "graphic": "25271900.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -10392,12 +10680,14 @@ var symbolData={
               "label": "Radiological Contaminated Area", 
               "id": "RADIOLOGICAL_CONTAMINATED_AREA", 
               "graphic": "25272000.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Toxic Industrial Material", 
                   "id": "RAD_TOXIC_INDUSTRIAL_MATERIAL", 
-                  "graphic": "25272001.svg"
+                  "graphic": "25272001.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -10406,6 +10696,7 @@ var symbolData={
               "label": "Minimum Safe Distance Zone", 
               "id": "MINIMUM_SAFE_DISTANCE_ZONE", 
               "graphic": "25272100.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -10413,6 +10704,7 @@ var symbolData={
               "label": "Radiation Dose Rate Contour Lines", 
               "id": "RADIATION_DOSE_RATE_CONTOUR_LINES", 
               "graphic": "25272200.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }
           ]
@@ -10422,12 +10714,14 @@ var symbolData={
           "label": "Protection Points", 
           "id": "PROTECTION_POINTS", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Abatis", 
               "id": "ABATIS", 
               "graphic": "25280100.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -10637,6 +10931,7 @@ var symbolData={
               "label": "Tetrahedrons, Dragons Teeth, and Other Similar Obstacles", 
               "id": "OTHER_SIMILAR_OBSTACLES", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -10663,6 +10958,7 @@ var symbolData={
               "label": "Vertical Obstructions", 
               "id": "VERTICAL_OBSTRUCTIONS", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -10680,7 +10976,8 @@ var symbolData={
                   "digits": "03", 
                   "label": "Overhead Wire", 
                   "id": "OVERHEAD_WIRE", 
-                  "graphic": "25282003.svg"
+                  "graphic": "25282003.svg", 
+                  "geometryType": "LINE"
                 }
               ]
             }
@@ -10691,12 +10988,14 @@ var symbolData={
           "label": "Protection Lines", 
           "id": "PROTECTION_LINES", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Obstacle Line", 
               "id": "OBSTACLE_LINE", 
               "graphic": "25290100.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -10704,30 +11003,35 @@ var symbolData={
               "label": "Antitank Obstacles", 
               "id": "ANTITANK_OBSTACLES", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Under Construction", 
                   "id": "AT_UNDER_CONSTRUCTION", 
-                  "graphic": "25290201.svg"
+                  "graphic": "25290201.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Completed", 
                   "id": "AT_COMPLETED", 
-                  "graphic": "25290202.svg"
+                  "graphic": "25290202.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Reinforced-with Antitank Mines", 
                   "id": "AT_REINFORCED_WITH_MINES", 
-                  "graphic": "25290203.svg"
+                  "graphic": "25290203.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Antitank Wall", 
                   "id": "AT_ANTITANK_WALL", 
-                  "graphic": "25290204.svg"
+                  "graphic": "25290204.svg", 
+                  "geometryType": "LINE"
                 }
               ]
             }, 
@@ -10736,60 +11040,70 @@ var symbolData={
               "label": "Wire Obstacles", 
               "id": "WIRE_OBSTACLES", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Unspecified Wire", 
                   "id": "UNSPECIFIED_WIRE", 
-                  "graphic": "25290301.svg"
+                  "graphic": "25290301.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Single Fence Wire", 
                   "id": "SINGLE_FENCE_WIRE", 
-                  "graphic": "25290302.svg"
+                  "graphic": "25290302.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Double Fence Wire", 
                   "id": "DOUBLE_FENCE_WIRE", 
-                  "graphic": "25290303.svg"
+                  "graphic": "25290303.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Double Apron Fence", 
                   "id": "DOUBLE_APRON_FENCE", 
-                  "graphic": "25290304.svg"
+                  "graphic": "25290304.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Low Wire Fence", 
                   "id": "LOW_WIRE_FENCE", 
-                  "graphic": "25290305.svg"
+                  "graphic": "25290305.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "06", 
                   "label": "High Wire Fence", 
                   "id": "HIGH_WIRE_FENCE", 
-                  "graphic": "25290306.svg"
+                  "graphic": "25290306.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "07", 
                   "label": "Single Concertina", 
                   "id": "SINGLE_CONCERTINA", 
-                  "graphic": "25290307.svg"
+                  "graphic": "25290307.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "08", 
                   "label": "Double Strand Concertina", 
                   "id": "DOUBLE_STRAND_CONCERTINA", 
-                  "graphic": "25290308.svg"
+                  "graphic": "25290308.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "09", 
                   "label": "Triple Strand Concertina", 
                   "id": "TRIPLE_STRAND_CONCERTINA", 
-                  "graphic": "25290309.svg"
+                  "graphic": "25290309.svg", 
+                  "geometryType": "LINE"
                 }
               ]
             }, 
@@ -10798,6 +11112,7 @@ var symbolData={
               "label": "Mine Cluster", 
               "id": "MINE_CLUSTER", 
               "graphic": "25290400.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -10805,6 +11120,7 @@ var symbolData={
               "label": "Trip Wire", 
               "id": "TRIP_WIRE", 
               "graphic": "25290500.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -10812,6 +11128,7 @@ var symbolData={
               "label": "Lane", 
               "id": "LANE", 
               "graphic": "25290600.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -10819,6 +11136,7 @@ var symbolData={
               "label": "Ferry", 
               "id": "FERRY", 
               "graphic": "25290700.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -10826,6 +11144,7 @@ var symbolData={
               "label": "Raft Site", 
               "id": "RAFT_SITE", 
               "graphic": "25290800.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -10833,6 +11152,7 @@ var symbolData={
               "label": "Fortified Line", 
               "id": "FORTIFIED_LINE", 
               "graphic": "25290900.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -10840,6 +11160,7 @@ var symbolData={
               "label": "Fortified Position", 
               "id": "FORTIFIED_POSITION", 
               "graphic": "25291000.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }
           ]
@@ -10849,12 +11170,14 @@ var symbolData={
           "label": "Intelligence Lines", 
           "id": "INTELLIGENCE_LINES", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Intelligence Coordination Line", 
               "id": "INTELLIGENCE_COORDINATION_LINE", 
               "graphic": "25300100.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }
           ]
@@ -10864,12 +11187,14 @@ var symbolData={
           "label": "Sustainment Areas", 
           "id": "SUSTAINMENT_AREAS", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Detainee Holding Area", 
               "id": "DETAINEE_HOLDING_AREA", 
               "graphic": "25310100.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -10877,6 +11202,7 @@ var symbolData={
               "label": "Enemy Prisoner of War Holding Area", 
               "id": "EPW_HOLDING_AREA", 
               "graphic": "25310200.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -10884,6 +11210,7 @@ var symbolData={
               "label": "Forward Arming and Refueling Point", 
               "id": "FARP", 
               "graphic": "25310300.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -10891,6 +11218,7 @@ var symbolData={
               "label": "Refugee Holding Area", 
               "id": "REFUGEE_HOLDING_AREA", 
               "graphic": "25310400.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -10898,6 +11226,7 @@ var symbolData={
               "label": "Regimental Support Area", 
               "id": "REGIMENTAL_SUPPORT_AREA", 
               "graphic": "25310500.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -10905,6 +11234,7 @@ var symbolData={
               "label": "Brigade Support Area", 
               "id": "BRIGADE_SUPPORT_AREA", 
               "graphic": "25310600.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -10912,6 +11242,7 @@ var symbolData={
               "label": "Division Support Area", 
               "id": "DIVISION_SUPPORT_AREA", 
               "graphic": "25310700.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }
           ]
@@ -10921,6 +11252,7 @@ var symbolData={
           "label": "Sustainment Points", 
           "id": "SUSTAINMENT_POINTS", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -11152,12 +11484,14 @@ var symbolData={
           "label": "Sustainment Lines", 
           "id": "SUSTAINMENT_LINES", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Moving Convoy", 
               "id": "MOVING_CONVOY", 
               "graphic": "25330100.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -11165,6 +11499,7 @@ var symbolData={
               "label": "Halted Convoy", 
               "id": "HALTED_CONVOY", 
               "graphic": "25330200.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -11172,24 +11507,28 @@ var symbolData={
               "label": "Main Supply Route", 
               "id": "MAIN_SUPPLY_ROUTE", 
               "graphic": "25330300.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "One Way Traffic", 
                   "id": "MSR_ONE_WAY_TRAFFIC", 
-                  "graphic": "25330301.svg"
+                  "graphic": "25330301.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Two Way Traffic", 
                   "id": "MSR_TWO_WAY_TRAFFIC", 
-                  "graphic": "25330302.svg"
+                  "graphic": "25330302.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Alternating Traffic", 
                   "id": "MSR_ALTERNATING_TRAFFIC", 
-                  "graphic": "25330303.svg"
+                  "graphic": "25330303.svg", 
+                  "geometryType": "LINE"
                 }
               ]
             }, 
@@ -11198,24 +11537,28 @@ var symbolData={
               "label": "Alternate Supply Route", 
               "id": "ALTERNATE_SUPPLY_ROUTE", 
               "graphic": "25330400.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "One Way Traffic", 
                   "id": "ASR_ONE_WAY_TRAFFIC", 
-                  "graphic": "25330401.svg"
+                  "graphic": "25330401.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Two Way Traffic", 
                   "id": "ASR_TWO_WAY_TRAFFIC", 
-                  "graphic": "25330402.svg"
+                  "graphic": "25330402.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Alternating Traffic", 
                   "id": "ASR_ALTERNATING_TRAFFIC", 
-                  "graphic": "25330403.svg"
+                  "graphic": "25330403.svg", 
+                  "geometryType": "LINE"
                 }
               ]
             }
@@ -11226,12 +11569,14 @@ var symbolData={
           "label": "Mission Tasks", 
           "id": "MISSION_TASKS", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Block", 
               "id": "TMT_BLOCK", 
               "graphic": "25340100.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -11239,6 +11584,7 @@ var symbolData={
               "label": "Breach", 
               "id": "TMT_BREACH", 
               "graphic": "25340200.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -11246,6 +11592,7 @@ var symbolData={
               "label": "Bypass", 
               "id": "TMT_BYPASS", 
               "graphic": "25340300.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -11253,6 +11600,7 @@ var symbolData={
               "label": "Canalize", 
               "id": "TMT_CANALIZE", 
               "graphic": "25340400.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -11260,6 +11608,7 @@ var symbolData={
               "label": "Clear", 
               "id": "TMT_CLEAR", 
               "graphic": "25340500.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -11267,6 +11616,7 @@ var symbolData={
               "label": "Counterattack", 
               "id": "TMT_COUNTERATTACK", 
               "graphic": "25340600.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -11274,6 +11624,7 @@ var symbolData={
               "label": "Counterattack by Fire", 
               "id": "TMT_COUNTERATTACK_BY_FIRE", 
               "graphic": "25340700.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -11281,6 +11632,7 @@ var symbolData={
               "label": "Delay", 
               "id": "TMT_DELAY", 
               "graphic": "25340800.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -11295,6 +11647,7 @@ var symbolData={
               "label": "Disrupt", 
               "id": "TMT_DISTRUPT", 
               "graphic": "25341000.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -11302,6 +11655,7 @@ var symbolData={
               "label": "Fix", 
               "id": "TMT_FIX", 
               "graphic": "25341100.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -11309,6 +11663,7 @@ var symbolData={
               "label": "Follow and Assume", 
               "id": "TMT_FOLLOW_AND_ASSUME", 
               "graphic": "25341200.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -11316,6 +11671,7 @@ var symbolData={
               "label": "Follow and Support", 
               "id": "TMT_FOLLOW_AND_SUPPORT", 
               "graphic": "25341300.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -11330,6 +11686,7 @@ var symbolData={
               "label": "Isolate", 
               "id": "TMT_ISOLATE", 
               "graphic": "25341500.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -11344,6 +11701,7 @@ var symbolData={
               "label": "Occupy", 
               "id": "TMT_OCCUPY", 
               "graphic": "25341700.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -11351,6 +11709,7 @@ var symbolData={
               "label": "Penetrate", 
               "id": "TMT_PENETRATE", 
               "graphic": "25341800.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -11358,6 +11717,7 @@ var symbolData={
               "label": "Relief in Place (RIP)", 
               "id": "TMT_RELIEF_IN_PLACE_RIP", 
               "graphic": "25341900.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -11365,6 +11725,7 @@ var symbolData={
               "label": "Retire/Retirement", 
               "id": "TMT_RETIRE_RETIREMENT", 
               "graphic": "25342000.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -11372,6 +11733,7 @@ var symbolData={
               "label": "Secure", 
               "id": "TMT_SECURE", 
               "graphic": "25342100.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -11379,24 +11741,28 @@ var symbolData={
               "label": "Security", 
               "id": "SECURITY", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Cover", 
                   "id": "TMT_COVER", 
-                  "graphic": "25342201.b.svg"
+                  "graphic": "25342201.b.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Guard", 
                   "id": "TMT_GUARD", 
-                  "graphic": "25342202.b.svg"
+                  "graphic": "25342202.b.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Screen", 
                   "id": "TMT_SCREEN", 
-                  "graphic": "25342203.b.svg"
+                  "graphic": "25342203.b.svg", 
+                  "geometryType": "LINE"
                 }
               ]
             }, 
@@ -11405,6 +11771,7 @@ var symbolData={
               "label": "Seize", 
               "id": "TMT_SEIZE", 
               "graphic": "25342300.b.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -11412,6 +11779,7 @@ var symbolData={
               "label": "Withdraw", 
               "id": "TMT_WITHDRAW", 
               "graphic": "25342400.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -11419,6 +11787,7 @@ var symbolData={
               "label": "Withdraw Under Pressure", 
               "id": "TMT_WITHDRAW_UNDER_PRESSURE", 
               "graphic": "25342500.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }
           ]
@@ -12929,6 +13298,7 @@ var symbolData={
               "alternativeGraphic": "36110600_a.svg", 
               "remarks": "There is no MEDAL icon associated with this symbol.", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": []
             }, 
             {
@@ -12938,6 +13308,7 @@ var symbolData={
               "alternativeGraphic": "36110700_a.svg", 
               "remarks": "There is no MEDAL icon associated with this symbol.", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": []
             }, 
             {
@@ -13081,6 +13452,7 @@ var symbolData={
           "label": "Mine-Like Contact (MILCO)", 
           "id": "MINE_LIKE_CONTACT_MILCO", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -13463,6 +13835,7 @@ var symbolData={
           "id": "INCIDENT", 
           "remarks": "No icon is associated with this entity. It is for hierarchal purposes only.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -13794,6 +14167,7 @@ var symbolData={
           "id": "OPERATION", 
           "remarks": "No icon is associated with this entity. It is for hierarchal purposes only.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -13836,6 +14210,7 @@ var symbolData={
               "id": "RECRUITMENT", 
               "remarks": "No icon is associated with this entity. It is for hierarchal purposes only.", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -14238,6 +14613,7 @@ var symbolData={
           "id": "HAZARD_MATERIALS", 
           "remarks": "No icon is associated with this entity. It is for hierarchal purposes only.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -14555,6 +14931,7 @@ var symbolData={
           "id": "INDIVIDUAL", 
           "remarks": "No icon is associated with this entity. It is for hierarchal purposes only.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -14721,6 +15098,7 @@ var symbolData={
           "label": "Pressure Systems", 
           "id": "PRESSURE_SYSTEMS", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -14768,96 +15146,112 @@ var symbolData={
               "id": "FRONTAL_SYSTEMS", 
               "remarks": "For special lines that are not symmetrical, such as Fronts, the sequence of anchor points determines the proper alighment of the line.", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Cold Front", 
                   "id": "COLD_FRONT", 
-                  "graphic": "45110301.svg"
+                  "graphic": "45110301.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Upper Cold Front", 
                   "id": "UPPER_COLD_FRONT", 
-                  "graphic": "45110302.svg"
+                  "graphic": "45110302.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Cold Frontogenesis", 
                   "id": "COLD_FRONTOGENESIS", 
-                  "graphic": "45110303.svg"
+                  "graphic": "45110303.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Cold Frontolysis", 
                   "id": "COLD_FRONTOLYSIS", 
-                  "graphic": "45110304.svg"
+                  "graphic": "45110304.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Warm Front", 
                   "id": "WARM_FRONT", 
-                  "graphic": "45110305.svg"
+                  "graphic": "45110305.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "06", 
                   "label": "Upper Warm Front", 
                   "id": "UPPER_WARM_FRONT", 
-                  "graphic": "45110306.svg"
+                  "graphic": "45110306.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "07", 
                   "label": "Warm Frontogenesis", 
                   "id": "WARM_FRONTOGENESIS", 
-                  "graphic": "45110307.svg"
+                  "graphic": "45110307.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "08", 
                   "label": "Warm Frontolysis", 
                   "id": "WARM_FRONTOLYSIS", 
-                  "graphic": "45110308.svg"
+                  "graphic": "45110308.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "09", 
                   "label": "Occluded Front", 
                   "id": "OCCLUDED_FRONT", 
-                  "graphic": "45110309.svg"
+                  "graphic": "45110309.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "10", 
                   "label": "Upper Occluded Front", 
                   "id": "UPPER_OCCLUDED_FRONT", 
-                  "graphic": "45110310.svg"
+                  "graphic": "45110310.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "11", 
                   "label": "Occluded Frontolysis", 
                   "id": "OCCLUDED_FRONTOLYSIS", 
-                  "graphic": "45110311.svg"
+                  "graphic": "45110311.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "12", 
                   "label": "Stationary Front", 
                   "id": "STATIONARY_FRONT", 
-                  "graphic": "45110312.svg"
+                  "graphic": "45110312.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "13", 
                   "label": "Upper Stationary Front", 
                   "id": "UPPER_STATIONARY_FRONT", 
-                  "graphic": "45110313.svg"
+                  "graphic": "45110313.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "14", 
                   "label": "Stationary Frontogenesis", 
                   "id": "STATIONARY_FRONTOGENESIS", 
-                  "graphic": "45110314.svg"
+                  "graphic": "45110314.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "15", 
                   "label": "Stationary Frontolysis", 
                   "id": "STATIONARY_FRONTOLYSIS", 
-                  "graphic": "45110315.svg"
+                  "graphic": "45110315.svg", 
+                  "geometryType": "LINE"
                 }
               ]
             }, 
@@ -14866,60 +15260,70 @@ var symbolData={
               "label": "Lines", 
               "id": "LINES", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Trough Axis", 
                   "id": "TROUGH_AXIS", 
-                  "graphic": "45110401.svg"
+                  "graphic": "45110401.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Upper Trough Axis", 
                   "id": "UPPER_TROUGH_AXIS", 
-                  "graphic": "45110402.svg"
+                  "graphic": "45110402.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Ridge Axis", 
                   "id": "RIDGE_AXIS", 
-                  "graphic": "45110403.svg"
+                  "graphic": "45110403.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Severe Squall Line", 
                   "id": "SEVERE_SQUALL_LINE", 
-                  "graphic": "45110404.svg"
+                  "graphic": "45110404.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Instability Line", 
                   "id": "INSTABILITY_LINE", 
-                  "graphic": "45110405.svg"
+                  "graphic": "45110405.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "06", 
                   "label": "Shear Line", 
                   "id": "SHEAR_LINE", 
-                  "graphic": "45110406.svg"
+                  "graphic": "45110406.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "07", 
                   "label": "Inter-Tropical Convergence Zone", 
                   "id": "INTER_TROPICAL_CONVERGENCE_ZONE", 
-                  "graphic": "45110407.svg"
+                  "graphic": "45110407.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "08", 
                   "label": "Convergence Line", 
                   "id": "CONVERGENCE_LINE", 
-                  "graphic": "45110408.svg"
+                  "graphic": "45110408.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "09", 
                   "label": "Inter-Tropical Discontinuity", 
                   "id": "INTER_TROPICAL_DISCONTINUITY", 
-                  "graphic": "45110409.svg"
+                  "graphic": "45110409.svg", 
+                  "geometryType": "LINE"
                 }
               ]
             }, 
@@ -14929,6 +15333,7 @@ var symbolData={
               "id": "PRESSURE_TENDENCY", 
               "remarks": "Each symbols within the pressure tendency group is static, but only one can be applied to a particular station plot, dependent upon the pressure tendency at that location. As such, the group of symbols is dynamic.", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -14994,6 +15399,7 @@ var symbolData={
           "id": "TURBULENCE", 
           "remarks": "USAF turbulence forecasts are based on Category II type aircraft.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -15037,12 +15443,14 @@ var symbolData={
           "label": "Icing", 
           "id": "ICING", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Clear Icing", 
               "id": "CLEAR_ICING", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15069,6 +15477,7 @@ var symbolData={
               "label": "Rime Icing", 
               "id": "RIME_ICING", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15095,6 +15504,7 @@ var symbolData={
               "label": "Mixed Icing", 
               "id": "MIXED_ICING", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15123,6 +15533,7 @@ var symbolData={
           "label": "Winds", 
           "id": "WINDS", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -15143,6 +15554,7 @@ var symbolData={
               "label": "Jet Stream", 
               "id": "JET_STREAM", 
               "graphic": "45140300.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -15150,6 +15562,7 @@ var symbolData={
               "label": "Stream Line", 
               "id": "STREAM_LINE", 
               "graphic": "45140400.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }
           ]
@@ -15159,12 +15572,14 @@ var symbolData={
           "label": "Cloud Cover", 
           "id": "CLOUD_COVER", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Cloud Coverage Symbols", 
               "id": "CLOUD_COVERAGE_SYMBOLS", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15211,12 +15626,14 @@ var symbolData={
           "label": "Weather Symbols", 
           "id": "WEATHER_SYMBOLS", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Rain", 
               "id": "RAIN", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15261,6 +15678,7 @@ var symbolData={
               "label": "Freezing Rain", 
               "id": "FREEZING_RAIN", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15281,6 +15699,7 @@ var symbolData={
               "label": "Rain Showers", 
               "id": "RAIN_SHOWERS", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15307,6 +15726,7 @@ var symbolData={
               "label": "Drizzle", 
               "id": "DRIZZLE", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15351,6 +15771,7 @@ var symbolData={
               "label": "Freezing Drizzle", 
               "id": "FREEZING_DRIZZLE", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15371,6 +15792,7 @@ var symbolData={
               "label": "Rain and Snow Mixed", 
               "id": "RAIN_SNOW_MIXED", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15403,6 +15825,7 @@ var symbolData={
               "label": "Snow", 
               "id": "SNOW", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15466,6 +15889,7 @@ var symbolData={
               "label": "Snow Showers", 
               "id": "SNOW_SHOWERS", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15486,6 +15910,7 @@ var symbolData={
               "label": "Hail", 
               "id": "HAIL", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15513,6 +15938,7 @@ var symbolData={
               "label": "Ice Pellets (Sleet)", 
               "id": "ICE_PELLETS_SLEET", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15546,6 +15972,7 @@ var symbolData={
               "label": "Storms", 
               "id": "STORMS", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15602,6 +16029,7 @@ var symbolData={
               "label": "Fog", 
               "id": "FOG", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15673,6 +16101,7 @@ var symbolData={
               "label": "Dust or Sand", 
               "id": "DUST_SAND", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15705,6 +16134,7 @@ var symbolData={
               "label": "Tropical Storm Systems", 
               "id": "TROPICAL_STORM_SYSTEMS", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15728,7 +16158,8 @@ var symbolData={
                   "digits": "04", 
                   "label": "Tropical Storm Wind Areas and Date/Time Labels", 
                   "id": "TROPICAL_STORM_WIND_AREAS_DATE_TIME_LABELS", 
-                  "graphic": "45162004.svg"
+                  "graphic": "45162004.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -15774,12 +16205,14 @@ var symbolData={
           "label": "Bounded Areas of Weather", 
           "id": "BOUNDED_AREAS_WEATHER", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Instrument Flight Rule (IFR)", 
               "id": "INSTRUMENT_FLIGHT_RULE_IFR", 
               "graphic": "45170100.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -15787,6 +16220,7 @@ var symbolData={
               "label": "Marginal Visual Flight Rule (MVFR)", 
               "id": "MARGINAL_VISUAL_FLIGHT_RULE_MVFR", 
               "graphic": "45170200.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -15794,6 +16228,7 @@ var symbolData={
               "label": "Turbulence", 
               "id": "TURBULENCE_BOUNDED", 
               "graphic": "45170300.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -15801,6 +16236,7 @@ var symbolData={
               "label": "Icing", 
               "id": "ICING_BOUNDED", 
               "graphic": "45170400.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -15808,12 +16244,14 @@ var symbolData={
               "label": "Liquid Precipitation - Non-Convective Continuous or Intermittent", 
               "id": "LIQUID_PRECIPITATION_NON_CONVECTIVE", 
               "graphic": "45170500.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Liquid Precipitation - Convective", 
                   "id": "LIQUID_PRECIPITATION_CONVECTIVE", 
-                  "graphic": "45170501.svg"
+                  "graphic": "45170501.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -15822,6 +16260,7 @@ var symbolData={
               "label": "Freezing /Frozen Precipitation", 
               "id": "FREEZING_PRECIPITATION", 
               "graphic": "45170600.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -15829,6 +16268,7 @@ var symbolData={
               "label": "Thunderstorm", 
               "id": "THUNDERSTORM_BOUNDED", 
               "graphic": "45170700.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -15836,6 +16276,7 @@ var symbolData={
               "label": "Fog", 
               "id": "FOG_BOUNDED", 
               "graphic": "45170800.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -15843,6 +16284,7 @@ var symbolData={
               "label": "Dust or Sand", 
               "id": "DUST_SAND_BOUNDED", 
               "graphic": "45170900.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -15850,6 +16292,7 @@ var symbolData={
               "label": "Operator-Defined Freeform", 
               "id": "OPERATOR_DEFINED_FREEFORM_BOUNDED", 
               "graphic": "45171000.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }
           ]
@@ -15859,12 +16302,14 @@ var symbolData={
           "label": "Isopleths", 
           "id": "ISOPLETHS", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Isobar - Surface", 
               "id": "ISOBAR_SURFACE", 
               "graphic": "45180100.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -15872,6 +16317,7 @@ var symbolData={
               "label": "Contour - Upper Air", 
               "id": "CONTOUR_UPPER_AIR", 
               "graphic": "45180200.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -15879,6 +16325,7 @@ var symbolData={
               "label": "Isotherm", 
               "id": "ISOTHERM", 
               "graphic": "45180300.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -15886,6 +16333,7 @@ var symbolData={
               "label": "Isotach", 
               "id": "ISOTACH", 
               "graphic": "45180400.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -15893,6 +16341,7 @@ var symbolData={
               "label": "Isodrosotherm", 
               "id": "ISODROSOTHERM", 
               "graphic": "45180500.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -15900,6 +16349,7 @@ var symbolData={
               "label": "Thickness", 
               "id": "THICKNESS", 
               "graphic": "45180600.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -15907,6 +16357,7 @@ var symbolData={
               "label": "Operator-Defined Freeform", 
               "id": "OPERATOR_DEFINED_FREEFORM", 
               "graphic": "45180700.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }
           ]
@@ -15916,12 +16367,14 @@ var symbolData={
           "label": "State of the Ground", 
           "id": "STATE_GROUND", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Without Snow or Measurable Ice Cover", 
               "id": "WITHOUT_SNOW_MEASURABLE_ICE_COVER", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -15990,6 +16443,7 @@ var symbolData={
               "label": "With Snow or Measurable Ice Cover", 
               "id": "WITH_SNOW_MEASURABLE_ICE_COVER", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -16074,12 +16528,14 @@ var symbolData={
           "label": "Ice Systems", 
           "id": "ICE_SYSTEMS", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Icebergs", 
               "id": "ICEBERGS", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -16148,6 +16604,7 @@ var symbolData={
               "label": "Ice Concentration", 
               "id": "ICE_CONCENTRATION", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -16174,6 +16631,7 @@ var symbolData={
               "label": "Dynamic Processes", 
               "id": "DYNAMIC_PROCESSES", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -16232,42 +16690,49 @@ var symbolData={
               "label": "Limits", 
               "id": "ICE_LIMITS", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Limits of Visual Observation", 
                   "id": "LIMITS_VISUAL_OBSERVATION", 
-                  "graphic": "46110501.svg"
+                  "graphic": "46110501.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Limits of Under Cast", 
                   "id": "LIMITS_UNDER_CAST", 
-                  "graphic": "46110502.svg"
+                  "graphic": "46110502.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Limits of Radar Observation", 
                   "id": "LIMITS_RADAR_OBSERVATION", 
-                  "graphic": "46110503.svg"
+                  "graphic": "46110503.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Observed Ice Edge or Boundary", 
                   "id": "OBSERVED_ICE_EDGE_BOUNDARY", 
-                  "graphic": "46110504.svg"
+                  "graphic": "46110504.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Estimated Ice Edge or Boundary", 
                   "id": "ESTIMATED_ICE_EDGE_BOUNDARY", 
-                  "graphic": "46110505.svg"
+                  "graphic": "46110505.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "06", 
                   "label": "Ice Edge or Boundary From Radar", 
                   "id": "ICE_EDGE_BOUNDARY_FROM_RADAR", 
-                  "graphic": "46110506.svg"
+                  "graphic": "46110506.svg", 
+                  "geometryType": "LINE"
                 }
               ]
             }, 
@@ -16276,30 +16741,35 @@ var symbolData={
               "label": "Openings in the Ice", 
               "id": "OPENINGS_IN_THE_ICE", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Cracks", 
                   "id": "CRACKS", 
-                  "graphic": "46110601.svg"
+                  "graphic": "46110601.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Cracks at a Specific Location", 
                   "id": "CRACKS_SPECIFIC_LOCATION", 
-                  "graphic": "46110602.svg"
+                  "graphic": "46110602.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Lead", 
                   "id": "LEAD", 
-                  "graphic": "46110603.svg"
+                  "graphic": "46110603.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Frozen Lead", 
                   "id": "FROZEN_LEAD", 
-                  "graphic": "46110604.svg"
+                  "graphic": "46110604.svg", 
+                  "geometryType": "LINE"
                 }
               ]
             }, 
@@ -16322,6 +16792,7 @@ var symbolData={
               "label": "Topographical Features", 
               "id": "TOPOGRAPHICAL_FEATURES", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -16350,12 +16821,14 @@ var symbolData={
           "label": "Hydrography", 
           "id": "HYDROGRAPHY", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Depth", 
               "id": "DEPTH", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -16367,19 +16840,22 @@ var symbolData={
                   "digits": "02", 
                   "label": "Depth Curve", 
                   "id": "DEPTH_CURVE", 
-                  "graphic": "46120102.svg"
+                  "graphic": "46120102.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Depth Contour", 
                   "id": "DEPTH_CONTOUR", 
-                  "graphic": "46120103.svg"
+                  "graphic": "46120103.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Depth Area", 
                   "id": "DEPTH_AREA", 
-                  "graphic": "46120104.svg"
+                  "graphic": "46120104.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -16388,42 +16864,49 @@ var symbolData={
               "label": "Coastal Hydrography", 
               "id": "COASTAL_HYDROGRAPHY", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Coastline", 
                   "id": "COASTLINE", 
-                  "graphic": "46120201.svg"
+                  "graphic": "46120201.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Island", 
                   "id": "ISLAND", 
-                  "graphic": "46120202.svg"
+                  "graphic": "46120202.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Beach", 
                   "id": "BEACH", 
-                  "graphic": "46120203.svg"
+                  "graphic": "46120203.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Water", 
                   "id": "WATER", 
-                  "graphic": "46120204.svg"
+                  "graphic": "46120204.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "05", 
                   "label": "Foreshore - Line", 
                   "id": "FORESHORE_LINE", 
-                  "graphic": "46120205.svg"
+                  "graphic": "46120205.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "06", 
                   "label": "Foreshore - Area", 
                   "id": "FORESHORE_AREA", 
-                  "graphic": "46120206.svg"
+                  "graphic": "46120206.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -16432,12 +16915,14 @@ var symbolData={
               "label": "Ports and Harbors", 
               "id": "PORTS_HARBORS", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Ports", 
                   "id": "PORTS", 
-                  "icon": "NA"
+                  "icon": "NA", 
+                  "geometryType": "NA"
                 }, 
                 {
                   "digits": "02", 
@@ -16461,13 +16946,15 @@ var symbolData={
                   "digits": "05", 
                   "label": "Anchorage - Line", 
                   "id": "ANCHORAGE_LINE", 
-                  "graphic": "46120305.svg"
+                  "graphic": "46120305.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "06", 
                   "label": "Anchorage - Area", 
                   "id": "ANCHORAGE_AREA", 
-                  "graphic": "46120306.svg"
+                  "graphic": "46120306.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "07", 
@@ -16479,7 +16966,8 @@ var symbolData={
                   "digits": "08", 
                   "label": "Pier/Wharf/Quay", 
                   "id": "PIER_WHARF_QUAY", 
-                  "graphic": "46120308.svg"
+                  "graphic": "46120308.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "09", 
@@ -16503,19 +16991,22 @@ var symbolData={
                   "digits": "12", 
                   "label": "Fish Traps - Area", 
                   "id": "FISH_TRAPS_AREA", 
-                  "graphic": "46120312.svg"
+                  "graphic": "46120312.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "13", 
                   "label": "Facilities", 
                   "id": "FACILITIES", 
-                  "icon": "NA"
+                  "icon": "NA", 
+                  "geometryType": "NA"
                 }, 
                 {
                   "digits": "14", 
                   "label": "Drydock", 
                   "id": "DRYDOCK", 
-                  "graphic": "46120314.svg"
+                  "graphic": "46120314.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "15", 
@@ -16533,25 +17024,29 @@ var symbolData={
                   "digits": "17", 
                   "label": "Offshore Loading Facility - Line", 
                   "id": "OFFSHORE_LOADING_FACILITY_LINE", 
-                  "graphic": "46120317.svg"
+                  "graphic": "46120317.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "18", 
                   "label": "Offshore Loading Facility - Area", 
                   "id": "OFFSHORE_LOADING_FACILITY_AREA", 
-                  "graphic": "46120318.svg"
+                  "graphic": "46120318.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "19", 
                   "label": "Ramp - Above Water", 
                   "id": "RAMP_ABOVE_WATER", 
-                  "graphic": "46120319.svg"
+                  "graphic": "46120319.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "20", 
                   "label": "Ramp - Below Water", 
                   "id": "RAMP_BELOW_WATER", 
-                  "graphic": "46120320.svg"
+                  "graphic": "46120320.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "21", 
@@ -16581,25 +17076,29 @@ var symbolData={
                   "digits": "25", 
                   "label": "Shoreline Protection", 
                   "id": "SHORELINE_PROTECTION", 
-                  "icon": "NA"
+                  "icon": "NA", 
+                  "geometryType": "NA"
                 }, 
                 {
                   "digits": "26", 
                   "label": "Breakwater/Groin/Jetty - Above Water", 
                   "id": "BREAKWATER_GROIN_JETTY_ABOVE_WATER", 
-                  "graphic": "46120326.svg"
+                  "graphic": "46120326.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "27", 
                   "label": "Breakwater/Groin/Jetty - Below Water", 
                   "id": "BREAKWATER_GROIN_JETTY_BELOW_WATER", 
-                  "graphic": "46120327.svg"
+                  "graphic": "46120327.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "28", 
                   "label": "Seawall", 
                   "id": "SEAWALL", 
-                  "graphic": "46120328.svg"
+                  "graphic": "46120328.svg", 
+                  "geometryType": "LINE"
                 }
               ]
             }, 
@@ -16608,6 +17107,7 @@ var symbolData={
               "label": "Aids to Navigation", 
               "id": "AIDS_NAVIGATION", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -16637,7 +17137,8 @@ var symbolData={
                   "digits": "05", 
                   "label": "Perches/Stakes - Area", 
                   "id": "PERCHES_STAKES_AREA", 
-                  "graphic": "46120405.svg"
+                  "graphic": "46120405.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "06", 
@@ -16649,7 +17150,8 @@ var symbolData={
                   "digits": "07", 
                   "label": "Leading Line", 
                   "id": "LEADING_LINE", 
-                  "graphic": "46120407.svg"
+                  "graphic": "46120407.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "08", 
@@ -16670,6 +17172,7 @@ var symbolData={
               "label": "Dangers/Hazards", 
               "id": "DANGERS_HAZARDS", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -16687,7 +17190,8 @@ var symbolData={
                   "digits": "03", 
                   "label": "Underwater Danger/Hazard", 
                   "id": "UNDERWATER_DANGER_HAZARD", 
-                  "graphic": "46120503.svg"
+                  "graphic": "46120503.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "04", 
@@ -16699,7 +17203,8 @@ var symbolData={
                   "digits": "05", 
                   "label": "Foul Ground - Area", 
                   "id": "FOUL_GROUND_AREA", 
-                  "graphic": "46120505.svg"
+                  "graphic": "46120505.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "06", 
@@ -16711,7 +17216,8 @@ var symbolData={
                   "digits": "07", 
                   "label": "Kelp/Seaweed - Area", 
                   "id": "KELP_SEAWEED_AREA", 
-                  "graphic": "46120507.svg"
+                  "graphic": "46120507.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "08", 
@@ -16735,13 +17241,15 @@ var symbolData={
                   "digits": "11", 
                   "label": "Breakers", 
                   "id": "BREAKERS", 
-                  "graphic": "46120511.svg"
+                  "graphic": "46120511.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "12", 
                   "label": "Reef", 
                   "id": "REEF", 
-                  "graphic": "46120512.svg"
+                  "graphic": "46120512.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "13", 
@@ -16753,7 +17261,8 @@ var symbolData={
                   "digits": "14", 
                   "label": "Discolored Water", 
                   "id": "DISCOLORED_WATER", 
-                  "graphic": "46120514.svg"
+                  "graphic": "46120514.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -16762,6 +17271,7 @@ var symbolData={
               "label": "Bottom Features", 
               "id": "BOTTOM_FEATURES", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -16854,6 +17364,7 @@ var symbolData={
               "label": "Tide and Current", 
               "id": "TIDE_AND_CURRENT", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -16865,13 +17376,15 @@ var symbolData={
                   "digits": "02", 
                   "label": "Current Flow - Ebb", 
                   "id": "CURRENT_FLOW_EBB", 
-                  "graphic": "46120702.svg"
+                  "graphic": "46120702.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Current Flow - Flood", 
                   "id": "CURRENT_FLOW_FLOOD", 
-                  "graphic": "46120703.svg"
+                  "graphic": "46120703.svg", 
+                  "geometryType": "LINE"
                 }, 
                 {
                   "digits": "04", 
@@ -16894,6 +17407,7 @@ var symbolData={
           "label": "Oceanography", 
           "id": "OCEANOGRAPHY", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -16901,60 +17415,70 @@ var symbolData={
               "id": "BIOLUMINESCENCE", 
               "remarks": "Measured by Visual Detection Ratio (VDR)", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Visual Detection Ratio (VDR) Level 1-2", 
                   "id": "VDR_LEVEL_1_2", 
-                  "graphic": "46130101.svg"
+                  "graphic": "46130101.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "VDR Level 2-3", 
                   "id": "VDR_LEVEL_2_3", 
-                  "graphic": "46130102.svg"
+                  "graphic": "46130102.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "VDR Level 3-4", 
                   "id": "VDR_LEVEL_3_4", 
-                  "graphic": "46130103.svg"
+                  "graphic": "46130103.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "04", 
                   "label": "VDR Level 4-5", 
                   "id": "VDR_LEVEL_4_5", 
-                  "graphic": "46130104.svg"
+                  "graphic": "46130104.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "05", 
                   "label": "VDR Level 5-6", 
                   "id": "VDR_LEVEL_5_6", 
-                  "graphic": "46130105.svg"
+                  "graphic": "46130105.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "06", 
                   "label": "VDR Level 6-7", 
                   "id": "VDR_LEVEL_6_7", 
-                  "graphic": "46130106.svg"
+                  "graphic": "46130106.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "07", 
                   "label": "VDR Level 7-8", 
                   "id": "VDR_LEVEL_7_8", 
-                  "graphic": "46130107.svg"
+                  "graphic": "46130107.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "08", 
                   "label": "VDR Level 8-9", 
                   "id": "VDR_LEVEL_8_9", 
-                  "graphic": "46130108.svg"
+                  "graphic": "46130108.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "09", 
                   "label": "VDR Level 9-10", 
                   "id": "VDR_LEVEL_9_10", 
-                  "graphic": "46130109.svg"
+                  "graphic": "46130109.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }, 
@@ -16963,30 +17487,35 @@ var symbolData={
               "label": "Beach Slope", 
               "id": "BEACH_SLOPE", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "Flat", 
                   "id": "BEACH_SLOPE_FLAT", 
-                  "graphic": "46130201.svg"
+                  "graphic": "46130201.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "Gentle", 
                   "id": "BEACH_SLOPE_GENTLE", 
-                  "graphic": "46130202.svg"
+                  "graphic": "46130202.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "Moderate", 
                   "id": "BEACH_SLOPE_MODERATE", 
-                  "graphic": "46130203.svg"
+                  "graphic": "46130203.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "04", 
                   "label": "Steep", 
                   "id": "BEACH_SLOPE_STEEP", 
-                  "graphic": "46130204.svg"
+                  "graphic": "46130204.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }
@@ -16997,252 +17526,294 @@ var symbolData={
           "label": "Geophysics/Acoustics", 
           "id": "GEOPHYSICS_ACOUSTICS", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Mine Warfare (MIW) Bottom Descriptors", 
               "id": "MINE_WARFARE_MIW_BOTTOM_DESCRIPTORS", 
               "icon": "NA", 
+              "geometryType": "NA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
                   "label": "MIW Bottom Sediments - Solid Rock", 
                   "id": "MIW_BOTTOM_SEDIMENTS_SOLID_ROCK", 
-                  "graphic": "46140101.svg"
+                  "graphic": "46140101.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "02", 
                   "label": "MIW Bottom Sediments - Clay", 
                   "id": "MIW_BOTTOM_SEDIMENTS_CLAY", 
-                  "graphic": "46140102.svg"
+                  "graphic": "46140102.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "03", 
                   "label": "MIW Bottom Sediments - Very Coarse Sand", 
                   "id": "MIW_BOTTOM_SEDIMENTS_VERY_COARSE_SAND", 
-                  "graphic": "46140103.svg"
+                  "graphic": "46140103.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "04", 
                   "label": "MIW Bottom Sediments - Coarse Sand", 
                   "id": "MIW_BOTTOM_SEDIMENTS_COARSE_SAND", 
-                  "graphic": "46140104.svg"
+                  "graphic": "46140104.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "05", 
                   "label": "MIW Bottom Sediments - Medium Sand", 
                   "id": "MIW_BOTTOM_SEDIMENTS_MEDIUM_SAND", 
-                  "graphic": "46140105.svg"
+                  "graphic": "46140105.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "06", 
                   "label": "MIW Bottom Sediments - Fine Sand", 
                   "id": "MIW_BOTTOM_SEDIMENTS_FINE_SAND", 
-                  "graphic": "46140106.svg"
+                  "graphic": "46140106.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "07", 
                   "label": "MIW Bottom Sediments - Very Fine Sand", 
                   "id": "MIW_BOTTOM_SEDIMENTS_VERY_FINE_SAND", 
-                  "graphic": "46140107.svg"
+                  "graphic": "46140107.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "08", 
                   "label": "MIW Bottom Sediments - Very Fine Silt", 
                   "id": "MIW_BOTTOM_SEDIMENTS_VERY_FINE_SILT", 
-                  "graphic": "46140108.svg"
+                  "graphic": "46140108.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "09", 
                   "label": "MIW Bottom Sediments - Fine Silt", 
                   "id": "MIW_BOTTOM_SEDIMENTS_FINE_SILT", 
-                  "graphic": "46140109.svg"
+                  "graphic": "46140109.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "10", 
                   "label": "MIW Bottom Sediments - Medium Silt", 
                   "id": "MIW_BOTTOM_SEDIMENTS_MEDIUM_SILT", 
-                  "graphic": "46140110.svg"
+                  "graphic": "46140110.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "11", 
                   "label": "MIW Bottom Sediments - Coarse Silt", 
                   "id": "MIW_BOTTOM_SEDIMENTS_COARSE_SILT", 
-                  "graphic": "46140111.svg"
+                  "graphic": "46140111.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "12", 
                   "label": "MIW Bottom Sediments - Boulders", 
                   "id": "MIW_BOTTOM_SEDIMENTS_BOULDERS", 
-                  "graphic": "46140112.svg"
+                  "graphic": "46140112.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "13", 
                   "label": "MIW Bottom Sediments - Cobbles-Oyster Shells", 
                   "id": "MIW_BOTTOM_SEDIMENTS_COBBLES_OYSTER_SHELLS", 
-                  "graphic": "46140113.svg"
+                  "graphic": "46140113.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "14", 
                   "label": "MIW Bottom Sediments - Pebbles-Shells", 
                   "id": "MIW_BOTTOM_SEDIMENTS_PEBBLES_SHELLS", 
-                  "graphic": "46140114.svg"
+                  "graphic": "46140114.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "15", 
                   "label": "MIW Bottom Sediments - Sand and Shells", 
                   "id": "MIW_BOTTOM_SEDIMENTS_SAND_AND_SHELLS", 
-                  "graphic": "46140115.svg"
+                  "graphic": "46140115.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "16", 
                   "label": "MIW Bottom Sediment - Land", 
                   "id": "MIW_BOTTOM_SEDIMENT_LAND", 
-                  "graphic": "46140116.svg"
+                  "graphic": "46140116.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "17", 
                   "label": "MIW Bottom Sediment - No Data", 
                   "id": "MIW_BOTTOM_SEDIMENT_NO_DATA", 
-                  "graphic": "46140117.svg"
+                  "graphic": "46140117.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "18", 
                   "label": "Bottom Roughness - Smooth", 
                   "id": "BOTTOM_ROUGHNESS_SMOOTH", 
-                  "graphic": "46140118.svg"
+                  "graphic": "46140118.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "19", 
                   "label": "Bottom Roughness - Moderate", 
                   "id": "BOTTOM_ROUGHNESS_MODERATE", 
-                  "graphic": "46140119.svg"
+                  "graphic": "46140119.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "20", 
                   "label": "Bottom Roughness - Rough", 
                   "id": "BOTTOM_ROUGHNESS_ROUGH", 
-                  "graphic": "46140120.svg"
+                  "graphic": "46140120.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "21", 
                   "label": "Clutter (Bottom) - Low", 
                   "id": "CLUTTER_BOTTOM_LOW", 
-                  "graphic": "46140121.svg"
+                  "graphic": "46140121.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "22", 
                   "label": "Clutter (Bottom) - Medium", 
                   "id": "CLUTTER_BOTTOM_MEDIUM", 
-                  "graphic": "46140122.svg"
+                  "graphic": "46140122.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "23", 
                   "label": "Clutter (Bottom) - High", 
                   "id": "CLUTTER_BOTTOM_HIGH", 
-                  "graphic": "46140123.svg"
+                  "graphic": "46140123.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "24", 
                   "label": "Impact Burial - 0%", 
                   "id": "IMPACT_BURIAL_0", 
-                  "graphic": "46140124.svg"
+                  "graphic": "46140124.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "25", 
                   "label": "Impact Burial - 0-10%", 
                   "id": "IMPACT_BURIAL_0_10", 
-                  "graphic": "46140125.svg"
+                  "graphic": "46140125.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "26", 
                   "label": "Impact Burial - 10-20%", 
                   "id": "IMPACT_BURIAL_10_20", 
-                  "graphic": "46140126.svg"
+                  "graphic": "46140126.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "27", 
                   "label": "Impact Burial - 20-75%", 
                   "id": "IMPACT_BURIAL_20_75", 
-                  "graphic": "46140127.svg"
+                  "graphic": "46140127.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "28", 
                   "label": "Impact Burial - >75%", 
                   "id": "IMPACT_BURIAL_75", 
-                  "graphic": "46140128.svg"
+                  "graphic": "46140128.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "29", 
                   "label": "MIW Bottom Category A", 
                   "id": "MIW_BOTTOM_CATEGORY_A", 
-                  "graphic": "46140129.svg"
+                  "graphic": "46140129.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "30", 
                   "label": "MIW Bottom Category B", 
                   "id": "MIW_BOTTOM_CATEGORY_B", 
-                  "graphic": "46140130.svg"
+                  "graphic": "46140130.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "31", 
                   "label": "MIW Bottom Category C", 
                   "id": "MIW_BOTTOM_CATEGORY_C", 
-                  "graphic": "46140131.svg"
+                  "graphic": "46140131.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "32", 
                   "label": "MIW Bottom Type A1", 
                   "id": "MIW_BOTTOM_TYPE_A1", 
-                  "graphic": "46140132.svg"
+                  "graphic": "46140132.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "33", 
                   "label": "MIW Bottom Type A2", 
                   "id": "MIW_BOTTOM_TYPE_A2", 
-                  "graphic": "46140133.svg"
+                  "graphic": "46140133.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "34", 
                   "label": "MIW Bottom Type A3", 
                   "id": "MIW_BOTTOM_TYPE_A3", 
-                  "graphic": "46140134.svg"
+                  "graphic": "46140134.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "35", 
                   "label": "MIW Bottom Type B1", 
                   "id": "MIW_BOTTOM_TYPE_B1", 
-                  "graphic": "46140135.svg"
+                  "graphic": "46140135.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "36", 
                   "label": "MIW Bottom Type B2", 
                   "id": "MIW_BOTTOM_TYPE_B2", 
-                  "graphic": "46140136.svg"
+                  "graphic": "46140136.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "37", 
                   "label": "MIW Bottom Type B3", 
                   "id": "MIW_BOTTOM_TYPE_B3", 
-                  "graphic": "46140137.svg"
+                  "graphic": "46140137.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "38", 
                   "label": "MIW Bottom Type C1", 
                   "id": "MIW_BOTTOM_TYPE_C1", 
-                  "graphic": "46140138.svg"
+                  "graphic": "46140138.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "39", 
                   "label": "MIW Bottom Type C2", 
                   "id": "MIW_BOTTOM_TYPE_C2", 
-                  "graphic": "46140139.svg"
+                  "graphic": "46140139.svg", 
+                  "geometryType": "AREA"
                 }, 
                 {
                   "digits": "40", 
                   "label": "MIW Bottom Type C3", 
                   "id": "MIW_BOTTOM_TYPE_C3", 
-                  "graphic": "46140140.svg"
+                  "graphic": "46140140.svg", 
+                  "geometryType": "AREA"
                 }
               ]
             }
@@ -17253,12 +17824,14 @@ var symbolData={
           "label": "Limits", 
           "id": "MARITIME_LIMITS", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Maritime Limit Boundary", 
               "id": "MARITIME_LIMIT_BOUNDARY", 
               "graphic": "46150100.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -17266,6 +17839,7 @@ var symbolData={
               "label": "Maritime Area", 
               "id": "MARITIME_AREA", 
               "graphic": "46150200.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -17273,6 +17847,7 @@ var symbolData={
               "label": "Restricted Area", 
               "id": "RESTRICTED_AREA", 
               "graphic": "46150300.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -17280,6 +17855,7 @@ var symbolData={
               "label": "Swept Area", 
               "id": "SWEPT_AREA", 
               "graphic": "46150400.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -17287,6 +17863,7 @@ var symbolData={
               "label": "Training Area", 
               "id": "TRAINING_AREA", 
               "graphic": "46150500.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -17294,6 +17871,7 @@ var symbolData={
               "label": "Operator-Defined", 
               "id": "LIMITS_OPERATOR_DEFINED", 
               "graphic": "46150600.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }
           ]
@@ -17303,12 +17881,14 @@ var symbolData={
           "label": "Man-Made Structures", 
           "id": "MAN_MADE_STRUCTURES", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Submarine Cable", 
               "id": "SUBMARINE_CABLE", 
               "graphic": "46160100.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -17316,6 +17896,7 @@ var symbolData={
               "label": "Submerged Crib", 
               "id": "SUBMERGED_CRIB", 
               "graphic": "46160200.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -17323,6 +17904,7 @@ var symbolData={
               "label": "Canal", 
               "id": "CANAL", 
               "graphic": "46160300.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -17351,6 +17933,7 @@ var symbolData={
               "label": "Oil/Gas Rig Field", 
               "id": "OIL_GAS_RIG_FIELD", 
               "graphic": "46160700.svg", 
+              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -17358,6 +17941,7 @@ var symbolData={
               "label": "Pipelines/Pipe", 
               "id": "PIPELINES_PIPE", 
               "graphic": "46160800.svg", 
+              "geometryType": "LINE", 
               "entitySubTypes": []
             }, 
             {
@@ -17389,6 +17973,7 @@ var symbolData={
           "id": "SPACE", 
           "remarks": "No icon is associated with this entity. It is for hierarchal purposes only.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": []
         }
       ], 
@@ -17411,6 +17996,7 @@ var symbolData={
           "id": "SIGNAL_INTERCEPT", 
           "remarks": "There is no icon associated with this entity.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -17675,6 +18261,7 @@ var symbolData={
           "id": "SIGNAL_INTERCEPT", 
           "remarks": "There is no icon associated with this entity.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -18099,6 +18686,7 @@ var symbolData={
           "id": "SIGNAL_INTERCEPT", 
           "remarks": "There is no icon associated with this entity.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -18510,6 +19098,7 @@ var symbolData={
           "id": "SIGNAL_INTERCEPT", 
           "remarks": "There is no icon associated with this entity.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -18893,6 +19482,7 @@ var symbolData={
           "id": "SIGNAL_INTERCEPT", 
           "remarks": "There is no icon associated with this entity.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -19199,6 +19789,7 @@ var symbolData={
           "id": "BOTNET", 
           "remarks": "There is no symbol associated with this entity.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -19236,6 +19827,7 @@ var symbolData={
           "id": "INFECTION", 
           "remarks": "There is no symbol associated with this entity.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -19309,6 +19901,7 @@ var symbolData={
           "id": "HEALTH_AND_STATUS", 
           "remarks": "There is no symbol associated with this entity.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -19346,6 +19939,7 @@ var symbolData={
           "id": "DEVICE_TYPE", 
           "remarks": "There is no symbol associated with this entity.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -19439,6 +20033,7 @@ var symbolData={
           "id": "DEVICE_DOMAIN", 
           "remarks": "There is no symbol associated with this entity.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -19483,6 +20078,7 @@ var symbolData={
           "id": "EFFECT", 
           "remarks": "There is no symbol associated with this entity.", 
           "icon": "NA", 
+          "geometryType": "NA", 
           "entityTypes": [
             {
               "digits": "01", 

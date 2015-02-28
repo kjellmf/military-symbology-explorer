@@ -121,6 +121,8 @@ def extract_element_data(element, tag_name="EntityCode"):
         element_dict["category"] = element.get('Category')
     if "Icon" in element.attrib:
         element_dict['icon'] = element.get('Icon')
+    if "GeometryType" in element.attrib:
+        element_dict["geometryType"] = element.get('GeometryType')
 
     return element_dict
 
