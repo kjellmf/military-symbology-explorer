@@ -1,6 +1,5 @@
 angular.module('symbolApp')
     .config(function ($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise('/home');
         $stateProvider
             .state('symbolSet', {
                 url: '/symbolset/:symbolSetId',

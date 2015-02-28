@@ -1,4 +1,13 @@
 angular.module('symbolApp')
+    .config(function ($stateProvider, $urlRouterProvider) {
+        $stateProvider
+            .state('main', {
+                url: '/main/:sic',
+                templateUrl: 'app/components/symbol/main.html',
+                controller: "SymbolCtrl"
+            })
+    })
+
     .factory('symbolIdCodeService', ['config', 'pathService', function (config, pathService) {
         var symbolIdCode = {};
         var undef = {"label": "Undefined", digits: "00"};
@@ -69,25 +78,14 @@ angular.module('symbolApp')
         }
 
         function getModifierOneFn() {
-            var fn = "";
             var sic = symbolIdCode;
-            if (sic.symbolSet && sic.sectorOneModifier && sic.sectorOneModifier.digits !== "00") {
-                fn = sic.symbolSet.digits + sic.sectorOneModifier.digits;
-            }
-            return fn ? SVG_PATH + symbolIdCode.symbolSet.graphicFolder["modifierOnes"] + "/" + fn + "1.svg" : null;
+            return pathService.getModifierOneFilePath(sic.sectorOneModifier, sic.symbolSet);
         }
 
 
         function getModifierTwoFn() {
-            var fn = "";
             var sic = symbolIdCode;
-            if (sic.sectorTwoModifier) {
-                fn = sic.symbolSet.digits + sic.sectorTwoModifier.digits;
-            }
-            if (sic.sectorTwoModifier && sic.sectorTwoModifier.digits == "00") {
-                return null
-            }
-            return fn ? SVG_PATH + symbolIdCode.symbolSet.graphicFolder["modifierTwos"] + "/" + fn + "2.svg" : null;
+            return pathService.getModifierTwoFilePath(sic.sectorTwoModifier, sic.symbolSet);
         }
 
         function getAlternateAmplifiers() {
@@ -152,9 +150,12 @@ angular.module('symbolApp')
         };
     }])
 
-    .controller('SymbolCtrl', ['$scope', '$log', 'symbolIdCodeService', 'disableModOneFilter',
+    .controller('SymbolCtrl', ['$scope', '$log', '$stateParams', 'symbolIdCodeService', 'disableModOneFilter',
         'disableModTwoFilter', 'limitUseToModFilterFilter',
-        function ($scope, $log, symbolIdCodeService, disableModOneFilter, disableModTwoFilter, limitUseToModFilterFilter) {
+        function ($scope, $log, $stateParams, symbolIdCodeService, disableModOneFilter, disableModTwoFilter, limitUseToModFilterFilter) {
+            if ($stateParams.sic) {
+                $log.debug('SIC: ' + $stateParams.sic);
+            }
             $scope.frame = symbolIdCodeService.getFrameFn;
             $scope.main = symbolIdCodeService.getEntityFn;
             $scope.amplifierFn = symbolIdCodeService.getAmplifilerFn;
@@ -312,7 +313,7 @@ angular.module('symbolApp')
                     $scope.myCanvas = myCanvas;
                 } else {
                     var context = $scope.myCanvas.getContext('2d');
-                    context.clearRect ( 0 , 0 , $scope.myCanvas.width, $scope.myCanvas.height );
+                    context.clearRect(0, 0, $scope.myCanvas.width, $scope.myCanvas.height);
                 }
 
                 var sources = {
@@ -342,7 +343,7 @@ angular.module('symbolApp')
                 });
             };
 
-            $scope.copySic = function() {
+            $scope.copySic = function () {
                 return symbolIdCodeService.getSymbolIdentificationCode();
             }
 

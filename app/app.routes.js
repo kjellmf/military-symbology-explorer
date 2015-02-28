@@ -8,10 +8,6 @@ angular.module('symbolApp')
             url: '/home',
             templateUrl: 'app/components/home/home.html'
         })
-        .state('main', {
-            url: '/main',
-            templateUrl: 'app/components/symbol/main.html'
-        })
         .state('frames', {
             url: '/frames',
             templateUrl: 'app/components/frames/frames.html'
