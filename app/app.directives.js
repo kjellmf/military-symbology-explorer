@@ -54,7 +54,7 @@ angular.module('symbolApp')
 
             this.frameFn = pathService.getFrameFilePath(contextId, siId, this.symbolSetObj) || config.BLANK_PATH;
             this.statusFn = pathService.getStatusFilePath(siId, this.symbolSetObj, this.statusObj) || config.BLANK_PATH;
-            this.amplifierFn = pathService.getAmplifierFilePath(siId, this.amplifierDescriptorObj) || config.BLANK_PATH;
+            this.amplifierFn = pathService.getAmplifierFilePath(siId, this.amplifierDescriptorObj, this.symbolSetObj) || config.BLANK_PATH;
         };
         SicObject.prototype.getSic = function () {
             return this.sic;

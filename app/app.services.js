@@ -81,8 +81,11 @@ angular.module('symbolApp')
             return fn ? config.SVG_PATH + fn : null;
         }
 
-        function getAmplifierFn(standardIdentityId, amplifierDescriptorObj) {
+        function getAmplifierFn(standardIdentityId, amplifierDescriptorObj, symbolSetObj) {
             var fn = "";
+            if (symbolSetObj.geometry == "MIXED") {
+                return null;
+            }
             if (standardIdentityId && amplifierDescriptorObj && amplifierDescriptorObj.graphics) {
                 var sig = amplifierDescriptorObj.graphics[symbolData.standardIdentityGroupMapping[standardIdentityId]];
                 fn = sig ? sig.graphic : null;

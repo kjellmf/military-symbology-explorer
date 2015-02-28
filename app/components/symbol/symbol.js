@@ -64,7 +64,7 @@ angular.module('symbolApp')
 
         function getAmplifierFn() {
             var sic = symbolIdCode;
-            return pathService.getAmplifierFilePath(sic.standardIdentity.id, sic.amplifierDescriptor);
+            return pathService.getAmplifierFilePath(sic.standardIdentity.id, sic.amplifierDescriptor, sic.symbolSet);
 
         }
 
