@@ -1,9 +1,9 @@
 angular.module('symbolApp')
     .config(function ($stateProvider, $urlRouterProvider) {
         $stateProvider
-            .state('main', {
-                url: '/main/:sic',
-                templateUrl: 'app/components/symbol/main.html',
+            .state('explore', {
+                url: '/explore/:sic',
+                templateUrl: 'app/components/symbol/symbol.html',
                 controller: "SymbolCtrl"
             })
     })
