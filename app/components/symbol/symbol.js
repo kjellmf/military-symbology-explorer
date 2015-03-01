@@ -8,7 +8,7 @@ angular.module('symbolApp')
             })
     })
 
-    .factory('symbolIdCodeService', ['config', 'pathService', function (config, pathService) {
+    .factory('symbolIdCodeService', ['$log', 'config', 'pathService', 'SicObject', function ($log, config, pathService, SicObject) {
         var symbolIdCode = {};
         var undef = {"label": "Undefined", digits: "00"};
         var SVG_PATH = config.SVG_PATH;
@@ -146,6 +146,25 @@ angular.module('symbolApp')
             },
             getSymbolIdentificationCode: function () {
                 return computeSymbolIdentificationCode();
+            },
+            initializeFromSymbolIdentificationCode: function (sic) {
+                var sicObj = new SicObject(sic, false);
+                if (sicObj.invalid) {
+                    $log.error('Invalid SIC. Could not initialize symbol');
+                    return;
+                }
+                symbolIdCode.context = sicObj.contextObj;
+                symbolIdCode.standardIdentity = sicObj.standardIdentityObj;
+                symbolIdCode.symbolSet = sicObj.symbolSetObj;
+                symbolIdCode.status = sicObj.statusObj;
+                symbolIdCode.hqtfDummy = sicObj.hqtfdObj;
+                symbolIdCode.amplifier = sicObj.amplifierObj;
+                symbolIdCode.amplifierDescriptor = sicObj.amplifierDescriptorObj;
+                symbolIdCode.entity = sicObj.entityObj;
+                symbolIdCode.entityType = sicObj.entityTypeObj;
+                symbolIdCode.entitySubType = sicObj.entitySubTypeObj;
+                symbolIdCode.sectorOneModifier = sicObj.modifierOneObj;
+                symbolIdCode.sectorTwoModifier = sicObj.modifierTwoObj;
             }
         };
     }])
@@ -154,7 +173,8 @@ angular.module('symbolApp')
         'disableModTwoFilter', 'limitUseToModFilterFilter',
         function ($scope, $log, $stateParams, symbolIdCodeService, disableModOneFilter, disableModTwoFilter, limitUseToModFilterFilter) {
             if ($stateParams.sic) {
-                $log.debug('SIC: ' + $stateParams.sic);
+                symbolIdCodeService.initializeFromSymbolIdentificationCode($stateParams.sic);
+
             }
             $scope.frame = symbolIdCodeService.getFrameFn;
             $scope.main = symbolIdCodeService.getEntityFn;
