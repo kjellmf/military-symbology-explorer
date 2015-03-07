@@ -13,9 +13,9 @@ angular.module('symbolApp')
             this.standardIdentity = sic.substr(3, 1);
             this.symbolSet = sic.substr(4, 2);
             this.status = sic.substr(6, 1);
-            this.hqtfd = sic.substr(7,1);
-            this.amplifier = sic.substr(8,1);
-            this.amplifierDescriptor = sic.substr(9,1);
+            this.hqtfd = sic.substr(7, 1);
+            this.amplifier = sic.substr(8, 1);
+            this.amplifierDescriptor = sic.substr(9, 1);
             this.entity = sic.substr(10, 2);
             this.entityType = sic.substr(12, 2);
             this.entitySubType = sic.substr(14, 2);
@@ -53,9 +53,9 @@ angular.module('symbolApp')
 
 
             // Get main icon
-            var gg = this.entitySubTypeObj || this.entityTypeObj || this.entityObj;
+            var entity = this.entitySubTypeObj || this.entityTypeObj || this.entityObj;
 
-            this.entityFn = pathService.getEntityFilePath(gg, this.symbolSetObj, this.standardIdentityObj.id, this.alternative) || config.BLANK_PATH;
+            this.entityFn = pathService.getEntityFilePath(entity, this.symbolSetObj, this.standardIdentityObj.id, this.alternative) || config.BLANK_PATH;
 
             // Get frame
             if (!this.contextObj) {
@@ -64,7 +64,11 @@ angular.module('symbolApp')
             var contextId = this.contextObj.id,
                 siId = this.standardIdentityObj.id;
 
-            this.frameFn = pathService.getFrameFilePath(contextId, siId, this.symbolSetObj) || config.BLANK_PATH;
+            if (entity.id == 'OWN_SHIP') {
+                this.frameFn = config.BLANK_PATH;
+            } else {
+                this.frameFn = pathService.getFrameFilePath(contextId, siId, this.symbolSetObj) || config.BLANK_PATH;
+            }
             this.statusFn = pathService.getStatusFilePath(siId, this.symbolSetObj, this.statusObj) || config.BLANK_PATH;
             this.hqtfdFn = pathService.getHqtfdFilePath(siId, this.symbolSetObj, this.hqtfdObj) || config.BLANK_PATH;
             this.amplifierFn = pathService.getAmplifierFilePath(siId, this.amplifierDescriptorObj, this.symbolSetObj) || config.BLANK_PATH;

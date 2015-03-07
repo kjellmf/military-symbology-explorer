@@ -84,9 +84,12 @@ angular.module('symbolApp')
                 contextId = 'REALITY',
                 siId = scope.si || "SI_UNKNOWN";
 
-            var gg = scope.entity;
             scope.entityFn = pathService.getEntityFilePath(scope.entity, currentSymbolSet, siId) || config.BLANK_PATH;
-            scope.frameFn = pathService.getFrameFilePath(contextId, siId, currentSymbolSet, null, symbolsetBrowserSettings.settings.useCivilianFrames) || config.BLANK_PATH;
+            if (scope.entity.id == 'OWN_SHIP') {
+                scope.frameFn = config.BLANK_PATH;
+            } else {
+                scope.frameFn = pathService.getFrameFilePath(contextId, siId, currentSymbolSet, null, symbolsetBrowserSettings.settings.useCivilianFrames) || config.BLANK_PATH;
+            }
             element.bind('click', function () {
                 scope.$apply(function () {
                     currentSymbol.symb.entity = scope.entity;

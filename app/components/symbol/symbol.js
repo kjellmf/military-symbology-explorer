@@ -52,11 +52,15 @@ angular.module('symbolApp')
         }
 
         function getEntityFn() {
-            var gg = symbolIdCode.entitySubType || symbolIdCode.entityType || symbolIdCode.entity;
-            return pathService.getEntityFilePath(gg, symbolIdCode.symbolSet, symbolIdCode.standardIdentity.id);
+            var entity = symbolIdCode.entitySubType || symbolIdCode.entityType || symbolIdCode.entity;
+            return pathService.getEntityFilePath(entity, symbolIdCode.symbolSet, symbolIdCode.standardIdentity.id);
         }
 
         function getFrameFn() {
+            var entity = symbolIdCode.entitySubType || symbolIdCode.entityType || symbolIdCode.entity;
+            if (entity.id == 'OWN_SHIP') {
+                return null;
+            }
             var sic = symbolIdCode;
             return pathService.getFrameFilePath(sic.context.id, sic.standardIdentity.id, sic.symbolSet, sic.status, sic.useCivilianFrame);
         }
