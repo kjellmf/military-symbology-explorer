@@ -147,7 +147,7 @@
 
                             <div class="col-sm-8">
                                 <select class="form-control" ng-model="entitySubType"
-                                        ng-options="d as getLabel(d) for d in entityType.entitySubTypes"
+                                        ng-options="d as getLabel(d) for d in getEntitySubTypes()"
                                         ng-change="changeEntitySubType(entitySubType)">
                                     <option value="">00</option>
                                 </select>
@@ -188,6 +188,7 @@
                         <div class="symbol">
                             <div class="milsymb reveal-animation" ng-include="frame()"></div>
                             <div class="milsymb reveal-animation" ng-include="main()"></div>
+                            <div class="milsymb reveal-animation" ng-include="special()"></div>
                             <div class="milsymb reveal-animation" ng-include="modifierOneFn()"></div>
                             <div class="milsymb reveal-animation" ng-include="modifierTwoFn()"></div>
                             <div class="milsymb reveal-animation" ng-include="amplifierFn()"></div>

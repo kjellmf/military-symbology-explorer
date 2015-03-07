@@ -53,7 +53,19 @@ angular.module('symbolApp')
 
         function getEntityFn() {
             var entity = symbolIdCode.entitySubType || symbolIdCode.entityType || symbolIdCode.entity;
+            if (entity.icon == 'SPECIAL') {
+                $log.debug('Special');
+                entity = symbolIdCode.entityType;
+            }
             return pathService.getEntityFilePath(entity, symbolIdCode.symbolSet, symbolIdCode.standardIdentity.id);
+        }
+
+        function getSpecialEntitySubTypeFn() {
+            if (symbolIdCode.entitySubType && symbolIdCode.entitySubType.icon == "SPECIAL") {
+                return pathService.getEntityFilePath(symbolIdCode.entitySubType, symbolIdCode.symbolSet, symbolIdCode.standardIdentity.id);
+            } else {
+                return null;
+            }
         }
 
         function getFrameFn() {
@@ -103,6 +115,7 @@ angular.module('symbolApp')
         return {
             symbId: symbolIdCode,
             getEntityFn: getEntityFn,
+            getSpecialEntitySubTypeFn: getSpecialEntitySubTypeFn,
             getFrameFn: getFrameFn,
             getStatusFn: getStatusFn,
             getHqtfdFn: getHqtfdFn,
@@ -182,6 +195,7 @@ angular.module('symbolApp')
             }
             $scope.frame = symbolIdCodeService.getFrameFn;
             $scope.main = symbolIdCodeService.getEntityFn;
+            $scope.special = symbolIdCodeService.getSpecialEntitySubTypeFn;
             $scope.amplifierFn = symbolIdCodeService.getAmplifilerFn;
             $scope.modifierOneFn = symbolIdCodeService.getModiferOneFn;
             $scope.modifierTwoFn = symbolIdCodeService.getModiferTwoFn;
@@ -293,6 +307,17 @@ angular.module('symbolApp')
                 resetModifiers($scope.currentEntity);
             };
 
+            $scope.getEntitySubTypes = function() {
+                var subtypes = [];
+                if ($scope.entityType) {
+                    if ($scope.currentSymbolSet.specialEntitySubTypes) {
+                        return $scope.entityType.entitySubTypes.concat($scope.currentSymbolSet.specialEntitySubTypes);
+                    }
+                    return $scope.entityType.entitySubTypes;
+                }
+                return null;
+            };
+
 
             $scope.getLabel = function (element) {
                 return element.digits + " " + element.label;
@@ -343,6 +368,7 @@ angular.module('symbolApp')
                 var sources = {
                     frame: $scope.frame(),
                     main: $scope.main(),
+                    special: $scope.special(),
                     modifierOneFn: $scope.modifierOneFn(),
                     modifierTwoFn: $scope.modifierTwoFn(),
                     amplifierFn: $scope.amplifierFn(),
@@ -354,6 +380,7 @@ angular.module('symbolApp')
                 loadImages(sources, function (images) {
                     drawImage(images.frame);
                     drawImage(images.main);
+                    drawImage(images.special);
                     drawImage(images.modifierOneFn);
                     drawImage(images.modifierTwoFn);
                     drawImage(images.amplifierFn);

@@ -38,8 +38,18 @@ angular.module('symbolApp')
 
             if (this.entityType !== '00') {
                 this.entityTypeObj = findSymbolObject(this.entityObj.entityTypes, this.entityType);
-                if (this.entitySubType !== '00' && this.entityTypeObj.entitySubTypes.length > 0) {
-                    this.entitySubTypeObj = findSymbolObject(this.entityTypeObj.entitySubTypes, this.entitySubType);
+                if (this.entitySubType !== '00') {
+                    var subtypes;
+                    if (this.symbolSetObj.specialEntitySubTypes) {
+                        subtypes = this.entityTypeObj.entitySubTypes.concat(this.symbolSetObj.specialEntitySubTypes);
+                    } else {
+                        subtypes = this.entityTypeObj.entitySubTypes;
+                    }
+                    if (subtypes.length > 0) {
+                        this.entitySubTypeObj = findSymbolObject(subtypes, this.entitySubType);
+                    } else {
+                        this.entitySubTypeObj = null;
+                    }
                 } else {
                     this.entitySubTypeObj = null;
                 }
@@ -55,7 +65,15 @@ angular.module('symbolApp')
             // Get main icon
             var entity = this.entitySubTypeObj || this.entityTypeObj || this.entityObj;
 
+            if (entity.icon == 'SPECIAL') {
+                this.specialFn = pathService.getEntityFilePath(entity, this.symbolSetObj, this.standardIdentityObj.id, this.alternative) || config.BLANK_PATH;
+                entity = this.entityTypeObj;
+
+            } else {
+                this.specialFn = config.BLANK_PATH;
+            }
             this.entityFn = pathService.getEntityFilePath(entity, this.symbolSetObj, this.standardIdentityObj.id, this.alternative) || config.BLANK_PATH;
+
 
             // Get frame
             if (!this.contextObj) {
@@ -91,6 +109,7 @@ angular.module('symbolApp')
         function link(scope, element, attrs) {
             var sicObj = processSIC(scope.sic, scope.alternative);
             scope.entityFn = sicObj.entityFn;
+            scope.specialFn = sicObj.specialFn;
             scope.frameFn = sicObj.frameFn;
             scope.statusFn = sicObj.statusFn;
             scope.amplifierFn = sicObj.amplifierFn;
@@ -108,7 +127,7 @@ angular.module('symbolApp')
                 if (attrs.noFrame) {
                     return '<div class="milsymbol"><img class="symbol-sm" ng-src="{{entityFn}}"/></div>'
                 }
-                return '<div class="milsymbol"><img class="symbol-sm" ng-src="{{frameFn}}"/><img class="symbol-sm" ng-src="{{entityFn}}"/><img class="symbol-sm" ng-src="{{statusFn}}"/><img class="symbol-sm" ng-src="{{amplifierFn}}"/><img class="symbol-sm" ng-src="{{modifierOneFn}}"/><img class="symbol-sm" ng-src="{{modifierTwoFn}}"/> </div>';
+                return '<div class="milsymbol"><img class="symbol-sm" ng-src="{{frameFn}}"/><img class="symbol-sm" ng-src="{{entityFn}}"/><img class="symbol-sm" ng-src="{{specialFn}}"/><img class="symbol-sm" ng-src="{{statusFn}}"/><img class="symbol-sm" ng-src="{{amplifierFn}}"/><img class="symbol-sm" ng-src="{{modifierOneFn}}"/><img class="symbol-sm" ng-src="{{modifierTwoFn}}"/> </div>';
             },
             link: link
 
