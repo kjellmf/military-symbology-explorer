@@ -79,7 +79,11 @@
     </thead>
     <tbody>
     <tr ng-repeat="modone in currentSymbolSet.sectorOneModifiers | limitUseToFilter:isEnabled">
-        <td title="{{modone.limitUseTo}}">{{modone.label}}</td>
+        <td title="{{modone.limitUseTo}}">{{modone.label}}
+         <div ng-show="settings.showDebugInfo">
+                <small><strong>ID</strong> <code>{{modone.id}}</code><br>
+                <strong>LimitUseTo</strong> <code>{{modone.limitUseTo}}</code></small>
+            </div></td>
         <td>{{modone.category}}</td>
         <td>
             <symbsetmod1></symbsetmod1>
@@ -104,7 +108,11 @@
     </thead>
     <tbody>
     <tr ng-repeat="modtwo in currentSymbolSet.sectorTwoModifiers | limitUseToFilter:isEnabled">
-        <td title="{{modtwo.limitUseTo}}">{{modtwo.label}}</td>
+        <td title="{{modtwo.limitUseTo}}">{{modtwo.label}}
+        <div ng-show="settings.showDebugInfo">
+                <small><strong>ID</strong> <code>{{modtwo.id}}</code><br>
+                <strong>LimitUseTo</strong> <code>{{modtwo.limitUseTo}}</code></small>
+            </div></td>
         <td>{{modtwo.category}}</td>
         <td>
             <symbsetmod2></symbsetmod2>
