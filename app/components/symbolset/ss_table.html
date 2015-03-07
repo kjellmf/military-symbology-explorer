@@ -64,6 +64,41 @@
     </tbody>
 </table>
 
+<div ng-if="currentSymbolSet.specialEntitySubTypes">
+    <h2 id="specialsubtypes">Special entity subtypes</h2>
+
+    <p>Some entity type land unit icons may use the entity subtypes listed below:</p>
+    <table class="table table-bordered table-striped table-hover">
+    <thead>
+    <tr>
+        <th class="col-md-1">Entity</th>
+        <th class="col-md-2">Entity type</th>
+        <th class="col-md-2">Entity subtype</th>
+        <th class="col-md-4" colspan="4">Symbols</th>
+        <th class="col-md-1">Digits</th>
+        <th class="col-md-2">Remarks</th>
+    </tr>
+
+    </thead>
+    <tbody>
+
+    <tr ng-repeat="entitySubType in currentSymbolSet.specialEntitySubTypes">
+        <td></td>
+        <td></td>
+        <td>{{entitySubType.label}}</td>
+        <td><symbsetsymb entity="entitySubType" si="SI_UNKNOWN"></symbsetsymb></td>
+        <td><symbsetsymb entity="entitySubType" si="SI_FRIEND"></symbsetsymb></td>
+        <td><symbsetsymb entity="entitySubType" si="SI_NEUTRAL"></symbsetsymb></td>
+        <td><symbsetsymb entity="entitySubType" si="SI_HOSTILE_FAKER"></symbsetsymb></td>
+        <td>xxxx<b>{{entitySubType.digits}}</b></td>
+        <td>{{entitySubType.remarks}}</td>
+    </tr>
+    </tbody>
+</table>
+
+
+</div>
+
 <h2 id="modifierone">Modifier one</h2>
 
 
