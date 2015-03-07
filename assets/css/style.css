@@ -101,13 +101,16 @@ object, .milsymb {
 
 }
 
+.sidebar-milsymbol {
+    margin: 10px 0px 20px 20px ;
+}
+
 .milsymbol {
     width: 73px;
     height: 60px;
     /*border: 1px solid lightgray;*/
     float:left;
-    /*z-index: 10;*/
-     /*position: absolute;*/
+
 }
 
 /*.control-measure {*/
