@@ -5,7 +5,7 @@ An experimental [MIL-STD-2525D](http://www.assistdocs.com/search/document_detail
 symbology explorer based on the [Joint Military Symbology Markup Language (JMSML)](https://github.com/Esri/joint-military-symbology-xml) 
 project.
 
-See the explorer in action at [http://kjellmf.github.io/military-symbology-explorer/](http://kjellmf.github.io/military-symbology-explorer/).
+See the explorer in action at [http://explorer.milsymb.net/](http://explorer.milsymb.net/).
 
 How it works
 ------------
