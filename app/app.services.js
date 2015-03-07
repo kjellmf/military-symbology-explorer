@@ -5,7 +5,7 @@ angular.module('symbolApp')
             var fn = "";
 
             if (entity) {
-                if (entity.icon === 'FULL_FRAME') {
+                if (entity.icon === 'FULL_FRAME' || entity.icon === 'SPECIAL') {
                     fn = entity[standardIdentityMap2[standardIdentityId]];
                 } else {
                     if (alternative) {

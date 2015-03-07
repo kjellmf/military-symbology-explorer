@@ -6,6 +6,7 @@ angular.module('symbolApp')
                 templateUrl: 'app/components/symbolset/symbolset.html',
                 controller: 'SymbolSetBrowserCtrl'
             })
+            .state('symbolSet.specialsubtypes', {url: "#specialsubtypes"})
             .state('symbolSet.symboltable', {url: "#symboltable"})
             .state('symbolSet.modifierone', {url: "#modifierone"})
             .state('symbolSet.modifiertwo', {url: "#modifiertwo"})
