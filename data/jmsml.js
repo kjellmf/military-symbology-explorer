@@ -3219,6 +3219,48 @@ var symbolData={
           ]
         }
       ], 
+      "specialEntitySubTypes": [
+        {
+          "digits": "95", 
+          "label": "Headquarters Element", 
+          "id": "HQ_ELEMENT", 
+          "cloverGraphic": "10xxxx95_0.svg", 
+          "diamondGraphic": "10xxxx95_3.svg", 
+          "rectangleGraphic": "10xxxx95_1.svg", 
+          "squareGraphic": "10xxxx95_2.svg", 
+          "icon": "SPECIAL"
+        }, 
+        {
+          "digits": "96", 
+          "label": "Division and Below Support", 
+          "id": "DIVISION_AND_BELOW_SUPPORT", 
+          "cloverGraphic": "10xxxx96_0.svg", 
+          "diamondGraphic": "10xxxx96_3.svg", 
+          "rectangleGraphic": "10xxxx96_1.svg", 
+          "squareGraphic": "10xxxx96_2.svg", 
+          "icon": "SPECIAL"
+        }, 
+        {
+          "digits": "97", 
+          "label": "Corps Support", 
+          "id": "CORPS_SUPPORT", 
+          "cloverGraphic": "10xxxx97_0.svg", 
+          "diamondGraphic": "10xxxx97_3.svg", 
+          "rectangleGraphic": "10xxxx97_1.svg", 
+          "squareGraphic": "10xxxx97_2.svg", 
+          "icon": "SPECIAL"
+        }, 
+        {
+          "digits": "98", 
+          "label": "Theater/Echelons Above Corps Support", 
+          "id": "ECHELONS_ABOVE_CORPS_SUPPORT", 
+          "cloverGraphic": "10xxxx98_0.svg", 
+          "diamondGraphic": "10xxxx98_3.svg", 
+          "rectangleGraphic": "10xxxx98_1.svg", 
+          "squareGraphic": "10xxxx98_2.svg", 
+          "icon": "SPECIAL"
+        }
+      ], 
       "sectorOneModifiers": [
         {
           "digits": "01", 

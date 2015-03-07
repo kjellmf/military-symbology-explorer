@@ -104,7 +104,7 @@ def extract_element_data(element, tag_name="EntityCode"):
     element_dict = create_element_dict(digits, ss_id, ss_label)
     if 'Graphic' in element.attrib:
         element_dict['graphic'] = element.get('Graphic')
-    elif element.get('Icon', '') == "FULL_FRAME":
+    elif element.get('Icon', '') in  ["FULL_FRAME", 'SPECIAL']:
         element_dict['cloverGraphic'] = element.get('CloverGraphic')
         element_dict['diamondGraphic'] = element.get('DiamondGraphic')
         element_dict['rectangleGraphic'] = element.get('RectangleGraphic')
@@ -155,7 +155,7 @@ def extract_amplifier(tree, folder_name):
         name = element.get('Name')
         digits = element.find(ns_tag("AmplifierCode")).text
         if 'Extension' in label:
-                continue
+            continue
         status_data = OrderedDict()
         status_data['digits'] = digits
         status_data['label'] = label
@@ -216,6 +216,15 @@ def extract_symbol_set_instance(instance_file_name):
         entity_data["entityTypes"] = entity_types
         entities.append(entity_data)
 
+    # SpecialEntitySubTypes
+    special_entity_sub_types_element = tree.find(ns_tag("SpecialEntitySubTypes"))
+    special_entity_sub_types = []
+    if special_entity_sub_types_element is not None:
+        for entity_sub_type_element in special_entity_sub_types_element.iter(ns_tag("EntitySubType")):
+            entity_sub_type_data = extract_element_data(entity_sub_type_element, "EntitySubTypeCode")
+            special_entity_sub_types.append(entity_sub_type_data)
+
+
     # sector one modifier
     sector_one_modifiers_element = tree.find(ns_tag("SectorOneModifiers"))
     sector_one_modifiers = []
@@ -233,6 +242,8 @@ def extract_symbol_set_instance(instance_file_name):
             sector_two_modifiers.append(modifier_two_data)
 
     symbol_set_data["entities"] = sorted(entities, key=lambda x: x['digits'])
+    if special_entity_sub_types:
+        symbol_set_data["specialEntitySubTypes"] = sorted(special_entity_sub_types, key=lambda x: x['digits'])
     symbol_set_data["sectorOneModifiers"] = sector_one_modifiers
     symbol_set_data["sectorTwoModifiers"] = sector_two_modifiers
     return symbol_set_data
@@ -240,7 +251,8 @@ def extract_symbol_set_instance(instance_file_name):
 
 def extract_symbol_sets(tree):
     symbol_set_ref = tree.findall('.//%s%s' % (NAMESPACE, "SymbolSetRef"))
-    symbol_set_instances = set([element.get('Instance') for element in symbol_set_ref if element.get('Label','') != "Internal"])
+    symbol_set_instances = set(
+        [element.get('Instance') for element in symbol_set_ref if element.get('Label', '') != "Internal"])
     symbol_sets = [extract_symbol_set_instance(fn) for fn in symbol_set_instances]
     return sorted(symbol_sets, key=lambda x: x['digits'])
 
@@ -275,7 +287,7 @@ def extract_affiliations(tree, frame_folders):
     return affiliations
 
 
-def extract_dimensions(tree,):
+def extract_dimensions(tree, ):
     dimensions = []
     for dimension_element in tree.iter(ns_tag("Dimension")):
         dimension_id = dimension_element.get('ID')
@@ -290,6 +302,7 @@ def extract_dimensions(tree,):
         dimensions.append(dimension_data)
 
     return dimensions
+
 
 def extract_standard_identity_groups(tree):
     sigs = {}
@@ -327,7 +340,7 @@ def extract_status_or_hqtfd(tree, element_name, folder_name):
         name = element.get('Name')
         digits = element.find(ns_tag("%sCode" % element_name)).text
         if 'Extension' in label:
-                continue
+            continue
         status_data = OrderedDict()
         status_data['digits'] = digits
         status_data['id'] = name
@@ -353,7 +366,7 @@ def extract_jmsml_data(frame_folders, oca_folder, hqtffd_folder, echelon_folder,
     tree = ET.parse(BASE_FILE)
     symbol_data = OrderedDict()
     symbol_data['contexts'] = extract_single_code_data(tree, "Context")
-    sig, si2sig =  extract_standard_identity_groups(tree)
+    sig, si2sig = extract_standard_identity_groups(tree)
     symbol_data['standardIdentities'] = extract_standard_identities(tree)
     symbol_data['symbolSets'] = extract_symbol_sets(tree)
     symbol_data['statuses'] = extract_status_or_hqtfd(tree, "Status", oca_folder)
