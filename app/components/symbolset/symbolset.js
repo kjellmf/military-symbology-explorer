@@ -107,7 +107,10 @@ angular.module('symbolApp')
                 si: '@'
             },
             template: function (element, attrs) {
-                return '<div class="milsymbol"><img class="symbol-sm" ng-src="{{frameFn}}"/><img class="symbol-sm" ng-src="{{entityFn}}"/></div>';
+                return '<div class="milsymbol">'
+                    + '<img class="symbol-sm" ng-src="{{frameFn}}">'
+                    + '<img class="symbol-sm" ng-src="{{entityFn}}">'
+                    + '</div>';
             },
             link: link
         };
@@ -125,7 +128,10 @@ angular.module('symbolApp')
         return {
             restrict: 'E',
             template: function (element, attrs) {
-                return '<div class="milsymbol symbol-smm"><img ng-src="{{currentBoundingOctagon}}"><img class="symbol-sm" ng-src="{{modonepath+modone.graphic}}"></div>';
+                return '<div class="milsymbol symbol-smm">'
+                    + '<img ng-src="{{currentBoundingOctagon}}">'
+                    + '<img class="symbol-sm" ng-src="{{modonepath+modone.graphic}}">'
+                    + '</div>';
             },
             link: link
         };
@@ -143,7 +149,10 @@ angular.module('symbolApp')
         return {
             restrict: 'E',
             template: function (element, attrs) {
-                return '<div class="milsymbol symbol-smm"><img ng-src="{{currentBoundingOctagon}}"><img class="symbol-sm" ng-src="{{modtwopath+modtwo.graphic}}"></div>';
+                return '<div class="milsymbol symbol-smm">'
+                    + '<img ng-src="{{currentBoundingOctagon}}">'
+                    + '<img class="symbol-sm" ng-src="{{modtwopath+modtwo.graphic}}">'
+                    + '</div>';
             },
             link: link
         };

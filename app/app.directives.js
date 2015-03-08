@@ -125,9 +125,17 @@ angular.module('symbolApp')
             },
             template: function (element, attrs) {
                 if (attrs.noFrame) {
-                    return '<div class="milsymbol"><img class="symbol-sm" ng-src="{{entityFn}}"/></div>'
+                    return '<div class="milsymbol"><img class="symbol-sm" ng-src="{{entityFn}}"/></div>';
                 }
-                return '<div class="milsymbol"><img class="symbol-sm" ng-src="{{frameFn}}"/><img class="symbol-sm" ng-src="{{entityFn}}"/><img class="symbol-sm" ng-src="{{specialFn}}"/><img class="symbol-sm" ng-src="{{statusFn}}"/><img class="symbol-sm" ng-src="{{amplifierFn}}"/><img class="symbol-sm" ng-src="{{modifierOneFn}}"/><img class="symbol-sm" ng-src="{{modifierTwoFn}}"/> </div>';
+                return '<div class="milsymbol">'
+                    + '<img class="symbol-sm" ng-src="{{frameFn}}">'
+                    + '<img class="symbol-sm" ng-src="{{entityFn}}">'
+                    + '<img class="symbol-sm" ng-src="{{specialFn}}">'
+                    + '<img class="symbol-sm" ng-src="{{statusFn}}">'
+                    + '<img class="symbol-sm" ng-src="{{amplifierFn}}">'
+                    + '<img class="symbol-sm" ng-src="{{modifierOneFn}}">'
+                    + '<img class="symbol-sm" ng-src="{{modifierTwoFn}}">'
+                    + '</div>';
             },
             link: link
 
