@@ -111,6 +111,7 @@ angular.module('symbolApp')
             scope.entityFn = sicObj.entityFn;
             scope.specialFn = sicObj.specialFn;
             scope.frameFn = sicObj.frameFn;
+            scope.hqtfdFn = sicObj.hqtfdFn;
             scope.statusFn = sicObj.statusFn;
             scope.amplifierFn = sicObj.amplifierFn;
             scope.modifierOneFn = sicObj.modifierOneFn;
@@ -131,6 +132,7 @@ angular.module('symbolApp')
                     + '<img class="symbol-sm" ng-src="{{frameFn}}">'
                     + '<img class="symbol-sm" ng-src="{{entityFn}}">'
                     + '<img class="symbol-sm" ng-src="{{specialFn}}">'
+                    + '<img class="symbol-sm" ng-src="{{hqtfdFn}}">'
                     + '<img class="symbol-sm" ng-src="{{statusFn}}">'
                     + '<img class="symbol-sm" ng-src="{{amplifierFn}}">'
                     + '<img class="symbol-sm" ng-src="{{modifierOneFn}}">'
