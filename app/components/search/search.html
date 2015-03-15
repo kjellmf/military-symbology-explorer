@@ -1,0 +1,35 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2 col-md-2 sidebar">
+
+
+        </div>
+        <div class="col-sm-10 col-sm-offset-2 col-md-10 col-md-offset-2 main">
+            <h1 class="page-header">Search</h1>
+
+            <div ng-controller="SearchController">
+                <form name="userForm">
+                    Name:
+                    <input type="text" name="userName"
+                           ng-model="searchString"
+                           ng-model-options="{ debounce: 100 }"/>
+
+                    <br/>
+                </form>
+                <pre>searchString = <span ng-bind="searchString"></span></pre>
+
+                <ul>
+                    <li ng-repeat="item in searchResults">
+                        {{item.id}} - {{item.label}}
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
