@@ -15,19 +15,24 @@
                            ng-model-options="{ debounce: 100 }"/>
                 </form>
 
-                <div class="list-group">
-                    <a ng-repeat="item in searchResults" class="list-group-item" href="#">
-                        <b class="list-group-item-heading">{{item.entity.label}}</b>
+                <table class="table table-condensed table-bordered">
+                    <tr ng-repeat="item in searchResults">
+                        <td>
+                            <searchsymb symbol-set="item.symbolSet" entity="item.currentEntity"
+                                        si="SI_FRIEND"></searchsymb>
+                        </td>
+                        <td><b class="list-group-item-heading">{{item.currentEntity.label}}</b><br>{{item.symbolSet.label}}
+                            / {{ item.entity.label}} / {{
+                            item.entityType.label}} / {{ item.entitySubType.label }}
+                        </td>
+                    </tr>
+                </table>
 
-                        <p class="list-group-item-text">{{item.symbolset.label}}
-                        </p>
-
-                    </a>
-                </div>
             </div>
-
         </div>
+
     </div>
+</div>
 </div>
 
 

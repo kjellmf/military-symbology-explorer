@@ -105,6 +105,15 @@ object, .milsymb {
     margin: 10px 0px 20px 20px ;
 }
 
+
+.searchsymbol {
+
+    width: 73px;
+    height: 60px;
+    /*float:left;*/
+
+}
+
 .milsymbol {
     width: 73px;
     height: 60px;

@@ -8,23 +8,37 @@ angular.module('symbolApp')
             }
             $log.debug('searchSymbols ' + searchString);
             var results = [];
-            var ss = symbolIdCodeService.symbId.symbolSet;
+            var symbolSet = symbolIdCodeService.symbId.symbolSet;
+            var entity = null;
+            var entityType = null;
+            var entitySubType = null;
             var reg = new RegExp(searchString, 'i');
 
             function searchElement(element) {
                 if (reg.test(element.label)) {
-                    results.push({entity: element, symbolset: ss});
+                    results.push({
+                        currentEntity: element,
+                        symbolSet: symbolSet,
+                        entity: entity,
+                        entityType: entityType,
+                        entitySubType: entitySubType
+                    });
                 }
             }
 
             for (a = 0; a < symbolData.symbolSets.length; a += 1) {
-                ss = symbolData.symbolSets[a];
+                symbolSet = symbolData.symbolSets[a];
+                entity = null;
+                entityType = null;
+                entitySubType = null;
 
-                for (i = 0; i < ss.entities.length; i += 1) {
-                    var el = ss.entities[i];
-                    searchElement(el);
-                    for (j = 0; j < el.entityTypes.length; j += 1) {
-                        var entityType = el.entityTypes[j];
+                for (i = 0; i < symbolSet.entities.length; i += 1) {
+                    entity = symbolSet.entities[i];
+                    entityType = null;
+                    searchElement(entity);
+                    for (j = 0; j < entity.entityTypes.length; j += 1) {
+                        entityType = entity.entityTypes[j];
+                        entitySubType = null;
                         searchElement(entityType);
                         for (k = 0; k < entityType.entitySubTypes.length; k += 1) {
                             var entitySubType = entityType.entitySubTypes[k];
@@ -51,4 +65,46 @@ angular.module('symbolApp')
         });
 
 
-    }]);
+    }])
+    .directive('searchsymb', ['$log', 'config', 'pathService', 'currentSymbol', 'symbolsetBrowserSettings', function ($log, config, pathService, currentSymbol, symbolsetBrowserSettings) {
+
+        function link(scope, element, attrs) {
+            scope.entityFn = "";
+            var currentSymbolSet = scope.symbolSet;
+            var dimensionId = currentSymbolSet.dimensionId,
+                contextId = 'REALITY',
+                siId = scope.si || "SI_UNKNOWN";
+
+            scope.entityFn = pathService.getEntityFilePath(scope.entity, currentSymbolSet, siId) || config.BLANK_PATH;
+            if (scope.entity.id == 'OWN_SHIP') {
+                scope.frameFn = config.BLANK_PATH;
+            } else {
+                scope.frameFn = pathService.getFrameFilePath(contextId, siId, currentSymbolSet, null, symbolsetBrowserSettings.settings.useCivilianFrames) || config.BLANK_PATH;
+            }
+            element.bind('click', function () {
+                scope.$apply(function () {
+                    currentSymbol.symb.entity = scope.entity;
+                    currentSymbol.symb.entityFn = scope.entityFn;
+                    currentSymbol.symb.frameFn = scope.frameFn;
+                });
+            })
+        }
+
+        return {
+            restrict: 'E',
+            scope: {
+                entity: '=',
+                symbolSet: '=',
+                si: '@'
+            },
+            template: function (element, attrs) {
+                return '<div class="searchsymbol">'
+                    + '<img class="symbol-sm" ng-src="{{frameFn}}">'
+                    + '<img class="symbol-sm" ng-src="{{entityFn}}">'
+                    + '</div>';
+            },
+            link: link
+        };
+    }])
+
+;
