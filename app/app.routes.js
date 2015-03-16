@@ -13,13 +13,14 @@ angular.module('symbolApp')
                 url: '/frames',
                 templateUrl: 'app/components/frames/frames.html'
             })
+            .state('frames.reality', {url: "#reality"})
+            .state('frames.exercise', {url: "#exercise"})
+            .state('frames.simulation', {url: "#simulation"})
+
             .state('search', {
                 url: '/search',
                 templateUrl: 'app/components/search/search.html'
             })
-            .state('frames.reality', {url: "#reality"})
-            .state('frames.exercise', {url: "#exercise"})
-            .state('frames.simulation', {url: "#simulation"})
 
             // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
             .state('about', {

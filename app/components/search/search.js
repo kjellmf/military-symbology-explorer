@@ -16,32 +16,39 @@ angular.module('symbolApp')
 
             function searchElement(element) {
                 if (reg.test(element.label)) {
+
+                    var entitySic = entity ? entity.digits : "00";
+                    var entityTypeSic = entityType ? entityType.digits : "00";
+                    var entitySubTypeSic = entitySubType ? entitySubType.digits : "00";
+                    var sic = "1003" + symbolSet.digits + "0000" + entitySic
+                        + entityTypeSic + entitySubTypeSic + "0000";
                     results.push({
                         currentEntity: element,
                         symbolSet: symbolSet,
                         entity: entity,
                         entityType: entityType,
-                        entitySubType: entitySubType
+                        entitySubType: entitySubType,
+                        sic:sic
                     });
                 }
             }
 
-            for (a = 0; a < symbolData.symbolSets.length; a += 1) {
+            for (var a = 0; a < symbolData.symbolSets.length; a += 1) {
                 symbolSet = symbolData.symbolSets[a];
                 entity = null;
                 entityType = null;
                 entitySubType = null;
 
-                for (i = 0; i < symbolSet.entities.length; i += 1) {
+                for (var i = 0; i < symbolSet.entities.length; i += 1) {
                     entity = symbolSet.entities[i];
                     entityType = null;
                     searchElement(entity);
-                    for (j = 0; j < entity.entityTypes.length; j += 1) {
+                    for (var j = 0; j < entity.entityTypes.length; j += 1) {
                         entityType = entity.entityTypes[j];
                         entitySubType = null;
                         searchElement(entityType);
-                        for (k = 0; k < entityType.entitySubTypes.length; k += 1) {
-                            var entitySubType = entityType.entitySubTypes[k];
+                        for (var k = 0; k < entityType.entitySubTypes.length; k += 1) {
+                            entitySubType = entityType.entitySubTypes[k];
                             searchElement(entitySubType);
 
                         }

@@ -21,9 +21,9 @@
                             <searchsymb symbol-set="item.symbolSet" entity="item.currentEntity"
                                         si="SI_FRIEND"></searchsymb>
                         </td>
-                        <td><b class="list-group-item-heading">{{item.currentEntity.label}}</b><br>{{item.symbolSet.label}}
+                        <td><a class="list-group-item" ui-sref="explore({sic:item.sic})"><b class="list-group-item-heading">{{item.currentEntity.label}}</b><br>{{item.symbolSet.label}}
                             / {{ item.entity.label}} / {{
-                            item.entityType.label}} / {{ item.entitySubType.label }}
+                            item.entityType.label}} / {{ item.entitySubType.label }}</a>
                         </td>
                     </tr>
                 </table>
