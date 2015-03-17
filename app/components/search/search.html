@@ -12,7 +12,8 @@
                     <input type="text"
                            class="form-control" placeholder="Search"
                            ng-model="searchString"
-                           ng-model-options="{ debounce: 100 }"/>
+                           ng-model-options="{ debounce: 350 }"/>
+                    <span class="help-block">Minimum search term length is three characters</span>
                 </form>
 
                 <table class="table table-condensed table-bordered">
