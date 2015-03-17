@@ -65,8 +65,9 @@ angular.module('symbolApp')
         $scope.searchString = "infan";
         $scope.$watch('searchString', function (newValue, oldValue) {
             $log.debug('Changed value from ' + oldValue + ' to ' + newValue);
-            if (newValue.trim()) {
-                searchSymbols(newValue);
+            var searchString = newValue.trim();
+            if (searchString && searchString.length > 2) {
+                searchSymbols(searchString);
             }
 
         });
