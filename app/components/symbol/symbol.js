@@ -215,6 +215,7 @@ angular.module('symbolApp')
             $scope.entityType = symbolIdCodeService.symbId.entityType;
             $scope.entitySubType = symbolIdCodeService.symbId.entitySubType;
             $scope.sectorOneModifier = symbolIdCodeService.symbId.sectorOneModifier;
+            $scope.sectorTwoModifier = symbolIdCodeService.symbId.sectorTwoModifier;
             $scope.alternateAmplifiers = symbolIdCodeService.getAlternateAmplifiers();
             $scope.limitUseTo = true;
             $scope.currentEntity = $scope.entitySubType || $scope.entityType || $scope.entity;
