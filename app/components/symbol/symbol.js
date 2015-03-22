@@ -53,7 +53,7 @@ angular.module('symbolApp')
 
         function getEntityFn() {
             var entity = symbolIdCode.entitySubType || symbolIdCode.entityType || symbolIdCode.entity;
-            if (entity.icon == 'SPECIAL') {
+            if (entity && entity.icon == 'SPECIAL') {
                 $log.debug('Special');
                 entity = symbolIdCode.entityType;
             }
@@ -70,7 +70,7 @@ angular.module('symbolApp')
 
         function getFrameFn() {
             var entity = symbolIdCode.entitySubType || symbolIdCode.entityType || symbolIdCode.entity;
-            if (entity.id == 'OWN_SHIP') {
+            if (entity && entity.id == 'OWN_SHIP') {
                 return null;
             }
             var sic = symbolIdCode;
@@ -435,6 +435,8 @@ angular.module('symbolApp')
 
     .filter('disableModOne', function () {
         return function (entity) {
+            if (!entity)
+                return false;
             switch (entity.icon) {
                 case "FULL_OCTAGON":
                 case "MAIN_1":
@@ -448,6 +450,8 @@ angular.module('symbolApp')
 
     .filter('disableModTwo', function () {
         return function (entity) {
+            if (!entity)
+                return false
             switch (entity.icon) {
                 case "FULL_OCTAGON":
                 case "MAIN_2":

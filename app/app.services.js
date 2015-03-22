@@ -105,6 +105,15 @@ angular.module('symbolApp')
             return fn ? config.SVG_PATH + symbolSetObj.graphicFolder["modifierTwos"] + "/" + fn  : null;
         }
 
+        function getBoundingOctagonFn(symbolSetObj) {
+            if (symbolSetObj.id == "SS_AIR_MISSILE" || symbolSetObj.id == "SS_SPACE_MISSILE") {
+                return "assets/img/BoundingOctagonVertical.svg";
+            } else {
+                return "assets/img/BoundingOctagonHorizontal.svg";
+            }
+
+        }
+
         return {
             getEntityFilePath: getEntityFn,
             getFrameFilePath: getFrameFn,
@@ -112,7 +121,8 @@ angular.module('symbolApp')
             getHqtfdFilePath: getHqtfdFn,
             getAmplifierFilePath: getAmplifierFn,
             getModifierOneFilePath: getModifierOneFn,
-            getModifierTwoFilePath: getModifierTwoFn
+            getModifierTwoFilePath: getModifierTwoFn,
+            getBoundingOctagonFilePath: getBoundingOctagonFn
         }
     }]);
 

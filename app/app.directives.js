@@ -65,7 +65,7 @@ angular.module('symbolApp')
             // Get main icon
             var entity = this.entitySubTypeObj || this.entityTypeObj || this.entityObj;
 
-            if (entity.icon == 'SPECIAL') {
+            if (entity && entity.icon == 'SPECIAL') {
                 this.specialFn = pathService.getEntityFilePath(entity, this.symbolSetObj, this.standardIdentityObj.id, this.alternative) || config.BLANK_PATH;
                 entity = this.entityTypeObj;
 
@@ -82,7 +82,7 @@ angular.module('symbolApp')
             var contextId = this.contextObj.id,
                 siId = this.standardIdentityObj.id;
 
-            if (entity.id == 'OWN_SHIP') {
+            if (entity && entity.id == 'OWN_SHIP') {
                 this.frameFn = config.BLANK_PATH;
             } else {
                 this.frameFn = pathService.getFrameFilePath(contextId, siId, this.symbolSetObj) || config.BLANK_PATH;

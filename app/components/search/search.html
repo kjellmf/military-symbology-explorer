@@ -15,19 +15,37 @@
                            ng-model-options="{ debounce: 350 }"/>
                     <span class="help-block">Minimum search term length is three characters</span>
                 </form>
-
-                <table class="table table-condensed table-bordered">
-                    <tr ng-repeat="item in searchResults">
-                        <td>
-                            <searchsymb symbol-set="item.symbolSet" entity="item.currentEntity"
-                                        si="SI_FRIEND"></searchsymb>
-                        </td>
-                        <td><a class="list-group-item" ui-sref="explore({sic:item.sic})"><b class="list-group-item-heading">{{item.currentEntity.label}}</b><br>{{item.symbolSet.label}}
-                            / {{ item.entity.label}} / {{
-                            item.entityType.label}} / {{ item.entitySubType.label }}</a>
-                        </td>
-                    </tr>
-                </table>
+                <div class="row">
+                    <div class="col-md-7">
+                        <table class="table table-condensed table-bordered">
+                            <tr ng-repeat="item in searchResults">
+                                <td>
+                                    <searchsymb symbol-set="item.symbolSet" entity="item.currentEntity"
+                                                si="SI_FRIEND"></searchsymb>
+                                </td>
+                                <td><a class="list-group-item" ui-sref="explore({sic:item.sic})"><b
+                                        class="list-group-item-heading">{{item.currentEntity.label}}</b><br>{{item.symbolSet.label}}
+                                    / {{ item.entity.label}} / {{
+                                    item.entityType.label}} / {{ item.entitySubType.label }}</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-5">
+                        <table class="table table-condensed table-bordered">
+                            <tr ng-repeat="item in searchResultsModifiers">
+                                <td>
+                                    <searchmod modifier-data="item"></searchmod>
+                                </td>
+                                <td><a class="list-group-item" ui-sref="explore({sic:item.sic})"><b
+                                        class="list-group-item-heading">{{item.modifier.label}}</b><br>
+                                    {{item.symbolSet.label}} / {{item.modifier.category}}
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
 
             </div>
         </div>
