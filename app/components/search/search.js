@@ -1,5 +1,15 @@
 angular.module('symbolApp')
-    .controller('SearchController', ['$scope', '$log', 'symbolIdCodeService', function ($scope, $log, symbolIdCodeService) {
+
+    .factory('searchSettings', ['$log', function($log) {
+        settings = {
+            searchString:  'mech'
+        };
+        return {
+            settings: settings
+        };
+    }])
+
+    .controller('SearchController', ['$scope', '$log', 'symbolIdCodeService', 'searchSettings', function ($scope, $log, symbolIdCodeService, searchSettings) {
         $scope.searchResults = [];
 
         var searchSymbols = function (searchString) {
@@ -60,14 +70,15 @@ angular.module('symbolApp')
             $scope.searchResults = results;
 
 
+
         };
 
-        $scope.searchString = "infan";
-        $scope.$watch('searchString', function (newValue, oldValue) {
+        $scope.settings = searchSettings.settings
+        $scope.$watch('settings.searchString', function (newValue, oldValue) {
             $log.debug('Changed value from ' + oldValue + ' to ' + newValue);
-            var searchString = newValue.trim();
-            if (searchString && searchString.length > 2) {
-                searchSymbols(searchString);
+            var trimmedSearchString = newValue.trim();
+            if (trimmedSearchString && trimmedSearchString.length > 2) {
+                searchSymbols(trimmedSearchString);
             }
 
         });
