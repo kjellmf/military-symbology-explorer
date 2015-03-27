@@ -10,6 +10,8 @@
             <div ng-controller="SearchController">
                 <form class="form">
                     <input type="text"
+                           autofocus
+                           accesskey="s"
                            class="form-control" placeholder="Search"
                            ng-model="settings.searchString"
                            ng-model-options="{ debounce: 350 }"/>

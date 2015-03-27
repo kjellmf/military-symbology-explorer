@@ -16,7 +16,6 @@ angular.module('symbolApp')
             if (!searchString.trim()) {
                 return
             }
-            $log.debug('searchSymbols ' + searchString);
             var results = [];
             var symbolSet = symbolIdCodeService.symbId.symbolSet;
             var entity = null;
