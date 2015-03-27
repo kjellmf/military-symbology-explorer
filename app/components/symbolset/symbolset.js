@@ -36,44 +36,57 @@ angular.module('symbolApp')
         };
     }])
 
-    .controller('SymbolSetBrowserCtrl', ['$scope', '$stateParams', '$log', 'symbolIdCodeService', 'config', 'symbolsetBrowserSettings', function ($scope, $stateParams, $log, symbolIdCodeService, config, symbolsetBrowserSettings) {
-        if ($stateParams.symbolSetId) {
-            var tmp = findWithAttr(symbolData.symbolSets, 'id', $stateParams.symbolSetId);
-            if (tmp) {
-                $scope.currentSymbolSet = tmp;
+    .controller('SymbolSetBrowserCtrl', ['$scope', '$stateParams', '$log', '$timeout',
+        'symbolIdCodeService', 'config', 'symbolsetBrowserSettings',
+        function ($scope, $stateParams, $log, $timeout, symbolIdCodeService, config, symbolsetBrowserSettings) {
+            if ($stateParams.symbolSetId) {
+                var tmp = findWithAttr(symbolData.symbolSets, 'id', $stateParams.symbolSetId);
+                if (tmp) {
+                    $scope.currentSymbolSet = tmp;
+                } else {
+                    $scope.currentSymbolSet = symbolIdCodeService.symbId.symbolSet;
+                }
             } else {
                 $scope.currentSymbolSet = symbolIdCodeService.symbId.symbolSet;
             }
-        } else {
-            $scope.currentSymbolSet = symbolIdCodeService.symbId.symbolSet;
-        }
-        $scope.symbolData = symbolData;
-        $scope.settings = symbolsetBrowserSettings.settings;
+            $scope.symbolData = symbolData;
+            $scope.settings = symbolsetBrowserSettings.settings;
 
-        var SVG_PATH = config.SVG_PATH;
-        $scope.SVG_PATH = SVG_PATH;
+            var SVG_PATH = config.SVG_PATH;
+            $scope.SVG_PATH = SVG_PATH;
 
-        $scope.changeSymbolSet = function (symbolSet) {
-            $scope.ttest = symbolSet.id;
-            $scope.modonepath = SVG_PATH + symbolSet.graphicFolder["modifierOnes"] + "/";
-            $scope.modtwopath = SVG_PATH + symbolSet.graphicFolder["modifierTwos"] + "/";
-            if (symbolSet.id == "SS_AIR_MISSILE" || symbolSet.id == "SS_SPACE_MISSILE") {
-                $scope.currentBoundingOctagon = "assets/img/BoundingOctagonVertical.svg";
-            } else {
-                $scope.currentBoundingOctagon = "assets/img/BoundingOctagonHorizontal.svg";
-            }
-        };
+            $scope.changeSymbolSet = function (symbolSet) {
+                $scope.ttest = symbolSet.id;
+                $scope.modonepath = SVG_PATH + symbolSet.graphicFolder["modifierOnes"] + "/";
+                $scope.modtwopath = SVG_PATH + symbolSet.graphicFolder["modifierTwos"] + "/";
+                if (symbolSet.id == "SS_AIR_MISSILE" || symbolSet.id == "SS_SPACE_MISSILE") {
+                    $scope.currentBoundingOctagon = "assets/img/BoundingOctagonVertical.svg";
+                } else {
+                    $scope.currentBoundingOctagon = "assets/img/BoundingOctagonHorizontal.svg";
+                }
+            };
 
-        $scope.changeSymbolSet($scope.currentSymbolSet);
-        $scope.getLabel = function (element) {
-            return element.digits + " " + element.label;
-        };
-    }])
+            $scope.changeSymbolSet($scope.currentSymbolSet);
+            $scope.getLabel = function (element) {
+                return element.digits + " " + element.label;
+            };
+
+            $scope.redrawSymbolSet = function () {
+                var tmp = $scope.currentSymbolSet;
+                $timeout(function () {
+                    $scope.currentSymbolSet = null;
+                });
+                $timeout(function () {
+                    $scope.currentSymbolSet = tmp;
+                });
+            };
+        }])
 
     .controller('SidebarCtrl', ['$scope', 'currentSymbol', 'symbolsetBrowserSettings', function ($scope, currentSymbol, symbolsetBrowserSettings) {
         $scope.currentSymbolSet = $scope.$parent.currentSymbolSet;
         $scope.symb = currentSymbol.symb;
         $scope.settings = symbolsetBrowserSettings.settings;
+
     }])
 
     .directive('symbsetsymb', ['$log', 'config', 'pathService', 'currentSymbol', 'symbolsetBrowserSettings', function ($log, config, pathService, currentSymbol, symbolsetBrowserSettings) {
@@ -185,7 +198,6 @@ angular.module('symbolApp')
         };
     }])
 
-
     .filter('limitUseToFilter', function () {
         return function (input, isEnabled) {
             if (isEnabled) {
@@ -197,5 +209,3 @@ angular.module('symbolApp')
             }
         };
     });
-
-

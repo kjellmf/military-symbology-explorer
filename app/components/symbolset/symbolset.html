@@ -43,7 +43,7 @@
                         <label><input type="checkbox" ng-model="settings.showDebugInfo">Show debug info</label>
                     </div>
                     <div class="checkbox" title="Use civilian frames (visible when you change symbol set)">
-                        <label><input type="checkbox" ng-model="settings.useCivilianFrames">Use civilian frames</label>
+                        <label><input type="checkbox" ng-click="redrawSymbolSet()" ng-model="settings.useCivilianFrames">Use civilian frames</label>
                     </div>
                     <!--<div class="checkbox" title="Show only modifiers with the LimitUseTo attribute set">-->
                         <!--<label><input type="checkbox" ng-model="settings.showLimitUseToOnly">Show limited modifiers only</label>-->
