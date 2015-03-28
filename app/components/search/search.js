@@ -134,13 +134,6 @@ angular.module('symbolApp')
             } else {
                 scope.frameFn = pathService.getFrameFilePath(contextId, siId, currentSymbolSet, null, symbolsetBrowserSettings.settings.useCivilianFrames) || config.BLANK_PATH;
             }
-            element.bind('click', function () {
-                scope.$apply(function () {
-                    currentSymbol.symb.entity = scope.entity;
-                    currentSymbol.symb.entityFn = scope.entityFn;
-                    currentSymbol.symb.frameFn = scope.frameFn;
-                });
-            })
         }
 
         return {
