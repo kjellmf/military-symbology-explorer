@@ -1,61 +1,50 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-2 col-md-2 sidebar">
+<div class="container">
+    <h1 class="page-header">Symbol search</h1>
 
-
-        </div>
-        <div class="col-sm-10 col-sm-offset-2 col-md-10 col-md-offset-2 main">
-            <h1 class="page-header">Symbol search</h1>
-
-            <div ng-controller="SearchController">
-                <form class="form">
-                    <input type="text"
-                           autofocus
-                           accesskey="s"
-                           class="form-control" placeholder="Search"
-                           ng-model="settings.searchString"
-                           ng-model-options="{ debounce: 350 }"/>
-                    <span class="help-block">Minimum search term length is three characters</span>
-                </form>
-                <div class="row">
-                    <div class="col-md-7">
-                        <table class="table table-condensed table-bordered">
-                            <tr ng-repeat="item in searchResults">
-                                <td>
-                                    <searchsymb symbol-set="item.symbolSet" entity="item.currentEntity"
-                                                si="SI_FRIEND"></searchsymb>
-                                </td>
-                                <td><a class="list-group-item" ui-sref="explore({sic:item.sic})"><b
-                                        class="list-group-item-heading">{{item.currentEntity.label}}</b><br>{{item.symbolSet.label}}
-                                    / {{ item.entity.label}} / {{
-                                    item.entityType.label}} / {{ item.entitySubType.label }}</a>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="col-md-5">
-                        <table class="table table-condensed table-bordered">
-                            <tr ng-repeat="item in searchResultsModifiers">
-                                <td>
-                                    <searchmod modifier-data="item"></searchmod>
-                                </td>
-                                <td><a class="list-group-item" ui-sref="explore({sic:item.sic})"><b
-                                        class="list-group-item-heading">{{item.modifier.label}}</b><br>
-                                    {{item.symbolSet.label}} / {{item.modifier.category}}
-                                    </a>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-
+    <div ng-controller="SearchController">
+        <form class="form">
+            <input type="text"
+                   autofocus-select
+                   accesskey="s"
+                   class="form-control" placeholder="Search"
+                   ng-model="settings.searchString"
+                   ng-model-options="{ debounce: 350 }"/>
+            <span class="help-block">Minimum search term length is three characters</span>
+        </form>
+        <div class="row">
+            <div class="col-md-7">
+                <table class="table table-condensed table-bordered">
+                    <tr ng-repeat="item in searchResults">
+                        <td>
+                            <searchsymb symbol-set="item.symbolSet" entity="item.currentEntity"
+                                        si="SI_FRIEND"></searchsymb>
+                        </td>
+                        <td><a class="list-group-item" ui-sref="explore({sic:item.sic})"><b
+                                class="list-group-item-heading">{{item.currentEntity.label}}</b><br>{{item.symbolSet.label}}
+                            / {{ item.entity.label}} / {{
+                            item.entityType.label}} / {{ item.entitySubType.label }}</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-5">
+                <table class="table table-condensed table-bordered">
+                    <tr ng-repeat="item in searchResultsModifiers">
+                        <td>
+                            <searchmod modifier-data="item"></searchmod>
+                        </td>
+                        <td><a class="list-group-item" ui-sref="explore({sic:item.sic})"><b
+                                class="list-group-item-heading">{{item.modifier.label}}</b><br>
+                            {{item.symbolSet.label}} / {{item.modifier.category}}
+                        </a>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
 
     </div>
 </div>
-</div>
-
 
 
 
