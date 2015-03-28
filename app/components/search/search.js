@@ -2,7 +2,9 @@ angular.module('symbolApp')
 
     .factory('searchSettings', ['$log', function ($log) {
         settings = {
-            searchString: 'tank'
+            searchString: 'tank',
+            standardIdentityId: 'SI_FRIEND',
+            contextId: 'REALITY'
         };
         return {
             settings: settings
@@ -122,13 +124,13 @@ angular.module('symbolApp')
         });
     }])
 
-    .directive('searchsymb', ['$log', 'config', 'pathService', 'currentSymbol', 'symbolsetBrowserSettings', function ($log, config, pathService, currentSymbol, symbolsetBrowserSettings) {
+    .directive('searchsymb', ['$log', 'config', 'pathService', 'currentSymbol', 'searchSettings', function ($log, config, pathService, currentSymbol, searchSettings) {
         function link(scope, element, attrs) {
             scope.entityFn = "";
             var currentSymbolSet = scope.symbolSet;
-            var dimensionId = currentSymbolSet.dimensionId,
-                contextId = 'REALITY',
-                siId = scope.si || "SI_UNKNOWN";
+            var settings = searchSettings.settings;
+            var contextId = settings.contextId || 'REALITY';
+            var siId = scope.si || settings.standardIdentityId || "SI_UNKNOWN";
             scope.entityFn = pathService.getEntityFilePath(scope.entity, currentSymbolSet, siId) || config.BLANK_PATH;
             scope.geometry = scope.entity.geometryType || currentSymbolSet.geometry || "POINT";
             if (currentSymbolSet.id == "SS_CONTROL_MEASURE" && scope.geometry == "MIXED") {
@@ -138,7 +140,7 @@ angular.module('symbolApp')
             if (scope.entity.id == 'OWN_SHIP') {
                 scope.frameFn = config.BLANK_PATH;
             } else {
-                scope.frameFn = pathService.getFrameFilePath(contextId, siId, currentSymbolSet, null, symbolsetBrowserSettings.settings.useCivilianFrames) || config.BLANK_PATH;
+                scope.frameFn = pathService.getFrameFilePath(contextId, siId, currentSymbolSet, null) || config.BLANK_PATH;
             }
         }
 
@@ -159,7 +161,7 @@ angular.module('symbolApp')
         };
     }])
 
-    .directive('searchmod', ['$log', 'config', 'pathService', 'currentSymbol', function ($log, config, pathService, currentSymbol) {
+    .directive('searchmod', ['$log', 'config', 'pathService', function ($log, config, pathService) {
         function link(scope, element, attrs) {
             var modifierObj = scope.modifierData.modifier;
             var symbolSetObj = scope.modifierData.symbolSet;
