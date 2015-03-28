@@ -157,6 +157,14 @@ object, .milsymb {
     margin: -25px;
 }
 
+.symbol-AREA, .symbol-LINE, .symbol-MIXED {
+    width: 73px;
+    height: 73px;
+    padding:0;
+    margin:0;
+}
+
+
 .milsymb img.symbol-sm {
     display:block;
     float:right;

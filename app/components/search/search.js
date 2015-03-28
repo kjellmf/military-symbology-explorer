@@ -129,6 +129,11 @@ angular.module('symbolApp')
                 contextId = 'REALITY',
                 siId = scope.si || "SI_UNKNOWN";
             scope.entityFn = pathService.getEntityFilePath(scope.entity, currentSymbolSet, siId) || config.BLANK_PATH;
+            scope.geometry = scope.entity.geometryType || currentSymbolSet.geometry || "POINT";
+            if (currentSymbolSet.id == "SS_CONTROL_MEASURE" && scope.geometry == "MIXED") {
+                // control measures have default GeometryType=POINT
+                scope.geometry = "POINT";
+            }
             if (scope.entity.id == 'OWN_SHIP') {
                 scope.frameFn = config.BLANK_PATH;
             } else {
@@ -146,7 +151,7 @@ angular.module('symbolApp')
             template: function (element, attrs) {
                 return '<div class="searchsymbol">'
                     + '<img class="symbol-sm" ng-src="{{frameFn}}">'
-                    + '<img class="symbol-sm" ng-src="{{entityFn}}">'
+                    + '<img class="symbol-sm symbol-{{geometry}}" ng-src="{{entityFn}}">'
                     + '</div>';
             },
             link: link
