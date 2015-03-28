@@ -1,4 +1,4 @@
-angular.module('symbolApp', ['ngAnimate', 'ui.router', 'ngClipboard'])
+angular.module('symbolApp', ['ngAnimate', 'ui.router', 'ngClipboard', 'mgcrea.ngStrap', 'ngSanitize'])
     .constant("config", {
         BLANK_PATH: "assets/img/blank.png",
         SVG_PATH: "svg/MIL_STD_2525D_Symbols/"
@@ -7,5 +7,3 @@ angular.module('symbolApp', ['ngAnimate', 'ui.router', 'ngClipboard'])
     .config(['ngClipProvider', function (ngClipProvider) {
         ngClipProvider.setPath("bower_components/zeroclipboard/dist/ZeroClipboard.swf");
     }]);
-
-;
