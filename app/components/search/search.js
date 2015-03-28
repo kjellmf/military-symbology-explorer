@@ -50,6 +50,7 @@ angular.module('symbolApp')
                 for (var i = 0; i < symbolSet.entities.length; i += 1) {
                     entity = symbolSet.entities[i];
                     entityType = null;
+                    entitySubType = null;
                     searchElement(entity);
                     for (var j = 0; j < entity.entityTypes.length; j += 1) {
                         entityType = entity.entityTypes[j];
