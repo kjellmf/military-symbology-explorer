@@ -11,8 +11,17 @@ angular.module('symbolApp')
         };
     }])
 
+    //.config(function ($asideProvider) {
+    //    angular.extend($asideProvider.defaults, {
+    //        container: 'body',
+    //        html: true
+    //    });
+    //})
+
+
     .controller('SearchController', ['$scope', '$log', 'symbolIdCodeService', 'searchSettings', function ($scope, $log, symbolIdCodeService, searchSettings) {
         $scope.searchResults = [];
+        $scope.aside = {title: 'Settings', content: "'app/components/about/about.html'"};
 
         var searchSymbols = function (searchString) {
             if (!searchString.trim()) {
@@ -114,7 +123,7 @@ angular.module('symbolApp')
             $scope.searchResultsModifiers = results;
         };
 
-        $scope.settings = searchSettings.settings
+        $scope.settings = searchSettings.settings;
         $scope.$watch('settings.searchString', function (newValue, oldValue) {
             var trimmedSearchString = newValue.trim();
             if (trimmedSearchString && trimmedSearchString.length > 2) {
@@ -187,5 +196,24 @@ angular.module('symbolApp')
             link: link
         };
     }])
+
+    .controller("SearchSettingsCtrl", ["$scope", "searchSettings", "$timeout", function ($scope, searchSettings, $timeout) {
+        $scope.settings = searchSettings.settings;
+        $scope.standardIdentities = symbolData.standardIdentities;
+        $scope.updateSearchResults = function () {
+            var tmp = searchSettings.settings.searchString;
+            $timeout(function () {
+                $scope.settings.searchString = "";
+            });
+            $timeout(function () {
+                $scope.settings.searchString = tmp;
+            });
+
+
+        };
+
+
+    }])
+
 
 ;

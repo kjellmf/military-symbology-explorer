@@ -1,0 +1,9 @@
+<div ng-controller="SearchSettingsCtrl">
+    <div class="form-group">
+        <label>Standard identity</label>
+        <select class="form-control" ng-model="settings.standardIdentityId"
+                ng-options="d.id as d.label for d in standardIdentities"
+                ng-change="updateSearchResults()">
+        </select>
+    </div>
+</div>
