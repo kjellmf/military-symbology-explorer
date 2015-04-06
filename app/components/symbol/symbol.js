@@ -10,8 +10,6 @@ angular.module('symbolApp')
 
     .factory('symbolIdCodeService', ['$log', 'config', 'pathService', 'SicObject', function ($log, config, pathService, SicObject) {
         var symbolIdCode = {};
-        var undef = {"label": "Undefined", digits: "00"};
-        var SVG_PATH = config.SVG_PATH;
         var alternateAmplifiers = false;
         symbolIdCode.versionCode1 = "1";
         symbolIdCode.versionCode2 = "0";
@@ -28,6 +26,81 @@ angular.module('symbolApp')
         symbolIdCode.sectorOneModifier = null;
         symbolIdCode.sectorTwoModifier = null;
         symbolIdCode.useCivilianFrame = false;
+
+        var service = {
+            symbId: symbolIdCode,
+            getEntityFn: getEntityFn,
+            getSpecialEntitySubTypeFn: getSpecialEntitySubTypeFn,
+            getFrameFn: getFrameFn,
+            getStatusFn: getStatusFn,
+            getHqtfdFn: getHqtfdFn,
+            getAmplifilerFn: getAmplifierFn,
+            getModiferOneFn: getModifierOneFn,
+            getModiferTwoFn: getModifierTwoFn,
+            getAlternateAmplifiers: getAlternateAmplifiers,
+            setAlternateAmplifiers: setAlternateAmplifiers,
+            setStandardIdentity: function (standardIdentity) {
+                symbolIdCode.standardIdentity = standardIdentity;
+            },
+            setContext: function (context) {
+                symbolIdCode.context = context;
+            },
+            setSymbolSet: function (symbolSet) {
+                symbolIdCode.symbolSet = symbolSet;
+            },
+            setStatus: function (status) {
+                symbolIdCode.status = status;
+            },
+            setAmplifier: function (amplifer) {
+                symbolIdCode.amplifier = amplifer;
+            },
+            setAmplifierDescriptor: function (amplifierDescriptor) {
+                symbolIdCode.amplifierDescriptor = amplifierDescriptor;
+
+            },
+            setHQTFDummy: function (hqTFDummy) {
+                symbolIdCode.hqtfDummy = hqTFDummy;
+            },
+            setEntity: function (entity) {
+                symbolIdCode.entity = entity;
+            },
+            setEntityType: function (entityType) {
+                symbolIdCode.entityType = entityType;
+            },
+            setEntitySubType: function (entitySubType) {
+                symbolIdCode.entitySubType = entitySubType;
+            },
+            setSectorOneModifier: function (sectorOneModifier) {
+                symbolIdCode.sectorOneModifier = sectorOneModifier || {"label": "Undefined", "digits": "00"};
+            },
+            setSectorTwoModifier: function (sectorTwoModifier) {
+                symbolIdCode.sectorTwoModifier = sectorTwoModifier || {"label": "Undefined", "digits": "00"};
+            },
+            getSymbolIdentificationCode: function () {
+                return computeSymbolIdentificationCode();
+            },
+            initializeFromSymbolIdentificationCode: function (sic) {
+                var sicObj = new SicObject(sic, false);
+                if (sicObj.invalid) {
+                    $log.error('Invalid SIC. Could not initialize symbol');
+                    return;
+                }
+                symbolIdCode.context = sicObj.contextObj;
+                symbolIdCode.standardIdentity = sicObj.standardIdentityObj;
+                symbolIdCode.symbolSet = sicObj.symbolSetObj;
+                symbolIdCode.status = sicObj.statusObj;
+                symbolIdCode.hqtfDummy = sicObj.hqtfdObj;
+                symbolIdCode.amplifier = sicObj.amplifierObj;
+                symbolIdCode.amplifierDescriptor = sicObj.amplifierDescriptorObj;
+                symbolIdCode.entity = sicObj.entityObj;
+                symbolIdCode.entityType = sicObj.entityTypeObj;
+                symbolIdCode.entitySubType = sicObj.entitySubTypeObj;
+                symbolIdCode.sectorOneModifier = sicObj.modifierOneObj;
+                symbolIdCode.sectorTwoModifier = sicObj.modifierTwoObj;
+            }
+        };
+
+        return service;
 
 
         function computeSymbolIdentificationCode() {
@@ -112,78 +185,7 @@ angular.module('symbolApp')
             alternateAmplifiers = alternateAmplifiersValue;
         }
 
-        return {
-            symbId: symbolIdCode,
-            getEntityFn: getEntityFn,
-            getSpecialEntitySubTypeFn: getSpecialEntitySubTypeFn,
-            getFrameFn: getFrameFn,
-            getStatusFn: getStatusFn,
-            getHqtfdFn: getHqtfdFn,
-            getAmplifilerFn: getAmplifierFn,
-            getModiferOneFn: getModifierOneFn,
-            getModiferTwoFn: getModifierTwoFn,
-            getAlternateAmplifiers: getAlternateAmplifiers,
-            setAlternateAmplifiers: setAlternateAmplifiers,
-            setStandardIdentity: function (standardIdentity) {
-                symbolIdCode.standardIdentity = standardIdentity;
-            },
-            setContext: function (context) {
-                symbolIdCode.context = context;
-            },
-            setSymbolSet: function (symbolSet) {
-                symbolIdCode.symbolSet = symbolSet;
-            },
-            setStatus: function (status) {
-                symbolIdCode.status = status;
-            },
-            setAmplifier: function (amplifer) {
-                symbolIdCode.amplifier = amplifer;
-            },
-            setAmplifierDescriptor: function (amplifierDescriptor) {
-                symbolIdCode.amplifierDescriptor = amplifierDescriptor;
 
-            },
-            setHQTFDummy: function (hqTFDummy) {
-                symbolIdCode.hqtfDummy = hqTFDummy;
-            },
-            setEntity: function (entity) {
-                symbolIdCode.entity = entity;
-            },
-            setEntityType: function (entityType) {
-                symbolIdCode.entityType = entityType;
-            },
-            setEntitySubType: function (entitySubType) {
-                symbolIdCode.entitySubType = entitySubType;
-            },
-            setSectorOneModifier: function (sectorOneModifier) {
-                symbolIdCode.sectorOneModifier = sectorOneModifier || {"label": "Undefined", "digits": "00"};
-            },
-            setSectorTwoModifier: function (sectorTwoModifier) {
-                symbolIdCode.sectorTwoModifier = sectorTwoModifier || {"label": "Undefined", "digits": "00"};
-            },
-            getSymbolIdentificationCode: function () {
-                return computeSymbolIdentificationCode();
-            },
-            initializeFromSymbolIdentificationCode: function (sic) {
-                var sicObj = new SicObject(sic, false);
-                if (sicObj.invalid) {
-                    $log.error('Invalid SIC. Could not initialize symbol');
-                    return;
-                }
-                symbolIdCode.context = sicObj.contextObj;
-                symbolIdCode.standardIdentity = sicObj.standardIdentityObj;
-                symbolIdCode.symbolSet = sicObj.symbolSetObj;
-                symbolIdCode.status = sicObj.statusObj;
-                symbolIdCode.hqtfDummy = sicObj.hqtfdObj;
-                symbolIdCode.amplifier = sicObj.amplifierObj;
-                symbolIdCode.amplifierDescriptor = sicObj.amplifierDescriptorObj;
-                symbolIdCode.entity = sicObj.entityObj;
-                symbolIdCode.entityType = sicObj.entityTypeObj;
-                symbolIdCode.entitySubType = sicObj.entitySubTypeObj;
-                symbolIdCode.sectorOneModifier = sicObj.modifierOneObj;
-                symbolIdCode.sectorTwoModifier = sicObj.modifierTwoObj;
-            }
-        };
     }])
 
     .controller('SymbolCtrl', ['$scope', '$log', '$stateParams', 'symbolIdCodeService', 'disableModOneFilter',

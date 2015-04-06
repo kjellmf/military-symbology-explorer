@@ -90,7 +90,6 @@ angular.module('symbolApp')
     }])
 
     .directive('symbsetsymb', ['$log', 'config', 'pathService', 'currentSymbol', 'symbolsetBrowserSettings', function ($log, config, pathService, currentSymbol, symbolsetBrowserSettings) {
-
         function link(scope, element, attrs) {
             scope.entityFn = "";
             var currentSymbolSet = scope.$parent.currentSymbolSet;

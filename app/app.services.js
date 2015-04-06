@@ -1,7 +1,19 @@
 angular.module('symbolApp')
     .factory('pathService', ['$log', 'config', function ($log, config) {
 
-        function getEntityFn(entity, symbolSetObj, standardIdentityId, alternative) {
+        var service = {
+            getEntityFilePath: getEntityFilePath,
+            getFrameFilePath: getFrameFilePath,
+            getStatusFilePath: getStatusFilePath,
+            getHqtfdFilePath: getHqtfdFilePath,
+            getAmplifierFilePath: getAmplifierFilePath,
+            getModifierOneFilePath: getModifierOneFilePath,
+            getModifierTwoFilePath: getModifierTwoFilePath,
+            getBoundingOctagonFilePath: getBoundingOctagonFilePath
+        };
+        return service;
+
+        function getEntityFilePath(entity, symbolSetObj, standardIdentityId, alternative) {
             var fn = "";
 
             if (entity) {
@@ -18,7 +30,7 @@ angular.module('symbolApp')
             return fn ? config.SVG_PATH + symbolSetObj.graphicFolder["entities"] + "/" + fn : null;
         }
 
-        function getFrameFn(contextId, standardIdentityId, symbolSetObj, status, useCivilianFrame) {
+        function getFrameFilePath(contextId, standardIdentityId, symbolSetObj, status, useCivilianFrame) {
             var dimensionId = symbolSetObj.dimensionId,
                 fn = "";
             if (dimensionId && contextId && standardIdentityId) {
@@ -51,7 +63,7 @@ angular.module('symbolApp')
             return fn ? config.SVG_PATH + fn : null;
         }
 
-        function getStatusFn(standardIdentityId, symbolSetObj, statusObj, alternateAmplifiers) {
+        function getStatusFilePath(standardIdentityId, symbolSetObj, statusObj, alternateAmplifiers) {
             var dimensionId = symbolSetObj.dimensionId,
                 fn = "";
             if (alternateAmplifiers) {
@@ -68,7 +80,7 @@ angular.module('symbolApp')
             return fn ? config.SVG_PATH + fn : null;
         }
 
-        function getHqtfdFn(standardIdentityId, symbolSetObj, hqtfdObj) {
+        function getHqtfdFilePath(standardIdentityId, symbolSetObj, hqtfdObj) {
             var dimensionId = symbolSetObj.dimensionId,
                 fn = "";
             if (dimensionId && hqtfdObj && standardIdentityId && hqtfdObj.graphics) {
@@ -81,7 +93,7 @@ angular.module('symbolApp')
             return fn ? config.SVG_PATH + fn : null;
         }
 
-        function getAmplifierFn(standardIdentityId, amplifierDescriptorObj, symbolSetObj) {
+        function getAmplifierFilePath(standardIdentityId, amplifierDescriptorObj, symbolSetObj) {
             var fn = "";
             if (symbolSetObj.geometry == "MIXED") {
                 return null;
@@ -93,36 +105,25 @@ angular.module('symbolApp')
             return fn ? config.SVG_PATH + fn : null;
         }
 
-        function getModifierOneFn(modifierOneObj, symbolSetObj) {
+        function getModifierOneFilePath(modifierOneObj, symbolSetObj) {
 
             var fn = modifierOneObj ?  modifierOneObj.graphic : "";
             return fn ? config.SVG_PATH + symbolSetObj.graphicFolder["modifierOnes"] + "/" + fn  : null;
         }
 
 
-        function getModifierTwoFn(modifierTwoObj, symbolSetObj) {
+        function getModifierTwoFilePath(modifierTwoObj, symbolSetObj) {
             var fn = modifierTwoObj ?  modifierTwoObj.graphic : "";
             return fn ? config.SVG_PATH + symbolSetObj.graphicFolder["modifierTwos"] + "/" + fn  : null;
         }
 
-        function getBoundingOctagonFn(symbolSetObj) {
+        function getBoundingOctagonFilePath(symbolSetObj) {
             if (symbolSetObj.id == "SS_AIR_MISSILE" || symbolSetObj.id == "SS_SPACE_MISSILE") {
                 return "assets/img/BoundingOctagonVertical.svg";
             } else {
                 return "assets/img/BoundingOctagonHorizontal.svg";
             }
 
-        }
-
-        return {
-            getEntityFilePath: getEntityFn,
-            getFrameFilePath: getFrameFn,
-            getStatusFilePath: getStatusFn,
-            getHqtfdFilePath: getHqtfdFn,
-            getAmplifierFilePath: getAmplifierFn,
-            getModifierOneFilePath: getModifierOneFn,
-            getModifierTwoFilePath: getModifierTwoFn,
-            getBoundingOctagonFilePath: getBoundingOctagonFn
         }
     }]);
 
