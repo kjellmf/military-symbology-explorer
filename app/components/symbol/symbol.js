@@ -34,9 +34,9 @@ angular.module('symbolApp')
             getFrameFn: getFrameFn,
             getStatusFn: getStatusFn,
             getHqtfdFn: getHqtfdFn,
-            getAmplifilerFn: getAmplifierFn,
-            getModiferOneFn: getModifierOneFn,
-            getModiferTwoFn: getModifierTwoFn,
+            getAmplifierFn: getAmplifierFn,
+            getModifierOneFn: getModifierOneFn,
+            getModifierTwoFn: getModifierTwoFn,
             getAlternateAmplifiers: getAlternateAmplifiers,
             setAlternateAmplifiers: setAlternateAmplifiers,
             setStandardIdentity: function (standardIdentity) {
@@ -198,9 +198,9 @@ angular.module('symbolApp')
             $scope.frame = symbolIdCodeService.getFrameFn;
             $scope.main = symbolIdCodeService.getEntityFn;
             $scope.special = symbolIdCodeService.getSpecialEntitySubTypeFn;
-            $scope.amplifierFn = symbolIdCodeService.getAmplifilerFn;
-            $scope.modifierOneFn = symbolIdCodeService.getModiferOneFn;
-            $scope.modifierTwoFn = symbolIdCodeService.getModiferTwoFn;
+            $scope.amplifierFn = symbolIdCodeService.getAmplifierFn;
+            $scope.modifierOneFn = symbolIdCodeService.getModifierOneFn;
+            $scope.modifierTwoFn = symbolIdCodeService.getModifierTwoFn;
             $scope.statusFn = symbolIdCodeService.getStatusFn;
             $scope.hqtfdFn = symbolIdCodeService.getHqtfdFn;
             $scope.symbolData = symbolData;
