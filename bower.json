@@ -5,7 +5,7 @@
     "Kjell Magne Fauske <kjellmf@gmail.com>"
   ],
   "description": "An experimental MIL-STD-2525D/APP-6 symbology explorer based on the Joint Military Symbology Markup Language (JMSML)",
-  "homepage": "http://kjellmf.github.io/military-symbology-explorer/",
+  "homepage": "http://explorer.milsymb.net/",
   "main": "index.html",
   "license": "Apache-2.0",
   "private": true,
