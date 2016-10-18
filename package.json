@@ -1,25 +1,25 @@
 {
   "name": "military-symbology-explorer",
-  "version": "1.0.0",
+  "version": "2.0.0dev",
   "author": "Kjell Magne Fauske <kjellmf@gmail.com>",
   "description": "An experimental MIL-STD-2525D/APP-6 symbology explorer based on the Joint Military Symbology Markup Language (JMSML)",
   "homepage": "http://kjellmf.github.io/military-symbology-explorer/",
   "license": "Apache-2.0",
+  "scripts": {
+    "build": "webpack --inline --colors --progress --display-error-details --display-cached",
+    "watch": "npm run build -- --watch",
+    "server": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base src",
+    "start": "npm run server"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/kjellmf/military-symbology-explorer.git"
   },
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "devDependencies": {
-    "browser-sync": "^1.5.7",
-    "del": "^1.1.1",
-    "gulp": "^3.8.8",
-    "gulp-if": "^1.2.5",
-    "gulp-minify-css": "^0.3.11",
-    "gulp-uglify": "^1.0.2",
-    "gulp-useref": "^1.1.0"
+    "awesome-typescript-loader": "^2.2.4",
+    "typescript": "^2.0.3",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-merge": "^0.15.0"
   }
 }
