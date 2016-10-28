@@ -61,11 +61,19 @@ export interface HqtfD extends EntityBase {
     graphics: EntityBase[];
 }
 
+export interface Status extends EntityBase {
+    graphics: EntityBase[];
+}
+
+export interface AmplifierDescriptor extends EntityBase {
+    graphics: EntityBase[];
+}
+
 export interface SymbolData {
     standardIdentities: StandardIdentity[];
     symbolSets: SymbolSet[];
     contexts: Context[];
-    statuses: {}[];
+    statuses: Status[];
     hqtfDummies: HqtfD[];
     amplifiers: Amplifier[];
     affiliations: {}[]
@@ -167,15 +175,15 @@ export class SicObject {
     contextObj: Context;
     standardIdentityObj: StandardIdentity;
     symbolSetObj: SymbolSet;
-    statusObj: EntityBase;
+    statusObj: Status;
     hqtfdObj: HqtfD;
     amplifierObj: Amplifier;
-    amplifierDescriptorObj: {};
+    amplifierDescriptorObj: AmplifierDescriptor;
     entityObj: Entity;
     entityTypeObj: EntityType;
     entitySubTypeObj: EntitySubType;
-    modifierOneObj: {};
-    modifierTwoObj: {};
+    modifierOneObj: EntityBase;
+    modifierTwoObj: EntityBase;
     entity: EntityBase;
     specialFn: string;
     entityFn: string;
@@ -186,7 +194,7 @@ export class SicObject {
     modifierOneFn: string;
     modifierTwoFn: string;
 
-    constructor(sic: string, public alternative = false, public useCivilianFrame = false) {
+    constructor(sic: string, public alternativeAmplifiers = false, public useCivilianFrame = false) {
         if (sic.length !== 20) {
             console.error("Invalid SIC length", sic)
         }
@@ -264,13 +272,10 @@ export class SicObject {
             this.frameFn = PathService.getFrameFilePath(this) || config.BLANK_PATH;
         }
         this.hqtfdFn = PathService.getHqtfdFilePath(this) || config.BLANK_PATH;
-
         this.statusFn = PathService.getStatusFilePath(this) || config.BLANK_PATH;
-        /*
-        this.amplifierFn = PathService.getAmplifierFilePath(siId, this.amplifierDescriptorObj, this.symbolSetObj) || config.BLANK_PATH;
-        this.modifierOneFn = PathService.getModifierOneFilePath(this.modifierOneObj, this.symbolSetObj) || config.BLANK_PATH;
-        this.modifierTwoFn = PathService.getModifierTwoFilePath(this.modifierTwoObj, this.symbolSetObj) || config.BLANK_PATH;
-        */
+        this.amplifierFn = PathService.getAmplifierFilePath(this) || config.BLANK_PATH;
+        this.modifierOneFn = PathService.getModifierOneFilePath(this) || config.BLANK_PATH;
+        this.modifierTwoFn = PathService.getModifierTwoFilePath(this) || config.BLANK_PATH;
     }
 }
 
@@ -283,7 +288,7 @@ export class PathService {
             if (entity.icon === 'FULL_FRAME' || sic.entity.icon === 'SPECIAL') {
                 fn = sic.entity[standardIdentityMap2[sic.standardIdentityObj.id]];
             } else {
-                if (sic.alternative) {
+                if (sic.alternativeAmplifiers) {
                     fn = entity.alternativeGraphic || entity.graphic;
                 } else {
                     fn = sic.entity.graphic;
@@ -343,21 +348,55 @@ export class PathService {
     }
 
     static getStatusFilePath(sic: SicObject) {
-            var dimensionId = symbolSetObj.dimensionId,
-                fn = "";
-            if (alternateAmplifiers) {
-                if (dimensionId && statusObj && standardIdentityId && statusObj.graphics) {
-                    var sig = statusObj.graphics[symbolData.standardIdentityGroupMapping[standardIdentityId]];
-                    if (sig) {
-                        var dim = sig[dimensionId];
-                        fn = dim ? dim.graphic : null;
-                    }
+        let dimensionId = sic.symbolSetObj.dimensionId,
+            fn = "";
+        if (sic.alternativeAmplifiers) {
+            if (dimensionId && sic.statusObj && sic.standardIdentityObj.id && sic.statusObj.graphics) {
+                var sig = sic.statusObj.graphics[symbolData.standardIdentityGroupMapping[sic.standardIdentityObj.id]];
+                if (sig) {
+                    var dim = sig[dimensionId];
+                    fn = dim ? dim.graphic : null;
                 }
-            } else {
-                fn = statusObj.graphic;
             }
-            return fn ? config.SVG_PATH + fn : null;
+        } else {
+            fn = sic.statusObj.graphic;
         }
+        return fn ? config.SVG_PATH + fn : null;
+    }
+
+    static getAmplifierFilePath(sic: SicObject) {
+        var fn = "";
+        if (sic.symbolSetObj.geometry == "MIXED") {
+            return null;
+        }
+        if (sic.standardIdentityObj.id && sic.amplifierDescriptorObj && sic.amplifierDescriptorObj.graphics) {
+            var sig = sic.amplifierDescriptorObj.graphics[symbolData.standardIdentityGroupMapping[sic.standardIdentityObj.id]];
+            fn = sig ? sig.graphic : null;
+        }
+        return fn ? config.SVG_PATH + fn : null;
+    }
+
+
+    static getModifierOneFilePath(sic: SicObject) {
+        let fn =sic. modifierOneObj ? sic.modifierOneObj.graphic : "";
+        return fn ? config.SVG_PATH + sic.symbolSetObj.graphicFolder["modifierOnes"] + "/" + fn : null;
+    }
+
+
+    static getModifierTwoFilePath(sic: SicObject) {
+        var fn = sic.modifierTwoObj ? sic.modifierTwoObj.graphic : "";
+        return fn ? config.SVG_PATH + sic.symbolSetObj.graphicFolder["modifierTwos"] + "/" + fn : null;
+    }
+
+    static getBoundingOctagonFilePath(symbolSetObj: SymbolSet) {
+            if (symbolSetObj.id == "SS_AIR_MISSILE" || symbolSetObj.id == "SS_SPACE_MISSILE") {
+                return "assets/img/BoundingOctagonVertical.svg";
+            } else {
+                return "assets/img/BoundingOctagonHorizontal.svg";
+            }
+
+        }
+
 }
 
 export var symbolData = <SymbolData>require("./data/jmsml.json");
