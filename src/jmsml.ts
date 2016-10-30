@@ -41,7 +41,7 @@ export interface SymbolSet extends IdentifierAttributeGroup {
     dimensionId: string;
     geometry: GeometryType;
     entities: Entity[];
-    specialEntitySubTypes: SpecialEntitySubType[];
+    specialEntitySubTypes: EntitySubType[];
     sectorOneModifiers: Modifier[];
     sectorTwoModifiers: Modifier[];
     graphicFolder: {};
@@ -67,35 +67,37 @@ export interface EntitySubType extends EntityBase {
     */
 };
 
-export interface SpecialEntitySubType extends EntitySubType { };
-
 export interface Modifier extends IdentifierAttributeGroup {
+    digits: string;
     graphic?: string;
 }
 
-export interface Amplifier extends EntityBase {
+export interface Amplifier extends IdentifierAttributeGroup {
+    digits: string;
     descriptors: {}[]
 }
 
-export interface StandardIdentity {
+export interface StandardIdentity extends IdentifierAttributeGroup {
     digits: string;
-    label: string;
-    id: string;
 }
 
-export interface Context extends EntityBase {
-
+export interface Context extends IdentifierAttributeGroup {
+    digits: string;
 }
 
-export interface HqtfD extends EntityBase {
+export interface HqtfD extends IdentifierAttributeGroup {
+    digits: string;
     graphics: EntityBase[];
 }
 
-export interface Status extends EntityBase {
-    graphics: EntityBase[];
+export interface Status extends IdentifierAttributeGroup {
+    digits: string;
+    graphic: string;
+    graphics: {}[];
 }
 
-export interface AmplifierDescriptor extends EntityBase {
+export interface AmplifierDescriptor extends IdentifierAttributeGroup {
+
     graphics: EntityBase[];
 }
 
