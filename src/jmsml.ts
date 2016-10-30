@@ -7,31 +7,52 @@ const config = {
     SVG_PATH: "svg/MIL_STD_2525D_Symbols/"
 }
 
-export interface SymbolSet {
-    digits: string;
-    label: string;
+export type GeometryType = "NA" | "POINT" | "LINE" | "AREA" | "MIXED";
+
+export type IconType = "NA" | "MAIN" | "MAIN_1" | "MAIN_2" | "FULL_OCTAGON" | "FULL_FRAME" | "SPECIAL";
+
+interface IdentifierAttributeGroup {
     id: string;
-    dimensionId: string;
-    geometry: string;
-    entities: Entity[];
-    sectorOneModifiers: {}[];
-    sectorTwoModifiers: {}[];
-    graphicFolder: {};
-    specialEntitySubTypes: SpecialEntitySubType[]
+    label?: string;
+    labelAlias?: string;
+    description?: string;
+    remarks?: string;
 }
 
-interface EntityBase {
-    digits: string;
-    label: string;
-    id: string;
+interface FramedGraphicIdentifierAttributeGroup extends IdentifierAttributeGroup {
     graphic?: string;
     alternativeGraphic?: string;
-    icon?: string;
+    circleGraphic?: string;
+    cloverGraphic?: string;
+    CurveGraphic?: string;
+    diamondGraphic?: string;
+    rectangleGraphic?: string;
+    squareGraphic?: string;
+    drawRuleID?: string;
+    drawNote?: string;
+    icon?: IconType;
+    isCivilian?: boolean;
+    standard?: string;
+    IsAlignable: boolean;
+}
+
+export interface SymbolSet extends IdentifierAttributeGroup {
+    digits: string;
+    dimensionId: string;
+    geometry: GeometryType;
+    entities: Entity[];
+    specialEntitySubTypes: SpecialEntitySubType[];
+    sectorOneModifiers: Modifier[];
+    sectorTwoModifiers: Modifier[];
+    graphicFolder: {};
+}
+
+interface EntityBase extends FramedGraphicIdentifierAttributeGroup {
+    digits: string;
+    geometryType: GeometryType;
 }
 
 export interface Entity extends EntityBase {
-    icon: string;
-    geometryType: string;
     entityTypes: EntityType[]
 }
 
@@ -39,9 +60,18 @@ export interface EntityType extends EntityBase {
     entitySubTypes: EntitySubType[];
 }
 
-export interface EntitySubType extends EntityBase { };
+export interface EntitySubType extends EntityBase {
+    /* Not used yet
+    entityCode?: string;
+    entityTypeCode?: string;
+    */
+};
 
 export interface SpecialEntitySubType extends EntitySubType { };
+
+export interface Modifier extends IdentifierAttributeGroup {
+    graphic?: string;
+}
 
 export interface Amplifier extends EntityBase {
     descriptors: {}[]
@@ -182,8 +212,8 @@ export class SicObject {
     entityObj: Entity;
     entityTypeObj: EntityType;
     entitySubTypeObj: EntitySubType;
-    modifierOneObj: EntityBase;
-    modifierTwoObj: EntityBase;
+    modifierOneObj: Modifier;
+    modifierTwoObj: Modifier;
     entity: EntityBase;
     specialFn: string;
     entityFn: string;
@@ -378,7 +408,7 @@ export class PathService {
 
 
     static getModifierOneFilePath(sic: SicObject) {
-        let fn =sic. modifierOneObj ? sic.modifierOneObj.graphic : "";
+        let fn = sic.modifierOneObj ? sic.modifierOneObj.graphic : "";
         return fn ? config.SVG_PATH + sic.symbolSetObj.graphicFolder["modifierOnes"] + "/" + fn : null;
     }
 
@@ -389,13 +419,13 @@ export class PathService {
     }
 
     static getBoundingOctagonFilePath(symbolSetObj: SymbolSet) {
-            if (symbolSetObj.id == "SS_AIR_MISSILE" || symbolSetObj.id == "SS_SPACE_MISSILE") {
-                return "assets/img/BoundingOctagonVertical.svg";
-            } else {
-                return "assets/img/BoundingOctagonHorizontal.svg";
-            }
-
+        if (symbolSetObj.id == "SS_AIR_MISSILE" || symbolSetObj.id == "SS_SPACE_MISSILE") {
+            return "assets/img/BoundingOctagonVertical.svg";
+        } else {
+            return "assets/img/BoundingOctagonHorizontal.svg";
         }
+
+    }
 
 }
 
