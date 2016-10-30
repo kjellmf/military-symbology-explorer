@@ -204,19 +204,19 @@ function findSymbolObject(arr, digits) {
 
 export class SicObject {
     sic: Sic;
-    contextObj: Context;
-    standardIdentityObj: StandardIdentity;
-    symbolSetObj: SymbolSet;
+    context: Context;
+    standardIdentity: StandardIdentity;
+    symbolSet: SymbolSet;
     statusObj: Status;
     hqtfdObj: HqtfD;
-    amplifierObj: Amplifier;
+    amplifier: Amplifier;
     amplifierDescriptorObj: AmplifierDescriptor;
-    entityObj: Entity;
-    entityTypeObj: EntityType;
-    entitySubTypeObj: EntitySubType;
-    modifierOneObj: Modifier;
-    modifierTwoObj: Modifier;
-    entity: EntityBase;
+    entity: Entity;
+    entityType: EntityType;
+    entitySubType: EntitySubType;
+    modifierOne: Modifier;
+    modifierTwo: Modifier;
+    currentEntity: EntityBase;
     specialFn: string;
     entityFn: string;
     frameFn: string;
@@ -233,69 +233,69 @@ export class SicObject {
         this.sic = new Sic(sic);
         this.extractObjects(this.sic);
         // Get main icon
-        this.entity = this.entitySubTypeObj || this.entityTypeObj || this.entityObj;
+        this.currentEntity = this.entitySubType || this.entityType || this.entity;
         this.getFilePaths();
 
 
         //this.standardIdentityObj = findSymbolObject(symbolData.standardIdentities, this.standardIdentity);
     }
     private extractObjects(sic: Sic) {
-        this.contextObj = findSymbolObject(symbolData.contexts, sic.context);
-        this.standardIdentityObj = findSymbolObject(symbolData.standardIdentities, sic.standardIdentity);
-        this.symbolSetObj = findSymbolObject(symbolData.symbolSets, sic.symbolSet);
+        this.context = findSymbolObject(symbolData.contexts, sic.context);
+        this.standardIdentity = findSymbolObject(symbolData.standardIdentities, sic.standardIdentity);
+        this.symbolSet = findSymbolObject(symbolData.symbolSets, sic.symbolSet);
         this.statusObj = findSymbolObject(symbolData.statuses, sic.status);
         this.hqtfdObj = findSymbolObject(symbolData.hqtfDummies, sic.hqtfd);
-        this.amplifierObj = findSymbolObject(symbolData.amplifiers, sic.amplifier);
-        if (this.amplifierObj) {
-            this.amplifierDescriptorObj = findSymbolObject(this.amplifierObj.descriptors, sic.amplifierDescriptor);
+        this.amplifier = findSymbolObject(symbolData.amplifiers, sic.amplifier);
+        if (this.amplifier) {
+            this.amplifierDescriptorObj = findSymbolObject(this.amplifier.descriptors, sic.amplifierDescriptor);
         } else {
             this.amplifierDescriptorObj = null;
         }
 
-        this.entityObj = findSymbolObject(this.symbolSetObj.entities, sic.entity);
+        this.entity = findSymbolObject(this.symbolSet.entities, sic.entity);
 
         if (sic.entityType !== '00') {
-            this.entityTypeObj = findSymbolObject(this.entityObj.entityTypes, sic.entityType);
+            this.entityType = findSymbolObject(this.entity.entityTypes, sic.entityType);
             if (sic.entitySubType !== '00') {
                 var subtypes;
-                if (this.symbolSetObj.specialEntitySubTypes) {
-                    subtypes = this.entityTypeObj.entitySubTypes.concat(this.symbolSetObj.specialEntitySubTypes);
+                if (this.symbolSet.specialEntitySubTypes) {
+                    subtypes = this.entityType.entitySubTypes.concat(this.symbolSet.specialEntitySubTypes);
                 } else {
-                    subtypes = this.entityTypeObj.entitySubTypes;
+                    subtypes = this.entityType.entitySubTypes;
                 }
                 if (subtypes.length > 0) {
-                    this.entitySubTypeObj = findSymbolObject(subtypes, sic.entitySubType);
+                    this.entitySubType = findSymbolObject(subtypes, sic.entitySubType);
                 } else {
-                    this.entitySubTypeObj = null;
+                    this.entitySubType = null;
                 }
             } else {
-                this.entitySubTypeObj = null;
+                this.entitySubType = null;
             }
         } else {
-            this.entityTypeObj = null;
+            this.entityType = null;
         }
-        this.modifierOneObj = findSymbolObject(this.symbolSetObj.sectorOneModifiers, sic.modifierOne);
-        this.modifierTwoObj = findSymbolObject(this.symbolSetObj.sectorTwoModifiers, sic.modifierTwo);
+        this.modifierOne = findSymbolObject(this.symbolSet.sectorOneModifiers, sic.modifierOne);
+        this.modifierTwo = findSymbolObject(this.symbolSet.sectorTwoModifiers, sic.modifierTwo);
         // Get main icon
-        this.entity = this.entitySubTypeObj || this.entityTypeObj || this.entityObj;
+        this.currentEntity = this.entitySubType || this.entityType || this.entity;
     }
 
     private getFilePaths() {
-        if (this.entity && this.entity.icon == 'SPECIAL') {
+        if (this.currentEntity && this.currentEntity.icon == 'SPECIAL') {
             this.specialFn = PathService.getEntityFilePath(this) || config.BLANK_PATH;
-            this.entity = this.entityTypeObj;
+            this.currentEntity = this.entityType;
 
         } else {
             this.specialFn = config.BLANK_PATH;
         }
         this.entityFn = PathService.getEntityFilePath(this) || config.BLANK_PATH;
         // Get frame
-        if (!this.contextObj) {
+        if (!this.context) {
             return;
         }
-        let contextId = this.contextObj.id;
-        let siId = this.standardIdentityObj.id;
-        let entity = this.entity;
+        let contextId = this.context.id;
+        let siId = this.standardIdentity.id;
+        let entity = this.currentEntity;
 
 
         if (entity && entity.id == 'OWN_SHIP') {
@@ -315,26 +315,26 @@ export class SicObject {
 export class PathService {
     static getEntityFilePath(sic: SicObject): string {
         var fn = "";
-        let entity = sic.entity;
+        let entity = sic.currentEntity;
         if (entity) {
-            if (entity.icon === 'FULL_FRAME' || sic.entity.icon === 'SPECIAL') {
-                fn = sic.entity[standardIdentityMap2[sic.standardIdentityObj.id]];
+            if (entity.icon === 'FULL_FRAME' || sic.currentEntity.icon === 'SPECIAL') {
+                fn = sic.currentEntity[standardIdentityMap2[sic.standardIdentity.id]];
             } else {
                 if (sic.alternativeAmplifiers) {
                     fn = entity.alternativeGraphic || entity.graphic;
                 } else {
-                    fn = sic.entity.graphic;
+                    fn = sic.currentEntity.graphic;
                 }
             }
         }
-        return fn ? config.SVG_PATH + sic.symbolSetObj.graphicFolder["entities"] + "/" + fn : null;
+        return fn ? config.SVG_PATH + sic.symbolSet.graphicFolder["entities"] + "/" + fn : null;
     }
 
     static getFrameFilePath(sic: SicObject): string {
-        let dimensionId = sic.symbolSetObj.dimensionId,
+        let dimensionId = sic.symbolSet.dimensionId,
             fn = "";
-        let contextId = sic.contextObj.id;
-        let standardIdentityId = sic.standardIdentityObj.id;
+        let contextId = sic.context.id;
+        let standardIdentityId = sic.standardIdentity.id;
         if (dimensionId && contextId && standardIdentityId) {
             let a1 = symbolData.affiliations[contextId];
             if (a1) {
@@ -366,9 +366,9 @@ export class PathService {
     }
 
     static getHqtfdFilePath(sic: SicObject) {
-        var dimensionId = sic.symbolSetObj.dimensionId,
+        var dimensionId = sic.symbolSet.dimensionId,
             fn = "";
-        let standardIdentityId = sic.standardIdentityObj.id;
+        let standardIdentityId = sic.standardIdentity.id;
         if (dimensionId && sic.hqtfdObj && standardIdentityId && sic.hqtfdObj.graphics) {
             var sig = sic.hqtfdObj.graphics[symbolData.standardIdentityGroupMapping[standardIdentityId]];
             if (sig) {
@@ -380,11 +380,11 @@ export class PathService {
     }
 
     static getStatusFilePath(sic: SicObject) {
-        let dimensionId = sic.symbolSetObj.dimensionId,
+        let dimensionId = sic.symbolSet.dimensionId,
             fn = "";
         if (sic.alternativeAmplifiers) {
-            if (dimensionId && sic.statusObj && sic.standardIdentityObj.id && sic.statusObj.graphics) {
-                var sig = sic.statusObj.graphics[symbolData.standardIdentityGroupMapping[sic.standardIdentityObj.id]];
+            if (dimensionId && sic.statusObj && sic.standardIdentity.id && sic.statusObj.graphics) {
+                var sig = sic.statusObj.graphics[symbolData.standardIdentityGroupMapping[sic.standardIdentity.id]];
                 if (sig) {
                     var dim = sig[dimensionId];
                     fn = dim ? dim.graphic : null;
@@ -398,11 +398,11 @@ export class PathService {
 
     static getAmplifierFilePath(sic: SicObject) {
         var fn = "";
-        if (sic.symbolSetObj.geometry == "MIXED") {
+        if (sic.symbolSet.geometry == "MIXED") {
             return null;
         }
-        if (sic.standardIdentityObj.id && sic.amplifierDescriptorObj && sic.amplifierDescriptorObj.graphics) {
-            var sig = sic.amplifierDescriptorObj.graphics[symbolData.standardIdentityGroupMapping[sic.standardIdentityObj.id]];
+        if (sic.standardIdentity.id && sic.amplifierDescriptorObj && sic.amplifierDescriptorObj.graphics) {
+            var sig = sic.amplifierDescriptorObj.graphics[symbolData.standardIdentityGroupMapping[sic.standardIdentity.id]];
             fn = sig ? sig.graphic : null;
         }
         return fn ? config.SVG_PATH + fn : null;
@@ -410,14 +410,14 @@ export class PathService {
 
 
     static getModifierOneFilePath(sic: SicObject) {
-        let fn = sic.modifierOneObj ? sic.modifierOneObj.graphic : "";
-        return fn ? config.SVG_PATH + sic.symbolSetObj.graphicFolder["modifierOnes"] + "/" + fn : null;
+        let fn = sic.modifierOne ? sic.modifierOne.graphic : "";
+        return fn ? config.SVG_PATH + sic.symbolSet.graphicFolder["modifierOnes"] + "/" + fn : null;
     }
 
 
     static getModifierTwoFilePath(sic: SicObject) {
-        var fn = sic.modifierTwoObj ? sic.modifierTwoObj.graphic : "";
-        return fn ? config.SVG_PATH + sic.symbolSetObj.graphicFolder["modifierTwos"] + "/" + fn : null;
+        var fn = sic.modifierTwo ? sic.modifierTwo.graphic : "";
+        return fn ? config.SVG_PATH + sic.symbolSet.graphicFolder["modifierTwos"] + "/" + fn : null;
     }
 
     static getBoundingOctagonFilePath(symbolSetObj: SymbolSet) {
