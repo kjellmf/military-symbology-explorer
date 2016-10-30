@@ -20522,22 +20522,118 @@
       "labelAlias": "Fully Capable", 
       "graphics": {
         "SIG_NEUTRAL": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "OCA/043022.svg"
+          }, 
+          "SPACE": {
+            "graphic": "OCA/040522.svg"
+          }, 
+          "UNKNOWN": {
+            "graphic": "OCA/040022.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "OCA/042022.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "OCA/041522.svg"
+          }, 
+          "AIR": {
+            "graphic": "OCA/040122.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "OCA/041022.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "OCA/043522.svg"
+          }, 
+          "ACTIVITY": {
             "graphic": "OCA/044022.svg"
           }
         }, 
         "SIG_HOSTILE": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "OCA/063022.svg"
+          }, 
+          "SPACE": {
+            "graphic": "OCA/060522.svg"
+          }, 
+          "UNKNOWN": {
+            "graphic": "OCA/060022.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "OCA/062022.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "OCA/061522.svg"
+          }, 
+          "AIR": {
+            "graphic": "OCA/060122.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "OCA/061022.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "OCA/063522.svg"
+          }, 
+          "ACTIVITY": {
             "graphic": "OCA/064022.svg"
           }
         }, 
         "SIG_FRIEND": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "OCA/033022.svg"
+          }, 
+          "SPACE": {
+            "graphic": "OCA/030522.svg"
+          }, 
+          "UNKNOWN": {
+            "graphic": "OCA/030022.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "OCA/032022.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "OCA/031522.svg"
+          }, 
+          "AIR": {
+            "graphic": "OCA/030122.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "OCA/031022.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "OCA/033522.svg"
+          }, 
+          "ACTIVITY": {
             "graphic": "OCA/034022.svg"
           }
         }, 
         "SIG_UNKNOWN": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "OCA/013022.svg"
+          }, 
+          "SPACE": {
+            "graphic": "OCA/010522.svg"
+          }, 
+          "UNKNOWN": {
+            "graphic": "OCA/010022.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "OCA/012022.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "OCA/011522.svg"
+          }, 
+          "AIR": {
+            "graphic": "OCA/010122.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "OCA/011022.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "OCA/013522.svg"
+          }, 
+          "ACTIVITY": {
             "graphic": "OCA/014022.svg"
           }
         }
@@ -20551,22 +20647,118 @@
       "graphic": "OCA/3.svg", 
       "graphics": {
         "SIG_NEUTRAL": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "OCA/043032.svg"
+          }, 
+          "SPACE": {
+            "graphic": "OCA/040532.svg"
+          }, 
+          "UNKNOWN": {
+            "graphic": "OCA/040032.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "OCA/042032.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "OCA/041532.svg"
+          }, 
+          "AIR": {
+            "graphic": "OCA/040132.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "OCA/041032.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "OCA/043532.svg"
+          }, 
+          "ACTIVITY": {
             "graphic": "OCA/044032.svg"
           }
         }, 
         "SIG_HOSTILE": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "OCA/063032.svg"
+          }, 
+          "SPACE": {
+            "graphic": "OCA/060532.svg"
+          }, 
+          "UNKNOWN": {
+            "graphic": "OCA/060032.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "OCA/062032.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "OCA/061532.svg"
+          }, 
+          "AIR": {
+            "graphic": "OCA/060132.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "OCA/061032.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "OCA/063532.svg"
+          }, 
+          "ACTIVITY": {
             "graphic": "OCA/064032.svg"
           }
         }, 
         "SIG_FRIEND": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "OCA/033032.svg"
+          }, 
+          "SPACE": {
+            "graphic": "OCA/030532.svg"
+          }, 
+          "UNKNOWN": {
+            "graphic": "OCA/030032.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "OCA/032032.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "OCA/031532.svg"
+          }, 
+          "AIR": {
+            "graphic": "OCA/030132.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "OCA/031032.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "OCA/033532.svg"
+          }, 
+          "ACTIVITY": {
             "graphic": "OCA/034032.svg"
           }
         }, 
         "SIG_UNKNOWN": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "OCA/013032.svg"
+          }, 
+          "SPACE": {
+            "graphic": "OCA/010532.svg"
+          }, 
+          "UNKNOWN": {
+            "graphic": "OCA/010032.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "OCA/012032.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "OCA/011532.svg"
+          }, 
+          "AIR": {
+            "graphic": "OCA/010132.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "OCA/011032.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "OCA/013532.svg"
+          }, 
+          "ACTIVITY": {
             "graphic": "OCA/014032.svg"
           }
         }
@@ -20580,22 +20772,118 @@
       "graphic": "OCA/4.svg", 
       "graphics": {
         "SIG_NEUTRAL": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "OCA/043042.svg"
+          }, 
+          "SPACE": {
+            "graphic": "OCA/040542.svg"
+          }, 
+          "UNKNOWN": {
+            "graphic": "OCA/040042.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "OCA/042042.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "OCA/041542.svg"
+          }, 
+          "AIR": {
+            "graphic": "OCA/040142.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "OCA/041042.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "OCA/043542.svg"
+          }, 
+          "ACTIVITY": {
             "graphic": "OCA/044042.svg"
           }
         }, 
         "SIG_HOSTILE": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "OCA/063042.svg"
+          }, 
+          "SPACE": {
+            "graphic": "OCA/060542.svg"
+          }, 
+          "UNKNOWN": {
+            "graphic": "OCA/060042.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "OCA/062042.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "OCA/061542.svg"
+          }, 
+          "AIR": {
+            "graphic": "OCA/060142.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "OCA/061042.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "OCA/063542.svg"
+          }, 
+          "ACTIVITY": {
             "graphic": "OCA/064042.svg"
           }
         }, 
         "SIG_FRIEND": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "OCA/033042.svg"
+          }, 
+          "SPACE": {
+            "graphic": "OCA/030542.svg"
+          }, 
+          "UNKNOWN": {
+            "graphic": "OCA/030042.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "OCA/032042.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "OCA/031542.svg"
+          }, 
+          "AIR": {
+            "graphic": "OCA/030142.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "OCA/031042.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "OCA/033542.svg"
+          }, 
+          "ACTIVITY": {
             "graphic": "OCA/034042.svg"
           }
         }, 
         "SIG_UNKNOWN": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "OCA/013042.svg"
+          }, 
+          "SPACE": {
+            "graphic": "OCA/010542.svg"
+          }, 
+          "UNKNOWN": {
+            "graphic": "OCA/010042.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "OCA/012042.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "OCA/011542.svg"
+          }, 
+          "AIR": {
+            "graphic": "OCA/010142.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "OCA/011042.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "OCA/013542.svg"
+          }, 
+          "ACTIVITY": {
             "graphic": "OCA/014042.svg"
           }
         }
@@ -20608,22 +20896,118 @@
       "labelAlias": "Full", 
       "graphics": {
         "SIG_NEUTRAL": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "OCA/043052.svg"
+          }, 
+          "SPACE": {
+            "graphic": "OCA/040552.svg"
+          }, 
+          "UNKNOWN": {
+            "graphic": "OCA/040052.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "OCA/042052.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "OCA/041552.svg"
+          }, 
+          "AIR": {
+            "graphic": "OCA/040152.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "OCA/041052.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "OCA/043552.svg"
+          }, 
+          "ACTIVITY": {
             "graphic": "OCA/044052.svg"
           }
         }, 
         "SIG_HOSTILE": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "OCA/063052.svg"
+          }, 
+          "SPACE": {
+            "graphic": "OCA/060552.svg"
+          }, 
+          "UNKNOWN": {
+            "graphic": "OCA/060052.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "OCA/062052.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "OCA/061552.svg"
+          }, 
+          "AIR": {
+            "graphic": "OCA/060152.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "OCA/061052.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "OCA/063552.svg"
+          }, 
+          "ACTIVITY": {
             "graphic": "OCA/064052.svg"
           }
         }, 
         "SIG_FRIEND": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "OCA/033052.svg"
+          }, 
+          "SPACE": {
+            "graphic": "OCA/030552.svg"
+          }, 
+          "UNKNOWN": {
+            "graphic": "OCA/030052.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "OCA/032052.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "OCA/031552.svg"
+          }, 
+          "AIR": {
+            "graphic": "OCA/030152.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "OCA/031052.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "OCA/033552.svg"
+          }, 
+          "ACTIVITY": {
             "graphic": "OCA/034052.svg"
           }
         }, 
         "SIG_UNKNOWN": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "OCA/013052.svg"
+          }, 
+          "SPACE": {
+            "graphic": "OCA/010552.svg"
+          }, 
+          "UNKNOWN": {
+            "graphic": "OCA/010052.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "OCA/012052.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "OCA/011552.svg"
+          }, 
+          "AIR": {
+            "graphic": "OCA/010152.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "OCA/011052.svg"
+          }, 
+          "SEA_SUBSURFACE": {
+            "graphic": "OCA/013552.svg"
+          }, 
+          "ACTIVITY": {
             "graphic": "OCA/014052.svg"
           }
         }
@@ -20642,22 +21026,94 @@
       "label": "Feint/Dummy", 
       "graphics": {
         "SIG_NEUTRAL": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/4301.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/4051.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/4201.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/4151.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/4011.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/4101.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/4351.svg"
           }
         }, 
         "SIG_HOSTILE": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/6301.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/6051.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/6201.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/6151.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/6011.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/6101.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/6351.svg"
           }
         }, 
         "SIG_FRIEND": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/3301.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/3051.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/3201.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/3151.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/3011.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/3101.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/3351.svg"
           }
         }, 
         "SIG_UNKNOWN": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/1301.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/1051.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/1201.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/1151.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/1011.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/1101.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/1351.svg"
           }
         }
@@ -20669,22 +21125,94 @@
       "label": "Headquarters", 
       "graphics": {
         "SIG_NEUTRAL": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/4302.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/4052.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/4202.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/4152.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/4012.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/4102.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/4352.svg"
           }
         }, 
         "SIG_HOSTILE": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/6302.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/6052.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/6202.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/6152.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/6012.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/6102.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/6352.svg"
           }
         }, 
         "SIG_FRIEND": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/3302.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/3052.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/3202.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/3152.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/3012.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/3102.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/3352.svg"
           }
         }, 
         "SIG_UNKNOWN": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/1302.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/1052.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/1202.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/1152.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/1012.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/1102.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/1352.svg"
           }
         }
@@ -20696,22 +21224,94 @@
       "label": "Feint/Dummy Headquarters", 
       "graphics": {
         "SIG_NEUTRAL": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/4303.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/4053.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/4203.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/4153.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/4013.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/4103.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/4353.svg"
           }
         }, 
         "SIG_HOSTILE": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/6303.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/6053.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/6203.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/6153.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/6013.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/6103.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/6353.svg"
           }
         }, 
         "SIG_FRIEND": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/3303.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/3053.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/3203.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/3153.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/3013.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/3103.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/3353.svg"
           }
         }, 
         "SIG_UNKNOWN": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/1303.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/1053.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/1203.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/1153.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/1013.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/1103.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/1353.svg"
           }
         }
@@ -20723,22 +21323,94 @@
       "label": "Task Force", 
       "graphics": {
         "SIG_NEUTRAL": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/4304.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/4054.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/4204.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/4154.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/4014.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/4104.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/4354.svg"
           }
         }, 
         "SIG_HOSTILE": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/6304.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/6054.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/6204.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/6154.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/6014.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/6104.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/6354.svg"
           }
         }, 
         "SIG_FRIEND": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/3304.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/3054.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/3204.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/3154.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/3014.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/3104.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/3354.svg"
           }
         }, 
         "SIG_UNKNOWN": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/1304.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/1054.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/1204.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/1154.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/1014.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/1104.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/1354.svg"
           }
         }
@@ -20750,22 +21422,94 @@
       "label": "Feint/Dummy Task Force", 
       "graphics": {
         "SIG_NEUTRAL": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/4305.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/4055.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/4205.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/4155.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/4015.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/4105.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/4355.svg"
           }
         }, 
         "SIG_HOSTILE": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/6305.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/6055.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/6205.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/6155.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/6015.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/6105.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/6355.svg"
           }
         }, 
         "SIG_FRIEND": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/3305.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/3055.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/3205.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/3155.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/3015.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/3105.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/3355.svg"
           }
         }, 
         "SIG_UNKNOWN": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/1305.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/1055.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/1205.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/1155.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/1015.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/1105.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/1355.svg"
           }
         }
@@ -20777,22 +21521,94 @@
       "label": "Task Force Headquarters", 
       "graphics": {
         "SIG_NEUTRAL": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/4306.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/4056.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/4206.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/4156.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/4016.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/4106.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/4356.svg"
           }
         }, 
         "SIG_HOSTILE": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/6306.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/6056.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/6206.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/6156.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/6016.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/6106.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/6356.svg"
           }
         }, 
         "SIG_FRIEND": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/3306.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/3056.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/3206.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/3156.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/3016.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/3106.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/3356.svg"
           }
         }, 
         "SIG_UNKNOWN": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/1306.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/1056.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/1206.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/1156.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/1016.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/1106.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/1356.svg"
           }
         }
@@ -20805,22 +21621,94 @@
       "labelAlias": "Feint/Dummy Task Force HQ", 
       "graphics": {
         "SIG_NEUTRAL": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/4307.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/4057.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/4207.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/4157.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/4017.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/4107.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/4357.svg"
           }
         }, 
         "SIG_HOSTILE": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/6307.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/6057.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/6207.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/6157.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/6017.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/6107.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/6357.svg"
           }
         }, 
         "SIG_FRIEND": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/3307.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/3057.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/3207.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/3157.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/3017.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/3107.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/3357.svg"
           }
         }, 
         "SIG_UNKNOWN": {
-          "null": {
+          "SEA_SURFACE": {
+            "graphic": "HQTFFD/1307.svg"
+          }, 
+          "SPACE": {
+            "graphic": "HQTFFD/1057.svg"
+          }, 
+          "LAND_INSTALLATION": {
+            "graphic": "HQTFFD/1207.svg"
+          }, 
+          "LAND_EQUIPMENT": {
+            "graphic": "HQTFFD/1157.svg"
+          }, 
+          "AIR": {
+            "graphic": "HQTFFD/1017.svg"
+          }, 
+          "LAND_UNIT": {
+            "graphic": "HQTFFD/1107.svg"
+          }, 
+          "SEA_SUBSURFACE": {
             "graphic": "HQTFFD/1357.svg"
           }
         }

@@ -328,7 +328,7 @@ def extract_status_or_hqtfd(tree, element_name, folder_name):
         graphics = defaultdict(lambda: defaultdict(OrderedDict))
         for graphic_element in element.iter(ns_tag('Graphic')):
             sig = graphic_element.get('StandardIdentityGroup')
-            dimension = graphic_element.get('Dimension')
+            dimension = graphic_element.get('DimensionID')
             graphic = graphic_element.get('Graphic')
             sigd = graphics[sig]
             sigd[dimension]['graphic'] = folder_name + "/" + graphic
@@ -371,7 +371,7 @@ def extract_jmsml_data(frame_folders, oca_folder, hqtffd_folder, echelon_folder,
     symbol_data['symbolSets'] = extract_symbol_sets(tree)
     symbol_data['statuses'] = extract_status_or_hqtfd(tree, "Status", oca_folder)
     symbol_data['hqtfDummies'] = extract_status_or_hqtfd(tree, "HQTFDummy", hqtffd_folder)
-    symbol_data['amplifier'] = extract_amplifier_groups(tree, echelon_folder, amplifier_folder)
+    symbol_data['amplifiers'] = extract_amplifier_groups(tree, echelon_folder, amplifier_folder)
     symbol_data['affiliations'] = extract_affiliations(tree, frame_folders)
     symbol_data['dimensions'] = extract_dimensions(tree)
     symbol_data['standardIdentityGroupMapping'] = si2sig
@@ -433,9 +433,9 @@ if __name__ == '__main__':
     for symbol_set in jmsml_data["symbolSets"]:
         symbol_set["graphicFolder"] = symbolset_folders[symbol_set['id']]
 
-    DEST_FILE = join(PROJECT_PATH, '../data/jmsml.js')
+    DEST_FILE = join(PROJECT_PATH, '../src/data/jmsml.json')
 
     with open(DEST_FILE, 'w') as f:
         json_code = json.dumps(jmsml_data, indent=2)
         config_json_code = json.dumps(symbolset_folders, indent=2)
-        f.write("var symbolData=%s;\n" % (json_code, ))
+        f.write("%s" % (json_code, ))
