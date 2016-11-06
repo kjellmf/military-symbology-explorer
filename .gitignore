@@ -4,8 +4,11 @@ bower_components/
 node_modules/
 ## Directory-based project format:
 .idea/
+.vscode/
 dist/
 svg/
+src/svg
 *.zip
 *.7z
-
+*.log
+*.lock
