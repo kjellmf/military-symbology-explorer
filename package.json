@@ -14,7 +14,8 @@
     "url": "https://github.com/kjellmf/military-symbology-explorer.git"
   },
   "dependencies": {
-    "vue": "^2.3.3"
+    "vue": "^2.3.3",
+    "vue-property-decorator": "^5.0.1"
   },
   "devDependencies": {
     "cross-env": "^5.0.0",

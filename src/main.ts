@@ -4,7 +4,7 @@ import App from './App.vue'
 import {symbolData} from './jmsml';
 
 console.log(symbolData.contexts);
-new Vue({
+const app = new Vue({
     el: '#app',
     render: h => h(App)
 });

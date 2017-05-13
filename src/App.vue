@@ -1,49 +1,40 @@
 <template>
     <div id="app">
 
-        <h1>{{ msg }}</h1>
-        <p>sdfsdf</p>
+        <h1>Test</h1>
+        <ul>
+            <li v-for="t in msg">{{t.label}}</li>
+        </ul>
+        <img :src="path" height="100px">
     </div>
 </template>
 
 <script lang="ts">
-    import {symbolData} from './jmsml';
 
-    export default {
-        data () {
-            return {
-                msg: symbolData.contexts
-            }
+    import Vue from 'vue';
+    import {Component} from 'vue-property-decorator';
+    import {PathService, SicObject, symbolData} from "./jmsml";
+
+    @Component
+    export default class MyApp extends Vue {
+        msg = Object.freeze(symbolData.symbolSets);
+        path="";
+        tmp = {};
+        created() {
+            console.log("Hello");
         }
+        mounted() {
+            var tmp: SicObject = new SicObject("10131000001211050000");
+            console.log(PathService.getEntityFilePath(tmp));
+            this.path = tmp.frameFn;
+
+
+        }
+
     }
 </script>
 
 <style scoped>
-    #app {
-        font-family: 'Avenir', Helvetica, Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-align: center;
-        color: #2c3e50;
-        margin-top: 60px;
-    }
 
-    h1, h2 {
-        font-weight: bold;
-        color:red;
-    }
 
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    li {
-        display: inline-block;
-        margin: 0 10px;
-    }
-
-    a {
-        color: #42b983;
-    }
 </style>

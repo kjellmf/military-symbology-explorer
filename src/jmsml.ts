@@ -434,5 +434,5 @@ export class PathService {
 
 }
 
-export var symbolData = <SymbolData>require("./data/jmsml.json");
+export const symbolData = <SymbolData>require("./data/jmsml.json");
 
