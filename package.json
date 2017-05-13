@@ -6,20 +6,26 @@
   "homepage": "http://kjellmf.github.io/military-symbology-explorer/",
   "license": "Apache-2.0",
   "scripts": {
-    "build": "webpack --inline --colors --progress --display-error-details --display-cached",
-    "watch": "npm run build -- --watch",
-    "server": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base src",
-    "start": "npm run server"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --port 3000 --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/kjellmf/military-symbology-explorer.git"
   },
+  "dependencies": {
+    "vue": "^2.3.3"
+  },
   "devDependencies": {
-    "awesome-typescript-loader": "^2.2.4",
-    "typescript": "^2.0.3",
-    "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.16.2",
-    "webpack-merge": "^0.15.0"
+    "cross-env": "^5.0.0",
+    "css-loader": "^0.28.1",
+    "file-loader": "^0.11.0",
+    "ts-loader": "^2.0.3",
+    "tslint": "^5.2.0",
+    "typescript": "^2.3.2",
+    "vue-loader": "^12.0.3",
+    "vue-template-compiler": "^2.3.3",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
   }
 }

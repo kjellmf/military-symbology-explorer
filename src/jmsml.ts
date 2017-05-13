@@ -5,7 +5,7 @@
 const config = {
     BLANK_PATH: "assets/img/blank.png",
     SVG_PATH: "svg/MIL_STD_2525D_Symbols/"
-}
+};
 
 export type GeometryType = "NA" | "POINT" | "LINE" | "AREA" | "MIXED";
 
@@ -62,9 +62,9 @@ export interface EntityType extends EntityBase {
 
 export interface EntitySubType extends EntityBase {
     /* Not used yet
-    entityCode?: string;
-    entityTypeCode?: string;
-    */
+     entityCode?: string;
+     entityTypeCode?: string;
+     */
 };
 
 export interface Modifier extends IdentifierAttributeGroup {
@@ -140,6 +140,7 @@ export class Sic implements SicElements {
     entitySubType: string;
     modifierOne: string;
     modifierTwo: string;
+
     constructor(private sic: string) {
         this.context = sic.substr(2, 1);
         this.standardIdentity = sic.substr(3, 1);
@@ -178,10 +179,11 @@ var standardIdentityMap2 = {
 };
 
 
+
 /**
  * Do a binary search for a symbol object
  */
-function findSymbolObject(arr, digits) {
+function findSymbolObject(arr: Array<any>, digits: string) {
     var beginning = 0, end = arr.length,
         target;
     if (!end) {
@@ -239,6 +241,7 @@ export class SicObject {
 
         //this.standardIdentityObj = findSymbolObject(symbolData.standardIdentities, this.standardIdentity);
     }
+
     private extractObjects(sic: Sic) {
         this.context = findSymbolObject(symbolData.contexts, sic.context);
         this.standardIdentity = findSymbolObject(symbolData.standardIdentities, sic.standardIdentity);

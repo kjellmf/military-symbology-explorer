@@ -1,10 +1,10 @@
-class Greeter {
-    constructor(public greeting: string) { }
-    greet() {
-        return "<h1>" + this.greeting + "</h1>";
-    }
-};
+import Vue from 'vue'
+import App from './App.vue'
 
-var greeter = new Greeter("Hello, world!");
-    
-document.body.innerHTML = greeter.greet();
+import {symbolData} from './jmsml';
+
+console.log(symbolData.contexts);
+new Vue({
+    el: '#app',
+    render: h => h(App)
+});

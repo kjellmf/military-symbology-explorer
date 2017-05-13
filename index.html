@@ -1,84 +1,11 @@
-<!doctype html>
-<html ng-app="symbolApp">
-<head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Joint military symbology explorer</title>
-    <!--
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.4/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.4/angular-animate.js"></script>
--->
-    <!-- build:css assets/css/external.css -->
-    <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">-->
-
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bower_components/angular-motion/dist/angular-motion.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-additions.min.css">
-
-    <!-- endbuild -->
-
-    <!-- build:js scripts/external.min.js -->
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/FileSaver/FileSaver.js"></script>
-    <script src="assets/canvas-toBlob.js"></script>
-    <script src="bower_components/zeroclipboard/dist/ZeroClipboard.js"></script>
-    <script src="bower_components/ng-clip/src/ngClip.js"></script>
-    <script src="bower_components/angular-strap/dist/angular-strap.js"></script>
-    <script src="bower_components/angular-strap/dist/angular-strap.tpl.js"></script>
-
-    <!-- endbuild -->
-
-    <!-- build:css assets/css/app.css -->
-    <!--<link rel="stylesheet" href="assets/css/animate.css">-->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- endbuild -->
-
-    <!-- build:js scripts/app.min.js -->
-    <script src="data/jmsml.js"></script>
-    <script src="app/app.module.js"></script>
-    <script src="app/app.routes.js"></script>
-    <script src="app/app.js"></script>
-    <script src="app/app.services.js"></script>
-    <script src="app/app.directives.js"></script>
-    <script src="app/components/frames/frames.js"></script>
-    <script src="app/components/symbol/symbol.js"></script>
-    <script src="app/components/symbolset/symbolset.js"></script>
-    <script src="app/components/search/search.js"></script>
-    <!-- endbuild -->
-
-</head>
-
-<body>
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" ui-sref="home">Symbology explorer</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse" ng-class="!navCollapsed && 'in'" ng-click="navCollapsed=true">
-            <ul class="nav navbar-nav navbar-left">
-                <li><a ui-sref="explore">Explore</a></li>
-                <li><a ui-sref="symbolSet">Symbol set browser</a></li>
-                <li><a ui-sref="frames">Frames</a></li>
-                <li><a ui-sref="search">Search</a></li>
-                <li><a ui-sref="about">About</a></li>
-                <li><a href="https://github.com/kjellmf/military-symbology-explorer">Github project</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<div ui-view></div>
-</body>
-
+    <title>Typed Vue</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="/dist/main.js"></script>
+  </body>
 </html>
