@@ -4931,14 +4931,14 @@
                 }, 
                 {
                   "digits": "02", 
-                  "label": "Light Transporter-Launcher and Radar (TLAR)", 
+                  "label": "Light, Light Transporter-Launcher and Radar (TLAR)", 
                   "id": "AIR_DEFENSE_MISSILE_LIGHT_TLAR", 
                   "graphic": "15111102.svg", 
                   "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
-                  "label": "Light Tactical Landing Approach Radar (TELAR)", 
+                  "label": "Light, Light Tactical Landing Approach Radar (TELAR)", 
                   "id": "AIR_DEFENSE_MISSILE_LIGHT_TELAR", 
                   "graphic": "15111103.svg", 
                   "icon": "FULL_OCTAGON"
@@ -4952,14 +4952,14 @@
                 }, 
                 {
                   "digits": "05", 
-                  "label": "Medium TLAR", 
+                  "label": "Medium, TLAR", 
                   "id": "AIR_DEFENSE_MISSILE_MEDIUM_TLAR", 
                   "graphic": "15111105.svg", 
                   "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "06", 
-                  "label": "Medium TELAR Air Defense Missile Launcher", 
+                  "label": "Medium, TELAR Air Defense Missile Launcher", 
                   "id": "AIR_DEFENSE_MISSILE_MEDIUM_TELAR", 
                   "graphic": "15111106.svg", 
                   "icon": "FULL_OCTAGON"
@@ -4973,14 +4973,14 @@
                 }, 
                 {
                   "digits": "08", 
-                  "label": "Heavy TLAR", 
+                  "label": "Heavy, TLAR", 
                   "id": "AIR_DEFENSE_MISSILE_HEAVY_TLAR", 
                   "graphic": "15111108.svg", 
                   "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "09", 
-                  "label": "Heavy TELAR", 
+                  "label": "Heavy, TELAR", 
                   "id": "AIR_DEFENSE_MISSILE_HEAVY_TELAR", 
                   "graphic": "15111109.svg", 
                   "icon": "FULL_OCTAGON"
@@ -8707,8 +8707,8 @@
             }, 
             {
               "digits": "11", 
-              "label": "Replenishment Station", 
-              "id": "REPLENISHMENT_STATION", 
+              "label": "Replemenshment Station", 
+              "id": "REPLEMENSHMENT_STATION", 
               "graphic": "25181100.svg", 
               "entitySubTypes": []
             }, 
