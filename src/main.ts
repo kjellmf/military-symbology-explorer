@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-import {symbolData} from './jmsml';
+import MilSymb from "./components/milsymbol.vue";
 
-console.log(symbolData.contexts);
+Vue.component('milsymbol', MilSymb);
+
 const app = new Vue({
     el: '#app',
     render: h => h(App)
