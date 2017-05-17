@@ -1,11 +1,12 @@
 import Vue from 'vue'
-import App from './App.vue'
 
 import MilSymb from "./components/milsymbol.vue";
+import router from './router';
 
 Vue.component('milsymbol', MilSymb);
 
 const app = new Vue({
     el: '#app',
-    render: h => h(App)
+    template: '<router-view></router-view>',
+    router,
 });
