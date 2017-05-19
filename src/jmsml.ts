@@ -108,7 +108,8 @@ export interface SymbolData {
     statuses: Status[];
     hqtfDummies: HqtfD[];
     amplifiers: Amplifier[];
-    affiliations: {}[]
+    affiliations: {}[];
+    dimensions: any;
     standardIdentityGroupMapping: any;
 }
 
