@@ -24,10 +24,6 @@
         @Prop({type:Boolean, default:false})
         alternate: boolean;
 
-//        get sicObj() {
-//            return this.sicObject;
-//        }
-
         @Watch('sidc')
         onSidcChange(val: string) {
             this.setSymbol();
@@ -37,12 +33,10 @@
 
         private setSymbol() {
             this.sicObj = new SicObject(this.sic, this.alternate);
-            console.log(this.sicObj);
         }
 
         created() {
             this.setSymbol();
-
         }
 
 
