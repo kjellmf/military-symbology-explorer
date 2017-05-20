@@ -3,12 +3,12 @@
         <thead>
         <tr>
             <th class="col-md-1"></th>
-            <th class="col-md-1" v-for="dim in dimensions">{{dim.label}}</th>
+            <th class="col-md-1" v-for="dim in sd.dimensions">{{dim.label}}</th>
         </tr>
         </thead>
-        <tr v-for="si in standardIdentities">
+        <tr v-for="si in sd.standardIdentities">
             <th>{{si.label}}</th>
-            <td v-for="dim in dimensions">
+            <td v-for="dim in sd.dimensions">
                 <div class="milsymbol"><img class="symbol-sm" :src="getFrameFn(si, dim)"></div>
             </td>
         </tr>
@@ -18,28 +18,26 @@
 <script lang="ts">
     import Vue from 'vue';
     import {Component, Prop, Watch} from 'vue-property-decorator';
-    import {symbolData} from "../jmsml";
-
-    const BLANK_PATH = "assets/img/blank.png";
-    const SVG_PATH = "svg/MIL_STD_2525D_Symbols/";
-
+    import {BLANK_PATH, FramesData, SVG_PATH, symbolData} from "../jmsml";
 
     @Component
     export default class FrameTable extends Vue {
         @Prop()
         context: string;
-        affiliations = symbolData.affiliations;
-        standardIdentities = symbolData.standardIdentities;
-        dimensions = symbolData.dimensions.filter(function (item) {
-            return item.geometry == "POINT"
-        });
+        sd = <FramesData>{};
 
+        created() {
+            this.sd.standardIdentities = symbolData.standardIdentities;
+            this.sd.dimensions = symbolData.dimensions.filter(function (item) {
+                return item.geometry == "POINT"
+            });
+//            console.log(this.sd.standardIdentities);
+        }
 
         getFrameFn(standardIdentity, dimension) {
             let aff = symbolData.affiliations;
             let obj = aff[this.context][dimension.id][standardIdentity.id];
             return obj ? SVG_PATH + obj.graphic : BLANK_PATH;
-
         }
 
 

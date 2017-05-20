@@ -113,6 +113,12 @@ export interface SymbolData {
     standardIdentityGroupMapping: any;
 }
 
+export interface FramesData {
+    dimensions?: any;
+    standardIdentities?: StandardIdentity[];
+    contexts?: Context[];
+}
+
 interface SicElements {
     context: string;
     standardIdentity: string;
@@ -435,5 +441,7 @@ export class PathService {
 
 }
 
-export const symbolData = <SymbolData>require("./data/jmsml.json");
+
+export const symbolData = <SymbolData>require("./jmsml.json");
+
 
