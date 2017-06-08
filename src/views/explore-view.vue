@@ -1,0 +1,351 @@
+<template>
+    <div class="container-fluid">
+        <div class="col-sm-2 col-md-2 sidebar">
+            <p></p>
+            <div class="panel panel-default">
+                <div class="panel-heading">Settings</div>
+                <div class="panel-body">
+                    <div class="checkbox" title="Use colored bars for visualizing status">
+                        <label><input type="checkbox" ng-model="alternateAmplifiers"
+                                      ng-change="changeAlternateAmplifiers(alternateAmplifiers)">Use alternate status
+                            amplifiers</label>
+                    </div>
+                    <div class="checkbox" title="Use civilian frames if available">
+                        <label><input type="checkbox" ng-model="symbId.useCivilianFrame">Use civilian frames</label>
+                    </div>
+                    <div class="checkbox" title="Limit some modifiers to specific symbols">
+                        <label><input type="checkbox" ng-model="limitUseTo">Limit modifiers</label>
+                    </div>
+                    <div class="checkbox" title="Show internal meta data">
+                        <label><input type="checkbox" ng-model="showDebugInfo">Show debug info</label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-2">
+                <h2>Symbol identification code explorer</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-2">
+                <div class="row">
+                    <form class="form-horizontal" role="form">
+                        <div>
+                            <div class="form-group">
+
+                                <label class="col-sm-4 control-label">Context</label>
+
+                                <div class="col-sm-8">
+                                    <select class="form-control" ng-model="context"
+                                            ng-options="d as getLabel(d) for d in symbolData.contexts"
+                                            ng-change="changeContext(context)">
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">Standard identity</label>
+
+                                <div class="col-sm-8">
+                                    <select class="form-control" ng-model="standardIdentity"
+                                            ng-options="d as getLabel(d) for d in symbolData.standardIdentities"
+                                            ng-change="changeStandardIdentity(standardIdentity)"
+                                    >
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">Symbol set</label>
+
+                                <div class="col-sm-8">
+                                    <div class="input-group">
+                                        <select class="form-control" ng-model="currentSymbolSet"
+                                                ng-options="d as getLabel(d) for d in symbolData.symbolSets"
+                                                ng-change="changeSymbolSet(currentSymbolSet)">
+                                            <option value="">-- choose symbol set --</option>
+                                        </select>
+                                        <span class="input-group-btn"><a class="btn btn-info"
+                                                                         ui-sref="symbolSet({symbolSetId: currentSymbolSet.id})">Browse</a></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">Status</label>
+
+                                <div class="col-sm-8">
+                                    <select class="form-control" ng-model="status"
+                                            ng-options="d as getLabel(d) for d in symbolData.statuses"
+                                            ng-change="changeStatus(status)">
+                                        <option value="">-- choose status --</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">HQTFDummy</label>
+
+                                <div class="col-sm-8">
+                                    <select class="form-control" ng-model="hqtfDummy"
+                                            ng-options="d as getLabel(d) for d in symbolData.hqtfDummies"
+                                            ng-change="changeHQTFDummy(hqtfDummy)">
+                                        <option value="">-- choose status --</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">Amplifier</label>
+
+                                <div class="col-sm-8">
+                                    <select class="form-control" ng-model="amplifier"
+                                            ng-options="d as getLabel(d) for d in symbolData.amplifier"
+                                            ng-change="changeAmplifier(amplifier)">
+                                        <option value="">-- choose amplifer --</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label"></label>
+
+                                <div class="col-sm-8">
+                                    <select class="form-control" ng-model="amplifierDescriptor"
+                                            ng-options="d as getLabel(d) for d in amplifier.descriptors"
+                                            ng-change="changeAmplifierDescriptor(amplifierDescriptor)">
+                                        <option value="">-- choose amplifer --</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">Entity</label>
+
+                                <div class="col-sm-8">
+                                    <select class="form-control" ng-model="entity"
+                                            ng-options="d as getLabel(d) for d in currentSymbolSet.entities"
+                                            ng-change="changeEntity(entity)">
+                                        <option value="">-- choose entity --</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">Entity type</label>
+
+                                <div class="col-sm-8">
+                                    <select class="form-control" ng-model="entityType"
+                                            ng-options="d as getLabel(d) for d in entity.entityTypes"
+                                            ng-change="changeEntityType(entityType)">
+                                        <option value="">00</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">Entity subtype</label>
+
+                                <div class="col-sm-8">
+                                    <select class="form-control" ng-model="entitySubType"
+                                            ng-options="d as getLabel(d) for d in getEntitySubTypes()"
+                                            ng-change="changeEntitySubType(entitySubType)">
+                                        <option value="">00</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">Sector one modifier</label>
+
+                                <div class="col-sm-8">
+                                    <select class="form-control" ng-model="sectorOneModifier"
+                                            ng-options="getLabel(d) group by d.category for d in currentSymbolSet.sectorOneModifiers | limitUseToModFilter:this:limitUseTo"
+                                            ng-change="ss.setSectorOneModifier(sectorOneModifier)"
+                                            ng-disabled="currentEntity | disableModOne">
+                                        <option value="">00</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">Sector two modifier</label>
+
+                                <div class="col-sm-8">
+                                    <select class="form-control" ng-model="sectorTwoModifier"
+                                            ng-options="getLabel(d) group by d.category for d in currentSymbolSet.sectorTwoModifiers | limitUseToModFilter:this:limitUseTo"
+                                            ng-change="ss.setSectorTwoModifier(sectorTwoModifier)"
+                                            ng-disabled="currentEntity | disableModTwo">
+                                        <option value="">00</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <table class="table table-bordered table-condensed">
+                    <tr>
+                        <td class="symbol">
+                            <div class="symbol">
+                                <div class="milsymb reveal-animation" ng-include="frame()"></div>
+                                <div class="milsymb reveal-animation" ng-include="main()"></div>
+                                <div class="milsymb reveal-animation" ng-include="special()"></div>
+                                <div class="milsymb reveal-animation" ng-include="modifierOneFn()"></div>
+                                <div class="milsymb reveal-animation" ng-include="modifierTwoFn()"></div>
+                                <div class="milsymb reveal-animation" ng-include="amplifierFn()"></div>
+                                <div class="milsymb reveal-animation" ng-include="statusFn()"></div>
+                                <div class="milsymb reveal-animation" ng-include="hqtfdFn()"></div>
+                            </div>
+                        </td>
+                        <td>{{currentEntity.remarks}}
+                            <div ng-show="showDebugInfo">
+                                <small><strong>ID</strong> <code>{{currentEntity.id}}</code><br>
+                                    <strong>Icon</strong> <code>{{currentEntity.icon}}</code></small>
+                            </div>
+                            <br>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <a class="btn btn-default btn-xs" ng-click="saveAsPng()"
+                               title="Does not work in Internet Explorer">Save as PNG</a>
+                            <a class="btn btn-default btn-xs" clip-copy="copySic()"
+                               title="Copy symbol identification code to clipboard">Copy SIC</a>
+                            <a class="btn btn-default btn-xs" ui-sref="explore({sic: copySic()})">Link</a>
+                        </td>
+                    </tr>
+                </table>
+                <div ng-controller="SymbolIdCodeCtrl">
+                    <table class="table table-bordered symbolid-table">
+                        <tr>
+                            <th colspan="10">Set A</th>
+                        </tr>
+                        <tr class="setA set-values">
+                            <td class="text-muted">{{ symbId.versionCode1}}</td>
+                            <td class="text-muted">{{ symbId.versionCode2}}</td>
+                            <td title="{{ symbId.context.label }}">{{ symbId.context.digits }}</td>
+                            <td title="{{symbId.standardIdentity.label}}">{{ symbId.standardIdentity.digits }}</span>
+                            </td>
+                            <td colspan="2" title="{{symbId.symbolSet.label}}">
+                                <table>
+                                    <tr>
+                                        <td>{{symbId.symbolSet.digits[0]}}</td>
+                                        <td>{{symbId.symbolSet.digits[1]}}</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td title="{{symbId.status.label}}">{{ symbId.status.digits }}</td>
+                            <td title="{{symbId.hqtfDummy.label}}">{{ symbId.hqtfDummy.digits || 0}}</td>
+                            <td title="{{symbId.amplifier.label}}">{{symbId.amplifier.digits || 0}}</td>
+                            <td title="{{symbId.amplifierDescriptor.label}}">{{symbId.amplifierDescriptor.digits}}</td>
+                        </tr>
+                        <tr class="set-numbers text-muted">
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                        </tr>
+                        <tr class="symid-description">
+                            <td colspan="2">Version</td>
+                            <td colspan="2">Standard identity</td>
+                            <td colspan="2">Symbol set</td>
+                            <td>Status</td>
+                            <td>HQ / Task Force / Dummy</td>
+                            <td colspan="2">Amplifier / Descriptor</td>
+                        </tr>
+                        <tr>
+                            <th colspan="10">Set B</th>
+                        </tr>
+                        <tr class="setB set-values">
+                            <td colspan="2" title="{{symbId.entity.label}}">
+                                <table>
+                                    <tr>
+                                        <td>{{symbId.entity.digits[0]}}</td>
+                                        <td>{{symbId.entity.digits[1]}}</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td colspan="2" title="{{symbId.entityType.label}}">
+                                <table>
+                                    <tr>
+                                        <td>{{symbId.entityType.digits[0] || 0}}</td>
+                                        <td>{{symbId.entityType.digits[1] || 0}}</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td colspan="2" title="{{gget('entitySubType').label}}">
+                                <table>
+                                    <tr>
+                                        <td>{{gget('entitySubType').digits[0]}}</td>
+                                        <td>{{gget('entitySubType').digits[1]}}</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td colspan="2" title="{{symbId.sectorOneModifier.label}}">
+                                <table>
+                                    <tr>
+                                        <td>{{gget('sectorOneModifier').digits[0] }}</td>
+                                        <td>{{gget('sectorOneModifier').digits[1] }}</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td colspan="2" title="{{gget('sectorTwoModifier').label}}">
+                                <table>
+                                    <tr>
+                                        <td>{{symbId.sectorTwoModifier.digits[0] || 0}}</td>
+                                        <td>{{symbId.sectorTwoModifier.digits[1] || 0}}</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="set-numbers">
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                        </tr>
+                        <tr class="symid-description">
+                            <td colspan="2">Entity</td>
+                            <td colspan="2">Entity type</td>
+                            <td colspan="2">Entity subtype</td>
+                            <td colspan="2">Sector 1 modifier</td>
+                            <td colspan="2">Sector 2 modifier</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <!--<a class="btn btn-primary">Explore current symbol set</a>-->
+            </div>
+        </div>
+    </div>
+</template>
+
+<script lang="ts">
+    import Vue from 'vue';
+    import {Component} from 'vue-property-decorator';
+
+    @Component({})
+    export default class ExploreView extends Vue {
+    }
+</script>
+
+<style scoped>
+
+
+</style>

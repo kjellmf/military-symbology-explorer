@@ -24,7 +24,7 @@ const app = new Vue({
                  ng-click="navCollapsed=true">
                 <ul class="nav navbar-nav navbar-left">
                     <li><router-link to="explore">Explore</router-link></li>
-                    <li><router-link to="symbolSet">Symbol set browser</router-link></li>
+                    <li><router-link to="symbolset">Symbol set browser</router-link></li>
                     <li><router-link to="frames">Frames</router-link></li>
                     <li><router-link to="search">Search</router-link></li>
                     <li><router-link to="about">About</router-link></li>

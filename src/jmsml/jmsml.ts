@@ -47,7 +47,7 @@ export interface SymbolSet extends IdentifierAttributeGroup {
     graphicFolder: {};
 }
 
-interface EntityBase extends FramedGraphicIdentifierAttributeGroup {
+export interface EntityBase extends FramedGraphicIdentifierAttributeGroup {
     digits: string;
     geometryType: GeometryType;
 }

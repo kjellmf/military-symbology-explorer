@@ -39,11 +39,6 @@
             let obj = aff[this.context][dimension.id][standardIdentity.id];
             return obj ? SVG_PATH + obj.graphic : BLANK_PATH;
         }
-
-
     }
 </script>
 
-<style scoped>
-
-</style>
