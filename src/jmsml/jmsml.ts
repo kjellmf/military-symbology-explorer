@@ -2,11 +2,9 @@
  * Typescript wrapper of the Joint Military Symbolic Markup Language (JMSML)
  */
 
-const config = {
-    BLANK_PATH: "static/img/blank.png",
-    SVG_PATH: "static/svg/MIL_STD_2525D_Symbols/"
-};
 
+export const BLANK_PATH = "static/img/blank.png";
+export const SVG_PATH = "static/svg/MIL_STD_2525D_Symbols/";
 export type GeometryType = "NA" | "POINT" | "LINE" | "AREA" | "MIXED";
 
 export type IconType = "NA" | "MAIN" | "MAIN_1" | "MAIN_2" | "FULL_OCTAGON" | "FULL_FRAME" | "SPECIAL";
@@ -292,13 +290,13 @@ export class SicObject {
 
     private getFilePaths() {
         if (this.currentEntity && this.currentEntity.icon == 'SPECIAL') {
-            this.specialFn = PathService.getEntityFilePath(this) || config.BLANK_PATH;
+            this.specialFn = PathService.getEntityFilePath(this) || BLANK_PATH;
             this.currentEntity = this.entityType;
 
         } else {
-            this.specialFn = config.BLANK_PATH;
+            this.specialFn = BLANK_PATH;
         }
-        this.entityFn = PathService.getEntityFilePath(this) || config.BLANK_PATH;
+        this.entityFn = PathService.getEntityFilePath(this) || BLANK_PATH;
         // Get frame
         if (!this.context) {
             return;
@@ -309,15 +307,15 @@ export class SicObject {
 
 
         if (entity && entity.id == 'OWN_SHIP') {
-            this.frameFn = config.BLANK_PATH;
+            this.frameFn = BLANK_PATH;
         } else {
-            this.frameFn = PathService.getFrameFilePath(this) || config.BLANK_PATH;
+            this.frameFn = PathService.getFrameFilePath(this) || BLANK_PATH;
         }
-        this.hqtfdFn = PathService.getHqtfdFilePath(this) || config.BLANK_PATH;
-        this.statusFn = PathService.getStatusFilePath(this) || config.BLANK_PATH;
-        this.amplifierFn = PathService.getAmplifierFilePath(this) || config.BLANK_PATH;
-        this.modifierOneFn = PathService.getModifierOneFilePath(this) || config.BLANK_PATH;
-        this.modifierTwoFn = PathService.getModifierTwoFilePath(this) || config.BLANK_PATH;
+        this.hqtfdFn = PathService.getHqtfdFilePath(this) || BLANK_PATH;
+        this.statusFn = PathService.getStatusFilePath(this) || BLANK_PATH;
+        this.amplifierFn = PathService.getAmplifierFilePath(this) || BLANK_PATH;
+        this.modifierOneFn = PathService.getModifierOneFilePath(this) || BLANK_PATH;
+        this.modifierTwoFn = PathService.getModifierTwoFilePath(this) || BLANK_PATH;
     }
 }
 
@@ -337,7 +335,7 @@ export class PathService {
                 }
             }
         }
-        return fn ? config.SVG_PATH + sic.symbolSet.graphicFolder["entities"] + "/" + fn : null;
+        return fn ? SVG_PATH + sic.symbolSet.graphicFolder["entities"] + "/" + fn : null;
     }
 
     static getFrameFilePath(sic: SicObject): string {
@@ -372,7 +370,7 @@ export class PathService {
                 }
             }
         }
-        return fn ? config.SVG_PATH + fn : null;
+        return fn ? SVG_PATH + fn : null;
     }
 
     static getHqtfdFilePath(sic: SicObject) {
@@ -386,7 +384,7 @@ export class PathService {
                 fn = dim ? dim.graphic : null;
             }
         }
-        return fn ? config.SVG_PATH + fn : null;
+        return fn ? SVG_PATH + fn : null;
     }
 
     static getStatusFilePath(sic: SicObject) {
@@ -403,7 +401,7 @@ export class PathService {
         } else {
             fn = sic.statusObj.graphic;
         }
-        return fn ? config.SVG_PATH + fn : null;
+        return fn ? SVG_PATH + fn : null;
     }
 
     static getAmplifierFilePath(sic: SicObject) {
@@ -415,19 +413,19 @@ export class PathService {
             var sig = sic.amplifierDescriptorObj.graphics[symbolData.standardIdentityGroupMapping[sic.standardIdentity.id]];
             fn = sig ? sig.graphic : null;
         }
-        return fn ? config.SVG_PATH + fn : null;
+        return fn ? SVG_PATH + fn : null;
     }
 
 
     static getModifierOneFilePath(sic: SicObject) {
         let fn = sic.modifierOne ? sic.modifierOne.graphic : "";
-        return fn ? config.SVG_PATH + sic.symbolSet.graphicFolder["modifierOnes"] + "/" + fn : null;
+        return fn ? SVG_PATH + sic.symbolSet.graphicFolder["modifierOnes"] + "/" + fn : null;
     }
 
 
     static getModifierTwoFilePath(sic: SicObject) {
         var fn = sic.modifierTwo ? sic.modifierTwo.graphic : "";
-        return fn ? config.SVG_PATH + sic.symbolSet.graphicFolder["modifierTwos"] + "/" + fn : null;
+        return fn ? SVG_PATH + sic.symbolSet.graphicFolder["modifierTwos"] + "/" + fn : null;
     }
 
     static getBoundingOctagonFilePath(symbolSetObj: SymbolSet) {
