@@ -3,8 +3,8 @@
  */
 
 const config = {
-    BLANK_PATH: "assets/img/blank.png",
-    SVG_PATH: "svg/MIL_STD_2525D_Symbols/"
+    BLANK_PATH: "static/img/blank.png",
+    SVG_PATH: "static/svg/MIL_STD_2525D_Symbols/"
 };
 
 export type GeometryType = "NA" | "POINT" | "LINE" | "AREA" | "MIXED";
