@@ -92,13 +92,19 @@
 
     @Component({ components: {'symbolset-table': SymbolsetTable} })
     export default class SymbolsetView extends Vue {
-        currentSymbolSet = "";
         symbolSets = symbolData.symbolSets;
         get debug() {
             return this.$store.state.debug;
         }
         set debug(value) {
             this.$store.commit("setDebugMode", value);
+        }
+
+        get currentSymbolSet() {
+            return this.$store.state.symbolSet;
+        }
+        set currentSymbolSet(value) {
+            this.$store.commit("setSymbolSet", value);
         }
 
         get useCivilianFrames() {
