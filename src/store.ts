@@ -15,7 +15,7 @@ export default new Vuex.Store<SymbologyExplorerState>({
     state: {
         debug: false,
         useCivilianFrames: false,
-        symbolSet: symbolData.symbolSets[5],
+        symbolSet: Object.freeze(symbolData.symbolSets[5]),
     },
     mutations: {
         setDebugMode(state, value: boolean) {
@@ -25,7 +25,8 @@ export default new Vuex.Store<SymbologyExplorerState>({
             state.useCivilianFrames = value;
         },
         setSymbolSet(state, value) {
-            state.symbolSet = value;
+            console.log(value);
+            state.symbolSet = Object.freeze(value);
         }
 
     },

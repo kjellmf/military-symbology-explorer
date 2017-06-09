@@ -92,7 +92,10 @@
 
     @Component({ components: {'symbolset-table': SymbolsetTable} })
     export default class SymbolsetView extends Vue {
-        symbolSets = symbolData.symbolSets;
+        created() {
+            this["symbolSets"] = symbolData.symbolSets;
+        }
+
         get debug() {
             return this.$store.state.debug;
         }
