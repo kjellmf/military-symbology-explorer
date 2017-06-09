@@ -2,7 +2,7 @@
  * Typescript wrapper of the Joint Military Symbolic Markup Language (JMSML)
  */
 
-
+export const SYMBOL_DATA = <SymbolData>require("./jmsml.json");
 export const BLANK_PATH = "static/img/blank.png";
 export const SVG_PATH = "static/svg/MIL_STD_2525D_Symbols/";
 export type GeometryType = "NA" | "POINT" | "LINE" | "AREA" | "MIXED";
@@ -63,7 +63,8 @@ export interface EntitySubType extends EntityBase {
      entityCode?: string;
      entityTypeCode?: string;
      */
-};
+}
+;
 
 export interface Modifier extends IdentifierAttributeGroup {
     digits: string;
@@ -184,7 +185,6 @@ var standardIdentityMap2 = {
 };
 
 
-
 /**
  * Do a binary search for a symbol object
  */
@@ -248,12 +248,12 @@ export class SicObject {
     }
 
     private extractObjects(sic: Sic) {
-        this.context = findSymbolObject(symbolData.contexts, sic.context);
-        this.standardIdentity = findSymbolObject(symbolData.standardIdentities, sic.standardIdentity);
-        this.symbolSet = findSymbolObject(symbolData.symbolSets, sic.symbolSet);
-        this.statusObj = findSymbolObject(symbolData.statuses, sic.status);
-        this.hqtfdObj = findSymbolObject(symbolData.hqtfDummies, sic.hqtfd);
-        this.amplifier = findSymbolObject(symbolData.amplifiers, sic.amplifier);
+        this.context = findSymbolObject(SYMBOL_DATA.contexts, sic.context);
+        this.standardIdentity = findSymbolObject(SYMBOL_DATA.standardIdentities, sic.standardIdentity);
+        this.symbolSet = findSymbolObject(SYMBOL_DATA.symbolSets, sic.symbolSet);
+        this.statusObj = findSymbolObject(SYMBOL_DATA.statuses, sic.status);
+        this.hqtfdObj = findSymbolObject(SYMBOL_DATA.hqtfDummies, sic.hqtfd);
+        this.amplifier = findSymbolObject(SYMBOL_DATA.amplifiers, sic.amplifier);
         if (this.amplifier) {
             this.amplifierDescriptorObj = findSymbolObject(this.amplifier.descriptors, sic.amplifierDescriptor);
         } else {
@@ -344,7 +344,7 @@ export class PathService {
         let contextId = sic.context.id;
         let standardIdentityId = sic.standardIdentity.id;
         if (dimensionId && contextId && standardIdentityId) {
-            let a1 = symbolData.affiliations[contextId];
+            let a1 = SYMBOL_DATA.affiliations[contextId];
             if (a1) {
                 let a2 = a1[dimensionId];
                 if (a2 && a2[standardIdentityId]) {
@@ -378,7 +378,7 @@ export class PathService {
             fn = "";
         let standardIdentityId = sic.standardIdentity.id;
         if (dimensionId && sic.hqtfdObj && standardIdentityId && sic.hqtfdObj.graphics) {
-            var sig = sic.hqtfdObj.graphics[symbolData.standardIdentityGroupMapping[standardIdentityId]];
+            var sig = sic.hqtfdObj.graphics[SYMBOL_DATA.standardIdentityGroupMapping[standardIdentityId]];
             if (sig) {
                 var dim = sig[dimensionId];
                 fn = dim ? dim.graphic : null;
@@ -392,7 +392,7 @@ export class PathService {
             fn = "";
         if (sic.alternativeAmplifiers) {
             if (dimensionId && sic.statusObj && sic.standardIdentity.id && sic.statusObj.graphics) {
-                var sig = sic.statusObj.graphics[symbolData.standardIdentityGroupMapping[sic.standardIdentity.id]];
+                var sig = sic.statusObj.graphics[SYMBOL_DATA.standardIdentityGroupMapping[sic.standardIdentity.id]];
                 if (sig) {
                     var dim = sig[dimensionId];
                     fn = dim ? dim.graphic : null;
@@ -410,7 +410,7 @@ export class PathService {
             return null;
         }
         if (sic.standardIdentity.id && sic.amplifierDescriptorObj && sic.amplifierDescriptorObj.graphics) {
-            var sig = sic.amplifierDescriptorObj.graphics[symbolData.standardIdentityGroupMapping[sic.standardIdentity.id]];
+            var sig = sic.amplifierDescriptorObj.graphics[SYMBOL_DATA.standardIdentityGroupMapping[sic.standardIdentity.id]];
             fn = sig ? sig.graphic : null;
         }
         return fn ? SVG_PATH + fn : null;
@@ -439,7 +439,5 @@ export class PathService {
 
 }
 
-
-export const symbolData = <SymbolData>require("./jmsml.json");
 
 

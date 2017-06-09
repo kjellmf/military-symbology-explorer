@@ -18,7 +18,7 @@
 <script lang="ts">
     import Vue from 'vue';
     import {Component, Prop, Watch} from 'vue-property-decorator';
-    import {BLANK_PATH, FramesData, SVG_PATH, symbolData} from "../jmsml";
+    import {BLANK_PATH, FramesData, SVG_PATH, SYMBOL_DATA} from "../jmsml";
 
     @Component
     export default class FrameTable extends Vue {
@@ -27,15 +27,15 @@
         sd = <FramesData>{};
 
         created() {
-            this.sd.standardIdentities = symbolData.standardIdentities;
-            this.sd.dimensions = symbolData.dimensions.filter(function (item) {
+            this.sd.standardIdentities = SYMBOL_DATA.standardIdentities;
+            this.sd.dimensions = SYMBOL_DATA.dimensions.filter(function (item) {
                 return item.geometry == "POINT"
             });
 //            console.log(this.sd.standardIdentities);
         }
 
         getFrameFn(standardIdentity, dimension) {
-            let aff = symbolData.affiliations;
+            let aff = SYMBOL_DATA.affiliations;
             let obj = aff[this.context][dimension.id][standardIdentity.id];
             return obj ? SVG_PATH + obj.graphic : BLANK_PATH;
         }

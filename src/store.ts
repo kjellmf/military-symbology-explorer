@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex';
-import {symbolData, SymbolSet} from "./jmsml/jmsml";
+import {SYMBOL_DATA, SymbolSet} from "./jmsml/jmsml";
 
 Vue.use(Vuex);
 
@@ -15,7 +15,7 @@ export default new Vuex.Store<SymbologyExplorerState>({
     state: {
         debug: false,
         useCivilianFrames: false,
-        symbolSet: Object.freeze(symbolData.symbolSets[5]),
+        symbolSet: Object.freeze(SYMBOL_DATA.symbolSets[5]),
     },
     mutations: {
         setDebugMode(state, value: boolean) {

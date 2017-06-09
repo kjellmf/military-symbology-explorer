@@ -87,13 +87,13 @@
 <script lang="ts">
     import Vue from 'vue';
     import {Component, Watch} from 'vue-property-decorator';
-    import {symbolData} from "../jmsml";
+    import {SYMBOL_DATA} from "../jmsml";
     import SymbolsetTable from "../components/symbolset-table.vue";
 
     @Component({ components: {'symbolset-table': SymbolsetTable} })
     export default class SymbolsetView extends Vue {
         created() {
-            this["symbolSets"] = symbolData.symbolSets;
+            this["symbolSets"] = SYMBOL_DATA.symbolSets;
         }
 
         get debug() {

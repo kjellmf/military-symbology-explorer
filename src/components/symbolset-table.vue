@@ -102,7 +102,7 @@
 <script lang="ts">
     import Vue from 'vue';
     import {Component, Prop, Watch} from 'vue-property-decorator';
-    import {BLANK_PATH, FramesData, SVG_PATH, symbolData} from "../jmsml";
+    import {BLANK_PATH, FramesData, SVG_PATH, SYMBOL_DATA} from "../jmsml";
     import {SymbolSet} from "../jmsml/jmsml";
 
     @Component

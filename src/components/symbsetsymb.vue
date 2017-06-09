@@ -9,7 +9,7 @@
 <script lang="ts">
     import Vue from 'vue';
     import {Component, Prop, Watch} from 'vue-property-decorator';
-    import {PathService, SicObject, symbolData} from "../jmsml";
+    import {PathService, SicObject, SYMBOL_DATA} from "../jmsml";
     import {EntityBase} from "../jmsml/jmsml";
 
     @Component
