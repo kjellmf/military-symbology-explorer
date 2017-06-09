@@ -16,7 +16,8 @@
     },
     "dependencies": {
         "vue": "^2.3.3",
-        "vue-router": "^2.5.3"
+        "vue-router": "^2.5.3",
+        "vuex": "^2.3.1"
     },
     "devDependencies": {
         "@types/file-saver": "0.0.1",

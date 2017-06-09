@@ -2,6 +2,7 @@ import Vue from 'vue'
 
 import MilSymb from "./components/milsymbol.vue";
 import router from './router';
+import store from './store';
 
 Vue.component('milsymbol', MilSymb);
 
@@ -36,4 +37,5 @@ const app = new Vue({
     <router-view></router-view>
 </div>`,
     router,
+    store,
 });

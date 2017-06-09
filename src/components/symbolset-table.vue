@@ -109,7 +109,9 @@
     export default class SymbolsetTable extends Vue {
         @Prop()
         symbolset: SymbolSet;
-        debug = false;
+        get debug() {
+            return this.$store.state.debug;
+        }
 
 
     }

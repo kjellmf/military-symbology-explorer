@@ -43,11 +43,11 @@
                     <div class="panel-heading">Settings</div>
                     <div class="panel-body">
                         <div class="checkbox" title="Show internal meta data">
-                            <label><input type="checkbox" ng-model="settings.showDebugInfo">Show debug info</label>
+                            <label><input type="checkbox" v-model="debug">Show debug info</label>
                         </div>
                         <div class="checkbox" title="Use civilian frames (visible when you change symbol set)">
                             <label><input type="checkbox" ng-click="redrawSymbolSet()"
-                                          ng-model="settings.useCivilianFrames">Use civilian frames</label>
+                                          v-model="useCivilianFrames">Use civilian frames</label>
                         </div>
                         <!--<div class="checkbox" title="Show only modifiers with the LimitUseTo attribute set">-->
                         <!--<label><input type="checkbox" ng-model="settings.showLimitUseToOnly">Show limited modifiers only</label>-->
@@ -94,6 +94,19 @@
     export default class SymbolsetView extends Vue {
         currentSymbolSet = "";
         symbolSets = symbolData.symbolSets;
+        get debug() {
+            return this.$store.state.debug;
+        }
+        set debug(value) {
+            this.$store.commit("setDebugMode", value);
+        }
+
+        get useCivilianFrames() {
+            return this.$store.state.useCivilianFrames;
+        }
+        set useCivilianFrames(value) {
+            this.$store.commit("setCivilianFramesMode", value);
+        }
 
     }
 </script>
