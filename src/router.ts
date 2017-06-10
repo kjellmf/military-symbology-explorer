@@ -11,7 +11,7 @@ Vue.use(VueRouter);
 const Dummy = { template: '<div>{{ $route.params}}</div>' };
 export default new VueRouter({
     linkActiveClass: 'active',
-    mode: 'history',
+    // mode: 'history',
     scrollBehavior: function (to, from, savedPosition) {
         if (to.hash) {
             return { selector: to.hash }

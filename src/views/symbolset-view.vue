@@ -86,7 +86,7 @@
 <script lang="ts">
     import Vue from 'vue';
     import {Component, Watch} from 'vue-property-decorator';
-    import {SYMBOL_DATA} from "../jmsml";
+    import {findWithAttr, SYMBOL_DATA} from "../jmsml";
     import SymbolsetTable from "../components/symbolset-table.vue";
     import ControlMeasureTable from "../components/controlmeasure-table.vue";
 
@@ -97,8 +97,23 @@
         }
     })
     export default class SymbolsetView extends Vue {
+        @Watch('$route')
+        onRouteChange(to, from) {
+            this.setSymbolSetFromRoute();
+        }
+
         created() {
             this["symbolSets"] = SYMBOL_DATA.symbolSets;
+        }
+
+        setSymbolSetFromRoute() {
+            let routeSymbolSetId = this.$route.params.symbolSetId;
+            if (routeSymbolSetId) {
+                let tmp = findWithAttr(SYMBOL_DATA.symbolSets, 'id', routeSymbolSetId);
+                if (tmp) {
+                    this.currentSymbolSet = tmp;
+                }
+            }
         }
 
         get debug() {
