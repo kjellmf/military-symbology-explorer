@@ -25,7 +25,6 @@ export default new Vuex.Store<SymbologyExplorerState>({
             state.useCivilianFrames = value;
         },
         setSymbolSet(state, value) {
-            console.log(value);
             state.symbolSet = Object.freeze(value);
         }
 

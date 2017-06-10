@@ -25,16 +25,16 @@
                     <td></td>
 
                     <td>
-                        <!--<symbsetsymb entity="entity" si="SI_UNKNOWN"></symbsetsymb>-->
+                        <symbsetsymb :sic="getSic('SI_UNKNOWN', entity.digits)"></symbsetsymb>
                     </td>
                     <td>
-                        <!--<symbsetsymb entity="entity" si="SI_FRIEND"></symbsetsymb>-->
+                        <symbsetsymb :sic="getSic('SI_FRIEND', entity.digits)"></symbsetsymb>
                     </td>
                     <td>
-                        <!--<symbsetsymb entity="entity" si="SI_NEUTRAL"></symbsetsymb>-->
+                        <symbsetsymb :sic="getSic('SI_NEUTRAL', entity.digits)"></symbsetsymb>
                     </td>
                     <td>
-                        <!--<symbsetsymb entity="entity" si="SI_HOSTILE_FAKER"></symbsetsymb>-->
+                        <symbsetsymb :sic="getSic('SI_HOSTILE_FAKER', entity.digits)"></symbsetsymb>
                     </td>
                     <td><b>{{entity.digits}}</b>0000</td>
                     <td>{{entity.remarks}}</td>
@@ -50,16 +50,17 @@
                         <td>{{entityType.label}}</td>
                         <td></td>
                         <td>
-                            <!--<symbsetsymb entity="entityType" si="SI_UNKNOWN"></symbsetsymb>-->
+                            <symbsetsymb :sic="getSic('SI_UNKNOWN', entity.digits, entityType.digits)"></symbsetsymb>
                         </td>
                         <td>
-                            <!--<symbsetsymb entity="entityType" si="SI_FRIEND"></symbsetsymb>-->
+                            <symbsetsymb :sic="getSic('SI_FRIEND', entity.digits, entityType.digits)"></symbsetsymb>
                         </td>
                         <td>
-                            <!--<symbsetsymb entity="entityType" si="SI_NEUTRAL"></symbsetsymb>-->
+                            <symbsetsymb :sic="getSic('SI_NEUTRAL', entity.digits, entityType.digits)"></symbsetsymb>
                         </td>
                         <td>
-                            <!--<symbsetsymb entity="entityType" si="SI_HOSTILE_FAKER"></symbsetsymb>-->
+                            <symbsetsymb
+                                :sic="getSic('SI_HOSTILE_FAKER', entity.digits, entityType.digits)"></symbsetsymb>
                         </td>
                         <td>{{entity.digits}}<b>{{entityType.digits}}</b>00</td>
                         <td>{{entityType.remarks}}</td>
@@ -75,16 +76,20 @@
                             <td :title="entityType.label"></td>
                             <td>{{entitySubType.label}}</td>
                             <td>
-                                <!--<symbsetsymb entity="entitySubType" si="SI_UNKNOWN"></symbsetsymb>-->
+                                <symbsetsymb
+                                    :sic="getSic('SI_UNKNOWN', entity.digits, entityType.digits, entitySubType.digits)"></symbsetsymb>
                             </td>
                             <td>
-                                <!--<symbsetsymb entity="entitySubType" si="SI_FRIEND"></symbsetsymb>-->
+                                <symbsetsymb
+                                    :sic="getSic('SI_FRIEND', entity.digits, entityType.digits, entitySubType.digits)"></symbsetsymb>
                             </td>
                             <td>
-                                <!--<symbsetsymb entity="entitySubType" si="SI_NEUTRAL"></symbsetsymb>-->
+                                <symbsetsymb
+                                    :sic="getSic('SI_NEUTRAL', entity.digits, entityType.digits, entitySubType.digits)"></symbsetsymb>
                             </td>
                             <td>
-                                <!--<symbsetsymb entity="entitySubType" si="SI_HOSTILE_FAKER"></symbsetsymb>-->
+                                <symbsetsymb
+                                    :sic="getSic('SI_HOSTILE_FAKER', entity.digits, entityType.digits, entitySubType.digits)"></symbsetsymb>
                             </td>
                             <td>{{entity.digits}}{{entityType.digits}}<b>{{entitySubType.digits}}</b></td>
                             <td>{{entitySubType.remarks}}</td>
@@ -103,14 +108,20 @@
     import Vue from 'vue';
     import {Component, Prop, Watch} from 'vue-property-decorator';
     import {BLANK_PATH, FramesData, SVG_PATH, SYMBOL_DATA} from "../jmsml";
-    import {SymbolSet} from "../jmsml/jmsml";
+    import {SID_MAP, SymbolSet} from "../jmsml/jmsml";
+    import Symbsetsymb from "./symbsetsymb.vue";
 
-    @Component
+    @Component({ components: { 'symbsetsymb': Symbsetsymb } })
     export default class SymbolsetTable extends Vue {
         @Prop()
         symbolset: SymbolSet;
+
         get debug() {
             return this.$store.state.debug;
+        }
+
+        getSic(sid, entityDigits, entityType, entitySubTypeDigits) {
+            return `100${SID_MAP[sid]}${this.symbolset.digits}0000${entityDigits || '00'}${entityType || '00'}${entitySubTypeDigits || '00'}0000`;
         }
 
 

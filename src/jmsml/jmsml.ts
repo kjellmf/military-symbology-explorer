@@ -164,7 +164,7 @@ export class Sic implements SicElements {
 }
 
 
-var standardIdentityMap = {
+const standardIdentityMap = {
     "0": "cloverGraphic",
     "1": "cloverGraphic",
     "2": "rectangleGraphic",
@@ -174,7 +174,7 @@ var standardIdentityMap = {
     "6": "diamondGraphic"
 };
 
-var standardIdentityMap2 = {
+const standardIdentityMap2 = {
     "SI_PENDING": "cloverGraphic",
     "SI_UNKNOWN": "cloverGraphic",
     "SI_ASSUMED_FRIEND": "rectangleGraphic",
@@ -184,6 +184,15 @@ var standardIdentityMap2 = {
     "SI_HOSTILE_FAKER": "diamondGraphic"
 };
 
+export const SID_MAP = {
+    "SI_PENDING": "0",
+    "SI_UNKNOWN": "1",
+    "SI_ASSUMED_FRIEND": "2",
+    "SI_FRIEND": "3",
+    "SI_NEUTRAL": "4",
+    "SI_SUSPECT_JOKER": "5",
+    "SI_HOSTILE_FAKER": "6",
+};
 
 /**
  * Do a binary search for a symbol object
@@ -233,11 +242,17 @@ export class SicObject {
     modifierOneFn: string;
     modifierTwoFn: string;
 
-    constructor(sic: string, public alternativeAmplifiers = false, public useCivilianFrame = false) {
-        if (sic.length !== 20) {
-            console.error("Invalid SIC length", sic)
+    constructor(sic: string| Sic, public alternativeAmplifiers = false, public useCivilianFrame = false) {
+        if (typeof sic === "string") {
+            if (sic.length !== 20) {
+                console.error("Invalid SIC length", sic);
+                return;
+            }
+            this.sic = new Sic(sic);
+        } else {
+            this.sic = sic;
         }
-        this.sic = new Sic(sic);
+
         this.extractObjects(this.sic);
         // Get main icon
         this.currentEntity = this.entitySubType || this.entityType || this.entity;

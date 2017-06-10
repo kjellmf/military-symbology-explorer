@@ -1,7 +1,7 @@
 <template>
     <div class="milsymbol">
-        <img class="symbol-sm" :src="frameFn">
-        <img class="symbol-sm" :src="entityFn">
+        <img class="symbol-sm" :src="sicObj.frameFn">
+        <img class="symbol-sm" :src="sicObj.entityFn">
     </div>
 </template>
 
@@ -10,17 +10,21 @@
     import Vue from 'vue';
     import {Component, Prop, Watch} from 'vue-property-decorator';
     import {PathService, SicObject, SYMBOL_DATA} from "../jmsml";
-    import {EntityBase} from "../jmsml/jmsml";
+    import {Entity, EntityBase, EntitySubType, Sic, SID_MAP} from "../jmsml/jmsml";
 
     @Component
-    export default class MilSymb extends Vue {
-        @Prop()
-        entity: EntityBase;
-        @Prop()
-        si: string;
+    export default class Symbsetsymb extends Vue {
+        @Prop(String)
+        sic:string;
+        sicObj:SicObject = null;
+
+        @Watch('sic')
+        onSidChange(val: string) {
+            this.setSymbol();
+        }
 
         private setSymbol() {
-
+            this.sicObj = new SicObject(this.sic);
         }
 
         created() {

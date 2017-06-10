@@ -9,12 +9,11 @@
                             <option v-for="symbolset in symbolSets" :value="symbolset">
                                 {{symbolset.digits}} {{symbolset.label}}
                             </option>
-                            <option value="">-- choose symbol set --</option>
                         </select>
                     </div>
                 </form>
 
-                <div class="panel panel-default">
+                <!--<div class="panel panel-default">
                     <div class="panel-heading">Tables</div>
                     <div class="panel-body">
                         <ul class="nav nav-pills nav-stacked">
@@ -25,7 +24,7 @@
                             <li><a ui-sref=".modifiertwo">Modifier twos</a></li>
                         </ul>
                     </div>
-                </div>
+                </div>-->
 
                 <!--<div class="panel panel-default">-->
                 <!--<div class="panel-heading">Symbol</div>-->
@@ -58,12 +57,12 @@
             </div>
             <div class="col-sm-10 col-sm-offset-2 col-md-10 col-md-offset-2 main">
                 <h1 id="symboltable" class="page-header" :title="currentSymbolSet.id">{{currentSymbolSet.label}}</h1>
-                <!--<div ng-show="settings.showDebugInfo" class="well">
+                <div v-if="debug" class="well">
                     <small><strong>Id</strong> <code>{{currentSymbolSet.id}}</code>
                         <strong>Geometry</strong> <code>{{currentSymbolSet.geometry}}</code>
                         <strong>DimensionId</strong> <code>{{currentSymbolSet.dimensionId}}</code>
                     </small>
-                </div>-->
+                </div>
                 <mine-symbolset-table :symbolset="currentSymbolSet"
                     v-if="currentSymbolSet.id === 'SS_MINE_WARFARE'"></mine-symbolset-table>
                 <controlmeasure-symbolset-table :symbolset="currentSymbolSet"
