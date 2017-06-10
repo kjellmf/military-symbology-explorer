@@ -64,15 +64,15 @@
                     </small>
                 </div>
                 <mine-symbolset-table :symbolset="currentSymbolSet"
-                    v-if="currentSymbolSet.id === 'SS_MINE_WARFARE'"></mine-symbolset-table>
+                                      v-if="currentSymbolSet.id === 'SS_MINE_WARFARE'"></mine-symbolset-table>
                 <controlmeasure-symbolset-table :symbolset="currentSymbolSet"
-                    v-else-if="currentSymbolSet.id === 'SS_CONTROL_MEASURE'"></controlmeasure-symbolset-table>
+                                                v-else-if="currentSymbolSet.id === 'SS_CONTROL_MEASURE'"></controlmeasure-symbolset-table>
                 <controlmeasure-symbolset-table :symbolset="currentSymbolSet"
-                    v-else-if="currentSymbolSet.id === 'SS_ATMOSPHERIC'"></controlmeasure-symbolset-table>
+                                                v-else-if="currentSymbolSet.id === 'SS_ATMOSPHERIC'"></controlmeasure-symbolset-table>
                 <controlmeasure-symbolset-table :symbolset="currentSymbolSet"
-                    v-else-if="currentSymbolSet.id === 'SS_OCEANIC'"></controlmeasure-symbolset-table>
+                                                v-else-if="currentSymbolSet.id === 'SS_OCEANIC'"></controlmeasure-symbolset-table>
                 <controlmeasure-symbolset-table :symbolset="currentSymbolSet"
-                    v-else-if="currentSymbolSet.id === 'SS_MET_SPACE'"></controlmeasure-symbolset-table>
+                                                v-else-if="currentSymbolSet.id === 'SS_MET_SPACE'"></controlmeasure-symbolset-table>
                 <symbolset-table :symbolset="currentSymbolSet" v-else></symbolset-table>
 
 
@@ -88,8 +88,14 @@
     import {Component, Watch} from 'vue-property-decorator';
     import {SYMBOL_DATA} from "../jmsml";
     import SymbolsetTable from "../components/symbolset-table.vue";
+    import ControlMeasureTable from "../components/controlmeasure-table.vue";
 
-    @Component({ components: {'symbolset-table': SymbolsetTable} })
+    @Component({
+        components: {
+            'symbolset-table': SymbolsetTable,
+            'controlmeasure-symbolset-table': ControlMeasureTable
+        }
+    })
     export default class SymbolsetView extends Vue {
         created() {
             this["symbolSets"] = SYMBOL_DATA.symbolSets;
@@ -98,6 +104,7 @@
         get debug() {
             return this.$store.state.debug;
         }
+
         set debug(value) {
             this.$store.commit("setDebugMode", value);
         }
@@ -105,6 +112,7 @@
         get currentSymbolSet() {
             return this.$store.state.symbolSet;
         }
+
         set currentSymbolSet(value) {
             this.$store.commit("setSymbolSet", value);
         }
@@ -112,6 +120,7 @@
         get useCivilianFrames() {
             return this.$store.state.useCivilianFrames;
         }
+
         set useCivilianFrames(value) {
             this.$store.commit("setCivilianFramesMode", value);
         }
