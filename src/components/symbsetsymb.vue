@@ -23,8 +23,17 @@
             this.setSymbol();
         }
 
+        get useCivilianFrames() {
+            return this.$store.state.useCivilianFrames;
+        }
+
+        @Watch('useCivilianFrames')
+        onChange(val:string) {
+            this.setSymbol();
+        }
+
         private setSymbol() {
-            this.sicObj = new SicObject(this.sic);
+            this.sicObj = new SicObject(this.sic, undefined, this.useCivilianFrames);
         }
 
         created() {
