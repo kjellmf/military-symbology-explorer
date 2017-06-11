@@ -89,11 +89,13 @@
     import {findWithAttr, SYMBOL_DATA} from "../jmsml";
     import SymbolsetTable from "../components/symbolset-table.vue";
     import ControlMeasureTable from "../components/controlmeasure-table.vue";
+    import MineTable from "../components/mine-table.vue";
 
     @Component({
         components: {
             'symbolset-table': SymbolsetTable,
-            'controlmeasure-symbolset-table': ControlMeasureTable
+            'controlmeasure-symbolset-table': ControlMeasureTable,
+            'mine-symbolset-table' : MineTable,
         }
     })
     export default class SymbolsetView extends Vue {

@@ -1,6 +1,6 @@
 <template>
     <div class="milsymbol" v-if="sicObj">
-        <img class="symbol-sm" :src="sicObj.frameFn">
+        <img v-if="frame" class="symbol-sm" :src="sicObj.frameFn">
         <img class="symbol-sm" :src="sicObj.entityFn">
         <img class="symbol-sm" :src="sicObj.specialFn">
         <img class="symbol-sm" :src="sicObj.hqtfdFn">
@@ -22,7 +22,9 @@
         @Prop(String)
         sic: string;
         @Prop({type:Boolean, default:false})
-        alternate: boolean;
+        alternative: boolean;
+        @Prop({type: Boolean, default:true})
+        frame:boolean;
 
         @Watch('sidc')
         onSidcChange(val: string) {
@@ -32,7 +34,7 @@
         sicObj: SicObject;
 
         private setSymbol() {
-            this.sicObj = new SicObject(this.sic, this.alternate);
+            this.sicObj = new SicObject(this.sic, this.alternative);
         }
 
         created() {
