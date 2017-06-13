@@ -100,6 +100,47 @@
             </tbody>
         </table>
 
+        <div v-if="symbolset.specialEntitySubTypes">
+            <h2 id="specialsubtypes">Special entity subtypes</h2>
+
+            <p>Some entity type land unit icons may use the entity subtypes listed below:</p>
+            <table class="table table-bordered table-striped table-hover">
+                <thead>
+                <tr>
+                    <th class="col-md-1">Entity</th>
+                    <th class="col-md-2">Entity type</th>
+                    <th class="col-md-2">Entity subtype</th>
+                    <th class="col-md-4" colspan="4">Symbols</th>
+                    <th class="col-md-1">Digits</th>
+                    <th class="col-md-2">Remarks</th>
+                </tr>
+
+                </thead>
+                <tbody>
+
+                <tr v-for="entitySubType in symbolset.specialEntitySubTypes">
+                    <td></td>
+                    <td></td>
+                    <td>{{entitySubType.label}}</td>
+                    <td>
+                        <symbsetsymb :sic="getSic('SI_UNKNOWN', '11', '10', entitySubType.digits)"></symbsetsymb>
+                    </td>
+                    <td>
+                        <symbsetsymb :sic="getSic('SI_FRIEND', '11', '10', entitySubType.digits)"></symbsetsymb>
+                    </td>
+                    <td>
+                        <symbsetsymb :sic="getSic('SI_NEUTRAL', '00', '00', entitySubType.digits)"></symbsetsymb>
+                    </td>
+                    <td>
+                        <symbsetsymb :sic="getSic('SI_HOSTILE_FAKER', '00', '00', entitySubType.digits)"></symbsetsymb>
+                    </td>
+                    <td>xxxx<b>{{entitySubType.digits}}</b></td>
+                    <td>{{entitySubType.remarks}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
 
     </div>
 </template>
