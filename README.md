@@ -7,6 +7,8 @@ project.
 
 See the explorer in action at [http://explorer.milsymb.net/](http://explorer.milsymb.net/).
 
+### Warning. This project is currently going through a rewrite from ES5/Angular 1 to Typescript/Vue.
+
 How it works
 ------------
 
@@ -17,8 +19,8 @@ Based on the JMSML data the web application assembles a symbol using several SVG
 
 This project is a work in progress. 
 
-Installation
-------------
+Getting started
+---------------
 
 Clone project:
 
@@ -32,12 +34,8 @@ to get them is to clone the JMSML project:
 Navigate to the root directory of the project:
 
     $ cd military-symbology-explorer 
-
-Install bower dependencies:
- 
-    $ bower install
     
-Install development dependencies (optional):
+Install dependencies :
 
     $ npm install 
     
@@ -48,28 +46,7 @@ same directory, you can use the gulp task `copy-svg-to-main`:
     
 You are now ready to run the web application.
 
-Usage
------
-
-The military symbology explorer is a Javascript application and you therefore need to serve the files using a web server.
-For development there is a gulp task that will start [BrowserSync](http://www.browsersync.io/) for you:
-
-    $ gulp browser-sync
-    
-Alternatively you can use another web server. If you have Python installed you can start a simple server using:
-
-    $ python -m SimpleHTTPServer
-    
-Then navigate to `http://127.0.0.1:8000` using your favorite web browser.
-
-For faster loading you can build a minified version of the project using the `build-minify` task:
-
-    $ gulp build-minify
-    
-There is also a task for copying the SVGs to the `dist` directory:
-
-    $ gulp copy-svg-to-dist
-    
+    $ npm run dev
 
 
 
