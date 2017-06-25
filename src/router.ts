@@ -5,6 +5,7 @@ import FramesView from './views/frames-view.vue';
 // import ExploreView from './views/explore-view.vue';
 import AboutView from './views/about-view.vue';
 import SymbolsetView from './views/symbolset-view.vue';
+import ExploreView from './views/explore-view.vue';
 
 Vue.use(VueRouter);
 
@@ -22,7 +23,7 @@ export default new VueRouter({
     routes: [
         { path: '/', component: MainView },
         { path: '/about', component: AboutView },
-        { path: '/explore/:sic?', name: "explore", component: Dummy },
+        { path: '/explore/:sic?', name: "explore", component: ExploreView },
         { path: '/frames', name: "frames", component: FramesView },
         { path: '/symbolset/:symbolSetId?', name: "symbolset", component: SymbolsetView }
     ]

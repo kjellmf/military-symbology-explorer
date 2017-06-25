@@ -9,6 +9,7 @@ export interface SymbologyExplorerState {
     debug: boolean;
     useCivilianFrames: boolean;
     symbolSet: SymbolSet;
+    alternateAmplifiers: boolean;
 }
 
 export default new Vuex.Store<SymbologyExplorerState>({
@@ -16,6 +17,7 @@ export default new Vuex.Store<SymbologyExplorerState>({
         debug: false,
         useCivilianFrames: false,
         symbolSet: Object.freeze(SYMBOL_DATA.symbolSets[5]),
+        alternateAmplifiers: false
     },
     mutations: {
         setDebugMode(state, value: boolean) {
@@ -26,8 +28,10 @@ export default new Vuex.Store<SymbologyExplorerState>({
         },
         setSymbolSet(state, value) {
             state.symbolSet = Object.freeze(value);
+        },
+        setAlternateAmplifiers(state, value) {
+            state.alternateAmplifiers = value;
         }
-
     },
     actions: {},
     getters: {}
