@@ -103,7 +103,7 @@
                             <div class="form-group">
                                 <label class="col-sm-4 control-label">Entity type</label>
                                 <div class="col-sm-8">
-                                    <code-select :values="entity.entityTypes" v-model="entityType"></code-select>
+                                    <code-select :values="entityTypes" v-model="entityType"></code-select>
                                 </div>
                             </div>
     
@@ -324,12 +324,19 @@ export default class ExploreView extends Vue {
 
     @Watch("entity")
     onEntityChange(newValue) {
-        if (newValue) this.entityType = this.entity.entityTypes[0];
+        if (newValue) {
+            this.entityType = this.entity.entityTypes[0];
+        } else {
+            this.entityType = null;
+        }
     }
 
     @Watch("entityType")
     onEntityTypeChange(newValue) {
-        if (!newValue) return;
+        if (!newValue) {
+            this.entitySubType = null;
+            return;
+        }
         let subTypes = this.entityType.entitySubTypes
         if (subTypes && subTypes.length) {
             this.entitySubType = subTypes[0];
@@ -345,12 +352,18 @@ export default class ExploreView extends Vue {
         this.sectorTwoModifier = newValue.sectorTwoModifiers[0];
     }
 
+    get entityTypes() {
+        if (this.entity && this.entity.entityTypes) {
+            return this.entity.entityTypes;
+        }
+        return [];
+    }
+    
     get entitySubTypes() {
         if (this.entityType) {
             return this.entityType.entitySubTypes || []
         }
         return []
-        
     }
 
     get debug() {

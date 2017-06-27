@@ -1,9 +1,16 @@
 <template>
-    <select class="form-control" v-model="myValue">
-        <option v-for="val in values" :value="val" :key="val.id">
-            {{val.digits}} {{val.label}}
-        </option>
-    </select>
+    <div v-if="values.length">
+        <select class="form-control" v-model="myValue">
+            <option v-for="val in values" :value="val" :key="val.id">
+                {{val.digits}} {{val.label}}
+            </option>
+        </select>
+    </div>
+    <div v-else>
+        <select class="form-control" disabled>
+            <option>00</option>
+        </select>
+    </div>
 </template>
 
 
