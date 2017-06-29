@@ -117,14 +117,14 @@
                             <div class="form-group">
                                 <label class="col-sm-4 control-label">Sector one modifier</label>
                                 <div class="col-sm-8">
-                                    <code-select :values="symbolSet.sectorOneModifiers" v-model="sectorOneModifier"></code-select>
+                                    <code-select-group :groups="mod1Groups" v-model="sectorOneModifier"></code-select-group>
                                 </div>
                             </div>
     
                             <div class="form-group">
                                 <label class="col-sm-4 control-label">Sector two modifier</label>
                                 <div class="col-sm-8">
-                                    <code-select :values="symbolSet.sectorTwoModifiers" v-model="sectorTwoModifier"></code-select>
+                                    <code-select-group :groups="mod2Groups" v-model="sectorTwoModifier"></code-select-group>
                                 </div>
                             </div>
                         </div>
@@ -132,151 +132,151 @@
                 </div>
             </div>
             <!--<div class="col-sm-5">
-                                        <table class="table table-bordered table-condensed">
-                                            <tr>
-                                                <td class="symbol">
-                                                    <div class="symbol">
-                                                        <div class="milsymb reveal-animation" ng-include="frame()"></div>
-                                                        <div class="milsymb reveal-animation" ng-include="main()"></div>
-                                                        <div class="milsymb reveal-animation" ng-include="special()"></div>
-                                                        <div class="milsymb reveal-animation" ng-include="modifierOneFn()"></div>
-                                                        <div class="milsymb reveal-animation" ng-include="modifierTwoFn()"></div>
-                                                        <div class="milsymb reveal-animation" ng-include="amplifierFn()"></div>
-                                                        <div class="milsymb reveal-animation" ng-include="statusFn()"></div>
-                                                        <div class="milsymb reveal-animation" ng-include="hqtfdFn()"></div>
-                                                    </div>
-                                                </td>
-                                                <td>{{currentEntity.remarks}}
-                                                    <div ng-show="showDebugInfo">
-                                                        <small><strong>ID</strong> <code>{{currentEntity.id}}</code><br>
-                                                            <strong>Icon</strong> <code>{{currentEntity.icon}}</code></small>
-                                                    </div>
-                                                    <br>
-        
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <a class="btn btn-default btn-xs" ng-click="saveAsPng()"
-                                                       title="Does not work in Internet Explorer">Save as PNG</a>
-                                                    <a class="btn btn-default btn-xs" clip-copy="copySic()"
-                                                       title="Copy symbol identification code to clipboard">Copy SIC</a>
-                                                    <a class="btn btn-default btn-xs" ui-sref="explore({sic: copySic()})">Link</a>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <div ng-controller="SymbolIdCodeCtrl">
-                                            <table class="table table-bordered symbolid-table">
+                                            <table class="table table-bordered table-condensed">
                                                 <tr>
-                                                    <th colspan="10">Set A</th>
-                                                </tr>
-                                                <tr class="setA set-values">
-                                                    <td class="text-muted">{{ symbId.versionCode1}}</td>
-                                                    <td class="text-muted">{{ symbId.versionCode2}}</td>
-                                                    <td title="{{ symbId.context.label }}">{{ symbId.context.digits }}</td>
-                                                    <td title="{{symbId.standardIdentity.label}}">{{ symbId.standardIdentity.digits }}</span>
+                                                    <td class="symbol">
+                                                        <div class="symbol">
+                                                            <div class="milsymb reveal-animation" ng-include="frame()"></div>
+                                                            <div class="milsymb reveal-animation" ng-include="main()"></div>
+                                                            <div class="milsymb reveal-animation" ng-include="special()"></div>
+                                                            <div class="milsymb reveal-animation" ng-include="modifierOneFn()"></div>
+                                                            <div class="milsymb reveal-animation" ng-include="modifierTwoFn()"></div>
+                                                            <div class="milsymb reveal-animation" ng-include="amplifierFn()"></div>
+                                                            <div class="milsymb reveal-animation" ng-include="statusFn()"></div>
+                                                            <div class="milsymb reveal-animation" ng-include="hqtfdFn()"></div>
+                                                        </div>
                                                     </td>
-                                                    <td colspan="2" title="{{symbId.symbolSet.label}}">
-                                                        <table>
-                                                            <tr>
-                                                                <td>{{symbId.symbolSet.digits[0]}}</td>
-                                                                <td>{{symbId.symbolSet.digits[1]}}</td>
-                                                            </tr>
-                                                        </table>
+                                                    <td>{{currentEntity.remarks}}
+                                                        <div ng-show="showDebugInfo">
+                                                            <small><strong>ID</strong> <code>{{currentEntity.id}}</code><br>
+                                                                <strong>Icon</strong> <code>{{currentEntity.icon}}</code></small>
+                                                        </div>
+                                                        <br>
+    
                                                     </td>
-                                                    <td title="{{symbId.status.label}}">{{ symbId.status.digits }}</td>
-                                                    <td title="{{symbId.hqtfDummy.label}}">{{ symbId.hqtfDummy.digits || 0}}</td>
-                                                    <td title="{{symbId.amplifier.label}}">{{symbId.amplifier.digits || 0}}</td>
-                                                    <td title="{{symbId.amplifierDescriptor.label}}">{{symbId.amplifierDescriptor.digits}}</td>
-                                                </tr>
-                                                <tr class="set-numbers text-muted">
-                                                    <td>1</td>
-                                                    <td>2</td>
-                                                    <td>3</td>
-                                                    <td>4</td>
-                                                    <td>5</td>
-                                                    <td>6</td>
-                                                    <td>7</td>
-                                                    <td>8</td>
-                                                    <td>9</td>
-                                                    <td>10</td>
-                                                </tr>
-                                                <tr class="symid-description">
-                                                    <td colspan="2">Version</td>
-                                                    <td colspan="2">Standard identity</td>
-                                                    <td colspan="2">Symbol set</td>
-                                                    <td>Status</td>
-                                                    <td>HQ / Task Force / Dummy</td>
-                                                    <td colspan="2">Amplifier / Descriptor</td>
                                                 </tr>
                                                 <tr>
-                                                    <th colspan="10">Set B</th>
-                                                </tr>
-                                                <tr class="setB set-values">
-                                                    <td colspan="2" title="{{symbId.entity.label}}">
-                                                        <table>
-                                                            <tr>
-                                                                <td>{{symbId.entity.digits[0]}}</td>
-                                                                <td>{{symbId.entity.digits[1]}}</td>
-                                                            </tr>
-                                                        </table>
+                                                    <td colspan="2">
+                                                        <a class="btn btn-default btn-xs" ng-click="saveAsPng()"
+                                                           title="Does not work in Internet Explorer">Save as PNG</a>
+                                                        <a class="btn btn-default btn-xs" clip-copy="copySic()"
+                                                           title="Copy symbol identification code to clipboard">Copy SIC</a>
+                                                        <a class="btn btn-default btn-xs" ui-sref="explore({sic: copySic()})">Link</a>
                                                     </td>
-                                                    <td colspan="2" title="{{symbId.entityType.label}}">
-                                                        <table>
-                                                            <tr>
-                                                                <td>{{symbId.entityType.digits[0] || 0}}</td>
-                                                                <td>{{symbId.entityType.digits[1] || 0}}</td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                    <td colspan="2" title="{{gget('entitySubType').label}}">
-                                                        <table>
-                                                            <tr>
-                                                                <td>{{gget('entitySubType').digits[0]}}</td>
-                                                                <td>{{gget('entitySubType').digits[1]}}</td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                    <td colspan="2" title="{{symbId.sectorOneModifier.label}}">
-                                                        <table>
-                                                            <tr>
-                                                                <td>{{gget('sectorOneModifier').digits[0] }}</td>
-                                                                <td>{{gget('sectorOneModifier').digits[1] }}</td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                    <td colspan="2" title="{{gget('sectorTwoModifier').label}}">
-                                                        <table>
-                                                            <tr>
-                                                                <td>{{symbId.sectorTwoModifier.digits[0] || 0}}</td>
-                                                                <td>{{symbId.sectorTwoModifier.digits[1] || 0}}</td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                                <tr class="set-numbers">
-                                                    <td>11</td>
-                                                    <td>12</td>
-                                                    <td>13</td>
-                                                    <td>14</td>
-                                                    <td>15</td>
-                                                    <td>16</td>
-                                                    <td>17</td>
-                                                    <td>18</td>
-                                                    <td>19</td>
-                                                    <td>20</td>
-                                                </tr>
-                                                <tr class="symid-description">
-                                                    <td colspan="2">Entity</td>
-                                                    <td colspan="2">Entity type</td>
-                                                    <td colspan="2">Entity subtype</td>
-                                                    <td colspan="2">Sector 1 modifier</td>
-                                                    <td colspan="2">Sector 2 modifier</td>
                                                 </tr>
                                             </table>
-        
-                                        </div>
-                                    </div>-->
+                                            <div ng-controller="SymbolIdCodeCtrl">
+                                                <table class="table table-bordered symbolid-table">
+                                                    <tr>
+                                                        <th colspan="10">Set A</th>
+                                                    </tr>
+                                                    <tr class="setA set-values">
+                                                        <td class="text-muted">{{ symbId.versionCode1}}</td>
+                                                        <td class="text-muted">{{ symbId.versionCode2}}</td>
+                                                        <td title="{{ symbId.context.label }}">{{ symbId.context.digits }}</td>
+                                                        <td title="{{symbId.standardIdentity.label}}">{{ symbId.standardIdentity.digits }}</span>
+                                                        </td>
+                                                        <td colspan="2" title="{{symbId.symbolSet.label}}">
+                                                            <table>
+                                                                <tr>
+                                                                    <td>{{symbId.symbolSet.digits[0]}}</td>
+                                                                    <td>{{symbId.symbolSet.digits[1]}}</td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td title="{{symbId.status.label}}">{{ symbId.status.digits }}</td>
+                                                        <td title="{{symbId.hqtfDummy.label}}">{{ symbId.hqtfDummy.digits || 0}}</td>
+                                                        <td title="{{symbId.amplifier.label}}">{{symbId.amplifier.digits || 0}}</td>
+                                                        <td title="{{symbId.amplifierDescriptor.label}}">{{symbId.amplifierDescriptor.digits}}</td>
+                                                    </tr>
+                                                    <tr class="set-numbers text-muted">
+                                                        <td>1</td>
+                                                        <td>2</td>
+                                                        <td>3</td>
+                                                        <td>4</td>
+                                                        <td>5</td>
+                                                        <td>6</td>
+                                                        <td>7</td>
+                                                        <td>8</td>
+                                                        <td>9</td>
+                                                        <td>10</td>
+                                                    </tr>
+                                                    <tr class="symid-description">
+                                                        <td colspan="2">Version</td>
+                                                        <td colspan="2">Standard identity</td>
+                                                        <td colspan="2">Symbol set</td>
+                                                        <td>Status</td>
+                                                        <td>HQ / Task Force / Dummy</td>
+                                                        <td colspan="2">Amplifier / Descriptor</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="10">Set B</th>
+                                                    </tr>
+                                                    <tr class="setB set-values">
+                                                        <td colspan="2" title="{{symbId.entity.label}}">
+                                                            <table>
+                                                                <tr>
+                                                                    <td>{{symbId.entity.digits[0]}}</td>
+                                                                    <td>{{symbId.entity.digits[1]}}</td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td colspan="2" title="{{symbId.entityType.label}}">
+                                                            <table>
+                                                                <tr>
+                                                                    <td>{{symbId.entityType.digits[0] || 0}}</td>
+                                                                    <td>{{symbId.entityType.digits[1] || 0}}</td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td colspan="2" title="{{gget('entitySubType').label}}">
+                                                            <table>
+                                                                <tr>
+                                                                    <td>{{gget('entitySubType').digits[0]}}</td>
+                                                                    <td>{{gget('entitySubType').digits[1]}}</td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td colspan="2" title="{{symbId.sectorOneModifier.label}}">
+                                                            <table>
+                                                                <tr>
+                                                                    <td>{{gget('sectorOneModifier').digits[0] }}</td>
+                                                                    <td>{{gget('sectorOneModifier').digits[1] }}</td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td colspan="2" title="{{gget('sectorTwoModifier').label}}">
+                                                            <table>
+                                                                <tr>
+                                                                    <td>{{symbId.sectorTwoModifier.digits[0] || 0}}</td>
+                                                                    <td>{{symbId.sectorTwoModifier.digits[1] || 0}}</td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="set-numbers">
+                                                        <td>11</td>
+                                                        <td>12</td>
+                                                        <td>13</td>
+                                                        <td>14</td>
+                                                        <td>15</td>
+                                                        <td>16</td>
+                                                        <td>17</td>
+                                                        <td>18</td>
+                                                        <td>19</td>
+                                                        <td>20</td>
+                                                    </tr>
+                                                    <tr class="symid-description">
+                                                        <td colspan="2">Entity</td>
+                                                        <td colspan="2">Entity type</td>
+                                                        <td colspan="2">Entity subtype</td>
+                                                        <td colspan="2">Sector 1 modifier</td>
+                                                        <td colspan="2">Sector 2 modifier</td>
+                                                    </tr>
+                                                </table>
+    
+                                            </div>
+                                        </div>-->
         </div>
         <div class="row">
             <div class="col-sm-12">
@@ -291,13 +291,23 @@ import Vue from 'vue';
 import { Component, Watch } from 'vue-property-decorator';
 import { SYMBOL_DATA, Context, StandardIdentity, SymbolSet } from "../jmsml/jmsml";
 import CodeSelect from "../components/code-select.vue";
+import CodeSelectGroup from "../components/code-select-group.vue";
 
 interface SymbSymb {
     context: Context;
     standardIdentity: StandardIdentity;
 }
 
-@Component({ components: { "code-select": CodeSelect } })
+function groupBy(items, prop) {
+    return items.reduce(function (groups, item) {
+        var val = item[prop] || "";
+        groups[val] = groups[val] || [];
+        groups[val].push(item);
+        return groups;
+    }, {});
+}
+
+@Component({ components: { "code-select": CodeSelect, "code-select-group": CodeSelectGroup } })
 export default class ExploreView extends Vue {
     limitUseTo = false;
     context = SYMBOL_DATA.contexts[0];
@@ -347,9 +357,10 @@ export default class ExploreView extends Vue {
 
     @Watch("symbolSet")
     onSymbolSetChange(newValue: SymbolSet) {
-        this.entity = newValue.entities.length? newValue.entities[1]: newValue.entities[0];
+        this.entity = newValue.entities.length ? newValue.entities[1] : newValue.entities[0];
         this.sectorOneModifier = newValue.sectorOneModifiers[0];
         this.sectorTwoModifier = newValue.sectorTwoModifiers[0];
+        console.log(groupBy(this.symbolSet.sectorOneModifiers, "category"))
     }
 
     get entityTypes() {
@@ -358,7 +369,7 @@ export default class ExploreView extends Vue {
         }
         return [];
     }
-    
+
     get entitySubTypes() {
         if (this.entityType) {
             return this.entityType.entitySubTypes || []
@@ -396,6 +407,14 @@ export default class ExploreView extends Vue {
 
     set symbolSet(value) {
         this.$store.commit("setSymbolSet", value);
+    }
+
+    get mod1Groups() {
+        return groupBy(this.symbolSet.sectorOneModifiers, "category")
+    }
+
+    get mod2Groups() {
+        return groupBy(this.symbolSet.sectorTwoModifiers, "category")
     }
 }
 </script>
