@@ -38,8 +38,8 @@ export default class CodeSelectGroup extends Vue {
     }
 
     @Watch("myValue")
-    onValueChange(newValue) {
-        this.$emit('input', newValue);
+    onValueChange(newValue, oldValue) {
+        if (oldValue) this.$emit('input', newValue);
     }
 }
 </script>
