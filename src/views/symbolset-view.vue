@@ -90,6 +90,7 @@
     import SymbolsetTable from "../components/symbolset-table.vue";
     import ControlMeasureTable from "../components/controlmeasure-table.vue";
     import MineTable from "../components/mine-table.vue";
+    import {SET_CIVILIAN_FRAMES_MODE, SET_SYMBOL_SET, SET_DEBUG_MODE} from "../store/mutation-types";
 
     @Component({
         components: {
@@ -123,7 +124,7 @@
         }
 
         set debug(value) {
-            this.$store.commit("setDebugMode", value);
+            this.$store.commit(SET_DEBUG_MODE, value);
         }
 
         get currentSymbolSet() {
@@ -131,7 +132,7 @@
         }
 
         set currentSymbolSet(value) {
-            this.$store.commit("setSymbolSet", value);
+            this.$store.commit(SET_SYMBOL_SET, value);
         }
 
         get useCivilianFrames() {
@@ -139,7 +140,7 @@
         }
 
         set useCivilianFrames(value) {
-            this.$store.commit("setCivilianFramesMode", value);
+            this.$store.commit(SET_CIVILIAN_FRAMES_MODE, value);
         }
 
     }

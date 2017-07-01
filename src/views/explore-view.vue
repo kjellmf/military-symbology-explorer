@@ -90,7 +90,7 @@
                             <div class="form-group">
                                 <label class="col-sm-4 control-label"></label>
                                 <div class="col-sm-8">
-                                    <code-select :values="amplifier.descriptors"
+                                    <code-select :values="amplifier? amplifier.descriptors : []"
                                                  v-model="amplifierDescriptor"></code-select>
                                 </div>
                             </div>
@@ -296,6 +296,12 @@
     import {SYMBOL_DATA, Context, StandardIdentity, SymbolSet} from "../jmsml/jmsml";
     import CodeSelect from "../components/code-select.vue";
     import CodeSelectGroup from "../components/code-select-group.vue";
+    import {
+        SET_ALTERNATE_AMPLIFIERS_MODE,
+        SET_CIVILIAN_FRAMES_MODE,
+        SET_DEBUG_MODE,
+        SET_SYMBOL_SET
+    } from "../store/mutation-types";
 
     interface SymbSymb {
         context: Context;
@@ -318,13 +324,13 @@
         standardIdentity = SYMBOL_DATA.standardIdentities[3];
         status = SYMBOL_DATA.statuses[0];
         hqtfDummy = SYMBOL_DATA.hqtfDummies[0];
-        amplifier = SYMBOL_DATA.amplifiers[0];
-        amplifierDescriptor = this.amplifier.descriptors[0];
+        amplifier = SYMBOL_DATA.amplifiers[0] || null;
+        amplifierDescriptor = this.amplifier.descriptors[0] || null;
         entity = this.symbolSet.entities[1];
         entityType = this.entity.entityTypes[0];
         entitySubType = this.entityType.entitySubTypes[0] ||  {"label": "Undefined", "digits": "00"};
-        sectorOneModifier = this.symbolSet.sectorOneModifiers[0];
-        sectorTwoModifier = this.symbolSet.sectorTwoModifiers[0];
+        sectorOneModifier = this.symbolSet.sectorOneModifiers[0] || null;
+        sectorTwoModifier = this.symbolSet.sectorTwoModifiers[0] || null;
 
         @Watch("amplifier")
         onAmplifierChange(newValue) {
@@ -394,7 +400,7 @@
         }
 
         set debug(value) {
-            this.$store.commit("setDebugMode", value);
+            this.$store.commit(SET_DEBUG_MODE, value);
         }
 
         get useCivilianFrames() {
@@ -402,7 +408,7 @@
         }
 
         set useCivilianFrames(value) {
-            this.$store.commit("setCivilianFramesMode", value);
+            this.$store.commit(SET_CIVILIAN_FRAMES_MODE, value);
         }
 
         get alternateAmplifiers() {
@@ -410,7 +416,7 @@
         }
 
         set alternateAmplifiers(value) {
-            this.$store.commit("setalternateAmplifiers", value);
+            this.$store.commit(SET_ALTERNATE_AMPLIFIERS_MODE, value);
         }
 
         get symbolSet(): SymbolSet {
@@ -418,7 +424,7 @@
         }
 
         set symbolSet(value) {
-            this.$store.commit("setSymbolSet", value);
+            this.$store.commit(SET_SYMBOL_SET, value);
         }
 
         get mod1Groups() {
