@@ -217,43 +217,43 @@
                             <th colspan="10">Set B</th>
                         </tr>
                         <tr class="setB set-values">
-                            <td colspan="2" :title="dv(entity).label">
+                            <td colspan="2" :title="entity.label">
                                 <table>
                                     <tr>
-                                        <td>{{dv(entity).digits[0]}}</td>
-                                        <td>{{dv(entity).digits[1]}}</td>
+                                        <td>{{entity.digits[0]}}</td>
+                                        <td>{{entity.digits[1]}}</td>
                                     </tr>
                                 </table>
                             </td>
-                            <td colspan="2" :title="dv(entityType).label">
+                            <td colspan="2" :title="entityType.label">
                                 <table>
                                     <tr>
-                                        <td>{{dv(entityType).digits[0]}}</td>
-                                        <td>{{dv(entityType).digits[1]}}</td>
+                                        <td>{{entityType.digits[0]}}</td>
+                                        <td>{{entityType.digits[1]}}</td>
                                     </tr>
                                 </table>
                             </td>
-                            <td colspan="2" :title="dv(entitySubType).label">
+                            <td colspan="2" :title="entitySubType.label">
                                 <table>
                                     <tr>
-                                        <td>{{dv(entitySubType).digits[0]}}</td>
-                                        <td>{{dv(entitySubType).digits[1]}}</td>
+                                        <td>{{entitySubType.digits[0]}}</td>
+                                        <td>{{entitySubType.digits[1]}}</td>
                                     </tr>
                                 </table>
                             </td>
-                            <td colspan="2" :title="dv(sectorOneModifier).label">
+                            <td colspan="2" :title="sectorOneModifier.label">
                                 <table>
                                     <tr>
-                                        <td>{{dv(sectorOneModifier).digits[0] }}</td>
-                                        <td>{{dv(sectorOneModifier).digits[1] }}</td>
+                                        <td>{{sectorOneModifier.digits[0] }}</td>
+                                        <td>{{sectorOneModifier.digits[1] }}</td>
                                     </tr>
                                 </table>
                             </td>
-                            <td colspan="2" :title="dv(sectorTwoModifier).label">
+                            <td colspan="2" :title="sectorTwoModifier.label">
                                 <table>
                                     <tr>
-                                        <td>{{dv(sectorTwoModifier).digits[0]}}</td>
-                                        <td>{{dv(sectorTwoModifier).digits[1]}}</td>
+                                        <td>{{sectorTwoModifier.digits[0]}}</td>
+                                        <td>{{sectorTwoModifier.digits[1]}}</td>
                                     </tr>
                                 </table>
                             </td>
@@ -293,20 +293,15 @@
 <script lang="ts">
     import Vue from 'vue';
     import {Component, Watch} from 'vue-property-decorator';
-    import {SYMBOL_DATA, Context, StandardIdentity, SymbolSet} from "../jmsml/jmsml";
+    import {SYMBOL_DATA, Context, StandardIdentity, SymbolSet, Modifier} from "../jmsml/jmsml";
     import CodeSelect from "../components/code-select.vue";
     import CodeSelectGroup from "../components/code-select-group.vue";
     import {
         SET_ALTERNATE_AMPLIFIERS_MODE,
         SET_CIVILIAN_FRAMES_MODE,
-        SET_DEBUG_MODE,
-        SET_SYMBOL_SET
+        SET_DEBUG_MODE, SET_MODIFIER_ONE, SET_MODIFIER_TWO,
     } from "../store/mutation-types";
-
-    interface SymbSymb {
-        context: Context;
-        standardIdentity: StandardIdentity;
-    }
+    import {CHANGE_ENTITY, CHANGE_ENTITY_SUB_TYPE, CHANGE_ENTITY_TYPE, CHANGE_SYMBOL_SET} from "../store/action-types";
 
     function groupBy(items, prop) {
         return items.reduce(function (groups, item) {
@@ -326,11 +321,7 @@
         hqtfDummy = SYMBOL_DATA.hqtfDummies[0];
         amplifier = SYMBOL_DATA.amplifiers[0] || null;
         amplifierDescriptor = this.amplifier.descriptors[0] || null;
-        entity = this.symbolSet.entities[1];
-        entityType = this.entity.entityTypes[0];
-        entitySubType = this.entityType.entitySubTypes[0] ||  {"label": "Undefined", "digits": "00"};
-        sectorOneModifier = this.symbolSet.sectorOneModifiers[0] || null;
-        sectorTwoModifier = this.symbolSet.sectorTwoModifiers[0] || null;
+
 
         @Watch("amplifier")
         onAmplifierChange(newValue) {
@@ -342,43 +333,45 @@
             this["sd"] = SYMBOL_DATA;
         }
 
-        // ugly hack
-        dv(value) {
-            if (value) {
-                return value
-            } else {
-                return  {"label": "Undefined", "digits": "00"}
-            }
+        get entity() {
+            return this.$store.state.entity;
         }
 
-        @Watch("entity")
-        onEntityChange(newValue) {
-            if (newValue) {
-                this.entityType = this.entity.entityTypes[0];
-            } else {
-                this.entityType = null;
-            }
+        set entity(newValue) {
+            this.$store.dispatch(CHANGE_ENTITY, newValue);
         }
 
-        @Watch("entityType")
-        onEntityTypeChange(newValue) {
-            if (!newValue) {
-                this.entitySubType = null;
-                return;
-            }
-            let subTypes = this.entityType.entitySubTypes;
-            if (subTypes && subTypes.length) {
-                this.entitySubType = subTypes[0];
-            } else {
-                this.entitySubType = null;
-            }
+        get entityType() {
+            return this.$store.state.entityType;
         }
 
-        @Watch("symbolSet")
-        onSymbolSetChange(newValue: SymbolSet) {
-            this.entity = newValue.entities.length ? newValue.entities[1] : newValue.entities[0];
-            this.sectorOneModifier = newValue.sectorOneModifiers[0];
-            this.sectorTwoModifier = newValue.sectorTwoModifiers[0];
+        set entityType(newValue) {
+            this.$store.dispatch(CHANGE_ENTITY_TYPE, newValue);
+        }
+
+        set entitySubType(newValue) {
+            this.$store.dispatch(CHANGE_ENTITY_SUB_TYPE, newValue);
+        }
+
+
+        get entitySubType() {
+            return this.$store.state.entitySubType;
+        }
+
+        get sectorOneModifier() {
+            return this.$store.state.sectorOneModifier;
+        }
+
+        set sectorOneModifier(newValue: Modifier) {
+            this.$store.commit(SET_MODIFIER_ONE, newValue);
+        }
+
+        get sectorTwoModifier() {
+            return this.$store.state.sectorTwoModifier;
+        }
+
+        set sectorTwoModifier(newValue: Modifier) {
+            this.$store.commit(SET_MODIFIER_TWO, newValue);
         }
 
         get entityTypes() {
@@ -424,7 +417,7 @@
         }
 
         set symbolSet(value) {
-            this.$store.commit(SET_SYMBOL_SET, value);
+            this.$store.dispatch(CHANGE_SYMBOL_SET, value);
         }
 
         get mod1Groups() {
