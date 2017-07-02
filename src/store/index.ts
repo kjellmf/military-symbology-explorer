@@ -6,7 +6,7 @@ import {
     SET_ENTITY_TYPE, SET_MODIFIER_ONE, SET_MODIFIER_TWO,
     SET_SYMBOL_SET
 } from "./mutation-types";
-import {CHANGE_ENTITY, CHANGE_ENTITY_SUB_TYPE, CHANGE_ENTITY_TYPE, CHANGE_SYMBOL_SET} from "./action-types";
+import {CHANGE_ENTITY, CHANGE_ENTITY_SUB_TYPE, CHANGE_ENTITY_TYPE, CHANGE_SYMBOL_SET, INITIALIZE} from "./action-types";
 
 Vue.use(Vuex);
 
@@ -72,6 +72,9 @@ export default new Vuex.Store<SymbologyExplorerState>({
         }
     },
     actions: {
+        [INITIALIZE] ({dispatch}) {
+          dispatch(CHANGE_SYMBOL_SET, Object.freeze(SYMBOL_DATA.symbolSets[5]))
+        },
         [CHANGE_SYMBOL_SET] ({ commit, dispatch }, newSymbolSet: SymbolSet) {
             commit(SET_SYMBOL_SET, newSymbolSet);
             let entities = newSymbolSet.entities;

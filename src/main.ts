@@ -3,6 +3,7 @@ import Vue from 'vue'
 import MilSymb from "./components/milsymbol.vue";
 import router from './router';
 import store from './store';
+import {INITIALIZE} from "./store/action-types";
 
 Vue.component('milsymbol', MilSymb);
 
@@ -38,4 +39,9 @@ const app = new Vue({
 </div>`,
     router,
     store,
+
+    created() {
+        this.$store.dispatch(INITIALIZE);
+    }
+
 });
