@@ -3,7 +3,7 @@ import Vue from 'vue'
 import MilSymb from "./components/milsymbol.vue";
 import router from './router';
 import store from './store';
-import {INITIALIZE} from "./store/action-types";
+import {INITIALIZE, SET_SYMBOL_FROM_SIC} from "./store/action-types";
 
 Vue.component('milsymbol', MilSymb);
 
@@ -41,7 +41,7 @@ const app = new Vue({
     store,
 
     created() {
-        this.$store.dispatch(INITIALIZE);
+        this.$store.dispatch(SET_SYMBOL_FROM_SIC, '10031000161211050000');
     }
 
 });
