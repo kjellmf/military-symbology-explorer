@@ -129,7 +129,7 @@
         }
 
         get currentSymbolSet() {
-            return this.$store.state.symbolSet;
+            return this.$store.state.symbol.symbolSet;
         }
 
         set currentSymbolSet(value) {

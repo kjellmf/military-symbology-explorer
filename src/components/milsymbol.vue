@@ -1,4 +1,5 @@
 <template>
+<div>
     <div class="milsymbol" v-if="sicObj">
         <img v-if="frame" class="symbol-sm" :src="sicObj.frameFn">
         <img class="symbol-sm" :src="sicObj.entityFn">
@@ -9,8 +10,8 @@
         <img class="symbol-sm" :src="sicObj.modifierOneFn">
         <img class="symbol-sm" :src="sicObj.modifierTwoFn">
     </div>
+</div>    
 </template>
-
 
 <script lang="ts">
     import Vue from 'vue';
@@ -19,7 +20,7 @@
 
     @Component
     export default class MilSymb extends Vue {
-        @Prop(String)
+        @Prop()
         sic: string;
         @Prop({type:Boolean, default:false})
         alternative: boolean;

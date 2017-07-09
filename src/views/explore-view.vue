@@ -324,7 +324,7 @@
         }
 
         get context() {
-            return this.$store.state.context;
+            return this.$store.state.symbol.context;
         }
 
         set context(value) {
@@ -332,7 +332,7 @@
         }
 
         get standardIdentity() {
-            return this.$store.state.standardIdentity;
+            return this.$store.state.symbol.standardIdentity;
         }
 
         set standardIdentity(value) {
@@ -340,7 +340,7 @@
         }
 
         get status() {
-            return this.$store.state.status;
+            return this.$store.state.symbol.status;
         }
 
         set status(value) {
@@ -348,7 +348,7 @@
         }
 
         get hqtfDummy() {
-            return this.$store.state.hqtfDummy;
+            return this.$store.state.symbol.hqtfDummy;
         }
 
         set hqtfDummy(value) {
@@ -356,7 +356,7 @@
         }
 
         get amplifier() {
-            return this.$store.state.amplifier;
+            return this.$store.state.symbol.amplifier;
         }
 
         set amplifier(value) {
@@ -364,7 +364,7 @@
         }
 
         get amplifierDescriptor() {
-            return this.$store.state.amplifierDescriptor;
+            return this.$store.state.symbol.amplifierDescriptor;
         }
 
         set amplifierDescriptor(value) {
@@ -372,7 +372,7 @@
         }
 
         get entity() {
-            return this.$store.state.entity;
+            return this.$store.state.symbol.entity;
         }
 
         set entity(newValue) {
@@ -380,7 +380,7 @@
         }
 
         get entityType() {
-            return this.$store.state.entityType;
+            return this.$store.state.symbol.entityType;
         }
 
         set entityType(newValue) {
@@ -393,11 +393,11 @@
 
 
         get entitySubType() {
-            return this.$store.state.entitySubType;
+            return this.$store.state.symbol.entitySubType;
         }
 
         get sectorOneModifier() {
-            return this.$store.state.sectorOneModifier;
+            return this.$store.state.symbol.sectorOneModifier;
         }
 
         set sectorOneModifier(newValue: Modifier) {
@@ -405,7 +405,7 @@
         }
 
         get sectorTwoModifier() {
-            return this.$store.state.sectorTwoModifier;
+            return this.$store.state.symbol.sectorTwoModifier;
         }
 
         set sectorTwoModifier(newValue: Modifier) {
@@ -451,7 +451,7 @@
         }
 
         get symbolSet(): SymbolSet {
-            return this.$store.state.symbolSet;
+            return this.$store.state.symbol.symbolSet;
         }
 
         set symbolSet(value) {
