@@ -127,10 +127,10 @@ export default <Module<SymbolState, any>>{
             commit(mut.SET_CONTEXT, sicObject.context);
             commit(mut.SET_STANDARD_IDENTIY, sicObject.standardIdentity);
             commit(mut.SET_SYMBOL_SET, sicObject.symbolSet);
-            commit(mut.SET_STATUS, sicObject.statusObj);
-            commit(mut.SET_HQTFDUMMY, sicObject.hqtfdObj);
+            commit(mut.SET_STATUS, sicObject.status);
+            commit(mut.SET_HQTFDUMMY, sicObject.hqtfd);
             commit(mut.SET_AMPLIFIER, sicObject.amplifier);
-            commit(mut.SET_AMPLIFIER_DESCRIPTOR, sicObject.amplifierDescriptorObj);
+            commit(mut.SET_AMPLIFIER_DESCRIPTOR, sicObject.amplifierDescriptor);
             commit(mut.SET_ENTITY, sicObject.entity);
             commit(mut.SET_ENTITY_TYPE, sicObject.entityType);
             commit(mut.SET_ENTITY_SUB_TYPE, sicObject.entitySubType);

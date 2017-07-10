@@ -31,7 +31,7 @@ interface FramedGraphicIdentifierAttributeGroup extends IdentifierAttributeGroup
     icon?: IconType;
     isCivilian?: boolean;
     standard?: string;
-    IsAlignable: boolean;
+    IsAlignable?: boolean;
 }
 
 export interface SymbolSet extends IdentifierAttributeGroup {
@@ -64,7 +64,6 @@ export interface EntitySubType extends EntityBase {
      entityTypeCode?: string;
      */
 }
-;
 
 export interface Modifier extends IdentifierAttributeGroup {
     digits: string;
@@ -96,7 +95,6 @@ export interface Status extends IdentifierAttributeGroup {
 }
 
 export interface AmplifierDescriptor extends IdentifierAttributeGroup {
-
     graphics: EntityBase[];
 }
 
@@ -163,7 +161,6 @@ export class Sic implements SicElements {
     }
 }
 
-
 const standardIdentityMap = {
     "0": "cloverGraphic",
     "1": "cloverGraphic",
@@ -223,10 +220,10 @@ export class SicObject {
     context: Context;
     standardIdentity: StandardIdentity;
     symbolSet: SymbolSet;
-    statusObj: Status;
-    hqtfdObj: HqtfD;
+    status: Status;
+    hqtfd: HqtfD;
     amplifier: Amplifier;
-    amplifierDescriptorObj: AmplifierDescriptor;
+    amplifierDescriptor: AmplifierDescriptor;
     entity: Entity;
     entityType: EntityType;
     entitySubType: EntitySubType;
@@ -257,22 +254,19 @@ export class SicObject {
         // Get main icon
         this.currentEntity = this.entitySubType || this.entityType || this.entity;
         this.getFilePaths();
-
-
-        //this.standardIdentityObj = findSymbolObject(symbolData.standardIdentities, this.standardIdentity);
     }
 
     private extractObjects(sic: Sic) {
         this.context = findSymbolObject(SYMBOL_DATA.contexts, sic.context);
         this.standardIdentity = findSymbolObject(SYMBOL_DATA.standardIdentities, sic.standardIdentity);
         this.symbolSet = findSymbolObject(SYMBOL_DATA.symbolSets, sic.symbolSet);
-        this.statusObj = findSymbolObject(SYMBOL_DATA.statuses, sic.status);
-        this.hqtfdObj = findSymbolObject(SYMBOL_DATA.hqtfDummies, sic.hqtfd);
+        this.status = findSymbolObject(SYMBOL_DATA.statuses, sic.status);
+        this.hqtfd = findSymbolObject(SYMBOL_DATA.hqtfDummies, sic.hqtfd);
         this.amplifier = findSymbolObject(SYMBOL_DATA.amplifiers, sic.amplifier);
         if (this.amplifier) {
-            this.amplifierDescriptorObj = findSymbolObject(this.amplifier.descriptors, sic.amplifierDescriptor);
+            this.amplifierDescriptor = findSymbolObject(this.amplifier.descriptors, sic.amplifierDescriptor);
         } else {
-            this.amplifierDescriptorObj = null;
+            this.amplifierDescriptor = null;
         }
 
         this.entity = findSymbolObject(this.symbolSet.entities, sic.entity);
@@ -307,7 +301,6 @@ export class SicObject {
         if (this.currentEntity && this.currentEntity.icon == 'SPECIAL') {
             this.specialFn = PathService.getEntityFilePath(this) || BLANK_PATH;
             this.currentEntity = this.entityType;
-
         } else {
             this.specialFn = BLANK_PATH;
         }
@@ -364,7 +357,7 @@ export class PathService {
                 let a2 = a1[dimensionId];
                 if (a2 && a2[standardIdentityId]) {
                     let a3 = a2[standardIdentityId];
-                    if (sic.statusObj.id && sic.statusObj.digits == "1") {
+                    if (sic.status.id && sic.status.digits == "1") {
                         if (sic.useCivilianFrame && a3.plannedCivilianGraphic) {
                             fn = a3.plannedCivilianGraphic;
                         } else {
@@ -392,8 +385,8 @@ export class PathService {
         var dimensionId = sic.symbolSet.dimensionId,
             fn = "";
         let standardIdentityId = sic.standardIdentity.id;
-        if (dimensionId && sic.hqtfdObj && standardIdentityId && sic.hqtfdObj.graphics) {
-            var sig = sic.hqtfdObj.graphics[SYMBOL_DATA.standardIdentityGroupMapping[standardIdentityId]];
+        if (dimensionId && sic.hqtfd && standardIdentityId && sic.hqtfd.graphics) {
+            var sig = sic.hqtfd.graphics[SYMBOL_DATA.standardIdentityGroupMapping[standardIdentityId]];
             if (sig) {
                 var dim = sig[dimensionId];
                 fn = dim ? dim.graphic : null;
@@ -406,15 +399,15 @@ export class PathService {
         let dimensionId = sic.symbolSet.dimensionId,
             fn = "";
         if (sic.alternativeAmplifiers) {
-            if (dimensionId && sic.statusObj && sic.standardIdentity.id && sic.statusObj.graphics) {
-                var sig = sic.statusObj.graphics[SYMBOL_DATA.standardIdentityGroupMapping[sic.standardIdentity.id]];
+            if (dimensionId && sic.status && sic.standardIdentity.id && sic.status.graphics) {
+                var sig = sic.status.graphics[SYMBOL_DATA.standardIdentityGroupMapping[sic.standardIdentity.id]];
                 if (sig) {
                     var dim = sig[dimensionId];
                     fn = dim ? dim.graphic : null;
                 }
             }
         } else {
-            fn = sic.statusObj.graphic;
+            fn = sic.status.graphic;
         }
         return fn ? SVG_PATH + fn : null;
     }
@@ -424,19 +417,17 @@ export class PathService {
         if (sic.symbolSet.geometry == "MIXED") {
             return null;
         }
-        if (sic.standardIdentity.id && sic.amplifierDescriptorObj && sic.amplifierDescriptorObj.graphics) {
-            var sig = sic.amplifierDescriptorObj.graphics[SYMBOL_DATA.standardIdentityGroupMapping[sic.standardIdentity.id]];
+        if (sic.standardIdentity.id && sic.amplifierDescriptor && sic.amplifierDescriptor.graphics) {
+            var sig = sic.amplifierDescriptor.graphics[SYMBOL_DATA.standardIdentityGroupMapping[sic.standardIdentity.id]];
             fn = sig ? sig.graphic : null;
         }
         return fn ? SVG_PATH + fn : null;
     }
 
-
     static getModifierOneFilePath(sic: SicObject) {
         let fn = sic.modifierOne ? sic.modifierOne.graphic : "";
         return fn ? SVG_PATH + sic.symbolSet.graphicFolder["modifierOnes"] + "/" + fn : null;
     }
-
 
     static getModifierTwoFilePath(sic: SicObject) {
         var fn = sic.modifierTwo ? sic.modifierTwo.graphic : "";
@@ -449,9 +440,7 @@ export class PathService {
         } else {
             return "assets/img/BoundingOctagonHorizontal.svg";
         }
-
     }
-
 }
 
 
