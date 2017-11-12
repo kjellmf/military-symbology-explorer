@@ -1,16 +1,16 @@
 {
-  "compilerOptions": {
-    "outDir": "./dist/",
-    "sourceMap": true,
-    "strict": false,
-    "noImplicitReturns": true,
-    "module": "es2015",
-    "moduleResolution": "node",
-    "target": "es5",
-    "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true
-  },
-  "include": [
-    "./src/**/*"
-  ]
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "strict": false,
+        "noImplicitReturns": true,
+        "module": "es2015",
+        "moduleResolution": "node",
+        "target": "es5",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    },
+    "include": [
+        "./src/**/*"
+    ]
 }
