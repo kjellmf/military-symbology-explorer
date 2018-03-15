@@ -15,7 +15,7 @@ PROJECT_PATH = join(abspath(os.path.dirname(__file__)), "")
 
 JMSML_PROJECT_PATH = join(PROJECT_PATH, r"..\..\joint-military-symbology-xml")
 XML_INSTANCE_PATH = normpath(join(JMSML_PROJECT_PATH, "instance/"))
-BASE_FILE = normpath(join(XML_INSTANCE_PATH, 'jmsml_D_Base.xml'))
+BASE_FILE = normpath(join(XML_INSTANCE_PATH, 'Base.xml'))
 JMSML_CONFIG_FILE = normpath(join(JMSML_PROJECT_PATH, 'source/JointMilitarySymbologyLibraryCS/jmsml.config'))
 
 NAMESPACE = "{http://disa.mil/JointMilSyML.xsd}"

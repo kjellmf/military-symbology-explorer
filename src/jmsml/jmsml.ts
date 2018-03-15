@@ -4,7 +4,7 @@
 
 export const SYMBOL_DATA = <SymbolData>require("./jmsml.json");
 export const BLANK_PATH = "static/img/blank.png";
-export const SVG_PATH = "static/svg/MIL_STD_2525D_Symbols/";
+export const SVG_PATH = "static/svg/";
 export type GeometryType = "NA" | "POINT" | "LINE" | "AREA" | "MIXED";
 
 export type IconType = "NA" | "MAIN" | "MAIN_1" | "MAIN_2" | "FULL_OCTAGON" | "FULL_FRAME" | "SPECIAL";

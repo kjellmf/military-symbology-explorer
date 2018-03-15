@@ -1,4 +1,4 @@
-var symbolData={
+{
   "contexts": [
     {
       "digits": "0", 
@@ -55,6 +55,26 @@ var symbolData={
   ], 
   "symbolSets": [
     {
+      "digits": "00", 
+      "label": "Unknown", 
+      "id": "SS_UNKNOWN", 
+      "dimensionId": "UNKNOWN", 
+      "geometry": "POINT", 
+      "entities": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED", 
+          "icon": "NA", 
+          "geometryType": "NA", 
+          "entityTypes": []
+        }
+      ], 
+      "sectorOneModifiers": [], 
+      "sectorTwoModifiers": [], 
+      "graphicFolder": {}
+    }, 
+    {
       "digits": "01", 
       "label": "Air", 
       "id": "SS_AIR", 
@@ -62,11 +82,19 @@ var symbolData={
       "geometry": "POINT", 
       "entities": [
         {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED", 
+          "icon": "NA", 
+          "geometryType": "NA", 
+          "entityTypes": []
+        }, 
+        {
           "digits": "11", 
           "label": "Military", 
           "id": "MILITARY", 
           "graphic": "01110000.svg", 
-          "remarks": "This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes.", 
+          "remarks": "Reserved for hiearchical purposes.", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -317,7 +345,7 @@ var symbolData={
           "label": "Civilian", 
           "id": "CIVILIAN", 
           "graphic": "01120000.svg", 
-          "remarks": "This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes.", 
+          "remarks": "Reserved for hiearchical purposes.", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -368,7 +396,7 @@ var symbolData={
           "label": "Weapon", 
           "id": "WEAPON", 
           "graphic": "01130000.svg", 
-          "remarks": "This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes.", 
+          "remarks": "Reserved for hiearchical purposes.", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -396,6 +424,11 @@ var symbolData={
         }
       ], 
       "sectorOneModifiers": [
+        {
+          "digits": "00", 
+          "label": "Not Applicable", 
+          "id": "NOT_APPLICABLE_MOD"
+        }, 
         {
           "digits": "01", 
           "label": "Attack/Strike", 
@@ -680,6 +713,11 @@ var symbolData={
       ], 
       "sectorTwoModifiers": [
         {
+          "digits": "00", 
+          "label": "Not Applicable", 
+          "id": "NOT_APPLICABLE_2_MOD"
+        }, 
+        {
           "digits": "01", 
           "label": "Heavy", 
           "id": "HVY_MOD", 
@@ -780,6 +818,14 @@ var symbolData={
       "geometry": "POINT", 
       "entities": [
         {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED", 
+          "icon": "NA", 
+          "geometryType": "NA", 
+          "entityTypes": []
+        }, 
+        {
           "digits": "11", 
           "label": "Missile", 
           "id": "MISSILE", 
@@ -788,6 +834,11 @@ var symbolData={
         }
       ], 
       "sectorOneModifiers": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED_MOD"
+        }, 
         {
           "digits": "01", 
           "label": "Air", 
@@ -846,6 +897,11 @@ var symbolData={
         }
       ], 
       "sectorTwoModifiers": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED_2_MOD"
+        }, 
         {
           "digits": "01", 
           "label": "Air", 
@@ -993,6 +1049,14 @@ var symbolData={
       "dimensionId": "SPACE", 
       "geometry": "POINT", 
       "entities": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED", 
+          "icon": "NA", 
+          "geometryType": "NA", 
+          "entityTypes": []
+        }, 
         {
           "digits": "11", 
           "label": "Military", 
@@ -1239,6 +1303,11 @@ var symbolData={
       ], 
       "sectorOneModifiers": [
         {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED_MOD"
+        }, 
+        {
           "digits": "01", 
           "label": "Low Earth Orbit (LEO)", 
           "id": "LEO_MOD", 
@@ -1282,6 +1351,11 @@ var symbolData={
         }
       ], 
       "sectorTwoModifiers": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED_2_MOD"
+        }, 
         {
           "digits": "01", 
           "label": "Optical", 
@@ -1417,6 +1491,14 @@ var symbolData={
       "geometry": "POINT", 
       "entities": [
         {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED", 
+          "icon": "NA", 
+          "geometryType": "NA", 
+          "entityTypes": []
+        }, 
+        {
           "digits": "11", 
           "label": "Missile", 
           "id": "MISSILE", 
@@ -1425,6 +1507,11 @@ var symbolData={
         }
       ], 
       "sectorOneModifiers": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED_MOD"
+        }, 
         {
           "digits": "01", 
           "label": "Ballistic", 
@@ -1448,6 +1535,11 @@ var symbolData={
         }
       ], 
       "sectorTwoModifiers": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED_2_MOD"
+        }, 
         {
           "digits": "01", 
           "label": "Short Range", 
@@ -1570,11 +1662,18 @@ var symbolData={
       "geometry": "POINT", 
       "entities": [
         {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED", 
+          "icon": "NA", 
+          "geometryType": "NA", 
+          "entityTypes": []
+        }, 
+        {
           "digits": "11", 
           "label": "Command and Control", 
           "id": "COMMAND_AND_CONTROL", 
           "graphic": "10110000.svg", 
-          "remarks": "This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes.", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -1730,7 +1829,7 @@ var symbolData={
           "digits": "12", 
           "label": "Movement and Maneuver", 
           "id": "MOVEMENT_AND_MANEUVER", 
-          "remarks": "No icon is associated with this entity. It is for hiearchical purposes only.", 
+          "remarks": "Reserved for hiearchical purposes.", 
           "icon": "NA", 
           "geometryType": "NA", 
           "entityTypes": [
@@ -2077,7 +2176,7 @@ var symbolData={
           "digits": "13", 
           "label": "Fires", 
           "id": "FIRES", 
-          "remarks": "No icon is associated with this entity. It is for hiearchical purposes only.", 
+          "remarks": "Reserved for hiearchical purposes.", 
           "icon": "NA", 
           "geometryType": "NA", 
           "entityTypes": [
@@ -2218,7 +2317,7 @@ var symbolData={
           "digits": "14", 
           "label": "Protection", 
           "id": "PROTECTION", 
-          "remarks": "No icon is associated with this entity. It is for hierarchical purposes only.", 
+          "remarks": "Reserved for hiearchical purposes.", 
           "icon": "NA", 
           "geometryType": "NA", 
           "entityTypes": [
@@ -2474,7 +2573,7 @@ var symbolData={
           "digits": "15", 
           "label": "Intelligence", 
           "id": "INTELLIGENCE", 
-          "remarks": "No icon is associated with this entity. It is for hierarchical purposes only.", 
+          "remarks": "Reserved for hiearchical purposes.", 
           "icon": "NA", 
           "geometryType": "NA", 
           "entityTypes": [
@@ -3053,7 +3152,7 @@ var symbolData={
           "digits": "17", 
           "label": "Naval", 
           "id": "NAVAL", 
-          "remarks": "No icon is associated with this entity. It is for hierarchical purposes only.", 
+          "remarks": "Reserved for hiearchical purposes.", 
           "icon": "NA", 
           "geometryType": "NA", 
           "entityTypes": [
@@ -3070,7 +3169,7 @@ var symbolData={
           "digits": "18", 
           "label": "Named Headquarters", 
           "id": "NAMED_HEADQUARTERS", 
-          "remarks": "No icon is associated with this entity. It is for hierarchical purposes only.", 
+          "remarks": "Reserved for hiearchical purposes.", 
           "icon": "NA", 
           "geometryType": "NA", 
           "entityTypes": [
@@ -3262,6 +3361,11 @@ var symbolData={
         }
       ], 
       "sectorOneModifiers": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED_MOD"
+        }, 
         {
           "digits": "01", 
           "label": "Air Mobile/Air Assault (US Only)", 
@@ -3811,6 +3915,11 @@ var symbolData={
       ], 
       "sectorTwoModifiers": [
         {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED_2_MOD"
+        }, 
+        {
           "digits": "01", 
           "label": "Airborne", 
           "id": "AIRBORNE_MOD", 
@@ -4224,6 +4333,14 @@ var symbolData={
       "geometry": "POINT", 
       "entities": [
         {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED", 
+          "icon": "NA", 
+          "geometryType": "NA", 
+          "entityTypes": []
+        }, 
+        {
           "digits": "11", 
           "label": "Civilian", 
           "id": "CIVILIAN", 
@@ -4304,6 +4421,11 @@ var symbolData={
         }
       ], 
       "sectorOneModifiers": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED_MOD"
+        }, 
         {
           "digits": "01", 
           "label": "Assassination", 
@@ -4475,6 +4597,11 @@ var symbolData={
       ], 
       "sectorTwoModifiers": [
         {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED_2_MOD"
+        }, 
+        {
           "digits": "01", 
           "label": "Leader or Leadership", 
           "id": "LEADER_2_MOD", 
@@ -4496,11 +4623,18 @@ var symbolData={
       "geometry": "POINT", 
       "entities": [
         {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED", 
+          "icon": "NA", 
+          "geometryType": "NA", 
+          "entityTypes": []
+        }, 
+        {
           "digits": "11", 
           "label": "Weapon/Weapon System", 
           "id": "WEAPON_SYSTEM", 
           "graphic": "15110000.svg", 
-          "remarks": "This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes.", 
           "icon": "FULL_OCTAGON", 
           "entityTypes": [
             {
@@ -4797,14 +4931,14 @@ var symbolData={
                 }, 
                 {
                   "digits": "02", 
-                  "label": "Light, Light Transporter-Launcher and Radar (TLAR)", 
+                  "label": "Light Transporter-Launcher and Radar (TLAR)", 
                   "id": "AIR_DEFENSE_MISSILE_LIGHT_TLAR", 
                   "graphic": "15111102.svg", 
                   "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "03", 
-                  "label": "Light, Light Tactical Landing Approach Radar (TELAR)", 
+                  "label": "Light Tactical Landing Approach Radar (TELAR)", 
                   "id": "AIR_DEFENSE_MISSILE_LIGHT_TELAR", 
                   "graphic": "15111103.svg", 
                   "icon": "FULL_OCTAGON"
@@ -4818,14 +4952,14 @@ var symbolData={
                 }, 
                 {
                   "digits": "05", 
-                  "label": "Medium, TLAR", 
+                  "label": "Medium TLAR", 
                   "id": "AIR_DEFENSE_MISSILE_MEDIUM_TLAR", 
                   "graphic": "15111105.svg", 
                   "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "06", 
-                  "label": "Medium, TELAR Air Defense Missile Launcher", 
+                  "label": "Medium TELAR Air Defense Missile Launcher", 
                   "id": "AIR_DEFENSE_MISSILE_MEDIUM_TELAR", 
                   "graphic": "15111106.svg", 
                   "icon": "FULL_OCTAGON"
@@ -4839,14 +4973,14 @@ var symbolData={
                 }, 
                 {
                   "digits": "08", 
-                  "label": "Heavy, TLAR", 
+                  "label": "Heavy TLAR", 
                   "id": "AIR_DEFENSE_MISSILE_HEAVY_TLAR", 
                   "graphic": "15111108.svg", 
                   "icon": "FULL_OCTAGON"
                 }, 
                 {
                   "digits": "09", 
-                  "label": "Heavy, TELAR", 
+                  "label": "Heavy TELAR", 
                   "id": "AIR_DEFENSE_MISSILE_HEAVY_TELAR", 
                   "graphic": "15111109.svg", 
                   "icon": "FULL_OCTAGON"
@@ -5064,7 +5198,6 @@ var symbolData={
           "label": "Vehicle", 
           "id": "VEHICLE", 
           "graphic": "15120000.svg", 
-          "remarks": "This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes.", 
           "icon": "FULL_OCTAGON", 
           "entityTypes": [
             {
@@ -6205,6 +6338,11 @@ var symbolData={
       ], 
       "sectorOneModifiers": [
         {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED_MOD"
+        }, 
+        {
           "digits": "01", 
           "label": "Biological", 
           "id": "BIOLOGICAL_MOD", 
@@ -6283,11 +6421,18 @@ var symbolData={
       "geometry": "POINT", 
       "entities": [
         {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED", 
+          "icon": "NA", 
+          "geometryType": "NA", 
+          "entityTypes": []
+        }, 
+        {
           "digits": "11", 
           "label": "Installation", 
           "id": "INSTALLATION", 
           "graphic": "20110000.svg", 
-          "remarks": "This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes.", 
           "entityTypes": [
             {
               "digits": "01", 
@@ -6582,7 +6727,7 @@ var symbolData={
           "digits": "12", 
           "label": "Infrastructure", 
           "id": "INFRASTRUCTURE", 
-          "remarks": "No icon is associated with this entity. It is for hierarchal purposes only.", 
+          "remarks": "Reserved for hiearchical purposes.", 
           "icon": "NA", 
           "geometryType": "NA", 
           "entityTypes": [
@@ -7240,6 +7385,11 @@ var symbolData={
       ], 
       "sectorOneModifiers": [
         {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED_MOD"
+        }, 
+        {
           "digits": "01", 
           "label": "Biological", 
           "id": "BIOLOGICAL_1_MOD", 
@@ -7333,6 +7483,11 @@ var symbolData={
       ], 
       "sectorTwoModifiers": [
         {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED_2_MOD"
+        }, 
+        {
           "digits": "01", 
           "label": "Biological", 
           "id": "BIOLOGICAL_2_MOD", 
@@ -7402,6 +7557,14 @@ var symbolData={
       "dimensionId": "CONTROL_MEASURE", 
       "geometry": "MIXED", 
       "entities": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED", 
+          "icon": "NA", 
+          "geometryType": "NA", 
+          "entityTypes": []
+        }, 
         {
           "digits": "11", 
           "label": "Command and Control Lines", 
@@ -7716,8 +7879,8 @@ var symbolData={
             }, 
             {
               "digits": "05", 
-              "label": "Principle Direction of Fire", 
-              "id": "PRINCIPLE_DIRECTION_OF_FIRE", 
+              "label": "Principal Direction of Fire", 
+              "id": "PRINCIPAL_DIRECTION_OF_FIRE", 
               "graphic": "25140500.svg", 
               "geometryType": "LINE", 
               "entitySubTypes": []
@@ -8488,8 +8651,8 @@ var symbolData={
             }, 
             {
               "digits": "03", 
-              "label": "Downed Aircraft Pick-up Point", 
-              "id": "DOWNED_AIRCRAFT_PICK_UP_POINT", 
+              "label": "Downed Aircrew Pick-Up Point", 
+              "id": "DOWNED_AIRCREW_PICK_UP_POINT", 
               "graphic": "25180300.svg", 
               "entitySubTypes": []
             }, 
@@ -8544,8 +8707,8 @@ var symbolData={
             }, 
             {
               "digits": "11", 
-              "label": "Replemenshment Station", 
-              "id": "REPLEMENSHMENT_STATION", 
+              "label": "Replenishment Station", 
+              "id": "REPLENISHMENT_STATION", 
               "graphic": "25181100.svg", 
               "entitySubTypes": []
             }, 
@@ -8733,7 +8896,6 @@ var symbolData={
               "label": "Ship Area of Interest", 
               "id": "SHIP_AREA_OF_INTEREST", 
               "graphic": "25200400.svg", 
-              "geometryType": "AREA", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -8756,7 +8918,6 @@ var symbolData={
               "label": "Active Maneuver Area", 
               "id": "ACTIVE_MANEUVER_AREA", 
               "graphic": "25200500.svg", 
-              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -8764,7 +8925,6 @@ var symbolData={
               "label": "Cued Acquisition Doctrine", 
               "id": "CUED_ACQUISITION_DOCTRINE", 
               "graphic": "25200600.svg", 
-              "geometryType": "AREA", 
               "entitySubTypes": []
             }, 
             {
@@ -8772,7 +8932,6 @@ var symbolData={
               "label": "Radar Search Doctrine", 
               "id": "RADAR_SEARCH_DOCTRINE", 
               "graphic": "25200700.svg", 
-              "geometryType": "AREA", 
               "entitySubTypes": []
             }
           ]
@@ -8821,7 +8980,7 @@ var symbolData={
             }, 
             {
               "digits": "06", 
-              "label": "Air  Detonation", 
+              "label": "Air Detonation", 
               "id": "AIR_DETONATION", 
               "graphic": "25210600.svg", 
               "entitySubTypes": []
@@ -9988,7 +10147,7 @@ var symbolData={
             }, 
             {
               "digits": "12", 
-              "label": "Call for Fire Area", 
+              "label": "Call for Fire Zone (CFFZ)", 
               "id": "CALL_FOR_FIRE_AREA", 
               "icon": "NA", 
               "geometryType": "NA", 
@@ -10549,8 +10708,7 @@ var symbolData={
                   "digits": "05", 
                   "label": "Dummy", 
                   "id": "MINEFIELD_DUMMY", 
-                  "graphic": "25270705.svg", 
-                  "geometryType": "AREA"
+                  "graphic": "25270705.svg"
                 }, 
                 {
                   "digits": "06", 
@@ -11849,6 +12007,14 @@ var symbolData={
       "geometry": "POINT", 
       "entities": [
         {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED", 
+          "icon": "NA", 
+          "geometryType": "NA", 
+          "entityTypes": []
+        }, 
+        {
           "digits": "11", 
           "label": "Military", 
           "id": "MILITARY", 
@@ -12459,6 +12625,7 @@ var symbolData={
           "label": "Own Ship", 
           "id": "OWN_SHIP", 
           "graphic": "30150000.svg", 
+          "remarks": "The diameter of the icon shall be 1L. This icon shall be used with a friend standard identity only.", 
           "icon": "FULL_OCTAGON", 
           "entityTypes": []
         }, 
@@ -12467,6 +12634,7 @@ var symbolData={
           "label": "Fused Track", 
           "id": "FUSED_TRACK", 
           "graphic": "30160000.svg", 
+          "remarks": "All fused tracks shall have a pending standard identity frame.", 
           "icon": "FULL_OCTAGON", 
           "entityTypes": []
         }, 
@@ -12480,6 +12648,11 @@ var symbolData={
         }
       ], 
       "sectorOneModifiers": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED_MOD"
+        }, 
         {
           "digits": "01", 
           "label": "Own Ship", 
@@ -12644,6 +12817,11 @@ var symbolData={
       ], 
       "sectorTwoModifiers": [
         {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED_2_MOD"
+        }, 
+        {
           "digits": "01", 
           "label": "Nuclear Powered", 
           "id": "NUCLEAR_MOD", 
@@ -12771,6 +12949,14 @@ var symbolData={
       "dimensionId": "SEA_SUBSURFACE", 
       "geometry": "POINT", 
       "entities": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED", 
+          "icon": "NA", 
+          "geometryType": "NA", 
+          "entityTypes": []
+        }, 
         {
           "digits": "11", 
           "label": "Military", 
@@ -12922,6 +13108,11 @@ var symbolData={
         }
       ], 
       "sectorOneModifiers": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED_MOD"
+        }, 
         {
           "digits": "01", 
           "label": "Antisubmarine Warfare", 
@@ -13107,6 +13298,11 @@ var symbolData={
       ], 
       "sectorTwoModifiers": [
         {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED_2_MOD"
+        }, 
+        {
           "digits": "01", 
           "label": "Air Independent Propulsion", 
           "id": "AIR_INDEPENDENT_PROPULSION_MOD", 
@@ -13280,6 +13476,14 @@ var symbolData={
       "dimensionId": "SEA_SUBSURFACE", 
       "geometry": "POINT", 
       "entities": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED", 
+          "icon": "NA", 
+          "geometryType": "NA", 
+          "entityTypes": []
+        }, 
         {
           "digits": "11", 
           "label": "Sea Mine-General", 
@@ -13872,10 +14076,18 @@ var symbolData={
       "geometry": "POINT", 
       "entities": [
         {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED", 
+          "icon": "NA", 
+          "geometryType": "NA", 
+          "entityTypes": []
+        }, 
+        {
           "digits": "11", 
           "label": "Incident", 
           "id": "INCIDENT", 
-          "remarks": "No icon is associated with this entity. It is for hierarchal purposes only.", 
+          "remarks": "Reserved for hiearchical purposes.", 
           "icon": "NA", 
           "geometryType": "NA", 
           "entityTypes": [
@@ -14207,7 +14419,7 @@ var symbolData={
           "digits": "13", 
           "label": "Operation", 
           "id": "OPERATION", 
-          "remarks": "No icon is associated with this entity. It is for hierarchal purposes only.", 
+          "remarks": "Reserved for hiearchical purposes.", 
           "icon": "NA", 
           "geometryType": "NA", 
           "entityTypes": [
@@ -14250,7 +14462,7 @@ var symbolData={
               "digits": "04", 
               "label": "Recruitment", 
               "id": "RECRUITMENT", 
-              "remarks": "No icon is associated with this entity. It is for hierarchal purposes only.", 
+              "remarks": "Reserved for hiearchical purposes.", 
               "icon": "NA", 
               "geometryType": "NA", 
               "entitySubTypes": [
@@ -14653,7 +14865,7 @@ var symbolData={
           "digits": "15", 
           "label": "Hazard Materials", 
           "id": "HAZARD_MATERIALS", 
-          "remarks": "No icon is associated with this entity. It is for hierarchal purposes only.", 
+          "remarks": "Reserved for hiearchical purposes.", 
           "icon": "NA", 
           "geometryType": "NA", 
           "entityTypes": [
@@ -14778,7 +14990,6 @@ var symbolData={
           "label": "Transportation Incident", 
           "id": "TRANSPORTATION_INCIDENT", 
           "graphic": "40160000.svg", 
-          "remarks": "This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes.", 
           "icon": "FULL_OCTAGON", 
           "entityTypes": [
             {
@@ -14824,14 +15035,12 @@ var symbolData={
           "label": "Natural Event", 
           "id": "NATURAL_EVENT", 
           "graphic": "40170000.svg", 
-          "remarks": "This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes.", 
           "entityTypes": [
             {
               "digits": "01", 
               "label": "Geologic", 
               "id": "GEOLOGIC", 
               "graphic": "40170100.svg", 
-              "remarks": "This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes.", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -14896,7 +15105,6 @@ var symbolData={
               "label": "Hydro-Meteorological", 
               "id": "HYDRO_METEOROLOGICAL", 
               "graphic": "40170200.svg", 
-              "remarks": "This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes.", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -14926,7 +15134,6 @@ var symbolData={
               "label": "Infestation", 
               "id": "INFESTATION", 
               "graphic": "40170300.svg", 
-              "remarks": "This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes.", 
               "entitySubTypes": [
                 {
                   "digits": "01", 
@@ -14971,7 +15178,7 @@ var symbolData={
           "digits": "18", 
           "label": "Individual", 
           "id": "INDIVIDUAL", 
-          "remarks": "No icon is associated with this entity. It is for hierarchal purposes only.", 
+          "remarks": "Reserved for hiearchical purposes.", 
           "icon": "NA", 
           "geometryType": "NA", 
           "entityTypes": [
@@ -14995,6 +15202,11 @@ var symbolData={
         }
       ], 
       "sectorOneModifiers": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED_MOD"
+        }, 
         {
           "digits": "01", 
           "label": "Assassination", 
@@ -15135,6 +15347,14 @@ var symbolData={
       "dimensionId": "METOC", 
       "geometry": "MIXED", 
       "entities": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED", 
+          "icon": "NA", 
+          "geometryType": "NA", 
+          "entityTypes": []
+        }, 
         {
           "digits": "11", 
           "label": "Pressure Systems", 
@@ -16565,6 +16785,14 @@ var symbolData={
       "dimensionId": "METOC", 
       "geometry": "MIXED", 
       "entities": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED", 
+          "icon": "NA", 
+          "geometryType": "NA", 
+          "entityTypes": []
+        }, 
         {
           "digits": "11", 
           "label": "Ice Systems", 
@@ -18010,10 +18238,18 @@ var symbolData={
       "geometry": "MIXED", 
       "entities": [
         {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED", 
+          "icon": "NA", 
+          "geometryType": "NA", 
+          "entityTypes": []
+        }, 
+        {
           "digits": "11", 
           "label": "Space", 
           "id": "SPACE", 
-          "remarks": "No icon is associated with this entity. It is for hierarchal purposes only.", 
+          "remarks": "Reserved for hiearchical purposes.", 
           "icon": "NA", 
           "geometryType": "NA", 
           "entityTypes": []
@@ -18032,6 +18268,14 @@ var symbolData={
       "dimensionId": "SPACE", 
       "geometry": "POINT", 
       "entities": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED", 
+          "icon": "NA", 
+          "geometryType": "NA", 
+          "entityTypes": []
+        }, 
         {
           "digits": "11", 
           "label": "Signal Intercept", 
@@ -18065,6 +18309,11 @@ var symbolData={
         }
       ], 
       "sectorOneModifiers": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED_MOD"
+        }, 
         {
           "digits": "14", 
           "label": "Data Transmission", 
@@ -18298,6 +18547,14 @@ var symbolData={
       "geometry": "POINT", 
       "entities": [
         {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED", 
+          "icon": "NA", 
+          "geometryType": "NA", 
+          "entityTypes": []
+        }, 
+        {
           "digits": "11", 
           "label": "Signal Intercept", 
           "id": "SIGNAL_INTERCEPT", 
@@ -18330,6 +18587,11 @@ var symbolData={
         }
       ], 
       "sectorOneModifiers": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED_MOD"
+        }, 
         {
           "digits": "02", 
           "label": "Airborne Search and Bombing", 
@@ -18723,6 +18985,14 @@ var symbolData={
       "geometry": "POINT", 
       "entities": [
         {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED", 
+          "icon": "NA", 
+          "geometryType": "NA", 
+          "entityTypes": []
+        }, 
+        {
           "digits": "11", 
           "label": "Signal Intercept", 
           "id": "SIGNAL_INTERCEPT", 
@@ -18755,6 +19025,11 @@ var symbolData={
         }
       ], 
       "sectorOneModifiers": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED_MOD"
+        }, 
         {
           "digits": "01", 
           "label": "Anti-Aircraft Fire Control", 
@@ -19135,6 +19410,14 @@ var symbolData={
       "geometry": "POINT", 
       "entities": [
         {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED", 
+          "icon": "NA", 
+          "geometryType": "NA", 
+          "entityTypes": []
+        }, 
+        {
           "digits": "11", 
           "label": "Signal Intercept", 
           "id": "SIGNAL_INTERCEPT", 
@@ -19167,6 +19450,11 @@ var symbolData={
         }
       ], 
       "sectorOneModifiers": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED_MOD"
+        }, 
         {
           "digits": "01", 
           "label": "Anti-Aircraft Fire Control", 
@@ -19519,6 +19807,14 @@ var symbolData={
       "geometry": "POINT", 
       "entities": [
         {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED", 
+          "icon": "NA", 
+          "geometryType": "NA", 
+          "entityTypes": []
+        }, 
+        {
           "digits": "11", 
           "label": "Signal Intercept", 
           "id": "SIGNAL_INTERCEPT", 
@@ -19551,6 +19847,11 @@ var symbolData={
         }
       ], 
       "sectorOneModifiers": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED_MOD"
+        }, 
         {
           "digits": "07", 
           "label": "Beacon Transponder (not IFF)", 
@@ -19825,6 +20126,14 @@ var symbolData={
       "dimensionId": "AIR SPACE LAND_EQUIPMENT SEA_SURFACE SEA_SUBSURFACE", 
       "geometry": "POINT", 
       "entities": [
+        {
+          "digits": "00", 
+          "label": "Unspecified", 
+          "id": "UNSPECIFIED", 
+          "icon": "NA", 
+          "geometryType": "NA", 
+          "entityTypes": []
+        }, 
         {
           "digits": "11", 
           "label": "Botnet", 
@@ -20204,8 +20513,7 @@ var symbolData={
     {
       "digits": "1", 
       "id": "PLANNED", 
-      "label": "Planned/Anticipated/Suspect", 
-      "labelAlias": "Planned"
+      "label": "Planned/Anticipated/Suspect"
     }, 
     {
       "digits": "2", 
@@ -20710,7 +21018,7 @@ var symbolData={
     {
       "digits": "0", 
       "id": "NA", 
-      "label": "Not Applicable"
+      "label": "Unknown"
     }, 
     {
       "digits": "1", 
@@ -21407,15 +21715,15 @@ var symbolData={
       }
     }
   ], 
-  "amplifier": [
+  "amplifiers": [
     {
       "digits": "0", 
-      "label": "Not Applicable", 
+      "label": "Unknown", 
       "id": "NA", 
       "descriptors": [
         {
           "digits": "0", 
-          "label": "Not Applicable", 
+          "label": "Unknown", 
           "id": "NA"
         }
       ]
@@ -23021,4 +23329,4 @@ var symbolData={
     "SI_SUSPECT_JOKER": "SIG_HOSTILE", 
     "SI_FRIEND": "SIG_FRIEND"
   }
-};
+}
