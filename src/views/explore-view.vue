@@ -2,29 +2,6 @@
     <div class="container-fluid">
         <div class="col-sm-2 col-md-2 sidebar">
             <p></p>
-            <div class="panel panel-default">
-                <div class="panel-heading">Settings</div>
-                <div class="panel-body">
-                    <div class="checkbox" title="Use colored bars for visualizing status">
-                        <label>
-                            <input type="checkbox" ng-model="alternateAmplifiers" v-model="alternateAmplifiers">Use alternate status amplifiers
-                        </label>
-                    </div>
-                    <div class="checkbox" title="Use civilian frames if available">
-                        <label>
-                            <input type="checkbox" v-model="useCivilianFrames">Use civilian frames</label>
-                    </div>
-                    <div class="checkbox" title="Limit some modifiers to specific symbols">
-                        <label>
-                            <input type="checkbox" v-model="limitUseTo">Limit modifiers</label>
-                    </div>
-                    <div class="checkbox" title="Show internal meta data">
-                        <label>
-                            <input type="checkbox" v-model="debug">Show debug info</label>
-                    </div>
-                </div>
-            </div>
-
         </div>
         <div class="row">
             <div class="col-sm-10 col-sm-offset-2">
@@ -430,24 +407,12 @@
             return this.$store.state.debug;
         }
 
-        set debug(value) {
-            this.$store.commit(mut.SET_DEBUG_MODE, value);
-        }
-
         get useCivilianFrames() {
             return this.$store.state.useCivilianFrames;
         }
 
-        set useCivilianFrames(value) {
-            this.$store.commit(mut.SET_CIVILIAN_FRAMES_MODE, value);
-        }
-
         get alternateAmplifiers() {
             return this.$store.state.alternateAmplifiers;
-        }
-
-        set alternateAmplifiers(value) {
-            this.$store.commit(mut.SET_ALTERNATE_AMPLIFIERS_MODE, value);
         }
 
         get symbolSet(): SymbolSet {
