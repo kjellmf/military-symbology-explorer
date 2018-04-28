@@ -25,21 +25,21 @@
         <code-select :values="entityTypes" v-model="entityType" label="Entity type"/>
         <code-select :values="entitySubTypes" v-model="entitySubType" label="Entity subtype"/>
 
-        <div class="form-group">
-          <label class="col-sm-4 control-label">Sector one modifier</label>
-          <div class="col-sm-8">
-            <code-select-group :groups="mod1Groups"
-                               v-model="sectorOneModifier"></code-select-group>
-          </div>
-        </div>
 
-        <div class="form-group">
-          <label class="col-sm-4 control-label">Sector two modifier</label>
-          <div class="col-sm-8">
-            <code-select-group :groups="mod2Groups"
-                               v-model="sectorTwoModifier"></code-select-group>
-          </div>
-        </div>
+        <label class="col-sm-4 control-label"></label>
+
+        <code-select-group
+          :groups="mod1Groups"
+          v-model="sectorOneModifier"
+          label="Sector one modifier"
+        />
+
+
+        <code-select-group
+          :groups="mod2Groups"
+          v-model="sectorTwoModifier"
+          label="Sector two modifier"
+        />
 
 
       </v-flex>
