@@ -1,10 +1,12 @@
 <template>
     <div v-if="values.length">
-        <select class="form-control" v-model="myValue">
-            <option v-for="val in values" :value="val" :key="val.id">
-                {{val.digits}} {{val.label}}
-            </option>
-        </select>
+      <v-select
+          :items="values"
+          :label="label"
+          item-text="label"
+          as-object
+          v-model="myValue"
+        />
     </div>
     <div v-else>
         <select class="form-control" disabled>
@@ -21,10 +23,12 @@ import Vue from "vue";
 @Component({})
 export default class CodeSelect extends Vue {
     myValue = null;
-    @Prop()
+    @Prop(Array)
     values;
     @Prop()
     value;
+    @Prop(String)
+    label;
 
     created() {
         this.myValue = this.value;
