@@ -7,6 +7,8 @@ project.
 
 See the explorer in action at [http://explorer.milsymb.net/](http://explorer.milsymb.net/).
 
+## For a similar experiment, check out https://github.com/kjellmf/sidc-picker and the live demo at https://kjellmf.github.io/sidc-picker/#/
+
 ### Warning. This project is currently going through a rewrite from ES5/Angular 1 to Typescript/Vue.
 
 How it works
