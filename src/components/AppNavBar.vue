@@ -1,7 +1,7 @@
 <template>
-  <header class="h-16 ">
+  <header class="h-16">
     <nav class="bg-gray-800 antialiased fixed top-0 inset-x-0 z-50">
-      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 ">
+      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <!-- Mobile menu button-->
@@ -127,7 +127,7 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "AppNavBar",
   props: {
-    msg: String
+    msg: String,
   },
   data() {
     return {
@@ -135,9 +135,9 @@ export default defineComponent({
         ["Explore", "/explore"],
         ["Symbol set browser", "/explore"],
         ["Frames", "/explore"],
-        ["About", "/explore"]
-      ]
+        ["About", "/explore"],
+      ],
     };
-  }
+  },
 });
 </script>

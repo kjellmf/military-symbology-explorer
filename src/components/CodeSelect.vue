@@ -35,9 +35,9 @@ export default {
       },
       set(value) {
         this.$emit("update:modelValue", value);
-      }
-    }
-  }
+      },
+    },
+  },
 };
 </script>
 

@@ -1,19 +1,29 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: ["./src/**/*.html", "./src/**/*.vue", "./src/**/*.jsx"],
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true
+  purge: {
+    enabled: process.env.NODE_ENV === "production",
+    // classes that are generated dynamically, e.g. `rounded-${size}` and must
+    // be kept
+    safeList: [],
+    content: [
+      "./index.html",
+      "./src/**/*.vue",
+      "./src/**/*.js",
+      // etc.
+    ],
   },
   theme: {
     extend: {
+      fontWeight: ["hover", "focus"],
       fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans]
-      }
-    }
+        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+      },
+    },
   },
-  variants: {},
-  plugins: [require("@tailwindcss/ui"), require("@tailwindcss/typography")]
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/aspect-ratio"),
+  ],
 };

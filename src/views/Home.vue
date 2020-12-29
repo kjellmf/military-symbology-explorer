@@ -32,6 +32,6 @@ export default defineComponent({
   name: "Home",
   components: {},
   data() {},
-  mounted() {}
+  mounted() {},
 });
 </script>
