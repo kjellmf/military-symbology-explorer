@@ -1,7 +1,8 @@
 <template>
-  <AppNavBar />
-  <router-view />
-</template>
+  <div class="">
+    <AppNavBar />
+    <router-view /></div
+></template>
 
 <script>
 import AppNavBar from "@/components/AppNavBar.vue";

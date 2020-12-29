@@ -78,23 +78,6 @@
 
     <p>Some tools and frameworks I have used for this project:</p>
 
-    <ul>
-      <li>
-        <a href="https://www.python.org/">Python (2.7)</a> for extracting
-        information from the
-        <a
-          href="https://github.com/Esri/joint-military-symbology-xml/tree/master/instance"
-          >JMSML instance files</a
-        >
-        and converting it to javascript
-      </li>
-
-      <li>
-        <a href="http://getbootstrap.com/">Bootstrap</a>
-        for styling (I'm sorry for using the default styles )
-      </li>
-    </ul>
-
     <h2>Related projects</h2>
 
     <p>
