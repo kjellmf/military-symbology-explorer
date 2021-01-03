@@ -1,6 +1,6 @@
 <template>
   <article
-    class="max-w-3xl lg:max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 prose prose-sm sm:prose lg:prose-lg xl:prose-2xl"
+    class="max-w-3xl lg:max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 prose prose-sm sm:prose lg:prose-lg"
   >
     <h1>About</h1>
 
@@ -76,8 +76,6 @@
       </li>
     </ul>
 
-    <p>Some tools and frameworks I have used for this project:</p>
-
     <h2>Related projects</h2>
 
     <p>
@@ -86,18 +84,24 @@
     </p>
     <ul>
       <li>
+        <a href="https://github.com/spatialillusions/MilSymbol">MilSymbol</a>
+        Military Unit Symbols in JavaScript (SVG based, APP6, 2525).
+      </li>
+      <li>
         <a href="https://github.com/missioncommand/mil-sym-js">mil-sym-js</a>
         MIL-STD-2525 symbol rendering JavaScript library for modern web
         applications (font based, 2525B, 2525C)
       </li>
       <li>
-        <a href="https://github.com/missioncommand/mil-sym-java">mil-sym-js</a>
+        <a href="https://github.com/missioncommand/mil-sym-java"
+          >mil-sym-java</a
+        >
         MIL-STD-2525 B and C rendering library and web service
       </li>
-      <li>
-        <a href="https://github.com/spatialillusions/MilSymbol">MilSymbol</a>
-        Military Unit Symbols in JavaScript (SVG based, APP6B, 2525C)
-      </li>
+    </ul>
+
+    <p>Old ones:</p>
+    <ul>
       <li>
         <a href="https://github.com/StackFrame/Ortelium">Ortelium</a> A tool for
         generating military map symbols (Java, 2525B)
@@ -110,3 +114,7 @@
     </ul>
   </article>
 </template>
+
+<script>
+export default {};
+</script>

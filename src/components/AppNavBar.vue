@@ -1,27 +1,31 @@
 <template>
-  <header class="h-16">
-    <nav class="bg-gray-800 antialiased fixed top-0 inset-x-0 z-50">
+  <header class="">
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <nav class="bg-gray-800">
       <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <!-- Mobile menu button-->
             <button
-              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
-              aria-label="Main menu"
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               aria-expanded="false"
+              @click="showMenu = !showMenu"
             >
+              <span class="sr-only">Open main menu</span>
               <!-- Icon when menu is closed. -->
               <!--
-              Heroicon name: menu
+            Heroicon name: menu
 
-              Menu open: "hidden", Menu closed: "block"
-            -->
+            Menu open: "hidden", Menu closed: "block"
+          -->
               <svg
                 class="block h-6 w-6"
+                :class="showMenu ? 'hidden' : 'block'"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
+                aria-hidden="true"
               >
                 <path
                   stroke-linecap="round"
@@ -32,16 +36,18 @@
               </svg>
               <!-- Icon when menu is open. -->
               <!--
-              Heroicon name: x
+            Heroicon name: x
 
-              Menu open: "block", Menu closed: "hidden"
-            -->
+            Menu open: "block", Menu closed: "hidden"
+          -->
               <svg
-                class="hidden h-6 w-6"
+                class="h-6 w-6"
+                :class="showMenu ? 'block' : 'hidden'"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
+                aria-hidden="true"
               >
                 <path
                   stroke-linecap="round"
@@ -52,36 +58,34 @@
               </svg>
             </button>
           </div>
-          <div class="flex-1 flex items-center justify-center sm:justify-start">
-            <div class="flex-shrink-0 text-white text-lg leading-6 font-medium">
-              <router-link to="/">Symbology explorer</router-link>
+          <div
+            class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
+          >
+            <div class="flex-shrink-0 flex items-center">
+              <div class="text-white font-bold">Symbology explorer</div>
             </div>
             <div class="hidden sm:block sm:ml-6">
-              <div class="flex">
+              <div class="flex space-x-4">
                 <router-link
-                  to="/explore"
-                  active-class="bg-gray-900 text-white"
-                  class="px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-                  >Explore
+                  v-for="(link, i) in links"
+                  :key="i"
+                  :to="link.to"
+                  custom
+                  v-slot="{ navigate, href, isActive, isExactActive }"
+                >
+                  <a
+                    :href="href"
+                    @click="navigate"
+                    class="px-3 py-2 rounded-md text-sm font-medium"
+                    :class="[
+                      isActive || isExactActive
+                        ? 'bg-gray-900 text-white'
+                        : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    ]"
+                    >{{ link.text }}</a
+                  >
                 </router-link>
-                <router-link
-                  to="/symbolset"
-                  active-class="bg-gray-900 text-white"
-                  class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-                  >Symbol set browser
-                </router-link>
-                <router-link
-                  to="/frames"
-                  active-class="bg-gray-900 text-white"
-                  class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-                  >Frames
-                </router-link>
-                <router-link
-                  to="/about"
-                  class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-                  active-class="bg-gray-900 text-white"
-                  >About
-                </router-link>
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               </div>
             </div>
           </div>
@@ -89,32 +93,32 @@
       </div>
 
       <!--
-      Mobile menu, toggle classes based on menu state.
+    Mobile menu, toggle classes based on menu state.
 
-      Menu open: "block", Menu closed: "hidden"
-    -->
-      <div class="hidden sm:hidden">
-        <div class="px-2 pt-2 pb-3">
-          <a
-            href="#"
-            class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-            >Dashboard</a
+    Menu open: "block", Menu closed: "hidden"
+  -->
+      <div class="md:hidden" :class="showMenu ? 'block' : 'hidden'">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <router-link
+            v-for="(link, i) in links"
+            :key="i"
+            :to="link.to"
+            custom
+            v-slot="{ navigate, href, isExactActive }"
           >
-          <a
-            href="#"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-            >Team</a
-          >
-          <a
-            href="#"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-            >Projects</a
-          >
-          <a
-            href="#"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-            >Calendar</a
-          >
+            <a
+              :href="href"
+              @click.prevent="navigate().then(() => (showMenu = false))"
+              class="block px-3 py-2 rounded-md text-base font-medium"
+              :class="[
+                isExactActive
+                  ? 'bg-gray-900 text-white'
+                  : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+              ]"
+              >{{ link.text }}</a
+            >
+          </router-link>
         </div>
       </div>
     </nav>
@@ -131,11 +135,11 @@ export default defineComponent({
   },
   data() {
     return {
-      items: [
-        ["Explore", "/explore"],
-        ["Symbol set browser", "/explore"],
-        ["Frames", "/explore"],
-        ["About", "/explore"],
+      showMenu: false,
+      links: [
+        { text: "Explore", to: "/explore" },
+        // { text: "Symbol set browser", to: "/browse" },
+        { text: "About", to: "/about" },
       ],
     };
   },
