@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 block">
-    <header class="mt-6">
+    <header class="hidden sm:block mt-6">
       <h2
         class="text-xl font-bold leading-7 text-gray-900 sm:text-3xl sm:leading-9 sm:truncate"
       >
@@ -11,7 +11,11 @@
       <section class="sm:hidden">
         <div class="w-40 h-40 bg-red-800"></div>
       </section>
-      <section id="symbol-form" class="col-span-1">
+      <SidcTable class="sm:hidden" />
+      <section
+        id="symbol-form"
+        class="sm:flex-none mt-6 sm:mt-5 space-y-6 sm:space-y-5 sm:pr-4"
+      >
         <CodeSelect label="Context" :values="SYMBOL_DATA.contexts" />
         <CodeSelect
           label="Standard identity"
@@ -33,26 +37,25 @@
         <CodeSelect label="Sector two modifier" :values="entities" />
       </section>
 
-      <section
-        id="view-symbol "
-        class="row-span-2 sticky top-0 sm:static bg-white"
-      >
-        <div class="w-40 h-40 bg-gray-800 sm:sticky sm:top-0"></div>
-        <div class="hidden sm:block w-40 h-40 bg-red-800"></div>
+      <section id="view-symbol " class="sticky top-0 sm:static bg-white">
+        <div class="w-60 h-60">
+          <MilSymbol />
+        </div>
+        <SidcTable class="hidden sm:block" />
       </section>
-
-      <section id="sidc-table"></section>
     </div>
   </div>
 </template>
 
 <script>
 import { SYMBOL_DATA } from "@/jmsml/types";
-import CodeSelect from "@/components/CodeSelect";
+import CodeSelect from "@/components/CodeSelect.vue";
+import MilSymbol from "@/components/MilSymbol.vue";
+import SidcTable from "@/views/SidcTable";
 
 export default {
   name: "ExploreView",
-  components: { CodeSelect },
+  components: { SidcTable, MilSymbol, CodeSelect },
   data() {
     return {
       SYMBOL_DATA,
@@ -70,3 +73,4 @@ export default {
   },
 };
 </script>
+<style></style>

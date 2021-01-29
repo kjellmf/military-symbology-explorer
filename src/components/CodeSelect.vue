@@ -1,33 +1,33 @@
 <template>
   <div
-    class="mt-6 sm:mt-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5"
+    class="md:grid md:grid-cols-3 md:gap-4 md:items-start md:border-t md:border-gray-200 md:pt-5"
   >
     <label
-      for="country"
-      class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2"
+      :for="_id"
+      class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
     >
       {{ label }}
     </label>
     <div class="mt-1 sm:mt-0 sm:col-span-2">
-      <div class="max-w-lg rounded-md shadow-sm sm:max-w-xs">
-        <select
-          id="country"
-          class="block form-select w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"
-          v-model="value"
-        >
-          <option v-for="val in values" :value="val.digits" :key="val.id">
-            {{ val.digits }} {{ val.label }}
-          </option>
-        </select>
-      </div>
+      <select
+        :id="_id"
+        class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+        v-model="value"
+      >
+        <option v-for="val in values" :value="val.digits" :key="val.id">
+          {{ val.digits }} {{ val.label }}
+        </option>
+      </select>
     </div>
   </div>
 </template>
 
 <script>
+import { nanoid } from "nanoid";
+
 export default {
   name: "CodeSelect",
-  props: { label: String, values: Array, modelValue: String },
+  props: { label: String, values: Array, modelValue: String, id: String },
   computed: {
     value: {
       get() {
@@ -36,6 +36,9 @@ export default {
       set(value) {
         this.$emit("update:modelValue", value);
       },
+    },
+    _id() {
+      return this.id || nanoid();
     },
   },
 };

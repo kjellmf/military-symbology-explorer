@@ -14,8 +14,9 @@ export type IconType =
   | "FULL_FRAME"
   | "SPECIAL";
 
-interface IdentifierAttributeGroup {
+export interface IdentifierAttributeGroup {
   id: string;
+  digits: string;
   label?: string;
   labelAlias?: string;
   description?: string;
@@ -73,7 +74,7 @@ export interface Modifier extends IdentifierAttributeGroup {
 
 export interface Amplifier extends IdentifierAttributeGroup {
   digits: string;
-  descriptors: {}[];
+  descriptors: any[];
 }
 
 export interface StandardIdentity extends IdentifierAttributeGroup {
@@ -117,7 +118,8 @@ export interface FramesData {
   contexts?: Context[];
 }
 
-interface SicElements {
+export interface SicElements {
+  version: string;
   context: string;
   standardIdentity: string;
   symbolSet: string;
