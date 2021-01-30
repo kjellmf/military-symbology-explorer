@@ -1,6 +1,6 @@
 <template>
   <div
-    class="md:grid md:grid-cols-3 md:gap-4 md:items-start md:border-t md:border-gray-200 md:pt-5"
+    class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5"
   >
     <label
       :for="_id"
@@ -8,16 +8,17 @@
     >
       {{ label }}
     </label>
-    <div class="mt-1 sm:mt-0 sm:col-span-2">
+    <div class="mt-1 sm:mt-0 sm:col-span-2 flex">
       <select
         :id="_id"
-        class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+        class="mt-1 flex-auto min-w-0 pl-3 pr-5 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md truncate"
         v-model="value"
       >
         <option v-for="val in values" :value="val.digits" :key="val.id">
           {{ val.digits }} {{ val.label }}
         </option>
       </select>
+      <slot />
     </div>
   </div>
 </template>

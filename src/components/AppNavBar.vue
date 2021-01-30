@@ -62,7 +62,12 @@
             class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
           >
             <div class="flex-shrink-0 flex items-center">
-              <div class="text-white font-bold">Symbology explorer</div>
+              <div class="hidden sm:block text-white font-bold">
+                Symbology explorer
+              </div>
+              <div v-if="navbarTitle" class="sm:hidden text-white font-bold">
+                {{ $route.meta.navbarTitle }}
+              </div>
             </div>
             <div class="hidden sm:block sm:ml-6">
               <div class="flex space-x-4">
@@ -127,6 +132,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import { ABOUT_ROUTE, EXPLORE_ROUTE, SYMBOL_SET_ROUTE } from "@/router";
 
 export default defineComponent({
   name: "AppNavBar",
@@ -137,11 +143,16 @@ export default defineComponent({
     return {
       showMenu: false,
       links: [
-        { text: "Explore", to: "/explore" },
-        // { text: "Symbol set browser", to: "/browse" },
-        { text: "About", to: "/about" },
+        { text: "Explore symbol codes", to: { name: EXPLORE_ROUTE } },
+        { text: "Browse symbol sets", to: { name: SYMBOL_SET_ROUTE } },
+        { text: "About", to: { name: ABOUT_ROUTE } },
       ],
     };
+  },
+  computed: {
+    navbarTitle(): string {
+      return this.$route.meta.navbarTitle || "";
+    },
   },
 });
 </script>

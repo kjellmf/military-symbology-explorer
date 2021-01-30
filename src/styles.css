@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+  }
+
+  .btn--sm {
+    @apply px-2.5 py-1.5 text-xs;
+  }
+
+  .btn--md {
+    @apply px-4 py-2 text-sm;
+  }
+
+  .btn--lg {
+    @apply px-4 py-2 text-base;
+  }
+
+  .btn--xl {
+    @apply px-6 py-3 text-base;
+  }
+
+  .btn--rounded {
+    @apply rounded-full;
+  }
+}

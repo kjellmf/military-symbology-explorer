@@ -46,6 +46,6 @@ export default {
 </script>
 <style>
 #sidc-table p {
-  @apply border border-gray-100 py-2 sm:p-2 overflow-ellipsis overflow-hidden;
+  @apply border border-gray-100 py-2 px-0.5 sm:p-2 overflow-ellipsis overflow-hidden;
 }
 </style>
