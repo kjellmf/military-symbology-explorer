@@ -23,7 +23,7 @@ const routes: Array<RouteRecordRaw> = [
     meta: { navbarTitle: "SIC explorer" },
   },
   {
-    path: "/symbolset/:symbolsetCode?",
+    path: "/symbolset/:symbolSetCode?",
     name: SYMBOL_SET_ROUTE,
     component: SymbolsetView,
     props: true,

@@ -81,7 +81,7 @@ export default {
     symbolsetRoute() {
       return {
         name: SYMBOL_SET_ROUTE,
-        params: { symbolsetCode: this.symbolSet },
+        params: { symbolSetCode: this.symbolSet },
       };
     },
   },

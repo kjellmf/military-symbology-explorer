@@ -2,6 +2,7 @@
  * Typescript wrapper of the Joint Military Symbolic Markup Language (JMSML)
  */
 
+export const SVG_PATH = "/svg/";
 export const SYMBOL_DATA = <SymbolData>require("./jmsml.json");
 export type GeometryType = "NA" | "POINT" | "LINE" | "AREA" | "MIXED";
 
