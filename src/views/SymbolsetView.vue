@@ -1,55 +1,95 @@
 <template>
-  <div class="w-full h-full flex flex-col">
-    <header
-      class="w-full flex-none my-2 sm:mt-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 block pb-2"
-    >
-      <h2
-        class="hidden sm:block text-lg font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate text-center sm:text-left"
-      >
-        Symbol set browser
-      </h2>
-
-      <CodeSelect
-        class=""
-        v-model="symbolSetCodeValue"
-        label="Symbol set"
-        :values="symbolSets"
-      />
-    </header>
-    <div class="flex-auto overflow-auto">
-      <main
-        class="w-full max-w-7xl mx-auto sm:px-4 lg:px-6 divide-y divide-yellow-600 pb-20"
-      >
-        <template v-for="entity in entities">
-          <p
-            class="z-10 block px-4 py-2 bg-gray-200 border-t-2 sticky top-0 text-sm font-bold"
+  <div class="h-full bg-white overflow-hidden flex">
+    <!-- Static sidebar for desktop -->
+    <div class="hidden md:flex md:flex-shrink-0">
+      <div class="w-64 flex flex-col">
+        <div
+          class="border-r border-gray-200 pt-5 pb-4 flex flex-col flex-grow overflow-y-auto"
+        >
+          <!-- This example requires Tailwind CSS v2.0+ -->
+          <div
+            class="flex flex-col flex-grow border-r border-gray-200 pt-5 pb-4 bg-white overflow-y-auto"
           >
-            {{ entity.label }}
-          </p>
-          <SymbolSetRow
-            :entity="entity"
-            :entities-path="entitiesPath"
-            :frame-paths="framePaths"
+            <div class="space-y-1">
+              <h3
+                class="px-3 text-xs font-semibold text-gray-500 uppercase tracking-wider"
+                id="projects-headline"
+              >
+                Entities
+              </h3>
+              <div
+                class="space-y-1"
+                role="group"
+                aria-labelledby="projects-headline"
+              >
+                <a
+                  v-for="entity in entities"
+                  :href="`#${entity.id}`"
+                  class="group flex items-center px-3 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+                >
+                  <span class="truncate">{{ entity.label }}</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <div class="w-full h-full flex flex-col">
+        <header
+          class="w-full flex-none my-2 sm:mt-6 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 block pb-2"
+        >
+          <h2
+            class="hidden sm:block text-lg font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate text-center sm:text-left"
+          >
+            Symbol set browser
+          </h2>
+
+          <CodeSelect
+            class=""
+            v-model="symbolSetCodeValue"
+            label="Symbol set"
+            :values="symbolSets"
           />
-          <template v-for="entityType in entity.entityTypes">
-            <SymbolSetRow
-              :entity="entity"
-              :entity-type="entityType"
-              :entities-path="entitiesPath"
-              :frame-paths="framePaths"
-            />
-            <template v-for="entitySubType in entityType.entitySubTypes">
+        </header>
+        <div class="flex-auto overflow-auto">
+          <main
+            class="w-full max-w-5xl mx-auto sm:px-4 lg:px-6 divide-y divide-yellow-600 pb-20"
+          >
+            <template v-for="entity in entities">
+              <p class="h-0" :id="entity.id"></p>
+              <p
+                class="z-10 block px-4 py-2 bg-gray-200 border-t-2 sticky top-0 text-sm font-bold"
+              >
+                {{ entity.label }}
+              </p>
               <SymbolSetRow
                 :entity="entity"
-                :entity-type="entityType"
-                :entity-sub-type="entitySubType"
                 :entities-path="entitiesPath"
                 :frame-paths="framePaths"
               />
+              <template v-for="entityType in entity.entityTypes">
+                <SymbolSetRow
+                  :entity="entity"
+                  :entity-type="entityType"
+                  :entities-path="entitiesPath"
+                  :frame-paths="framePaths"
+                />
+                <template v-for="entitySubType in entityType.entitySubTypes">
+                  <SymbolSetRow
+                    :entity="entity"
+                    :entity-type="entityType"
+                    :entity-sub-type="entitySubType"
+                    :entities-path="entitiesPath"
+                    :frame-paths="framePaths"
+                  />
+                </template>
+              </template>
             </template>
-          </template>
-        </template>
-      </main>
+          </main>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -66,7 +106,7 @@ const r = SYMBOL_DATA.affiliations["REALITY"];
 export default {
   name: "SymbolsetView",
   components: { SymbolSetRow, SidcTable, MilSymbol, CodeSelect },
-  props: { symbolSetCode: String },
+  props: { symbolSetCode: { type: String, default: "01" } },
   data() {
     return {
       SYMBOL_DATA,
