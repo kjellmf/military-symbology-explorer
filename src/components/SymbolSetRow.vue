@@ -3,9 +3,11 @@
     <div class="flex justify-between">
       <div>
         <p v-if="entitySubType">{{ entityType.label }}</p>
-        <p class="font-medium text-base text-gray-900">{{ cEntity.label }}</p>
+        <p class="font-medium text-base text-gray-900 max-w-lg">
+          {{ cEntity.label }}
+        </p>
       </div>
-      <p class="flex-shrink-0 text-gray-500 space-x-0.5">
+      <p class="flex-shrink-0 ml-2 text-gray-500 space-x-0.5">
         <span :class="eClass">{{ eCode }}</span>
         <span :class="etClass">{{ etCode }}</span>
         <span :class="etsClass">{{ etsCode }}</span>
@@ -14,6 +16,7 @@
     <div
       v-if="entityPath"
       class="flex space-x-2 justify-between sm:justify-start"
+      :class="{ '-mt-3': geometry === 'POINT' }"
     >
       <div class="relative w-20 h-20">
         <img class="absolute" :src="framePaths.unknown" loading="lazy" />
@@ -32,7 +35,9 @@
         <img class="absolute" :src="entityPath.hostile" loading="lazy" />
       </div>
     </div>
-    <p class="text-xs text-gray-400">{{ cEntity.remarks }}</p>
+    <p v-if="cEntity.remarks" class="text-xs text-gray-400 mt-2">
+      {{ cEntity.remarks }}
+    </p>
     <p v-if="debug && cEntity.icon" class="mt-2">
       <span
         class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800"
@@ -53,10 +58,12 @@ export default {
     "entitiesPath",
     "framePaths",
     "debug",
+    "geometry",
   ],
   data() {
     return { size: "w-20 h-20" };
   },
+
   computed: {
     cEntity() {
       return this.entitySubType || this.entityType || this.entity;

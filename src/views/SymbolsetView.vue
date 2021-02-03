@@ -2,7 +2,7 @@
   <div class="h-full bg-white overflow-hidden flex">
     <!-- Static sidebar for desktop -->
     <div class="hidden md:flex md:flex-shrink-0">
-      <div class="w-64 flex flex-col">
+      <div class="w-64 flex flex-col px-2">
         <div
           class="border-r border-gray-200 pt-5 pb-4 flex flex-col flex-grow overflow-y-auto"
         >
@@ -47,7 +47,7 @@
           </h2>
 
           <CodeSelect
-            class=""
+            class="max-w-lg"
             v-model="symbolSetCodeValue"
             label="Symbol set"
             :values="symbolSets"
@@ -55,12 +55,12 @@
         </header>
         <div class="flex-auto overflow-auto">
           <main
-            class="w-full max-w-5xl mx-auto sm:px-4 lg:px-6 divide-y divide-yellow-600 pb-20"
+            class="w-full max-w-5xl mx-auto sm:px-4 lg:px-6 divide-y divide-gray-300 pb-20"
           >
             <template v-for="entity in entities">
               <p class="h-0" :id="entity.id"></p>
               <p
-                class="z-10 block px-4 py-2 bg-gray-200 border-t-2 sticky top-0 text-sm font-bold"
+                class="z-10 block px-4 py-3 bg-gray-200 border-t-2 sticky top-0 text-sm font-bold shadow-sm"
               >
                 {{ entity.label }}
               </p>
@@ -68,6 +68,7 @@
                 :entity="entity"
                 :entities-path="entitiesPath"
                 :frame-paths="framePaths"
+                :geometry="geometry"
               />
               <template v-for="entityType in entity.entityTypes">
                 <SymbolSetRow
@@ -75,6 +76,7 @@
                   :entity-type="entityType"
                   :entities-path="entitiesPath"
                   :frame-paths="framePaths"
+                  :geometry="geometry"
                 />
                 <template v-for="entitySubType in entityType.entitySubTypes">
                   <SymbolSetRow
@@ -83,6 +85,7 @@
                     :entity-sub-type="entitySubType"
                     :entities-path="entitiesPath"
                     :frame-paths="framePaths"
+                    :geometry="geometry"
                   />
                 </template>
               </template>
@@ -125,6 +128,10 @@ export default {
       return SYMBOL_DATA.symbolSets;
     },
 
+    geometry() {
+      return this.symbolSet.geometry;
+    },
+
     entities() {
       return this.symbolSet.entities || [];
     },
@@ -154,7 +161,8 @@ export default {
 
     framePaths() {
       const { dimensionId } = this.symbolSet;
-      const d = r[dimensionId];
+      const d = r[dimensionId] || r["LAND_EQUIPMENT"];
+
       const unknown = d["SI_UNKNOWN"].graphic;
       const friend = d["SI_FRIEND"].graphic;
       const neutral = d["SI_NEUTRAL"].graphic;
