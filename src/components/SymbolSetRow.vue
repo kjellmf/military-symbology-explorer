@@ -1,40 +1,43 @@
 <template>
   <div class="p-4 text-sm text-gray-500">
-    <div class="flex justify-between">
-      <div>
-        <p v-if="entitySubType">{{ entityType.label }}</p>
-        <p class="font-medium text-base text-gray-900 max-w-lg">
-          {{ cEntity.label }}
-        </p>
+    <div class="flex">
+      <div class="flex-auto sm:flex sm:justify-between">
+        <div>
+          <p v-if="entitySubType">{{ entityType.label }}</p>
+          <p class="font-medium text-base text-gray-900 max-w-lg">
+            {{ cEntity.label }}
+          </p>
+        </div>
+        <div
+          v-if="entityPath"
+          class="flex-shrink-0 flex space-x-2 justify-between sm:justify-start"
+          :class="{ '-mt-4': geometry === 'POINT' }"
+        >
+          <div class="relative w-20 h-20">
+            <img class="absolute" :src="framePaths.unknown" loading="lazy" />
+            <img class="absolute" :src="entityPath.unknown" loading="lazy" />
+          </div>
+          <div class="relative w-20 h-20">
+            <img class="absolute" :src="framePaths.friend" loading="lazy" />
+            <img class="absolute" :src="entityPath.friend" loading="lazy" />
+          </div>
+          <div class="relative w-20 h-20">
+            <img class="absolute" :src="framePaths.neutral" loading="lazy" />
+            <img class="absolute" :src="entityPath.neutral" loading="lazy" />
+          </div>
+          <div class="relative w-20 h-20">
+            <img class="absolute" :src="framePaths.hostile" loading="lazy" />
+            <img class="absolute" :src="entityPath.hostile" loading="lazy" />
+          </div>
+        </div>
       </div>
-      <p class="flex-shrink-0 ml-2 text-gray-500 space-x-0.5">
+      <p class="flex-shrink-0 ml-4 text-gray-500 space-x-0.5">
         <span :class="eClass">{{ eCode }}</span>
         <span :class="etClass">{{ etCode }}</span>
         <span :class="etsClass">{{ etsCode }}</span>
       </p>
     </div>
-    <div
-      v-if="entityPath"
-      class="flex space-x-2 justify-between sm:justify-start"
-      :class="{ '-mt-3': geometry === 'POINT' }"
-    >
-      <div class="relative w-20 h-20">
-        <img class="absolute" :src="framePaths.unknown" loading="lazy" />
-        <img class="absolute" :src="entityPath.unknown" loading="lazy" />
-      </div>
-      <div class="relative w-20 h-20">
-        <img class="absolute" :src="framePaths.friend" loading="lazy" />
-        <img class="absolute" :src="entityPath.friend" loading="lazy" />
-      </div>
-      <div class="relative w-20 h-20">
-        <img class="absolute" :src="framePaths.neutral" loading="lazy" />
-        <img class="absolute" :src="entityPath.neutral" loading="lazy" />
-      </div>
-      <div class="relative w-20 h-20">
-        <img class="absolute" :src="framePaths.hostile" loading="lazy" />
-        <img class="absolute" :src="entityPath.hostile" loading="lazy" />
-      </div>
-    </div>
+
     <p v-if="cEntity.remarks" class="text-xs text-gray-400 mt-2">
       {{ cEntity.remarks }}
     </p>

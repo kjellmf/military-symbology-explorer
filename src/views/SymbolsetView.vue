@@ -101,7 +101,7 @@
         </header>
         <div class="flex-auto overflow-auto">
           <main class="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <section id="main-icons" class="">
+            <section id="main-icons" class="mt-4">
               <SectionHeading>Main icons</SectionHeading>
               <div class="divide-y divide-gray-300 pb-20 -mx-4">
                 <template v-for="entity in entities">
@@ -146,11 +146,12 @@
               <div class="divide-y divide-gray-300 -mx-4">
                 <template v-for="[category, modifiers] in mod1s">
                   <p class="h-0" :id="'mod1_' + createId(category)"></p>
-                  <p
-                    class="z-10 block px-4 py-3 bg-gray-200 border-t-2 sticky top-0 text-sm font-bold shadow-sm"
+                  <header
+                    class="z-10 block px-4 py-3 bg-gray-200 border-t-2 sticky top-0 shadow-sm flex justify-between"
                   >
-                    {{ category }}
-                  </p>
+                    <p class="text-sm font-bold">{{ category }}</p>
+                    <p class="text-xs">Mod. 1</p>
+                  </header>
 
                   <div
                     class="md:grid md:gap-x-4 md:grid-cols-2 divide-y divide-gray-300"
@@ -166,8 +167,31 @@
                 </template>
               </div>
             </section>
-            <section v-if="mod2s.size" id="modifier-two">
+            <section v-if="mod2s.size" id="modifier-two" class="mt-4">
               <SectionHeading>Modifier 2</SectionHeading>
+              <div class="divide-y divide-gray-300 -mx-4 mt-4">
+                <template v-for="[category, modifiers] in mod2s">
+                  <p class="h-0" :id="'mod2_' + createId(category)"></p>
+                  <header
+                    class="z-10 block px-4 py-3 bg-gray-200 border-t-2 sticky top-0 shadow-sm flex justify-between"
+                  >
+                    <p class="text-sm font-bold">{{ category }}</p>
+                    <p class="text-xs">Mod. 2</p>
+                  </header>
+
+                  <div
+                    class="md:grid md:gap-x-4 md:grid-cols-2 divide-y divide-gray-300"
+                  >
+                    <template v-for="modifier in modifiers">
+                      <SymbolModifierRow
+                        :modifier="modifier"
+                        :modifier-path="mod2Path"
+                        :octagon-path="modifierOctagonPath"
+                      />
+                    </template>
+                  </div>
+                </template>
+              </div>
             </section>
           </main>
         </div>
@@ -258,14 +282,14 @@ export default {
     mod2Path() {
       const { graphicFolder = {} } = this.symbolSet;
       return graphicFolder.modifierTwos
-        ? SVG_PATH + graphicFolder.modifierOnes
+        ? SVG_PATH + graphicFolder.modifierTwos
         : "";
     },
 
     modifierOctagonPath() {
       if (
-        this.symbolSet.id == "SS_AIR_MISSILE" ||
-        this.symbolSet.id == "SS_SPACE_MISSILE"
+        this.symbolSet.id === "SS_AIR_MISSILE" ||
+        this.symbolSet.id === "SS_SPACE_MISSILE"
       ) {
         return SVG_PATH + "BoundingOctagon_V.svg";
       }
