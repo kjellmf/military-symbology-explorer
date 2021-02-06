@@ -98,6 +98,23 @@
             label="Symbol set"
             :values="symbolSets"
           />
+          <footer class="sm:hidden flex space-x-6 pt-4 text-base text-medium">
+            <a href="#main-icons" class="text-indigo-600 hover:text-indigo-900"
+              >Main icons</a
+            >
+            <a
+              v-if="mod1s.size"
+              href="#modifier-one"
+              class="text-indigo-600 hover:text-indigo-900"
+              >Modifier 1</a
+            >
+            <a
+              v-if="mod2s.size"
+              href="#modifier-two"
+              class="text-indigo-600 hover:text-indigo-900"
+              >Modifier 2</a
+            >
+          </footer>
         </header>
         <div class="flex-auto overflow-auto">
           <main class="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

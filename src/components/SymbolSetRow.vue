@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4 text-sm text-gray-500">
+  <div class="p-4 text-sm text-gray-500 relative">
     <div class="flex">
       <div class="flex-auto sm:flex sm:justify-between">
         <div>
@@ -31,7 +31,9 @@
           </div>
         </div>
       </div>
-      <p class="flex-shrink-0 ml-4 text-gray-500 space-x-0.5">
+      <p
+        class="absolute top-4 right-4 sm:relative flex-shrink-0 ml-4 text-gray-500 space-x-0.5"
+      >
         <span :class="eClass">{{ eCode }}</span>
         <span :class="etClass">{{ etCode }}</span>
         <span :class="etsClass">{{ etsCode }}</span>
