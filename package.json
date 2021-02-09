@@ -8,6 +8,7 @@
     "lint-fix": "prettier --write ."
   },
   "dependencies": {
+    "@headlessui/vue": "^0.3.0",
     "core-js": "^3.8.3",
     "nanoid": "^3.1.20",
     "vue": "^3.0.5",

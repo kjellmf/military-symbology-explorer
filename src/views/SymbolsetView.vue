@@ -115,6 +115,9 @@
               >Modifier 2</a
             >
           </footer>
+          <div class="flex justify-end">
+            <TSwitch v-model="debug" class="text-gray-900">Debug mode</TSwitch>
+          </div>
         </header>
         <div class="flex-auto overflow-auto">
           <main class="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -133,6 +136,7 @@
                     :entities-path="entitiesPath"
                     :frame-paths="framePaths"
                     :geometry="geometry"
+                    :debug="debug"
                   />
                   <template v-for="entityType in entity.entityTypes">
                     <SymbolSetRow
@@ -141,6 +145,7 @@
                       :entities-path="entitiesPath"
                       :frame-paths="framePaths"
                       :geometry="geometry"
+                      :debug="debug"
                     />
                     <template
                       v-for="entitySubType in entityType.entitySubTypes"
@@ -152,6 +157,7 @@
                         :entities-path="entitiesPath"
                         :frame-paths="framePaths"
                         :geometry="geometry"
+                        :debug="debug"
                       />
                     </template>
                   </template>
@@ -226,12 +232,14 @@ import SymbolSetRow from "@/components/SymbolSetRow.vue";
 import SectionHeading from "@/components/SectionHeading.vue";
 import { groupBy } from "@/utils";
 import SymbolModifierRow from "@/components/SymbolModifierRow.vue";
+import TSwitch from "@/components/TSwitch";
 
 const r = SYMBOL_DATA.affiliations["REALITY"];
 
 export default {
   name: "SymbolsetView",
   components: {
+    TSwitch,
     SymbolModifierRow,
     SectionHeading,
     SymbolSetRow,
@@ -243,6 +251,8 @@ export default {
   data() {
     return {
       SYMBOL_DATA,
+      testvalue: true,
+      debug: false,
     };
   },
   computed: {
