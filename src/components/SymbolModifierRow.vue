@@ -10,7 +10,11 @@
         class="flex-shrink-0 flex space-x-2 justify-between sm:justify-start -mt-12 mr-2"
       >
         <div class="relative w-32 h-28">
-          <img class="absolute" :src="octagonPath" loading="lazy" />
+          <BoundingOctagonV
+            v-if="verticalModifier"
+            class="text-gray-500 absolute stroke-2"
+          />
+          <BoundingOctagonH v-else class="absolute stroke-2 text-gray-500" />
           <img
             class="absolute"
             :src="modifierPath + '/' + modifier.graphic"
@@ -30,9 +34,12 @@
 </template>
 
 <script>
+import BoundingOctagonH from "@/components/BoundingOctagonH.vue";
+import BoundingOctagonV from "@/components/BoundingOctagonV.vue";
 export default {
   name: "SymbolModifierRow",
-  props: ["modifier", "octagonPath", "modifierPath"],
+  components: { BoundingOctagonV, BoundingOctagonH },
+  props: ["modifier", "octagonPath", "modifierPath", "verticalModifier"],
   data() {
     return { size: "w-20 h-20" };
   },

@@ -15,18 +15,34 @@
         >
           <div class="relative w-20 h-20">
             <img class="absolute" :src="framePaths.unknown" loading="lazy" />
+            <BoundingOctagon
+              v-if="debug"
+              class="absolute text-blue-500 stroke-2"
+            />
             <img class="absolute" :src="entityPath.unknown" loading="lazy" />
           </div>
           <div class="relative w-20 h-20">
             <img class="absolute" :src="framePaths.friend" loading="lazy" />
+            <BoundingOctagon
+              v-if="debug"
+              class="absolute text-blue-500 stroke-2"
+            />
             <img class="absolute" :src="entityPath.friend" loading="lazy" />
           </div>
           <div class="relative w-20 h-20">
             <img class="absolute" :src="framePaths.neutral" loading="lazy" />
+            <BoundingOctagon
+              v-if="debug"
+              class="absolute text-blue-500 stroke-2"
+            />
             <img class="absolute" :src="entityPath.neutral" loading="lazy" />
           </div>
           <div class="relative w-20 h-20">
             <img class="absolute" :src="framePaths.hostile" loading="lazy" />
+            <BoundingOctagon
+              v-if="debug"
+              class="absolute text-blue-900 stroke-2"
+            />
             <img class="absolute" :src="entityPath.hostile" loading="lazy" />
           </div>
         </div>
@@ -54,8 +70,10 @@
 </template>
 
 <script>
+import BoundingOctagon from "@/components/BoundingOctagon";
 export default {
   name: "SymbolSetRow",
+  components: { BoundingOctagon },
   props: [
     "entity",
     "entityType",

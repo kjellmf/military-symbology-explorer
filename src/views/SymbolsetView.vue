@@ -183,7 +183,7 @@
                       <SymbolModifierRow
                         :modifier="modifier"
                         :modifier-path="mod1Path"
-                        :octagon-path="modifierOctagonPath"
+                        :vertical-modifier="modifierOctagonVertical"
                       />
                     </template>
                   </div>
@@ -209,7 +209,7 @@
                       <SymbolModifierRow
                         :modifier="modifier"
                         :modifier-path="mod2Path"
-                        :octagon-path="modifierOctagonPath"
+                        :vertical-modifier="modifierOctagonVertical"
                       />
                     </template>
                   </div>
@@ -232,13 +232,15 @@ import SymbolSetRow from "@/components/SymbolSetRow.vue";
 import SectionHeading from "@/components/SectionHeading.vue";
 import { groupBy } from "@/utils";
 import SymbolModifierRow from "@/components/SymbolModifierRow.vue";
-import TSwitch from "@/components/TSwitch";
+import TSwitch from "@/components/TSwitch.vue";
+import BoundingOctagon from "@/components/BoundingOctagon.vue";
 
 const r = SYMBOL_DATA.affiliations["REALITY"];
 
 export default {
   name: "SymbolsetView",
   components: {
+    BoundingOctagon,
     TSwitch,
     SymbolModifierRow,
     SectionHeading,
@@ -321,6 +323,13 @@ export default {
         return SVG_PATH + "BoundingOctagon_V.svg";
       }
       return SVG_PATH + "BoundingOctagon_H.svg";
+    },
+
+    modifierOctagonVertical() {
+      return (
+        this.symbolSet.id === "SS_AIR_MISSILE" ||
+        this.symbolSet.id === "SS_SPACE_MISSILE"
+      );
     },
 
     framePaths() {
