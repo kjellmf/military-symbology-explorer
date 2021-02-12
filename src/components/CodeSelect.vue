@@ -6,8 +6,9 @@
       :for="_id"
       class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
     >
-      {{ label }}
+      <slot name="label">{{ label }}</slot>
     </label>
+
     <div class="mt-1 sm:mt-0 sm:col-span-2 flex">
       <select
         :id="_id"

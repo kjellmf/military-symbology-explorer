@@ -1,6 +1,5 @@
 <template>
   <div class="h-full bg-white overflow-hidden flex">
-    <!-- Static sidebar for desktop -->
     <aside class="hidden md:flex md:flex-shrink-0">
       <div class="w-64 flex flex-col px-2">
         <div
@@ -87,7 +86,7 @@
           class="w-full flex-none my-2 sm:mt-6 max-w-5xl mx-auto px-4 sm:px-6 block pb-2"
         >
           <h2
-            class="hidden sm:block text-lg font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate text-center sm:text-left"
+            class="hidden lg:block text-lg font-bold text-gray-900 lg:text-3xl sm:truncate text-center sm:text-left"
           >
             Symbol set browser
           </h2>
@@ -97,8 +96,11 @@
             v-model="symbolSetCodeValue"
             label="Symbol set"
             :values="symbolSets"
-          />
-          <footer class="sm:hidden flex space-x-6 pt-4 text-base text-medium">
+            ><template #label>
+              <span class="hidden sm:block">Symbol set</span>
+            </template>
+          </CodeSelect>
+          <footer class="md:hidden flex space-x-6 pt-4 text-base text-medium">
             <a href="#main-icons" class="text-indigo-600 hover:text-indigo-900"
               >Main icons</a
             >
