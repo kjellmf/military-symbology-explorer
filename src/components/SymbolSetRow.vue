@@ -1,59 +1,55 @@
 <template>
   <div class="p-4 text-sm text-gray-500 relative">
-    <div class="flex">
-      <div class="flex-auto lg:flex lg:justify-between">
-        <div>
-          <p v-if="entitySubType" class="max-w-xs sm:max-w-sm lg:max-w-lg">
-            {{ entityType.label }}
-          </p>
-          <p
-            class="font-medium text-base text-gray-900 max-w-xs sm:max-w-sm lg:max-w-lg"
-          >
-            {{ cEntity.label }}
-          </p>
-        </div>
-        <div
-          v-if="entityPath"
-          class="flex-shrink-0 flex space-x-2 justify-between lg:justify-start"
-          :class="{ '-mt-4': geometry === 'POINT' }"
+    <div class="flex flex-wrap lg:flex-nowrap">
+      <div class="flex-1 min-w-0 mr-2">
+        <p v-if="entitySubType" class="sm:max-w-sm lg:max-w-lg">
+          {{ entityType.label }}
+        </p>
+        <p
+          class="font-medium text-base text-gray-900 max-w-xs sm:max-w-sm lg:max-w-lg"
         >
-          <div class="relative w-20 h-20 sm:w-24 sm:h-24">
-            <img class="absolute" :src="framePaths.unknown" loading="lazy" />
-            <BoundingOctagon
-              v-if="debug"
-              class="absolute text-blue-500 stroke-2"
-            />
-            <img class="absolute" :src="entityPath.unknown" loading="lazy" />
-          </div>
-          <div class="relative w-20 h-20 sm:w-24 sm:h-24">
-            <img class="absolute" :src="framePaths.friend" loading="lazy" />
-            <BoundingOctagon
-              v-if="debug"
-              class="absolute text-blue-500 stroke-2"
-            />
-            <img class="absolute" :src="entityPath.friend" loading="lazy" />
-          </div>
-          <div class="relative w-20 h-20 sm:w-24 sm:h-24">
-            <img class="absolute" :src="framePaths.neutral" loading="lazy" />
-            <BoundingOctagon
-              v-if="debug"
-              class="absolute text-blue-500 stroke-2"
-            />
-            <img class="absolute" :src="entityPath.neutral" loading="lazy" />
-          </div>
-          <div class="relative w-20 h-20 sm:w-24 sm:h-24">
-            <img class="absolute" :src="framePaths.hostile" loading="lazy" />
-            <BoundingOctagon
-              v-if="debug"
-              class="absolute text-blue-900 stroke-2"
-            />
-            <img class="absolute" :src="entityPath.hostile" loading="lazy" />
-          </div>
+          {{ cEntity.label }}
+        </p>
+      </div>
+      <div
+        v-if="entityPath"
+        class="lg:flex-shrink-0 flex lg:space-x-2 justify-between lg:justify-start w-full lg:w-auto order-last lg:order-none"
+        :class="{ '-mt-4': geometry === 'POINT' }"
+      >
+        <div class="relative w-20 h-20 sm:w-24 sm:h-24">
+          <img class="absolute" :src="framePaths.unknown" loading="lazy" />
+          <BoundingOctagon
+            v-if="debug"
+            class="absolute text-blue-500 stroke-2"
+          />
+          <img class="absolute" :src="entityPath.unknown" loading="lazy" />
+        </div>
+        <div class="relative w-20 h-20 sm:w-24 sm:h-24">
+          <img class="absolute" :src="framePaths.friend" loading="lazy" />
+          <BoundingOctagon
+            v-if="debug"
+            class="absolute text-blue-500 stroke-2"
+          />
+          <img class="absolute" :src="entityPath.friend" loading="lazy" />
+        </div>
+        <div class="relative w-20 h-20 sm:w-24 sm:h-24">
+          <img class="absolute" :src="framePaths.neutral" loading="lazy" />
+          <BoundingOctagon
+            v-if="debug"
+            class="absolute text-blue-500 stroke-2"
+          />
+          <img class="absolute" :src="entityPath.neutral" loading="lazy" />
+        </div>
+        <div class="relative w-20 h-20 sm:w-24 sm:h-24">
+          <img class="absolute" :src="framePaths.hostile" loading="lazy" />
+          <BoundingOctagon
+            v-if="debug"
+            class="absolute text-blue-900 stroke-2"
+          />
+          <img class="absolute" :src="entityPath.hostile" loading="lazy" />
         </div>
       </div>
-      <p
-        class="absolute right-4 lg:relative flex-shrink-0 ml-4 text-gray-500 space-x-0.5"
-      >
+      <p class="flex-shrink-0 text-gray-500 space-x-0.5">
         <span :class="eClass">{{ eCode }}</span>
         <span :class="etClass">{{ etCode }}</span>
         <span :class="etsClass">{{ etsCode }}</span>

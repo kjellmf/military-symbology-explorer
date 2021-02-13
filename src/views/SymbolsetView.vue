@@ -117,7 +117,7 @@
               >Modifier 2</a
             >
           </footer>
-          <div class="flex justify-end">
+          <div class="mt-2 flex justify-end">
             <TSwitch v-model="debug" class="text-gray-900">Debug mode</TSwitch>
           </div>
         </header>
