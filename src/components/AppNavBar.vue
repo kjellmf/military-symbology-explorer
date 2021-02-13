@@ -132,7 +132,12 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { ABOUT_ROUTE, EXPLORE_ROUTE, SYMBOL_SET_ROUTE } from "@/router";
+import {
+  ABOUT_ROUTE,
+  EXPLORE_ROUTE,
+  RESOURCES_ROUTE,
+  SYMBOL_SET_ROUTE,
+} from "@/router";
 
 export default defineComponent({
   name: "AppNavBar",
@@ -145,6 +150,7 @@ export default defineComponent({
       links: [
         { text: "Explore symbol codes", to: { name: EXPLORE_ROUTE } },
         { text: "Browse symbol sets", to: { name: SYMBOL_SET_ROUTE } },
+        { text: "Resources", to: { name: RESOURCES_ROUTE } },
         { text: "About", to: { name: ABOUT_ROUTE } },
       ],
     };

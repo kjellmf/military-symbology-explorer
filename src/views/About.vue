@@ -1,6 +1,6 @@
 <template>
   <article
-    class="max-w-3xl lg:max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 prose prose-sm sm:prose lg:prose-lg"
+    class="max-w-3xl lg:max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 prose prose-sm sm:prose lg:prose-lg pb-10"
   >
     <h1>About</h1>
 
@@ -18,13 +18,13 @@
       <a href="http://www.esri.com/">Esri</a>, and provides a data encapsulation
       of
       <a
-        href="http://www.assistdocs.com/search/document_details.cfm?ident_number=114934"
-        >MIL-STD-2525D</a
+        href="https://www.jcs.mil/Portals/36/Documents/Doctrine/Other_Pubs/ms_2525d.pdf"
+        >MIL-STD-2525D (pdf)</a
       >
       and
       <a
-        href="http://en.wikipedia.org/wiki/NATO_Military_Symbols_for_Land_Based_Systems"
-        >APP-6(C)</a
+        href="https://nso.nato.int/nso/zPublic/ap/PROM/APP-6%20EDD%20V1%20E.pdf"
+        >NATO Joint Military Symbology APP-6(D) (pdf)</a
       >.
     </p>
 
@@ -42,9 +42,23 @@
       under the Apache 2 license.
     </p>
 
-    <h2>History</h2>
-
     <h2>Technical details</h2>
+
+    <p>
+      The first version of this site was published in 2015 when Angular 1 was
+      all the rage. Since then I've started on several half-baked rewrites using
+      different frameworks and libraries. Fast forward to 2020. The site looks
+      exactly the same as in 2015. The content is still solid, but the site is
+      not usable on small screens. This was becoming embarrassing. Time for a
+      final rewrite.
+    </p>
+
+    <p>
+      The 2021 edition of the site has mostly the same content but it works much
+      better on mobile devices and different screen resolutions. Angular has
+      been replaced with Vue 3 and instead of Bootstrap I now use Tailwind CSS
+      for layout and styling.
+    </p>
 
     <p>
       All of the symbol definitions and symbol SVG files are from the
@@ -73,43 +87,6 @@
         Drawing a symbol requires up to six different SVGs (and many server
         request). In a production system combine the SVGs on the server and send
         only one SVG file to the client.
-      </li>
-    </ul>
-
-    <h2>Related projects</h2>
-
-    <p>
-      JMSML is not the only open source symbology project. If you need a symbol
-      renderer check out one of these projects:
-    </p>
-    <ul>
-      <li>
-        <a href="https://github.com/spatialillusions/MilSymbol">MilSymbol</a>
-        Military Unit Symbols in JavaScript (SVG based, APP6, 2525).
-      </li>
-      <li>
-        <a href="https://github.com/missioncommand/mil-sym-js">mil-sym-js</a>
-        MIL-STD-2525 symbol rendering JavaScript library for modern web
-        applications (font based, 2525B, 2525C)
-      </li>
-      <li>
-        <a href="https://github.com/missioncommand/mil-sym-java"
-          >mil-sym-java</a
-        >
-        MIL-STD-2525 B and C rendering library and web service
-      </li>
-    </ul>
-
-    <p>Old ones:</p>
-    <ul>
-      <li>
-        <a href="https://github.com/StackFrame/Ortelium">Ortelium</a> A tool for
-        generating military map symbols (Java, 2525B)
-      </li>
-      <li>
-        <a href="http://milsym.codeplex.com/">MilSym</a>
-        Provides C# WPF & Silverlight 4.0, XAML-based, Bing & Esri map symbology
-        (2525C)
       </li>
     </ul>
   </article>
