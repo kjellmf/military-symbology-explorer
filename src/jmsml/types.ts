@@ -134,3 +134,21 @@ export interface SicElements {
   modifierOne: string;
   modifierTwo: string;
 }
+
+export function parseSic(sic: string): SicElements {
+  return {
+    version: sic.substr(0, 2),
+    context: sic.substr(2, 1),
+    standardIdentity: sic.substr(3, 1),
+    symbolSet: sic.substr(4, 2),
+    status: sic.substr(6, 1),
+    hqtfd: sic.substr(7, 1),
+    amplifier: sic.substr(8, 1),
+    amplifierDescriptor: sic.substr(9, 1),
+    entity: sic.substr(10, 2),
+    entityType: sic.substr(12, 2),
+    entitySubType: sic.substr(14, 2),
+    modifierOne: sic.substr(16, 2),
+    modifierTwo: sic.substr(18, 2),
+  };
+}

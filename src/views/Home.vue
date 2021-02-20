@@ -13,8 +13,10 @@
       <p
         class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
       >
-        An experimental MIL-STD-2525D/APP6X symbology explorer based on the
-        <a href="https://github.com/Esri/joint-military-symbology-xml"
+        A MIL-STD-2525D symbology explorer based on the
+        <a
+          class="text-green-800"
+          href="https://github.com/Esri/joint-military-symbology-xml"
           >Joint Military Symbology Markup Language (JMSML)</a
         >
         project.

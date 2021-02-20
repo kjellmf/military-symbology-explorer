@@ -91,7 +91,7 @@
             Symbol set browser
           </h2>
 
-          <CodeSelect
+          <CodeSelectGroup
             class="max-w-lg"
             v-model="symbolSetCodeValue"
             label="Symbol set"
@@ -99,7 +99,7 @@
             ><template #label>
               <span class="hidden sm:block">Symbol set</span>
             </template>
-          </CodeSelect>
+          </CodeSelectGroup>
           <footer class="md:hidden flex space-x-6 pt-4 text-base text-medium">
             <a href="#main-icons" class="text-indigo-600 hover:text-indigo-900"
               >Main icons</a
@@ -227,7 +227,7 @@
 
 <script>
 import { SVG_PATH, SYMBOL_DATA } from "@/jmsml/types";
-import CodeSelect from "@/components/CodeSelect.vue";
+import CodeSelectGroup from "@/components/CodeSelectGroup.vue";
 import MilSymbol from "@/components/MilSymbol.vue";
 import SidcTable from "@/views/SidcTable.vue";
 import SymbolSetRow from "@/components/SymbolSetRow.vue";
@@ -249,7 +249,7 @@ export default {
     SymbolSetRow,
     SidcTable,
     MilSymbol,
-    CodeSelect,
+    CodeSelectGroup,
   },
   props: { symbolSetCode: { type: String, default: "01" } },
   data() {

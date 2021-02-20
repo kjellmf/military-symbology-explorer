@@ -2,9 +2,16 @@
   <section id="sidc-table" class="-mx-3 sm:m-0">
     <div class="grid grid-cols-10 justify-items-stretch text-center">
       <p class="col-span-10 text-sm font-medium">Set A</p>
-      <p v-for="n in 10" class="text-gray-800 font-bold text-base">{{ n }}</p>
+      <p
+        v-for="(n, i) in setA"
+        :key="i"
+        class="text-gray-800 font-bold text-base"
+        :class="currentDigits.includes(i) ? 'bg-red-100 transition' : null"
+      >
+        {{ n }}
+      </p>
       <span class="col-span-10 border-t border-gray-400"></span>
-      <p v-for="n in 10" class="text-gray-400 text-xs">{{ n }}</p>
+      <p v-for="n in 10" :key="n" class="text-gray-400 text-xs">{{ n }}</p>
     </div>
     <div
       class="grid grid-cols-10 justify-items-stretch text-center text-sm text-gray-500"
@@ -20,13 +27,15 @@
     <div class="grid grid-cols-10 justify-items-stretch text-center">
       <p class="col-span-10 text-sm font-medium">Set B</p>
       <p
-        v-for="n in 10"
+        v-for="(n, i) in setB"
+        :key="i"
         class="text-gray-800 font-bold text-base border-b-2 border-b-black"
+        :class="currentDigits.includes(i + 10) ? 'bg-red-100 transition' : null"
       >
         {{ n }}
       </p>
       <span class="col-span-10 border-t border-gray-400"></span>
-      <p v-for="n in 10" class="text-gray-400 text-xs">{{ n + 10 }}</p>
+      <p v-for="n in 10" :key="n" class="text-gray-400 text-xs">{{ n + 10 }}</p>
     </div>
     <div
       class="grid grid-cols-10 justify-items-stretch text-center text-sm text-gray-500"
@@ -42,6 +51,15 @@
 <script>
 export default {
   name: "SidcTable",
+  props: { sic: { type: String, required: true }, currentDigits: Array },
+  computed: {
+    setA() {
+      return [...this.sic].slice(0, 10);
+    },
+    setB() {
+      return [...this.sic].slice(10);
+    },
+  },
 };
 </script>
 <style>
