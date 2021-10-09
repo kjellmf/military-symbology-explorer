@@ -1,6 +1,5 @@
 <template>
   <header class="">
-    <!-- This example requires Tailwind CSS v2.0+ -->
     <nav class="bg-gray-800">
       <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
@@ -47,11 +46,6 @@
                 />
               </svg>
               <!-- Icon when menu is open. -->
-              <!--
-            Heroicon name: x
-
-            Menu open: "block", Menu closed: "hidden"
-          -->
               <svg
                 class="h-6 w-6"
                 :class="showMenu ? 'block' : 'hidden'"
@@ -107,21 +101,13 @@
                     >{{ link.text }}</a
                   >
                 </router-link>
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!--
-    Mobile menu, toggle classes based on menu state.
-
-    Menu open: "block", Menu closed: "hidden"
-  -->
       <div class="md:hidden" :class="showMenu ? 'block' : 'hidden'">
         <div class="px-2 pt-2 pb-3 space-y-1">
-          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
           <router-link
             v-for="(link, i) in links"
             :key="i"
@@ -148,34 +134,35 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { computed, defineComponent, ref } from "vue";
 import {
   ABOUT_ROUTE,
   EXPLORE_ROUTE,
   RESOURCES_ROUTE,
   SYMBOL_SET_ROUTE,
 } from "../router";
+import { useRoute } from "vue-router";
 
 export default defineComponent({
   name: "AppNavBar",
-  props: {
-    msg: String,
-  },
-  data() {
+  setup() {
+    const showMenu = ref(false);
+    const links = [
+      { text: "Explore symbol codes", to: { name: EXPLORE_ROUTE } },
+      { text: "Browse symbol sets", to: { name: SYMBOL_SET_ROUTE } },
+      { text: "Resources", to: { name: RESOURCES_ROUTE } },
+      { text: "About", to: { name: ABOUT_ROUTE } },
+    ];
+    const route = useRoute();
+    const navbarTitle = computed(() => {
+      return route.meta?.navbarTitle || "";
+    });
+
     return {
-      showMenu: false,
-      links: [
-        { text: "Explore symbol codes", to: { name: EXPLORE_ROUTE } },
-        { text: "Browse symbol sets", to: { name: SYMBOL_SET_ROUTE } },
-        { text: "Resources", to: { name: RESOURCES_ROUTE } },
-        { text: "About", to: { name: ABOUT_ROUTE } },
-      ],
+      showMenu,
+      links,
+      navbarTitle,
     };
-  },
-  computed: {
-    navbarTitle(): string {
-      return this.$route.meta.navbarTitle || "";
-    },
   },
 });
 </script>

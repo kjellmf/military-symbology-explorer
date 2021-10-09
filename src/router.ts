@@ -1,4 +1,11 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
+import "vue-router";
+
+declare module "vue-router" {
+  interface RouteMeta {
+    navbarTitle?: string;
+  }
+}
 import Home from "./views/Home.vue";
 import About from "./views/About.vue";
 import Resources from "./views/Resources.vue";
