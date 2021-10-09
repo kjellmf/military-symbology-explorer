@@ -31,7 +31,7 @@
         />
 
         <CodeSelectGroup
-          v-model="symbolSetCode"
+          v-model="symbolSet"
           label="Symbol set"
           :values="SYMBOL_DATA.symbolSets"
           @focus="currentDigits = [4, 5]"
@@ -134,47 +134,31 @@ export default {
   data() {
     return {
       SYMBOL_DATA,
-      symbolSetCode: "10",
-      context: "0",
-      standardIdentity: "3",
-      status: "0",
-      hqtfDummy: "0",
-      entity: "00",
-      entityType: "00",
-      entitySubType: "00",
-      modifierOne: "00",
-      modifierTwo: "00",
+      symbolSet: SYMBOL_DATA.symbolSets[1],
+      context: {},
+      standardIdentity: {},
+      status: {},
+      hqtfDummy: {},
+      entity: {},
+      entityType: {},
+      entitySubType: {},
+      modifierOne: {},
+      modifierTwo: {},
       currentDigits: [],
     };
   },
   computed: {
-    symbolSet() {
-      return (
-        SYMBOL_DATA.symbolSets.find(
-          (symbolSet) => symbolSet.digits === this.symbolSetCode
-        ) || {}
-      );
-    },
-
     entities() {
       const a = this.symbolSet.entities || [];
       return a;
     },
 
     entityTypes() {
-      const items =
-        (this.entities.find((e) => e.digits === this.entity) || {})
-          .entityTypes || [];
-
-      return items.length ? items : [{ digits: "00", label: "Unspecified" }];
+      return this.entity.entityTypes || [];
     },
 
     entitySubTypes() {
-      const items =
-        (this.entityTypes.find((e) => e.digits === this.entityType) || {})
-          .entitySubTypes || [];
-
-      return items.length ? items : [{ digits: "00", label: "Unspecified" }];
+      return this.entityType.entitySubTypes || [];
     },
 
     mod1s() {
@@ -191,7 +175,20 @@ export default {
       };
     },
     sic() {
-      return `10${this.context}${this.standardIdentity}${this.symbolSetCode}${this.status}${this.hqtfDummy}18${this.entity}${this.entityType}`;
+      return (
+        "10" +
+        (this.context.digits || "0") +
+        (this.standardIdentity.digits || "0") +
+        (this.symbolSet.digits || "00") +
+        (this.status.digits || "0") +
+        (this.hqtfDummy.digits || "0") +
+        "18" +
+        (this.entity.digits || "00") +
+        (this.entityType.digits || "00") +
+        (this.entitySubType.digits || "00") +
+        (this.modifierOne.digits || "00") +
+        (this.modifierTwo.digits || "00")
+      );
     },
   },
   methods: {

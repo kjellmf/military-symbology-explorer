@@ -30,7 +30,7 @@ import CodeSelect from "@/components/CodeSelect.vue";
 export default {
   name: "CodeSelectGroup",
   components: { CodeSelect },
-  props: { label: String, values: Array, modelValue: String, id: String },
+  props: { label: String, values: Array, modelValue: Object, id: String },
   emits: ["focus", "blur", "update:modelValue"],
   computed: {
     _id() {
