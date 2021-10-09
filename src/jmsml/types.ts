@@ -49,7 +49,7 @@ export interface SymbolSet extends IdentifierAttributeGroup {
   dimensionId: string;
   geometry: GeometryType;
   entities: Entity[];
-  specialEntitySubTypes: EntitySubType[];
+  specialEntitySubTypes?: EntitySubType[];
   sectorOneModifiers: Modifier[];
   sectorTwoModifiers: Modifier[];
   graphicFolder: {};
@@ -57,7 +57,7 @@ export interface SymbolSet extends IdentifierAttributeGroup {
 
 export interface EntityBase extends FramedGraphicIdentifierAttributeGroup {
   digits: string;
-  geometryType: GeometryType;
+  geometryType?: GeometryType;
 }
 
 export interface Entity extends EntityBase {
@@ -73,6 +73,8 @@ export type EntitySubType = EntityBase;
 export interface Modifier extends IdentifierAttributeGroup {
   digits: string;
   graphic?: string;
+  category?: string;
+  limitUseTo?: string[];
 }
 
 export interface Amplifier extends IdentifierAttributeGroup {
@@ -90,13 +92,13 @@ export interface Context extends IdentifierAttributeGroup {
 
 export interface HqtfD extends IdentifierAttributeGroup {
   digits: string;
-  graphics: EntityBase[];
+  graphics?: any;
 }
 
 export interface Status extends IdentifierAttributeGroup {
   digits: string;
-  graphic: string;
-  graphics: {}[];
+  graphic?: string;
+  graphics?: any;
 }
 
 export interface AmplifierDescriptor extends IdentifierAttributeGroup {
