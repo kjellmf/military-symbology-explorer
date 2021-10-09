@@ -2,3 +2,4 @@ dist
 package-lock.json
 twout.css
 public/data
+public/svg

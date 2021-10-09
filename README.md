@@ -9,3 +9,13 @@ project.
 
 You can see the old version of the symbology explorer in action
 at [http://explorer.milsymb.net/](http://explorer.milsymb.net/).
+
+## Licensing
+
+**[Joint Military Symbology Markup Language (JMSML)](https://github.com/Esri/joint-military-symbology-xml)**
+
+Copyright 2014 Esri. Licensed under the Apache License version 2.0.
+
+**Symbology SVG files**
+
+Copyright 2014 DISA (SSMC Technical Working Group). Licensed under the Apache License version 2.0.
