@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
+    "dev-host": "vite --host",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
     "lint-fix": "prettier --write ."

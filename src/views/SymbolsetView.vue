@@ -61,7 +61,7 @@
               </div>
             </nav>
             <nav
-              v-if="symbolSet.sectorOneModifiers.length"
+              v-if="symbolSet?.sectorOneModifiers?.length"
               class="space-y-1 mt-6"
             >
               <h3
@@ -103,7 +103,7 @@
               </div>
             </nav>
             <nav
-              v-if="symbolSet.sectorTwoModifiers.length"
+              v-if="symbolSet?.sectorTwoModifiers?.length"
               class="space-y-1 mt-6"
             >
               <h3
@@ -392,6 +392,9 @@ export default {
       debug: false,
     };
   },
+  setup() {
+    return { symbolSets };
+  },
   computed: {
     symbolSet() {
       const e =
@@ -411,13 +414,13 @@ export default {
 
     symbolSetCodeValue: {
       get() {
-        return this.symbolSetCode || "00";
+        return this.symbolSet;
       },
 
       set(value) {
         this.$router.replace({
           ...this.$route,
-          params: { ...this.$route.params, symbolSetCode: value },
+          params: { ...this.$route.params, symbolSetCode: value.digits },
         });
       },
     },
@@ -481,14 +484,14 @@ export default {
 
     mod1s() {
       return groupBy(
-        this.symbolSet.sectorOneModifiers.filter((o) => o.category),
+        this.symbolSet?.sectorOneModifiers?.filter((o) => o.category) || [],
         "category"
       );
     },
 
     mod2s() {
       return groupBy(
-        this.symbolSet.sectorTwoModifiers.filter((o) => o.category),
+        this.symbolSet?.sectorTwoModifiers?.filter((o) => o.category) || [],
         "category"
       );
     },
