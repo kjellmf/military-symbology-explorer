@@ -184,7 +184,8 @@
             v-model="symbolSetCodeValue"
             label="Symbol set"
             :values="symbolSets"
-            ><template #label>
+          >
+            <template #label>
               <span class="hidden sm:block">Symbol set</span>
             </template>
           </CodeSelectGroup>
@@ -356,7 +357,7 @@
 </template>
 
 <script>
-import { SVG_PATH, SYMBOL_DATA } from "../jmsml/types";
+import { SVG_PATH } from "../jmsml/types";
 import CodeSelectGroup from "../components/CodeSelectGroup.vue";
 import MilSymbol from "../components/MilSymbol.vue";
 import SidcTable from "./SidcTable.vue";
@@ -367,7 +368,10 @@ import SymbolModifierRow from "../components/SymbolModifierRow.vue";
 import TSwitch from "../components/TSwitch.vue";
 import BoundingOctagon from "../components/BoundingOctagon.vue";
 
-const r = SYMBOL_DATA.affiliations["REALITY"];
+import { symbolSets } from "../jmsml/symbolsets";
+import { affiliations } from "../jmsml";
+
+const r = affiliations["REALITY"];
 
 export default {
   name: "SymbolsetView",
@@ -384,7 +388,6 @@ export default {
   props: { symbolSetCode: { type: String, default: "01" } },
   data() {
     return {
-      SYMBOL_DATA,
       testvalue: true,
       debug: false,
     };
@@ -392,14 +395,10 @@ export default {
   computed: {
     symbolSet() {
       const e =
-        SYMBOL_DATA.symbolSets.find(
+        symbolSets.find(
           (symbolSet) => symbolSet.digits === this.symbolSetCode
         ) || {};
       return e || {};
-    },
-
-    symbolSets() {
-      return SYMBOL_DATA.symbolSets;
     },
 
     geometry() {
@@ -501,4 +500,3 @@ export default {
   },
 };
 </script>
-<style></style>
