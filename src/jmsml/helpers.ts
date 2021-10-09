@@ -14,7 +14,7 @@ import {
   Status,
   SYMBOL_DATA,
   SymbolSet,
-} from "@/jmsml/types";
+} from "../jmsml/types";
 
 export class Sic implements SicElements {
   version: string;

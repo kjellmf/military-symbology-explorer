@@ -1,6 +1,14 @@
 <template>
   <div
-    class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5"
+    class="
+      sm:grid
+      sm:grid-cols-3
+      sm:gap-4
+      sm:items-start
+      sm:border-t
+      sm:border-gray-200
+      sm:pt-5
+    "
   >
     <label
       :for="_id"
@@ -25,7 +33,7 @@
 
 <script>
 import { nanoid } from "nanoid";
-import CodeSelect from "@/components/CodeSelect.vue";
+import CodeSelect from "./CodeSelect.vue";
 
 export default {
   name: "CodeSelectGroup",

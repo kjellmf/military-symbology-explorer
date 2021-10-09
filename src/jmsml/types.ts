@@ -3,7 +3,9 @@
  */
 
 export const SVG_PATH = "/svg/";
-export const SYMBOL_DATA = <SymbolData>require("./jmsml.json");
+import _SYMBOL_DATA from "./jmsml.json";
+export const SYMBOL_DATA = _SYMBOL_DATA as unknown as SymbolData;
+
 export type GeometryType = "NA" | "POINT" | "LINE" | "AREA" | "MIXED";
 
 export type IconType =

@@ -7,7 +7,19 @@
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <!-- Mobile menu button-->
             <button
-              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              class="
+                inline-flex
+                items-center
+                justify-center
+                p-2
+                rounded-md
+                text-gray-400
+                hover:text-white hover:bg-gray-700
+                focus:outline-none
+                focus:ring-2
+                focus:ring-inset
+                focus:ring-white
+              "
               aria-expanded="false"
               @click="showMenu = !showMenu"
             >
@@ -59,7 +71,12 @@
             </button>
           </div>
           <div
-            class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
+            class="
+              flex-1 flex
+              items-center
+              justify-center
+              sm:items-stretch sm:justify-start
+            "
           >
             <div class="flex-shrink-0 flex items-center">
               <div class="hidden sm:block text-white font-bold">
@@ -137,7 +154,7 @@ import {
   EXPLORE_ROUTE,
   RESOURCES_ROUTE,
   SYMBOL_SET_ROUTE,
-} from "@/router";
+} from "../router";
 
 export default defineComponent({
   name: "AppNavBar",

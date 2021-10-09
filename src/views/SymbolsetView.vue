@@ -3,14 +3,34 @@
     <aside class="hidden md:flex md:flex-shrink-0">
       <div class="w-64 flex flex-col px-2">
         <div
-          class="border-r border-gray-200 pt-5 pb-4 flex flex-col flex-grow overflow-y-auto"
+          class="
+            border-r border-gray-200
+            pt-5
+            pb-4
+            flex flex-col flex-grow
+            overflow-y-auto
+          "
         >
           <div
-            class="flex flex-col flex-grow border-r border-gray-200 pt-5 pb-4 bg-white overflow-y-auto"
+            class="
+              flex flex-col flex-grow
+              border-r border-gray-200
+              pt-5
+              pb-4
+              bg-white
+              overflow-y-auto
+            "
           >
             <nav class="space-y-1">
               <h3
-                class="px-3 text-xs font-bold text-gray-900 uppercase tracking-wider"
+                class="
+                  px-3
+                  text-xs
+                  font-bold
+                  text-gray-900
+                  uppercase
+                  tracking-wider
+                "
                 id="projects-headline"
               >
                 Entities
@@ -23,7 +43,18 @@
                 <a
                   v-for="entity in entities"
                   :href="`#${entity.id}`"
-                  class="group flex items-center px-3 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+                  class="
+                    group
+                    flex
+                    items-center
+                    px-3
+                    py-2
+                    text-sm
+                    font-medium
+                    text-gray-600
+                    rounded-md
+                    hover:text-gray-900 hover:bg-gray-50
+                  "
                 >
                   <span class="truncate">{{ entity.label }}</span>
                 </a>
@@ -34,7 +65,14 @@
               class="space-y-1 mt-6"
             >
               <h3
-                class="px-3 text-xs font-bold text-gray-900 uppercase tracking-wider"
+                class="
+                  px-3
+                  text-xs
+                  font-bold
+                  text-gray-900
+                  uppercase
+                  tracking-wider
+                "
               >
                 Modifier 1
               </h3>
@@ -47,7 +85,18 @@
                 <a
                   v-for="[category, values] in mod1s"
                   :href="`#mod1_${createId(category)}`"
-                  class="group flex items-center px-3 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+                  class="
+                    group
+                    flex
+                    items-center
+                    px-3
+                    py-2
+                    text-sm
+                    font-medium
+                    text-gray-600
+                    rounded-md
+                    hover:text-gray-900 hover:bg-gray-50
+                  "
                 >
                   <span class="truncate">{{ category }}</span>
                 </a>
@@ -58,7 +107,14 @@
               class="space-y-1 mt-6"
             >
               <h3
-                class="px-3 text-xs font-bold text-gray-900 uppercase tracking-wider"
+                class="
+                  px-3
+                  text-xs
+                  font-bold
+                  text-gray-900
+                  uppercase
+                  tracking-wider
+                "
               >
                 Modifier 2
               </h3>
@@ -70,7 +126,18 @@
                 <a
                   v-for="[category, values] in mod2s"
                   :href="`#mod2_${createId(category)}`"
-                  class="group flex items-center px-3 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+                  class="
+                    group
+                    flex
+                    items-center
+                    px-3
+                    py-2
+                    text-sm
+                    font-medium
+                    text-gray-600
+                    rounded-md
+                    hover:text-gray-900 hover:bg-gray-50
+                  "
                 >
                   <span class="truncate">{{ category }}</span>
                 </a>
@@ -83,10 +150,31 @@
     <div class="flex-1">
       <div class="w-full h-full flex flex-col">
         <header
-          class="w-full flex-none my-2 sm:mt-6 max-w-5xl mx-auto px-4 sm:px-6 block pb-2"
+          class="
+            w-full
+            flex-none
+            my-2
+            sm:mt-6
+            max-w-5xl
+            mx-auto
+            px-4
+            sm:px-6
+            block
+            pb-2
+          "
         >
           <h2
-            class="hidden lg:block text-lg font-bold text-gray-900 lg:text-3xl sm:truncate text-center sm:text-left"
+            class="
+              hidden
+              lg:block
+              text-lg
+              font-bold
+              text-gray-900
+              lg:text-3xl
+              sm:truncate
+              text-center
+              sm:text-left
+            "
           >
             Symbol set browser
           </h2>
@@ -129,7 +217,19 @@
                 <template v-for="entity in entities">
                   <p class="h-0" :id="entity.id"></p>
                   <p
-                    class="z-10 block px-4 py-3 bg-gray-200 border-t-2 sticky top-0 text-sm font-bold shadow-sm"
+                    class="
+                      z-10
+                      block
+                      px-4
+                      py-3
+                      bg-gray-200
+                      border-t-2
+                      sticky
+                      top-0
+                      text-sm
+                      font-bold
+                      shadow-sm
+                    "
                   >
                     {{ entity.label }}
                   </p>
@@ -172,14 +272,29 @@
                 <template v-for="[category, modifiers] in mod1s">
                   <p class="h-0" :id="'mod1_' + createId(category)"></p>
                   <header
-                    class="z-10 block px-4 py-3 bg-gray-200 border-t-2 sticky top-0 shadow-sm flex justify-between"
+                    class="
+                      z-10
+                      block
+                      px-4
+                      py-3
+                      bg-gray-200
+                      border-t-2
+                      sticky
+                      top-0
+                      shadow-sm
+                      flex
+                      justify-between
+                    "
                   >
                     <p class="text-sm font-bold">{{ category }}</p>
                     <p class="text-xs">Mod. 1</p>
                   </header>
 
                   <div
-                    class="md:grid md:gap-x-4 md:grid-cols-2 divide-y divide-gray-300"
+                    class="
+                      md:grid md:gap-x-4 md:grid-cols-2
+                      divide-y divide-gray-300
+                    "
                   >
                     <template v-for="modifier in modifiers">
                       <SymbolModifierRow
@@ -198,14 +313,29 @@
                 <template v-for="[category, modifiers] in mod2s">
                   <p class="h-0" :id="'mod2_' + createId(category)"></p>
                   <header
-                    class="z-10 block px-4 py-3 bg-gray-200 border-t-2 sticky top-0 shadow-sm flex justify-between"
+                    class="
+                      z-10
+                      block
+                      px-4
+                      py-3
+                      bg-gray-200
+                      border-t-2
+                      sticky
+                      top-0
+                      shadow-sm
+                      flex
+                      justify-between
+                    "
                   >
                     <p class="text-sm font-bold">{{ category }}</p>
                     <p class="text-xs">Mod. 2</p>
                   </header>
 
                   <div
-                    class="md:grid md:gap-x-4 md:grid-cols-2 divide-y divide-gray-300"
+                    class="
+                      md:grid md:gap-x-4 md:grid-cols-2
+                      divide-y divide-gray-300
+                    "
                   >
                     <template v-for="modifier in modifiers">
                       <SymbolModifierRow
@@ -226,16 +356,16 @@
 </template>
 
 <script>
-import { SVG_PATH, SYMBOL_DATA } from "@/jmsml/types";
-import CodeSelectGroup from "@/components/CodeSelectGroup.vue";
-import MilSymbol from "@/components/MilSymbol.vue";
-import SidcTable from "@/views/SidcTable.vue";
-import SymbolSetRow from "@/components/SymbolSetRow.vue";
-import SectionHeading from "@/components/SectionHeading.vue";
-import { groupBy } from "@/utils";
-import SymbolModifierRow from "@/components/SymbolModifierRow.vue";
-import TSwitch from "@/components/TSwitch.vue";
-import BoundingOctagon from "@/components/BoundingOctagon.vue";
+import { SVG_PATH, SYMBOL_DATA } from "../jmsml/types";
+import CodeSelectGroup from "../components/CodeSelectGroup.vue";
+import MilSymbol from "../components/MilSymbol.vue";
+import SidcTable from "./SidcTable.vue";
+import SymbolSetRow from "../components/SymbolSetRow.vue";
+import SectionHeading from "../components/SectionHeading.vue";
+import { groupBy } from "../utils";
+import SymbolModifierRow from "../components/SymbolModifierRow.vue";
+import TSwitch from "../components/TSwitch.vue";
+import BoundingOctagon from "../components/BoundingOctagon.vue";
 
 const r = SYMBOL_DATA.affiliations["REALITY"];
 

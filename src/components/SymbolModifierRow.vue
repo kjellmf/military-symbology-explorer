@@ -7,7 +7,14 @@
         </p>
       </div>
       <div
-        class="flex-shrink-0 flex space-x-2 justify-between sm:justify-start -mt-12 mr-2"
+        class="
+          flex-shrink-0 flex
+          space-x-2
+          justify-between
+          sm:justify-start
+          -mt-12
+          mr-2
+        "
       >
         <div class="relative w-32 h-28">
           <BoundingOctagonV
@@ -34,8 +41,8 @@
 </template>
 
 <script>
-import BoundingOctagonH from "@/components/BoundingOctagonH.vue";
-import BoundingOctagonV from "@/components/BoundingOctagonV.vue";
+import BoundingOctagonH from "./BoundingOctagonH.vue";
+import BoundingOctagonV from "./BoundingOctagonV.vue";
 export default {
   name: "SymbolModifierRow",
   components: { BoundingOctagonV, BoundingOctagonH },

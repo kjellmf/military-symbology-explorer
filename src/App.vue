@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import AppNavBar from "@/components/AppNavBar.vue";
+import AppNavBar from "./components/AppNavBar.vue";
 
 export default {
   components: { AppNavBar },

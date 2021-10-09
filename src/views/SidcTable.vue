@@ -14,7 +14,11 @@
       <p v-for="n in 10" :key="n" class="text-gray-400 text-xs">{{ n }}</p>
     </div>
     <div
-      class="grid grid-cols-10 justify-items-stretch text-center text-sm text-gray-500"
+      class="
+        grid grid-cols-10
+        justify-items-stretch
+        text-center text-sm text-gray-500
+      "
     >
       <p class="col-span-2">Version</p>
       <p class="col-span-2">Standard identity</p>
@@ -38,7 +42,11 @@
       <p v-for="n in 10" :key="n" class="text-gray-400 text-xs">{{ n + 10 }}</p>
     </div>
     <div
-      class="grid grid-cols-10 justify-items-stretch text-center text-sm text-gray-500"
+      class="
+        grid grid-cols-10
+        justify-items-stretch
+        text-center text-sm text-gray-500
+      "
     >
       <p class="col-span-2 border-gray-100">Entity</p>
       <p class="col-span-2 border-gray-100">Entity type</p>
