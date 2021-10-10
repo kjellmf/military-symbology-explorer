@@ -57,6 +57,8 @@
 </template>
 
 <script>
+import { useEntityPathData } from "../composables";
+
 export default {
   name: "SymbolSetRowNonUnit",
   components: {},
@@ -69,70 +71,31 @@ export default {
     "debug",
     "geometry",
   ],
-  data() {
-    return { size: "w-20 h-20" };
-  },
+  setup(props) {
+    const {
+      cEntity,
+      eCode,
+      etCode,
+      etsCode,
+      codes,
+      eClass,
+      etClass,
+      etsClass,
+      entityPath,
+    } = useEntityPathData(props);
 
-  computed: {
-    cEntity() {
-      return this.entitySubType || this.entityType || this.entity;
-    },
-    eCode() {
-      return this.entity.digits || "00";
-    },
-
-    etCode() {
-      return (this.entityType && this.entityType.digits) || "00";
-    },
-
-    etsCode() {
-      return (this.entitySubType && this.entitySubType.digits) || "00";
-    },
-
-    codes() {
-      const { digits: eCode = "00" } = this.entity;
-      const { digits: etCode = "00" } = this.entityType || {};
-      const { digits: etsCode = "00" } = this.entitySubType || {};
-      return `${eCode}${etCode}${etsCode}`;
-    },
-
-    eClass() {
-      return this.entityType || this.entitySubType
-        ? undefined
-        : "font-medium text-gray-900";
-    },
-
-    etClass() {
-      return this.entityType && !this.entitySubType
-        ? "font-bold text-gray-700"
-        : undefined;
-    },
-
-    etsClass() {
-      return this.entitySubType ? "font-medium text-gray-900" : undefined;
-    },
-
-    unknowEntityPath() {
-      const { graphic, cloverGraphic } = this.cEntity;
-      return `${this.entitiesPath}/${graphic || cloverGraphic}`;
-    },
-
-    entityPath() {
-      const {
-        graphic,
-        rectangleGraphic,
-        squareGraphic,
-        diamondGraphic,
-        cloverGraphic,
-      } = this.cEntity;
-      if (!(graphic || rectangleGraphic)) return null;
-      return {
-        friend: `${this.entitiesPath}/${graphic || rectangleGraphic}`,
-        unknown: `${this.entitiesPath}/${graphic || cloverGraphic}`,
-        neutral: `${this.entitiesPath}/${graphic || squareGraphic}`,
-        hostile: `${this.entitiesPath}/${graphic || diamondGraphic}`,
-      };
-    },
+    return {
+      cEntity,
+      eCode,
+      etCode,
+      etsCode,
+      codes,
+      eClass,
+      etClass,
+      etsClass,
+      entityPath,
+      size: "w-20 h-20",
+    };
   },
 };
 </script>
