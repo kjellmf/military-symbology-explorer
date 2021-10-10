@@ -237,7 +237,8 @@
                   >
                     {{ entity.label }}
                   </p>
-                  <SymbolSetRow
+                  <component
+                    :is="rowComponent"
                     :entity="entity"
                     :entities-path="entitiesPath"
                     :frame-paths="framePaths"
@@ -245,7 +246,8 @@
                     :debug="debug"
                   />
                   <template v-for="entityType in entity.entityTypes">
-                    <SymbolSetRow
+                    <component
+                      :is="rowComponent"
                       :entity="entity"
                       :entity-type="entityType"
                       :entities-path="entitiesPath"
@@ -256,7 +258,8 @@
                     <template
                       v-for="entitySubType in entityType.entitySubTypes"
                     >
-                      <SymbolSetRow
+                      <component
+                        :is="rowComponent"
                         :entity="entity"
                         :entity-type="entityType"
                         :entity-sub-type="entitySubType"
@@ -365,6 +368,7 @@ import CodeSelectGroup from "../components/CodeSelectGroup.vue";
 import MilSymbol from "../components/MilSymbol.vue";
 import SidcTable from "./SidcTable.vue";
 import SymbolSetRow from "../components/SymbolSetRow.vue";
+import SymbolSetRowNonUnit from "../components/SymbolSetRowNonUnit.vue";
 import SectionHeading from "../components/SectionHeading.vue";
 import { groupBy } from "../utils";
 import SymbolModifierRow from "../components/SymbolModifierRow.vue";
@@ -373,9 +377,11 @@ import BoundingOctagon from "../components/BoundingOctagon.vue";
 
 import { symbolSets } from "../jmsml/symbolsets";
 import { affiliations } from "../jmsml";
-import { nextTick, ref, watch } from "vue";
+import { computed, ref, watch } from "vue";
 
 const r = affiliations["REALITY"];
+
+const NON_UNIT_SYMBOL_SETS = ["25", "45", "46", "47"];
 
 export default {
   name: "SymbolsetView",
@@ -393,6 +399,11 @@ export default {
   setup(props) {
     const isReady = ref(false);
     const debug = ref(false);
+    const rowComponent = computed(() =>
+      NON_UNIT_SYMBOL_SETS.includes(props.symbolSetCode)
+        ? SymbolSetRowNonUnit
+        : SymbolSetRow
+    );
     watch(
       () => props.symbolSetCode,
       () => {
@@ -400,7 +411,12 @@ export default {
       },
       { immediate: true }
     );
-    return { symbolSets, isReady, debug };
+
+    function createId(id) {
+      return id.replace(/\W/g, "_");
+    }
+
+    return { symbolSets, isReady, debug, rowComponent, createId };
   },
   computed: {
     symbolSet() {
@@ -431,11 +447,6 @@ export default {
           params: { ...this.$route.params, symbolSetCode: value.digits },
         });
       },
-    },
-
-    folderPaths() {
-      const { graphicFolder } = this.symbolSet;
-      return graphicFolder;
     },
 
     entitiesPath() {
@@ -502,11 +513,6 @@ export default {
         this.symbolSet?.sectorTwoModifiers?.filter((o) => o.category) || [],
         "category"
       );
-    },
-  },
-  methods: {
-    createId(id) {
-      return id.replace(/\W/g, "_");
     },
   },
 };

@@ -2882,3 +2882,5 @@ export const standardIdentityGroupMapping = {
   SI_SUSPECT_JOKER: "SIG_HOSTILE",
   SI_FRIEND: "SIG_FRIEND",
 };
+
+export const CONTROL_MEASURE_SYMBOLSET_VALUE = "25";
