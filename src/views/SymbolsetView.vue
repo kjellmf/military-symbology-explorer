@@ -211,7 +211,10 @@
           </div>
         </header>
         <div class="flex-auto overflow-auto">
-          <main class="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <main
+            v-if="isReady"
+            class="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8"
+          >
             <section id="main-icons" class="mt-4">
               <SectionHeading>Main icons</SectionHeading>
               <div class="divide-y divide-gray-300 pb-20 -mx-4">
@@ -370,6 +373,7 @@ import BoundingOctagon from "../components/BoundingOctagon.vue";
 
 import { symbolSets } from "../jmsml/symbolsets";
 import { affiliations } from "../jmsml";
+import { nextTick, ref, watch } from "vue";
 
 const r = affiliations["REALITY"];
 
@@ -386,14 +390,17 @@ export default {
     CodeSelectGroup,
   },
   props: { symbolSetCode: { type: String, default: "01" } },
-  data() {
-    return {
-      testvalue: true,
-      debug: false,
-    };
-  },
-  setup() {
-    return { symbolSets };
+  setup(props) {
+    const isReady = ref(false);
+    const debug = ref(false);
+    watch(
+      () => props.symbolSetCode,
+      () => {
+        setTimeout(() => (isReady.value = true));
+      },
+      { immediate: true }
+    );
+    return { symbolSets, isReady, debug };
   },
   computed: {
     symbolSet() {
@@ -418,6 +425,7 @@ export default {
       },
 
       set(value) {
+        this.isReady = false;
         this.$router.replace({
           ...this.$route,
           params: { ...this.$route.params, symbolSetCode: value.digits },
