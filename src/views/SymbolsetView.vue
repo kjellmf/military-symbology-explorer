@@ -11,6 +11,11 @@
             overflow-y-auto
           "
         >
+          <div class="px-3">
+            <TSwitch v-model="debug" class="text-base text-gray-900"
+              >Debug mode
+            </TSwitch>
+          </div>
           <div
             class="
               flex flex-col flex-grow
@@ -21,128 +26,7 @@
               overflow-y-auto
             "
           >
-            <nav class="space-y-1">
-              <h3
-                class="
-                  px-3
-                  text-xs
-                  font-bold
-                  text-gray-900
-                  uppercase
-                  tracking-wider
-                "
-                id="projects-headline"
-              >
-                Entities
-              </h3>
-              <div
-                class="space-y-1"
-                role="group"
-                aria-labelledby="projects-headline"
-              >
-                <a
-                  v-for="entity in entities"
-                  :href="`#${entity.id}`"
-                  class="
-                    group
-                    flex
-                    items-center
-                    px-3
-                    py-2
-                    text-sm
-                    font-medium
-                    text-gray-600
-                    rounded-md
-                    hover:text-gray-900 hover:bg-gray-50
-                  "
-                >
-                  <span class="truncate">{{ entity.label }}</span>
-                </a>
-              </div>
-            </nav>
-            <nav
-              v-if="symbolSet?.sectorOneModifiers?.length"
-              class="space-y-1 mt-6"
-            >
-              <h3
-                class="
-                  px-3
-                  text-xs
-                  font-bold
-                  text-gray-900
-                  uppercase
-                  tracking-wider
-                "
-              >
-                Modifier 1
-              </h3>
-
-              <div
-                class="space-y-1"
-                role="group"
-                aria-labelledby="projects-headline"
-              >
-                <a
-                  v-for="[category, values] in mod1s"
-                  :href="`#mod1_${createId(category)}`"
-                  class="
-                    group
-                    flex
-                    items-center
-                    px-3
-                    py-2
-                    text-sm
-                    font-medium
-                    text-gray-600
-                    rounded-md
-                    hover:text-gray-900 hover:bg-gray-50
-                  "
-                >
-                  <span class="truncate">{{ category }}</span>
-                </a>
-              </div>
-            </nav>
-            <nav
-              v-if="symbolSet?.sectorTwoModifiers?.length"
-              class="space-y-1 mt-6"
-            >
-              <h3
-                class="
-                  px-3
-                  text-xs
-                  font-bold
-                  text-gray-900
-                  uppercase
-                  tracking-wider
-                "
-              >
-                Modifier 2
-              </h3>
-              <div
-                class="space-y-1"
-                role="group"
-                aria-labelledby="projects-headline"
-              >
-                <a
-                  v-for="[category, values] in mod2s"
-                  :href="`#mod2_${createId(category)}`"
-                  class="
-                    group
-                    flex
-                    items-center
-                    px-3
-                    py-2
-                    text-sm
-                    font-medium
-                    text-gray-600
-                    rounded-md
-                    hover:text-gray-900 hover:bg-gray-50
-                  "
-                >
-                  <span class="truncate">{{ category }}</span>
-                </a>
-              </div>
-            </nav>
+            <SymbolsetNav :entities="entities" :mod1s="mod1s" :mod2s="mod2s" />
           </div>
         </div>
       </div>
@@ -190,6 +74,9 @@
             </template>
           </CodeSelectGroup>
           <footer class="md:hidden flex space-x-6 pt-4 text-base text-medium">
+            <button class="text-indigo-600" @click="isOpen = !isOpen">
+              ToC
+            </button>
             <a href="#main-icons" class="text-indigo-600 hover:text-indigo-900"
               >Main icons</a
             >
@@ -206,7 +93,7 @@
               >Modifier 2</a
             >
           </footer>
-          <div class="mt-2 flex justify-end">
+          <div class="hidden mt-2 flex justify-end">
             <TSwitch v-model="debug" class="text-gray-900">Debug mode</TSwitch>
           </div>
         </header>
@@ -359,6 +246,9 @@
         </div>
       </div>
     </div>
+    <SlideOver v-model="isOpen">
+      <SymbolsetNav :entities="entities" :mod1s="mod1s" :mod2s="mod2s" />
+    </SlideOver>
   </div>
 </template>
 
@@ -378,6 +268,8 @@ import BoundingOctagon from "../components/BoundingOctagon.vue";
 import { symbolSets } from "../jmsml/symbolsets";
 import { affiliations } from "../jmsml";
 import { computed, ref, watch } from "vue";
+import SlideOver from "../components/SlideOver.vue";
+import SymbolsetNav from "../components/SymbolsetNav.vue";
 
 const r = affiliations["REALITY"];
 
@@ -386,6 +278,8 @@ const NON_UNIT_SYMBOL_SETS = ["25", "45", "46", "47"];
 export default {
   name: "SymbolsetView",
   components: {
+    SymbolsetNav,
+    SlideOver,
     BoundingOctagon,
     TSwitch,
     SymbolModifierRow,
@@ -416,7 +310,9 @@ export default {
       return id.replace(/\W/g, "_");
     }
 
-    return { symbolSets, isReady, debug, rowComponent, createId };
+    const isOpen = ref(false);
+
+    return { symbolSets, isReady, debug, rowComponent, createId, isOpen };
   },
   computed: {
     symbolSet() {

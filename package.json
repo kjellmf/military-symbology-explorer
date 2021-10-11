@@ -6,12 +6,14 @@
     "dev": "vite",
     "dev-host": "vite --host",
     "build": "vue-tsc --noEmit && vite build",
+    "build-n": "vite build",
     "serve": "vite preview",
     "lint-fix": "prettier --write ."
   },
   "dependencies": {
     "@headlessui/vue": "^1.4.1",
     "@heroicons/vue": "^1.0.4",
+    "@vueuse/core": "^6.5.3",
     "nanoid": "^3.1.29",
     "vue": "^3.2.20",
     "vue-router": "^4.0.11",
