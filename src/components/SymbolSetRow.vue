@@ -65,7 +65,7 @@
           <img class="absolute" :src="entityPath.hostile" loading="lazy" />
         </div>
       </div>
-      <p class="flex-shrink-0 text-gray-500 space-x-0.5">
+      <p class="flex-shrink-0 text-gray-500 space-x-1">
         <span :class="eClass">{{ eCode }}</span>
         <span :class="etClass">{{ etCode }}</span>
         <span :class="etsClass">{{ etsCode }}</span>

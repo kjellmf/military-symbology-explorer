@@ -22,11 +22,11 @@
         class="flex lg:space-x-2 justify-end w-full lg:w-auto"
         :class="{ '-mt-4': geometry === 'POINT' }"
       >
-        <div class="relative w-40 h-40 sm:w-48 sm:h-48">
+        <div class="relative w-40 h-40 sm:w-48 sm:h-48 lg:h-52 lg:h-52">
           <img class="absolute" :src="entityPath.friend" loading="lazy" />
         </div>
       </div>
-      <p class="flex-shrink-0 text-gray-500 space-x-0.5">
+      <p class="flex-shrink-0 text-gray-500 space-x-1">
         <span :class="eClass">{{ eCode }}</span>
         <span :class="etClass">{{ etCode }}</span>
         <span :class="etsClass">{{ etsCode }}</span>

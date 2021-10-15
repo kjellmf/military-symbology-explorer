@@ -1,7 +1,7 @@
 <template>
   <div class="h-full bg-white overflow-hidden flex">
     <aside class="hidden md:flex md:flex-shrink-0">
-      <div class="w-64 flex flex-col px-2">
+      <div class="w-64 lg:w-96 flex flex-col px-2">
         <div
           class="
             border-r border-gray-200
