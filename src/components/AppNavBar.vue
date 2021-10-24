@@ -3,7 +3,7 @@
     <nav class="bg-gray-800">
       <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
-          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
             <!-- Mobile menu button-->
             <button
               class="
@@ -69,18 +69,18 @@
               flex-1 flex
               items-center
               justify-center
-              sm:items-stretch sm:justify-start
+              md:items-stretch md:justify-start
             "
           >
             <div class="flex-shrink-0 flex items-center">
-              <div class="hidden sm:block text-white font-bold">
+              <div class="hidden md:block text-white font-bold">
                 Symbology explorer
               </div>
-              <div v-if="navbarTitle" class="sm:hidden text-white font-bold">
+              <div v-if="navbarTitle" class="md:hidden text-white font-bold">
                 {{ $route.meta.navbarTitle }}
               </div>
             </div>
-            <div class="hidden sm:block sm:ml-6">
+            <div class="hidden md:block md:ml-6">
               <div class="flex space-x-4">
                 <router-link
                   v-for="(link, i) in links"
