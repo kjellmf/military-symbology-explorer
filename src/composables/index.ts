@@ -1,10 +1,16 @@
 import { computed } from "vue";
+import { Entity, EntitySubType, EntityType } from "../jmsml/types";
 
 export function useEntityPathData({
   entity,
   entityType,
   entitySubType,
   entitiesPath,
+}: {
+  entity: Entity;
+  entityType: EntityType;
+  entitySubType: EntitySubType;
+  entitiesPath: string;
 }) {
   const cEntity = computed(() => entitySubType || entityType || entity);
   const eCode = computed(() => entity.digits || "00");

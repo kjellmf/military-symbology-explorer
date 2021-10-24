@@ -19,7 +19,7 @@
             py-2
             text-sm
             font-medium
-            text-gray-600
+            text-gray-700
             rounded-md
             hover:text-gray-900 hover:bg-gray-50
           "
@@ -45,7 +45,7 @@
             py-2
             text-sm
             font-medium
-            text-gray-600
+            text-gray-700
             rounded-md
             hover:text-gray-900 hover:bg-gray-50
           "
@@ -70,7 +70,7 @@
             py-2
             text-sm
             font-medium
-            text-gray-600
+            text-gray-700
             rounded-md
             hover:text-gray-900 hover:bg-gray-50
           "
@@ -94,8 +94,8 @@ export default defineComponent({
   name: "SymbolsetNav",
   props: {
     entities: { type: Array as PropType<Entity[]> },
-    mod1s: { type: Object as PropType<Modifier[]> },
-    mod2s: { type: Object as PropType<Modifier[]> },
+    mod1s: { type: Object as PropType<Map<string, Modifier>> },
+    mod2s: { type: Object as PropType<Map<string, Modifier>> },
   },
   setup(props) {
     return { createId };

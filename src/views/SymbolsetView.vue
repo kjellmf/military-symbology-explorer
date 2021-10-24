@@ -1,6 +1,6 @@
 <template>
   <div class="h-full bg-white overflow-hidden flex">
-    <aside class="hidden md:flex md:flex-shrink-0">
+    <aside class="hidden md:flex md:flex-shrink-0 bg-gray-100">
       <div class="w-64 lg:w-96 flex flex-col px-2">
         <div
           class="
@@ -22,7 +22,6 @@
               border-r border-gray-200
               pt-5
               pb-4
-              bg-white
               overflow-y-auto
             "
           >

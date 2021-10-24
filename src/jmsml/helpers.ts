@@ -67,28 +67,28 @@ export class Sic implements SicElements {
 }
 
 export class SicObject {
-  sic: Sic;
+  sic!: Sic;
   context?: Context;
-  standardIdentity: StandardIdentity;
-  symbolSet: SymbolSet;
-  status: Status;
-  hqtfd: HqtfD;
-  amplifier: Amplifier;
-  amplifierDescriptor: AmplifierDescriptor;
-  entity: Entity | null;
-  entityType: EntityType | null;
-  entitySubType: EntitySubType | null;
-  modifierOne: Modifier;
-  modifierTwo: Modifier;
-  currentEntity: EntityBase | null;
-  specialFn: string;
-  entityFn: string;
-  frameFn: string;
-  statusFn: string;
-  hqtfdFn: string;
-  amplifierFn: string;
-  modifierOneFn: string;
-  modifierTwoFn: string;
+  standardIdentity?: StandardIdentity;
+  symbolSet?: SymbolSet;
+  status!: Status;
+  hqtfd!: HqtfD;
+  amplifier!: Amplifier;
+  amplifierDescriptor!: AmplifierDescriptor;
+  entity!: Entity | null;
+  entityType!: EntityType | null;
+  entitySubType!: EntitySubType | null;
+  modifierOne!: Modifier;
+  modifierTwo!: Modifier;
+  currentEntity!: EntityBase | null;
+  specialFn!: string;
+  entityFn!: string;
+  frameFn!: string;
+  statusFn!: string;
+  hqtfdFn!: string;
+  amplifierFn!: string;
+  modifierOneFn!: string;
+  modifierTwoFn!: string;
 
   constructor(
     sic: string | Sic,
@@ -204,12 +204,12 @@ export class SicObject {
 function findSymbolObject(
   arr: IdentifierAttributeGroup[],
   digits: string
-): IdentifierAttributeGroup | null {
+): IdentifierAttributeGroup | undefined {
   let beginning = 0,
     end = arr.length,
     target;
   if (!end) {
-    return null;
+    return;
   }
   while (true) {
     target = (beginning + end) >> 1;
@@ -217,7 +217,7 @@ function findSymbolObject(
       (target === end || target === beginning) &&
       arr[target].digits !== digits
     ) {
-      return null;
+      return;
     }
     if (arr[target].digits > digits) {
       end = target;

@@ -26,9 +26,10 @@
                   h-full
                   flex flex-col
                   py-6
-                  bg-gray-50
+                  bg-gray-100
                   shadow-xl
                   overflow-y-scroll
+                  border-r
                 "
               >
                 <div class="px-4 sm:px-6">
