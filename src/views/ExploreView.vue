@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 block">
-    <header class="my-2 sm:mt-6">
+    <header class="hidden sm:block my-2 sm:mt-6">
       <h2
         class="
           text-lg
@@ -27,42 +27,46 @@
           sm:space-y-5 sm:pr-4
         "
       >
-        <LabelGroup label="Context" v-slot="{ id }"
-          ><CodeSelect
+        <LabelGroup label="Context" v-slot="{ id }">
+          <CodeSelect
             :id="id"
-            :values="SYMBOL_DATA.contexts"
+            :values="contexts"
             v-model="context"
             @focus="currentDigits = [2]"
             @blur="currentDigits = []"
           />
         </LabelGroup>
-        <CodeSelectGroup
-          label="Standard identity"
-          :values="SYMBOL_DATA.standardIdentities"
-          v-model="standardIdentity"
-          @focus="currentDigits = [3]"
-          @blur="currentDigits = []"
-        />
-
-        <CodeSelectGroup
-          v-model="symbolSet"
-          label="Symbol set"
-          :values="SYMBOL_DATA.symbolSets"
-          @focus="currentDigits = [4, 5]"
-          @blur="currentDigits = []"
-          ><router-link
+        <LabelGroup label="Standard identity" v-slot="{ id }">
+          <CodeSelect
+            :id="id"
+            :values="standardIdentities"
+            v-model="standardIdentity"
+            @focus="currentDigits = [3]"
+            @blur="currentDigits = []"
+          />
+        </LabelGroup>
+        <LabelGroup label="Symbol set" v-slot="{ id }">
+          <CodeSelect
+            v-model="symbolSet"
+            :values="symbolSets"
+            @focus="currentDigits = [4, 5]"
+            @blur="currentDigits = []"
+          >
+          </CodeSelect>
+          <router-link
             :to="symbolsetRoute"
             class="flex-shrink-0 ml-1 btn self-end py-3 sm:py-2.5"
-            >Browse</router-link
-          ></CodeSelectGroup
-        >
-        <CodeSelectGroup
-          label="Status"
-          :values="SYMBOL_DATA.statuses"
-          v-model="status"
-          @focus="currentDigits = [6]"
-          @blur="currentDigits = []"
-        />
+            >Browse
+          </router-link>
+        </LabelGroup>
+        <LabelGroup label="Status" v-slot="{ id }">
+          <CodeSelect
+            :values="statuses"
+            v-model="status"
+            @focus="currentDigits = [6]"
+            @blur="currentDigits = []"
+          />
+        </LabelGroup>
         <CodeSelectGroup
           label="HQTFDummy"
           :values="SYMBOL_DATA.hqtfDummies"
@@ -142,7 +146,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { parseSic, SYMBOL_DATA } from "../jmsml/types";
 import CodeSelectGroup from "../components/CodeSelectGroup.vue";
 import MilSymbol from "../components/MilSymbol.vue";
@@ -150,8 +154,11 @@ import SidcTable from "./SidcTable.vue";
 import { SYMBOL_SET_ROUTE } from "../router";
 import LabelGroup from "../components/LabelGroup.vue";
 import CodeSelect from "../components/CodeSelect.vue";
+import { defineComponent } from "vue";
+import { contexts, standardIdentities, statuses } from "../jmsml";
+import { symbolSets } from "../jmsml/symbolsets";
 
-export default {
+export default defineComponent({
   name: "ExploreView",
   components: { CodeSelect, LabelGroup, SidcTable, MilSymbol, CodeSelectGroup },
   props: { sidc: String },
@@ -171,6 +178,10 @@ export default {
       currentDigits: [],
     };
   },
+  setup(props, { emit }) {
+    return { contexts, standardIdentities, symbolSets, statuses };
+  },
+
   computed: {
     entities() {
       const a = this.symbolSet.entities || [];
@@ -228,6 +239,6 @@ export default {
       console.log(txt, e);
     },
   },
-};
+});
 </script>
 <style></style>

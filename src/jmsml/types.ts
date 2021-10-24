@@ -20,7 +20,7 @@ export type IconType =
 export interface IdentifierAttributeGroup {
   id: string;
   digits: string;
-  label?: string;
+  label: string;
   labelAlias?: string;
   description?: string;
   remarks?: string;

@@ -22,20 +22,24 @@
   </select>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent, PropType } from "vue";
+import { useVModel } from "@vueuse/core";
+import { IdentifierAttributeGroup } from "../jmsml/types";
+
+export default defineComponent({
   name: "CodeSelect",
-  props: { values: Array, modelValue: Object },
-  emits: ["update:modelValue"],
-  computed: {
-    value: {
-      get() {
-        return this.modelValue;
-      },
-      set(value) {
-        this.$emit("update:modelValue", value);
-      },
+  props: {
+    values: { type: Array as PropType<IdentifierAttributeGroup[]> },
+    modelValue: {
+      type: Object as PropType<IdentifierAttributeGroup>,
     },
   },
-};
+  emits: ["update:modelValue"],
+
+  setup(props, { emit }) {
+    const value = useVModel(props, "modelValue", emit);
+    return { value };
+  },
+});
 </script>

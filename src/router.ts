@@ -29,7 +29,7 @@ const routes: Array<RouteRecordRaw> = [
     name: EXPLORE_ROUTE,
     component: ExploreView,
     props: true,
-    meta: { navbarTitle: "SIC explorer" },
+    meta: { navbarTitle: "Symbol code explorer" },
   },
   {
     path: "/symbolset/:symbolSetCode?",

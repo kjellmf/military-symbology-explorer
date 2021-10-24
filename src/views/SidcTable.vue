@@ -15,7 +15,9 @@
     </div>
     <div
       class="
-        grid grid-cols-10
+        hidden
+        md:grid
+        grid-cols-10
         justify-items-stretch
         text-center text-sm text-gray-500
       "
@@ -43,7 +45,9 @@
     </div>
     <div
       class="
-        grid grid-cols-10
+        hidden
+        md:grid
+        grid-cols-10
         justify-items-stretch
         text-center text-sm text-gray-500
       "
@@ -56,6 +60,7 @@
     </div>
   </section>
 </template>
+
 <script>
 export default {
   name: "SidcTable",
