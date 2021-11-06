@@ -130,12 +130,18 @@
           justify-center
           sm:block
           -mx-4
-          shadow
+          shadow-md
+          flex flex-col
         "
       >
         <div class="w-full h-48 bg-gray-50">
           <MilSymbol />
         </div>
+        <SidcLabel
+          :sic="sic"
+          :current-digits="currentDigits"
+          class="sm:hidden border-b border-gray-300"
+        />
         <SidcTable
           class="hidden sm:block"
           :sic="sic"
@@ -157,10 +163,18 @@ import CodeSelect from "../components/CodeSelect.vue";
 import { defineComponent } from "vue";
 import { contexts, standardIdentities, statuses } from "../jmsml";
 import { symbolSets } from "../jmsml/symbolsets";
+import SidcLabel from "../components/SidcLabel.vue";
 
 export default defineComponent({
   name: "ExploreView",
-  components: { CodeSelect, LabelGroup, SidcTable, MilSymbol, CodeSelectGroup },
+  components: {
+    SidcLabel,
+    CodeSelect,
+    LabelGroup,
+    SidcTable,
+    MilSymbol,
+    CodeSelectGroup,
+  },
   props: { sidc: String },
   data() {
     return {
@@ -241,4 +255,3 @@ export default defineComponent({
   },
 });
 </script>
-<style></style>
