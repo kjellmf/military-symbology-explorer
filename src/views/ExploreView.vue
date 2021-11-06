@@ -120,7 +120,7 @@
       </section>
 
       <section
-        id="view-symbol "
+        id="view-symbol"
         class="
           sticky
           top-0
@@ -150,7 +150,7 @@
 import { parseSic, SYMBOL_DATA } from "../jmsml/types";
 import CodeSelectGroup from "../components/CodeSelectGroup.vue";
 import MilSymbol from "../components/MilSymbol.vue";
-import SidcTable from "./SidcTable.vue";
+import SidcTable from "../components/SidcTable.vue";
 import { SYMBOL_SET_ROUTE } from "../router";
 import LabelGroup from "../components/LabelGroup.vue";
 import CodeSelect from "../components/CodeSelect.vue";

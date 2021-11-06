@@ -255,7 +255,6 @@
 import { SVG_PATH } from "../jmsml/types";
 import CodeSelectGroup from "../components/CodeSelectGroup.vue";
 import MilSymbol from "../components/MilSymbol.vue";
-import SidcTable from "./SidcTable.vue";
 import SymbolSetRow from "../components/SymbolSetRow.vue";
 import SymbolSetRowNonUnit from "../components/SymbolSetRowNonUnit.vue";
 import SectionHeading from "../components/SectionHeading.vue";
@@ -284,7 +283,6 @@ export default {
     SymbolModifierRow,
     SectionHeading,
     SymbolSetRow,
-    SidcTable,
     MilSymbol,
     CodeSelectGroup,
   },

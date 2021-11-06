@@ -61,20 +61,23 @@
   </section>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { computed, defineComponent, PropType } from "vue";
+
+export default defineComponent({
   name: "SidcTable",
-  props: { sic: { type: String, required: true }, currentDigits: Array },
-  computed: {
-    setA() {
-      return [...this.sic].slice(0, 10);
-    },
-    setB() {
-      return [...this.sic].slice(10);
-    },
+  props: {
+    sic: { type: String, required: true },
+    currentDigits: Array as PropType<number[]>,
   },
-};
+  setup(props) {
+    const setA = computed(() => [...props.sic].slice(0, 10));
+    const setB = computed(() => [...props.sic].slice(10));
+    return { setA, setB };
+  },
+});
 </script>
+
 <style>
 #sidc-table p {
   @apply border border-gray-100 py-2 px-0.5 sm:p-2 overflow-ellipsis overflow-hidden;
