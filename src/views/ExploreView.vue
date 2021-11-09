@@ -220,7 +220,7 @@ export default defineComponent({
     symbolsetRoute() {
       return {
         name: SYMBOL_SET_ROUTE,
-        params: { symbolSetCode: this.symbolSetCode },
+        params: { symbolSetCode: this.symbolSet.digits },
       };
     },
     sic() {
