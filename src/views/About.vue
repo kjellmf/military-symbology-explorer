@@ -57,19 +57,11 @@
     <h2>Technical details</h2>
 
     <p>
-      The first version of this site was published in 2015 when Angular 1 was
-      all the rage. Since then I've started on several half-baked rewrites using
-      different frameworks and libraries. Fast forward to 2020. The site looks
-      exactly the same as in 2015. The content is still solid, but the site is
-      not usable on small screens. This was becoming embarrassing. Time for a
-      final rewrite.
-    </p>
-
-    <p>
-      The 2021 edition of the site has mostly the same content but it works much
-      better on mobile devices and different screen resolutions. Angular has
-      been replaced with Vue 3 and instead of Bootstrap I now use Tailwind CSS
-      for layout and styling.
+      The first version of this site was published in 2015. The 2021 edition of
+      the site has mostly the same content but it works much better on mobile
+      devices and different screen resolutions. Angular has been replaced with
+      Vue 3 and instead of Bootstrap I now use Tailwind CSS for layout and
+      styling.
     </p>
 
     <p>

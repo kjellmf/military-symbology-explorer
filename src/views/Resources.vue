@@ -53,9 +53,13 @@
         generating military map symbols (Java, 2525B)
       </li>
       <li>
-        <a href="http://milsym.codeplex.com/">MilSym</a>
+        <a href="https://github.com/HillHouse/MilSym">MilSym</a>
         Provides C# WPF & Silverlight 4.0, XAML-based, Bing & Esri map symbology
         (2525C)
+      </li>
+      <li>
+        <a href="http://www.mapsymbs.com/">Tom Mouat's mapsymbs.com</a> The
+        classic TrueType military symbology font.
       </li>
     </ul>
 
@@ -65,8 +69,9 @@
       <li>
         <a
           href="https://www.gs-soft.com/CMS/en/products/mssstick-mss-and-milx/mss"
-          >MSS - The Military Symbol Service</a
-        >.
+          >MSS - The Military Symbol Service </a
+        >. Check out their free online symbology editor at
+        <a href="https://www.symbol.army/about/en.html">symbol.army</a>.
       </li>
     </ul>
 
@@ -95,16 +100,14 @@
       based). Still under development, but looks very promising!
     </p>
 
+    <h2>Other resources</h2>
+
     <ul>
-      <li><a href="https://www.symbol.army/about/en.html">symbol.army</a>.</li>
-      <li>
-        <a href="https://odin.syncpoint.io/en/"
-          >ODIN open source command and control information system</a
-        >.
-      </li>
       <li>
         <a href="https://www.project44.ca/">Project'44 the road to liberation</a
-        >.
+        >. An interactive map of the Western Front of the Second World War.
+        Their <a href="https://map.project44.ca/story-maps"> story maps</a> are
+        fantastic!
       </li>
     </ul>
   </article>
