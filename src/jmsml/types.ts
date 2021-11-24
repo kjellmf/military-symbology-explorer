@@ -132,6 +132,7 @@ export interface SicElements {
   hqtfd: string;
   amplifier: string;
   amplifierDescriptor: string;
+  echelonMobility: string;
   entity: string;
   entityType: string;
   entitySubType: string;
@@ -149,6 +150,7 @@ export function parseSic(sic: string): SicElements {
     hqtfd: sic.substr(7, 1),
     amplifier: sic.substr(8, 1),
     amplifierDescriptor: sic.substr(9, 1),
+    echelonMobility: sic.substr(8, 2),
     entity: sic.substr(10, 2),
     entityType: sic.substr(12, 2),
     entitySubType: sic.substr(14, 2),

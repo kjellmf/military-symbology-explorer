@@ -50,7 +50,7 @@ export default defineComponent({
         { code: s.symbolSet, highlight: check([4, 5]) },
         { code: s.status, highlight: check([6]) },
         { code: s.hqtfd, highlight: check([7]) },
-        { code: s.amplifierDescriptor, highlight: check([8, 9]) },
+        { code: s.echelonMobility, highlight: check([8, 9]) },
         { code: s.entity, highlight: check([10, 11]) },
         { code: s.entityType, highlight: check([12, 13]) },
         { code: s.entitySubType, highlight: check([14, 15]) },

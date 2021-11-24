@@ -16,7 +16,11 @@
       </h2>
     </header>
     <div class="flex flex-col-reverse sm:flex-row">
-      <SidcTable class="sm:hidden" :sic="sic" :current-digits="currentDigits" />
+      <SidcTable
+        class="sm:hidden"
+        :sic="cSidc"
+        :current-digits="currentDigits"
+      />
       <section
         id="symbol-form"
         class="
@@ -28,7 +32,7 @@
         "
       >
         <LabelGroup label="Context" v-slot="{ id }">
-          <CodeSelect
+          <CodeSelect2
             :id="id"
             :values="contexts"
             v-model="context"
@@ -37,7 +41,7 @@
           />
         </LabelGroup>
         <LabelGroup label="Standard identity" v-slot="{ id }">
-          <CodeSelect
+          <CodeSelect2
             :id="id"
             :values="standardIdentities"
             v-model="standardIdentity"
@@ -46,13 +50,13 @@
           />
         </LabelGroup>
         <LabelGroup label="Symbol set" v-slot="{ id }">
-          <CodeSelect
+          <CodeSelect2
             v-model="symbolSet"
             :values="symbolSets"
             @focus="currentDigits = [4, 5]"
             @blur="currentDigits = []"
           >
-          </CodeSelect>
+          </CodeSelect2>
           <router-link
             :to="symbolsetRoute"
             class="flex-shrink-0 ml-1 btn self-end py-3 sm:py-2.5"
@@ -60,30 +64,32 @@
           </router-link>
         </LabelGroup>
         <LabelGroup label="Status" v-slot="{ id }">
-          <CodeSelect
+          <CodeSelect2
             :values="statuses"
             v-model="status"
             @focus="currentDigits = [6]"
             @blur="currentDigits = []"
           />
         </LabelGroup>
-        <CodeSelectGroup
-          label="HQTFDummy"
-          :values="SYMBOL_DATA.hqtfDummies"
-          @focus="currentDigits = [7]"
-          @blur="currentDigits = []"
-        />
-        <CodeSelectGroup
-          label="Amplifier"
-          :values="entities"
-          @focus="currentDigits = [8]"
-          @blur="currentDigits = []"
-        />
-        <CodeSelectGroup
-          :values="entities"
-          @focus="currentDigits = [9]"
-          @blur="currentDigits = []"
-        />
+        <LabelGroup label="HQTFDummy" v-slot="{ id }">
+          <CodeSelect2
+            :id="id"
+            v-model="hqtfDummy"
+            :values="hqtfDummies"
+            @focus="currentDigits = [7]"
+            @blur="currentDigits = []"
+          />
+        </LabelGroup>
+        <LabelGroup label="Amplifier" v-slot="{ id }">
+          <CodeSelect2
+            :id="id"
+            :groups="echelonMobilityItems"
+            v-model="echelonMobility"
+            @focus="currentDigits = [8, 9]"
+            @blur="currentDigits = []"
+          />
+        </LabelGroup>
+
         <CodeSelectGroup
           label="Entity"
           :values="entities"
@@ -138,13 +144,13 @@
           <MilSymbol />
         </div>
         <SidcLabel
-          :sic="sic"
+          :sic="cSidc"
           :current-digits="currentDigits"
           class="sm:hidden border-b border-gray-300"
         />
         <SidcTable
           class="hidden sm:block"
-          :sic="sic"
+          :sic="cSidc"
           :current-digits="currentDigits"
         />
       </section>
@@ -153,21 +159,24 @@
 </template>
 
 <script lang="ts">
-import { parseSic, SYMBOL_DATA } from "../jmsml/types";
+import { parseSic } from "../jmsml/types";
 import CodeSelectGroup from "../components/CodeSelectGroup.vue";
 import MilSymbol from "../components/MilSymbol.vue";
 import SidcTable from "../components/SidcTable.vue";
 import { SYMBOL_SET_ROUTE } from "../router";
 import LabelGroup from "../components/LabelGroup.vue";
 import CodeSelect from "../components/CodeSelect.vue";
-import { defineComponent } from "vue";
-import { contexts, standardIdentities, statuses } from "../jmsml";
+import { computed, defineComponent } from "vue";
+import { contexts, hqtfDummies, standardIdentities, statuses } from "../jmsml";
 import { symbolSets } from "../jmsml/symbolsets";
 import SidcLabel from "../components/SidcLabel.vue";
+import CodeSelect2 from "../components/CodeSelect2.vue";
+import { useSymbolItems } from "../composables/symbolData";
 
 export default defineComponent({
   name: "ExploreView",
   components: {
+    CodeSelect2,
     SidcLabel,
     CodeSelect,
     LabelGroup,
@@ -178,22 +187,55 @@ export default defineComponent({
   props: { sidc: String },
   data() {
     return {
-      SYMBOL_DATA,
-      symbolSet: SYMBOL_DATA.symbolSets[1],
-      context: {},
-      standardIdentity: {},
-      status: {},
-      hqtfDummy: {},
-      entity: {},
-      entityType: {},
-      entitySubType: {},
-      modifierOne: {},
-      modifierTwo: {},
       currentDigits: [],
     };
   },
   setup(props, { emit }) {
-    return { contexts, standardIdentities, symbolSets, statuses };
+    const sidc = "10031000161211004600";
+    const {
+      context,
+      standardIdentity,
+      symbolSet,
+      status,
+      hqtfDummy,
+      echelonMobility,
+      entity,
+      entityType,
+      entitySubType,
+      mod1,
+      mod2,
+      cSidc,
+      echelonMobilityItems,
+    } = useSymbolItems(sidc);
+
+    const symbolsetRoute = computed(() => {
+      return {
+        name: SYMBOL_SET_ROUTE,
+        params: { symbolSetCode: symbolSet.value },
+      };
+    });
+
+    return {
+      contexts,
+      context,
+      standardIdentity,
+      symbolSet,
+      status,
+      hqtfDummy,
+      standardIdentities,
+      symbolSets,
+      statuses,
+      hqtfDummies,
+      entity,
+      entityType,
+      entitySubType,
+      mod1,
+      mod2,
+      cSidc,
+      symbolsetRoute,
+      echelonMobilityItems,
+      echelonMobility,
+    };
   },
 
   computed: {
@@ -216,28 +258,6 @@ export default defineComponent({
 
     mod2s() {
       return [];
-    },
-    symbolsetRoute() {
-      return {
-        name: SYMBOL_SET_ROUTE,
-        params: { symbolSetCode: this.symbolSet.digits },
-      };
-    },
-    sic() {
-      return (
-        "10" +
-        (this.context.digits || "0") +
-        (this.standardIdentity.digits || "0") +
-        (this.symbolSet.digits || "00") +
-        (this.status.digits || "0") +
-        (this.hqtfDummy.digits || "0") +
-        "18" +
-        (this.entity.digits || "00") +
-        (this.entityType.digits || "00") +
-        (this.entitySubType.digits || "00") +
-        (this.modifierOne.digits || "00") +
-        (this.modifierTwo.digits || "00")
-      );
     },
   },
   methods: {

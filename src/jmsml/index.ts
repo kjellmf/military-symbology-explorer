@@ -570,7 +570,7 @@ export const hqtfDummies: HqtfD[] = [
   {
     digits: "0",
     id: "NA",
-    label: "Unknown",
+    label: "Not Applicable",
   },
   {
     digits: "1",
@@ -2883,4 +2883,10 @@ export const standardIdentityGroupMapping = {
   SI_FRIEND: "SIG_FRIEND",
 };
 
+export const UNIT_SYMBOLSET_VALUE = "10";
+export const CIVILIAN_SYMBOLSET_VALUE = "11";
+export const EQUIPMENT_SYMBOLSET_VALUE = "15";
 export const CONTROL_MEASURE_SYMBOLSET_VALUE = "25";
+export const DISMOUNTED_SYMBOLSET_VALUE = "27";
+export const SURFACE_SYMBOLSET_VALUE = "30";
+export const SUBSURFACE_SYMBOLSET_VALUE = "35";
