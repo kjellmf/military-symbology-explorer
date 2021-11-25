@@ -6,13 +6,7 @@
           {{ entityType.label }}
         </p>
         <p
-          class="
-            font-medium
-            text-base text-gray-900
-            max-w-xs
-            sm:max-w-sm
-            lg:max-w-lg
-          "
+          class="font-medium text-base text-gray-900 max-w-xs sm:max-w-sm lg:max-w-lg"
         >
           {{ cEntity.label }}
         </p>
@@ -38,17 +32,7 @@
     </p>
     <p v-if="debug && cEntity.icon" class="mt-2">
       <span
-        class="
-          inline-flex
-          items-center
-          px-2.5
-          py-0.5
-          rounded-full
-          text-xs
-          font-medium
-          bg-yellow-100
-          text-yellow-800
-        "
+        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800"
       >
         icon: {{ cEntity.icon }}
       </span>

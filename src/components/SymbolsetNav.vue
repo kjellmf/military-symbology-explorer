@@ -11,18 +11,7 @@
         <a
           v-for="entity in entities"
           :href="`#${entity.id}`"
-          class="
-            group
-            flex
-            items-center
-            px-3
-            py-2
-            text-sm
-            font-medium
-            text-gray-700
-            rounded-md
-            hover:text-gray-900 hover:bg-gray-50
-          "
+          class="group flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
         >
           <span class="truncate">{{ entity.label }}</span>
         </a>
@@ -37,18 +26,7 @@
         <a
           v-for="[category, values] in mod1s"
           :href="`#mod1_${createId(category)}`"
-          class="
-            group
-            flex
-            items-center
-            px-3
-            py-2
-            text-sm
-            font-medium
-            text-gray-700
-            rounded-md
-            hover:text-gray-900 hover:bg-gray-50
-          "
+          class="group flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
         >
           <span class="truncate">{{ category }}</span>
         </a>
@@ -62,18 +40,7 @@
         <a
           v-for="[category, values] in mod2s"
           :href="`#mod2_${createId(category)}`"
-          class="
-            group
-            flex
-            items-center
-            px-3
-            py-2
-            text-sm
-            font-medium
-            text-gray-700
-            rounded-md
-            hover:text-gray-900 hover:bg-gray-50
-          "
+          class="group flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
         >
           <span class="truncate">{{ category }}</span>
         </a>

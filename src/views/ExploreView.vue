@@ -2,15 +2,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 block">
     <header class="hidden sm:block my-2 sm:mt-6">
       <h2
-        class="
-          text-lg
-          font-bold
-          leading-7
-          text-gray-900
-          sm:text-3xl sm:truncate
-          text-center
-          sm:text-left
-        "
+        class="text-lg font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate text-center sm:text-left"
       >
         Symbol identification code explorer
       </h2>
@@ -23,13 +15,7 @@
       />
       <section
         id="symbol-form"
-        class="
-          sm:max-w-md sm:flex-none
-          mt-6
-          sm:mt-5
-          space-y-6
-          sm:space-y-5 sm:pr-4
-        "
+        class="sm:max-w-md sm:flex-none mt-6 sm:mt-5 space-y-6 sm:space-y-5 sm:pr-4"
       >
         <LabelGroup label="Context" v-slot="{ id }">
           <CodeSelect2
@@ -133,18 +119,7 @@
 
       <section
         id="view-symbol"
-        class="
-          sticky
-          top-0
-          sm:static
-          bg-white
-          flex
-          justify-center
-          sm:block
-          -mx-4
-          shadow-md
-          flex flex-col
-        "
+        class="sticky top-0 sm:static bg-white flex justify-center sm:block -mx-4 shadow-md flex flex-col"
       >
         <div class="w-full h-48 bg-gray-50">
           <MilSymbol />

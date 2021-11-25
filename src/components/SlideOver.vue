@@ -22,15 +22,7 @@
           >
             <div class="w-screen max-w-xs sm:max-w-md">
               <div
-                class="
-                  h-full
-                  flex flex-col
-                  py-6
-                  bg-gray-100
-                  shadow-xl
-                  overflow-y-scroll
-                  border-r
-                "
+                class="h-full flex flex-col py-6 bg-gray-100 shadow-xl overflow-y-scroll border-r"
               >
                 <div class="px-4 sm:px-6">
                   <div class="flex items-start justify-between">
@@ -39,16 +31,7 @@
                     </DialogTitle>
                     <div class="ml-3 h-7 flex items-center">
                       <button
-                        class="
-                          bg-gray-50
-                          rounded-md
-                          text-gray-400
-                          hover:text-gray-500
-                          focus:outline-none
-                          focus:ring-2
-                          focus:ring-offset-2
-                          focus:ring-indigo-500
-                        "
+                        class="bg-gray-50 rounded-md text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                         @click="open = false"
                       >
                         <span class="sr-only">Close panel</span>

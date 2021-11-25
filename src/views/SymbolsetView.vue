@@ -3,13 +3,7 @@
     <aside class="hidden md:flex md:flex-shrink-0 bg-gray-100">
       <div class="w-64 lg:w-96 flex flex-col px-2">
         <div
-          class="
-            border-r border-gray-200
-            pt-5
-            pb-4
-            flex flex-col flex-grow
-            overflow-y-auto
-          "
+          class="border-r border-gray-200 pt-5 pb-4 flex flex-col flex-grow overflow-y-auto"
         >
           <div class="px-3">
             <TSwitch v-model="debug" class="text-base text-gray-900"
@@ -17,13 +11,7 @@
             </TSwitch>
           </div>
           <div
-            class="
-              flex flex-col flex-grow
-              border-r border-gray-200
-              pt-5
-              pb-4
-              overflow-y-auto
-            "
+            class="flex flex-col flex-grow border-r border-gray-200 pt-5 pb-4 overflow-y-auto"
           >
             <SymbolsetNav :entities="entities" :mod1s="mod1s" :mod2s="mod2s" />
           </div>
@@ -33,31 +21,10 @@
     <div class="flex-1">
       <div class="w-full h-full flex flex-col">
         <header
-          class="
-            w-full
-            flex-none
-            my-2
-            sm:mt-6
-            max-w-5xl
-            mx-auto
-            px-4
-            sm:px-6
-            block
-            pb-2
-          "
+          class="w-full flex-none my-2 sm:mt-6 max-w-5xl mx-auto px-4 sm:px-6 block pb-2"
         >
           <h2
-            class="
-              hidden
-              lg:block
-              text-lg
-              font-bold
-              text-gray-900
-              lg:text-3xl
-              sm:truncate
-              text-center
-              sm:text-left
-            "
+            class="hidden lg:block text-lg font-bold text-gray-900 lg:text-3xl sm:truncate text-center sm:text-left"
           >
             Symbol set browser
           </h2>
@@ -107,19 +74,7 @@
                 <template v-for="entity in entities">
                   <p class="h-0" :id="entity.id"></p>
                   <p
-                    class="
-                      z-10
-                      block
-                      px-4
-                      py-3
-                      bg-gray-200
-                      border-t-2
-                      sticky
-                      top-0
-                      text-sm
-                      font-bold
-                      shadow-sm
-                    "
+                    class="z-10 block px-4 py-3 bg-gray-200 border-t-2 sticky top-0 text-sm font-bold shadow-sm"
                   >
                     {{ entity.label }}
                   </p>
@@ -165,29 +120,14 @@
                 <template v-for="[category, modifiers] in mod1s">
                   <p class="h-0" :id="'mod1_' + createId(category)"></p>
                   <header
-                    class="
-                      z-10
-                      block
-                      px-4
-                      py-3
-                      bg-gray-200
-                      border-t-2
-                      sticky
-                      top-0
-                      shadow-sm
-                      flex
-                      justify-between
-                    "
+                    class="z-10 block px-4 py-3 bg-gray-200 border-t-2 sticky top-0 shadow-sm flex justify-between"
                   >
                     <p class="text-sm font-bold">{{ category }}</p>
                     <p class="text-xs">Mod. 1</p>
                   </header>
 
                   <div
-                    class="
-                      md:grid md:gap-x-4 md:grid-cols-2
-                      divide-y divide-gray-300
-                    "
+                    class="md:grid md:gap-x-4 md:grid-cols-2 divide-y divide-gray-300"
                   >
                     <template v-for="modifier in modifiers">
                       <SymbolModifierRow
@@ -206,29 +146,14 @@
                 <template v-for="[category, modifiers] in mod2s">
                   <p class="h-0" :id="'mod2_' + createId(category)"></p>
                   <header
-                    class="
-                      z-10
-                      block
-                      px-4
-                      py-3
-                      bg-gray-200
-                      border-t-2
-                      sticky
-                      top-0
-                      shadow-sm
-                      flex
-                      justify-between
-                    "
+                    class="z-10 block px-4 py-3 bg-gray-200 border-t-2 sticky top-0 shadow-sm flex justify-between"
                   >
                     <p class="text-sm font-bold">{{ category }}</p>
                     <p class="text-xs">Mod. 2</p>
                   </header>
 
                   <div
-                    class="
-                      md:grid md:gap-x-4 md:grid-cols-2
-                      divide-y divide-gray-300
-                    "
+                    class="md:grid md:gap-x-4 md:grid-cols-2 divide-y divide-gray-300"
                   >
                     <template v-for="modifier in modifiers">
                       <SymbolModifierRow

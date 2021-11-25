@@ -1,18 +1,6 @@
 <template>
   <article
-    class="
-      max-w-3xl
-      lg:max-w-4xl
-      mx-auto
-      px-4
-      sm:px-6
-      lg:px-8
-      mt-8
-      prose prose-sm
-      sm:prose
-      lg:prose-lg
-      pb-10
-    "
+    class="max-w-3xl lg:max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 prose prose-sm sm:prose lg:prose-lg pb-10"
   >
     <h1>Resources</h1>
 

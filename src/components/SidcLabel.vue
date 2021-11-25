@@ -1,16 +1,7 @@
 <template>
   <section
     id=""
-    class="
-      bg-gray-200
-      px-4
-      text-base
-      font-lg
-      flex
-      justify-center
-      text-gray-700
-      font-medium
-    "
+    class="bg-gray-200 px-4 text-base font-lg flex justify-center text-gray-700 font-medium"
   >
     <p
       v-for="{ code, highlight } in groups"

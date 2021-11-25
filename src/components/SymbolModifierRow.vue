@@ -7,14 +7,7 @@
         </p>
       </div>
       <div
-        class="
-          flex-shrink-0 flex
-          space-x-2
-          justify-between
-          sm:justify-start
-          -mt-12
-          mr-2
-        "
+        class="flex-shrink-0 flex space-x-2 justify-between sm:justify-start -mt-12 mr-2"
       >
         <div class="relative w-32 h-28">
           <BoundingOctagonV
