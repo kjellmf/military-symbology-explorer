@@ -89,28 +89,34 @@
             @blur="currentDigits = []"
           />
         </LabelGroup>
+        <LabelGroup label="Entity" v-slot="{ id }">
+          <CodeSelect2
+            :id="id"
+            :values="entityItems"
+            v-model="entity"
+            @focus="currentDigits = [10, 11]"
+            @blur="currentDigits = []"
+          />
+        </LabelGroup>
+        <LabelGroup label="Entity type" v-slot="{ id }">
+          <CodeSelect2
+            :id="id"
+            :values="entityTypeItems"
+            v-model="entityType"
+            @focus="currentDigits = [12, 13]"
+            @blur="currentDigits = []"
+          />
+        </LabelGroup>
+        <LabelGroup label="Entity subtype" v-slot="{ id }">
+          <CodeSelect2
+            :id="id"
+            :values="entitySubTypeItems"
+            v-model="entitySubType"
+            @focus="currentDigits = [14, 15]"
+            @blur="currentDigits = []"
+          />
+        </LabelGroup>
 
-        <CodeSelectGroup
-          label="Entity"
-          :values="entities"
-          v-model="entity"
-          @focus="currentDigits = [10, 11]"
-          @blur="currentDigits = []"
-        />
-        <CodeSelectGroup
-          label="Entity type"
-          :values="entityTypes"
-          v-model="entityType"
-          @focus="currentDigits = [12, 13]"
-          @blur="currentDigits = []"
-        />
-        <CodeSelectGroup
-          label="Entity subtype"
-          :values="entitySubTypes"
-          v-model="entitySubType"
-          @focus="currentDigits = [14, 15]"
-          @blur="currentDigits = []"
-        />
         <CodeSelectGroup
           label="Sector one modifier"
           :values="mod1s"
@@ -206,6 +212,9 @@ export default defineComponent({
       mod2,
       cSidc,
       echelonMobilityItems,
+      entityItems,
+      entityTypeItems,
+      entitySubTypeItems,
     } = useSymbolItems(sidc);
 
     const symbolsetRoute = computed(() => {
@@ -235,42 +244,19 @@ export default defineComponent({
       symbolsetRoute,
       echelonMobilityItems,
       echelonMobility,
+      entityItems,
+      entityTypeItems,
+      entitySubTypeItems,
     };
   },
 
   computed: {
-    entities() {
-      const a = this.symbolSet.entities || [];
-      return a;
-    },
-
-    entityTypes() {
-      return this.entity.entityTypes || [];
-    },
-
-    entitySubTypes() {
-      return this.entityType.entitySubTypes || [];
-    },
-
     mod1s() {
       return [];
     },
 
     mod2s() {
       return [];
-    },
-  },
-  methods: {
-    setFromSic(sic) {
-      const parts = parseSic(sic);
-      this.context = parts.context;
-      this.standardIdentity = parts.standardIdentity;
-      this.symbolSetCode = parts.symbolSet;
-      this.status = parts.status;
-      this.hqtfDummy = parts.hqtfd;
-    },
-    test(txt, e) {
-      console.log(txt, e);
     },
   },
 });

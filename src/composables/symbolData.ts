@@ -9,6 +9,13 @@ import {
   SURFACE_SYMBOLSET_VALUE,
   UNIT_SYMBOLSET_VALUE,
 } from "../jmsml";
+import { symbolSets } from "../jmsml/symbolsets";
+
+const UNSPECIFIED_TWO_DIGITS = {
+  digits: "00",
+  label: "Unspecified",
+  id: "UNSPECIFIED_2_MOD",
+};
 
 export function useSymbolItems(sidc: MaybeRef<string>) {
   const {
@@ -53,6 +60,36 @@ export function useSymbolItems(sidc: MaybeRef<string>) {
       });
   });
 
+  const entityItems = computed(() => {
+    const cSymbolSet = symbolSets.find((s) => s.digits === symbolSet.value);
+    return (cSymbolSet && cSymbolSet.entities) || [];
+  });
+
+  const entityTypeItems = computed(() => {
+    const cEntityType = entityItems.value.find(
+      (e) => e.digits === entity.value
+    );
+    return (
+      (cEntityType && cEntityType.entityTypes) || [
+        {
+          digits: "00",
+          label: "Unspecified",
+          id: "UNSPECIFIED",
+          icon: "NA",
+          geometryType: "NA",
+          entitySubTypes: [],
+        },
+      ]
+    );
+  });
+
+  const entitySubTypeItems = computed(() => {
+    const cEntitySubType = entityTypeItems.value.find(
+      (e) => e.digits === entityType.value
+    );
+    return (cEntitySubType && cEntitySubType.entitySubTypes) || [];
+  });
+
   //
 
   return {
@@ -69,6 +106,9 @@ export function useSymbolItems(sidc: MaybeRef<string>) {
     mod2,
     cSidc,
     echelonMobilityItems,
+    entityItems,
+    entityTypeItems,
+    entitySubTypeItems,
   };
 }
 
