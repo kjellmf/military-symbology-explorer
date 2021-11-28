@@ -14,7 +14,7 @@ import { symbolSets } from "../jmsml/symbolsets";
 const UNSPECIFIED_TWO_DIGITS = {
   digits: "00",
   label: "Unspecified",
-  id: "UNSPECIFIED_2_MOD",
+  id: "UNSPECIFIED_2",
 };
 
 export function useSymbolItems(sidc: MaybeRef<string>) {
@@ -153,7 +153,12 @@ function useIconItems(
     const cEntityType = entityItems.value.find(
       (e) => e.digits === entity.value
     );
-    return (cEntityType && cEntityType.entityTypes) || [];
+    if (cEntityType?.entityTypes.length) {
+      return cEntityType.entityTypes[0].digits == "00"
+        ? cEntityType.entityTypes
+        : [UNSPECIFIED_TWO_DIGITS, ...cEntityType.entityTypes];
+    }
+    return [UNSPECIFIED_TWO_DIGITS];
   });
 
   const entitySubTypeItems = computed(() => {
@@ -161,6 +166,7 @@ function useIconItems(
       (e) => e.digits === entityType.value
     );
     return [
+      UNSPECIFIED_TWO_DIGITS,
       ...(cEntitySubType?.entitySubTypes || []),
       ...(symbolSetItem.value?.specialEntitySubTypes || []),
     ];
