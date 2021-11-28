@@ -103,18 +103,24 @@
           />
         </LabelGroup>
 
-        <CodeSelectGroup
-          label="Sector one modifier"
-          :values="mod1s"
-          @focus="currentDigits = [16, 17]"
-          @blur="currentDigits = []"
-        />
-        <CodeSelectGroup
-          label="Sector two modifier"
-          :values="mod2s"
-          @focus="currentDigits = [18, 19]"
-          @blur="currentDigits = []"
-        />
+        <LabelGroup label="Sector one modifier" v-slot="{ id }">
+          <CodeSelect2
+            :id="id"
+            v-model="mod1"
+            :values="mod1Items"
+            @focus="currentDigits = [16, 17]"
+            @blur="currentDigits = []"
+          />
+        </LabelGroup>
+        <LabelGroup label="Sector two modifier" v-slot="{ id }">
+          <CodeSelect2
+            :id="id"
+            v-model="mod2"
+            :values="mod2Items"
+            @focus="currentDigits = [18, 19]"
+            @blur="currentDigits = []"
+          />
+        </LabelGroup>
       </section>
 
       <section
@@ -190,6 +196,8 @@ export default defineComponent({
       entityItems,
       entityTypeItems,
       entitySubTypeItems,
+      mod1Items,
+      mod2Items,
     } = useSymbolItems(sidc);
 
     const symbolsetRoute = computed(() => {
@@ -222,6 +230,8 @@ export default defineComponent({
       entityItems,
       entityTypeItems,
       entitySubTypeItems,
+      mod1Items,
+      mod2Items,
     };
   },
 

@@ -60,27 +60,19 @@ export function useSymbolItems(sidc: MaybeRef<string>) {
       });
   });
 
+  const symbolSetItem = computed(() => {
+    return symbolSets.find((s) => s.digits === symbolSet.value);
+  });
+
   const entityItems = computed(() => {
-    const cSymbolSet = symbolSets.find((s) => s.digits === symbolSet.value);
-    return (cSymbolSet && cSymbolSet.entities) || [];
+    return symbolSetItem.value?.entities || [];
   });
 
   const entityTypeItems = computed(() => {
     const cEntityType = entityItems.value.find(
       (e) => e.digits === entity.value
     );
-    return (
-      (cEntityType && cEntityType.entityTypes) || [
-        {
-          digits: "00",
-          label: "Unspecified",
-          id: "UNSPECIFIED",
-          icon: "NA",
-          geometryType: "NA",
-          entitySubTypes: [],
-        },
-      ]
-    );
+    return (cEntityType && cEntityType.entityTypes) || [];
   });
 
   const entitySubTypeItems = computed(() => {
@@ -90,6 +82,13 @@ export function useSymbolItems(sidc: MaybeRef<string>) {
     return (cEntitySubType && cEntitySubType.entitySubTypes) || [];
   });
 
+  const mod1Items = computed(
+    () => symbolSetItem.value?.sectorOneModifiers || []
+  );
+
+  const mod2Items = computed(
+    () => symbolSetItem.value?.sectorTwoModifiers || []
+  );
   //
 
   return {
@@ -109,6 +108,8 @@ export function useSymbolItems(sidc: MaybeRef<string>) {
     entityItems,
     entityTypeItems,
     entitySubTypeItems,
+    mod1Items,
+    mod2Items,
   };
 }
 
