@@ -172,13 +172,15 @@ function useIconItems(
     ];
   });
 
-  const mod1Items = computed(
-    () => symbolSetItem.value?.sectorOneModifiers || []
-  );
+  const mod1Items = computed(() => {
+    const m1 = symbolSetItem.value?.sectorOneModifiers || [];
+    return m1.length ? m1 : [UNSPECIFIED_TWO_DIGITS];
+  });
 
-  const mod2Items = computed(
-    () => symbolSetItem.value?.sectorTwoModifiers || []
-  );
+  const mod2Items = computed(() => {
+    const m2 = symbolSetItem.value?.sectorTwoModifiers || [];
+    return m2.length ? m2 : [UNSPECIFIED_TWO_DIGITS];
+  });
 
   return {
     entityItems,
