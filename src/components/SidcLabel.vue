@@ -1,11 +1,11 @@
 <template>
   <section
     id=""
-    class="bg-gray-200 px-4 text-base font-lg flex justify-center text-gray-700 font-medium"
+    class="bg-gray-200 px-4 text-base font-lg grid grid-cols-12 text-gray-700 font-medium"
   >
     <p
       v-for="{ code, highlight } in groups"
-      class="py-2 px-2"
+      class="py-2 text-center"
       :class="{ 'text-red-900 bg-red-200 transition': highlight }"
     >
       {{ code }}
