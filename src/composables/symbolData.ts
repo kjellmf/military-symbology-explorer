@@ -79,7 +79,10 @@ export function useSymbolItems(sidc: MaybeRef<string>) {
     const cEntitySubType = entityTypeItems.value.find(
       (e) => e.digits === entityType.value
     );
-    return (cEntitySubType && cEntitySubType.entitySubTypes) || [];
+    return [
+      ...(cEntitySubType?.entitySubTypes || []),
+      ...(symbolSetItem.value?.specialEntitySubTypes || []),
+    ];
   });
 
   const mod1Items = computed(
