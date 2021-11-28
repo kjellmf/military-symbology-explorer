@@ -1,6 +1,6 @@
 import { MaybeRef } from "@vueuse/core";
 import { parseSic } from "../jmsml/types";
-import { computed, ref, unref } from "vue";
+import { computed, Ref, ref, unref } from "vue";
 import {
   amplifiers,
   CIVILIAN_SYMBOLSET_VALUE,
@@ -33,6 +33,14 @@ export function useSymbolItems(sidc: MaybeRef<string>) {
     cSidc,
   } = useSymbolValues(sidc);
 
+  const {
+    entityItems,
+    entityTypeItems,
+    entitySubTypeItems,
+    mod1Items,
+    mod2Items,
+  } = useIconItems(symbolSet, entity, entityType);
+
   const echelonMobilityItems = computed(() => {
     let includedValues = ["0"];
     switch (symbolSet.value) {
@@ -59,40 +67,6 @@ export function useSymbolItems(sidc: MaybeRef<string>) {
         return { digits, ...rest, items };
       });
   });
-
-  const symbolSetItem = computed(() => {
-    return symbolSets.find((s) => s.digits === symbolSet.value);
-  });
-
-  const entityItems = computed(() => {
-    return symbolSetItem.value?.entities || [];
-  });
-
-  const entityTypeItems = computed(() => {
-    const cEntityType = entityItems.value.find(
-      (e) => e.digits === entity.value
-    );
-    return (cEntityType && cEntityType.entityTypes) || [];
-  });
-
-  const entitySubTypeItems = computed(() => {
-    const cEntitySubType = entityTypeItems.value.find(
-      (e) => e.digits === entityType.value
-    );
-    return [
-      ...(cEntitySubType?.entitySubTypes || []),
-      ...(symbolSetItem.value?.specialEntitySubTypes || []),
-    ];
-  });
-
-  const mod1Items = computed(
-    () => symbolSetItem.value?.sectorOneModifiers || []
-  );
-
-  const mod2Items = computed(
-    () => symbolSetItem.value?.sectorTwoModifiers || []
-  );
-  //
 
   return {
     context,
@@ -160,4 +134,52 @@ export function useSymbolValues(sidc: MaybeRef<string>) {
     mod2,
     cSidc,
   };
+}
+
+function useIconItems(
+  symbolSet: Ref<string>,
+  entity: Ref<string>,
+  entityType: Ref<string>
+) {
+  const symbolSetItem = computed(() => {
+    return symbolSets.find((s) => s.digits === symbolSet.value);
+  });
+
+  const entityItems = computed(() => {
+    return symbolSetItem.value?.entities || [];
+  });
+
+  const entityTypeItems = computed(() => {
+    const cEntityType = entityItems.value.find(
+      (e) => e.digits === entity.value
+    );
+    return (cEntityType && cEntityType.entityTypes) || [];
+  });
+
+  const entitySubTypeItems = computed(() => {
+    const cEntitySubType = entityTypeItems.value.find(
+      (e) => e.digits === entityType.value
+    );
+    return [
+      ...(cEntitySubType?.entitySubTypes || []),
+      ...(symbolSetItem.value?.specialEntitySubTypes || []),
+    ];
+  });
+
+  const mod1Items = computed(
+    () => symbolSetItem.value?.sectorOneModifiers || []
+  );
+
+  const mod2Items = computed(
+    () => symbolSetItem.value?.sectorTwoModifiers || []
+  );
+
+  return {
+    entityItems,
+    entityTypeItems,
+    entitySubTypeItems,
+    mod1Items,
+    mod2Items,
+  };
+  //
 }
